@@ -1,6 +1,5 @@
 /** Limit the width of an area */
 .container {
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -52,7 +51,7 @@ main {
 
 footer {
   padding: 16px 0px 8px;
-  background-color: whitesmoke;
+  background-color: #E0E0E0;
 }
 
 .flex-row {
