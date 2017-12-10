@@ -1,0 +1,65 @@
+/** Limit the width of an area */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+}
+
+.title-link {
+  color: white;
+  text-decoration: none;
+}
+
+mdc-toolbar__icon[class^="socicon-"] {
+  font-size: 20px;
+}
+
+main {
+  background-color: #FAFAFA;
+  padding-bottom: 16px;
+}
+
+.about {
+  padding: 32px 0px 16px;
+}
+
+.mdc-card {
+  background-color: white;
+  margin: 16px auto;
+}
+
+.list-avatar {
+  background: rgba(0,0,0,.26);
+  color: white;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/** Use negative margin to make hover appear full width */
+.mdc-list-item {
+  margin: 0px -32px;
+  padding: 0px 32px;
+}
+
+.mdc-list-item:hover, .mdc-list-item:focus {
+  background: rgba(0,0,0,.05);
+}
+
+footer {
+  padding: 16px 0px 8px;
+  background-color: whitesmoke;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
