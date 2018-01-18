@@ -39,10 +39,6 @@ main {
   justify-content: center;
 }
 
-.mdc-list-item:hover, .mdc-list-item:focus {
-  background: rgba(0,0,0,.05);
-}
-
 footer {
   padding: 16px 0px 8px;
   background-color: #E0E0E0;
