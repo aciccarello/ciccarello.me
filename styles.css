@@ -39,12 +39,6 @@ main {
   justify-content: center;
 }
 
-/** Use negative margin to make hover appear full width */
-.mdc-list-item {
-  margin: 0px -32px;
-  padding: 0px 32px;
-}
-
 .mdc-list-item:hover, .mdc-list-item:focus {
   background: rgba(0,0,0,.05);
 }
