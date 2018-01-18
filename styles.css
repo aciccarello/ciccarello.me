@@ -25,6 +25,10 @@ main {
   padding: 32px 0px 16px;
 }
 
+.mdc-typography--subheading2 {
+  margin-top: 2rem;
+}
+
 .mdc-card {
   background-color: white;
   margin: 16px auto;
