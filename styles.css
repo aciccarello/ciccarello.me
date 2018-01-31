@@ -1,3 +1,93 @@
+/** Theme based on https://material.io/color/#!/?view.left=0&view.right=0&primary.color=D50000&secondary.color=1E88E5 */
+:root {
+  --mdc-theme-primary: #d50000; /* The theme primary color. */
+  --mdc-theme-primary-light: #ff5131; /* The theme primary color (light variant). */
+  --mdc-theme-primary-dark: #9b0000; /* The theme primary color (dark variant). */
+  --mdc-theme-secondary: #1e88e5; /* The theme secondary color. */
+  --mdc-theme-secondary-light: #5ab7ff; /* The theme secondary color (light variant). */
+  --mdc-theme-secondary-dark: #005cb2; /* The theme secondary color (dark variant). */
+  --mdc-theme-background: #FAFAFA; /* The theme background color. */
+
+  /* Primary text on top of a theme primary color background. */
+  --mdc-theme-text-primary-on-primary: white;
+  /* Primary text on top of a theme primary color background (light variant). */
+  --mdc-theme-text-primary-on-primary-light: black;
+  /* Primary text on top of a theme primary color background (dark variant). */
+  --mdc-theme-text-primary-on-primary-dark: white;
+  /* Secondary text on top of a theme primary color background. */
+  --mdc-theme-text-secondary-on-primary: white;
+  /* Secondary text on top of a theme primary color background (light variant). */
+  --mdc-theme-text-secondary-on-primary-light: black;
+  /* Secondary text on top of a theme primary color background (dark variant). */
+  --mdc-theme-text-secondary-on-primary-dark: white;
+  /* Hint text on top of a theme primary color background. */
+  --mdc-theme-text-hint-on-primary: white;
+  /* Hint text on top of a theme primary color background (light variant). */
+  --mdc-theme-text-hint-on-primary-light: black;
+  /* Hint text on top of a theme primary color background (dark variant: white; /* ). */
+  --mdc-theme-text-hint-on-primary-dark: white;
+  /* Disabled text on top of a theme primary color background. */
+  --mdc-theme-text-disabled-on-primary: white;
+  /* Disabled text on top of a theme primary color background (light variant). */
+  --mdc-theme-text-disabled-on-primary-light: black;
+  /* Disabled text on top of a theme primary color background (dark variant). */
+  --mdc-theme-text-disabled-on-primary-dark: white;
+  /* Icons on top of a theme primary color background. */
+  --mdc-theme-text-icon-on-primary: white;
+  /* Icons on top of a theme primary color background (light variant). */
+  --mdc-theme-text-icon-on-primary-light: black;
+  /* Icons on top of a theme primary color background (dark variant). */
+  --mdc-theme-text-icon-on-primary-dark: white;
+
+  /* Primary text on top of a theme secondary color background. */
+  --mdc-theme-text-primary-on-secondary: black;
+  /* Primary text on top of a theme secondary color background (light variant). */
+  --mdc-theme-text-primary-on-secondary-light: black;
+  /* Primary text on top of a theme secondary color background (dark variant). */
+  --mdc-theme-text-primary-on-secondary-dark: white;
+  /* Secondary text on top of a theme secondary color background. */
+  --mdc-theme-text-secondary-on-secondary: black;
+  /* Secondary text on top of a theme secondary color background (light variant). */
+  --mdc-theme-text-secondary-on-secondary-light: black;
+  /* Secondary text on top of a theme secondary color background (dark variant). */
+  --mdc-theme-text-secondary-on-secondary-dark: white;
+  /* Hint text on top of a theme secondary color background. */
+  --mdc-theme-text-hint-on-secondary: black;
+  /* Hint text on top of a theme secondary color background (light variant). */
+  --mdc-theme-text-hint-on-secondary-light: black;
+  /* Hint text on top of a theme secondary color background (dark variant: white; /* ). */
+  --mdc-theme-text-hint-on-secondary-dark: white;
+  /* Disabled text on top of a theme secondary color background. */
+  --mdc-theme-text-disabled-on-secondary: black;
+  /* Disabled text on top of a theme secondary color background (light variant). */
+  --mdc-theme-text-disabled-on-secondary-light: black;
+  /* Disabled text on top of a theme secondary color background (dark variant). */
+  --mdc-theme-text-disabled-on-secondary-dark: white;
+  /* Icons on top of a theme secondary color background. */
+  --mdc-theme-text-icon-on-secondary: black;
+  /* Icons on top of a theme secondary color background (light variant). */
+  --mdc-theme-text-icon-on-secondary-light: black;
+  /* Icons on top of a theme secondary color background (dark variant). */
+  --mdc-theme-text-icon-on-secondary-dark: white;
+
+  --mdc-theme-text-primary-on-background: black; /* Primary text on top of the theme background color. */
+  --mdc-theme-text-secondary-on-background: black; /* Secondary text on top of the theme background color. */
+  --mdc-theme-text-hint-on-background: black; /* Hint text on top of the theme background color. */
+  --mdc-theme-text-disabled-on-background: black; /* Disabled text on top of the theme background color. */
+  --mdc-theme-text-icon-on-background: black; /* Icons on top of the theme background color. */
+
+  --mdc-theme-text-primary-on-light: black; /* Primary text on top of a light-colored background. */
+  --mdc-theme-text-secondary-on-light: black; /* Secondary text on top of a light-colored background. */
+  --mdc-theme-text-hint-on-light: black; /* Hint text on top of a light-colored background. */
+  --mdc-theme-text-disabled-on-light: black; /* Disabled text on top of a light-colored background. */
+  --mdc-theme-text-icon-on-light: black; /* Icons on top of a light-colored background. */
+  --mdc-theme-text-primary-on-dark: white; /* Primary text on top of a dark-colored background. */
+  --mdc-theme-text-secondary-on-dark: white; /* Secondary text on top of a dark-colored background. */
+  --mdc-theme-text-hint-on-dark: white; /* Hint text on top of a dark-colored background. */
+  --mdc-theme-text-disabled-on-dark: white; /* Disabled text on top of a dark-colored background. */
+  --mdc-theme-text-icon-on-dark: white; /* Icons on top of a dark-colored background. */
+}
+
 /** Limit the width of an area */
 .container {
   padding-right: 15px;
