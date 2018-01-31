@@ -115,6 +115,32 @@ main {
   padding: 32px 0px 16px;
 }
 
+@media screen and (max-width: 720px) {
+  .introduction {
+    flex-wrap: wrap;
+  }
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 256px;
+  width: 256px;
+  margin: 16px;
+}
+
+.introduction-text {
+  margin: 16px;
+}
+
+.mdc-button.secondary-filled-button {
+  background-color: var(--mdc-theme-secondary);
+}
+
 .mdc-typography--subheading2 {
   margin-top: 2rem;
 }
