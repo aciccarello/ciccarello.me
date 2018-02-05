@@ -33,20 +33,20 @@
   /* Disabled text on top of a theme primary color background (dark variant). */
   --mdc-theme-text-disabled-on-primary-dark: white;
   /* Icons on top of a theme primary color background. */
-  --mdc-theme-text-icon-on-primary: white;
+  --mdc-theme-text-icon-on-primary: rgba(255, 255, 255, 0.5);
   /* Icons on top of a theme primary color background (light variant). */
-  --mdc-theme-text-icon-on-primary-light: black;
+  --mdc-theme-text-icon-on-primary-light: rgba(0, 0, 0, 0.5);
   /* Icons on top of a theme primary color background (dark variant). */
-  --mdc-theme-text-icon-on-primary-dark: white;
+  --mdc-theme-text-icon-on-primary-dark: rgba(255, 255, 255, 0.5);
 
   /* Primary text on top of a theme secondary color background. */
-  --mdc-theme-text-primary-on-secondary: black;
+  --mdc-theme-text-primary-on-secondary: white;
   /* Primary text on top of a theme secondary color background (light variant). */
   --mdc-theme-text-primary-on-secondary-light: black;
   /* Primary text on top of a theme secondary color background (dark variant). */
   --mdc-theme-text-primary-on-secondary-dark: white;
   /* Secondary text on top of a theme secondary color background. */
-  --mdc-theme-text-secondary-on-secondary: black;
+  --mdc-theme-text-secondary-on-secondary: white;
   /* Secondary text on top of a theme secondary color background (light variant). */
   --mdc-theme-text-secondary-on-secondary-light: black;
   /* Secondary text on top of a theme secondary color background (dark variant). */
@@ -64,11 +64,11 @@
   /* Disabled text on top of a theme secondary color background (dark variant). */
   --mdc-theme-text-disabled-on-secondary-dark: white;
   /* Icons on top of a theme secondary color background. */
-  --mdc-theme-text-icon-on-secondary: black;
+  --mdc-theme-text-icon-on-secondary: rgba(0, 0, 0, 0.5);
   /* Icons on top of a theme secondary color background (light variant). */
-  --mdc-theme-text-icon-on-secondary-light: black;
+  --mdc-theme-text-icon-on-secondary-light: rgba(0, 0, 0, 0.5);
   /* Icons on top of a theme secondary color background (dark variant). */
-  --mdc-theme-text-icon-on-secondary-dark: white;
+  --mdc-theme-text-icon-on-secondary-dark: rgba(255, 255, 255, 0.5);
 
   --mdc-theme-text-primary-on-background: black; /* Primary text on top of the theme background color. */
   --mdc-theme-text-secondary-on-background: black; /* Secondary text on top of the theme background color. */
@@ -85,7 +85,7 @@
   --mdc-theme-text-secondary-on-dark: white; /* Secondary text on top of a dark-colored background. */
   --mdc-theme-text-hint-on-dark: white; /* Hint text on top of a dark-colored background. */
   --mdc-theme-text-disabled-on-dark: white; /* Disabled text on top of a dark-colored background. */
-  --mdc-theme-text-icon-on-dark: white; /* Icons on top of a dark-colored background. */
+  --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5); /* Icons on top of a dark-colored background. */
 }
 
 /** Limit the width of an area */
@@ -124,6 +124,8 @@ main {
 .introduction {
   display: flex;
   justify-content: center;
+  margin-bottom: 64px;
+  margin-top: 32px;
 }
 
 .profile-pic {
@@ -137,8 +139,29 @@ main {
   margin: 16px;
 }
 
-.mdc-button.secondary-filled-button {
-  background-color: var(--mdc-theme-secondary);
+.skills {
+  text-align: center;
+  padding: 64px 16px 64px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-list > div {
+  flex: 1;
+  margin: 16px;
+  max-width: 300px;
+}
+
+.skills-list p {
+  text-align: justify;
+}
+
+.skills-list i {
+  font-size: 64px;
 }
 
 .mdc-typography--subheading2 {
@@ -171,4 +194,24 @@ footer {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+
+@media screen and (max-width: 720px) {
+  .introduction {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  .skills-list > div {
+    max-width: 600px;
+  }
+
 }
