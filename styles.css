@@ -196,6 +196,16 @@ main {
   justify-content: center;
 }
 
+#connect {
+  padding: 32px;
+  text-align: center;
+}
+
+.connect-icons a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
 footer {
   padding: 16px 0px 8px;
   background-color: #E0E0E0;
