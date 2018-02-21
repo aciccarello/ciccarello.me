@@ -152,12 +152,12 @@ main {
 
 .skills-list > div {
   flex: 1;
-  margin: 16px;
+  margin: 32px;
   max-width: 300px;
 }
 
-.skills-list p {
-  text-align: justify;
+.mdc-typography {
+  line-height: 1.25rem;
 }
 
 .skills-list i {
