@@ -173,6 +173,20 @@ main {
   margin: 16px auto;
 }
 
+#profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 16px;
+}
+
 .list-avatar {
   background: rgba(0,0,0,.26);
   color: white;
@@ -196,6 +210,11 @@ footer {
   flex-grow: 1;
 }
 
+@media screen and (max-width: 600px) {
+  .profile-card {
+    margin: 8px 4px;
+  }
+}
 
 @media screen and (max-width: 720px) {
   .introduction {
