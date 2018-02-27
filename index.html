@@ -37,12 +37,27 @@
       "givenName": "Anthony",
       "familyName": "Ciccarello",
       "gender": "http://schema.org/Male",
+      "email": "anthony.j.cicc@gmail.com",
       "jobTitle": "Software Engineer",
       "image": "https://aciccarello.github.io/profile-256.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Denver",
+        "addressRegion": "Colorado"
+      },
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Teradata",
+          "url": "https://www.teradata.com/",
+          "logo": "https://www.teradata.com/Teradata/OldImages/teradata-logo-social.jpg"
+        }
+      ],
       "alumniOf": {
         "@type": "EducationalOrganization",
         "name": "Cedarville University",
-        "url": "https://www.cedarville.edu/"
+        "url": "https://www.cedarville.edu/",
+        "logo": "https://www.cedarville.edu/icons/mstile-310x310.png"
       },
       "url": "http://aciccarello.github.io",
       "sameAs": [
@@ -50,17 +65,18 @@
         "https://twitter.com/ajciccarello",
         "https://www.linkedin.com/in/anthonyciccarello",
         "https://medium.com/@aciccarello",
-        "https://plus.google.com/+AnthonyCiccarello"
+        "https://plus.google.com/+AnthonyCiccarello",
+        "https://www.linkedin.com/in/anthonyciccarello"
       ]
     }
     </script>
 </head>
-<body class="mdc-typography">
+<body class="mdc-typography" itemscope itemtype="http://schema.org/Person">
   <header class="mdc-toolbar mdc-toolbar--fixed">
     <div class="mdc-toolbar__row">
       <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
         <a href="#top" class="title-link">
-          <span class="mdc-toolbar__title">Anthony Ciccarello</span>
+          <span class="mdc-toolbar__title" itemprop="name">Anthony Ciccarello</span>
         </a>
       </section>
       <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
@@ -79,11 +95,11 @@
 
     <div class="about">
       <section class="introduction">
-        <img src="./profile-256.jpg" alt="Profile picture" class="profile-pic">
+        <img src="./profile-256.jpg" alt="Profile picture" class="profile-pic" itemprop="image">
         <div class="introduction-text">
           <h1 class="mdc-typography--display3">Hi, I'm Anthony Ciccarello!</h1>
           <p>
-            I'm a software engineer living in Colorado. I like
+            I'm a <span itemprop="jobTitle">software engineer</span> living in Colorado. I like
             building cool things using JavaScript and other web technologies.
           </p>
           <a href="#profiles" class="mdc-button mdc-button--raised
@@ -136,7 +152,7 @@
         <h3 class="mdc-typography--title">What do you work on?</h3>
         <p>
           I currently work as a Software Engineer for
-          <a href="http://www.teradata.com/" rel="noopener">Teradata Corporation</a> building
+          <a href="http://www.teradata.com/" rel="noopener" itemprop="affiliation">Teradata Corporation</a> building
           web applications to support our sales and compensation teams. While I
           work with a number of systems, I am primarily working on an Angular
           application and writing TypeScript. You can find more about my career
@@ -172,7 +188,7 @@
           <div class="mdc-list-group">
             <nav class="mdc-list mdc-list--two-line mdc-list--avatar-list">
               <a href="https://www.linkedin.com/in/anthonyciccarello/" class="mdc-list-item"
-                  rel="noopener">
+                  rel="noopener" itemprop="sameAs">
                 <span class="mdc-list-item__graphic list-avatar" role="presentation">
                   <i class="socicon-linkedin" aria-hidden="true"></i>
                 </span>
@@ -182,7 +198,7 @@
                 </span>
               </a>
               <a href="https://stackoverflow.com/story/aciccarello" class="mdc-list-item"
-                  rel="noopener">
+                  rel="noopener" itemprop="sameAs">
                 <span class="mdc-list-item__graphic list-avatar" role="presentation">
                   <i class="socicon-stackoverflow" aria-hidden="true"></i>
                 </span>
@@ -204,7 +220,7 @@
           <div class="mdc-list-group">
             <nav class="mdc-list mdc-list--two-line mdc-list--avatar-list">
               <a href="https://github.com/aciccarello" class="mdc-list-item"
-                  rel="noopener">
+                  rel="noopener" itemprop="sameAs">
                 <span class="mdc-list-item__graphic list-avatar" role="presentation">
                   <i class="socicon-github" aria-hidden="true"></i>
                 </span>
@@ -214,7 +230,7 @@
                 </span>
               </a>
               <a href="https://stackoverflow.com/users/4252741/chic" class="mdc-list-item"
-                  rel="noopener">
+                  rel="noopener" itemprop="sameAs">
                 <span class="mdc-list-item__graphic list-avatar" role="presentation">
                   <i class="socicon-stackoverflow" aria-hidden="true"></i>
                 </span>
@@ -224,7 +240,7 @@
                 </span>
               </a>
               <a href="https://www.npmjs.com/~aciccarello" class="mdc-list-item"
-                  rel="noopener">
+                  rel="noopener" itemprop="sameAs">
                 <span class="mdc-list-item__graphic list-avatar" role="presentation">
                   <i class="socicon-npm" aria-hidden="true"></i>
                 </span>
@@ -246,7 +262,7 @@
           <div class="mdc-list-group">
             <nav class="mdc-list mdc-list--two-line mdc-list--avatar-list">
               <a href="https://medium.com/@aciccarello" class="mdc-list-item"
-                  rel="noopener">
+                  rel="noopener" itemprop="sameAs">
                 <span class="mdc-list-item__graphic list-avatar" role="presentation">
                   <i class="socicon-medium" aria-hidden="true"></i>
                 </span>
@@ -256,7 +272,7 @@
                 </span>
               </a>
               <a href="https://twitter.com/ajciccarello" class="mdc-list-item"
-                  rel="noopener">
+                  rel="noopener" itemprop="sameAs">
                 <span class="mdc-list-item__graphic list-avatar" role="presentation">
                   <i class="socicon-twitter" aria-hidden="true"></i>
                 </span>
@@ -266,7 +282,7 @@
                 </span>
               </a>
               <a href="https://www.meetup.com/members/212294412/" class="mdc-list-item"
-                  rel="noopener">
+                  rel="noopener" itemprop="sameAs">
                 <span class="mdc-list-item__graphic list-avatar" role="presentation">
                   <i class="socicon-meetup" aria-hidden="true"></i>
                 </span>
@@ -292,7 +308,7 @@
             rel="noopener" aria-label="Twitter profile">
           <i class="socicon-twitter mdc-fab__icon" aria-hidden="true"></i>
         </a>
-        <a href="mailto:anthony.j.cicc@gmail.com" aria-label="Email" class="mdc-fab">
+        <a href="mailto:anthony.j.cicc@gmail.com" aria-label="Email" class="mdc-fab" itemprop="email">
           <i class="socicon-mail mdc-fab__icon" aria-hidden="true"></i>
         </a>
       </div>
@@ -301,7 +317,7 @@
   </main>
   <footer class="mdc-typography--caption">
     <section class="container flex-row">
-      <span>Last updated 2018-02-21</span>
+      <span>Last updated 2018-02-26</span>
       <span class="flex-grow"></span>
       <a href="https://github.com/aciccarello/aciccarello.github.io" rel="noopener">
         View the source
