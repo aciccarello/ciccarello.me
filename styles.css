@@ -102,10 +102,6 @@
   text-decoration: none;
 }
 
-mdc-toolbar__icon[class^="socicon-"] {
-  font-size: 20px;
-}
-
 main {
   background-color: #FAFAFA;
   padding: 32px 0px 16px;
