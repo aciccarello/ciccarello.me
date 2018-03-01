@@ -108,10 +108,6 @@ mdc-toolbar__icon[class^="socicon-"] {
 
 main {
   background-color: #FAFAFA;
-  padding-bottom: 16px;
-}
-
-.about {
   padding: 32px 0px 16px;
 }
 
@@ -124,7 +120,7 @@ main {
 .introduction {
   display: flex;
   justify-content: center;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   margin-top: 32px;
 }
 
@@ -137,6 +133,35 @@ main {
 
 .introduction-text {
   margin: 16px;
+}
+
+.mdc-card {
+  background-color: white;
+  margin: 16px auto;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.profile-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 16px;
+}
+
+.list-avatar {
+  background: rgba(0,0,0,.26);
+  color: white;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills {
@@ -156,44 +181,16 @@ main {
   max-width: 300px;
 }
 
-.mdc-typography {
-  line-height: 1.25rem;
-}
-
 .skills-list i {
   font-size: 64px;
 }
 
+.mdc-typography {
+  line-height: 1.25rem;
+}
+
 .mdc-typography--subheading2 {
   margin-top: 2rem;
-}
-
-.mdc-card {
-  background-color: white;
-  margin: 16px auto;
-}
-
-#profiles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.profile-card {
-  flex: 1;
-  min-width: 250px;
-  max-width: 400px;
-  margin: 16px;
-}
-
-.list-avatar {
-  background: rgba(0,0,0,.26);
-  color: white;
-  font-size: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #connect {
@@ -204,6 +201,7 @@ main {
 .connect-icons a {
   text-decoration: none;
   font-size: 20px;
+  margin: 8px;
 }
 
 footer {
