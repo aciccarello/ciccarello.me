@@ -120,6 +120,19 @@
       ]
     }
     </script>
+    <script type="text/javascript" defer="defer">
+      function setLastModified() {
+        if (document.lastModified) {
+          const dateStr = 'Last-Updated: ' + new Date(document.lastModified).toDateString();
+          document.getElementById('last-updated').innerText = dateStr;
+        }
+      }
+      if (document.readyState === "loading") {  // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", setLastModified);
+      } else {  // `DOMContentLoaded` has already fired
+        setLastModified();
+      }
+    </script>
 </head>
 <body class="mdc-typography" itemscope itemtype="http://schema.org/Person">
   <header class="mdc-toolbar mdc-toolbar--fixed">
@@ -370,7 +383,7 @@
   </main>
   <footer class="mdc-typography--caption">
     <section class="container flex-row">
-      <span>Last updated 2019-02-25</span>
+      <span id="last-updated"></span>
       <span class="flex-grow"></span>
       <a href="https://github.com/aciccarello/aciccarello.github.io" rel="noopener">
         View the source
