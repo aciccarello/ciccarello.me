@@ -34,6 +34,10 @@ main {
   }
 }
 
+.mdc-toolbar__section--align-end {
+  flex-grow: 0;
+}
+
 .introduction {
   display: flex;
   justify-content: center;
@@ -124,6 +128,15 @@ main {
   margin-top: 2rem;
 }
 
+.mdc-typography--headline6 {
+  margin-top: 2rem;
+}
+
+i + .mdc-typography--headline6 {
+  margin-top: 1rem;
+}
+
+
 #connect {
   padding: 32px;
   text-align: center;
@@ -170,6 +183,7 @@ footer {
 
   .skills-list > div {
     max-width: 600px;
+    margin: 16px 0;
   }
 
 }
