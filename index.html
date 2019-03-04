@@ -121,16 +121,21 @@
     }
     </script>
     <script type="text/javascript" defer="defer">
-      function setLastModified() {
+      function run() {
+        const experienceStart = new Date('June 1, 2014');
+        const miliseconds = new Date().getTime() - experienceStart.getTime();
+        const years = new Date(miliseconds).getFullYear() - 1970;
+        document.getElementById('years').innerText = String(years);
         if (document.lastModified) {
           const dateStr = 'Last-Updated: ' + new Date(document.lastModified).toDateString();
           document.getElementById('last-updated').innerText = dateStr;
         }
       }
+
       if (document.readyState === "loading") {  // Loading hasn't finished yet
-        document.addEventListener("DOMContentLoaded", setLastModified);
+        document.addEventListener("DOMContentLoaded", run);
       } else {  // `DOMContentLoaded` has already fired
-        setLastModified();
+        run();
       }
     </script>
 </head>
@@ -301,7 +306,8 @@
           </i>
           <h3 class="mdc-typography--headline6">Programming</h3>
           <p>
-            3 years experience with JavaScript & TypeScript and compiled CSS.
+            <span id="years">4</span>
+             years experience with JavaScript & TypeScript and compiled CSS.
             Experience supporting ASP and JSP applications.
             College education in Java and C++.
           </p>
@@ -332,15 +338,15 @@
       <h3 class="mdc-typography--headline6">What do you work on?</h3>
       <p>
         I currently work as a Software Engineer for <a href="https://www.sitepen.com/" rel="noopener" itemprop="affiliation">SitePen</a>
-        doing JavaScript development. We are a fully remote company that works with client companies to develop web and mobile
-        applications and provide technical consulting.
-        If that sounds interesting, please check out our <a href="https://www.sitepen.com/about/jobs.html" rel="noopener">open positions</a>.
+        doing JavaScript development. SitePen is a fully remote company that works with client companies to develop web and mobile
+        applications and provide technical consulting. If that sounds interesting, please check out our
+        <a href="https://www.sitepen.com/about/jobs.html" rel="noopener">open positions</a>.
       </p>
       <p>
         Previously, I worked at <a href="https://www.dish.com/" rel="noopener" itemprop="affiliation">Dish Network</a>
-        building micro-services and at
+        building the micro-services which control customer records and at
         <a href="http://www.teradata.com/" rel="noopener" itemprop="affiliation">Teradata</a>
-        developing web applications using Angular in TypeScript. You can find more about my career on <a href="https://www.linkedin.com/in/anthonyciccarello/"
+        developing web applications using Angular and TypeScript. You can find more about my career on <a href="https://www.linkedin.com/in/anthonyciccarello/"
           rel="noopener">LinkedIn</a>.
       </p>
       <h3 class="mdc-typography--headline6">What do you enjoy doing outside of work?</h3>
@@ -348,18 +354,19 @@
         I enjoy outdoor activities such as hiking and playing
         <a href="https://en.wikipedia.org/wiki/Ultimate_(sport)" rel="noopener">
           ultimate frisbee</a>.
-        I like building things in the real world such as simple wood working
-        projects and gardens.
+        I like working on small wood working projects and caring for my indoor and outdoor plants.
+        Additionally, I contribute to Open Source software in my free time including the
+        <a href="https://typedoc.org/" rel="noopener">TypeDoc</a> project.
       </p>
       <h3 class="mdc-typography--headline6">What can be found on your social media?</h3>
       <p>
         My public social media posts (including my blog) can range from highly
         technical, to political, to religious. Much of my Twitter feed revolves
-        around
+        around web development. I have a
         <a href="https://twitter.com/ajciccarello/lists/web-devs" rel="noopener">
-          web development</a>.
-        Regardless of the content or media, my posts should always be
-        respectful.
+          list of web developers I follow</a> to highlight industry related content.
+        I hope that all my posts are respectful so please reach out to me if you see something
+        you consider impolite.
       </p>
     </section>
     <section id="connect" class="">
