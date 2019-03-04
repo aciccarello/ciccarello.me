@@ -116,8 +116,10 @@ main {
   max-width: 300px;
 }
 
-.skills-list i {
-  font-size: 64px;
+/* Coppied from https://unpkg.com/material-components-web@0.37.0/dist/material-components-web.min.css */
+.skills-list svg {
+  fill: hsla(0,0%,100%,.5)!important;
+  fill: var(--mdc-theme-text-hint-on-dark,hsla(0,0%,100%,.5))!important;
 }
 
 .mdc-typography {
@@ -132,7 +134,7 @@ main {
   margin-top: 2rem;
 }
 
-i + .mdc-typography--headline6 {
+svg + .mdc-typography--headline6 {
   margin-top: 1rem;
 }
 
