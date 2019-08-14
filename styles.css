@@ -34,8 +34,8 @@ main {
   }
 }
 
-.mdc-toolbar__section--align-end {
-  flex-grow: 0;
+.mdc-top-app-bar {
+  position: unset;
 }
 
 .introduction {
