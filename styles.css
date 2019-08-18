@@ -1,11 +1,11 @@
-/** Theme based on https://material.io/color/#!/?view.left=0&view.right=0&primary.color=D50000&secondary.color=1E88E5 */
+/** Theme based on https://material.io/resources/color/#!/?view.left=1&view.right=0&primary.color=D50000&secondary.color=1976D2 */
 :root {
   --mdc-theme-primary: #d50000; /* The theme primary color. */
   --mdc-theme-primary-light: #ff5131; /* The theme primary color (light variant). */
   --mdc-theme-primary-dark: #9b0000; /* The theme primary color (dark variant). */
-  --mdc-theme-secondary: #1e88e5; /* The theme secondary color. */
-  --mdc-theme-secondary-light: #5ab7ff; /* The theme secondary color (light variant). */
-  --mdc-theme-secondary-dark: #005cb2; /* The theme secondary color (dark variant). */
+  --mdc-theme-secondary: #1976d2; /* The theme secondary color. */
+  --mdc-theme-secondary-light: #63a4ff; /* The theme secondary color (light variant). */
+  --mdc-theme-secondary-dark: #004ba0; /* The theme secondary color (dark variant). */
   --mdc-theme-background: #FAFAFA; /* The theme background color. */
 }
 
