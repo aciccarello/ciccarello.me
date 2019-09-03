@@ -1,0 +1,30 @@
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    {%- seo -%}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/material-components-web@3/dist/material-components-web.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"/>
+    <link href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh" rel="stylesheet"/>
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and
+	site.analytics -%}
+        {%- include analytics.html -%}
+    {%- endif -%}
+    <script>
+      function run() {
+        if (document.lastModified) {
+          const dateStr = 'Last-Updated: ' + new Date(document.lastModified).toDateString();
+          document.getElementById('last-updated').innerText = dateStr;
+        }
+      }
+
+      if (document.readyState === "loading") {  // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", run);
+      } else {  // `DOMContentLoaded` has already fired
+        run();
+      }
+    </script>
+</head> 

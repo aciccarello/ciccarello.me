@@ -1,0 +1,120 @@
+---
+title: Blog
+layout: default
+back_button: ..
+redirect_from: /blog/page/1
+---
+
+<div class="home container">
+	{%- if site.posts.size > 0 -%}
+	<h2 class="post-list-heading mdc-typography--headline4">
+		{{ page.list_title | default: "Posts" }}
+	</h2>
+	<ol class="post-list">
+		{%- for post in paginator.posts -%}
+		<li class="mdc-card mdc-elevation-transition">
+			{%- if post.image -%}
+			<a class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | relative_url }}" role="img"
+				aria-label="{{post.image_alt}}" style="background-image: url('{{ post.image }}');"></a>
+			{%- endif -%}
+			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+			<a class="mdc-card__primary disable-link-styles" href="{{ post.url | relative_url }}">
+				<div class="post-heading">
+					<h3 class="mdc-typography--headline6">
+						{{ post.title | escape }}
+					</h3>
+					<span class="mdc-typography--subtitle2">{{ post.date | date: date_format }}</span>
+				</div>
+				<div class="post-body mdc-typography--body1">
+					{%- if post.subtitle -%}
+					{{ post.subtitle | strip_html }}
+					{%- else -%}
+					{{ post.excerpt | strip_html | truncatewords: 20 }}
+					{%- endif -%}
+				</div>
+			</a>
+		</li>
+		{%- endfor -%}
+	</ol>
+	<p class="blog-alternates">
+		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></span>
+		<span class="blog-alternates--other">
+			Also available on <a href="https://medium.com/@aciccarello" rel="noopener">Medium</a>
+		</span>
+	</p>
+
+	{% if paginator.total_pages > 1 %}
+	<nav role="navigation" aria-label="Pagination Navigation" class="pagination">
+		<ul>
+			<li>
+				{% if paginator.previous_page %}
+				<a aria-label="Goto previous page" class="mdc-button"
+					href="{{ paginator.previous_page_path | relative_url }}">
+					<span class="material-icons mdc-button__icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+							<path d="M0 0h24v24H0z" fill="none" /></svg>
+					</span>
+					<span class="mdc-button__label">Prev</span>
+				</a>
+				{% else %}
+				<span aria-label="Goto previous page" aria-disabled="true" class="mdc-button mdc-button--disabled">
+					<span class="material-icons mdc-button__icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							aria-hidden="true">
+							<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+							<path d="M0 0h24v24H0z" fill="none" /></svg>
+					</span>
+					<span class="mdc-button__label">Prev</span>
+				</span>
+				{% endif %}
+			</li>
+
+			{% for page in (1..paginator.total_pages) %}
+			<li>
+				{% if page == paginator.page %}
+				<span aria-label="Current page, page {{page}}" aria-current="true"
+					class="mdc-button mdc-button--outlined mdc-button--disabled">
+					{{ page }}
+				</span>
+				{% elsif page == 1 %}
+				<a aria-label="Goto Page {{page}}" class="mdc-button"
+					href=" {{ paginator.previous_page_path | relative_url }}">
+					{{ page }}
+				</a>
+				{% else %}
+				<a aria-label="Goto Page {{page}}" class="mdc-button"
+					href=" {{ site.paginate_path | relative_url | replace: ':num', page }}">
+					{{ page }}
+				</a>
+				{% endif %}
+			</li>
+			{% endfor %}
+
+			<li>
+				{% if paginator.next_page %}
+				<a aria-label="Goto next page" class="mdc-button" href=" {{ paginator.next_page_path | relative_url }}">
+					<span class="mdc-button__label">Next</span>
+					<span class="material-icons mdc-button__icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+							<path d="M0 0h24v24H0z" fill="none" /></svg>
+					</span>
+				</a>
+				{% else %}
+				<span aria-label="Goto next page" aria-disabled="true" class="mdc-button mdc-button--disabled">
+					<span class="mdc-button__label">Next</span>
+					<span class="material-icons mdc-button__icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+							<path d="M0 0h24v24H0z" fill="none" /></svg>
+					</span>
+				</span>
+				{% endif %}
+			</li>
+		</ul>
+	</nav>
+	{% endif %}
+	{%- endif -%}
+
+</div>

@@ -1,3 +1,74 @@
 {
-    "files.autoSave": "onWindowChange"
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#1ebf40",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#603ee1",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#179331",
+    "titleBar.inactiveBackground": "#17933199",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#179331",
+    "statusBarItem.hoverBackground": "#1ebf40",
+    "statusBar.foreground": "#e7e7e7"
+  },
+  "peacock.color": "#179331",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "html.format.contentUnformatted": "pre,code,script"
+  "liquid.rules": {
+      "ignore": [
+          {
+              "type": "liquid",
+              "begin": "comment",
+              "end": "endcomment"
+          },
+          {
+              "type": "html",
+              "begin": "script",
+              "end": "script"
+          },
+          {
+              "type": "html",
+              "begin": "style",
+              "end": "style"
+          }
+      ],
+      "html": {
+          "correct": false,
+          "force_attribute": false,
+          "braces": false,
+          "preserve": 2,
+          "unformatted": ["script", "style"]
+      },
+      "js": {
+          "preserve": 1,
+          "method_chain": 0,
+          "quote_convert": "none",
+          "format_array": "indent",
+          "format_object": "indent",
+          "braces": false,
+          "no_semicolon": false,
+          "brace_block": true
+      },
+      "scss": {
+          "css_insert_lines": true,
+          "preserve": 2,
+          "braces": false,
+          "brace_block": true
+      },
+      "css": {
+          "css_insert_lines": true,
+          "preserve": 2,
+          "braces": false,
+          "brace_block": true
+      },
+      "json": {
+          "preserve": 0,
+          "braces": false,
+          "brace_block": true,
+          "no_semicolon": true
+      }
+  }
 }

@@ -1,0 +1,7 @@
+<figure {% if include.display == 'float' %}class="post-img--float" {% endif %}>
+	<img src="{{ include.file }}" alt="{{ include.alt }}" {% if include.display  == 'wide' %}class="post-img--wide"
+		{% endif %} />
+	<figcaption class="mdc-typography--caption">
+		{{ include.caption | markdownify| remove: "<p>" | remove: "</p>" }}
+	</figcaption>
+</figure>

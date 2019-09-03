@@ -1,33 +1,17 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="utf-8"/>
-  <title>Anthony Ciccarello | Personal Profile</title>
-  <meta name="author" content="Anthony Ciccarello">
-  <meta name="description" content="Personal profile of Anthony Ciccarello highlighting where to find him across the web">
-  <meta name="twitter:creator" content="@ajciccarello" />
-  <meta property="og:title" content="Anthony Ciccarello's Personal Profile"/>
-  <meta property="og:url" content="https://ciccarello.me">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="I'm a software engineer who currently lives in southern California.">
-  <meta property="og:image" content="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256">
+---
+layout: default
+title: Home
+image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256"
+---
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet"
-        href="https://unpkg.com/material-components-web@3/dist/material-components-web.min.css">
-      <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
-  <script type="application/ld+json">
+<script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "Anthony Ciccarello",
       "givenName": "Anthony",
       "familyName": "Ciccarello",
-      "gender": "http://schema.org/Male",
+      "gender": "Male",
       "email": "anthony@ciccarello.me",
       "jobTitle": "Software Engineer",
       "image": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256",
@@ -112,283 +96,248 @@
     }
     </script>
     <script>
-      function run() {
+      function experienceYears() {
         const experienceStart = new Date('June 1, 2014');
         const miliseconds = new Date().getTime() - experienceStart.getTime();
         const years = new Date(miliseconds).getFullYear() - 1970;
         document.getElementById('years').innerText = String(years);
-        if (document.lastModified) {
-          const dateStr = 'Last-Updated: ' + new Date(document.lastModified).toDateString();
-          document.getElementById('last-updated').innerText = dateStr;
-        }
       }
 
       if (document.readyState === "loading") {  // Loading hasn't finished yet
-        document.addEventListener("DOMContentLoaded", run);
+        document.addEventListener("DOMContentLoaded", experienceYears);
       } else {  // `DOMContentLoaded` has already fired
         run();
       }
     </script>
-    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101171555);</script>
-    <script async src="//static.getclicky.com/js"></script>
-</head>
-<body class="mdc-typography" itemscope itemtype="http://schema.org/Person">
-  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
-    <div class="mdc-top-app-bar__row">
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <span itemprop="name" class="mdc-top-app-bar__title title-link">Anthony Ciccarello</span>
-      </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-        <a href="https://www.linkedin.com/in/anthonyciccarello/" class="mdc-top-app-bar__navigation-icon mdc-icon-button"
-            rel="noopener" aria-label="LinkedIn profile">
-          <span class="socicon-linkedin" aria-hidden="true"></span>
-        </a>
-        <a href="https://twitter.com/ajciccarello" class="mdc-top-app-bar__navigation-icon mdc-icon-button"
-            rel="noopener" aria-label="Twitter profile">
-          <span class="socicon-twitter" aria-hidden="true"></span>
-        </a>
-        <a href="mailto:anthony@ciccarello.me" class="mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Email">
-          <span class="socicon-mail" aria-hidden="true"></span>
-        </a>
-      </section>
-    </div>
-  </header>
-  <main>
+<span class="h-card">
     <section class="introduction">
-      <img src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256" alt="" class="profile-pic" itemprop="image">
-      <div class="introduction-text">
-        <h1 class="mdc-typography--headline3">Hi, I'm Anthony Ciccarello!</h1>
-        <p>
-          I'm a <span itemprop="jobTitle">software engineer</span> living in southern California. I like
-          building cool things using JavaScript and other web technologies.
-        </p>
-        <a href="#connect" class="mdc-button mdc-button--raised
-            mdc-theme--secondary-bg mdc-theme--text-primary-on-dark">
-          Connect with me
-        </a>
-      </div>
+        <img alt="" class="profile-pic u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256"/>
+        <div class="introduction-text">
+            <h1 class="mdc-typography--headline3">Hi, I'm
+                <span class="p-name">Anthony Ciccarello!</span>
+            </h1>
+            <p>
+                I'm a
+                <span class="p-job-title">software engineer</span>
+                living in
+                                                                                				southern
+                <span class="p-region">California</span>. I like building cool things using JavaScript
+                                                                                                    				and other web technologies.
+            </p>
+            <a class="mdc-button mdc-button--raised
+                                                                                            mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="#connect">
+                Connect with me
+            </a>
+            <a class="mdc-button mdc-button--outlined blog-button" href="/blog">
+                Read my blog
+            </a>
+        </div>
     </section>
 
     <section class="profiles container">
-      <div class="mdc-card profile-card">
-        <div class="profile-card__title">
-          <h2 id="social-links" class="mdc-typography--headline5">Social</h2>
-          <p class="mdc-typography--subtitle2">Personal Accounts</p>
+        <div class="mdc-card profile-card">
+            <div class="profile-card__title">
+                <h2 class="mdc-typography--headline5" id="social-links">Social</h2>
+                <p class="mdc-typography--subtitle2">Personal Accounts</p>
+            </div>
+            <div>
+                <div class="mdc-list-group">
+                    <nav aria-labelledby="social-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
+                        <a class="mdc-list-item" href="https://twitter.com/ajciccarello" rel="me">
+                            <span class="mdc-list-item__graphic list-avatar" role="presentation">
+                                <span aria-hidden="true" class="socicon-twitter"></span>
+                            </span>
+                            <span class="mdc-list-item__text">
+                                Twitter
+                                <span class="mdc-list-item__secondary-text">Micro blog</span>
+                            </span>
+                        </a>
+                        <a class="mdc-list-item" href="https://www.instagram.com/ajciccarello/" rel="me">
+                            <span class="mdc-list-item__graphic list-avatar" role="presentation">
+                                <span aria-hidden="true" class="socicon-instagram"></span>
+                            </span>
+                            <span class="mdc-list-item__text">
+                                Instagram
+                                <span class="mdc-list-item__secondary-text">Photos</span>
+                            </span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div>
-          <div class="mdc-list-group">
-            <nav aria-labelledby="social-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
-              <a href="https://medium.com/@aciccarello" class="mdc-list-item"
-                  rel="noopener" itemprop="sameAs">
-                <span class="mdc-list-item__graphic list-avatar" role="presentation">
-                  <span class="socicon-medium" aria-hidden="true"></span>
-                </span>
-                <span class="mdc-list-item__text">
-                  Medium
-                  <span class="mdc-list-item__secondary-text">Blog</span>
-                </span>
-              </a>
-              <a href="https://twitter.com/ajciccarello" class="mdc-list-item"
-                  rel="noopener" itemprop="sameAs">
-                <span class="mdc-list-item__graphic list-avatar" role="presentation">
-                  <span class="socicon-twitter" aria-hidden="true"></span>
-                </span>
-                <span class="mdc-list-item__text">
-                  Twitter
-                  <span class="mdc-list-item__secondary-text">Micro blog</span>
-                </span>
-              </a>
-              <a href="https://www.instagram.com/ajciccarello/" class="mdc-list-item"
-                  rel="noopener" itemprop="sameAs">
-                <span class="mdc-list-item__graphic list-avatar" role="presentation">
-                  <span class="socicon-instagram" aria-hidden="true"></span>
-                </span>
-                <span class="mdc-list-item__text">
-                  Instagram
-                  <span class="mdc-list-item__secondary-text">Photos</span>
-                </span>
-              </a>
-            </nav>
-          </div>
+        <div class="mdc-card profile-card">
+            <div class="profile-card__title">
+                <h2 class="mdc-typography--headline5" id="software-links">
+                    Software
+                </h2>
+                <p class="mdc-typography--subtitle2">Development Profiles</p>
+            </div>
+            <div>
+                <div class="mdc-list-group">
+                    <nav aria-labelledby="software-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
+                        <a class="mdc-list-item" href="https://github.com/aciccarello" rel="me">
+                            <span class="mdc-list-item__graphic list-avatar" role="presentation">
+                                <span aria-hidden="true" class="socicon-github"></span>
+                            </span>
+                            <span class="mdc-list-item__text">
+                                GitHub
+                                <span class="mdc-list-item__secondary-text">Code repository</span>
+                            </span>
+                        </a>
+                        <a class="mdc-list-item" href="https://stackoverflow.com/users/4252741/chic" rel="me">
+                            <span class="mdc-list-item__graphic list-avatar" role="presentation">
+                                <span aria-hidden="true" class="socicon-stackoverflow"></span>
+                            </span>
+                            <span class="mdc-list-item__text">
+                                Stack Overflow
+                                <span class="mdc-list-item__secondary-text">Software Q & A</span>
+                            </span>
+                        </a>
+                        <a class="mdc-list-item" href="https://www.npmjs.com/~aciccarello" rel="me">
+                            <span class="mdc-list-item__graphic list-avatar" role="presentation">
+                                <span aria-hidden="true" class="socicon-npm"></span>
+                            </span>
+                            <span class="mdc-list-item__text">
+                                npm
+                                <span class="mdc-list-item__secondary-text">Package manager</span>
+                            </span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="mdc-card profile-card">
-        <div class="profile-card__title">
-          <h2 id="software-links" class="mdc-typography--headline5">Software</h2>
-          <p class="mdc-typography--subtitle2">Development Profiles</p>
+        <div class="mdc-card profile-card">
+            <div class="profile-card__title">
+                <h2 class="mdc-typography--headline5" id="career-links">Career</h2>
+                <p class="mdc-typography--subtitle2">Professional Information</p>
+            </div>
+            <div>
+                <div class="mdc-list-group">
+                    <nav aria-labelledby="career-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
+                        <a class="mdc-list-item" href="https://www.linkedin.com/in/anthonyciccarello/" rel="me">
+                            <span class="mdc-list-item__graphic list-avatar" role="presentation">
+                                <span aria-hidden="true" class="socicon-linkedin"></span>
+                            </span>
+                            <span class="mdc-list-item__text">
+                                LinkedIn
+                                <span class="mdc-list-item__secondary-text">Career profile</span>
+                            </span>
+                        </a>
+                        <a class="mdc-list-item" href="https://stackoverflow.com/story/aciccarello" rel="me">
+                            <span class="mdc-list-item__graphic list-avatar" role="presentation">
+                                <span aria-hidden="true" class="socicon-stackoverflow"></span>
+                            </span>
+                            <span class="mdc-list-item__text">
+                                Stack Overflow
+                                <span class="mdc-list-item__secondary-text">Developer Story</span>
+                            </span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div>
-          <div class="mdc-list-group">
-            <nav aria-labelledby="software-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
-              <a href="https://github.com/aciccarello" class="mdc-list-item"
-                  rel="noopener" itemprop="sameAs">
-                <span class="mdc-list-item__graphic list-avatar" role="presentation">
-                  <span class="socicon-github" aria-hidden="true"></span>
-                </span>
-                <span class="mdc-list-item__text">
-                  GitHub
-                  <span class="mdc-list-item__secondary-text">Code repository</span>
-                </span>
-              </a>
-              <a href="https://stackoverflow.com/users/4252741/chic" class="mdc-list-item"
-                  rel="noopener" itemprop="sameAs">
-                <span class="mdc-list-item__graphic list-avatar" role="presentation">
-                  <span class="socicon-stackoverflow" aria-hidden="true"></span>
-                </span>
-                <span class="mdc-list-item__text">
-                  Stack Overflow
-                  <span class="mdc-list-item__secondary-text">Software Q & A</span>
-                </span>
-              </a>
-              <a href="https://www.npmjs.com/~aciccarello" class="mdc-list-item"
-                  rel="noopener" itemprop="sameAs">
-                <span class="mdc-list-item__graphic list-avatar" role="presentation">
-                  <span class="socicon-npm" aria-hidden="true"></span>
-                </span>
-                <span class="mdc-list-item__text">
-                  npm
-                  <span class="mdc-list-item__secondary-text">Package manager</span>
-                </span>
-              </a>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="mdc-card profile-card">
-        <div class="profile-card__title">
-          <h2 id="career-links" class="mdc-typography--headline5">Career</h2>
-          <p class="mdc-typography--subtitle2">Professional Information</p>
-        </div>
-        <div>
-          <div class="mdc-list-group">
-            <nav aria-labelledby="career-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
-              <a href="https://www.linkedin.com/in/anthonyciccarello/" class="mdc-list-item"
-                  rel="noopener" itemprop="sameAs">
-                <span class="mdc-list-item__graphic list-avatar" role="presentation">
-                  <span class="socicon-linkedin" aria-hidden="true"></span>
-                </span>
-                <span class="mdc-list-item__text">
-                  LinkedIn
-                  <span class="mdc-list-item__secondary-text">Career profile</span>
-                </span>
-              </a>
-              <a href="https://stackoverflow.com/story/aciccarello" class="mdc-list-item"
-                  rel="noopener" itemprop="sameAs">
-                <span class="mdc-list-item__graphic list-avatar" role="presentation">
-                  <span class="socicon-stackoverflow" aria-hidden="true"></span>
-                </span>
-                <span class="mdc-list-item__text">
-                  Stack Overflow
-                  <span class="mdc-list-item__secondary-text">Developer Story</span>
-                </span>
-              </a>
-            </nav>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="skills mdc-theme--text-primary-on-dark">
-      <h2 class="mdc-typography--headline4">Skills for the Web</h2>
-      <div class="skills-list">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 48 48" aria-hidden="true">
-            <path d="M18.8 33.2L9.7 24l9.2-9.2L16 12 4 24l12 12 2.8-2.8zm10.4 0l9.2-9.2-9.2-9.2L32 12l12 12-12 12-2.8-2.8z"/>
-          </svg>
-          <h3 class="mdc-typography--headline6">Programming</h3>
-          <p>
-            <span id="years">4</span>
-             years experience with JavaScript & TypeScript and compiled CSS.
-            Experience supporting ASP and JSP applications.
-            College education in Java and C++.
-          </p>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 48 48" aria-hidden="true">
-            <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
-          </svg>
-          <h3 class="mdc-typography--headline6">Design</h3>
-          <p>
-            User interfaces, user experience flows, and code that are easy to
-            understand, accessible, and aesthetically pleasing
-          </p>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 48 48" aria-hidden="true">
-            <path d="M10 26.36v8L24 42l14-7.64v-8L24 34l-14-7.64zM24 6L2 18l22 12 18-9.82V34h4V18L24 6z"/>
-          </svg>
+        <h2 class="mdc-typography--headline4">Skills for the Web</h2>
+        <div class="skills-list">
+            <div>
+                <svg aria-hidden="true" height="64" viewbox="0 0 48 48" width="64" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.8 33.2L9.7 24l9.2-9.2L16 12 4 24l12 12 2.8-2.8zm10.4 0l9.2-9.2-9.2-9.2L32 12l12 12-12 12-2.8-2.8z"/>
+                </svg>
+                <h3 class="mdc-typography--headline6">Programming</h3>
+                <p>
+                    <span id="years">5</span>
+                    years experience with JavaScript & TypeScript and compiled CSS.
+                                                                                                    					Experience supporting ASP and JSP applications. College
+                                                                                                    					education in Java and C++.
+                </p>
+            </div>
+            <div>
+                <svg aria-hidden="true" height="64" viewbox="0 0 48 48" width="64" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
+                </svg>
+                <h3 class="mdc-typography--headline6">Design</h3>
+                <p>
+                    User interfaces, user experience flows, and code that are easy
+                                                                                                    					to understand, accessible, and aesthetically pleasing
+                </p>
+            </div>
+            <div>
+                <svg aria-hidden="true" height="64" viewbox="0 0 48 48" width="64" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 26.36v8L24 42l14-7.64v-8L24 34l-14-7.64zM24 6L2 18l22 12 18-9.82V34h4V18L24 6z"/>
+                </svg>
 
-          <h3 class="mdc-typography--headline6">Learning</h3>
-          <p>
-            Flexibility to learn new tools, whether it is a programming
-            language, a framework's documentation, or a new codebase.
-          </p>
+                <h3 class="mdc-typography--headline6">Learning</h3>
+                <p>
+                    Flexibility to learn new tools, whether it is a programming
+                                                                                                    					language, a framework's documentation, or a new codebase.
+                </p>
+            </div>
         </div>
-      </div>
     </section>
     <section class="container">
-      <h3 class="mdc-typography--headline6">What do you work on?</h3>
-      <p>
-        I currently work as a Software Engineer for <a href="https://www.sitepen.com/" rel="noopener" title="SitePen home page" itemprop="affiliation">SitePen</a>
-        doing JavaScript development. SitePen is a fully remote company that works with client companies to develop web and mobile
-        applications and provide technical consulting. If that sounds interesting, please check out our
-        <a href="https://www.sitepen.com/about/jobs.html" title="SitePen jobs page" rel="noopener">open positions</a>.
-      </p>
-      <p>
-        Previously, I worked at <a href="https://www.dish.com/" rel="noopener" itemprop="affiliation" title="Dish home page">Dish Network</a>
-        building the micro-services which control customer records and at
-        <a href="https://www.teradata.com/" rel="noopener" itemprop="affiliation" title="Teradata home page">Teradata</a>
-        developing web applications using Angular and TypeScript. You can find more about my career on <a href="https://www.linkedin.com/in/anthonyciccarello/"
-          rel="noopener">LinkedIn</a>.
-      </p>
-      <h3 class="mdc-typography--headline6">What do you enjoy doing outside of work?</h3>
-      <p>
-        I enjoy outdoor activities such as hiking,
-        <a href="https://ebird.org/profile/OTUwMDI4" title="eBird profile" rel="noopener">bird watching</a>, and playing
-        <a href="https://en.wikipedia.org/wiki/Ultimate_(sport)" title="Ultimate frisbee wikipedia article" rel="noopener">
-          ultimate frisbee</a>.
-        I like working on small wood working projects and caring for my indoor and outdoor plants.
-        Additionally, I contribute to Open Source software in my free time including the
-        <a href="https://typedoc.org/" rel="noopener">TypeDoc</a> project.
-      </p>
-      <h3 class="mdc-typography--headline6">What can be found on your social media?</h3>
-      <p>
-        My public social media posts (including my blog) can range from highly
-        technical, to political, to religious. Much of my Twitter feed revolves
-        around web development. I have a
-        <a href="https://twitter.com/ajciccarello/lists/web-devs" title="Twitter list of developers" rel="noopener">
-          list of web developers I follow</a> to highlight industry related content.
-        I hope that all my posts are respectful so please reach out to me if you see something
-        you consider impolite.
-      </p>
+        <h3 class="mdc-typography--headline6">What do you work on?</h3>
+        <p>
+            I currently work as a Software Engineer for
+            <a class="p-org h-card" href="https://www.sitepen.com/" title="SitePen home page">SitePen</a>
+            doing JavaScript development. SitePen is a fully remote company that
+                                                            			works with client companies to develop web and mobile applications and
+                                                            			provide technical consulting. If that sounds interesting, please check
+                                                            			out our
+            <a href="https://www.sitepen.com/about/jobs.html" title="SitePen jobs page">open
+                                                                                				positions</a>.
+        </p>
+        <p>
+            Previously, I worked at
+            <a class="p-org h-card" href="https://www.dish.com/" title="Dish home page">Dish Network</a>
+            building the micro-services which control customer records and at
+            <a class="p-org h-card" href="https://www.teradata.com/" title="Teradata home page">Teradata</a>
+            developing web applications using Angular and TypeScript. You can find
+                                                            			more about my career on
+            <a href="https://www.linkedin.com/in/anthonyciccarello/" rel="me">LinkedIn</a>.
+        </p>
+        <h3 class="mdc-typography--headline6">
+            What do you enjoy doing outside of work?
+        </h3>
+        <p>
+            I enjoy outdoor activities such as hiking,
+            <a href="https://ebird.org/profile/OTUwMDI4" rel="me" title="eBird profile">bird watching</a>, and
+                                                                                			playing
+            <a href="https://en.wikipedia.org/wiki/Ultimate_(sport)" title="Ultimate frisbee wikipedia article">
+                ultimate frisbee</a>. I like working on small wood working projects and caring for my
+                                                                                			indoor and outdoor plants. Additionally, I contribute to Open Source
+                                                                                			software in my free time including the
+            <a href="https://typedoc.org/">TypeDoc</a>
+            project.
+        </p>
+        <h3 class="mdc-typography--headline6">
+            What can be found on your social media?
+        </h3>
+        <p>
+            My public social media posts (including my blog) can range from highly
+                                                            			technical, to political, to religious. Much of my Twitter feed revolves
+                                                            			around web development. I have a
+            <a href="https://twitter.com/ajciccarello/lists/web-devs" title="Twitter list of developers">
+                list of web developers I follow</a>
+            to highlight industry related content. I hope that all my posts are
+                                                            			respectful so please reach out to me if you see something you consider
+                                                            			impolite.
+        </p>
     </section>
-    <section id="connect" class="">
-      <h2 class="mdc-typography--headline4">Connect</h2>
-      <p>Connect with me using one of my preferred channels</p>
-      <div class="connect-icons">
-        <a href="https://www.linkedin.com/in/anthonyciccarello/" class="mdc-fab"
-            rel="noopener" aria-label="LinkedIn profile">
-          <span class="socicon-linkedin mdc-fab__icon" aria-hidden="true"></span>
-        </a>
-        <a href="https://twitter.com/ajciccarello" class="mdc-fab"
-            rel="noopener" aria-label="Twitter profile">
-          <span class="socicon-twitter mdc-fab__icon" aria-hidden="true"></span>
-        </a>
-        <a href="mailto:anthony@ciccarello.me" aria-label="Email" class="mdc-fab" itemprop="email">
-          <span class="socicon-mail mdc-fab__icon" aria-hidden="true"></span>
-        </a>
-      </div>
-
+    <section class="" id="connect">
+        <h2 class="mdc-typography--headline4">Connect</h2>
+        <p>Connect with me using one of my preferred channels</p>
+        <div class="connect-icons">
+            <a aria-label="LinkedIn profile" class="mdc-fab" href="https://www.linkedin.com/in/anthonyciccarello/" rel="me">
+                <span aria-hidden="true" class="socicon-linkedin mdc-fab__icon"></span>
+            </a>
+            <a aria-label="Twitter profile" class="mdc-fab" href="https://twitter.com/ajciccarello" rel="me">
+                <span aria-hidden="true" class="socicon-twitter mdc-fab__icon"></span>
+            </a>
+            <a aria-label="Email" class="mdc-fab u-email" href="mailto:anthony@ciccarello.me" rel="me">
+                <span aria-hidden="true" class="socicon-mail mdc-fab__icon"></span>
+            </a>
+        </div>
     </section>
-  </main>
-  <footer class="mdc-typography--caption">
-    <section class="container flex-row">
-      <span id="last-updated"></span>
-      <span class="flex-grow"></span>
-      <a href="https://github.com/aciccarello/aciccarello.github.io" rel="noopener">
-        View the source
-      </a>
-    </section>
-  </footer>
-</body>
-</html>
+</span>

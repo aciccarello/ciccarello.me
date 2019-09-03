@@ -1,0 +1,15 @@
+<div>
+	<a href="{{ include.url }}" class="disable-link-styles">
+		{% assign domain = include.url | split: "//" %}
+		{% assign domain = domain[1]| split: "/" | first %}
+		<blockquote class="mdc-card embed-card mdc-elevation-transition">
+			<h3 class="post-title p-name mdc-typography--subtitle1">{{ include.title }}</h3>
+			<p class="mdc-typography--body2">
+				{{ include.description }}
+				<cite class="mdc-typography--caption">{{ domain }}</cite>
+			</p>
+			<img src="{{ include.img }}" alt="{{ include.alt }}"
+				{% if include.objectPosition %}style="object-position: {{include.objectPosition}}" {% endif %}>
+		</blockquote>
+	</a>
+</div>
