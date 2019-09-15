@@ -16,10 +16,10 @@
 title: Anthony Ciccarello
 email: anthony@ciccarello.me
 description: >- # this means to ignore newlines until "baseurl:"
-  Software engineer living in southern California 
+  Software engineer living in southern California
   building cool things using JavaScript and other web technologies.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.ciccarello.me" # the base hostname & protocol for your site, e.g. http://example.com
 # logo is required for publisher which is required for blogs
 logo: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256"
 twitter:
