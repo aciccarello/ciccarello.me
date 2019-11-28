@@ -310,7 +310,8 @@ a.disable-link-styles {
 }
 
 .post-img--float {
-	max-width: 50%;
+	width: 50%;
+	max-width: 350px;
 	margin: 0 1rem 1rem 0;
 	float: left;
 }
