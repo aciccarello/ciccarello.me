@@ -69,6 +69,7 @@ I did a fair amount of bird watching on our trip. Italy isn't well known for its
     description="Vibrantly bright green parakeet, frequently found in woodland, parks, gardens, where feeds mainly in trees. Nests in cavities, including holes…"
     img="/assets/img/embed-thumbnail-rose-ringed-parakeet.jpg"
     alt="Green parakeet with long tail and red beak"
+    objectPosition="70% center"
 %}
 
 We took about every mode of transportation you could think of in Italy. Italy makes it easy to get most places via train. After flying in, we took high-speed trains between Rome and the Amalfi Coast and local trains from the airport and to Pompeii. In the Amalfi Coast, we rode city-run buses with tickets we bought in the "tabacchi" convenience stores and rode the lift up to the top of Mount Solaro. We also took ferries around the Amalfi Coast and from island to island in Venice. In Rome we took the subway and when we were with my family we drove a van. Thankfully, just about every place that sells tickets had an attendant who spoke English so we never got stuck without a ride.
@@ -87,7 +88,7 @@ I understand why Italy attracts so many repeat visitors and I think I've caught 
 
 As we traveled, I made a point to write down a little about each day. From that I've put together more complete thoughts on each of the major regions we visited as separate posts and added more pictures. While I hope to return some day, I never want to forget the great memories from this special trip.
 
-- Amalfi Coast (coming soon)
+- [Amalfi Coast]({% post_url 2019-11-28-anniversary-on-the-amalfi-coast %})
 - Rome (coming soon)
 - Orvieto (coming soon)
 - Venice (coming soon)
