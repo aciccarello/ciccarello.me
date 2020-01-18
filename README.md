@@ -1,5 +1,6 @@
 ### Anthony Ciccarello's personal profile website
-This repo hosts my personal website on [aciccarello.github.io](https://aciccarello.github.io).
+
+This repo hosts my personal website on [ciccarello.me](https://www.ciccarello.me).
 It also serves as an excuse to push myself and use (or not use) different
 technologies. In this case I am implementing a minimal website using
 [Material Components for the Web](https://material.io/components/).
@@ -8,3 +9,5 @@ The logo fonts I am using are provided by [socicon](http://www.socicon.com/). Si
 the tool-set is an intentional exercise to help me think more about the layout and styles I use.
 
 If there is something you would like to see on this site, please open an issue.
+
+To run the project locally, install jekyll and run the `start-dev.sh` script.
