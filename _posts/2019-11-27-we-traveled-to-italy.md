@@ -89,7 +89,7 @@ I understand why Italy attracts so many repeat visitors and I think I've caught 
 As we traveled, I made a point to write down a little about each day. From that I've put together more complete thoughts on each of the major regions we visited as separate posts and added more pictures. While I hope to return some day, I never want to forget the great memories from this special trip.
 
 - [Amalfi Coast]({% post_url 2019-11-28-anniversary-on-the-amalfi-coast %})
-- Rome (coming soon)
+- [Rome]({% post_url 2020-02-06-rome-is-a-work-of-art %})
 - Orvieto (coming soon)
 - Venice (coming soon)
 
