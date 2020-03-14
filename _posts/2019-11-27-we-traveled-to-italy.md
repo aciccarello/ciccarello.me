@@ -96,6 +96,6 @@ As we traveled, I made a point to write down a little about each day. From that 
 {% include image.html
     file="/assets/img/2019-italy-sunset-over-capri.jpg"
     caption="Sunset over the Island of Capri"
-    alt="Silhouette of island with sun shining through a cloud."
+    alt="Silhouette of an island with the sun shining through a cloud."
     display="wide"
 %}
