@@ -1,1 +1,1 @@
-bundle exec jekyll clean && bundle exec jekyll serve --drafts --future --incremental
+bundle exec jekyll clean && bundle exec jekyll serve --drafts --incremental
