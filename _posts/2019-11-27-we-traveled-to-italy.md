@@ -6,7 +6,7 @@ date: 2019-11-27
 tags: [travel, Italy]
 image: /assets/img/2019-italy-amalfi-coast-boat-flag.jpg
 image_alt: Italian flag waving on the end of a boat with coastline in background.
-image_caption: View of Amalfi Coast from the ferry. Photo by Bekah Ciccarello
+image_caption: View of Amalfi Coast from the ferry - Photo by Bekah Ciccarello
 ---
 
 ## A Change of Plans
@@ -91,7 +91,7 @@ As we traveled, I made a point to write down a little about each day. From that 
 - [Amalfi Coast]({% post_url 2019-11-28-anniversary-on-the-amalfi-coast %})
 - [Rome]({% post_url 2020-02-06-rome-is-a-work-of-art %})
 - [Orvieto]({% post_url 2020-03-15-relaxing-in-the-orvieto-countryside %})
-- Venice (coming soon)
+- [Venice]({% post_url 2020-04-09-a-weekend-in-venice %})
 
 {% include image.html
     file="/assets/img/2019-italy-sunset-over-capri.jpg"
