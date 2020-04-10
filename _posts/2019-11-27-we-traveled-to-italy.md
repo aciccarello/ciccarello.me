@@ -51,7 +51,7 @@ Italy surprised me with how beautiful it is. Both the landscapes and buildings w
     caption="View of Anacapri from the Mount Solaro lift"
 %}
 
-While each part of Italy we visited had a slightly different landscape, there were common scenes throughout. The land was all very green. Even up on the hilltops, there was grass growing. Among this lushness there were farms everywhere. Compared to the American mid-west, the farms were all surprisingly small. Some were simple family gardens, but even the more agricultural farms contained a mix of crops in modest size fields creating patchworks in the land. But the most common crop where we traveled seemed to be olives. There were groves of olive trees on any sizable patch of land and they are an iconic piece of the Italian countryside. In Ovieto we saw the machines they used to shake the olives off the trees, but in hillier areas the olive groves would have netting laid below the trees to capture the olives as they dropped.
+While each part of Italy we visited had a slightly different landscape, there were common scenes throughout. The land was all very green. Even up on the hilltops, there was grass growing. Among this lushness there were farms everywhere. Compared to the American mid-west, the farms were all surprisingly small. Some were simple family gardens, but even the more agricultural farms contained a mix of crops in modest size fields creating patchworks in the land. But the most common crop where we traveled seemed to be olives. There were groves of olive trees on any sizable patch of land and they are an iconic piece of the Italian countryside. In Orvieto we saw the machines they used to shake the olives off the trees, but in hillier areas the olive groves would have netting laid below the trees to capture the olives as they dropped.
 
 I did a fair amount of bird watching on our trip. Italy isn't well known for its bird watching though I saw plenty of new birds since it was my first time birding in Europe. My favorite were probably the [European Robins](https://ebird.org/species/eurrob1/IT) which have a bright personality to match their orange chests. I was surprised by the prevalence of Parakeets in Rome, with [two](https://ebird.org/species/rorpar/IT) [different](https://ebird.org/species/monpar/IT) non-native species being quite visible in some areas. As an American, it was odd to see species like [European Starlings](https://ebird.org/species/eursta/IT), [Eurasian Collard-Doves](https://ebird.org/species/eucdov/IT), [Rock Pigeons](https://ebird.org/species/rocpig/IT), and the House Sparrow-like [Italian Sparrows](https://ebird.org/species/itaspa1/IT) in their (mostly) native habitat when usually I view them as invasive. Overall, it was a lot of fun to see so many new species and to add a new country to my birding list.
 
@@ -65,7 +65,7 @@ I did a fair amount of bird watching on our trip. Italy isn't well known for its
 
 {% include embed-link.html
     title="Rose-ringed Parakeet"
-    url="https://ebird.org/species/eurrob1/IT"
+    url="https://ebird.org/species/rorpar/IT"
     description="Vibrantly bright green parakeet, frequently found in woodland, parks, gardens, where feeds mainly in trees. Nests in cavities, including holes…"
     img="/assets/img/embed-thumbnail-rose-ringed-parakeet.jpg"
     alt="Green parakeet with long tail and red beak"
@@ -82,7 +82,7 @@ We took about every mode of transportation you could think of in Italy. Italy ma
 
 It was interesting traveling when not trying to learn the language. I did a little studying before our trip and we had a pocket Italian guide but it wasn't like our time in Spanish speaking countries. Most of the touristy areas of the country have plenty of English speaking restaurant waiters, shop employees, and hotel receptionists. Even when someone didn't speak much English, they usually knew enough to communicate. Our Spanish language skills did help a lot when reading or trying to understand someone as there are many similar words. It was fun to listen to people speak even when I didn't understand them. I found I loved the rhythm of the language. It would be very cool to learn enough Italian to speak it myself, but for now I'll focus on Spanish.
 
-I understand why Italy attracts so many repeat visitors and I think I've caught the bug. I'd love to return some day to enjoy more of the country. During this trip, we didn't visit Florance or Sicily, both of which would be great to see. However I'd be very happy to repeat the places we went to as well. They were all beautiful and enjoyable with much more to see and enjoy.
+I understand why Italy attracts so many repeat visitors and I think I've caught the bug. I'd love to return some day to enjoy more of the country. During this trip, we didn't visit Florence or Sicily, both of which would be great to see. However I'd be very happy to repeat the places we went to as well. They were all beautiful and enjoyable with much more to see and enjoy.
 
 ---
 
