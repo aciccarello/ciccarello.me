@@ -35,7 +35,7 @@ months later, here we are.
 {% include image.html
     file="/assets/img/puebla-letter-board-announcement.jpg"
     alt="black letter board with white letters reading 'Hasta luego estados unidos, hola mexico y peru' with plants around it"
-    caption="The plants we left behind -- [Photo by Bekah](https://www.instagram.com/p/BtT3LVvHNmK/)"
+    caption="The plants we left behind  -  [Photo by Bekah](https://www.instagram.com/p/BtT3LVvHNmK/)"
 %}
 
 We looked at many different locations for where we would travel first. We knew
@@ -154,7 +154,7 @@ them as they have greatly enriched out time here.
 {% include image.html
     file="/assets/img/puebla-fort-loreto.jpg"
     alt="6 young people, 4 mexican, 2 white taking a selfie in front of a white building with a decorated entryway"
-    caption="With our friends at Fort Loreto -- [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
+    caption="With our friends at Fort Loreto  -  [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
 %}
 
 ### What's Our Plan?
@@ -205,6 +205,6 @@ want to know more about how we are doing.
 {% include image.html
     file="/assets/img/puebla-fort-sign.jpg"
     alt="Colorful letters mounted to the ground spelling puebla with a couple sitting on the base"
-    caption="Bekah and me in front of the Puebla sign near Fort Loreto -- [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
+    caption="Bekah and me in front of the Puebla sign near Fort Loreto  -  [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
     display="wide"
 %}

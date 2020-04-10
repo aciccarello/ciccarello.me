@@ -79,7 +79,7 @@ We finished our day in Ravello with a nice dinner. Since we were there during th
 {% include image.html
     file="/assets/img/2019-italy-ravello-villa-cimbrone-terrace.jpg"
     alt="Terrace overlooking the water with stone, carved, busts along the railing"
-    caption="Villa Cimbrone Terrace, Ravello. Photo by Bekah Ciccarello"
+    caption="Villa Cimbrone Terrace, Ravello - Photo by Bekah Ciccarello"
 %}
 
 ## Day 5: Capri and Salerno

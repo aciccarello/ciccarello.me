@@ -34,7 +34,7 @@ Central America have complete packs of all common birds in the country.
 {% include image.html
     file="/assets/img/peru-andean-cock-of-the-rock.jpg"
     alt="bird with a bright orange body and head, black wings and a gray back"
-    caption="Andean cock-of-the-rock -- [Photo by Jerry Thompson](https://commons.wikimedia.org/wiki/File:Rupicola_peruviana_%28male%29\_-San_Diego_Zoo-8a.jpg) [[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)]"
+    caption="Andean cock-of-the-rock  -  [Photo by Jerry Thompson](https://commons.wikimedia.org/wiki/File:Rupicola_peruviana_%28male%29\_-San_Diego_Zoo-8a.jpg) [[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)]"
     display="float"
 %}
 
