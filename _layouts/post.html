@@ -78,3 +78,25 @@ layout: default
 		</div>
 	</div>
 </section>
+<div class="post-suggestions container">
+	<h2 class="mdc-typography--headline6">
+		Recent articles
+	</h2>
+	{% if page.previous %}
+		<div class="post-suggestions__area post-suggestions__previous">
+			<h3 class="mdc-typography--subtitle1">
+				Previous
+			</h3>
+			{% include post-card.html post=page.previous %}
+		</div>
+		{% endif %}
+		{% if page.next %}
+		<div class="post-suggestions__area post-suggestions__next">
+			<h3 class="mdc-typography--subtitle1">
+				Next
+			</h3>
+			{% include post-card.html post=page.next %}
+		</div>
+		{% endif %}
+	</ul>
+</div>

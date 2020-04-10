@@ -1,0 +1,22 @@
+<div class="mdc-card mdc-elevation-transition">
+	{%- if include.post.image -%}
+	<a class="mdc-card__media mdc-card__media--16-9" href="{{ include.post.url | relative_url }}" role="img"
+		style="background-image: url('{{ include.post.image }}');"></a>
+	{%- endif -%}
+	{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+	<a class="mdc-card__primary disable-link-styles" href="{{ include.post.url | relative_url }}">
+		<div class="post-heading">
+			<h3 class="mdc-typography--headline6">
+				{{ include.post.title | escape }}
+			</h3>
+			<span class="mdc-typography--subtitle2">{{ include.post.date | date: date_format }}</span>
+		</div>
+		<div class="post-body mdc-typography--body1">
+			{%- if include.post.subtitle -%}
+			{{ include.post.subtitle | strip_html }}
+			{%- else -%}
+			{{ include.post.excerpt | strip_html | truncatewords: 20 }}
+			{%- endif -%}
+		</div>
+	</a>
+</div>

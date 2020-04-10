@@ -12,27 +12,8 @@ redirect_from: /blog/page/1
 	</h2>
 	<ol class="post-list">
 		{%- for post in paginator.posts -%}
-		<li class="mdc-card mdc-elevation-transition">
-			{%- if post.image -%}
-			<a class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | relative_url }}" role="img"
-				aria-label="{{post.image_alt}}" style="background-image: url('{{ post.image }}');"></a>
-			{%- endif -%}
-			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-			<a class="mdc-card__primary disable-link-styles" href="{{ post.url | relative_url }}">
-				<div class="post-heading">
-					<h3 class="mdc-typography--headline6">
-						{{ post.title | escape }}
-					</h3>
-					<span class="mdc-typography--subtitle2">{{ post.date | date: date_format }}</span>
-				</div>
-				<div class="post-body mdc-typography--body1">
-					{%- if post.subtitle -%}
-					{{ post.subtitle | strip_html }}
-					{%- else -%}
-					{{ post.excerpt | strip_html | truncatewords: 20 }}
-					{%- endif -%}
-				</div>
-			</a>
+		<li>
+			{% include post-card.html post=post %}
 		</li>
 		{%- endfor -%}
 	</ol>
