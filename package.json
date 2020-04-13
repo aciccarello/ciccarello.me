@@ -1,0 +1,43 @@
+{
+  "name": "ciccarello.me",
+  "version": "1.0.0",
+  "description": "Anthony Ciccarello's personal website",
+  "main": "index.html",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "rm -rf _site && eleventy",
+    "diff": "git diff --no-index _site_previous/ _site/ --ignore-all-space",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aciccarello/ciccarello.me.git"
+  },
+  "keywords": [
+    "website",
+    "eleventy",
+    "blog"
+  ],
+  "author": "Anthony Ciccarello",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/aciccarello/ciccarello.me/issues"
+  },
+  "homepage": "https://www.ciccarello.me",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "lint-staged": "^10.1.3",
+    "markdown-it-anchor": "^5.2.7",
+    "prettier": "^2.0.4"
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {
+    "eleventy": "^1.0.6"
+  }
+}

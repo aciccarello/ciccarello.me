@@ -2,18 +2,23 @@
 title: Blog
 layout: default
 back_button: ..
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 redirect_from: /blog/page/1
+pagination:
+  data: collections.blog
+  size: 15
+  reverse: true
+  alias: posts
 ---
 
 <div class="home container">
-	{%- if site.posts.size > 0 -%}
 	<h2 class="post-list-heading mdc-typography--headline4">
 		{{ page.list_title | default: "Posts" }}
 	</h2>
 	<ol class="post-list">
-		{%- for post in paginator.posts -%}
+		{%- for post in posts -%}
 		<li>
-			{% include post-card.html post=post %}
+			{% include post-card.html post: post %}
 		</li>
 		{%- endfor -%}
 	</ol>
@@ -24,11 +29,11 @@ redirect_from: /blog/page/1
 		</span>
 	</p>
 
-	{% if paginator.total_pages > 1 %}
+	{% if paginator.pages.length > 1 %}
 	<nav role="navigation" aria-label="Pagination Navigation" class="pagination">
 		<ul>
 			<li>
-				{% if paginator.previous_page %}
+				{% if paginator.page.previous %}
 				<a aria-label="Goto previous page" class="mdc-button"
 					href="{{ paginator.previous_page_path | relative_url }}">
 					<span class="material-icons mdc-button__icon" aria-hidden="true">
@@ -51,7 +56,7 @@ redirect_from: /blog/page/1
 				{% endif %}
 			</li>
 
-			{% for page in (1..paginator.total_pages) %}
+			{% for page in paginator.pages %}
 			<li>
 				{% if page == paginator.page %}
 				<span aria-label="Current page, page {{page}}" aria-current="true"
@@ -60,7 +65,7 @@ redirect_from: /blog/page/1
 				</span>
 				{% elsif page == 1 %}
 				<a aria-label="Goto Page {{page}}" class="mdc-button"
-					href=" {{ paginator.previous_page_path | relative_url }}">
+					href=" {{ paginator.href.previous }}">
 					{{ page }}
 				</a>
 				{% else %}
@@ -96,6 +101,5 @@ redirect_from: /blog/page/1
 		</ul>
 	</nav>
 	{% endif %}
-	{%- endif -%}
 
 </div>

@@ -1,9 +1,10 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Migrating an Angular 1 application to @types"
+layout: 'post'
+categories: 'blog'
+title: 'Migrating an Angular 1 application to @types'
 date: 2016-11-16
 tags: technology
+permalink: '/blog/2016/11/16/migrating-angular-1-to-types/'
 image: /assets/img/angular-1-types-thumbnail.jpg
 image_alt: peacock
 image_caption: Photo by [Andre Mouton](https://unsplash.com/@andremouton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -63,8 +64,8 @@ let $state: angular.ui.IStateService;
 Import the types at the beginning of the file
 
 ```typescript
-import { IHttpBackendService } from "angular";
-import { IStateService } from "angular-ui-router";
+import { IHttpBackendService } from 'angular';
+import { IStateService } from 'angular-ui-router';
 ```
 
 ```typescript

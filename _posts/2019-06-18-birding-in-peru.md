@@ -1,9 +1,9 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Birding in Peru"
+layout: 'post'
+categories: 'blog'
+title: 'Birding in Peru'
 date: 2019-06-18
-tags: travel birding
+tags: [travel, birding]
 image: /assets/img/peru-ballestas-islands-rock-face.jpg
 image_alt: Rock face with thousands of birds on the Ballestas Islands
 image_caption: Rock face with thousands of birds on the Ballestas Islands

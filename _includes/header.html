@@ -1,6 +1,5 @@
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
-	{%- assign default_paths = site.pages | map: "path" -%}
-	{%- assign page_paths = site.header_pages | default: default_paths -%}
+	{%- assign page_paths = site.header_pages -%}
 	<div class="mdc-top-app-bar__row">
 		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
 			{% if page.back_button %}

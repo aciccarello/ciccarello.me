@@ -1,9 +1,10 @@
 ---
-layout: "post"
-categories: "blog"
-title: "We Traveled to Italy!"
+layout: 'post'
+categories: 'blog'
+title: 'We Traveled to Italy!'
 date: 2019-11-27
 tags: [travel, Italy]
+permalink: '/blog/2019/11/27/we-traveled-to-italy/'
 image: /assets/img/2019-italy-amalfi-coast-boat-flag.jpg
 image_alt: Italian flag waving on the end of a boat with coastline in background.
 image_caption: View of Amalfi Coast from the ferry - Photo by Bekah Ciccarello

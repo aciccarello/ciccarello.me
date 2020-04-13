@@ -10,4 +10,10 @@ the tool-set is an intentional exercise to help me think more about the layout a
 
 If there is something you would like to see on this site, please open an issue.
 
-To run the project locally, install jekyll and run the `start-dev.sh` script.
+To install the project dependencies, install [Node.js](https://nodejs.org/) and within the project directory run `npm install`.
+
+To run the build with a local build server use the `npm start` command. If you need debugging output run the following.
+
+```bash
+DEBUG=Eleventy* npm start
+```

@@ -1,8 +1,9 @@
 ---
-layout: "post"
-categories: "blog"
-title: "JSConf US 2010: Pushing JavaScript Beyond the Browser"
+layout: 'post'
+categories: 'blog'
+title: 'JSConf US 2010: Pushing JavaScript Beyond the Browser'
 date: 2019-09-30
+permalink: '/blog/2019/09/30/jsconf-us-2019-pushing-javascript-beyond-the-browser/'
 canonical_url: https://www.sitepen.com/blog/jsconf-us-2019-pushing-javascript-beyond-the-browser/
 tags: technology
 image: /assets/img/2019-jsconf-header.png

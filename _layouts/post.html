@@ -18,7 +18,7 @@ layout: default
 	{% endif %}
 	<header class="post-header">
 		<h1 class="post-title p-name mdc-typography--headline3">
-			{{ page.title | escape }}
+			{{ title | escape }}
 		</h1>
 		{%- if page.subtitle -%}
 		<h2 class="post-title p-summary mdc-typography--headline6">
@@ -27,8 +27,7 @@ layout: default
 		{%- endif -%}
 		<p class="post-meta">
 			<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
-				{%- assign date_format = site.minima.date_format | default: "%b
-				%-d, %Y" -%}
+				{%- assign date_format = site.minima.date_format | default: "%b %e, %Y" -%}
 				{{ page.date | date: date_format }}
 			</time>
 			{%- if page.author -%} •
@@ -87,7 +86,7 @@ layout: default
 			<h3 class="mdc-typography--subtitle1">
 				Previous
 			</h3>
-			{% include post-card.html post=page.previous %}
+			{% include post-card.html post: "page.previous" %}
 		</div>
 		{% endif %}
 		{% if page.next %}
@@ -95,7 +94,7 @@ layout: default
 			<h3 class="mdc-typography--subtitle1">
 				Next
 			</h3>
-			{% include post-card.html post=page.next %}
+			{% include post-card.html post: "page.next" %}
 		</div>
 		{% endif %}
 	</ul>
