@@ -6,7 +6,9 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "rm -rf _site && eleventy",
-    "diff": "git diff --no-index _site_previous/ _site/ --ignore-all-space",
+    "diff": "git diff --no-index --ignore-all-space --ignore-blank-lines _site_previous/ _site/",
+    "diff:filenames": "npm run diff -- --name-status",
+    "bd": "npm run build && npm run diff",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Rome is a Work of Art"
+layout: 'post'
+categories: 'blog'
+title: 'Rome is a Work of Art'
 tags: [travel, Italy]
 image: /assets/img/2019-italy-roman-forum.jpg
 image_alt: Multiple, large, old brick buildings with large columns
@@ -13,7 +13,7 @@ Rome is such a massively historic city that I didn't know what to expect when ar
 We arrived by train and took a busy metro to our stop at the Spanish steps. We walked down the stone streets from the [Barcaccia Fountain](https://en.wikipedia.org/wiki/Fontana_della_Barcaccia) to our hotel and piled our suitcases into the tiny, retrofitted elevator to climb up to the fourth floor. However, we arrived an hour early to our late checkin and had to wait 45 minutes for someone to let us into our room. Despite the hassle, the great location was well worth a little waiting.
 
 <aside style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;">
-    This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="{% post_url 2019-11-27-we-traveled-to-italy %}">introductory post</a>.
+    This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="{{ collections.blog | post_url: "2019-11-27-we-traveled-to-italy" }}">introductory post</a>.
 </aside>
 
 ## The sights
@@ -25,9 +25,9 @@ Our hotel was located in the center of the city. In reality, it was more of a la
 With our great location, we were able to see two iconic sights in the early morning before the crowds arrived. We walked back to the Spanish Steps where there were with less than a dozen people. When we passed by later in the afternoon the area was packed. Honestly, the steps seemed overrated. They were somewhat grand in how they were laid out but they weren't that ornate or impressive. Barcaccia Fountain at the base of the steps is nice too but it seems odd that the area is so overwhelmingly popular.
 
 {% include image.html
-    file="/assets/img/2019-italy-trevi-fountain-day.jpg"
-    caption="Trevi Fountain"
-    alt="Marble carved statues forming a fountain behind a pool of water"
+    file: "/assets/img/2019-italy-trevi-fountain-day.jpg"
+    caption: "Trevi Fountain"
+    alt: "Marble carved statues forming a fountain behind a pool of water"
 %}
 
 In contrast, the Trevi Fountain was much more stunning. The fountain spans the length of a large building with sculptures from wall to wall and small falls flowing into a main pool. The story is that if you throw a coin over your left shoulder into the pool, you are guaranteed to return Rome. The money from the coins goes to social programs to help alleviate some of Rome's poverty problems. The fountain is surrounded by several tiers of steps which help provide the crowds with multiple places to get their pictures. When we went in the morning the crowd wasn't too bad and we could relax there. When we returned after dark in the evening there was still a large crowd of people taking pictures under the lights.
@@ -41,9 +41,9 @@ One of the main tourist destinations in Rome is technically its own sovereign na
 We opted for a tour of the Vatican so we could get more information about the different sites. We ended up with probably more information than we could handle. Our tour began with the Vatican Museum. The museum started as the private collections of past popes which were first opened to the public in the 16th century. In fact, you can enter for free once a month if you are willing to wait in line. This means that the museums are packed with people in hallways that were not designed for supporting crowds, making following a tour guide difficult. Our guide quickly pointed out the different collections, where they originated from, and which pope was in power, but we struggled enough physically keeping up with our group through the slowly moving crowds.
 
 {% include image.html
-    file="/assets/img/2019-italy-laocoon-and-his-sons-statue.jpg"
-    caption="People gathered around \"[Laocoon and His Sons](https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons)\" statue which dates to at least 70 AD"
-    alt="People looking at a stone statue of a man and his two sons struggling against sea snakes"
+    file: "/assets/img/2019-italy-laocoon-and-his-sons-statue.jpg"
+    caption: "People gathered around “[Laocoon and His Sons](https://en.wikipedia.org/wiki/Laoco%C3%B6n_and_His_Sons)” statue which dates to at least 70 AD"
+    alt: "People looking at a stone statue of a man and his two sons struggling against sea snakes"
 %}
 
 The collection is immense and we only saw a portion. There are artworks of different mediums; from statues, to frescos, to mosaics, to tapestries, to paintings. Because of the power and prestige of the popes, many famous artists across the centuries have either been commissioned to create works or have given art as gifts to the Church. It was both amazing to see so many historic pieces like the "School of Athens" (below) but also depressing to see them in a place so uncomfortable to walk through. The buildings themselves are works of art too and the tour brought us past some very iconic pieces of artwork. I felt like I was furiously trying to take pictures rather than enjoy the art.
@@ -51,9 +51,9 @@ The collection is immense and we only saw a portion. There are artworks of diffe
 Most of the rooms of the museum have a unifying theme for the art. One room has sculptures of animals, a kind of stone taxidermy. A long gallery contains mostly tapestries depicting biblical stories. Another hall contains maps of all the major city-states of Italy at the time. Many of Raphael's frescos, like the one below, are in a part of the museum which was intended to be living spaces for the Pope. As we neared the end of the museum, we entered galleries of more modern pieces such as those by Salvador Dali. After seeing centuries-old artwork against ornate architecture, the stripped-down modern gallery made me realize how much art we had just witnessed.
 
 {% include image.html
-    file="/assets/img/2019-italy-school-of-athens-fresco.jpg"
-    caption="The famous \"[School of Athens](https://en.wikipedia.org/wiki/The_School_of_Athens)\" fresco by Raphael"
-    alt="Painting on ceiling depicting men in a public square"
+    file: "/assets/img/2019-italy-school-of-athens-fresco.jpg"
+    caption: "The famous “[School of Athens](https://en.wikipedia.org/wiki/The_School_of_Athens)” fresco by Raphael"
+    alt: "Painting on ceiling depicting men in a public square"
 %}
 
 From the museums, we were allowed to enter the [Sistien Chapel](https://en.wikipedia.org/wiki/Sistine_Chapel). Our guide had explained the artwork at the beginning of the tour because inside the chapel you must be silent and not take a picture. Unfortunately, many people disregard this and the guards end up yelling at many people which takes away from the sacredness of the space. The three-story-tall chapel is built to the dimensions of the Jewish tabernacle and separated into two sections. Originally Michelangelo had turned down the commission to paint the ceiling because he was primarily a sculptor. However, after being offered more artistic freedom, he agreed to paint the now-famous fresco. I was surprised to find that there weren't seats inside the chapel during the tour time. We stood in the center of the room looking at the frescos done by Michaelangelo and the popes and bible scenes painted by his contemporaries on the upper parts of the wall. It was an amazing piece of art history to admire even when under less than ideal conditions.
@@ -61,10 +61,10 @@ From the museums, we were allowed to enter the [Sistien Chapel](https://en.wikip
 After the Sistein Chapel, we passed outside through St. Peters Square to my favorite part of the Vatican: [St. Peter's Basilica](https://en.wikipedia.org/wiki/St._Peter%27s_Basilica). The basilica embodies the power of the Catholic Church, and the unique relationship the church has with its followers. This Basilica was partially funded by the selling of "Indulgences" which helped lead to the protestant reformation; so for many it also represents the failures of the catholic church. This enormous church is beautifully decorated, from floor to ceiling. There are statues of apostles and popes made with different kinds of stone or metal and gold leaf is used just about everywhere you look. Due to the less than ideal conditions in the church, many of the paintings have been replaced by mosaics of the originals. Like many of the Catholic churches we entered, there are quite a few people buried in the basilica including multiple popes. Allegedly St. Peter's body forms the metaphorical foundation of the church by resting under where the altar now stands.
 
 {% include image.html
-    file="/assets/img/2019-italy-st-peters-basilica.jpg"
-    caption="Inside St. Peter's Basilica"
-    alt="Inside of massive stone church with gold accents on arched roof and a windowed dome over a black platform"
-    display="wide"
+    file: "/assets/img/2019-italy-st-peters-basilica.jpg"
+    caption: "Inside St. Peter's Basilica"
+    alt: "Inside of massive stone church with gold accents on arched roof and a windowed dome over a black platform"
+    display: "wide"
 %}
 
 ### Colosseum & Roman Forum
@@ -72,18 +72,18 @@ After the Sistein Chapel, we passed outside through St. Peters Square to my favo
 Towards the end of our time in Rome, we met up with my family and took a guided tour of the Colosseum and the area around it. I was fascinated with how the Colosseum was built and the history of how the materials were reused (mostly for churches). The arched construction allowed for the building to reach as tall as it does and originally it was partially covered with a beam and canvas roof. It was helpful to have a guide to explain how the ruins would have looked millennia ago. With that description and the museum displays that are found on the upper level, I was able to understand much better what we were looking at.
 
 {% include image.html
-    file="/assets/img/2019-italy-colosseum-outside.jpg"
-    caption="The better-preserved side of the Colosseum"
-    alt="Curved outside wall of the ancient Colosseum sports arena with multiple levels of arches"
+    file: "/assets/img/2019-italy-colosseum-outside.jpg"
+    caption: "The better-preserved side of the Colosseum"
+    alt: "Curved outside wall of the ancient Colosseum sports arena with multiple levels of arches"
 %}
 
 The Colosseum was a free entertainment center designed to appease the citizens of the city and demonstrate the might of the emperor. From the outside, it was very imposing. I could only imagine how much better it would have looked when it still had all of its decorative layers. Inside, I was actually surprised by how small the stage was and close to the ground the most important spectators sat. While a small area is now covered with a wooden stage similar to what would have existed, the majority of the rooms below the stage are exposed. These rooms would have held people, animals, and stage props for the events and could raise them to the surface using an elevator system. What is wildest to me is that they sometimes would flood the stage and recreate sea battles.
 
 {% include image.html
-    file="/assets/img/2019-italy-arch-of-constantine.jpg"
-    caption="[The Arch of Constantine](https://en.wikipedia.org/wiki/Arch_of_Constantine)"
-    alt="Large, freestanding, memorial, stone arch"
-    display="float"
+    file: "/assets/img/2019-italy-arch-of-constantine.jpg"
+    caption: "[The Arch of Constantine](https://en.wikipedia.org/wiki/Arch_of_Constantine)"
+    alt: "Large, freestanding, memorial, stone arch"
+    display: "float"
 %}
 
 From the Colosseum, we worked our way to Palentine Hill. This was the area where Rome's supreme leaders built up massive palaces. Now all that is left are the foundations but it was crazy to see how large some of the buildings were. It was helpful to have a guide to explain which areas were from which Emperors because the area is fairly overgrown. Our guide pointed out the yard where private sporting events were sometimes held and some remnants of mosaic on the ground. With each new emperor, bigger and bigger palaces were built but so little of their symbols of personal wealth remain.
@@ -97,10 +97,10 @@ Roman basilica originally served as meeting places, courthouses, and other gover
 The forum is a must-see for anyone visiting historic Rome. The volume of ruins is really impressive, even if most of them are barely recognizable. To me, it was a great way to experience the might of ancient Rome.
 
 {% include image.html
-    file="/assets/img/2019-italy-riverside-walk.jpg"
-    caption="My wife Bekah walking along the Tiber River"
-    alt="Woman walking down a sidewalk with tree branches stretching overhead towards the river down below"
-    display="float"
+    file: "/assets/img/2019-italy-riverside-walk.jpg"
+    caption: "My wife Bekah walking along the Tiber River"
+    alt: "Woman walking down a sidewalk with tree branches stretching overhead towards the river down below"
+    display: "float"
 %}
 
 ## Food
@@ -116,8 +116,8 @@ We also first met up with my family in a restaurant outside of the city. We walk
 I can't emphasize enough how impressive the history of Rome is to someone who grew up in America. Many of the things we saw are more than 5 times as old as the earliest European settlements in New England where I was raised. I don't want to over-romanticize the city. In places it is dirty, streets can be chaotic, there are plenty of buildings in disrepair, and corruption is a real threat to politics. However, I am grateful that much of the city's history has been preserved for the world to see. If you are in Italy for the first time, don't miss the chance to see this work of art.
 
 {% include image.html
-    file="/assets/img/2019-italy-trevi-fountain-night.jpg"
-    caption="Nighttime view of the Trevi Fountain at night"
-    alt="Marble carved statues forming a fountain behind a pool of water lit up in the nighttime"
-    display="wide"
+    file: "/assets/img/2019-italy-trevi-fountain-night.jpg"
+    caption: "Nighttime view of the Trevi Fountain at night"
+    alt: "Marble carved statues forming a fountain behind a pool of water lit up in the nighttime"
+    display: "wide"
 %}

@@ -1,15 +1,14 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Automate Mojave Dark mode configuration"
+layout: 'post'
+categories: 'blog'
+title: 'Automate Mojave Dark mode configuration'
 date: 2018-09-25
 tags: technology
 image: /assets/img/imac-dark-mode-thumbnail.jpg
 image_alt: Mac computer with dark desktop theme
 ---
 
-If you like to [automate your macOS configuration](https://kalis.me/dotfiles-
-automating-macos-system-configuration/) via bash scripts and have recently
+If you like to [automate your macOS configuration](https://kalis.me/dotfiles-automating-macos-system-configuration/) via bash scripts and have recently
 setup Mojave, you may be wondering how to enable dark mode, the configuration
 is called "AppleInterfaceStyle" and can be set using the following command.
 

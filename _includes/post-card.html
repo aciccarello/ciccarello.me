@@ -8,15 +8,13 @@
 			<h3 class="mdc-typography--headline6">
 				{{ post.data.title | escape }}
 			</h3>
-			<span class="mdc-typography--subtitle2">{{ post.date.toUTCString() | date: "%b %e, %Y" }}</span>
+			<span class="mdc-typography--subtitle2">{{ post.date | fromUTC | date: "%b %e, %Y" }}</span>
 		</div>
 		<div class="post-body mdc-typography--body1">
 			{%- if post.data.subtitle -%}
 			{{ post.data.subtitle | strip_html }}
-			{%- else if post.data.page.excerpt -%}
-			{{ post.data.page.excerpt | strip_html | truncatewords: 20 }}
 			{%- else -%}
-			{{ post.data.content | strip_html | truncatewords: 20 }}
+			{{ post.templateContent | strip_html | joinLines | truncatewords: 20 }}
 			{%- endif -%}
 		</div>
 	</a>

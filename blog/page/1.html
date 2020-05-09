@@ -1,14 +1,14 @@
 ---
-permalink: "/blog/page/1.html"
+permalink: "/blog/page/1/"
 ---
 <!DOCTYPE html>
 <html lang="en-US">
   <meta charset="utf-8">
   <title>Redirecting&hellip;</title>
-  <link rel="canonical" href="/blog/">
-  <script>location="/blog/"</script>
-  <meta http-equiv="refresh" content="0; url=/blog/">
+  <link rel="canonical" href="{{ "/blog/" | addBaseUrl }}">
+  <script>location="{{ "/blog/" | addBaseUrl }}"</script>
+  <meta http-equiv="refresh" content="0; url={{ "/blog/" | addBaseUrl }}">
   <meta name="robots" content="noindex">
   <h1>Redirecting&hellip;</h1>
-  <a href="/blog/">Click here if you are not redirected.</a>
+  <a href="{{ "/blog/" | addBaseUrl }}">Click here if you are not redirected.</a>
 </html>

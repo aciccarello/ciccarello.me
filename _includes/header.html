@@ -2,8 +2,8 @@
 	{%- assign page_paths = site.header_pages -%}
 	<div class="mdc-top-app-bar__row">
 		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-			{% if page.back_button %}
-			<a href="{{ page.back_button }}" class="mdc-top-app-bar__navigation-icon mdc-icon-button"
+			{% if back_button %}
+			<a href="{{ back_button }}" class="mdc-top-app-bar__navigation-icon mdc-icon-button"
 				aria-label="Back button">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 					<path d="M0 0h24v24H0z" fill="none" />
@@ -22,7 +22,7 @@
 				<span class="socicon-twitter" aria-hidden="true"></span>
 			</a>
 			<a href="mailto:anthony@ciccarello.me" rel="me" class="mdc-top-app-bar__navigation-icon mdc-icon-button
-			{% if page.back_button %}
+			{% if back_button %}
 			hide-xs
 			{% endif %}
 			" aria-label="Email">

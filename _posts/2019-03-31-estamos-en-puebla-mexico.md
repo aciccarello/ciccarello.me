@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Estamos en Puebla, México"
+layout: 'post'
+categories: 'blog'
+title: 'Estamos en Puebla, México'
 date: 2019-03-31
 tags: travel
 image: /assets/img/puebla-baroque-museum-sign.jpg
@@ -10,8 +10,7 @@ image_caption: Photo from our trip to [The International Baroque Museum](http://
 ---
 
 Back in February, my wife Bekah and I packed up our things and left the United
-States for Puebla, Mexico. We [left Colorado last
-year]({% post_url 2019-01-29-what-i-am-grateful-for-from-2018 %}) after I began working remotely and my wife began
+States for Puebla, Mexico. We [left Colorado last year]({{ "/blog/2019/01/29/what-i-am-grateful-for-from-2018/" | url }}) after I began working remotely and my wife began
 working on her online master's degree full time. But with no job holding us to
 a location, we saw an opportunity to spend a few months traveling in Latin
 America.
@@ -33,9 +32,9 @@ how we could make an extended trip to some Spanish speaking countries. Several
 months later, here we are.
 
 {% include image.html
-    file="/assets/img/puebla-letter-board-announcement.jpg"
-    alt="black letter board with white letters reading 'Hasta luego estados unidos, hola mexico y peru' with plants around it"
-    caption="The plants we left behind  -  [Photo by Bekah](https://www.instagram.com/p/BtT3LVvHNmK/)"
+    file: "/assets/img/puebla-letter-board-announcement.jpg"
+    alt: "black letter board with white letters reading 'Hasta luego estados unidos, hola mexico y peru' with plants around it"
+    caption: "The plants we left behind  -  [Photo by Bekah](https://www.instagram.com/p/BtT3LVvHNmK/)"
 %}
 
 We looked at many different locations for where we would travel first. We knew
@@ -60,20 +59,17 @@ inflated and we are forced to use Spanish much more. There's a lot to like.
 ### What's in Puebla?
 
 {% include image.html
-    file="/assets/img/puebla-pyramid-flowers.jpg"
-    alt="hillside with a section of a tiered pyramid exposed, red flowers in the foreground"
-    caption="A restored section of the pyramid in nearby Cholula"
-    display="float"
+    file: "/assets/img/puebla-pyramid-flowers.jpg"
+    alt: "hillside with a section of a tiered pyramid exposed, red flowers in the foreground"
+    caption: "A restored section of the pyramid in nearby Cholula"
+    display: "float"
 %}
 
 Puebla has a rich history as a colonial era city on the route from Mexico City
 to the coast of Veracruz. All across the city are hundreds of Catholic
-churches, some of which are extremely ornate. It holds the [oldest public
-library](https://www.wmf.org/project/palafoxiana-library) in the Americas. The
-holiday of Cinco de Mayo celebrates the [defeat of the French
-army](https://en.wikipedia.org/wiki/Battle_of_Puebla) in Puebla. Nearby is the
-indigenous city of Cholula which has the [largest pyramid in the
-world](https://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula)(now topped with
+churches, some of which are extremely ornate. It holds the [oldest public library](https://www.wmf.org/project/palafoxiana-library) in the Americas. The
+holiday of Cinco de Mayo celebrates the [defeat of the French army](https://en.wikipedia.org/wiki/Battle_of_Puebla) in Puebla. Nearby is the
+indigenous city of Cholula which has the [largest pyramid in the world](https://en.wikipedia.org/wiki/Great_Pyramid_of_Cholula)(now topped with
 a Spanish church).
 
 Puebla is known for many great foods such as Mole Poblano, a chocolate and
@@ -83,20 +79,16 @@ tacos from the many street vendors and trying different fruits from the local
 market.
 
 Between Puebla and Mexico City sits one of the largest active volcanoes in
-Mexico. Since we've been here, there have been several [significant
-eruptions](https://news.sky.com/story/mexico-on-alert-after-popocatepetl-
-volcano-spews-ash-near-capital-11677848), and we frequently can clearly see a
+Mexico. Since we've been here, there have been several [significant eruptions](https://news.sky.com/story/mexico-on-alert-after-popocatepetl-volcano-spews-ash-near-capital-11677848), and we frequently can clearly see a
 large plume of water vapor rising from the peak of
 [Popocatepetl](https://en.wikipedia.org/wiki/Popocat%C3%A9petl) . But just a
-few blocks from us is an extinct volcanic vent that's considered "[the world's
-smallest volcano](http://www.aroundthisworld.com/cuexcomate-smallest-volcano-
-world-puebla-mexico/)". The 75 foot diameter "volcano" has a staircase so you
+few blocks from us is an extinct volcanic vent that's considered "[the world's smallest volcano](http://www.aroundthisworld.com/cuexcomate-smallest-volcano-world-puebla-mexico/)". The 75 foot diameter "volcano" has a staircase so you
 can walk down into the crater.
 
 {% include image.html
-    file="/assets/img/puebla-cuexcomate-sign.jpg"
-    alt="Colorful letters mounted to the ground spelling Cuexcomate with a rocky mound about 30 feet tall in the background with stairs to the top"
-    caption="Our friendly neighborhood volcano"
+    file: "/assets/img/puebla-cuexcomate-sign.jpg"
+    alt: "Colorful letters mounted to the ground spelling Cuexcomate with a rocky mound about 30 feet tall in the background with stairs to the top"
+    caption: "Our friendly neighborhood volcano"
 %}
 
 ### What have we been up to?
@@ -107,10 +99,10 @@ However, our main goal is to learn Spanish so our tutor comes to our house
 several times a week to teach us.
 
 {% include image.html
-    file="/assets/img/puebla-estrella.jpg"
-    alt="view from ferris wheel ride looking out at buildings 2 to 6 stories tall with trees interspersed between"
-    caption="View of the city from La Estrella de Puebla"
-    display="float"
+    file: "/assets/img/puebla-estrella.jpg"
+    alt: "view from ferris wheel ride looking out at buildings 2 to 6 stories tall with trees interspersed between"
+    caption: "View of the city from La Estrella de Puebla"
+    display: "float"
 %}
 
 When we can, we head out into the city to explore new areas. We don't have a
@@ -119,8 +111,7 @@ went downtown and visited the Zocalo, or main city square, and wandered around
 between the shops, chapels, and restaurants. Another weekend we visited the
 [The International Baroque Museum](http://mib.puebla.gob.mx/en/) and learned
 about the history behind many of the paintings that hang in the many local
-catholic chapels before checking out the view of the city from [La Estrella de
-Puebla](https://www.instagram.com/laestrelladepuebla/), a large ferris wheel.
+catholic chapels before checking out the view of the city from [La Estrella de Puebla](https://www.instagram.com/laestrelladepuebla/), a large ferris wheel.
 We've also gone to the nearby towns of Cholula and Atlixco, each of which have
 their own attractions and unique culture.
 
@@ -133,9 +124,9 @@ it was a unique experience and a chance to really test how far our spanish
 skills had come.
 
 {% include image.html
-    file="/assets/img/puebla-cuetzalan-waterfalls.jpg"
-    alt="jungle scene with a short waterfall falling in three parts over a rocky ledge"
-    caption="Waterfalls in Cuetzalan"
+    file: "/assets/img/puebla-cuetzalan-waterfalls.jpg"
+    alt: "jungle scene with a short waterfall falling in three parts over a rocky ledge"
+    caption: "Waterfalls in Cuetzalan"
 %}
 
 We are loving getting to know the culture of Puebla more each week. Our
@@ -152,9 +143,9 @@ linguistically, and spiritually. Bekah and I have been so grateful to have met
 them as they have greatly enriched out time here.
 
 {% include image.html
-    file="/assets/img/puebla-fort-loreto.jpg"
-    alt="6 young people, 4 mexican, 2 white taking a selfie in front of a white building with a decorated entryway"
-    caption="With our friends at Fort Loreto  -  [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
+    file: "/assets/img/puebla-fort-loreto.jpg"
+    alt: "6 young people, 4 mexican, 2 white taking a selfie in front of a white building with a decorated entryway"
+    caption: "With our friends at Fort Loreto  -  [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
 %}
 
 ### What's Our Plan?
@@ -168,8 +159,7 @@ see our dog or access our things; so even in the US, we'll be traveling with
 our suitcases, including a 4 hour Amtrak train ride.
 
 After a week with family, we'll be leaving the US again for Peru. We will be
-staying with my cousin and his wife who are a [missionaries in
-Lima](https://give.wol.org/location/peru). I'm looking forward to spending
+staying with my cousin and his wife who are a [missionaries in Lima](https://give.wol.org/location/peru). I'm looking forward to spending
 time with him and his family and checking out the work they are doing there.
 I'll still be working, but we are hoping to find some time to visit Machu
 Picchu and continue taking spanish lessons.
@@ -181,9 +171,9 @@ time. If you know of a great city for us to visit and learn spanish, please
 let us know!
 
 {% include image.html
-    file="/assets/img/puebla-cholula-chapel.jpg"
-    alt="looking up at an ornately decorated yellow chapel with a sign reading 'santuario de la virgen de los remedios cholula puebla'"
-    caption="Chapel atop the pyramid of Cholula"
+    file: "/assets/img/puebla-cholula-chapel.jpg"
+    alt: "looking up at an ornately decorated yellow chapel with a sign reading 'santuario de la virgen de los remedios cholula puebla'"
+    caption: "Chapel atop the pyramid of Cholula"
 %}
 
 ### Will you ever return?
@@ -203,8 +193,8 @@ leave behind. Please keep up with us on
 want to know more about how we are doing.
 
 {% include image.html
-    file="/assets/img/puebla-fort-sign.jpg"
-    alt="Colorful letters mounted to the ground spelling puebla with a couple sitting on the base"
-    caption="Bekah and me in front of the Puebla sign near Fort Loreto  -  [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
-    display="wide"
+    file: "/assets/img/puebla-fort-sign.jpg"
+    alt: "Colorful letters mounted to the ground spelling puebla with a couple sitting on the base"
+    caption: "Bekah and me in front of the Puebla sign near Fort Loreto  -  [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
+    display: "wide"
 %}

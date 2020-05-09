@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Moving Forward"
+layout: 'post'
+categories: 'blog'
+title: 'Moving Forward'
 date: 2016-08-12
 image: /assets/img/crosspurpose-live-different.jpg
 image_alt: a logo, the words "crosspurpose" and "live different" on top of an image of a person using carpentry hand tools
@@ -22,9 +22,9 @@ the church programs and the actions of the church members are an expression of
 love to those around the church.
 
 {% include image.html
-    file="/assets/img/wedding-walking-outside.jpg"
-    alt="Couple on wedding day walking outside with flowers, faces obscured, wall of church in background"
-    caption="Walking around the church on our wedding day"
+    file: "/assets/img/wedding-walking-outside.jpg"
+    alt: "Couple on wedding day walking outside with flowers, faces obscured, wall of church in background"
+    caption: "Walking around the church on our wedding day"
 %}
 
 Two years around these examples have shaped the way I view people whom I would
@@ -114,8 +114,7 @@ to grow in our understanding of how to use relationships to bless others.
 > Expensive love means messy relationships, hard words, and invading personal
 > space with intentionality. What is expensive love? It's the picture of Christ
 > on the cross: "Greater love has no one than this; that he lay down his life
-> for his friends." -- [CrossPurpose Values](http://crosspurpose.org/about/our-
-> values/)
+> for his friends." -- [CrossPurpose Values](http://crosspurpose.org/about/our-values/)
 
 We know that the next two years will be challenging but we also know that God
 will use those challenges to teach us and help us grow as followers of Him.

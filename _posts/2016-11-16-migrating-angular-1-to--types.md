@@ -12,8 +12,7 @@ image_caption: Photo by [Andre Mouton](https://unsplash.com/@andremouton?utm_sou
 
 I upgraded an application at work to use @types instead of Typings today.
 Unfortunately I had trouble finding information on the differences between the
-two systems. Many things that were supposed to " [work with no
-change](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/10154#issuecomment-233519904)"
+two systems. Many things that were supposed to " [work with no change](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/10154#issuecomment-233519904)"
 didn't seem to be but eventually I was able to please the TypeScript compiler.
 Since information online seemed to be lacking I thought I'd jot down a few
 quick notes on what I learned.
@@ -35,13 +34,11 @@ import * as angular from 'angular';
 
 #### Libraries can mess with the global types
 
-Our project is using a library called [ng-metadata](https://github.com/ngParty
-/ng-metadata) to allow writing our Angular 1 application in a style in line
+Our project is using a library called [ng-metadata](https://github.com/ngParty/ng-metadata) to allow writing our Angular 1 application in a style in line
 with Angular 2. This has made our development much easier. Because the project
 depended on the Angular 1 typings, the type definitions from @types conflicted
 with the library. Thankfully, ng-metadata had already
-[fixed](https://github.com/ngParty/ng-
-metadata/commit/3eb047d6456ba12134d48701a212334ad8b81b7e) the issue, however I
+[fixed](https://github.com/ngParty/ng-metadata/commit/3eb047d6456ba12134d48701a212334ad8b81b7e) the issue, however I
 didn't realize that some of the compilation errors were due to the library. It
 wasn't until I updated ng-metadata that 3/4 of the compilation errors went
 away.

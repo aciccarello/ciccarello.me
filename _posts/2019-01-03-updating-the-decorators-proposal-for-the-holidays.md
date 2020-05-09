@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Updating the Decorators Proposal for the Holidays"
+layout: 'post'
+categories: 'blog'
+title: 'Updating the Decorators Proposal for the Holidays'
 date: 2019-01-03
 tags: technology
 canonical_url: https://www.sitepen.com/blog/2019/01/03/updating-the-decorators-proposal-for-the-holidays/
@@ -63,5 +63,4 @@ Decorators](https://www.sitepen.com/blog/2015/10/20/typescript-decorators/)
 blog post describing the original decorators proposal.
 
 **To see what changes are coming to the decorators proposal, check out my
-full post on the <cite>[SitePen  blog](https://www.sitepen.com/blog/2019/01/03
-/updating-the-decorators-proposal-for-the-holidays/)</cite>**
+full post on the <cite><a href="https://www.sitepen.com/blog/2019/01/03/updating-the-decorators-proposal-for-the-holidays/">SitePen blog</a></cite>**

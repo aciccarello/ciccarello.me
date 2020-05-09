@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Getting An Introduction to Africa"
+layout: 'post'
+categories: 'blog'
+title: 'Getting An Introduction to Africa'
 subtitle: Detour to Senegal
 date: 2015-07-24
 canonical_url: http://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html
@@ -40,10 +40,10 @@ unexpected bad weather had caused a crack in the windshield of the airplane
 and the Dakar airport was better prepared to make the repairs.
 
 {% include image.html
-    file="/assets/img/senegal-leaving-airport.jpg"
-    alt="Crowd of people in a parking lot with lots of luggage with a white bus"
-    caption="Waiting outside the airport for a bus to the hotel"
-    display="float"
+    file: "/assets/img/senegal-leaving-airport.jpg"
+    alt: "Crowd of people in a parking lot with lots of luggage with a white bus"
+    caption: "Waiting outside the airport for a bus to the hotel"
+    display: "float"
 %}
 
 We followed the mass of other displaced travelers out of the airport to where
@@ -63,9 +63,9 @@ English, and more social/open people than Mitrovica, Kosovo. It was great to
 explore this new world.
 
 {% include image.html
-    file="/assets/img/senegal-hotel-night.jpg"
-    alt="View of a pool surrounded by palm trees at night"
-    caption="Nighttime view from our hotel room overlooking the ocean and pool"
+    file: "/assets/img/senegal-hotel-night.jpg"
+    alt: "View of a pool surrounded by palm trees at night"
+    caption: "Nighttime view from our hotel room overlooking the ocean and pool"
 %}
 
 As we arrived at the hotel, we were pleasantly surprised to find our temporary
@@ -74,9 +74,9 @@ all provided by Brussels Airlines. After so much traveling, it was a blessing
 to be able to relax (and take a shower).
 
 {% include image.html
-    file="/assets/img/senegal-hotel-day.jpg"
-    alt="View of the ocean and a pool surrounded by palm trees from a hotel balcony"
-    caption="Daytime view from hotel"
+    file: "/assets/img/senegal-hotel-day.jpg"
+    alt: "View of the ocean and a pool surrounded by palm trees from a hotel balcony"
+    caption: "Daytime view from hotel"
 %}
 
 Things are still up in the air for our real final flight to Liberia but for
@@ -86,6 +86,6 @@ Sunday meaning we will be in Senegal another day.
 
 ---
 
-<cite>
-_Originally published at [liveloveliberia.blogspot.com](http://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html) on August 25, 2015._
-</cite>
+<p><cite>
+<em>Originally published at <a href="http://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html">liveloveliberia.blogspot.com</a> on August 25, 2015.</em>
+</cite></p>

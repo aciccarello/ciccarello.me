@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "The First Year"
+layout: 'post'
+categories: 'blog'
+title: 'The First Year'
 date: 2016-02-14
 tags: marriage
 image: /assets/img/wedding-dance-bw.jpg
@@ -53,10 +53,10 @@ deepen our relationship.
 #### The Marriage Begins
 
 {% include image.html
-    file="/assets/img/honeymoon-dolphin.jpg"
-    alt="woman in life vest being 'kissed' by a dolphin"
-    caption="Enjoying our honeymoon in Cancun"
-    display="float"
+    file: "/assets/img/honeymoon-dolphin.jpg"
+    alt: "woman in life vest being 'kissed' by a dolphin"
+    caption: "Enjoying our honeymoon in Cancun"
+    display: "float"
 %}
 
 Our wedding was a wonderful day. It was fantastic to share our lives with our
@@ -116,14 +116,14 @@ virus was still shutting down much of the country, we started trying to plan a
 trip to visit that orphanage.
 
 {% include image.html
-    file="/assets/img/liberia-girls-playing.gif"
-    alt="african girls playing with a ball in a small yard"
-    caption="The girls at the orphanage playing games"
+    file: "/assets/img/liberia-girls-playing.gif"
+    alt: "african girls playing with a ball in a small yard"
+    caption: "The girls at the orphanage playing games"
 %}
 
 Through the support of many people, Bekah, her parents, and I were able to
 travel to Liberia this past summer. I'll spare most of the details (since I've
-written about that [elsewhere]({% post_url 2015-08-15-an-overview-of-our-trip %})) but being able to spend over a week with people like
+written about that [elsewhere]({{ collections.blog | post_url: "2015-08-15-an-overview-of-our-trip" }})) but being able to spend over a week with people like
 Remington, Ma and Pa Jonah, and the children at the orphanage was one of the
 best things that happened this year. I was able to get to know the people that
 Bekah had missed so badly. Many thanks to the people who supported us in this
@@ -140,10 +140,10 @@ golden-black lab mix. When that puppy failed out of the system we tried to
 adopt the puppy it but another family took her in permanently before we could.
 
 {% include image.html
-    file="/assets/img/springfield-bekah-bailey-autumn.jpg"
-    alt="Woman and golden retriever on a house portch with autmn decorations all around"
-    caption="Bekah and Bailey enjoying autumn"
-    display="float"
+    file: "/assets/img/springfield-bekah-bailey-autumn.jpg"
+    alt: "Woman and golden retriever on a house portch with autmn decorations all around"
+    caption: "Bekah and Bailey enjoying autumn"
+    display: "float"
 %}
 
 Following that disappointment, I was hesitant to look for another dog because

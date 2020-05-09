@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "An Overview of Our Trip"
+layout: 'post'
+categories: 'blog'
+title: 'An Overview of Our Trip'
 canonical_url: http://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html
 date: 2015-08-15
 tags: travel
@@ -24,7 +24,7 @@ tell you more after we have had time to write.
 
 ### Senegal
 
-As stated in our [one post]({% post_url 2015-07-24-getting-an-introduction-to-africa %}) made during the trip, on our flight from
+As stated in our [one post]({{ collections.blog | post_url: "2015-07-24-getting-an-introduction-to-africa" }}) made during the trip, on our flight from
 Brussels to Monrovia, one of the layers of our airplane developed a crack and
 our flight had to be diverted to Dakar, Senegal where repairs could be made.
 We were eventually transported to a hotel where we spent two days mostly just
@@ -42,15 +42,15 @@ dark by the time we arrived. His wife Wintee treated us to a meal as we caught
 up with them.
 
 {% include image.html
-    file="/assets/img/liberia-lcim-church.jpg"
-    alt="dirt yard with a tree and a manual water pump and a brightly colored building in the background"
-    caption="View from Emmanuel's house. LCMI church in the background"
+    file: "/assets/img/liberia-lcim-church.jpg"
+    alt: "dirt yard with a tree and a manual water pump and a brightly colored building in the background"
+    caption: "View from Emmanuel's house. LCMI church in the background"
 %}
 
 {% include image.html
-    file="/assets/img/liberia-inside-lcim-church.jpg"
-    alt="cement building with green walls and atar in front"
-    caption="Inside LCMI Church"
+    file: "/assets/img/liberia-inside-lcim-church.jpg"
+    alt: "cement building with green walls and atar in front"
+    caption: "Inside LCMI Church"
 %}
 
 The next day was the celebration of Liberia's independence day and we were not
@@ -59,9 +59,9 @@ checked out LCMI Church and the local ministry. Emmanuel also took Paul,
 Margaret, and I around to meet some members of the church and pray with them.
 
 {% include image.html
-    file="/assets/img/liberia-broken-van.jpg"
-    alt="van with its hood opened with 7 people standing and looking"
-    caption="Waiting for the van to cool down after it overheated"
+    file: "/assets/img/liberia-broken-van.jpg"
+    alt: "van with its hood opened with 7 people standing and looking"
+    caption: "Waiting for the van to cool down after it overheated"
 %}
 
 Tuesday we arranged transportation part way to Yekepa and headed out passing
@@ -78,9 +78,9 @@ upcoming days.
 ### Time at the Orphanage
 
 {% include image.html
-    file="/assets/img/liberia-sorting-donations.jpg"
-    alt="room with toys and other donations laid across tables and couches with open suitcases on the floor and two people organizing the items"
-    caption="Sorting through the donations"
+    file: "/assets/img/liberia-sorting-donations.jpg"
+    alt: "room with toys and other donations laid across tables and couches with open suitcases on the floor and two people organizing the items"
+    caption: "Sorting through the donations"
 %}
 
 When we had all gotten some rest, we started by going through all of the
@@ -91,15 +91,15 @@ Remmington took us for a tour of the town as little children followed us
 for the first time.
 
 {% include image.html
-    file="/assets/img/liberia-camp-4-kids.jpg"
-    alt="african children of different ages on a dirt road in front of a house with two motorcycle tires for games"
-    caption="Children in Camp Four"
+    file: "/assets/img/liberia-camp-4-kids.jpg"
+    alt: "african children of different ages on a dirt road in front of a house with two motorcycle tires for games"
+    caption: "Children in Camp Four"
 %}
 
 {% include image.html
-    file="/assets/img/liberia-remington-anthony-motorcycle.jpg"
-    alt="African man on seat of motorcycle with a white man on the back ready to drive off"
-    caption="Remington and I traveling to the orphanage"
+    file: "/assets/img/liberia-remington-anthony-motorcycle.jpg"
+    alt: "African man on seat of motorcycle with a white man on the back ready to drive off"
+    caption: "Remington and I traveling to the orphanage"
 %}
 
 Each of the following days followed a similar format, spend some time
@@ -117,22 +117,22 @@ orphanage to a larger town where we bought mattresses and clothes for the
 children.
 
 {% include image.html
-    file="/assets/img/liberia-new-yekepa-church.jpg"
-    alt="inside a mud brick building with about 15 adults in colorful dress and 10 kids standing next to wooden benches"
-    caption="The new church in Yekepa"
+    file: "/assets/img/liberia-new-yekepa-church.jpg"
+    alt: "inside a mud brick building with about 15 adults in colorful dress and 10 kids standing next to wooden benches"
+    caption: "The new church in Yekepa"
 %}
 
 {% include image.html
-    file="/assets/img/liberia-mattresses.jpg"
-    alt="short yellow car with 3 men strapping about 15 mattresses to the top of the car"
-    caption="Transporting our mattresses"
+    file: "/assets/img/liberia-mattresses.jpg"
+    alt: "short yellow car with 3 men strapping about 15 mattresses to the top of the car"
+    caption: "Transporting our mattresses"
 %}
 
 {% include image.html
-    file="/assets/img/liberia-girls-cake.jpg"
-    alt="9 girls with a bake pan of cake with white icing"
-    caption="Girls and their funfetti cake"
-    display="float"
+    file: "/assets/img/liberia-girls-cake.jpg"
+    alt: "9 girls with a bake pan of cake with white icing"
+    caption: "Girls and their funfetti cake"
+    display: "float"
 %}
 
 On Sunday, we went to Redeemer Baptist Church, where Anthony Jonah is one of
@@ -147,9 +147,9 @@ ultimate frisbee, wrote letters, made milk candy, and spent time with the
 children in their dorms.
 
 {% include image.html
-    file="/assets/img/liberia-giant-bubbles.jpg"
-    alt="white maile holding two sticks with dangling strings making gian bubbles outdoors"
-    caption="Making giant bubbles"
+    file: "/assets/img/liberia-giant-bubbles.jpg"
+    alt: "white maile holding two sticks with dangling strings making gian bubbles outdoors"
+    caption: "Making giant bubbles"
 %}
 
 Our last full day at the orphanage it rained on and off. Around mid-afternoon
@@ -160,9 +160,9 @@ is now going to the local bible college, lead the ceremony as people gave
 testamonies. The orphanage gave each of us a traditional Liberian outfit.
 
 {% include image.html
-    file="/assets/img/liberia-ma-pa.jpg"
-    alt="young white couple in bright green african dress next to older afican couple"
-    caption="Bekah and I with Anthony and Betty Jonah"
+    file: "/assets/img/liberia-ma-pa.jpg"
+    alt: "young white couple in bright green african dress next to older afican couple"
+    caption: "Bekah and I with Anthony and Betty Jonah"
 %}
 
 ### Our Return
@@ -175,9 +175,9 @@ enough time to get through the required screenings and various lines to get
 through the tiny Monrovia airport.
 
 {% include image.html
-    file="/assets/img/liberia-goodbye-crowd.jpg"
-    alt="about 16 africans of varrious ages, some waving goodbye"
-    caption="Everyone out at the road to say goodbye"
+    file: "/assets/img/liberia-goodbye-crowd.jpg"
+    alt: "about 16 africans of varrious ages, some waving goodbye"
+    caption: "Everyone out at the road to say goodbye"
 %}
 
 ### More To Come
@@ -195,6 +195,6 @@ now while we wait for the next opportunity for us to go again.
 
 ---
 
-<cite>
-_Originally published at [liveloveliberia.blogspot.com](http://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html) on August 25, 2015._
-</cite>
+<p><cite>
+<em>Originally published at <a href="http://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html">liveloveliberia.blogspot.com</a> on August 25, 2015.</em>
+</cite></p>

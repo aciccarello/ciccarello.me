@@ -1,7 +1,7 @@
+
 <figure {% if display == 'float' %}class="post-img--float" {% endif %}>
-	<img src="{{ file }}" alt="{{ alt }}" {% if display  == 'wide' %}class="post-img--wide"
-		{% endif %} />
+	<img src="{{ file }}" alt="{{ alt }}" {% if display  == 'wide' %}class="post-img--wide" {%- endif %} />
 	<figcaption class="mdc-typography--caption">
-		{{ caption }}
+		{{ caption | markdownify }}
 	</figcaption>
 </figure>

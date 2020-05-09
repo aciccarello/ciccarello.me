@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "What I am grateful for from 2018"
+layout: 'post'
+categories: 'blog'
+title: 'What I am grateful for from 2018'
 date: 2019-01-29
 image: /assets/img/2018-grand-tetons.jpg
 image_alt: Man with backpack looking at three mountain peaks with green landscape in front
@@ -40,9 +40,9 @@ I had another position lined up. In between jobs, my wife and I took advantage
 of the time off to visit some of the national parks in Utah.
 
 {% include image.html
-    file="/assets/img/2018-moab-delicate-arch.jpg"
-    alt="two people standing below a giant, orange, natural, stone arch"
-    caption="Us at Delicate Arch -- [by bekahbugs](https://www.instagram.com/p/BlGhI5DFcpd/)"
+    file: "/assets/img/2018-moab-delicate-arch.jpg"
+    alt: "two people standing below a giant, orange, natural, stone arch"
+    caption: "Us at Delicate Arch -- [by bekahbugs](https://www.instagram.com/p/BlGhI5DFcpd/)"
 %}
 
 Despite starting our trip by blowing a tire in the mountain snow, we were able
@@ -74,11 +74,9 @@ and written in Java. This temporary change allowed me to sharpen my skills in
 a different part of the technology stack and a different programming language.
 I was able to focus on more general software architecture principles that
 affected multiple teams. The team I joined also used some of the practices
-championed by the [extreme
-programming](https://en.wikipedia.org/wiki/Extreme_programming) movement, such
+championed by the [extreme programming](https://en.wikipedia.org/wiki/Extreme_programming) movement, such
 as "[test driven development](https://en.wikipedia.org/wiki/Test-
-driven_development)" and "[pair
-programming](https://en.wikipedia.org/wiki/Pair_programming)" as a way to
+driven_development)" and "[pair programming](https://en.wikipedia.org/wiki/Pair_programming)" as a way to
 improve productivity and software quality.
 
 There were several aspects of this contract that made it a great job. First of
@@ -108,23 +106,21 @@ work to allow us some flexibility.
 Finding a remote position was more difficult than finding a local tech job in
 Denver. Because the hiring process is also remote and the candidate field is
 much larger, it can be hard to stand out. Thankfully, I was able to make a
-personal connection through a [community software
-project](https://typedoc.org/) I had been managing. I saw that someone who
+personal connection through a [community software project](https://typedoc.org/) I had been managing. I saw that someone who
 contributed to the project worked at a remote company with open positions. I
 was able to reach out to him and make an initial connection before starting
 the interview process.
 
 {% include image.html
-    file="/assets/img/2018-yellowstone-grand-prismatic.jpg"
-    alt="bright orange and blue body of water with steam rising off of it"
-    caption="Grand Prismatic Spring -- Yellowstone National Park"
-    display="wide"
+    file: "/assets/img/2018-yellowstone-grand-prismatic.jpg"
+    alt: "bright orange and blue body of water with steam rising off of it"
+    caption: "Grand Prismatic Spring -- Yellowstone National Park"
+    display: "wide"
 %}
 
 As I lined up my next position and Bekah graduated from her fellowship
 program, we again took the opportunity between jobs to visit a few more
-national parks. Ever since I was young, I had wanted to go to [Yellowstone
-National Park](https://www.nps.gov/yell/index.htm). So, we jumped in the car
+national parks. Ever since I was young, I had wanted to go to [Yellowstone National Park](https://www.nps.gov/yell/index.htm). So, we jumped in the car
 and drove through Wyoming. On the recommendation of a friend, we stopped at
 [Grand Teton National Park](https://www.nps.gov/grte/index.htm). With its
 striking peaks and pristine waterways, it was a great intro to the stunning
@@ -161,10 +157,10 @@ It was our friends who kept us grounded on many hard days. And on moving day,
 our friends came through for us to help us finish our packing and cleaning.
 
 {% include image.html
-    file="/assets/src/2018-moving-truck.jpg"
-    alt="yellow penske moving truck on a road through a canyon"
-    caption="Our moving truck driving across Colorado"
-    display="float"
+    file: "/assets/src/2018-moving-truck.jpg"
+    alt: "yellow penske moving truck on a road through a canyon"
+    caption: "Our moving truck driving across Colorado"
+    display: "float"
 %}
 
 On September 15th, we left behind the community we had found in Denver and
@@ -190,10 +186,10 @@ grateful for. We had a church that we could attend; I found a group to play
 ultimate frisbee with; and we had an extended period of time with family.
 
 {% include image.html
-    file="/assets/img/2018-angels-landing.jpg"
-    alt="looking down at a man in the foreground and a large canyon below and behind him"
-    caption="Hiking [Angel's Landing](https://en.wikipedia.org/wiki/Angels_Landing) -- Zion National Park"
-    display="wide"
+    file: "/assets/img/2018-angels-landing.jpg"
+    alt: "looking down at a man in the foreground and a large canyon below and behind him"
+    caption: "Hiking [Angel's Landing](https://en.wikipedia.org/wiki/Angels_Landing) -- Zion National Park"
+    display: "wide"
 %}
 
 ### Acknowledgements
@@ -205,13 +201,12 @@ were given.
 
 #### Good friends
 
-Even as an introvert, I enjoyed the extra time we spent with our friends in
-
-2018. Whether it was hiking, camping, going out to eat, hanging out in our
-      backyard, or just watching a movie on someone's couch, we always enjoyed
-      ourselves with others. Personally, I appreciate the friends who made a point
-      to reach out to us and ensure we got together. While Colorado is pretty great
-      on its own, it was our friends that made it a great place to live.
+Even as an introvert, I enjoyed the extra time we spent with our friends in 2018.
+Whether it was hiking, camping, going out to eat, hanging out in our
+backyard, or just watching a movie on someone's couch, we always enjoyed
+ourselves with others. Personally, I appreciate the friends who made a point
+to reach out to us and ensure we got together. While Colorado is pretty great
+on its own, it was our friends that made it a great place to live.
 
 #### Supportive family
 
@@ -258,9 +253,9 @@ _She also deserves credit for all the fantastic pictures from our trips._
 ---
 
 {% include image.html
-    file="/assets/img/2018-yellowstone-little-grand-canyon.jpg"
-    alt="a couple standing at an overlook of a canyon with water below"
-    caption="Bekah and me at the [Grand Canyon of Yellowstone](https://en.wikipedia.org/wiki/Grand_Canyon_of_the_Yellowstone)"
+    file: "/assets/img/2018-yellowstone-little-grand-canyon.jpg"
+    alt: "a couple standing at an overlook of a canyon with water below"
+    caption: "Bekah and me at the [Grand Canyon of Yellowstone](https://en.wikipedia.org/wiki/Grand_Canyon_of_the_Yellowstone)"
 %}
 
 So, thank you to all who supported us this year. I don't have too much to take

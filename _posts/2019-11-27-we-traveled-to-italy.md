@@ -17,10 +17,10 @@ After our honeymoon in Cancun, Bekah and I started saving for our 5-year anniver
 ---
 
 {% include image.html
-    file="/assets/img/2019-italy-orvieto-walking-at-night.jpg"
-    display="float"
-    alt="people walking down a cobblestone alleyway at night"
-    caption="Our group walking around Orvieto at night"
+    file: "/assets/img/2019-italy-orvieto-walking-at-night.jpg"
+    display: "float"
+    alt: "people walking down a cobblestone alleyway at night"
+    caption: "Our group walking around Orvieto at night"
 %}
 
 ## Trip Overview
@@ -36,9 +36,9 @@ After Rome, we drove a few hours to Orvieto where my sister was studying. We wou
 As the weekend neared, we headed to our final stop of Venice to experience the unique city on the water. I didn't anticipate how much of an adventure it was to get around the area. Whether we were going from the parking garage to the hotel, the hotel to a restaurant, the main island to the islands of Murano and Burano, or the hotel to the airport in time for our 6:30 AM flight, every trip had its own challenge. It honestly wasn't that hard to do with a cell phone but it highlighted how unique of a place it is. It was fun to share it with not only my wife but also some of my siblings and parents.
 
 {% include image.html
-    file="/assets/img/2019-italy-venice-couple-portrait.jpg"
-    alt="portrait of a man and woman near the water"
-    caption="My wife Bekah and me in Venice"
+    file: "/assets/img/2019-italy-venice-couple-portrait.jpg"
+    alt: "portrait of a man and woman near the water"
+    caption: "My wife Bekah and me in Venice"
 %}
 
 ## Overall Impressions
@@ -46,10 +46,10 @@ As the weekend neared, we headed to our final stop of Venice to experience the u
 Italy surprised me with how beautiful it is. Both the landscapes and buildings were amazing. All of this was decorated by amazing works of art from a variety of time periods. It is inspiring to realize that the piece you are looking at is literally a textbook example of a famous artist. Last but not least was the food. As the descendant of an Italian-American, I had grown up with great respect for Italian culinary tradition, but the food we ate in Italy was consistently amazing. From the freshness of the seafood dishes to the flavors of simple pasta sauces, it was all delicious. Add to that the desserts (cannoli, gelato, tiramisu) and it has to be the best country for food we've visited by my somewhat biased opinion (sorry Mexico and Peru).
 
 {% include image.html
-    file="/assets/img/2019-italy-anacapri.jpg"
-    display="float"
-    alt="view from above town looking out over the sea"
-    caption="View of Anacapri from the Mount Solaro lift"
+    file: "/assets/img/2019-italy-anacapri.jpg"
+    display: "float"
+    alt: "view from above town looking out over the sea"
+    caption: "View of Anacapri from the Mount Solaro lift"
 %}
 
 While each part of Italy we visited had a slightly different landscape, there were common scenes throughout. The land was all very green. Even up on the hilltops, there was grass growing. Among this lushness there were farms everywhere. Compared to the American mid-west, the farms were all surprisingly small. Some were simple family gardens, but even the more agricultural farms contained a mix of crops in modest size fields creating patchworks in the land. But the most common crop where we traveled seemed to be olives. There were groves of olive trees on any sizable patch of land and they are an iconic piece of the Italian countryside. In Orvieto we saw the machines they used to shake the olives off the trees, but in hillier areas the olive groves would have netting laid below the trees to capture the olives as they dropped.
@@ -57,28 +57,28 @@ While each part of Italy we visited had a slightly different landscape, there we
 I did a fair amount of bird watching on our trip. Italy isn't well known for its bird watching though I saw plenty of new birds since it was my first time birding in Europe. My favorite were probably the [European Robins](https://ebird.org/species/eurrob1/IT) which have a bright personality to match their orange chests. I was surprised by the prevalence of Parakeets in Rome, with [two](https://ebird.org/species/rorpar/IT) [different](https://ebird.org/species/monpar/IT) non-native species being quite visible in some areas. As an American, it was odd to see species like [European Starlings](https://ebird.org/species/eursta/IT), [Eurasian Collard-Doves](https://ebird.org/species/eucdov/IT), [Rock Pigeons](https://ebird.org/species/rocpig/IT), and the House Sparrow-like [Italian Sparrows](https://ebird.org/species/itaspa1/IT) in their (mostly) native habitat when usually I view them as invasive. Overall, it was a lot of fun to see so many new species and to add a new country to my birding list.
 
 {% include embed-link.html
-    title="European Robin"
-    url="https://ebird.org/species/eurrob1/IT"
-    description="Common to fairly common in wooded habitats, gardens, hedges in farmland, and heathland, usually fairly near cover. Hops perkily on the ground…"
-    img="/assets/img/embed-thumbnail-european-robin.jpg"
-    alt="Round gray bird with orange chest and large black eyes"
+    title: "European Robin"
+    url: "https://ebird.org/species/eurrob1/IT"
+    description: "Common to fairly common in wooded habitats, gardens, hedges in farmland, and heathland, usually fairly near cover. Hops perkily on the ground…"
+    img: "/assets/img/embed-thumbnail-european-robin.jpg"
+    alt: "Round gray bird with orange chest and large black eyes"
 %}
 
 {% include embed-link.html
-    title="Rose-ringed Parakeet"
-    url="https://ebird.org/species/rorpar/IT"
-    description="Vibrantly bright green parakeet, frequently found in woodland, parks, gardens, where feeds mainly in trees. Nests in cavities, including holes…"
-    img="/assets/img/embed-thumbnail-rose-ringed-parakeet.jpg"
-    alt="Green parakeet with long tail and red beak"
-    objectPosition="70% center"
+    title: "Rose-ringed Parakeet"
+    url: "https://ebird.org/species/rorpar/IT"
+    description: "Vibrantly bright green parakeet, frequently found in woodland, parks, gardens, where feeds mainly in trees. Nests in cavities, including holes…"
+    img: "/assets/img/embed-thumbnail-rose-ringed-parakeet.jpg"
+    alt: "Green parakeet with long tail and red beak"
+    objectPosition: "70% center"
 %}
 
 We took about every mode of transportation you could think of in Italy. Italy makes it easy to get most places via train. After flying in, we took high-speed trains between Rome and the Amalfi Coast and local trains from the airport and to Pompeii. In the Amalfi Coast, we rode city-run buses with tickets we bought in the "tabacchi" convenience stores and rode the lift up to the top of Mount Solaro. We also took ferries around the Amalfi Coast and from island to island in Venice. In Rome we took the subway and when we were with my family we drove a van. Thankfully, just about every place that sells tickets had an attendant who spoke English so we never got stuck without a ride.
 
 {% include image.html
-    file="/assets/img/2019-italy-trevi-fountain-building-fresco.jpg"
-    alt="Sculptures and text on building roofline"
-    caption="Latin text on the building above the [Trevi Fountain](https://en.wikipedia.org/wiki/Trevi_Fountain) noting the sponsor of the project"
+    file: "/assets/img/2019-italy-trevi-fountain-building-fresco.jpg"
+    alt: "Sculptures and text on building roofline"
+    caption: "Latin text on the building above the [Trevi Fountain](https://en.wikipedia.org/wiki/Trevi_Fountain) noting the sponsor of the project"
 %}
 
 It was interesting traveling when not trying to learn the language. I did a little studying before our trip and we had a pocket Italian guide but it wasn't like our time in Spanish speaking countries. Most of the touristy areas of the country have plenty of English speaking restaurant waiters, shop employees, and hotel receptionists. Even when someone didn't speak much English, they usually knew enough to communicate. Our Spanish language skills did help a lot when reading or trying to understand someone as there are many similar words. It was fun to listen to people speak even when I didn't understand them. I found I loved the rhythm of the language. It would be very cool to learn enough Italian to speak it myself, but for now I'll focus on Spanish.
@@ -89,14 +89,14 @@ I understand why Italy attracts so many repeat visitors and I think I've caught 
 
 As we traveled, I made a point to write down a little about each day. From that I've put together more complete thoughts on each of the major regions we visited as separate posts and added more pictures. While I hope to return some day, I never want to forget the great memories from this special trip.
 
-- [Amalfi Coast]({% post_url 2019-11-28-anniversary-on-the-amalfi-coast %})
-- [Rome]({% post_url 2020-02-06-rome-is-a-work-of-art %})
-- [Orvieto]({% post_url 2020-03-15-relaxing-in-the-orvieto-countryside %})
-- [Venice]({% post_url 2020-04-09-a-weekend-in-venice %})
+- [Amalfi Coast]({{ collections.blog | post_url: "2019-11-28-anniversary-on-the-amalfi-coast" }})
+- [Rome]({{ collections.blog | post_url: "2020-02-06-rome-is-a-work-of-art" }})
+- [Orvieto]({{ collections.blog | post_url: "2020-03-15-relaxing-in-the-orvieto-countryside" }})
+- [Venice]({{ collections.blog | post_url: "2020-04-09-a-weekend-in-venice" }})
 
 {% include image.html
-    file="/assets/img/2019-italy-sunset-over-capri.jpg"
-    caption="Sunset over the Island of Capri"
-    alt="Silhouette of an island with the sun shining through a cloud."
-    display="wide"
+    file: "/assets/img/2019-italy-sunset-over-capri.jpg"
+    caption: "Sunset over the Island of Capri"
+    alt: "Silhouette of an island with the sun shining through a cloud."
+    display: "wide"
 %}

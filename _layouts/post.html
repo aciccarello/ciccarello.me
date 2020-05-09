@@ -4,14 +4,14 @@ layout: default
 
 <link rel="stylesheet" href="{{ '/assets/css/highlight.css' | relative_url }}">
 <article class="container post h-entry mdc-card">
-	{% if page.image %}
+	{% if image %}
 	<figure class="mdc-card__media post-thumbnail">
 		<div class="post-thumbnail--wrapper">
-			<img src="{{ page.image }}" alt="{{ page.image_alt }}" class="u-photo" />
+			<img src="{{ image }}" alt="{{ image_alt }}" class="u-photo" />
 		</div>
-		{% if page.image_caption %}
+		{% if image_caption %}
 		<figcaption class="mdc-typography--caption">
-			{{ page.image_caption | markdownify| remove: "<p>" | remove: "</p>"  }}
+			{{ image_caption | markdownify }}
 		</figcaption>
 		{% endif %}
 	</figure>
@@ -20,24 +20,24 @@ layout: default
 		<h1 class="post-title p-name mdc-typography--headline3">
 			{{ title | escape }}
 		</h1>
-		{%- if page.subtitle -%}
+		{%- if subtitle -%}
 		<h2 class="post-title p-summary mdc-typography--headline6">
-			{{ page.subtitle | escape }}
+			{{ subtitle | escape }}
 		</h2>
 		{%- endif -%}
 		<p class="post-meta">
-			<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
-				{%- assign date_format = site.minima.date_format | default: "%b %e, %Y" -%}
-				{{ page.date | date: date_format }}
+			<time class="dt-published" datetime="{{ page.date | fromUTC | rssDate }}">
+				{{- page.date | fromUTC | date: "%b
+				%e, %Y" }}{% comment %}TODO: Remove this linebreak post jekyll conversion{% endcomment %}
 			</time>
-			{%- if page.author -%} •
-			<span class="p-author h-card">{{ page.author }}</span>
+			{%- if author -%} •
+			<span class="p-author h-card">{{ author }}</span>
 			{%- endif -%}
 		</p>
-		{%- if page.tags.size > 0 -%}
+		{%- if tags.size > 0 -%}
 		<ul class="mdc-chip-set p-category">
 			<!-- TODO: Make this a link to a tag page -->
-			{% for tag in page.tags %}
+			{% for tag in tags %}
 			<span class="mdc-chip">
 				<span class="mdc-chip__text">{{ tag }}</span>
 			</span>
@@ -50,7 +50,7 @@ layout: default
 		{{ content }}
 	</div>
 
-	<a class="u-url" href="{{ page.url | relative_url }}" aria-hidden="true"></a>
+	<a class="u-url" href="{{ page.url | url }}" aria-hidden="true"></a>
 </article>
 <section class="container mdc-card author-card">
 	<div class="author-card__primary-action" tabindex="0">
@@ -78,23 +78,25 @@ layout: default
 	</div>
 </section>
 <div class="post-suggestions container">
+	{% assign previousPost = collections.blog | getPreviousCollectionItem: page %}
+	{% assign nextPost = collections.blog | getNextCollectionItem: page %}
 	<h2 class="mdc-typography--headline6">
 		Recent articles
 	</h2>
-	{% if page.previous %}
+		{% if previousPost %}
 		<div class="post-suggestions__area post-suggestions__previous">
 			<h3 class="mdc-typography--subtitle1">
 				Previous
 			</h3>
-			{% include post-card.html post: "page.previous" %}
+			{% include post-card.html post: previousPost %}
 		</div>
 		{% endif %}
-		{% if page.next %}
+		{% if nextPost %}
 		<div class="post-suggestions__area post-suggestions__next">
 			<h3 class="mdc-typography--subtitle1">
 				Next
 			</h3>
-			{% include post-card.html post: "page.next" %}
+			{% include post-card.html post: nextPost %}
 		</div>
 		{% endif %}
 	</ul>
