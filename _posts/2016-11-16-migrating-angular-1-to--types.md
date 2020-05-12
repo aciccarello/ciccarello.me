@@ -28,7 +28,7 @@ object. To be able to use `angular.module(...)` or `angular.copy(...)` in my
 ES2015 modules I needed to import angular into the file using the following
 syntax.
 
-```typedoc
+```typescript
 import * as angular from 'angular';
 ```
 

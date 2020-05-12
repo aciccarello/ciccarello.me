@@ -1,208 +1,179 @@
-.highlight .hll {
-	background-color: #ffffcc;
+/**
+ * VS theme by Andrew Lock (https://andrewlock.net)
+ * Inspired by Visual Studio syntax coloring
+ * @see https://github.com/PrismJS/prism-themes/blob/3c08290e35b57628dccfaae10b951029c63b3977/themes/prism-vs.css
+ */
+
+code[class*='language-'],
+pre[class*='language-'] {
+	color: #393a34;
+	font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier,
+		monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	font-size: 0.9em;
+	font-weight: 600;
+	line-height: 1.2em;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
-.highlight .c {
-	color: #999988;
+
+pre > code[class*='language-'] {
+	font-size: 1.1em;
+}
+
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+	background: #c1def1;
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+	background: #c1def1;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+	padding: 1em;
+	margin: 0.5em 0;
+	overflow: auto;
+	border: 1px solid #dddddd;
+	background-color: white;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+	padding: 0.2em;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background: #f8f8f8;
+	border: 1px solid #dddddd;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #008000;
 	font-style: italic;
-} /* Comment */
-.highlight .err {
-	color: #a61717;
-	background-color: #e3d2d2;
-} /* Error */
-.highlight .k {
-	color: #000000;
+}
+
+.token.namespace {
+	opacity: 0.7;
+}
+
+.token.string {
+	color: #a31515;
+}
+
+.token.punctuation,
+.token.operator {
+	color: #393a34; /* no highlight */
+}
+
+.token.url,
+.token.symbol,
+.token.number,
+.token.boolean,
+.token.variable,
+.token.constant,
+.token.inserted {
+	color: #36acaa;
+}
+
+.token.atrule,
+.token.keyword,
+.token.attr-value,
+.language-autohotkey .token.selector,
+.language-json .token.boolean,
+.language-json .token.number,
+code[class*='language-css'] {
+	color: #0000ff;
+}
+
+.token.function {
+	color: #393a34;
+}
+
+.token.deleted,
+.language-autohotkey .token.tag {
+	color: #9a050f;
+}
+
+.token.selector,
+.language-autohotkey .token.keyword {
+	color: #00009f;
+}
+
+.token.important,
+.token.bold {
 	font-weight: bold;
-} /* Keyword */
-.highlight .o {
-	color: #000000;
-	font-weight: bold;
-} /* Operator */
-.highlight .cm {
-	color: #999988;
+}
+
+.token.italic {
 	font-style: italic;
-} /* Comment.Multiline */
-.highlight .cp {
-	color: #999999;
-	font-weight: bold;
-	font-style: italic;
-} /* Comment.Preproc */
-.highlight .c1 {
-	color: #999988;
-	font-style: italic;
-} /* Comment.Single */
-.highlight .cs {
-	color: #999999;
-	font-weight: bold;
-	font-style: italic;
-} /* Comment.Special */
-.highlight .gd {
-	color: #000000;
-	background-color: #ffdddd;
-} /* Generic.Deleted */
-.highlight .ge {
-	color: #000000;
-	font-style: italic;
-} /* Generic.Emph */
-.highlight .gr {
-	color: #aa0000;
-} /* Generic.Error */
-.highlight .gh {
-	color: #999999;
-} /* Generic.Heading */
-.highlight .gi {
-	color: #000000;
-	background-color: #ddffdd;
-} /* Generic.Inserted */
-.highlight .go {
-	color: #888888;
-} /* Generic.Output */
-.highlight .gp {
-	color: #555555;
-} /* Generic.Prompt */
-.highlight .gs {
-	font-weight: bold;
-} /* Generic.Strong */
-.highlight .gu {
-	color: #aaaaaa;
-} /* Generic.Subheading */
-.highlight .gt {
-	color: #aa0000;
-} /* Generic.Traceback */
-.highlight .kc {
-	color: #000000;
-	font-weight: bold;
-} /* Keyword.Constant */
-.highlight .kd {
-	color: #000000;
-	font-weight: bold;
-} /* Keyword.Declaration */
-.highlight .kn {
-	color: #000000;
-	font-weight: bold;
-} /* Keyword.Namespace */
-.highlight .kp {
-	color: #000000;
-	font-weight: bold;
-} /* Keyword.Pseudo */
-.highlight .kr {
-	color: #000000;
-	font-weight: bold;
-} /* Keyword.Reserved */
-.highlight .kt {
-	color: #445588;
-	font-weight: bold;
-} /* Keyword.Type */
-.highlight .m {
-	color: #009999;
-} /* Literal.Number */
-.highlight .s {
-	color: #d01040;
-} /* Literal.String */
-.highlight .na {
-	color: #008080;
-} /* Name.Attribute */
-.highlight .nb {
-	color: #0086b3;
-} /* Name.Builtin */
-.highlight .nc {
-	color: #445588;
-	font-weight: bold;
-} /* Name.Class */
-.highlight .no {
-	color: #008080;
-} /* Name.Constant */
-.highlight .nd {
-	color: #3c5d5d;
-	font-weight: bold;
-} /* Name.Decorator */
-.highlight .ni {
-	color: #800080;
-} /* Name.Entity */
-.highlight .ne {
-	color: #990000;
-	font-weight: bold;
-} /* Name.Exception */
-.highlight .nf {
-	color: #990000;
-	font-weight: bold;
-} /* Name.Function */
-.highlight .nl {
-	color: #990000;
-	font-weight: bold;
-} /* Name.Label */
-.highlight .nn {
-	color: #555555;
-} /* Name.Namespace */
-.highlight .nt {
-	color: #000080;
-} /* Name.Tag */
-.highlight .nv {
-	color: #008080;
-} /* Name.Variable */
-.highlight .ow {
-	color: #000000;
-	font-weight: bold;
-} /* Operator.Word */
-.highlight .w {
-	color: #bbbbbb;
-} /* Text.Whitespace */
-.highlight .mf {
-	color: #009999;
-} /* Literal.Number.Float */
-.highlight .mh {
-	color: #009999;
-} /* Literal.Number.Hex */
-.highlight .mi {
-	color: #009999;
-} /* Literal.Number.Integer */
-.highlight .mo {
-	color: #009999;
-} /* Literal.Number.Oct */
-.highlight .sb {
-	color: #d01040;
-} /* Literal.String.Backtick */
-.highlight .sc {
-	color: #d01040;
-} /* Literal.String.Char */
-.highlight .sd {
-	color: #d01040;
-} /* Literal.String.Doc */
-.highlight .s2 {
-	color: #d01040;
-} /* Literal.String.Double */
-.highlight .se {
-	color: #d01040;
-} /* Literal.String.Escape */
-.highlight .sh {
-	color: #d01040;
-} /* Literal.String.Heredoc */
-.highlight .si {
-	color: #d01040;
-} /* Literal.String.Interpol */
-.highlight .sx {
-	color: #d01040;
-} /* Literal.String.Other */
-.highlight .sr {
-	color: #009926;
-} /* Literal.String.Regex */
-.highlight .s1 {
-	color: #d01040;
-} /* Literal.String.Single */
-.highlight .ss {
-	color: #990073;
-} /* Literal.String.Symbol */
-.highlight .bp {
-	color: #999999;
-} /* Name.Builtin.Pseudo */
-.highlight .vc {
-	color: #008080;
-} /* Name.Variable.Class */
-.highlight .vg {
-	color: #008080;
-} /* Name.Variable.Global */
-.highlight .vi {
-	color: #008080;
-} /* Name.Variable.Instance */
-.highlight .il {
-	color: #009999;
-} /* Literal.Number.Integer.Long */
+}
+
+.token.class-name,
+.language-json .token.property {
+	color: #2b91af;
+}
+
+.token.tag,
+.token.selector {
+	color: #800000;
+}
+
+.token.attr-name,
+.token.property,
+.token.regex,
+.token.entity {
+	color: #ff0000;
+}
+
+.token.directive.tag .tag {
+	background: #ffff00;
+	color: #393a34;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers .line-numbers-rows {
+	border-right-color: #a5a5a5;
+}
+
+.line-numbers-rows > span:before {
+	color: #2b91af;
+}
+
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
+.line-highlight {
+	background: rgba(193, 222, 241, 0.2);
+	background: -webkit-linear-gradient(
+		left,
+		rgba(193, 222, 241, 0.2) 70%,
+		rgba(221, 222, 241, 0)
+	);
+	background: linear-gradient(
+		to right,
+		rgba(193, 222, 241, 0.2) 70%,
+		rgba(221, 222, 241, 0)
+	);
+}
