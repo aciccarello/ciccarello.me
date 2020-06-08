@@ -1,33 +1,23 @@
 ---json
 {
   "permalink": "feed.xml",
-  "eleventyExcludeFromCollections": true,
-  "metadata": {
-    "title": "My Blog about Boats",
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "url": "https://example.com/",
-    "feedUrl": "https://example.com/feed.xml",
-    "author": {
-      "name": "Boaty McBoatFace",
-      "email": "me@example.com"
-    }
-  }
+  "eleventyExcludeFromCollections": true
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ page.url | addBaseUrl }}" rel="self" type="application/atom+xml" />
+  <link href="{{ "/" | addBaseUrl }}" rel="alternate" type="text/html" />
   <updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
-  <id>{{ metadata.url }}</id>
+  <id>{{ "/" | addBaseUrl }}</id>
   <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
+    <name>Anthony Ciccarello</name>
+    <email>{{ site.email }}</email>
   </author>
   {%- for post in collections.blog %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  {%- set absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>

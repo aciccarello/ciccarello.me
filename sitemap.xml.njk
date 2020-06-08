@@ -1,16 +1,16 @@
 ---
 permalink: /sitemap.xml
 excludeFromSitemap: true
+eleventyExcludeFromCollections: true
 ---
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {%- for item in collections.all %}
     {%- if not item.data.excludeFromSitemap %}
     <url>
-      <loc>https://jaenis.ch{{ item.url }}</loc>
+      <loc>{{ item.url | addBaseUrl }}</loc>
       <lastmod>{{ item.date.toISOString() }}</lastmod>
-      <changefreq>{{ item.data.changefreq }}</changefreq>
-      <priority>{{ item.data.priority }}</priority>
+      {%- if item.data.changefreq %}<changefreq>{{ item.data.changefreq }}</changefreq>{% endif %}
     </url>
     {%- endif %}
   {%- endfor %}

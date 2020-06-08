@@ -1,6 +1,7 @@
 {
   "title": "Anthony Ciccarello",
   "email": "anthony@ciccarello.me",
+  "baseUrl": "",
   "description": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
   "header_pages": ["blog/index.html"]
 }
