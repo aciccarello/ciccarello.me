@@ -5,10 +5,10 @@
     {%- include seo -%}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
     <link href="https://unpkg.com/material-components-web@3/dist/material-components-web.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="/assets/css/socicon.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet"/>
-	{%- feed_meta -%}
+	<link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | addBaseUrl }}" title="Anthony Ciccarello" />
 	{% if page.url == "/" %}
 	<link rel="authorization_endpoint" href="https://indieauth.com/auth">
 	<script type="application/ld+json">

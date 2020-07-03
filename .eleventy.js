@@ -58,11 +58,6 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection('blog', (collection) => {
 		return collection.getFilteredByGlob('_posts/*.md');
 	});
-	eleventyConfig.addShortcode(
-		'feed_meta',
-		() =>
-			'<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anthony Ciccarello" />'
-	);
 	eleventyConfig.addPairedShortcode('json', (content) => {
 		try {
 			return JSON.stringify(JSON.parse(content));
@@ -89,9 +84,7 @@ module.exports = function (eleventyConfig) {
 		if (value.startsWith('http')) {
 			return value;
 		}
-		// TODO: remove this when done converting from jekyll
-		// I think we are fine using the root URL for paths
-		return 'http://localhost:4000' + value;
+		return 'https://www.ciccarello.me' + value;
 	});
 	eleventyConfig.addFilter('fromUTC', convertFromUTCDate);
 	eleventyConfig.addFilter('markdownify', (value) =>
