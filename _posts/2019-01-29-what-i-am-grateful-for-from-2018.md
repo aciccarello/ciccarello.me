@@ -157,15 +157,15 @@ It was our friends who kept us grounded on many hard days. And on moving day,
 our friends came through for us to help us finish our packing and cleaning.
 
 {% include image.html
-    file: "/assets/src/2018-moving-truck.jpg"
-    alt: "yellow penske moving truck on a road through a canyon"
+    file: "/assets/img/2018-moving-truck.jpg"
+    alt: "yellow Penske moving truck on a road through a canyon"
     caption: "Our moving truck driving across Colorado"
     display: "float"
 %}
 
 On September 15th, we left behind the community we had found in Denver and
 headed west. My brother flew out to help and drove the moving truck behind us
-as we drove across mountains and desert. We made another stop at Arches
+as we drove across mountains and deserts. We made another stop at Arches
 National Park before heading southwest to California. We were still unsure
 where we wanted to land long-term, but were fortunate to have family who
 allowed us to live with them for a few months. It felt weird loading up a
