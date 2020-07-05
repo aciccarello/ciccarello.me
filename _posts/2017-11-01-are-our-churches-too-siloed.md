@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Are our churches too siloed?"
+layout: 'post'
+categories: 'blog'
+title: 'Are our churches too siloed?'
 date: 2017-11-01
 tags: christianity
 image: /assets/img/church-against-starry-night-thumbnail.jpg
@@ -108,6 +108,4 @@ we got where we are today?
 
 I hope that you would consider sharing your perspective. I've only begun to
 unpack how the Church approaches ministry. There is much more discussion to be
-had to continue the [_semper reformada_
-](https://en.wikipedia.org/wiki/Ecclesia_semper_reformanda_est)-- continual
-reforming.
+had to continue the [_semper reformada_](https://en.wikipedia.org/wiki/Ecclesia_semper_reformanda_est)-- continual reforming.

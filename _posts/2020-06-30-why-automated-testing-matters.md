@@ -26,7 +26,7 @@ Automated testing is much more efficient than the series manual checks done befo
 - Testing Allows Teams to Ship Faster
 - Testing Encourages Better Software Architecture
 
-**To read more about these benefits, check out my full post on the [SitPen blog](https://www.sitepen.com/blog/why-automated-testing-matters/).**
+**To read more about these benefits, check out my full post on the <a rel="syndication" class="u-syndication" href="https://www.sitepen.com/blog/why-automated-testing-matters/">SitPen blog</a>.**
 
 Testing is an important aspect in ensuring software works as expected. This is true for both new and old code. Teams with a culture of good testing practices see the benefits compound as software grows in size and complexity. Existing tests give developers and product owners confidence that new code can get added quickly without introducing bugs and regressions. The full testing suite allows teams to ship software faster by reducing the amount of manual testing required. Finally, testing improves the quality of the software written by highlighting architectural issues and allowing developers to make small improvements over time that clear the way for future growth.
 

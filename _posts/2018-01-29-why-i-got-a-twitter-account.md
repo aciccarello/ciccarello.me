@@ -1,7 +1,7 @@
 ---
-layout: "post"
-categories: "blog"
-title: "Why I Got a Twitter Account"
+layout: 'post'
+categories: 'blog'
+title: 'Why I Got a Twitter Account'
 subtitle: How joining the social networking platform helped me become a better programmer
 date: 2018-01-29
 image: /assets/img/scrub-jay-thumbnail.jpg
@@ -82,6 +82,5 @@ Twitter that has helped me to grow as a software engineer.
 
 ---
 
-_If you 'd like to see what programmers I follow, check out my [web
-developers list](https://twitter.com/ajciccarello/lists/web-devs) on
+_If you 'd like to see what programmers I follow, check out my [web developers list](https://twitter.com/ajciccarello/lists/web-devs) on
 Twitter._

@@ -14,4 +14,4 @@ This year I was able to attend JSConf US 2019 as a representative of SitePen. It
 
 On top of attending the conference, I helped out the [TalkScript](http://talkscript.fm) podcast. On the first day of the conference, we hosted a live lunchtime panel where we had fun discussing some of the stra-man arguments that come up in the JavaScript development community. As the conference continued, the other hosts and I interviewed many of the hosts which we published in a 6-part series.
 
-If you want to hear more about my experience at the conference, checkout my post on the [SitePen blog](https://www.sitepen.com/blog/jsconf-us-2019-pushing-javascript-beyond-the-browser/).
+If you want to hear more about my experience at the conference, checkout my post on the <a rel="syndication" class="u-syndication" href="https://www.sitepen.com/blog/jsconf-us-2019-pushing-javascript-beyond-the-browser/">SitePen blog</a>.

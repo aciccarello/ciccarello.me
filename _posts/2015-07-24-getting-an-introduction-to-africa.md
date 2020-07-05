@@ -4,7 +4,7 @@ categories: 'blog'
 title: 'Getting An Introduction to Africa'
 subtitle: Detour to Senegal
 date: 2015-07-24
-canonical_url: http://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html
+canonical_url: https://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html
 tags: travel
 image: /assets/img/senegal-african-renaissance-monument.jpg
 image_alt: large monument of a woman and a man holding a small child with people on steps leading up to the monument
@@ -86,4 +86,4 @@ Sunday meaning we will be in Senegal another day.
 
 ---
 
-_Originally published at [liveloveliberia.blogspot.com](http://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html) on August 25, 2015._
+_Originally published at <a rel="syndication" class="u-syndication" href="https://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html">liveloveliberia.blogspot.com</a> on July 24, 2015._

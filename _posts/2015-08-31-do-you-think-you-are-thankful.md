@@ -3,7 +3,7 @@ layout: 'post'
 categories: 'blog'
 title: 'Do You Think You Are Thankful?'
 subtitle: Humbled by those who know need
-canonical_url: http://liveloveliberia.blogspot.com/2015/08/do-you-think-you-are-thankful.html
+canonical_url: https://liveloveliberia.blogspot.com/2015/08/do-you-think-you-are-thankful.html
 date: 2015-08-31
 tags: culture
 image: /assets/img/liberia-cloth-against-wall.jpg
@@ -105,4 +105,4 @@ creator who provides for us through others.
 
 ---
 
-_Originally published at [liveloveliberia.blogspot.com](http://liveloveliberia.blogspot.com/2015/08/do-you-think-you-are-thankful.html) on August 31, 2015._
+_Originally published at <a rel="syndication" class="u-syndication" href="https://liveloveliberia.blogspot.com/2015/08/do-you-think-you-are-thankful.html">liveloveliberia.blogspot.com</a> on August 31, 2015._

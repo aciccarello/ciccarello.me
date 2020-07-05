@@ -2,7 +2,7 @@
 layout: 'post'
 categories: 'blog'
 title: 'An Overview of Our Trip'
-canonical_url: http://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html
+canonical_url: https://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html
 date: 2015-08-15
 tags: travel
 image: /assets/img/liberia-mt-nimba-mining-lake.jpg
@@ -195,4 +195,4 @@ now while we wait for the next opportunity for us to go again.
 
 ---
 
-_Originally published at [liveloveliberia.blogspot.com](http://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html) on August 25, 2015._
+_Originally published at <a rel="syndication" class="u-syndication" href="https://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html">liveloveliberia.blogspot.com</a> on August 15, 2015._

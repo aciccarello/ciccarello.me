@@ -27,4 +27,4 @@ Just like poorly written code, poorly created tests become an impediment for pro
 
 It is important to remember that working software is the goal of software development. Testing is one aspect to help achieve that. Teams should regularly consider how well their testing suite is helping the team deliver a quality product to users. When testing gets done effectively, the benefits should far outweigh the costs in the long term.
 
-**To read more how to test well, check out my full post on the [SitPen blog](https://www.sitepen.com/blog/writing-tests-that-work/).**
+**To read more how to test well, check out my full post on the <a rel="syndication" class="u-syndication" href="https://www.sitepen.com/blog/writing-tests-that-work/">SitPen blog</a>.**
