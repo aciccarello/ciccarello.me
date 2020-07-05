@@ -86,6 +86,4 @@ Sunday meaning we will be in Senegal another day.
 
 ---
 
-<p><cite>
-<em>Originally published at <a href="http://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html">liveloveliberia.blogspot.com</a> on August 25, 2015.</em>
-</cite></p>
+_Originally published at [liveloveliberia.blogspot.com](http://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html) on August 25, 2015._

@@ -195,6 +195,4 @@ now while we wait for the next opportunity for us to go again.
 
 ---
 
-<p><cite>
-<em>Originally published at <a href="http://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html">liveloveliberia.blogspot.com</a> on August 25, 2015.</em>
-</cite></p>
+_Originally published at [liveloveliberia.blogspot.com](http://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html) on August 25, 2015._

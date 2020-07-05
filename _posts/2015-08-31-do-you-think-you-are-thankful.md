@@ -105,6 +105,4 @@ creator who provides for us through others.
 
 ---
 
-<p><cite>
-<em>Originally published at <a href="http://liveloveliberia.blogspot.com/2015/08/do-you-think-you-are-thankful.html">liveloveliberia.blogspot.com</a> on August 31, 2015.</em>
-</cite></p>
+_Originally published at [liveloveliberia.blogspot.com](http://liveloveliberia.blogspot.com/2015/08/do-you-think-you-are-thankful.html) on August 31, 2015._
