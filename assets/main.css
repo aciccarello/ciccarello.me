@@ -52,7 +52,7 @@ figure {
 
 /** Courtesy of https://css-tricks.com/examples/hrs/ */
 hr::after {
-	content: "§";
+	content: '§';
 	display: inline-block;
 	position: relative;
 	top: -0.7em;
@@ -104,6 +104,8 @@ hr {
 	border-radius: 50%;
 	height: 256px;
 	width: 256px;
+	/* Fix Firefox rendering bug */
+	flex-shrink: 0;
 	margin: 1rem;
 }
 
@@ -340,7 +342,7 @@ img.post-img--wide {
 .post-suggestions {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "title title" "left right";
+	grid-template-areas: 'title title' 'left right';
 	grid-gap: 0 1rem;
 }
 @media screen and (max-width: 720px) {
@@ -377,7 +379,7 @@ img.post-img--wide {
 	display: grid;
 	grid-template-columns: 1fr 10rem;
 	grid-template-rows: auto;
-	grid-template-areas: "header img" "text img";
+	grid-template-areas: 'header img' 'text img';
 }
 
 @media screen and (max-width: 720px) {
@@ -436,7 +438,7 @@ img.post-img--wide {
 	height: 48px;
 	width: 48px;
 	margin-right: 1rem;
-	background-image: url("https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=48");
+	background-image: url('https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=48');
 }
 .author-card__media:first-child {
 	border-radius: 50%;
