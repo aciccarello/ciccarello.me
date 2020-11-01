@@ -13,7 +13,6 @@
     "statusBarItem.hoverBackground": "#d50000",
     "statusBar.foreground": "#e7e7e7"
   },
-  "peacock.color": "#179331",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "html.format.contentUnformatted": "pre,code,script",
@@ -70,5 +69,6 @@
       "brace_block": true,
       "no_semicolon": true
     }
-  }
+  },
+  "html.format.enable": false
 }

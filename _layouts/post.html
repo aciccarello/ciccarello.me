@@ -27,8 +27,7 @@ layout: default
 		{%- endif -%}
 		<p class="post-meta">
 			<time class="dt-published" datetime="{{ page.date | fromUTC | rssDate }}">
-				{{- page.date | fromUTC | date: "%b
-				%e, %Y" }}{% comment %}TODO: Remove this linebreak post jekyll conversion{% endcomment %}
+				{{- page.date | fromUTC | date: "%b %e, %Y" }}
 			</time>
 			{%- if author -%} •
 			<span class="p-author h-card">{{ author }}</span>

@@ -1,15 +1,22 @@
-{% assign domain = url | split: "//" %}
-{% assign domain = domain[1]| split: "/" | first %}
+{% assign domain = url | split: "//" %} {% assign domain = domain[1]| split: "/"
+| first %}
 <div>
 	<a href="{{ url }}" class="disable-link-styles">
 		<blockquote class="mdc-card embed-card mdc-elevation-transition">
-			<h3 class="post-title p-name mdc-typography--subtitle1">{{ title }}</h3>
+			<h3 class="post-title p-name mdc-typography--subtitle1">
+				{{ title }}
+			</h3>
 			<p class="mdc-typography--body2">
 				{{ description }}
 				<cite class="mdc-typography--caption">{{ domain }}</cite>
 			</p>
-			<img src="{{ img }}" alt="{{ alt }}"{% comment %}TODO remove closing slash{% endcomment %}
-				{%- if objectPosition %} style="object-position: {{objectPosition}}" {% endif %}/>
+			<img
+				src="{{ img }}"
+				alt="{{ alt }}"
+				{%- if objectPosition %}
+				style="object-position: {{objectPosition}}"
+				{% endif %}
+			/>
 		</blockquote>
 	</a>
 </div>
