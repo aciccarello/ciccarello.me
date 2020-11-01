@@ -47,7 +47,7 @@ const convertFromUTCDate = (date) => {
 };
 
 module.exports = function (eleventyConfig) {
-	// Copy the `assets` directory to the compiled site folder
+	eleventyConfig.addPassthroughCopy('admin');
 	eleventyConfig.addPassthroughCopy('assets');
 	eleventyConfig.addPassthroughCopy('favicon.ico');
 	eleventyConfig.addPassthroughCopy('styles.css');
