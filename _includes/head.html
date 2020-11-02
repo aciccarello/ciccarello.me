@@ -1,120 +1,135 @@
 <head>
-    <meta charset="utf-8"/>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    {%- include seo -%}
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
-    <link href="https://unpkg.com/material-components-web@3/dist/material-components-web.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="/assets/main.css">
-    <link rel="stylesheet" href="/assets/css/socicon.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet"/>
-	<link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | addBaseUrl }}" title="Anthony Ciccarello" />
+	<meta charset="utf-8" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	{%- include seo -%}
+	<link
+		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		rel="stylesheet"
+	/>
+	<link
+		href="https://unpkg.com/material-components-web@3/dist/material-components-web.min.css"
+		rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="/assets/main.css" />
+	<link rel="stylesheet" href="/assets/css/fonts/Socicon/socicon.css" />
+	<link rel="stylesheet" href="/assets/css/fonts/Roboto/roboto.css" />
+	<link
+		type="application/atom+xml"
+		rel="alternate"
+		href="{{ '/feed.xml' | addBaseUrl }}"
+		title="Anthony Ciccarello"
+	/>
 	{% if page.url == "/" %}
-	<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+	<link rel="authorization_endpoint" href="https://indieauth.com/auth" />
 	<script type="application/ld+json">
 		{
-		"@context": "http://schema.org",
-		"@type": "Person",
-		"name": "Anthony Ciccarello",
-		"givenName": "Anthony",
-		"familyName": "Ciccarello",
-		"gender": "Male",
-		"email": "anthony@ciccarello.me",
-		"jobTitle": "Software Engineer",
-		"image": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256",
-		"address": {
-			"@type": "PostalAddress",
-			"addressLocality": "Indio",
-			"addressRegion": "California"
-		},
-		"worksFor": [
-			{
-			"@type": "Organization",
-			"name": "SitePen",
-			"url": "https://www.sitepen.com/",
-			"logo": "http://www.sitepen.com/images/sitepen.svg",
-			"sameAs": [
-				"https://www.linkedin.com/company/sitepen-inc-",
-				"https://twitter.com/sitepen",
-				"https://www.facebook.com/SitePen"
-			]
-			}
-		],
-		"alumniOf": [
-			{
-			"@type": "Organization",
-			"name": "Dish Network",
-			"url": "https://www.dish.com/",
-			"logo": "https://www.dish.com/images/nav/dishLogo.png",
-			"sameAs": [
-				"https://www.linkedin.com/company/dish-network?trk=ppro_cprof",
-				"https://twitter.com/dish",
-				""
-			]
+			"@context": "http://schema.org",
+			"@type": "Person",
+			"name": "Anthony Ciccarello",
+			"givenName": "Anthony",
+			"familyName": "Ciccarello",
+			"gender": "Male",
+			"email": "anthony@ciccarello.me",
+			"jobTitle": "Software Engineer",
+			"image": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Indio",
+				"addressRegion": "California"
 			},
-			{
-			"@type": "Organization",
-			"name": "Teradata Corporation",
-			"url": "https://www.teradata.com/",
-			"logo": "https://www.teradata.com/Teradata/OldImages/teradata-logo-social.jpg",
+			"worksFor": [
+				{
+					"@type": "Organization",
+					"name": "SitePen",
+					"url": "https://www.sitepen.com/",
+					"logo": "http://www.sitepen.com/images/sitepen.svg",
+					"sameAs": [
+						"https://www.linkedin.com/company/sitepen-inc-",
+						"https://twitter.com/sitepen",
+						"https://www.facebook.com/SitePen"
+					]
+				}
+			],
+			"alumniOf": [
+				{
+					"@type": "Organization",
+					"name": "Dish Network",
+					"url": "https://www.dish.com/",
+					"logo": "https://www.dish.com/images/nav/dishLogo.png",
+					"sameAs": [
+						"https://www.linkedin.com/company/dish-network?trk=ppro_cprof",
+						"https://twitter.com/dish",
+						""
+					]
+				},
+				{
+					"@type": "Organization",
+					"name": "Teradata Corporation",
+					"url": "https://www.teradata.com/",
+					"logo": "https://www.teradata.com/Teradata/OldImages/teradata-logo-social.jpg",
+					"sameAs": [
+						"https://www.linkedin.com/company/teradata?trk=ppro_cprof",
+						"https://www.facebook.com/Teradata"
+					]
+				},
+				{
+					"@type": "Organization",
+					"name": "Covenant Kitchens and Baths, Inc.",
+					"url": "https://www.covenantkitchens.com/",
+					"logo": "https://static1.squarespace.com/static/58bb39df6a4963d651b41dfa/t/58bb4f9ae6f2e1592ca3a2c8/1526572511940/?format=1500w",
+					"sameAs": [
+						"https://www.linkedin.com/company/covenant-kitchens-and-baths-inc-?trk=ppro_cprof"
+					]
+				},
+				{
+					"@type": "Organization",
+					"name": "Alstom Power",
+					"url": "http://www.alstom.com/",
+					"logo": "http://www.alstom.com/Templates/ui/img/logo/alstom-logo-header.png",
+					"sameAs": [
+						"https://www.linkedin.com/company/alstom-power?trk=ppro_cprof"
+					]
+				},
+				{
+					"@type": "EducationalOrganization",
+					"name": "Cedarville University",
+					"url": "https://www.cedarville.edu/",
+					"logo": "https://www.cedarville.edu/icons/mstile-310x310.png",
+					"sameAs": [
+						"https://www.linkedin.com/edu/cedarville-university-19095"
+					]
+				}
+			],
+			"url": "http://ciccarello.me",
 			"sameAs": [
-				"https://www.linkedin.com/company/teradata?trk=ppro_cprof",
-				"https://www.facebook.com/Teradata"
+				"https://github.com/aciccarello",
+				"https://twitter.com/ajciccarello",
+				"https://www.linkedin.com/in/anthonyciccarello",
+				"https://medium.com/@aciccarello",
+				"https://plus.google.com/+AnthonyCiccarello",
+				"https://www.linkedin.com/in/anthonyciccarello",
+				"https://www.instagram.com/ajciccarello/"
 			]
-			},
-			{
-			"@type": "Organization",
-			"name": "Covenant Kitchens and Baths, Inc.",
-			"url": "https://www.covenantkitchens.com/",
-			"logo": "https://static1.squarespace.com/static/58bb39df6a4963d651b41dfa/t/58bb4f9ae6f2e1592ca3a2c8/1526572511940/?format=1500w",
-			"sameAs": [
-				"https://www.linkedin.com/company/covenant-kitchens-and-baths-inc-?trk=ppro_cprof"
-			]
-			},
-			{
-			"@type": "Organization",
-			"name": "Alstom Power",
-			"url": "http://www.alstom.com/",
-			"logo": "http://www.alstom.com/Templates/ui/img/logo/alstom-logo-header.png",
-			"sameAs": [
-				"https://www.linkedin.com/company/alstom-power?trk=ppro_cprof"
-			]
-			},
-			{
-			"@type": "EducationalOrganization",
-			"name": "Cedarville University",
-			"url": "https://www.cedarville.edu/",
-			"logo": "https://www.cedarville.edu/icons/mstile-310x310.png",
-			"sameAs": [
-				"https://www.linkedin.com/edu/cedarville-university-19095"
-			]
-			}
-		],
-		"url": "http://ciccarello.me",
-		"sameAs": [
-			"https://github.com/aciccarello",
-			"https://twitter.com/ajciccarello",
-			"https://www.linkedin.com/in/anthonyciccarello",
-			"https://medium.com/@aciccarello",
-			"https://plus.google.com/+AnthonyCiccarello",
-			"https://www.linkedin.com/in/anthonyciccarello",
-			"https://www.instagram.com/ajciccarello/"
-		]
 		}
-    </script>
+	</script>
 	{% endif %}
-    <script>
-      function run() {
-        if (document.lastModified) {
-          const dateStr = 'Last-Updated: ' + new Date(document.lastModified).toDateString();
-          document.getElementById('last-updated').innerText = dateStr;
-        }
-      }
+	<script>
+		function run() {
+			if (document.lastModified) {
+				const dateStr =
+					'Last-Updated: ' +
+					new Date(document.lastModified).toDateString();
+				document.getElementById('last-updated').innerText = dateStr;
+			}
+		}
 
-      if (document.readyState === "loading") {  // Loading hasn't finished yet
-        document.addEventListener("DOMContentLoaded", run);
-      } else {  // `DOMContentLoaded` has already fired
-        run();
-      }
-    </script>
+		if (document.readyState === 'loading') {
+			// Loading hasn't finished yet
+			document.addEventListener('DOMContentLoaded', run);
+		} else {
+			// `DOMContentLoaded` has already fired
+			run();
+		}
+	</script>
 </head>
