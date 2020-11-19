@@ -1,32 +1,64 @@
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
 	{%- assign page_paths = site.header_pages -%}
 	<div class="mdc-top-app-bar__row">
-		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+		<section
+			class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+		>
 			{% if back_button %}
-			<a href="{{ back_button }}" class="mdc-top-app-bar__navigation-icon mdc-icon-button"
-				aria-label="Back button">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			<a
+				href="{{ back_button }}"
+				class="mdc-top-app-bar__navigation-icon mdc-icon-button"
+				aria-label="Back button"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+				>
 					<path d="M0 0h24v24H0z" fill="none" />
-					<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" /></svg>
+					<path
+						d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+					/>
+				</svg>
 			</a>
 			{% endif %}
-			<a class="mdc-top-app-bar__title title-link" href="/">Anthony Ciccarello</a>
+			<a class="mdc-top-app-bar__title title-link" href="/"
+				>Anthony Ciccarello</a
+			>
 		</section>
-		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
-			<a href="https://www.linkedin.com/in/anthonyciccarello/"
-				class="mdc-top-app-bar__navigation-icon mdc-icon-button" rel="me" aria-label="LinkedIn profile">
-				<span class="socicon-linkedin" aria-hidden="true"></span>
+		<section
+			class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+		>
+			<a
+				href="https://www.linkedin.com/in/anthonyciccarello/"
+				class="mdc-top-app-bar__navigation-icon mdc-icon-button"
+				rel="me"
+				aria-label="LinkedIn profile"
+			>
+				<span class="svg-icon">
+					{% include icons/linkedin.svg %}
+				</span>
 			</a>
-			<a href="https://twitter.com/ajciccarello" class="mdc-top-app-bar__navigation-icon mdc-icon-button" rel="me"
-				aria-label="Twitter profile">
-				<span class="socicon-twitter" aria-hidden="true"></span>
+			<a
+				href="https://twitter.com/ajciccarello"
+				class="mdc-top-app-bar__navigation-icon mdc-icon-button"
+				rel="me"
+				aria-label="Twitter profile"
+			>
+				<span class="svg-icon">
+					{% include icons/twitter.svg %}
+				</span>
 			</a>
-			<a href="mailto:anthony@ciccarello.me" rel="me" class="mdc-top-app-bar__navigation-icon mdc-icon-button
-			{% if back_button %}
-			hide-xs
-			{% endif %}
-			" aria-label="Email">
-				<span class="socicon-mail" aria-hidden="true"></span>
+			<a
+				href="mailto:anthony@ciccarello.me"
+				rel="me"
+				class="mdc-top-app-bar__navigation-icon mdc-icon-button {% if back_button %} hide-xs {% endif %}"
+				aria-label="Email"
+			>
+				<span class="svg-icon">
+					{% include icons/email.svg %}
+				</span>
 			</a>
 		</section>
 	</div>

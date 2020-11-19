@@ -260,7 +260,7 @@ cousin had been describing some of the birds he'd seen so I was excited to see
 how many we could find. When we arrived at night we were welcomed by the
 nightwatchmen; the small, quiet [Burrowing
 Owl](https://ebird.org/species/burowl) and the tall, chatty [Peruvian Thick-
-knee](http://Peruvian%20Thick-knee). The thick-knees are odd birds that call
+knee](https://ebird.org/species/petkne1). The thick-knees are odd birds that call
 out at any threats and can be quite loud when gathered in groups.
 
 {% include embed-link.html

@@ -126,6 +126,12 @@ hr {
 	margin: 1rem auto;
 }
 
+.svg-icon,
+.svg-icon > svg {
+	height: 24px;
+	width: 24px;
+}
+
 .profiles {
 	display: flex;
 	flex-wrap: wrap;
@@ -184,7 +190,7 @@ hr {
 	max-width: 300px;
 }
 
-/* Coppied from https://unpkg.com/material-components-web@0.37.0/dist/material-components-web.min.css */
+/* Copied from https://unpkg.com/material-components-web@0.37.0/dist/material-components-web.min.css */
 .skills-list svg {
 	fill: hsla(0, 0%, 100%, 0.5) !important;
 	fill: var(--mdc-theme-text-hint-on-dark, hsla(0, 0%, 100%, 0.5)) !important;
