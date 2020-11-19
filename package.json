@@ -10,6 +10,7 @@
     "diff": "git diff --no-index --ignore-all-space --ignore-blank-lines _site_previous/ _site/",
     "diff:filenames": "npm run diff -- --name-status",
     "bd": "npm run build && npm run diff",
+    "load-css": "curl -o assets/css/normalize.css -O https://unpkg.com/normalize.css@8/normalize.css -L && curl -o assets/css/material-components-web.css -O https://unpkg.com/material-components-web@3/dist/material-components-web.min.css -L",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
