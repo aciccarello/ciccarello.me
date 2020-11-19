@@ -258,8 +258,7 @@ After our day in Paracas we spent the week in the region of Cañete about an
 hour north but a little inland. The area is dry but irrigated for farming. My
 cousin had been describing some of the birds he'd seen so I was excited to see
 how many we could find. When we arrived at night we were welcomed by the
-nightwatchmen; the small, quiet [Burrowing
-Owl](https://ebird.org/species/burowl) and the tall, chatty [Peruvian Thick-
+nightwatchmen; the small, quiet [Burrowing Owl](https://ebird.org/species/burowl) and the tall, chatty [Peruvian Thick-
 knee](https://ebird.org/species/petkne1). The thick-knees are odd birds that call
 out at any threats and can be quite loud when gathered in groups.
 
