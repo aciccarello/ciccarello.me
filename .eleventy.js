@@ -33,6 +33,12 @@ function getCollectionItem(collection, page, modifier = 0) {
 		}
 	}
 }
+function yearsSince(date) {
+	const start = new Date(date);
+	const milliseconds = new Date().getTime() - start.getTime();
+	const years = new Date(milliseconds).getFullYear() - 1970;
+	return String(years);
+}
 /**
  * Converts UTC date to local date, ignoring time
  * @param date {string | date} UTC date
@@ -66,6 +72,7 @@ module.exports = function (eleventyConfig) {
 			throw error;
 		}
 	});
+	eleventyConfig.addShortcode('buildTime', () => new Date().toDateString());
 
 	eleventyConfig.addFilter(
 		'post_url',
@@ -86,6 +93,7 @@ module.exports = function (eleventyConfig) {
 		}
 		return 'https://www.ciccarello.me' + value;
 	});
+	eleventyConfig.addFilter('yearsSince', yearsSince);
 	eleventyConfig.addFilter('fromUTC', convertFromUTCDate);
 	eleventyConfig.addFilter('markdownify', (value) =>
 		md.renderInline(value || '')

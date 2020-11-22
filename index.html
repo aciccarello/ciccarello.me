@@ -4,20 +4,6 @@ title: Home
 image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256"
 ---
 
-<script>
-	function experienceYears() {
-		const experienceStart = new Date('June 1, 2014');
-		const miliseconds = new Date().getTime() - experienceStart.getTime();
-		const years = new Date(miliseconds).getFullYear() - 1970;
-		document.getElementById('years').innerText = String(years);
-	}
-
-	if (document.readyState === "loading") {  // Loading hasn't finished yet
-		document.addEventListener("DOMContentLoaded", experienceYears);
-	} else {  // `DOMContentLoaded` has already fired
-		run();
-	}
-</script>
 <span class="h-card">
     <section class="introduction">
         <img alt="" class="profile-pic u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512" height="256" width="256"/>
@@ -165,7 +151,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
                 </svg>
                 <h3 class="mdc-typography--headline6">Programming</h3>
                 <p>
-                    <span id="years">5</span>
+                    <span id="years">{{ '2014-06-01' | yearsSince }}</span>
                     years experience with JavaScript & TypeScript and compiled CSS.
                                                                                                     					Experience supporting ASP and JSP applications. College
                                                                                                     					education in Java and C++.
