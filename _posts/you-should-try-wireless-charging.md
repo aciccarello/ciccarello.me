@@ -6,8 +6,8 @@ date: 2020-11-26T03:40:55.718Z
 tags:
   - technology
   - review
-image: ""
-image_alt: "TODO: Image of Phone on wirelss charger"
+image: /assets/img/wireless-charging-featured.jpg
+image_alt: Phone sitting on wirless charging padd
 ---
 Wireless charging has been around for a while now but it's still not ubiquitous. Many people don't know their phone supports the feature. While it's not perfect, I think this is an under-utilized feature of modern cell phones.
 
