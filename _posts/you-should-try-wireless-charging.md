@@ -6,16 +6,18 @@ date: 2020-11-26T03:40:55.718Z
 tags:
   - technology
   - review
+image: ""
+image_alt: "TODO: Image of Phone on wirelss charger"
 ---
 Wireless charging has been around for a while now but it's still not ubiquitous. Many people don't know their phone supports the feature. While it's not perfect, I think this is an under-utilized feature of modern cell phones.
 
 # How does it work?
 
-While not necessary, I think it's helpful to know how this technology works. Modern wireless phone chargers uses what is call "Inductive charging". Electricity flowing through a cord produces a small magnetic field. By looping the wire, you can amplify that electric field. You can also reverse the process by producing a magnetic field to cause an electrical current. This technology has been used in electric toothbrushes as well as electric cars.
+Modern wireless phone chargers uses what is call "Inductive charging". Electricity flowing through a cord produces a small magnetic field. By looping the wire, you can amplify that electric field. You can also reverse the process by producing a magnetic field to cause an electrical current. This technology has been used in electric toothbrushes as well as electric cars.
 
-![inductive coupling wire diagram](https://upload.wikimedia.org/wikipedia/commons/b/b5/Wireless_power_system_-_inductive_coupling.svg)
+[![inductive coupling wire diagram](https://upload.wikimedia.org/wikipedia/commons/b/b5/Wireless_power_system_-_inductive_coupling.svg)](https://commons.wikimedia.org/wiki/File:Wireless_power_system_-_inductive_coupling.svg)
 
-For phones, there is the Qi wireless charging standard (pronounced *CHEE*) which allows phones from different manufacturers to work on the same chargers. Some phones even support "reverse wireless charging' where the phone can share some of its power with another phone.
+For phones, the Qi wireless charging standard (pronounced *CHEE*) allows phones from different manufacturers to work on the same chargers. Some phones even support "reverse wireless charging' where the phone can share some of its battery power with another phone.
 
 # Pros:
 
@@ -23,7 +25,7 @@ It's wireless! No really, your phone charges without being plugged in. This is a
 
 ## You can charge when convenient
 
-My favorite part of wireless charging is that starting and stopping charging is as simple as putting down or picking up your phone. Sitting at your desk to work? Drop your phone on the pad so it's charged whenever you get up. Cooking in the kitchen at the end of the day? Leave your phone on the pad in-between text messages without being tied to the one wall with an outlet.
+My favorite part of wireless charging is that starting and stopping charging is as simple as putting down or picking up your phone. If you are sitting at your desk to work, you can drop your phone on the pad so it's charged whenever you get up. Cooking in the kitchen at the end of the day? Leave your phone on the pad in-between text messages without being tied to the one wall with an outlet.
 
 This means it's easier to charge during the day. I have a charger by the bedside and one at my desk
 
@@ -33,7 +35,7 @@ Apple is still holding onto its proprietary lightning connector for iPhones even
 
 ## It's built into many phones
 
-Wireless charging is included with most phones made in the last few years. All iPhones from 8 and above, Pixel phones from 3 on (not including the budget 4a/5a), most Samsung Galaxy devices starting at the S6 include wireless charging. Even many budget-friendly phones include a wireless charging receiver in the device. This means you only need a charging pad to get started. If you don't have wireless charging in your phone, you still have the option of adding an external wireless receiver (see below).
+Most major phones made in the last few years include wireless charging. All iPhones from 8 and above, Pixel phones from 3 on (not including the budget 4a/5a), most Samsung Galaxy devices starting at the S6 include wireless charging. Apple's AirPods Pro also include wireless charging in the charging case. Even many budget-friendly phones include a wireless charging receiver in the device. This means you only need a charging pad to get started. If you don't have wireless charging in your phone, you still have the option of adding an external wireless receiver (see below).
 
 ## Your port won't wear out as quickly
 
@@ -53,7 +55,7 @@ As keen as I am on this technology, it's important to note that there are a lot 
 
 ## Must be aligned to charge
 
-No one wants to wake up in the morning and realize their phone didn't charge, or worse, their alarm didn't go off because their phone died.
+No one wants to wake up in the morning and realize their phone didn't charge, or worse, their alarm didn't go off because their phone died. Most wireless chargers have a charging indicator light. Most chargers can detect when you placed your phone on the charger but it didn't align it properly and show a warning light indicator. Different chargers have different light so look at the review of how clear the light is and whether it shuts off after a couple minutes so you can sleep if it is by your bedside.
 
 ## Sometimes a cord is better
 
@@ -65,7 +67,7 @@ Wireless charging requires the phone be close to the pad without interference. T
 
 ## It usually doesn't come in the box
 
-Phones still ship with corded charging as the default. If you want wireless charging, you'll have to shell out extra cash for your own wireless charging pad. Additionally, a power adapter is often not included with a wireless charger.
+Phones still ship with corded charging as the default. If you want wireless charging, you'll have to pay extra to buy a wireless charging pad. Additionally, a power adapter is often not included with a wireless charger. So if you buy a "quick charging" wireless charger, be prepared to shell out a little more money for a quick charging power adapter to plug it into.
 
 ## Charging is less efficient (and slower)
 
@@ -75,6 +77,15 @@ If you're battery is low and you need the fastest charge, use a cord. If your po
 
 # Hardware
 
+## Regular Wireless chargers
+
+Two wireless chargers I have tried personally:
+
+* [Anker 10W Wireless Charger](https://www.amazon.com/gp/product/B01KJL4XNY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+* [Yootech 10W Wireless Charger](https://www.amazon.com/gp/product/B07H93NYC5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+
+There are a lot of wireless chargers for sale, but a cheap charger without much range can leave you with headaches when you phone doesn't charge right. So look for well established brands that have a reputation to protect.
+
 ## Adding wireless charging to a phone without
 
 After having a flaky micro-USB port on my old phone, I decided that wireless charging was a must-have feature for me. The low-end phone I wanted to buy didn't have wireless charging built-in, so I decided to buy an external wireless receiver. These devices are slim, oval-shaped devices with a charging cord coming out. The USB-C device I bought easily it between my phone and the silicone case.
@@ -83,17 +94,14 @@ If you are considering this option, you should choose the device that matches yo
 
 ## Wireless charging with a pop-socket
 
+![pop-socket charger](https://www.popsockets.com/dw/image/v2/BDFW_PRD/on/demandware.static/-/Sites-popsockets-master-catalog/default/dwb887ce63/images/hi-res/PopPower_Wireless-Charger_Brilliant-White_05A_Back-34.png?sw=800&sh=800)
+
 My wife loves having a pop-socket on her phone. Pop-sockets are fairly tall, even when flattened, so they interfere with wireless charging. New pop-sockets are removable, which usually allows you to use a wireless charger. However, if you have to remove a tab to charge wirelessly, it takes a way a lot of the convenience of wireless charging.
 
-Pop-socket sells a solution to the problem they created! A special charger with a cutout for a pop-socket. This actually fixes the alignment issue with wireless charging by making sure your phone is centered on the wireless charger. This does require that your pop-socket be aligned with your phone's wireless charger, but works really well in practice.
+[Pop-socket sells a solution to the problem they created!](https://www.popsockets.com/p/poppower-home-wireless-charger-white/801483.html) A special charger with a cutout for a pop-socket. This actually fixes the alignment issue with wireless charging by making sure your phone is centered on the wireless charger. This does require that your pop-socket be aligned with your phone's wireless charger, but works really well in practice.
 
 ## Wireless charging car mounts
 
-For Christmas, I received a wireless charging car mount. This device starts charging my phone whenever I have it in the dock. It's really handy and has worked well. They are a little more expensive than a normal charger, but are a great example of how much easier charging a phone can be.
+For Christmas, I received a wireless charging car mount. This device starts charging my phone whenever I have it in the dock. It's really handy and has worked well. They are a little more expensive than a normal charger, but make charging a phone on trips as simple as possible.
 
-## Regular Wireless chargers
-
-Two wireless chargers I have tried personally:
-
-* [Anker 10W Wireless Charger](https://www.amazon.com/gp/product/B01KJL4XNY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-* [Yootech 10W Wireless Charger](https://www.amazon.com/gp/product/B07H93NYC5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+## Summary
