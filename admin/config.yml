@@ -92,3 +92,17 @@ collections:
           - label: Description
             name: description
             widget: text
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'Links'
+        name: 'links'
+        file: '_data/links.json'
+        fields:
+          - { label: Description, name: description, widget: string }
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: URL, name: url, widget: string }

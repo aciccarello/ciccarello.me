@@ -1,0 +1,33 @@
+{
+  "description": "Software Engineer",
+  "links": [
+    {
+      "url": "https://www.ciccarello.me",
+      "title": "Homepage"
+    },
+    {
+      "url": "https://www.ciccarello.me/blog/",
+      "title": "Blog"
+    },
+    {
+      "title": "Talkscript Podcast",
+      "url": "http://talkscript.fm/"
+    },
+    {
+      "title": "Elfster Wish List",
+      "url": "https://www.elfster.com/profile/1e590708-714d-4c97-8403-cb4e4e17281d/wish-lists/2a98862b-27ba-48a3-9bb9-a92e9ca63a76/"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/anthonyciccarello/"
+    },
+    {
+      "title": "IndieWeb",
+      "url": "https://indieweb.org/"
+    },
+    {
+      "title": "Equal Justice Initiative",
+      "url": "https://eji.org/"
+    }
+  ]
+}
