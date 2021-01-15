@@ -1,0 +1,237 @@
+---
+layout: post
+categories: blog
+title: Birding in 2020
+date: 2021-07-11
+tags: [travel, birding]
+image: /assets/img/2020-birding-header.jpg
+image_alt: 'Hawk with checkered feathers and missing tail feather flying overhead.'
+---
+## 2020 Trends
+
+After a year of international travel that triggered my re-entry into bird watching, 2020 was a much more restrained year. While life events and global lockdowns kept me in the US, I enjoyed refining my birding skills and focusing on more birding from home. As the stress of being stuck home wore on us, we decided to take several cross country trips. Looking back I'm surprised by how many places we managed to visit in the second half of the year and how much of a sanctuary the outdoors were. With 2021 being much more focused on our home, I've enjoyed reviewing the places we went.
+
+Thanks to my new 250mm zoom lens, I was able work on my nature photography skills. I could capture much more detail than before, but you need more of a steady hand to avoid everything getting blurred. Photographing birds can also be frustrating because it's hard to tell if the camera focused on the bird or the branch right in front of the bird. When I take the camera while birding, it's easy to rapidly snap pictures in hopes one of them captures the scene well or gets enough detail. But I quickly realized reviewing and editing photos is a lot of work so I try to be more conservative with the picture's I attempt to take. Still, there have been many times when a good picture was crucial for me identifying a bird after the fact.
+
+{% include image.html
+    file: "/assets/img/2020-birding-ca-brown-pelican.jpg"
+    alt: "Pelican standing on coastal rocks in bright sunlight."
+    caption: "[Brown Pelicans](https://ebird.org/species/brnpel/L234718) on the California Coast"
+%}
+
+The other skill I worked to strengthen was birding by ear. The standard for Cornell's ebird app is species identification, not necessarily bird sighting. There many birds which are pretty good at staying out of sight but who make a lot of noise. Some species, like different kinds of crows, look so similar that they are practically impossible to accurately ID in the field without hearing their call. I still have a long way to go with this skill, but I'm getting more aware of it while out in the field. Audio recordings are a bit harder to scan through and learn but I'll often check the audio when two species look similar.
+
+While I experienced hundreds of new species as my wife and I traveled internationally, there were still a lot of "common" birds in the United States I had missed like [Pine Siskin](https://ebird.org/species/pinsis/), [Cedar Waxwing](https://ebird.org/species/cedwax/), or [Belted Kingfisher](https://ebird.org/species/belkin1/). I also was able to expand my birding into some less common species groups, like Pelagic birds which spend most of their life on the open ocean.
+
+## Connecticut
+At the beginning of the year we were celebrating the holidays with family. I had gotten my new zoom lens the week before so I kicked off the year by getting great shots of neighborhood birds like the [Norther Flicker](https://ebird.org/species/norfli/) through the bare winter trees. On the shores of Long Island Sound I identified and photographed several coastal birds for the first time like the [Great Black-backed Gull](https://ebird.org/species/gbbgul/), the streamlined [Red-breasted Merganser](https://ebird.org/species/rebmer/), and clownish [Surf Scoter](https://ebird.org/species/sursco/).
+
+{% include image.html
+    file: "/assets/img/2020-birding-ct-flicker.jpg"
+    alt: "large woodpecker seen through bare tree branches."
+    caption: "[Norther Flicker](https://ebird.org/species/norfli/) trying to hide in the winter trees"
+%}
+
+Late in the summer we visited for my brother's downsized wedding. While there we, we had some time to go kayaking in a state park on the Connecticut river. All along the river the [Gray Catbirds](https://ebird.org/species/grycat/) were calling and the [American Goldfinches](https://ebird.org/species/amegfi/) darted along the shoreline. As we got to the end we passed by a [Belted Kingfisher](https://ebird.org/species/belkin1/) which I had been wanting see for a while. It was larger than I anticipated, though I didn't see it do it's signature dive it was cool to watch it swoop between perches. But the real surprise of the day was the small [Merlin](https://ebird.org/species/merlin) falcon darting around the trees.
+
+{% include embed-link.html
+    title: "Surf Scoter"
+    url: "https://ebird.org/species/sursco/"
+    description: "Large, dark sea duck. Breeding males have a colorful bill and white patches on the nape and forehead. Females and first-year males are dark brown with white patches on…"
+    img: "/assets/img/embed-thumbnail-surf-scoter.jpg"
+    alt: "Clownish black duck on the water."
+    objectPosition: "80% center"
+%}
+
+{% include embed-link.html
+    title: "Belted Kingfisher"
+    url: "https://ebird.org/species/belkin1/"
+    description: "Stocky and large-headed with a shaggy crest. Bill is long, straight, thick, and pointed. Powder blue above with white underparts and blue breast band. Females have additional rusty…"
+    img: "/assets/img/embed-thumbnail-belted-kingfisher.jpg"
+    alt: "White and blue bird with a long bill and messy crest"
+    objectPosition: "50% center"
+%}
+
+### Connecticut Stats
+
+* New Species: 12
+* Total Species: 52
+* Checklists: 20
+
+## Washington
+We made a trip to Washington in the fall to get away from the craziness of the year. It is a beautiful state with lots of landscapes that gave me a lot of opportunities to see new species. Having never been in the Pacific Northwest before, even common birds like [Chestnut-backed Chickadees](https://ebird.org/species/chbchi/), [Pacific Wren](https://ebird.org/species/pacwre1/), [Varied Thrush](https://ebird.org/species/varthr/), and the Oregon subspecies of [Dark-eyed Junco](https://ebird.org/species/daejun/) were new to me. Bekah's uncle took us on a fantastic trip out to the San Juan Islands on his boat within sight of the Canadian border. Out on the boat we could see pelagic species like [Marbled Murrelet](https://ebird.org/species/marmur) and [Pigeon Guillemot](https://ebird.org/species/piggui/https://ebird.org/species/piggui/) floating on the open ocean.
+
+{% include image.html
+    file: "/assets/img/2020-birding-wa-bald-eagle.jpg"
+    alt: "mature bald eagle standing up in a dead pine tree."
+    caption: "[Bald Eagle](https://ebird.org/species/baleag/) looking over the Washington Coast"
+    display: "float"
+%}
+
+From the coast, we headed over the mountains to stay in a cabin resort. Eastern Washington is clearly drier and more like our experiences in Colorado. The break there was nice and we were loving being outside. The resort was surrounded with wildlife. On our arrival, we were greeted by a [Blue Jay](https://ebird.org/species/blujay) who was impatient for us to pass so he could continue raiding the kernels from the decorative corn. Walking to our car we saw the striking [White-headed Woodpecker](https://ebird.org/species/whhwoo/). And as we sat reading by the mountain stream, a fat coyote darted across 15 feet away from us. The hike we went on had beautiful views of the valley and was an Audubon recognized birding location. A [Golden-crowned Kinglet](https://ebird.org/species/gockin/) boldly darted between the pine trees, sometimes at eye level within 20 feet. And as we were heading home we stopped to look at a family of [Canada Jay](https://ebird.org/species/gryjay/)
+
+After staying at the resort, we went up to Bekah's uncle's cabin in Skagit county. He has a background in forest management and has been milling wood from trees on his property to build a beautiful barn. It's a really cool project and I'm glad we were able to experience it. Up the hill from the barn is an old restored cabin that we stayed the night in. I had been hoping to see the barred owls that live around the property, but was surprised to hear a [Northern Saw-Whet Owl](https://ebird.org/species/nswowl/) instead.
+
+We also drove down to the coast in hopes of seeing some [Short-eared Owls](https://ebird.org/species/sheowl/) (which I still haven't seen). Parts of the area are below sea-level farms protected by levees. Hovering over the marshes were [Northern Harrier](https://ebird.org/species/norhar2/) hawks who glide on the wing looking down for small pray. We also saw [Bald Eagles](), an [American Bittern](https://ebird.org/species/amebit), [Caspian Terns](https://ebird.org/species/caster1), and the migratory [Snow Geese](https://ebird.org/species/snogoo/) that I had seen the previous December birding in the Southern Californa desert.
+
+### Washington Stats
+
+* New Species: 17
+* Total Species: 54
+* Checklists: 30
+
+{% include image.html
+    file: "/assets/img/2020-birding-wa-ocean-harrier.jpg"
+    alt: "hawk flying over reeds with water behind."
+    caption: "[Northern Harrier](https://ebird.org/species/norhar2/) looking for prey"
+    display: "wide"
+%}
+
+## Florida
+We also made a short trip to the opposite side of the country, to Orlando Florida. Though I didn't get out much to go birding, I was very happy to add a [Palm Warbler](https://ebird.org/species/palwar/) and [Wood Stork](https://ebird.org/species/woosto/) to my life list. Some other Florida standouts were the [Anhinga](https://ebird.org/species/anhing/), the [Little Blue Heron](https://ebird.org/species/libher/), and the sheer number of [White Ibis](https://ebird.org/species/whiibi/). It felt like you couldn't go anywhere without seeing those bright white birds with the incredibly long bills awkwardly picking up crumbs off the sidewalk.
+
+{% include embed-link.html
+    title: "Palm Warbler"
+    url: "https://ebird.org/species/palwar/"
+    description: "Subtly patterned brown-and-yellow warbler, known for constantly bobbing its tail. Often forages on the ground, unlike most other warblers. Breeding plumage shows a rufous cap…"
+    img: "/assets/img/embed-thumbnail-palm-warbler.jpg"
+    alt: "small yellow bird with redish cap on top off head."
+    objectPosition: "90% center"
+%}
+
+{% include embed-link.html
+    title: "White Ibis"
+    url: "https://ebird.org/species/whiibi/"
+    description: "Adults are white with a bit of black on the wingtips. Red decurved bill and pinkish-red legs. Bright blue eyes. Immatures are half brown, half white. Forages in saltmarshes and shallow…"
+    img: "/assets/img/embed-thumbnail-white-ibis.jpg"
+    alt: "White bird with pink face and long curved bill on long legs."
+    objectPosition: "80% center"
+%}
+
+### Florida Stats
+
+* New Species: 4
+* Total Species: 25
+* Checklists: 12
+
+## Massachusets
+Our stay in Massachusets was a weekend on the cape which worked well as a isolated vacation but was also offered a chance to see some East coast water birds. While trying to ID birds darting through the treetops can be difficult, watching birds on the ocean is in someways more frustrating. Usually, sea birds are not too hard to spot and often in large numbers, but they are farther away so I end up staring trying to figure out, which of the 5-20 local ducks/gulls/ect. species is dipping up and down in the waves. Thankfully went out to walk on the cold, windy beaches of Cape Cod several times that weekend and eventually was able to find some close enough birds to ID.
+
+Around our cottage rental, there were the usual winter forest birds like [White](https://ebird.org/species/whbnut/) and [Red-breasted Nuthatch](https://ebird.org/species/rebnut/), [Tufted Titmice](https://ebird.org/species/tuftit/), and [Dark-eyed Juncos](https://ebird.org/species/daejun/). From shore I was able to ID [Long-tailed Duck](https://ebird.org/species/lotduc/), [Common Eider](https://ebird.org/species/comeid/), and [Northern Gannet](https://ebird.org/species/norgan/).
+
+
+{% include embed-link.html
+    title: "Common Eider"
+    url: "https://ebird.org/species/comeid/"
+    description: "Flocks of these large sea ducks enliven northern coastlines. Males are white and black with a soft suffusion of green on the nape. Immature males are variable and…"
+    img: "/assets/img/embed-thumbnail-common-eider.jpg"
+    alt: "Black and white bird floating on water."
+    objectPosition: "90% center"
+%}
+
+{% include embed-link.html
+    title: "Northern Gannet"
+    url: "https://ebird.org/species/norgan/"
+    description: "Large seabird of the Atlantic with long, pointed bill, wings, and tail. Adults bright white with cream-colored head and black wingtips. Takes several years to reach…"
+    img: "/assets/img/embed-thumbnail-northern-gannet.jpg"
+    alt: "Large white bird with yellow head and pointy bill floating on water."
+    objectPosition: "90% center"
+%}
+
+### Massachusets Stats
+* New Species: 5
+* Total Species: 19
+* Checklists: 6
+
+{% include image.html
+    file: "/assets/img/2020-birding-ca-double-crested-cormorant.jpg"
+    alt: "black bird with long neck and red bill on a cliff."
+    caption: "no caption?"
+%}
+
+## California
+At the beginning of the year, I was enjoying the breadth of species southern California has to offer. Bekah and I took some great shots of birds on the LA coast of shorebirds like [Spotted Sandpiper](https://ebird.org/species/sposan) and [Black Turnstone](https://ebird.org/species/blktur) as well as more common varieties like [California Towhee](https://ebird.org/species/caltow) and [Say's Phoebe](https://ebird.org/species/saypho). Other fun sightings were, a large flock of [Brand](https://ebird.org/species/brant/) offshore of Sunset Cliffs in San Diego, a [Whimbrel](https://ebird.org/species/whimbr/) at the Newport Aquatic Center, and an [Osprey](https://ebird.org/species/osprey) very upset by a [Bald Eagle](https://ebird.org/species/baleag) while camping at Lake Skinner.
+
+{% include image.html
+    file: "/assets/img/2020-birding-ca-sd-zoo-flamingos.jpg"
+    alt: "Flamingos standing in a shallow pond."
+    caption: "Flamingos at the San Diego Zoo"
+    display: "float"
+%}
+
+I also got to see some captive birds up close. We met some friends at the [San Diego Zoo](https://zoo.sandiegozoo.org/) which hosts a wide array of bird species, from [American Flamingo](https://ebird.org/species/grefla2/), to [African Penguins](https://ebird.org/species/jacpen1/), to critically endangered species like the [Harpy Eagle](https://ebird.org/species/hareag1/) and [California Condor](https://ebird.org/species/calcon/) [which they breed](https://www.sdzsafaripark.org/cams/condor-cam) for their release program. Closer to home, Bekah and I went with her nephews to the [Coachella Valley Wild Bird Center](https://www.coachellavalleywildbirdcenter.org/) where Bekah's grandmother used to volunteer. They have many birds of prey like [American Kestrel](https://ebird.org/species/amekes/), [Great Horned Owl](https://ebird.org/species/grhowl/), and [Red-shouldered Hawk](https://ebird.org/species/reshaw/) that are either being rehabilitated or are used to raise abandoned chicks. Next door the boys were impressed by the hundreds of [Northern Shoveler](https://ebird.org/species/norsho) and [Ruddy Duck](https://ebird.org/species/rudduc) in the ponds next door. 
+
+During the early pandemic lockdowns, walks and birding around the block of our neighborhood in the desert became a retreat from societal stress. I saw 3 new species in our neighborhood the week after California enacted it's stay at home order: the yellow [Western Kingbird](https://ebird.org/species/weskin/) flycatcher, the bold, orange [Hooded Oriole](https://ebird.org/species/hooori/), and the iconic [Cedar Waxwing](https://ebird.org/species/cedwax/). After a month, I had seen 26 species in our neighborhood alone. With a fraction of the cars on the street, birding felt easier and I could hear more birds singing around me. One weekend I headed out to the Sonny Bono Salton Sea Refuge where I saw only 1 person and 37 species including the [Prarie Falcon](https://ebird.org/species/prafal/) I had been looking for. May's global big day rolled around and since the Wild Bird Center was closed, I peered at the ducks and greebes through the main gate and watched [Cliff Swallows](https://ebird.org/species/cliswa/) fly under a local bridge.
+
+{% include image.html
+    file: "/assets/img/2020-birding-ca-peregrine.jpg"
+    alt: "Looking down on a Falcon flying over ocean water."
+    caption: "Peregrine Falcon on the California coast"
+    display: "float-right"
+%}
+
+As the year rolled on, we looked to San Diego where we'd end up moving. We saw [Brandt's Cormorants]() nesting on the cliffs of La Jolla amongst giant [Brown Pelicans](https://ebird.org/species/brnpel/L234718) and [Song Sparrow](https://ebird.org/species/sonspa/). I also saw not only my first wild [Peregrine Falcon](https://ebird.org/species/perfal/), but a nesting pair with 3 fledglings. My middle school biology report could tell you that these birds have been recorded flying well above 200 MPH (325 KMH).
+
+We went to state and local parks as much as we could during the year. Hiking in the desert, I learned the sound of [Black-throated Sparrows](https://ebird.org/species/bktspa/) singing from dry shrubs. In a park in Riverside I finally found the black, crested [Phainopepla](https://ebird.org/species/phaino/), who's name I still don't know how to pronounce. Camping in the mountains I saw beautiful blue [Lazuli Bunting](https://ebird.org/species/lazbun/), the gray, but not drab [Lawrence's Goldfinch](https://ebird.org/species/lawgol/), and a [Red-breasted Sapsucker](https://ebird.org/species/rebsap/) climbing tree trunks along the creek bed. Our neighborhood park had lots of diversity too, making walks with the dog fun. A surprise find was the [Scaly-breasted Munia](https://ebird.org/species/nutman/), which partly looks strange because it is introduced from south-east asia. More common were the [Osprey](https://ebird.org/species/osprey/) which nested on a platform over the trail, the [Yellow-rumped Warblers](https://ebird.org/species/yerwar/) who searched the trees for insects, the [Great-tailed Grackle](https://ebird.org/species/grtgra/) who would make all kinds of noise from the reeds, and of course the [coots](https://ebird.org/species/y00475/) and ducks who swam in the lake to tease our dog who wasn't allowed in the reservoir.
+
+{% include embed-link.html
+    title: "Hooded Oriole"
+    url: "https://ebird.org/species/hooori/https://ebird.org/species/hooori/"
+    description: "Rather slender, long-tailed oriole. Adult males are orange with a black mask and throat and obvious white shoulder patch. Variable color intensity…"
+    img: "/assets/img/embed-thumbnail-hooded-oriole.jpg"
+    alt: "orange bird with black and white wings and black face."
+    objectPosition: "80% center"
+%}
+
+{% include embed-link.html
+    title: "Lazuli Bunting"
+    url: "https://ebird.org/species/lazbun/"
+    description: "Breeding males are unmistakable: bright cerulean above with bold white wingbars, white belly, and orange breast. Females are plain buffy brown with paler…"
+    img: "/assets/img/embed-thumbnail-lazuli-bunting.jpg"
+    alt: "songbird with blue head."
+    objectPosition: "70% center"
+%}
+
+### California Stats
+
+* New Species: 33
+* Total Species: 136
+* Checklists: 106
+
+{% include image.html
+    file: "/assets/img/2020-birding-ca-snowy-egret.jpg"
+    alt: "rocky shore with wite crane."
+    caption: "[Snowy Egret](https://ebird.org/species/snoegr) on the California Coast"
+    display: "wide"
+%}
+
+## Summary
+2020 was not the year anyone was anticipating. But I'm grateful I could keep birding, even when the rest of our lives were shut down. When society, work, or the insides of our home seemed like too much, getting outside was a relief. Living in southern california was a huge advantage given that the weather when lockdowns started in March was milda, but our out-of-state trips largely centered around being outdoors too.
+
+Compared to the previous year where almost everything was new to me, in 2020 I got to know our local species better. I learned where to find [Costa's Hummingbirds](https://ebird.org/species/coshum/) perched and ready to defend their territory. I learned how [Eurasian Collard-Doves](https://ebird.org/species/eucdov/) tend to hold their heads higher than [Mourning Doves](https://ebird.org/species/moudov/) who's song starts slower. I noticed when the [Say's Phoebe](https://ebird.org/species/saypho/) left for the summer and returned in the winter. Even with familiarity, every day was different. You never knew when an oriole, or heron, or [Greater Roadrunner](https://ebird.org/species/greroa/) would show up. I remember the day a yellow and black [Townsend's Warbler](https://ebird.org/species/towwar/) showed up looking for insects in he shrubs outside my office window. When we weren't able to see friends, my neighborhood flock was the solace I needed.
+
+
+{% include embed-link.html
+    title: "Greater Roadrunner"
+    url: "https://ebird.org/species/greroa/"
+    description: "A huge, ground-dwelling cuckoo. Streaky brown overall with a very long tail and short, shaggy crest. Surprisingly iridescent in good light, with purple…"
+    img: "/assets/img/embed-thumbnail-greater-roadrunner.jpg"
+    alt: "thin, brown bird running with long legs on a road."
+    objectPosition: "80% center"
+%}
+
+{% include embed-link.html
+    title: "Townsend's Warbler"
+    url: "https://ebird.org/species/towwar/"
+    description: "Brightly-colored warbler with a contrasting face pattern with dark cheeks and crown surrounded by bright yellow. Also shows olive back, bold white wingbars, and yellow…"
+    img: "/assets/img/embed-thumbnail-townsends-warbler.jpg"
+    alt: "Small yellow, black, and white bird."
+    objectPosition: "90% center"
+%}
+
+### 2020 Stats
+
+* Checklists: 174
+* New Species: 72
+* Year Species: 198
+* Life Species: 446
