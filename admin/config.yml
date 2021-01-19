@@ -95,6 +95,12 @@ collections:
   - label: 'Pages'
     name: 'pages'
     files:
+      - label: 'Privacy'
+        name: 'privacy'
+        file: 'privacy.md'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Links'
         name: 'links'
         file: '_data/links.json'
