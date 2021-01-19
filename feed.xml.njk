@@ -18,12 +18,28 @@
   </author>
   {%- for post in collections.blog %}
   {%- set absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endset %}
+  {%- set postImage %}{% if post.data.image -%}
+      <figure>
+        <img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}" />
+        {%- if image_caption %}
+        <figcaption class="mdc-typography--caption">
+          {{ post.data.image_caption | markdownify }}
+        </figcaption>
+        {%- endif %}
+      </figure>
+  {%- endif %}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | rssDate }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    {%- for tag in post.data.tags %}
+    <category term="{{ tag }}"/>
+    {%- endfor %}
+    <content type="html">
+      {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
+      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+    </content>
   </entry>
   {%- endfor %}
 </feed>
