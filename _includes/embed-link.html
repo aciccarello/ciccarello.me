@@ -1,5 +1,4 @@
-{% assign domain = url | split: "//" %} {% assign domain = domain[1]| split: "/"
-| first %}
+{% assign domain = url | split: "//" %} {% assign domain = domain[1]| split: "/" | first %}
 <div>
 	<a href="{{ url }}" class="disable-link-styles">
 		<blockquote class="mdc-card embed-card mdc-elevation-transition">
@@ -15,7 +14,7 @@
 				alt="{{ alt }}"
 				{%- if objectPosition %}
 				style="object-position: {{objectPosition}}"
-				{% endif %}
+				{%- endif %}
 			/>
 		</blockquote>
 	</a>
