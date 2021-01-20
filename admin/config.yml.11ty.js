@@ -385,6 +385,12 @@ class CmsConfig {
 							fields: [fields.title, fields.body],
 						},
 						{
+							label: 'Subscribe',
+							name: 'subscribe',
+							file: 'subscribe.md',
+							fields: [fields.title, fields.body],
+						},
+						{
 							label: 'Links',
 							name: 'links',
 							file: '_data/links.json',
