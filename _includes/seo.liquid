@@ -17,8 +17,8 @@
 <meta name="author" content="{{ author }}" />
 {%- endif %}
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="{{ pageContent }}" />
-<meta property="og:description" content="{{ pageContent }}" />
+<meta name="description" content="{{ pageContent | strip_html }}" />
+<meta property="og:description" content="{{ pageContent | strip_html }}" />
 <link rel="canonical" href="{{ collectionData.data.canonical_url | default : fullUrl}}" />
 <meta property="og:url" content="{{ collectionData.data.canonical_url | default : fullUrl}}" />
 <meta property="og:site_name" content="{{ site.title }}" />
@@ -57,7 +57,7 @@
     "dateModified": "{{ page.date | fromUTC | rssDate }}",
     "datePublished": "{{ page.date | fromUTC | rssDate }}",
     {% endif %}
-    "description":"{{ pageContent }}",
+    "description":"{{ pageContent | strip_html }}",
     {% if page.url == "/" %}
     "@type":"WebSite",
     {% elsif page.inputPath contains "_posts" %}
