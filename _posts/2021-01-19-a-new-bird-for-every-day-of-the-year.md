@@ -10,8 +10,6 @@ image_alt: Dark, round bird with a white face and black cap on a thorny branch
 image_caption: Black-capped chickadee, December 2019
 ---
 
-<a href="https://www.bloglovin.com/blog/20788269/?claim=yfng3f7xef9" style="display: none;">Follow my blog with Bloglovin</a>
-
 Two years ago, I rediscovered one of my favorite hobbies: birdwatching. To some it may sound like a pastime for elderly adults with plenty of time, but for me it's like a natural scavenger hunt. As a birder, visiting new places has a unique opportunity: seeing new species of birds and in 2019 my wife and I visited a lot of new countries. When we started our travels, I had no idea I would be able to identify a new bird species for every day of the year.
 
 ## Getting back into birding
