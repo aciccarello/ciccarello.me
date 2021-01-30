@@ -73,6 +73,64 @@ collections:
           required: false,
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - label: 'Recipes'
+    name: 'recipes'
+    label_singular: 'Recipe'
+    folder: '_recipes'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'hidden'
+        default: 'recipes'
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Subtitle'
+        name: 'subtitle'
+        widget: 'string'
+        required: false
+
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Canonical URL',
+          name: 'canonical_url',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Permalink',
+          name: 'permalink',
+          widget: 'string',
+          required: false,
+        }
+      - widget: list
+        label: 'tags'
+        name: 'tags'
+        multiple: true
+        allow_add: true
+        required: false
+      - {
+          label: 'Main image',
+          name: image,
+          widget: image,
+          required: false,
+          allow_multiple: false,
+        }
+      - {
+          label: 'Alt Text',
+          name: 'image_alt',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Image Caption',
+          name: 'image_caption',
+          widget: 'string',
+          required: false,
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - label: 'Settings'
     name: 'settings'

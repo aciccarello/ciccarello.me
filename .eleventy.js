@@ -61,9 +61,13 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('mywotc6b2477c57f015eaa645.html');
 	eleventyConfig.addPassthroughCopy('BingSiteAuth.xml');
 
-	eleventyConfig.addCollection('blog', (collection) => {
-		return collection.getFilteredByGlob('_posts/*.md');
-	});
+	eleventyConfig.addCollection('blog', (collection) =>
+		collection.getFilteredByGlob('_posts/*.md')
+	);
+	eleventyConfig.addCollection('recipes', (collection) =>
+		collection.getFilteredByGlob('_recipes/*.md')
+	);
+
 	eleventyConfig.addPairedShortcode('json', (content) => {
 		try {
 			return JSON.stringify(JSON.parse(content));
