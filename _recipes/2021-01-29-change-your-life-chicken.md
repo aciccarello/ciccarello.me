@@ -1,5 +1,4 @@
 ---
-layout: 'post'
 title: 'Change Your Life Chicken'
 date: 2021-01-29
 canonical_url: https://www.thelazygeniuscollective.com/blog/change-your-life-chicken

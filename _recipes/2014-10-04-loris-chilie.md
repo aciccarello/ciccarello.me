@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: recipes
 title: Lori's Chile
 date: 2014-10-04
 tags:

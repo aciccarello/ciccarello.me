@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: recipes
 title: 'Creamy Chicken Gnocchi Soup '
 date: 2021-01-12
 tags:

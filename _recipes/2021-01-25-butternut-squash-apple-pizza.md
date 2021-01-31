@@ -1,5 +1,4 @@
 ---
-layout: 'post'
 title: 'Butternut Squash & Apple Pizza'
 date: 2021-01-25
 canonical_url: https://www.coloradohomesmag.com/half-baked-harvest-butternut-squash-apple-pizza/
