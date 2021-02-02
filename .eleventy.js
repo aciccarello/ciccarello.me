@@ -54,20 +54,6 @@ module.exports = function (eleventyConfig) {
 		}
 	});
 	eleventyConfig.addShortcode('buildTime', () => new Date().toDateString());
-
-	eleventyConfig.addFilter(
-		'post_url',
-		/** @param fileName {string} */ (collection, fileName) => {
-			const post = collection.find((item) =>
-				item.inputPath.includes(fileName)
-			);
-			if (post) {
-				return post.url;
-			} else {
-				console.warn('post_url: no item found for', fileName);
-			}
-		}
-	);
 	eleventyConfig.addFilter('addBaseUrl', (value) => {
 		if (value.startsWith('http')) {
 			return value;

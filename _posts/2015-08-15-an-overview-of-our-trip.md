@@ -24,7 +24,7 @@ tell you more after we have had time to write.
 
 ### Senegal
 
-As stated in our [one post]({{ collections.blog | post_url: "2015-07-24-getting-an-introduction-to-africa" }}) made during the trip, on our flight from
+As stated in our [one post](/blog/2015/07/24/getting-an-introduction-to-africa/) made during the trip, on our flight from
 Brussels to Monrovia, one of the layers of our airplane developed a crack and
 our flight had to be diverted to Dakar, Senegal where repairs could be made.
 We were eventually transported to a hotel where we spent two days mostly just

@@ -11,7 +11,7 @@ image_caption: The town of Orvieto seen from across the valley
 After meeting up with my family, we drove to the town of Orvieto a little more than an hour outside of Rome. We stayed in Orvieto because my sister was studying there for a semester of her undergrad and had classes during the week. It may not be top of the list for international travelers, but it is a beautiful tourist destination. The Etruscans built the historic part of the city on the top of a plateau before the time of the Roman empire and it later became an important refuge for the Pope. Now the city is a popular vacation spot for Italians and hosts day tours from Rome.
 
 <aside style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;">
-    This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="{{ collections.blog | post_url: "2019-11-27-we-traveled-to-italy" }}">introductory post</a>.
+    This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 
 ## Our Cottage in the Countryside

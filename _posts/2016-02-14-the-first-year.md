@@ -123,7 +123,7 @@ trip to visit that orphanage.
 
 Through the support of many people, Bekah, her parents, and I were able to
 travel to Liberia this past summer. I'll spare most of the details (since I've
-written about that [elsewhere]({{ collections.blog | post_url: "2015-08-15-an-overview-of-our-trip" }})) but being able to spend over a week with people like
+written about that [elsewhere](/blog/2015/08/15/an-overview-of-our-trip/)) but being able to spend over a week with people like
 Remington, Ma and Pa Jonah, and the children at the orphanage was one of the
 best things that happened this year. I was able to get to know the people that
 Bekah had missed so badly. Many thanks to the people who supported us in this

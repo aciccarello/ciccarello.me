@@ -89,10 +89,10 @@ I understand why Italy attracts so many repeat visitors and I think I've caught 
 
 As we traveled, I made a point to write down a little about each day. From that I've put together more complete thoughts on each of the major regions we visited as separate posts and added more pictures. While I hope to return some day, I never want to forget the great memories from this special trip.
 
-- [Amalfi Coast]({{ collections.blog | post_url: "2019-11-28-anniversary-on-the-amalfi-coast" }})
-- [Rome]({{ collections.blog | post_url: "2020-02-06-rome-is-a-work-of-art" }})
-- [Orvieto]({{ collections.blog | post_url: "2020-03-15-relaxing-in-the-orvieto-countryside" }})
-- [Venice]({{ collections.blog | post_url: "2020-04-09-a-weekend-in-venice" }})
+- [Amalfi Coast](/blog/2019/11/28/anniversary-on-the-amalfi-coast/)
+- [Rome](/blog/2020/02/06/rome-is-a-work-of-art/)
+- [Orvieto](/blog/2020/03/15/relaxing-in-the-orvieto-countryside/)
+- [Venice](/blog/2020/04/09/a-weekend-in-venice/)
 
 {% include image.html
     file: "/assets/img/2019-italy-sunset-over-capri.jpg"
