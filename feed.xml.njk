@@ -10,7 +10,7 @@
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ page.url | addBaseUrl }}" rel="self" type="application/atom+xml" />
   <link href="{{ "/" | addBaseUrl }}" rel="alternate" type="text/html" />
-  <updated>{{ collections.blog | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.blog | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ "/" | addBaseUrl }}</id>
   <author>
     <name>Anthony Ciccarello</name>
@@ -31,7 +31,7 @@
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     {%- for tag in post.data.tags %}
     <category term="{{ tag }}"/>

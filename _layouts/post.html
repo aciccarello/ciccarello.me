@@ -26,7 +26,7 @@ layout: default
 		</h2>
 		{%- endif -%}
 		<p class="post-meta">
-			<time class="dt-published" datetime="{{ page.date | fromUTC | rssDate }}">
+			<time class="dt-published" datetime="{{ page.date | fromUTC | dateToRfc3339 }}">
 				{{- page.date | fromUTC | date: "%b %e, %Y" }}
 			</time>
 			{%- if author -%} •

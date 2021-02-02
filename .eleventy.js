@@ -9,30 +9,7 @@ const md = require('markdown-it')({
 			lower: true,
 		}),
 });
-/**
- * Todo: remove when added in 11ty 0.11
- * @see https://github.com/11ty/eleventy/blob/21b7dbfa8cac9722082970619de21349da6b8d63/src/Filters/GetCollectionItem.js
- */
-function getCollectionItem(collection, page, modifier = 0) {
-	let j = 0;
-	let index;
-	for (let item of collection) {
-		if (
-			item.inputPath === page.inputPath &&
-			item.outputPath === page.outputPath
-		) {
-			index = j;
-			break;
-		}
-		j++;
-	}
-
-	if (index !== undefined && collection && collection.length) {
-		if (index + modifier >= 0 && index + modifier < collection.length) {
-			return collection[index + modifier];
-		}
-	}
-}
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 function yearsSince(date) {
 	const start = new Date(date);
 	const milliseconds = new Date().getTime() - start.getTime();
@@ -110,23 +87,9 @@ module.exports = function (eleventyConfig) {
 			return Object.keys(value);
 		}
 	}); // Helpful for debugging objects
-	// TODO: remove these four filters when added to eleventy
-	eleventyConfig.addFilter('log', console.log);
-	eleventyConfig.addFilter('getCollectionItem', (collection, page) =>
-		getCollectionItem(collection, page)
-	);
-	eleventyConfig.addFilter('getPreviousCollectionItem', (collection, page) =>
-		getCollectionItem(collection, page, -1)
-	);
-	eleventyConfig.addFilter('getNextCollectionItem', (collection, page) =>
-		getCollectionItem(collection, page, 1)
-	);
-	eleventyConfig.addLiquidFilter(
-		'rssDate',
-		require('@11ty/eleventy-plugin-rss/src/dateToISO')
-	);
 
-	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-rss'));
+	eleventyConfig.addLiquidFilter('dateToRfc3339', pluginRss.dateToRfc3339);
+	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
 	eleventyConfig.setLibrary('md', md);
 	return {
