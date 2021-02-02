@@ -327,6 +327,11 @@ a.disable-link-styles {
 	margin: 0 1rem 1rem 0;
 	float: left;
 }
+
+.post-img--float-right {
+	float: right;
+}
+
 .post-img--float img {
 	max-width: 100%;
 }
