@@ -13,7 +13,7 @@ image_alt: bits of tomato, pepper, and onion in a sauté pan
     alt: "Plate with salmon, broccoli mousse, and tomato bacon jam"
 %}
 
-This recipe is great combined with [Pepper Seared Salmon](/recipes/2021/02/01/pepper-seared-salmon/) and [Broccoli Mousse](/recipes/2021/02/01/broccoli-mousse/). After prepping the ingredients for all three recipes, start cooking the mouse, followed by the jam. When both of those are almost done, then start the salmon so it's fresh when you're ready to serve. If you're interested in similar recipes, check out Chef Copley's [live virtual cooking classes](https://www.yourdirtyapron.com/home).
+This recipe is great combined with [Pepper Seared Salmon](/recipes/2021/02/01/pepper-seared-salmon/) and [Broccoli Mousse](/recipes/2021/02/01/broccoli-mousse/). After prepping the ingredients for all three recipes, start cooking the mouse, followed by the jam. When both of those are almost done, then start the salmon so it's fresh when you're ready to serve. If you're interested in similar recipes, check out Chef Copley's <a href="https://www.yourdirtyapron.com/home" rel="noopener noreferrer">live virtual cooking classes</a>.
 
 ## Summary
 
