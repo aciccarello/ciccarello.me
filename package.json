@@ -43,8 +43,5 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "dependencies": {
-    "eleventy": "^1.0.6"
   }
 }
