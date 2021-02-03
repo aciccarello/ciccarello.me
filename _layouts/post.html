@@ -7,7 +7,7 @@ layout: default
 	{% if image %}
 	<figure class="mdc-card__media post-thumbnail">
 		<div class="post-thumbnail--wrapper">
-			<img src="{{ image }}" alt="{{ image_alt }}" class="u-photo" />
+			<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo" />
 		</div>
 		{% if image_caption %}
 		<figcaption class="mdc-typography--caption">
