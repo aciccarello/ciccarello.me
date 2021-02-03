@@ -4,3 +4,5 @@ node_modules
 .sass-cache
 .vscode
 .DS_Store
+.netlify
+_cache
