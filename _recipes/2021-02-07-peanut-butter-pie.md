@@ -3,7 +3,7 @@ title: 'Peanut Butter Pie'
 date: 2021-02-07T12:00:00
 tags: ['dessert', 'peanut butter']
 image: /assets/img/peanut-butter-pie.jpg
-image_alt:
+image_alt: 'Peanut butter cream pie with slice removed'
 ---
 
 {% include image.html
@@ -31,3 +31,9 @@ This is a easy, frozen dessert that is so tasty and filling.
 1. Pour into pie crust
 1. Freeze
 1. Thaw before eating
+
+{% include image.html
+    file: "/assets/img/peanut-butter-pie-oreo.jpg"
+    caption: "The Oreo crust variety of pie"
+    alt: "peanut butter pie with oreo crust"
+%}
