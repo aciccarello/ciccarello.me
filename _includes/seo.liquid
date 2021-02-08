@@ -2,7 +2,7 @@
 {%- assign finalTitle = title | default : site.title -%}
 {%- assign collectionData = collections.all | getCollectionItem: page -%}
 {%- if page.inputPath contains ".md" -%}
-    {%- assign pageContent = collectionData.templateContent | strip_html | joinLines | truncatewords: 75 | strip -%}
+    {%- assign pageContent = collectionData.templateContent | strip_html | joinLines | truncatewords: 75 | escape -%}
 {%- else -%}
     {%- assign pageContent = site.description | markdownify -%}
 {%- endif -%}

@@ -9,7 +9,7 @@ const md = require('markdown-it')({
 			lower: true,
 		}),
 });
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 function yearsSince(date) {
 	const start = new Date(date);
 	const milliseconds = new Date().getTime() - start.getTime();
@@ -47,7 +47,8 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addPairedShortcode('json', (content) => {
 		try {
-			return JSON.stringify(JSON.parse(content));
+			const contentMinusTabs = content.replace(/\t/g, '');
+			return JSON.stringify(JSON.parse(contentMinusTabs));
 		} catch (error) {
 			console.warn('Unable to parse json', content);
 			throw error;
