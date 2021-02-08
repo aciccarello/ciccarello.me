@@ -31,6 +31,7 @@ This recipe is great combined with [Broccoli Mousse](/recipes/2021/02/01/broccol
 
 ## Directions
 
+1. Preheat oven to 375 °F (190 °C)
 1. Season the salmon with salt & generous amounts of pepper
 1. In a large sauté pan on medium heat, add the oil
 1. Place the fish presentation side down, and cook for 1 minute

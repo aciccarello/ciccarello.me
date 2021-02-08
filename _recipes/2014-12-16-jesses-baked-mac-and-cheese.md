@@ -22,7 +22,7 @@ We love this baked mac and cheese recipe from our friend. It's been one we've re
 ## Directions:
 
 1. Cook macaroni - a little under done(it will cook in oven).
-2. Preheat oven to 375 °F
+2. Preheat oven to 375 °F (190 °C)
 3. Drain pasta
 4. Spray 8x8 with cooking spray.
 5. Layer bottom with half of Mac n cheese.
