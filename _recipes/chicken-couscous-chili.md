@@ -21,7 +21,7 @@ Inspired by [Kim's Cravings' Best Vegetarian Chili](https://www.kimscravings.com
 
 * Diced Onion
 * Minced garlic
-* Sweet Potatoes
+* Diced Sweet Potatoes
 * Chicken Broth
 * Black beans
 * Kidney Beans
@@ -39,6 +39,7 @@ Inspired by [Kim's Cravings' Best Vegetarian Chili](https://www.kimscravings.com
 ## Directions
 
 1. Saute onion, adding the garlic a few minutes later
-1. Add broth & other ingredients except couscous & cook for 30 minutes
+1. Add sweet potatoes and cook until tender
+1. Add broth & other ingredients except couscous & avocado & cook for 30 minutes
 1. Cook couscous separately
 1. Add soup to a bowl and top with couscous and avocado
