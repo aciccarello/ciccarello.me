@@ -3,6 +3,7 @@ layout: post
 categories: blog
 title: You should try wireless charging
 date: 2020-11-25T23:40:00.000Z
+updated: 2021-04-17T22:57:17-07:00
 tags:
   - technology
   - hardware
@@ -83,7 +84,7 @@ Using a wireless charger doesn't prevent you from using a cord. It's an add-on t
 
 ## Charging is less efficient (and slower)
 
-I hesitate to say this because it's never been a problem for me. Wireless chargers are slower than an equivalent corded charger due to the energy wasted in induction. I charge my phone periodically throughout the day so I typically don't care about speed. If speed is important to you, 7.5 Watt or 10 Watt quick charging is available for most phones with a supporting charger and power adapter. If you're battery is low and you need the fastest charge or are charging from a batter pack, use a cord. Otherwise, efficiency and speed shouldn't be a problem.
+I hesitate to say this because it's never been a problem for me. Wireless chargers are slower than an equivalent corded charger due to the energy wasted in induction. I charge my phone periodically throughout the day so I typically don't care about speed. If speed is important to you, 7.5 Watt or 10 Watt quick charging is available for most phones with a supporting charger and power adapter. If you're battery is low and you need the fastest charge or are charging from a batter pack, use a cord. Otherwise, efficiency and speed shouldn't be a problem. Much of the wasted energy may be transformed to heat, but must chargers don't get too hot in normal conditions.
 
 ## It usually doesn't come in the box
 
@@ -133,8 +134,8 @@ Pop-socket sells a solution to the problem they created! A special charger with 
 
 ## Wireless charging car mounts
 
-I have a wireless charging car mount which starts charging my phone whenever I have it in the dock. It's handy as both a mount and a charger. They are a little more expensive than a normal charger, but make charging a phone on trips as simple as possible.
+I have a wireless charging car mount which starts charging my phone whenever I have it in the dock. It's handy as both a mount and a charger. They are a little more expensive than a normal charger, but make charging a phone on trips as simple as possible. Since cars have wider temperature changes, I have had some issues with the charger getting hot. This is normal for a wireless charger, but if it is cold out, you don't want your heat blowing on the charger and if it is sunny, make sure the charger is getting cool air.
 
 ---
 
-So if your phone supports it, you should try wireless charging. Try one out before you buy and make sure it works with your case. Then consider putting it on your Christmas list.
+There is a lot to consider with wireless charging, but it is something I hope gains wider adoption. The convenience is hard to convey. So if your phone supports it, you should try wireless charging. Try a charger before you buy and make sure it works with your case. Then consider putting it on your Christmas list.
