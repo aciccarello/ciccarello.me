@@ -17,7 +17,7 @@
     <name>Anthony Ciccarello</name>
     <email>{{ site.email }}</email>
   </author>
-  {%- for post in collections.blog %}
+  {%- for post in collections.blog.slice(0,30) %}
   {%- set absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endset %}
   {%- set postImage %}{% if post.data.image -%}
       <figure>
@@ -39,7 +39,15 @@
     {%- endfor %}
     <content type="html">
       {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
+      {%- if loop.index <= 10 %}
       {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+      {%- else %}
+      {%- set contentSummary %}
+      <p>{{ post.templateContent | striptags | truncate(500) }}</p>
+      <a href="{{ absolutePostUrl }}">Read More</a>
+      {% endset %}
+      {{ contentSummary }}
+      {%- endif %}
     </content>
   </entry>
   {%- endfor %}
