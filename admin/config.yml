@@ -153,6 +153,12 @@ collections:
   - label: 'Pages'
     name: 'pages'
     files:
+      - label: 'Colophon'
+        name: 'colophon'
+        file: 'colophon.md'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Privacy'
         name: 'privacy'
         file: 'privacy.md'
