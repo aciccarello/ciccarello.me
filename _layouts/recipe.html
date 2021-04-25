@@ -2,10 +2,9 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/highlight.css' | relative_url }}">
 <article class="container post h-recipe mdc-card">
 	{% if image %}
-	<figure class="mdc-card__media post-thumbnail">
+	<figure class="mdc-card__media post-thumbnail u-featured">
 		<div class="post-thumbnail--wrapper">
 			<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo" />
 		</div>
