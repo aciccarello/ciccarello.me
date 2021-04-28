@@ -28,7 +28,13 @@ This is a really easy slow cooker meal that requires very little prep.
 * 1.5 cups of uncooked rice
 * 1 romaine heart
 
-  ![Raw ingredients in a slow cooker.](/assets/img/cream-cheese-chicken-combined.jpg)
+
+{% include image.html
+    file: "/assets/img/cream-cheese-chicken-combined.jpg"
+    display: "float-right"
+    alt: "Raw ingredients in a slow cooker."
+%}
+
 
 ## Directions
 
