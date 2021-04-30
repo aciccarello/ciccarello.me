@@ -2,14 +2,21 @@
 layout: post
 categories: recipes
 title: Cream Cheese Slow Cooker Chicken
-date: 2021-04-28T02:32:28.130Z
+date: 2021-04-30T04:17:28.362Z
 tags:
   - dinner
   - chicken
   - slow cooker
-image: /assets/img/cream-cheese-chicken-combined.jpg
+image: /assets/img/cream-cheese-chicken-header.jpg
 ---
-This is a really easy slow cooker meal that requires very little prep.
+This is a really easy slow cooker meal that requires very little prep. The initial ingredients can all go directly in the slow cooker.
+
+
+{% include image.html
+    file: "/assets/img/cream-cheese-chicken-combined.jpg"
+    display: "float-right"
+    alt: "Raw ingredients in a slow cooker."
+%}
 
 ## Summary
 
@@ -20,21 +27,13 @@ This is a really easy slow cooker meal that requires very little prep.
 ## Ingredients
 
 * 2 boneless chicken breasts (can be frozen)
-* 1 can of corn
-* 1 can of black beans
+* 1 can of corn (drained)
+* 1 can of black beans (drained)
 * 2 cans of diced tomatoes
 * 1 packet of dry powdered ranch dressing
 * 1 block of cream cheese
 * 1.5 cups of uncooked rice
 * 1 romaine heart
-
-
-{% include image.html
-    file: "/assets/img/cream-cheese-chicken-combined.jpg"
-    display: "float-right"
-    alt: "Raw ingredients in a slow cooker."
-%}
-
 
 ## Directions
 
