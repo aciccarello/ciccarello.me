@@ -44,6 +44,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection('recipes', (collection) =>
 		collection.getFilteredByGlob('_recipes/*.md')
 	);
+	eleventyConfig.addCollection('posts', (collection) =>
+		collection.getFilteredByGlob(['_recipes/*.md', '_posts/*.md'])
+	);
 
 	eleventyConfig.addPairedShortcode('json', (content) => {
 		try {
