@@ -1,5 +1,6 @@
 backend:
   branch: main
+  squash_merges: true
   # Use netlify identity as backend
   # name: git-gateway
   ### enable below lines for github integration ###
@@ -20,6 +21,8 @@ collections:
     label_singular: 'Post'
     folder: '_posts'
     create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: blog/{{year}}/{{month}}/{{day}}/{{title}}
     editor:
       preview: false
     fields:
@@ -78,6 +81,8 @@ collections:
     label_singular: 'Recipe'
     folder: '_recipes'
     create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: recipes/{{year}}/{{month}}/{{day}}/{{title}}
     editor:
       preview: false
     fields:
@@ -156,18 +161,21 @@ collections:
       - label: 'Colophon'
         name: 'colophon'
         file: 'colophon.md'
+        preview_path: 'colophon'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Privacy'
         name: 'privacy'
         file: 'privacy.md'
+        preview_path: 'privacy'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Links'
         name: 'links'
         file: '_data/links.json'
+        preview_path: 'links'
         fields:
           - { label: Description, name: description, widget: string }
           - label: Links
