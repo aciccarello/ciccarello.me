@@ -19,7 +19,7 @@ collections:
   - label: 'Blog'
     name: 'blog'
     label_singular: 'Post'
-    folder: '_posts'
+    folder: '_posts/blog'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     preview_path: blog/{{year}}/{{month}}/{{day}}/{{title}}
@@ -79,7 +79,7 @@ collections:
   - label: 'Recipes'
     name: 'recipes'
     label_singular: 'Recipe'
-    folder: '_recipes'
+    folder: '_posts/recipes'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     preview_path: recipes/{{year}}/{{month}}/{{day}}/{{title}}

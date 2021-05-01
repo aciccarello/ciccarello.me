@@ -53,8 +53,8 @@
     },
     {%- endif -%}
     "headline":"{{finalTitle}}",
-    {% if page.inputPath contains "_posts" %}
-    "dateModified": "{{ page.date | fromUTC | dateToRfc3339 }}",
+    {% if date %}
+    {% comment %}check for date frontmatter but use parsed page.date {% endcomment %}
     "datePublished": "{{ page.date | fromUTC | dateToRfc3339 }}",
     {% endif %}
     "description":"{{ pageContent | strip_html }}",
