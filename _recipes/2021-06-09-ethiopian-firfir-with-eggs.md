@@ -14,8 +14,19 @@ When we get Ethiopian food, there's often leftover injera bread. I like to freez
 
 ## Ingredients
 * Eggs
-* Injera
+* Injera (chopped or torn into medium pieces)
+* Onion (Sweet or red, diced)
+* Garlic (minced)
 * Diced tomatoes (canned is fine)
 * Berbere spice
+* Clarified butter
 * Beans
 * Cucumber (cut into spears)
+
+## Directions
+1. Cook onions in a little oil in a saute pan
+1. Add garlic and cook a minute more
+1. Add tomatoes berbere, mix, and simmer for about 10 minutes until it forms a sauce
+1. Add injera pieces and clarified butter
+1. In a separate dish cook eggs (I prefer over-easy)
+1. Serve with beans and cucumber spears
