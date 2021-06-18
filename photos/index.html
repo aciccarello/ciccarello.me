@@ -1,0 +1,137 @@
+---
+title: Photo Gallery
+todo_title: Photos - Page x of y
+layout: default
+back_button: "/"
+permalink: "/photos/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+redirect_from: /photos/page/1
+pagination:
+  data: collections.photos
+  size: 30
+  reverse: true
+  alias: photos
+---
+
+<style type="text/css">
+.mdc-grid-tile {
+	width: calc(50% - 4px);
+}
+@media screen and (min-width: 720px) {
+	.mdc-grid-tile {
+		width: calc(100% / 3 - 4px);
+	}
+	.mdc-grid-tile:first-child, .mdc-grid-tile:nth-child(2) {
+		width: calc(50% - 4px);
+
+}
+a.mdc-grid-tile__primary {
+	display: block;
+}
+.mdc-grid-tile__overlay {
+	position: absolute;
+	bottom: 0;
+	opacity: 0;
+	width: calc(100% - 2px);
+	box-sizing: border-box;
+	padding: 1rem;
+	background: black;
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 80%, rgba(0,0,0,0) 100%);
+	color: var(--mdc-theme-text-primary-on-dark);
+	transition: opacity 250ms;
+}
+.mdc-grid-tile:hover .mdc-grid-tile__overlay {
+	visibility: visible;
+	opacity: 1;
+}
+</style>
+<div class="home container mdc-grid-list">
+	<h2 class="post-list-heading mdc-typography--headline4">
+		{{ page.list_title | default: "Photos" }}
+	</h2>
+	<ol class="mdc-grid-list__tiles photo-grid">
+		{%- for post in photos -%}
+		<li class="mdc-grid-tile">
+			<a class="mdc-grid-tile__primary" href="{{ post.url | relative_url }}" role="img">
+				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}" loading="lazy" class="mdc-grid-tile__primary-content" />
+				<div class="mdc-grid-tile__overlay">
+					<span class="mdc-typography--subtitle2">{{ post.date | fromUTC | date: "%b %e, %Y" }}</span>
+					<div class="mdc-grid-tile__title mdc-typography--body1">
+						{{ post.templateContent | strip_html | joinLines | truncatewords: 20 }}
+					</div>
+				</div>
+			</a>
+		</li>
+		{%- endfor -%}
+	</ol>
+	<p class="blog-alternates">
+		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></span>
+	</p>
+
+	{% if pagination.pages.length > 1 %}
+	<nav role="navigation" aria-label="Pagination Navigation" class="pagination">
+		<ul>
+			<li>
+				{% if pagination.href.previous %}
+				<a aria-label="Goto previous page" class="mdc-button"
+					href="{{ pagination.href.previous }}">
+					<span class="material-icons mdc-button__icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+							<path d="M0 0h24v24H0z" fill="none" /></svg>
+					</span>
+					<span class="mdc-button__label">Prev</span>
+				</a>
+				{% else %}
+				<span aria-label="Goto previous page" aria-disabled="true" class="mdc-button mdc-button--disabled">
+					<span class="material-icons mdc-button__icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+							aria-hidden="true">
+							<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+							<path d="M0 0h24v24H0z" fill="none" /></svg>
+					</span>
+					<span class="mdc-button__label">Prev</span>
+				</span>
+				{% endif %}
+			</li>
+			{% for pageEntry in pagination.pages %}
+			<li>
+				{% if page.url == pagination.hrefs[forloop.index0] %}
+				<span aria-label="Current page, page {{forloop.index}}" aria-current="true"
+					class="mdc-button mdc-button--outlined mdc-button--disabled">
+					{{ forloop.index }}
+				</span>
+				{% else %}
+				<a aria-label="Goto Page {{ forloop.index }}" class="mdc-button"
+					href="{{ pagination.hrefs[forloop.index0] }}">
+					{{ forloop.index }}
+				</a>
+				{% endif %}
+			</li>
+			{% endfor %}
+
+			<li>
+				{% if pagination.href.next %}
+				<a aria-label="Goto next page" class="mdc-button" href="{{ pagination.href.next }}">
+					<span class="mdc-button__label">Next</span>
+					<span class="material-icons mdc-button__icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+							<path d="M0 0h24v24H0z" fill="none" /></svg>
+					</span>
+				</a>
+				{% else %}
+				<span aria-label="Goto next page" aria-disabled="true" class="mdc-button mdc-button--disabled">
+					<span class="mdc-button__label">Next</span>
+					<span class="material-icons mdc-button__icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+							<path d="M0 0h24v24H0z" fill="none" /></svg>
+					</span>
+				</span>
+				{% endif %}
+			</li>
+		</ul>
+	</nav>
+	{% endif %}
+
+</div>

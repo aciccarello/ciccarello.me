@@ -2,13 +2,10 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/highlight.css' | relative_url }}">
 <article class="container post h-entry mdc-card">
 	{% if image %}
 	<figure class="mdc-card__media post-thumbnail u-featured">
-		<div class="post-thumbnail--wrapper">
-			<img src="{{ image }}" alt="{{ image_alt | escape }}" />
-		</div>
+		<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo" />
 		{% if image_caption %}
 		<figcaption class="mdc-typography--caption">
 			{{ image_caption | markdownify }}
@@ -17,14 +14,6 @@ layout: default
 	</figure>
 	{% endif %}
 	<header class="post-header">
-		<h1 class="post-title p-name mdc-typography--headline3">
-			{{ title | escape }}
-		</h1>
-		{%- if subtitle -%}
-		<h2 class="post-title p-summary mdc-typography--headline6">
-			{{ subtitle | escape }}
-		</h2>
-		{%- endif -%}
 		<p class="post-meta">
 			<time class="dt-published" datetime="{{ page.date | fromUTC | dateToRfc3339 }}">
 				{{- page.date | fromUTC | date: "%b %e, %Y" }}
@@ -61,7 +50,7 @@ layout: default
 				</a>
 			</h2>
 			<h3 class="author-card__subtitle mdc-typography mdc-typography--subtitle2">
-				About the author
+				About the photographer
 			</h3>
 		</div>
 	</div>
@@ -77,10 +66,10 @@ layout: default
 	</div>
 </section>
 <div class="post-suggestions container">
-	{% assign previousPost = collections.blog | getPreviousCollectionItem: page %}
-	{% assign nextPost = collections.blog | getNextCollectionItem: page %}
+	{% assign previousPost = collections.photos | getPreviousCollectionItem: page %}
+	{% assign nextPost = collections.photos | getNextCollectionItem: page %}
 	<h2 class="mdc-typography--headline6">
-		Recent articles
+		Recent photos
 	</h2>
 		{% if previousPost %}
 		<div class="post-suggestions__area post-suggestions__previous">

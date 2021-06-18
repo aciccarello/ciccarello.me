@@ -5,9 +5,11 @@
 	{%- endif -%}
 	<a class="mdc-card__primary disable-link-styles" href="{{ post.url | relative_url }}">
 		<div class="post-heading">
+			{%- if post.data.title -%}
 			<h3 class="mdc-typography--headline6">
 				{{ post.data.title | escape }}
 			</h3>
+			{%- endif -%}
 			<span class="mdc-typography--subtitle2">{{ post.date | fromUTC | date: "%b %e, %Y" }}</span>
 		</div>
 		<div class="post-body mdc-typography--body1">
