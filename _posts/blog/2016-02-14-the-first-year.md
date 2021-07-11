@@ -3,7 +3,7 @@ layout: 'post'
 categories: 'blog'
 title: 'The First Year'
 date: 2016-02-14
-tags: marriage
+tags: [personal, marriage]
 image: /assets/img/wedding-dance-bw.jpg
 image_alt: Our wedding reception (photo credit to Scot Huck Photography)
 image_caption: Our wedding reception (photo credit to Scot Huck Photography)

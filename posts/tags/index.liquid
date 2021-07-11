@@ -1,0 +1,18 @@
+---
+title: Tags
+layout: default
+back_button: /posts
+---
+
+<div class="home container">
+	<h2 class="post-list-heading mdc-typography--headline4">
+		Tags Across All Posts
+	</h2>
+    <ul class="mdc-chip-set">
+        {%- for tag in collections.tagList %}
+        <a href="/posts/tags/{{tag}}/" class="mdc-chip">
+            <span class="mdc-chip__text">{{ tag }}</span>
+        </a>
+        {% endfor %}
+    </ul>
+</div>

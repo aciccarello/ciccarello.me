@@ -1,0 +1,23 @@
+---
+title: Posts tagged {{ tag }}
+layout: default
+back_button: /posts
+pagination:
+    data: collections.tagList
+    size: 1
+    alias: tag
+permalink: /posts/tags/{{ tag }}/
+---
+
+<div class="home container">
+	<h2 class="post-list-heading mdc-typography--headline4">
+		Posts tagged "{{ tag }}"
+	</h2>
+	<ol class="post-list">
+        {%- for post in collections[tag] reversed %}
+        <li>
+			{% include post-card.html post: post %}
+        </li>
+        {%- endfor %}
+    </ol>
+</div>

@@ -50,7 +50,17 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection('posts', (collection) =>
 		collection.getFilteredByGlob(['_posts/**/*.md'])
 	);
-
+	eleventyConfig.addCollection('tagList', (collection) => {
+		const tagsSet = new Set();
+		collection.getAll().forEach((item) => {
+			if (item.data.tags) {
+				item.data.tags
+					.filter((tag) => !['post', 'all'].includes(tag))
+					.forEach((tag) => tagsSet.add(tag));
+			}
+		});
+		return Array.from(tagsSet).sort();
+	});
 	eleventyConfig.addPairedShortcode('json', (content) => {
 		try {
 			const contentMinusTabs = content.replace(/\t/g, '');
