@@ -3,7 +3,7 @@ layout: post
 categories: recipes
 title: Ethiopian Firfir with Eggs
 date: 2021-06-14T03:21:14.953Z
-tags: []
+tags: [breakfast]
 image: /assets/img/recipe-firfir-with-egg.jpg
 image_alt: Dish with sauce and bread bits served with egg, beans, and cucumber.
 ---

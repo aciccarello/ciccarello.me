@@ -242,3 +242,13 @@ collections:
             fields:
               - { label: Title, name: title, widget: string }
               - { label: URL, name: url, widget: string }
+      - label: 'Tags'
+        name: 'tags'
+        file: 'posts/tags/tags.json'
+        preview_path: 'tags'
+        fields:
+          - label: Featured
+            name: featured
+            widget: list
+            multiple: true
+            allow_add: true

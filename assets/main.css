@@ -295,6 +295,14 @@ a.disable-link-styles {
 	margin: 1rem;
 }
 
+.post-body > .mdc-chip-set {
+	margin: 0.5rem -0.5rem;
+}
+
+.mdc-chip-set li {
+	list-style: none;
+}
+
 .post {
 	padding: 0;
 }

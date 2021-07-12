@@ -18,6 +18,16 @@
 			{%- else -%}
 			{{ post.templateContent | strip_html | joinLines | truncatewords: 20 }}
 			{%- endif -%}
-		</div>
-	</a>
+            {%- assign tags = post.data.tags -%}
+            {%- if tags.size > 0 %}
+                <ul class="mdc-chip-set p-category">
+                    {%- for tag in tags %}
+                        <span class="mdc-chip">
+                            <span class="mdc-chip__text">{{ tag }}</span>
+                        </span>
+                    {% endfor %}
+                </ul>
+            {%- endif -%}
+        </div>
+    </a>
 </div>

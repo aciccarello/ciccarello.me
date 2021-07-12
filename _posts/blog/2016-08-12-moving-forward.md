@@ -3,6 +3,7 @@ layout: 'post'
 categories: 'blog'
 title: 'Moving Forward'
 date: 2016-08-12
+tags: [personal]
 image: /assets/img/crosspurpose-live-different.jpg
 image_alt: a logo, the words "crosspurpose" and "live different" on top of an image of a person using carpentry hand tools
 ---

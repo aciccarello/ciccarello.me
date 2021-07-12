@@ -33,12 +33,11 @@ layout: default
 			{%- endif -%}
 		</p>
 		{%- if tags.size > 0 -%}
-		<ul class="mdc-chip-set p-category">
-			<!-- TODO: Make this a link to a tag page -->
+		<ul class="mdc-chip-set">
 			{% for tag in tags %}
-			<span class="mdc-chip">
+			<a href="/posts/tags/{{tag}}/" rel="tag" class="mdc-chip">
 				<span class="mdc-chip__text">{{ tag }}</span>
-			</span>
+			</a>
 			{% endfor %}
 		</ul>
 		{%- endif -%}
