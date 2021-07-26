@@ -6,12 +6,12 @@
       "title": "Homepage"
     },
     {
-      "url": "https://www.ciccarello.me/blog/",
-      "title": "Blog"
+      "title": "Foster Care",
+      "url": "/foster/"
     },
     {
-      "title": "Recipes",
-      "url": "https://www.ciccarello.me/recipes/"
+      "url": "/posts/",
+      "title": "Posts"
     },
     {
       "title": "LinkedIn",

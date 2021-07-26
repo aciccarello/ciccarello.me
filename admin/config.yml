@@ -223,6 +223,13 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Foster Care'
+        name: 'foster-care'
+        file: 'foster-care.liquid'
+        preview_path: 'foster'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Privacy'
         name: 'privacy'
         file: 'privacy.md'
@@ -252,3 +259,12 @@ collections:
             widget: list
             multiple: true
             allow_add: true
+          - label: Descriptions
+            summary: 'Text for tag pages. Add to config.yml to add page.'
+            name: descriptions
+            widget: object
+            fields:
+              - { label: 'Foster Care', name: 'foster care', widget: string }
+              - { label: 'Birding', name: 'birding', widget: string }
+              - { label: 'Dinners', name: 'dinners', widget: string }
+              - { label: 'Travel', name: 'travel', widget: string }

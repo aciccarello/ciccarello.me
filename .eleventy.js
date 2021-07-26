@@ -70,6 +70,9 @@ module.exports = function (eleventyConfig) {
 			throw error;
 		}
 	});
+	eleventyConfig.addPairedShortcode('markdownify', (content) => {
+		return md.render(content || '');
+	});
 	eleventyConfig.addShortcode('buildTime', () => new Date().toDateString());
 	eleventyConfig.addFilter('addBaseUrl', (value) => {
 		if (value.startsWith('http')) {
