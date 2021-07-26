@@ -2,8 +2,14 @@
   "featured": [
     "technology",
     "personal",
+    "foster care",
     "travel",
     "birding",
     "dinners"
-  ]
+  ],
+  "descriptions": {
+    "foster care": "Our journey and thoughts as [foster parents](/foster/).",
+    "birding": "My experiences enjoying my childhood hobby of bird watching, identifying birds everywhere I go.",
+    "dinners": "Everyone needs somewhere to save their favorite recipes."
+  }
 }

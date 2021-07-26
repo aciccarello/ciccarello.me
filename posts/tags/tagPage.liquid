@@ -1,7 +1,7 @@
 ---
 title: Posts tagged {{ tag }}
 layout: default
-back_button: /posts
+back_button: ..
 pagination:
     data: collections.tagList
     size: 1
@@ -13,6 +13,11 @@ permalink: /posts/tags/{{ tag }}/
 	<h2 class="post-list-heading mdc-typography--headline4">
 		Posts tagged "{{ tag }}"
 	</h2>
+    {%- if descriptions[tag] %}
+    <p>
+        {{ descriptions[tag] | markdownify }}
+    </p>
+    {%- endif %}
 	<ol class="post-list">
         {%- for post in collections[tag] reversed %}
         <li>
