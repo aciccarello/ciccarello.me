@@ -224,8 +224,8 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Foster Care'
-        name: 'foster-care'
-        file: 'foster-care.liquid'
+        name: 'foster'
+        file: 'foster.liquid'
         preview_path: 'foster'
         fields:
           - { label: Title, name: title, widget: string }
