@@ -26,7 +26,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - label: 'Categories'
         name: 'categories'
         widget: 'hidden'
@@ -86,7 +85,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - label: 'Categories'
         name: 'categories'
         widget: 'hidden'
@@ -144,11 +142,10 @@ collections:
     create: true
     identifier_field: slug
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: photos/{{year}}/{{month}}/{{day}}/{{title}}
+    preview_path: photos/{{year}}/{{month}}/{{day}}/{{slug}}
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - label: 'Categories'
         name: 'categories'
         widget: 'hidden'

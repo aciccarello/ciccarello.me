@@ -258,6 +258,7 @@ footer > nav > a:first-child {
 
 .post-list .mdc-card {
 	margin: 0;
+	height: 100%;
 }
 
 @media screen and (min-width: 720px) {
