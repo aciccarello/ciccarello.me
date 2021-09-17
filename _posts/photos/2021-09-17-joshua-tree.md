@@ -1,5 +1,4 @@
 ---
-layout: post
 categories: photos
 # This is used to create the url
 slug: joshua-tree
