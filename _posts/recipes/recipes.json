@@ -1,5 +1,5 @@
 {
-  "permalink": "/recipes/{{ page.date | fromUTC | date: '%Y/%m/%d' }}/{{ title | slug }}/",
+  "permalink": "/recipes/{{ page.date | fromUTC | trimTime | date: '%Y/%m/%d' }}/{{ title | slug }}/",
   "author": "Anthony Ciccarello",
   "back_button": "../../../..",
   "layout": "recipe"

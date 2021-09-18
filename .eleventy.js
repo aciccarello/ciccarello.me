@@ -17,7 +17,7 @@ function yearsSince(date) {
 	return String(years);
 }
 /**
- * Converts UTC date to local date, ignoring time
+ * Converts UTC date to local date
  * @param date {string | date} UTC date
  */
 const convertFromUTCDate = (date) => {
@@ -25,8 +25,17 @@ const convertFromUTCDate = (date) => {
 	return new Date(
 		UTCDate.getUTCFullYear(),
 		UTCDate.getUTCMonth(),
-		UTCDate.getUTCDate()
+		UTCDate.getUTCDate(),
+		UTCDate.getUTCHours(),
+		UTCDate.getUTCMinutes(),
+		UTCDate.getUTCSeconds(),
+		UTCDate.getUTCMilliseconds()
 	);
+};
+
+const trimTime = (dateInput) => {
+	const date = new Date(dateInput); // Parse date in case it is a string
+	return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 };
 
 module.exports = function (eleventyConfig) {
@@ -82,6 +91,7 @@ module.exports = function (eleventyConfig) {
 	});
 	eleventyConfig.addFilter('yearsSince', yearsSince);
 	eleventyConfig.addFilter('fromUTC', convertFromUTCDate);
+	eleventyConfig.addFilter('trimTime', trimTime);
 	eleventyConfig.addFilter('markdownify', (value) =>
 		md.renderInline(value || '')
 	);
