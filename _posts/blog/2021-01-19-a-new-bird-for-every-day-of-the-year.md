@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'A new bird for every day of the year'
 subtitle: 'Birding in 2019'
 date: 2021-01-19T07:00:00.000Z

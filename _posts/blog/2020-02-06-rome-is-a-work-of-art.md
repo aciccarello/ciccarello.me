@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Rome is a Work of Art'
 tags: [travel, Italy]
 image: /assets/img/2019-italy-roman-forum.jpg

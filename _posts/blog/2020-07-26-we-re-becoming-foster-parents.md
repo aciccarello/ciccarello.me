@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: blog
 title: We're becoming foster parents
 date: 2021-07-26
 tags:

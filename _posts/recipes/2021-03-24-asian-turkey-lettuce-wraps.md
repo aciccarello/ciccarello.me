@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: recipes
 title: Asian Turkey Lettuce Wraps
 date: 2021-03-24T01:33:37.925Z
 canonical_url: https://71toes.com/2012/11/quick-weeknight-asian-turkey-lettuce/

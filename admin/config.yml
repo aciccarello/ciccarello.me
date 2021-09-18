@@ -26,10 +26,6 @@ collections:
     editor:
       preview: false
     fields:
-      - label: 'Categories'
-        name: 'categories'
-        widget: 'hidden'
-        default: 'blog'
       - { label: 'Title', name: 'title', widget: 'string' }
       - label: 'Subtitle'
         name: 'subtitle'
@@ -85,10 +81,6 @@ collections:
     editor:
       preview: false
     fields:
-      - label: 'Categories'
-        name: 'categories'
-        widget: 'hidden'
-        default: 'recipes'
       - { label: 'Title', name: 'title', widget: 'string' }
       - label: 'Subtitle'
         name: 'subtitle'
@@ -146,10 +138,6 @@ collections:
     editor:
       preview: false
     fields:
-      - label: 'Categories'
-        name: 'categories'
-        widget: 'hidden'
-        default: 'photos'
       - { label: 'Slug', name: 'slug', widget: 'string', comment: 'This is used to create the url' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - {

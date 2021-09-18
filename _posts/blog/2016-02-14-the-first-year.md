@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'The First Year'
 date: 2016-02-14
 tags: [personal, marriage]

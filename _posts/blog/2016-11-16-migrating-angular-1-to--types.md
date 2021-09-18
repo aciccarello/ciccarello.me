@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Migrating an Angular 1 application to @types'
 date: 2016-11-16
 tags: technology

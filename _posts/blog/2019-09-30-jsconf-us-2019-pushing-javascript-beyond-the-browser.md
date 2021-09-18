@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'JSConf US 2010: Pushing JavaScript Beyond the Browser'
 date: 2019-09-30
 permalink: '/blog/2019/09/30/jsconf-us-2019-pushing-javascript-beyond-the-browser/'

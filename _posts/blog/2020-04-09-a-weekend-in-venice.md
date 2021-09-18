@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'A Weekend in Venice'
 tags: [travel, Italy]
 image: /assets/img/2019-italy-venice-gondola-in-canal.jpg

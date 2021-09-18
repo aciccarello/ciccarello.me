@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Estamos en Puebla, México'
 date: 2019-03-31
 tags: travel

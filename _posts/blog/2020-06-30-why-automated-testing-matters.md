@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Why Automated Testing Matters'
 date: 2020-06-30T17:07:05+00:00
 canonical_url: https://www.sitepen.com/blog/why-automated-testing-matters/

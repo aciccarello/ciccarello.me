@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Are our churches too siloed?'
 date: 2017-11-01
 tags: christianity

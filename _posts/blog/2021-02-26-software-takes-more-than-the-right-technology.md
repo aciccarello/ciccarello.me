@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Software takes more than “the right technology”'
 date: 2021-02-26T12:00:00+07:00
 canonical_url: https://www.sitepen.com/blog/software-takes-more-than-the-right-technology

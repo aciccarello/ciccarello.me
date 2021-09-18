@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'What I am grateful for from 2018'
 date: 2019-01-29
 tags: [personal]

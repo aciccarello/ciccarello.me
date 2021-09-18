@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Why I Got a Twitter Account'
 subtitle: How joining the social networking platform helped me become a better programmer
 date: 2018-01-29

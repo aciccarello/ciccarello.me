@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: recipes
 title: Cream Cheese Slow Cooker Chicken
 date: 2021-04-30T04:17:28.362Z
 tags:

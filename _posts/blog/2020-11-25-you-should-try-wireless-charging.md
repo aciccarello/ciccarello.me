@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: blog
 title: You should try wireless charging
 date: 2020-11-25T23:40:00.000Z
 updated: 2021-04-17T22:57:17-07:00

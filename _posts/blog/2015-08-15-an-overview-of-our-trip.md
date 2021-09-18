@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'An Overview of Our Trip'
 canonical_url: https://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html
 date: 2015-08-15

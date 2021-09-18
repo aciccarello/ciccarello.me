@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: blog
 title: Styling an RSS/Atom feed with XSL
 date: 2021-04-17T23:10:07+00:00
 tags:

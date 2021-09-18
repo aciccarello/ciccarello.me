@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Updating the Decorators Proposal for the Holidays'
 date: 2019-01-03
 tags: technology

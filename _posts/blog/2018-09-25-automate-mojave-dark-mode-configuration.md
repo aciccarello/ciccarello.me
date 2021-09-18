@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Automate Mojave Dark mode configuration'
 date: 2018-09-25
 tags: technology

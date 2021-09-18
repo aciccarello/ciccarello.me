@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Relaxing in the Orvieto Countryside'
 tags: [travel, Italy]
 image: /assets/img/2019-italy-orvieto-plateau.jpg

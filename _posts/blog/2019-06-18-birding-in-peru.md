@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Birding in Peru'
 date: 2019-06-18
 tags: [travel, birding]

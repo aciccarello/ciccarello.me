@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'We Traveled to Italy!'
 date: 2019-11-27
 tags: [travel, Italy]

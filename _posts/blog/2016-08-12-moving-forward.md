@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Moving Forward'
 date: 2016-08-12
 tags: [personal]

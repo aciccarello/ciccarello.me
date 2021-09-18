@@ -2,5 +2,5 @@
   "permalink": "/blog/{{ page.date | fromUTC | date: '%Y/%m/%d' }}/{{ title | slug }}/",
   "author": "Anthony Ciccarello",
   "back_button": "../../../..",
-  "layout": "post"
+  "layout": "article"
 }

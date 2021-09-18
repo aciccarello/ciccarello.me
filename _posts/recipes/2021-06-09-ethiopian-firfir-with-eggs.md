@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: recipes
 title: Ethiopian Firfir with Eggs
 date: 2021-06-14T03:21:14.953Z
 tags: [breakfast]

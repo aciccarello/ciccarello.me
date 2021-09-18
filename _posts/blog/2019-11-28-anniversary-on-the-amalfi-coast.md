@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Anniversary on the Amalfi Coast'
 date: 2019-11-28
 tags: [travel, Italy]

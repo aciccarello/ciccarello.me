@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Getting An Introduction to Africa'
 subtitle: Detour to Senegal
 date: 2015-07-24

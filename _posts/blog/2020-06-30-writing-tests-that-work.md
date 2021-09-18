@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Writing Tests that Work'
 date: 2020-06-30T17:18:49+00:00
 canonical_url: https://www.sitepen.com/blog/writing-tests-that-work/

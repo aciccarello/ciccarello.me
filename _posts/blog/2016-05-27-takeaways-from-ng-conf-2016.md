@@ -1,6 +1,4 @@
 ---
-layout: 'post'
-categories: 'blog'
 title: 'Takeaways from ng-conf 2016'
 date: 2016-05-27
 tags: technology

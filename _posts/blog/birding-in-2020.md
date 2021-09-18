@@ -1,6 +1,4 @@
 ---
-layout: post
-categories: blog
 title: Birding in 2020
 date: 2021-07-11
 tags: [travel, birding]
