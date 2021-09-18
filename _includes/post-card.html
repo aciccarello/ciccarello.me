@@ -16,7 +16,9 @@
 			{%- if post.data.subtitle -%}
 			{{ post.data.subtitle | strip_html }}
 			{%- else -%}
-			{{ post.templateContent | strip_html | joinLines | truncatewords: 20 }}
+			<p class="post-text">
+				{{ post.templateContent | strip_html | joinLines | truncatewords: 50 }}
+			</p>
 			{%- endif -%}
             {%- assign tags = post.data.tags -%}
             {%- if tags.size > 0 %}
