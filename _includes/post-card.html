@@ -13,20 +13,25 @@
 			<span class="mdc-typography--subtitle2">{{ post.date | fromUTC | date: "%b %e, %Y" }}</span>
 		</div>
 		<div class="post-body mdc-typography--body1">
-			{%- if post.data.subtitle -%}
-			{{ post.data.subtitle | strip_html }}
-			{%- else -%}
 			<p class="post-text">
+				{%- if post.data.subtitle -%}
+				{{ post.data.subtitle | strip_html }}
+				{%- else -%}
 				{{ post.templateContent | strip_html | joinLines | truncatewords: 50 }}
+				{%- endif -%}
 			</p>
-			{%- endif -%}
             {%- assign tags = post.data.tags -%}
-            {%- if tags.size > 0 %}
+            {%- if tags.size > 0 or showKind %}
                 <ul class="mdc-chip-set p-category">
+					{%- if showKind %}
+					<span class="mdc-chip">
+						<span class="mdc-chip__text">{{ post.data.layout }}</span>
+					</span>
+					{%- endif %}
                     {%- for tag in tags %}
-                        <span class="mdc-chip">
-                            <span class="mdc-chip__text">{{ tag }}</span>
-                        </span>
+					<span class="mdc-chip">
+						<span class="mdc-chip__text">{{ tag }}</span>
+					</span>
                     {% endfor %}
                 </ul>
             {%- endif -%}
