@@ -2,7 +2,6 @@
   "name": "ciccarello.me",
   "version": "1.0.0",
   "description": "Anthony Ciccarello's personal website",
-  "main": "index.html",
   "scripts": {
     "start": "eleventy --serve",
     "start:cms": "netlify-cms-proxy-server",
