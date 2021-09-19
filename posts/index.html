@@ -49,7 +49,7 @@ pagination:
 	<ol class="post-list">
 		{%- for post in posts -%}
 		<li>
-			{% include post-card.html post: post %}
+			{% include post-card.html post: post, showKind: true %}
 		</li>
 		{%- endfor -%}
 	</ol>
