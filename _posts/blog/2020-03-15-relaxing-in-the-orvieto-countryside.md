@@ -1,6 +1,7 @@
 ---
 title: 'Relaxing in the Orvieto Countryside'
 tags: [travel, Italy]
+date: 2020-01-15
 image: /assets/img/2019-italy-orvieto-plateau.jpg
 image_alt: Old city on a plateau seen from opposing hillside
 image_caption: The town of Orvieto seen from across the valley

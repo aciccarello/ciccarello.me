@@ -1,6 +1,7 @@
 ---
 title: 'Rome is a Work of Art'
 tags: [travel, Italy]
+date: 2020-02-06
 image: /assets/img/2019-italy-roman-forum.jpg
 image_alt: Multiple, large, old brick buildings with large columns
 image_caption: The ruins of the Roman Forum in Rome

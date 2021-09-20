@@ -1,6 +1,7 @@
 ---
 title: 'A Weekend in Venice'
 tags: [travel, Italy]
+date: 2020-04-09
 image: /assets/img/2019-italy-venice-gondola-in-canal.jpg
 image_alt: Gondola boat traveling down Venice canal
 image_caption: No, we didn't take a gondola ride in Venice - Photo by Bekah Ciccarello.
