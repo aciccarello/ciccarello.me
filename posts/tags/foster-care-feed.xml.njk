@@ -31,7 +31,9 @@
       </figure>
   {%- endif %}{% endset %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    {%- if post.data.title %}
+    <title>{{ post.data.title or post.data.defaultTitle }}</title>
+    {%- endif %}
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
