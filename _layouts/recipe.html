@@ -29,7 +29,7 @@ layout: default
 			{%- endif -%}
 			<p class="post-meta">
 				<time class="dt-published published" datetime="{{ page.date | fromUTC | trimTime | dateToRfc3339 }}">
-					{{- page.date | fromUTC | trimTime | date: "%b %e, %Y" }}
+					{{- page.date | fromUTC | trimTime | dateFormat }}
 				</time>
 				{%- if author -%} •
 				<span class="p-author h-card">{{ author }}</span>

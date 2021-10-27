@@ -3,6 +3,7 @@ const md = require('markdown-it')({
 	html: true,
 	typographer: true,
 }).use(require('markdown-it-anchor'), {
+	// This only applies to anchors
 	slugify: (s) =>
 		require('slugify')(s, {
 			remove: /[*+~,.()'"’!\?:@]/g,
@@ -37,6 +38,11 @@ const trimTime = (dateInput) => {
 	const date = new Date(dateInput); // Parse date in case it is a string
 	return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 };
+const dateFormat = new Intl.DateTimeFormat([], { dateStyle: 'medium' });
+const dateTimeFormat = new Intl.DateTimeFormat([], {
+	dateStyle: 'medium',
+	timeStyle: 'short',
+});
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('admin');
@@ -122,6 +128,12 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter('yearsSince', yearsSince);
 	eleventyConfig.addFilter('fromUTC', convertFromUTCDate);
 	eleventyConfig.addFilter('trimTime', trimTime);
+	eleventyConfig.addFilter('dateFormat', (date) =>
+		dateFormat.format(new Date(date))
+	);
+	eleventyConfig.addFilter('dateTimeFormat', (date) =>
+		dateTimeFormat.format(new Date(date))
+	);
 	eleventyConfig.addFilter('markdownify', (value) =>
 		md.renderInline(value || '')
 	);

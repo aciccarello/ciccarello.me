@@ -10,7 +10,9 @@
 				{{ post.data.title | escape }}
 			</h3>
 			{%- endif -%}
-			<span class="mdc-typography--subtitle2">{{ post.date | fromUTC | trimTime | date: "%b %e, %Y" }}</span>
+			<time class="mdc-typography--subtitle2 dt-published" datetime="{{ post.date | dateToRfc3339 }}">
+				{{ post.date | fromUTC | trimTime | dateFormat }}
+			</time>
 		</div>
 		<div class="post-body mdc-typography--body1">
 			<p class="post-text">
