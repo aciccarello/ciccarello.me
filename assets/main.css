@@ -141,6 +141,11 @@ hr {
 	flex-direction: column;
 }
 
+.note-card .post-text {
+	font-size: 1.25em;
+	-webkit-line-clamp: 5;
+}
+
 .svg-icon,
 .svg-icon > svg {
 	height: 24px;
@@ -325,7 +330,8 @@ a.disable-link-styles {
 	flex-direction: column;
 }
 
-.post-body > .mdc-chip-set {
+.post-body > .mdc-chip-set,
+.post-footer > .mdc-chip-set {
 	margin: 0.5rem -0.5rem;
 }
 
@@ -386,7 +392,8 @@ img.post-img--wide {
 }
 
 .post-header,
-.post-content {
+.post-content,
+.post-footer {
 	margin: 0 2rem;
 }
 @media screen and (max-width: 720px) {

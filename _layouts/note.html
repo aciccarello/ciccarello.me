@@ -1,0 +1,115 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/highlight.css' | relative_url }}">
+<style type="text/css">
+  article.container, .author-card.container {
+    max-width: 32rem;
+  }
+
+  .post-content {
+	 font-size: 1.1em;
+  }
+</style>
+<article class="container post h-entry mdc-card">
+	{% if image %}
+	<figure class="mdc-card__media post-thumbnail u-featured">
+		<div class="post-thumbnail--wrapper">
+			<img src="{{ image }}" alt="{{ image_alt | escape }}" />
+		</div>
+		{% if image_caption %}
+		<figcaption class="mdc-typography--caption">
+			{{ image_caption | markdownify }}
+		</figcaption>
+		{% endif %}
+	</figure>
+	{% endif %}
+	<header class="post-header">
+		{%- if title -%}
+		<h1 class="post-title p-name mdc-typography--headline3">
+			{{ title | escape }}
+		</h1>
+		{%- endif -%}
+		{%- if subtitle -%}
+		<h2 class="post-title p-summary mdc-typography--headline6">
+			{{ subtitle | escape }}
+		</h2>
+		{%- endif -%}
+		<p class="post-meta">
+			<time class="dt-published" datetime="{{ page.date | fromUTC | dateToRfc3339 }}">
+				{{- page.date | fromUTC | dateTimeFormat }} UTC
+			</time>
+			{%- if author -%} •
+			<span class="p-author h-card">{{ author }}</span>
+			{%- endif -%}
+		</p>
+	</header>
+
+	<div class="post-content mdc-typography--body1 e-content">
+		{{ content }}
+	</div>
+
+	<div class="post-footer">
+		{%- if tags.size > 0 -%}
+		<ul class="mdc-chip-set">
+			{% for tag in tags %}
+			<a href="/posts/tags/{{tag}}/" rel="tag" class="mdc-chip">
+				<span class="mdc-chip__text">{{ tag }}</span>
+			</a>
+			{% endfor %}
+		</ul>
+		{%- endif -%}
+	</div>
+
+	<a class="u-url" href="{{ page.url | url }}" aria-hidden="true"></a>
+</article>
+<section class="container mdc-card author-card">
+	<div class="author-card__primary-action" tabindex="0">
+		<div class="mdc-card__media mdc-card__media--square author-card__media"></div>
+		<div class="author-card__primary">
+			<h2 class="author-card__title mdc-typography mdc-typography--headline6">
+				<a class="p-author h-card disable-link-styles" href="/">
+					Anthony Ciccarello
+				</a>
+			</h2>
+			<h3 class="author-card__subtitle mdc-typography mdc-typography--subtitle2">
+				About the author
+			</h3>
+		</div>
+	</div>
+	<p class="author-card__content">
+		{{ site.description }}
+	</p>
+	<div class="mdc-card__actions">
+		<div class="mdc-card__action-buttons">
+			<a href="/#connect" class="mdc-button mdc-card__action mdc-card__action--button">
+				Connect
+			</a>
+		</div>
+	</div>
+</section>
+<div class="post-suggestions container">
+	{% assign previousPost = collections.notes | getPreviousCollectionItem: page %}
+	{% assign nextPost = collections.notes | getNextCollectionItem: page %}
+	<h2 class="mdc-typography--headline6">
+		Recent articles
+	</h2>
+		{% if previousPost %}
+		<div class="post-suggestions__area post-suggestions__previous">
+			<h3 class="mdc-typography--subtitle1">
+				Previous
+			</h3>
+			{% include post-card.html post: previousPost %}
+		</div>
+		{% endif %}
+		{% if nextPost %}
+		<div class="post-suggestions__area post-suggestions__next">
+			<h3 class="mdc-typography--subtitle1">
+				Next
+			</h3>
+			{% include post-card.html post: nextPost %}
+		</div>
+		{% endif %}
+	</ul>
+</div>

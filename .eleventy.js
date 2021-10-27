@@ -53,6 +53,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection('recipes', (collection) =>
 		collection.getFilteredByGlob('_posts/recipes/*.md')
 	);
+	eleventyConfig.addCollection('notes', (collection) =>
+		collection.getFilteredByGlob('_posts/notes/*.md')
+	);
 	eleventyConfig.addCollection('photos', (collection) =>
 		collection.getFilteredByGlob('_posts/photos/*.md')
 	);

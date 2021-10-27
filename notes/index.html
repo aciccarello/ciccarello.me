@@ -1,52 +1,33 @@
 ---
+title: Notes
+todo_title: Notes - Page x of y
 layout: default
-back_button: "/"
-permalink: "/posts/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
-redirect_from: /posts/page/1
+back_button: "/posts"
+permalink: "/notes/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+redirect_from: /notes/page/1
 pagination:
-  data: collections.posts
+  data: collections.notes
   size: 15
   reverse: true
-  alias: posts
-eleventyComputed:
-  title: "Posts - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}"
+  alias: notes
 ---
 
 <div class="home container">
-	<h1 class="post-list-heading mdc-typography--headline4">
-		{{ page.list_title | default: "Posts" }}
-	</h1>
-	<nav class="category-menu">
-		<h3 class="mdc-typography--headline5">See posts by category</h3>
-		<ul>
-            <li><a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/blog">
-                Blog
-            </a></li>
-            <li><a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/recipes">
-				Recipes
-            </a></li>
-            <li><a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/photos">
-                Photos
-            </a></li>
-            <li><a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/notes">
-                Notes
-            </a></li>
-		</ul>
-		<a class="mdc-button mdc-button--outlined" href="/posts/tags">Browse Tags</a>
-	</nav>
+	<h2 class="post-list-heading mdc-typography--headline4">
+		{{ page.list_title | default: "Notes" }}
+	</h2>
+	<p>
+		Short thoughts and replies that weren't a whole blog post.
+	</p>
 	<ol class="post-list">
-		{%- for post in posts -%}
+		{%- for post in notes -%}
 		<li>
-			{% include "post-card.html" post: post, showKind: true %}
+			{% include post-card.html post: post %}
 		</li>
 		{%- endfor -%}
 	</ol>
 	<p class="blog-alternates">
-		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | url }}">via RSS</a></span>
+		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></span>
 	</p>
 
 	{% if pagination.pages.length > 1 %}

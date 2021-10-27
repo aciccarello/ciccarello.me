@@ -1,0 +1,7 @@
+{
+  "permalink": "/notes/{{ page.date | fromUTC | date: '%Y/%m/%d/%H:%M:%S' }}/",
+  "author": "Anthony Ciccarello",
+  "defaultTitle": "Short Note",
+  "back_button": "../../../..",
+  "layout": "note"
+}
