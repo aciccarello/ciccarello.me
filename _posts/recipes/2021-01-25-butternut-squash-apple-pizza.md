@@ -2,7 +2,7 @@
 title: 'Butternut Squash & Apple Pizza'
 date: 2021-01-25
 canonical_url: https://www.coloradohomesmag.com/half-baked-harvest-butternut-squash-apple-pizza/
-tags: ['pizza', 'dinners']
+tags: ['pizza', 'dinner']
 image: /assets/img/butternut-squash-apple-pizza.jpg
 image_alt: Pizza topped with prosciutto and butternut squash shavings
 ---

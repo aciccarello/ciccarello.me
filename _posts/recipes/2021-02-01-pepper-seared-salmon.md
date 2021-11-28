@@ -2,7 +2,7 @@
 title: 'Pepper Seared Salmon'
 date: 2021-02-01T17:00:00
 excludeFromSitemap: true
-tags: ['salmon', 'dinners']
+tags: ['salmon', 'dinner']
 image: /assets/img/pepper-seared-salmon.jpg
 image_alt: cooked salmon in a pan
 ---

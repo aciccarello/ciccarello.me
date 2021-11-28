@@ -3,7 +3,7 @@ title: 'Creamy Chicken Gnocchi Soup '
 date: 2021-01-12
 tags:
   - soup
-  - dinners
+  - dinner
 image: /assets/img/creamy-chicken-gnocchi-soup.jpg
 image_alt: bowl of soup with carrots, shredded chicken, and gnocchi
 ---

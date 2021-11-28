@@ -2,7 +2,7 @@
 title: Lori's Chile
 date: 2014-10-04
 tags:
-  - dinners
+  - dinner
   - soup
   - slow cooker
 image: /assets/img/lori-chile.jpeg

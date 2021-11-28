@@ -2,7 +2,7 @@
 title: 'Change Your Life Chicken'
 date: 2021-01-29
 canonical_url: https://www.thelazygeniuscollective.com/blog/change-your-life-chicken
-tags: ['chicken', 'dinners']
+tags: ['chicken', 'dinner']
 image: /assets/img/change-your-life-chicken.jpg
 image_alt: Chopped vegetables on a baking sheet with pieces of chicken on top
 ---

@@ -2,7 +2,7 @@
 title: 'Tomato Bacon Jam'
 date: 2021-02-01T17:30:00
 excludeFromSitemap: true
-tags: ['sauce', 'dinners']
+tags: ['sauce', 'dinner']
 image: /assets/img/tomato-bacon-jam.jpg
 image_alt: bits of tomato, pepper, and onion in a sauté pan
 ---

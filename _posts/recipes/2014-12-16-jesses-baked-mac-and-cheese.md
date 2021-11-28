@@ -2,7 +2,7 @@
 title: Jesse's Baked Mac and Cheese
 date: 2014-12-16
 tags:
-  - dinners
+  - dinner
   - pasta
 image: /assets/img/jesse-mac-and-cheese.jpg
 image_alt: Bowl of cheesy pasta

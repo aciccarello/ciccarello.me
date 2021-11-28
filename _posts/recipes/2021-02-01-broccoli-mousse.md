@@ -2,7 +2,7 @@
 title: 'Broccoli Mousse'
 date: 2021-02-01T18:00:00
 excludeFromSitemap: true
-tags: ['sides', 'dinners']
+tags: ['sides', 'dinner']
 image: /assets/img/broccoli-mousse.jpg
 image_alt: ramekin with yellow mousse with green specks
 ---

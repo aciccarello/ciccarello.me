@@ -251,5 +251,5 @@ collections:
             fields:
               - { label: 'Foster Care', name: 'foster care', widget: string }
               - { label: 'Birding', name: 'birding', widget: string }
-              - { label: 'Dinners', name: 'dinners', widget: string }
+              - { label: 'Dinner', name: 'dinner', widget: string }
               - { label: 'Travel', name: 'travel', widget: string }
