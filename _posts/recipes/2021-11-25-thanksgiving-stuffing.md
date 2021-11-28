@@ -1,12 +1,14 @@
 ---
-title: 'Thanksgiving Stuffing'
+title: Thanksgiving Stuffing
 date: 2021-11-25T16:45:00-08:00
 tags:
   - thanksgiving
   - side dish
   - dinner
+  - family recipe
 image: /assets/img/thanksgiving-stuffing.jpg
-image_alt: casserole dish filled with stuffing, sausage, apples and other diced ingredients.
+image_alt: casserole dish filled with stuffing, sausage, apples and other diced
+  ingredients.
 ---
 
 A Ciccarello family thanksgiving favorite, this stuffing recipe starts with pre-made stuffing and adds sausage and fruit.
