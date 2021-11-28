@@ -6,6 +6,7 @@ tags:
   - pie
   - thanksgiving
   - dessert
+  - family recipe
 image: /assets/img/chocolate-pecan-pie.jpg
 image_alt: Chocolate pecan pie
 ---
