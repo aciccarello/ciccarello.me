@@ -72,7 +72,13 @@ module.exports = function (eleventyConfig) {
 			}
 		});
 		return Array.from(tagCountMap)
-			.sort(([_aKey, aValue], [_bKey, bValue]) => bValue - aValue)
+			.sort(([aKey, aValue], [bKey, bValue]) => {
+				// Sort by count, then alphabetically
+				if (bValue !== aValue) {
+					return bValue - aValue;
+				}
+				return aKey.localeCompare(bKey);
+			})
 			.map(([key]) => key);
 	});
 	eleventyConfig.addPairedShortcode('json', (content) => {
