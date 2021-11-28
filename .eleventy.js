@@ -60,15 +60,20 @@ module.exports = function (eleventyConfig) {
 		collection.getFilteredByGlob(['_posts/**/*.md'])
 	);
 	eleventyConfig.addCollection('tagList', (collection) => {
-		const tagsSet = new Set();
-		collection.getAll().forEach((item) => {
-			if (item.data.tags) {
-				item.data.tags
+		const tagCountMap = new Map();
+		collection.getAll().forEach((page) => {
+			if (page.data.tags) {
+				page.data.tags
 					.filter((tag) => !['post', 'all'].includes(tag))
-					.forEach((tag) => tagsSet.add(tag));
+					.forEach((tag) => {
+						const currentCount = tagCountMap.get(tag) ?? 0;
+						tagCountMap.set(tag, currentCount + 1);
+					});
 			}
 		});
-		return Array.from(tagsSet).sort();
+		return Array.from(tagCountMap)
+			.sort(([_aKey, aValue], [_bKey, bValue]) => bValue - aValue)
+			.map(([key]) => key);
 	});
 	eleventyConfig.addPairedShortcode('json', (content) => {
 		try {
