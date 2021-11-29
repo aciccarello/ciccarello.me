@@ -1,0 +1,87 @@
+<style>
+#snow-container {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	z-index: 45;
+	pointer-events: none;
+}
+#snow-toggle {
+	margin: 32px auto 24px;
+	display: block;
+}
+
+.christmas-enabled {
+	--mdc-theme-background: #b5ecff;
+	--mdc-theme-secondary: #048a27; /* The theme secondary color. */
+	--mdc-theme-secondary-light: #36A152; /* The theme secondary color (light variant). */
+	--mdc-theme-secondary-dark: #02601B; /* The theme secondary color (dark variant). */
+}
+
+.christmas-enabled footer {
+	background-color: var(--mdc-theme-secondary-light);
+}
+.christmas-enabled footer a, .christmas-enabled footer a:visited {
+	color: black;
+}
+</style>
+<div id="snow-container"></div>
+<button id="snow-toggle" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark" onclick="toggleChristmasTheme()">Toggle Theme</button>
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@erikwatson/snowfall@3/dist/snowfall.min.js"
+  defer
+  onload="onChristmasLoad();"
+></script>
+<script>
+const christmasThemeKey = 'ciccarello-christmas-theme-enabled';
+let christmasThemeEnabled = localStorage.getItem(christmasThemeKey) !== "false";
+setChristmasClass();
+
+function onChristmasLoad() {
+	const main = document.querySelector("main");
+	const button = document.getElementById("snow-toggle");
+
+	if (main && button) {
+		main.append(button);
+	}
+
+	if (christmasThemeEnabled && ("snowfall" in window) && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+		// You can change the defaults by passing in a config object here
+		// Use the Visual Config Editor to create one
+		snowfall.start({
+			bg: '#00000000',
+			primary: "#ffffffd0",
+			secondary: "#ffffff70",
+			density: 45,
+				wave: {
+				frequency: 0.012,
+				amplitude: 0.5
+			},
+			gravity: {
+				angle: 90,
+				strength: 0.3
+			},
+		});
+	}
+}
+
+function setChristmasClass() {
+	if (christmasThemeEnabled) {
+		document.body.classList.add("christmas-enabled");
+		onChristmasLoad();
+	} else {
+		document.body.classList.remove("christmas-enabled");
+		if ("snowfall" in window) {
+			snowfall.setDensity(0);
+		}
+	}
+}
+
+function toggleChristmasTheme() {
+	christmasThemeEnabled = !christmasThemeEnabled;
+	localStorage.setItem(christmasThemeKey, christmasThemeEnabled);
+	setChristmasClass();
+}
+</script>
