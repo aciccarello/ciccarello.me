@@ -7,13 +7,17 @@ layout: page
 
 This site is intended to serve as my personal home on the web. I write about many different topics that interest me for fun. It's part profile, part public journal, part playground.
 
-In many ways it serves as an excuse to push myself and use (or not use) different
-technologies. In this case using a simplified tool-set is an intentional exercise to help me think more about the layout and styles I use.
+In many ways it serves as an excuse to push myself and try different technologies.
+In this case using a static site is an intentional exercise to help me think more about the layout and styles I use.
 At the same time I hope to improve the performance of the site and experimenting with optimizations.
+
+I started the site mainly to serve as a professional profile that I could point to instead of updating my bio on every site with a profile page.
+The scope has expaneded over time as I migrated blog content after I became unhappy with the Medium.com reader experience.
+In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. 
 
 ## Technology
 
-The code for this website is on [GitHub](https://github.com/aciccarello/ciccarello.me) and deployed to [Netlify](https://www.netlify.com/). The build is processed using [Eleventy](11ty.dev) a static site generator for node. Originally this site was hosted on GitHub pages with a Jekyll build.
+The code for this website is on [GitHub](https://github.com/aciccarello/ciccarello.me) and deployed to [Netlify](https://www.netlify.com/). The build is processed using [Eleventy](11ty.dev) a static site generator for node. This site was originally hosted on GitHub pages with a Jekyll build when it was launched at the end of 2017.
 
 The styles of this site are a combination of hand-written styles and [Material Components for the Web](https://material.io/components/).
 The site uses the [Roboto font](https://fonts.google.com/specimen/Roboto#glyphs) (self hosted). Included are some SVG icons from [Material Design Icons](https://material.io/tools/icons/?style=baseline).
@@ -25,4 +29,4 @@ If there is an problem with this website or improvement you'd like to suggest, p
 
 ---
 
-[Colophon](<https://en.wikipedia.org/wiki/Colophon_(publishing)>) is a publishing term typically used to describe the publishing process. This page was inspired by [Binyamin Aron Green](https://binyam.in/colophon/) and [Eric Bailey](https://ericwbailey.design/colophon/).
+[Colophon](<https://en.wikipedia.org/wiki/Colophon_(publishing)>) is a publishing term typically used to describe the publishing process but has been [expanded to websites](https://indieweb.org/colophon). This page was inspired by [Binyamin Aron Green](https://binyam.in/colophon/) and [Eric Bailey](https://ericwbailey.design/colophon/).
