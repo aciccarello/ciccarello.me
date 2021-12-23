@@ -5,7 +5,7 @@ tags:
 - ocean
 - sunset
 - landscape
-image: assets/img/2021-pier-sunset.jpg
+image: "/assets/img/2021-pier-sunset.jpg"
 image_alt: Orange sunset on a rocky shore with lit up pier in background.
 image_caption: ''
 
