@@ -1,0 +1,22 @@
+---
+label: Photo
+hide_body: false
+fields:
+- type: text
+  name: slug
+  label: slug
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: tags
+  label: tags
+- type: file
+  name: image
+  label: image
+- type: text
+  name: image_alt
+  label: image_alt
+- type: text
+  name: image_caption
+  label: image_caption
