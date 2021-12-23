@@ -20,3 +20,5 @@ fields:
 - type: text
   name: image_caption
   label: image_caption
+pages:
+- _posts/photos/ocean-sunset.md
