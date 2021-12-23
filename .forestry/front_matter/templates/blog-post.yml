@@ -1,0 +1,25 @@
+---
+label: Blog post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: tags
+  label: tags
+- type: text
+  name: canonical_url
+  label: canonical_url
+- type: file
+  name: image
+  label: image
+- type: text
+  name: image_alt
+  label: image_alt
+- type: text
+  name: image_caption
+  label: image_caption
