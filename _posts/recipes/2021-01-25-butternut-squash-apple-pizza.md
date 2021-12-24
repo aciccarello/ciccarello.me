@@ -15,8 +15,7 @@ We had fun with this pizza recipe from the [Half Baked Harvest Super Simple Cook
 - Cook Time: 15 minutes
 - Servings: 4
 
-## Ingredients
-
+{% recipe-ingredients %}
 - 1 tablespoon extra-virgin olive oil, plus more for greasing
 - 2 shallots, thinly sliced
 - ½ pound [No-Knead Bread](https://www.coloradohomesmag.com/half-baked-harvest-butternut-squash-apple-pizza/) and Pizza Dough or store-bought pizza dough
@@ -32,9 +31,9 @@ We had fun with this pizza recipe from the [Half Baked Harvest Super Simple Cook
 - 2 ounces blue cheese, crumbled (or substitute feta cheese)
 - Honey, for drizzling
 - Fresh thyme leaves, for serving
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1.  Preheat the oven to 450°F. Grease a baking sheet.
 1.  Heat the 1 tablespoon of olive oil in a medium skillet over high heat. When the oil shimmers, add the shallots and cook until fragrant, 2 to 3 minutes. Remove the skillet from the heat.
 1.  On a lightly floured work surface, roll out the dough to a ¼-inch thickness.
@@ -45,3 +44,4 @@ We had fun with this pizza recipe from the [Half Baked Harvest Super Simple Cook
 1.  Season the pizza with a pinch each of salt, pepper and red pepper flakes, and sprinkle the blue cheese (if using) on top.
 1.  Bake until the crust is golden and the cheese has melted, 10 to 15 minutes.
 1.  Drizzle with honey and sprinkle with thyme to finish. Slice and serve.
+{% endrecipe-directions %}

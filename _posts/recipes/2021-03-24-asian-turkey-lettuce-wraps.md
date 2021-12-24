@@ -14,8 +14,7 @@ Found this on pinterest from [71toes.com](https://71toes.com/2012/11/quick-weekn
 * Cook Time: 30 minutes
 * Servings: 4
 
-
-## Ingredients
+{% recipe-ingredients %}
 * 1/4 tbs. extra virgin olive oil
 * 1 c. finely chopped onion
 * 1 lb. ground turkey breast
@@ -29,8 +28,9 @@ Found this on pinterest from [71toes.com](https://71toes.com/2012/11/quick-weekn
 * 1 tsp. sesame oil
 * Approx. 15 butter or romaine lettuce leaves
 * Broken up raw cashews
+{% endrecipe-ingredients %}
 
-## Directions
+{% recipe-directions %}
 1. place oil into large 5 qt. skillet or other large pan over medium heat.
 1. When hot, add onion and cook for 5 minutes to soften.
 1. Add ground turkey, salt, pepper and garlic salt.
@@ -38,3 +38,4 @@ Found this on pinterest from [71toes.com](https://71toes.com/2012/11/quick-weekn
 1. When turkey is cooked, stir in broccoli slaw, carrots, water chestnuts, teriyaki sauce and sesame oil.
 1. Cook for another 10-15 minutes or until heated through.  
 1. Serve spoonfuls inside lettuce leaves and top with cashews
+{% endrecipe-directions %}

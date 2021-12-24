@@ -21,8 +21,7 @@ This recipe is great combined with [Pepper Seared Salmon](/recipes/2021/02/01/pe
 - Cook Time: 50 minutes
 - Servings: 4
 
-## Ingredients
-
+{% recipe-ingredients %}
 - 1 lb broccoli florets
 - 1/2 cup heavy cream
 - pinch nutmeg
@@ -31,9 +30,9 @@ This recipe is great combined with [Pepper Seared Salmon](/recipes/2021/02/01/pe
 - 1 teaspoon minced garlic
 - salt and pepper
 - 4 eggs
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. Preheat oven to 375 °F (190 °C)
 1. Butter the ramekins and set aside
 1. Cook the broccoli in a pot of boiling water till cooked (about 5 minutes)
@@ -48,3 +47,4 @@ This recipe is great combined with [Pepper Seared Salmon](/recipes/2021/02/01/pe
 1. Cover the baking dish with foil and bake until they set, 25-30 minutes
 1. Remove from the oven and allow to rest
 1. Can be served in a ramekin or flipped upside down on a plate
+{% endrecipe-directions %}

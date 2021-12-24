@@ -19,8 +19,7 @@ A Ciccarello family thanksgiving favorite, this stuffing recipe starts with pre-
 - Cook Time: 50 minutes
 - Servings: 8
 
-## Ingredients
-
+{% recipe-ingredients %}
 - 1 12 oz. Pepperidge farm stuffing bag
 - 1 stick of butter
 - 2 cups chicken broth
@@ -31,9 +30,9 @@ A Ciccarello family thanksgiving favorite, this stuffing recipe starts with pre-
 - 2 apples
 - 2 stalks of celery
 - Pine nuts
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. Preheat oven to 350°F (175°C)
 1. Heat butter in a 4-quart saucepan over medium-high heat
 1. Add onion, apples, and celery and cook until tender but still crisp
@@ -41,3 +40,4 @@ A Ciccarello family thanksgiving favorite, this stuffing recipe starts with pre-
 1. Add broth and heat to a boil
 1. Add remaining uncooked ingredients to a greased casserole dish and mix in cooked ingredients
 1. Cover and bake for 35 minutes (or uncovered for more crisp)
+{% endrecipe-directions %}

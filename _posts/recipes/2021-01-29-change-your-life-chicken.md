@@ -14,7 +14,7 @@ A friend shared this recipe with an over the top title, but we've made it severa
 - Prep Time: 1 hr
 - Cook Time: 50 minutes
 
-## Ingredients
+{% recipe-ingredients %}
 
 This list is intentionally imprecise, you can adjust the amounts based on your favorite flavors. But the goal is to cover the bottom of the pan loosely with vegetables.
 
@@ -38,9 +38,9 @@ You can add additional vegetables as you like, however you'll want to avoid anyt
 - Lemon or orange zest
 - Different kinds of potatoes (e.g. sweet potatoes, red potatoes)
 - Different kinds of onions
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. Preheat oven to 500 degrees
 1. Line a baking sheet with a silicone liner or heavy duty foil
 1. Cut your vegetables, sizing them into roughly bite size pieces adjusted for cooking speed
@@ -50,5 +50,6 @@ You can add additional vegetables as you like, however you'll want to avoid anyt
 1. Arrange the vegetables on the baking sheet in a single layer
 1. Place the chicken skin side up on the vegetables
 1. Bake at 500 degrees for 50 minutes
+{% endrecipe-directions %}
 
 By the time you're done, the chicken skin should be crisp and the vegetables should be starting to brown.

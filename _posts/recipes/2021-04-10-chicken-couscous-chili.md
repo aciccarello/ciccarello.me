@@ -15,8 +15,7 @@ Inspired by [Kim's Cravings' Best Vegetarian Chili](https://www.kimscravings.com
 - Cook Time: 45 minutes
 - Servings: 8
 
-## Ingredients
-
+{% recipe-ingredients %}
 * Diced Onion
 * Minced garlic
 * Diced Sweet Potatoes
@@ -33,11 +32,12 @@ Inspired by [Kim's Cravings' Best Vegetarian Chili](https://www.kimscravings.com
 * Cinnamon Stick
 * Couscous
 * Avocado
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. Saute onion, adding the garlic a few minutes later
 1. Add sweet potatoes and cook until tender
 1. Add broth & other ingredients except couscous & avocado & cook for 30 minutes
 1. Cook couscous separately
 1. Add soup to a bowl and top with couscous and avocado
+{% endrecipe-directions %}

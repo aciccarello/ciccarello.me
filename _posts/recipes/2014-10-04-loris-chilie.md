@@ -11,8 +11,7 @@ image_alt: Slow cooker with chile
 
 This is a simplified slow cooker chile recipe from an advisor and former-professor of Bekah's. We've made many variations of this but it provides a great base to work from.
 
-## Ingredients
-
+{% recipe-ingredients %}
 - Ground beef (browned)
 - Diced tomatoes
 - Tomato sauce
@@ -22,10 +21,11 @@ This is a simplified slow cooker chile recipe from an advisor and former-profess
 - Chile powder
 - Oregano
 - Green peppers
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. Brown the ground beef
 1. Add all the ingredients to a slow cooker (heat depending on time)
+{% endrecipe-directions %}
 
 All cooked in slow cooker

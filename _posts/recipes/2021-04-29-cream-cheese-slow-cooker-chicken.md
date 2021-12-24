@@ -22,8 +22,7 @@ This is a really easy slow cooker meal that requires very little prep. The initi
 * Cook Time: 4-6 hours (slow cooker)
 * Servings: 8-ish
 
-## Ingredients
-
+{% recipe-ingredients %}
 * 2 boneless chicken breasts (can be frozen)
 * 1 can of corn (drained)
 * 1 can of black beans (drained)
@@ -32,12 +31,13 @@ This is a really easy slow cooker meal that requires very little prep. The initi
 * 1 block of cream cheese
 * 1.5 cups of uncooked rice
 * 1 romaine heart
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. Add chicken, canned ingredients, ranch dressing mix, and cream cheese to slow cooker (no need to mix)
 2. Cook until the chicken is cooked through (4 hours on low or 3 on high)
 3. Shred the cooked chicken using forks and mix ingredients
 4. Cook rice
 5. Shred lettuce
 6. Serve chicken on rice with lettuce. Can serve with tortilla chips
+{% endrecipe-directions %}

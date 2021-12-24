@@ -16,8 +16,7 @@ This soup from the [Half Baked Harvest Super Simple Cookbook](https://www.halfba
 - Cook Time: 1 hr (stove) or 6 hours (slow cooker)
 - Servings: 6
 
-## Ingredients
-
+{% recipe-ingredients %}
 - 2 boneless, skinless chicken breasts
 - 1 small yellow onion, diced
 - 6 carrots, chopped
@@ -35,8 +34,9 @@ This soup from the [Half Baked Harvest Super Simple Cookbook](https://www.halfba
 - 4 garlic cloves, smashed
 - 3 tablespoon salted butter
 - zest from 1/2 lemon
+{% endrecipe-ingredients %}
 
-## Directions
+{% recipe-directions %}
 
 ### Stovetop
 
@@ -65,3 +65,4 @@ This soup from the [Half Baked Harvest Super Simple Cookbook](https://www.halfba
 8. Reduce the heat to medium and add the garlic, butter, the remaining 1 tablespoon of thyme, and the lemon zest to the mushrooms and cook until garlic is caramelized and fragrant, 3 to 5 minutes.
 9. Mash the garlic with a fork and add the mushrooms, mashed garlic, and butter to the pot and stir to combine.
 10. Divide the soup among six bowls and top with thyme and Parmesan.
+{% endrecipe-directions %}

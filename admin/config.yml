@@ -125,7 +125,33 @@ collections:
           widget: 'string',
           required: false,
         }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Body',
+          name: 'body',
+          widget: 'markdown',
+          default:
+            "## Summary
+
+            - Prep Time
+
+            - Cook Time
+
+            - Servings
+
+
+            {% recipe-ingredients %}
+
+            -
+
+            {% endrecipe-ingredients %}
+
+
+            {% recipe-directions %}
+
+            1.
+
+            {% endrecipe-directions %}"
+        }
 
   - label: 'Photos'
     name: 'photos'

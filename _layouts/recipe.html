@@ -35,7 +35,7 @@ layout: default
 		{%- if tags.size > 0 -%}
 		<ul class="mdc-chip-set">
 			{% for tag in tags %}
-			<a href="/posts/tags/{{tag}}/" rel="tag" class="mdc-chip">
+			<a href="/posts/tags/{{tag}}/" rel="tag" class="mdc-chip p-category">
 				<span class="mdc-chip__text">{{ tag }}</span>
 			</a>
 			{% endfor %}

@@ -19,8 +19,7 @@ This is a Hoesterey family recipe from Bekah's Nana. Bekah has made this the pas
 - Cook Time: 55 minutes
 - Servings: 8
 
-## Ingredients
-
+{% recipe-ingredients %}
 - 1/3 cup butter
 - 2/3 cup sugar
 - 1/2 cup cocoa
@@ -28,12 +27,13 @@ This is a Hoesterey family recipe from Bekah's Nana. Bekah has made this the pas
 - 1 cup white karo corn syrup
 - 1/4 teaspoon salt
 - 1 cup chopped pecans
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. Preheat oven to 375°F (190°C)
 1. Melt butter & sugar; Add coca & set aside
 1. Beat eggs & stir in karo, eggs, salt
 1. Add to butter/sugar (if hot stir to avoid cooking the eggs)
 1. Stir in Pecans
 1. Bake for 40 minutes
+{% endrecipe-directions %}

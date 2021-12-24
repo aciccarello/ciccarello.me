@@ -21,8 +21,7 @@ This recipe is great combined with [Pepper Seared Salmon](/recipes/2021/02/01/pe
 - Cook Time: 40 minutes
 - Servings: 4
 
-## Ingredients
-
+{% recipe-ingredients %}
 Note, all large ingredients are diced.
 
 - 1/2 lb. Smoked Bacon
@@ -34,10 +33,11 @@ Note, all large ingredients are diced.
 - 3 tablespoons apple cider vinegar
 - Salt & pepper
 - Dash of chili flakes
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. In a large sauté pan cook the diced bacon over medium heat until crisp
 1. Add the chopped onions and cook until translucent, about 3 minutes
 1. Add the remaining ingredients
 1. Bring to a gentle boil, reduce heat and simmer mixture for 20-25 minutes, stirring occasionally until mixture slightly thickens
+{% endrecipe-directions %}

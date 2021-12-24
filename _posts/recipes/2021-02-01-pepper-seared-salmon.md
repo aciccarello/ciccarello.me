@@ -21,19 +21,19 @@ This recipe is great combined with [Broccoli Mousse](/recipes/2021/02/01/broccol
 - Cook Time: 10 minutes
 - Servings: 4
 
-## Ingredients
-
+{% recipe-ingredients %}
 - 4, 6 oz portions Salmon - center cut
 - 4 Tablespoons olive oil
 - Salt and pepper
 - 1 cup white wine
 - 2 Tablespoons butter
+{% endrecipe-ingredients %}
 
-## Directions
-
+{% recipe-directions %}
 1. Preheat oven to 375 °F (190 °C)
 1. Season the salmon with salt & generous amounts of pepper
 1. In a large sauté pan on medium heat, add the oil
 1. Place the fish presentation side down, and cook for 1 minute
 1. Turnover and cook for 1 more minute
 1. Add the white wine, butter, and place in the oven for 5 minutes or until the internal temperature reaches 125-140°F (51.5-60°C)
+{% endrecipe-directions %}

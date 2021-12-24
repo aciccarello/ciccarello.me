@@ -16,8 +16,7 @@ image_alt: bowl of creamy red soup topped with cheese
 * Cook time: 30 minutes
 * Servings: 6
 
-## Ingredients
-
+{% recipe-ingredients %}
 * 1 tablespoon olive oil
 * 1 pound ground Italian sausage
 * 3 cloves garlic, minced
@@ -32,9 +31,9 @@ image_alt: bowl of creamy red soup topped with cheese
 * 2/3 cup heavy cream
 * 3 tablespoons chopped fresh basil
 * Parmesan cheese
+{% endrecipe-ingredients %}
 
-Directions
-
+{% recipe-directions %}
 1. Heat olive oil in a large stockpot or Dutch oven over medium heat.
 1. Add Italian sausage and cook until browned, about 3-5 minutes, making sure to crumble the sausage as it cooks. Drain any excess fat.
 1. Stir in garlic, onion and Italian seasoning. Cook, stirring frequently, until onions have become translucent, about 2-3 minutes.
@@ -46,4 +45,5 @@ Directions
 1. Stir in kale/spinach until wilted, about 1-2 minutes.
 1. Stir in heavy cream and basil until heated through, about 1 minute;
 1. Season with salt and pepper to taste.
-7. Serve in bowls and top with parmesan cheese.
+1. Serve in bowls and top with parmesan cheese.
+{% endrecipe-directions %}
