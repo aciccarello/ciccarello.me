@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="container post h-recipe mdc-card">
+<article class="container post h-recipe hrecipe mdc-card">
 	{% if image %}
 	<figure class="mdc-card__media post-thumbnail u-featured">
 		<div class="post-thumbnail--wrapper">
@@ -16,7 +16,7 @@ layout: default
 	</figure>
 	{% endif %}
 	<header class="post-header">
-		<h1 class="post-title p-name mdc-typography--headline3">
+		<h1 class="post-title p-name fn mdc-typography--headline3">
 			{{ title | escape }}
 		</h1>
 		{%- if subtitle -%}
@@ -25,7 +25,7 @@ layout: default
 		</h2>
 		{%- endif -%}
 		<p class="post-meta">
-			<time class="dt-published" datetime="{{ page.date | fromUTC | trimTime | dateToRfc3339 }}">
+			<time class="dt-published published" datetime="{{ page.date | fromUTC | trimTime | dateToRfc3339 }}">
 				{{- page.date | fromUTC | trimTime | date: "%b %e, %Y" }}
 			</time>
 			{%- if author -%} •
@@ -35,7 +35,7 @@ layout: default
 		{%- if tags.size > 0 -%}
 		<ul class="mdc-chip-set">
 			{% for tag in tags %}
-			<a href="/posts/tags/{{tag}}/" rel="tag" class="mdc-chip p-category">
+			<a href="/posts/tags/{{tag}}/" rel="tag" class="mdc-chip p-category tag">
 				<span class="mdc-chip__text">{{ tag }}</span>
 			</a>
 			{% endfor %}
@@ -53,8 +53,8 @@ layout: default
 	<div class="author-card__primary-action" tabindex="0">
 		<div class="mdc-card__media mdc-card__media--square author-card__media"></div>
 		<div class="author-card__primary">
-			<h2 class="author-card__title mdc-typography mdc-typography--headline6">
-				<a class="p-author h-card disable-link-styles" href="/">
+			<h2 class="vcard author author-card__title mdc-typography mdc-typography--headline6">
+				<a class="p-author h-card fn url disable-link-styles" href="/">
 					Anthony Ciccarello
 				</a>
 			</h2>

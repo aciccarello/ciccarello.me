@@ -95,13 +95,19 @@ module.exports = function (eleventyConfig) {
 	});
 	eleventyConfig.addPairedShortcode('recipe-ingredients', (content) => {
 		let render = md.render('## Ingredients\n' + content);
-		render = render.replaceAll('<li>', '<li class="p-ingredient">');
+		render = render.replaceAll(
+			'<li>',
+			'<li class="p-ingredient ingredient">'
+		);
 		console.log('recipe-ingredients', content, render);
 		return render;
 	});
 	eleventyConfig.addPairedShortcode('recipe-directions', (content) => {
 		let render = md.render('## Directions\n' + content);
-		render = render.replace('<ol>', '<ol class="e-instructions">');
+		render = render.replace(
+			'<ol>',
+			'<ol class="e-instructions instructions">'
+		);
 		console.log('recipe-directions', content, render);
 		return render;
 	});

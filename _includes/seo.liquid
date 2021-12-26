@@ -52,7 +52,8 @@
     {%- if page.inputPath contains ".md" -%}
     "author": {
         "@type": "Person",
-        "name":"Anthony Ciccarello"
+        "name":"Anthony Ciccarello",
+        "url": "https://www.ciccarello.me"
     },
     {%- endif -%}
     "headline":"{{finalTitle}}",
@@ -63,6 +64,9 @@
     "description":"{{ pageContent | strip_html }}",
     {% if page.url == "/" %}
     "@type":"WebSite",
+    {% elsif page.inputPath contains "_posts/recipe" %}
+    "@type": "Recipe",
+    "name":"{{finalTitle}}",
     {% elsif page.inputPath contains "_posts" %}
     "mainEntityOfPage":{"@type":"WebPage", "@id": "{{ collectionData.data.canonical_url | default : fullUrl }}"},
     "@type":"BlogPosting",
