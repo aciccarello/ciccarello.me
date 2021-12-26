@@ -18,7 +18,9 @@ layout: default
 	{% endif %}
 	<header class="post-header">
 		<h1 class="post-title p-name mdc-typography--headline3">
-			{{ title | escape }}
+			<a class="u-url disable-link-styles" href="{{ page.url | url }}">
+				{{ title | escape }}
+			</a>
 		</h1>
 		{%- if subtitle -%}
 		<h2 class="post-title p-summary mdc-typography--headline6">
@@ -47,8 +49,6 @@ layout: default
 	<div class="post-content mdc-typography--body1 e-content">
 		{{ content }}
 	</div>
-
-	<a class="u-url" href="{{ page.url | url }}" aria-hidden="true"></a>
 </article>
 <section class="container mdc-card author-card">
 	<div class="author-card__primary-action" tabindex="0">

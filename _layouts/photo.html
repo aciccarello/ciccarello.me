@@ -5,7 +5,9 @@ layout: default
 <article class="container post h-entry mdc-card">
 	{% if image %}
 	<figure class="mdc-card__media post-thumbnail u-featured">
-		<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo post-img--wide" />
+		<a class="u-url" href="{{ page.url | url }}">
+			<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo post-img--wide" />
+		</a>
 		{% if image_caption %}
 		<figcaption class="mdc-typography--caption">
 			{{ image_caption | markdownify }}
@@ -36,8 +38,6 @@ layout: default
 	<div class="post-content mdc-typography--body1 e-content">
 		{{ content }}
 	</div>
-
-	<a class="u-url" href="{{ page.url | url }}" aria-hidden="true"></a>
 </article>
 <section class="container mdc-card author-card">
 	<div class="author-card__primary-action" tabindex="0">

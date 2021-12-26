@@ -538,6 +538,11 @@ img.post-img--wide {
 		padding-left: 0.5rem;
 	}
 
+	/* Specificity fix to avoid the above padding changes */
+	.post.container, .post.author-card {
+		padding: 0;
+	}
+
 	.profile-card {
 		margin: 8px 4px;
 	}
