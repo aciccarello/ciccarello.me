@@ -6,7 +6,7 @@ tags:
   - pasta
   - dinner
   - side dish
-image: https://images.unsplash.com/photo-1590060846796-0418842f3908?fit=crop&w=2048&h=1152
+image: /assets/img/overnight-mac-and-cheese.jpg
 image_alt: Closeup of uncooked elbow macaroni.
 image_caption: Photo by <a
   href="https://unsplash.com/@_clicksbyayush_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ayush
