@@ -10,9 +10,9 @@ permalink: /posts/tags/{{ tag }}/
 ---
 
 <div class="home container">
-	<h2 class="post-list-heading mdc-typography--headline4">
+	<h1 class="post-list-heading mdc-typography--headline4">
 		Posts tagged "{{ tag }}"
-	</h2>
+	</h1>
     {%- if descriptions[tag] %}
     <p>
         {{ descriptions[tag] | markdownify }}
