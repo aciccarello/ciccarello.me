@@ -37,18 +37,21 @@
     {%- for tag in post.data.tags %}
     <category term="{{ tag }}"/>
     {%- endfor %}
+    {%- if loop.index <= 10 %}
     <content type="html">
       {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
-      {%- if loop.index <= 10 %}
       {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-      {%- else %}
+    </content>
+    {%- else %}
+    <summary type="html">
+      {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
       {%- set contentSummary %}
       <p>{{ post.templateContent | striptags | truncate(500) }}</p>
       <a href="{{ absolutePostUrl }}">Read More</a>
       {% endset %}
       {{ contentSummary }}
-      {%- endif %}
-    </content>
+    </summary>
+    {%- endif %}
   </entry>
   {%- endfor %}
 </feed>
