@@ -1,16 +1,16 @@
-<div class="mdc-card mdc-elevation-transition h-entry" {% if post.excludeFromSitemap %}data-nosnippet{% endif %}>
+<a class="h-entry u-url mdc-card mdc-elevation-transition disable-link-styles" href="{{ post.url | url }}" {% if post.excludeFromSitemap %}data-nosnippet{% endif %}>
 	{%- if post.data.image -%}
 	{% assign filetype = post.data.image | split: "." | last -%}
-	<a class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
+	<div class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
 		{% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
 		{% if filetype == 'mp4' -%}
 		<video preload="metadata" alt="{{ post.data.image_alt | escape }}">
 			<source type="video/mp4" src="{{ post.data.image }}">
 		</video>
 		{% endif %}
-	</a>
+	</div>
 	{%- endif -%}
-	<a class="mdc-card__primary disable-link-styles u-rul {% if post.data.layout == "note" %}note-card{% endif %}" href="{{ post.url | url }}">
+	<div class="mdc-card__primary {% if post.data.layout == "note" %}note-card{% endif %}">
 		<div class="post-heading">
 			{%- if post.data.title -%}
 			<h3 class="mdc-typography--headline6 p-name">
@@ -33,17 +33,17 @@
             {%- if tags.size > 0 or showKind %}
                 <ul class="mdc-chip-set p-category" title="Tags">
 					{%- if showKind %}
-					<span class="mdc-chip">
-						<span class="mdc-chip__text">{{ post.data.layout }}</span>
-					</span>
+						<li class="mdc-chip">
+							<span class="mdc-chip__text">{{ post.data.layout }}</span>
+						</li>
 					{%- endif %}
-                    {%- for tag in tags %}
-					<span class="mdc-chip">
-						<span class="mdc-chip__text">{{ tag }}</span>
-					</span>
-                    {% endfor %}
-                </ul>
-            {%- endif -%}
-        </div>
-    </a>
-</div>
+					{%- for tag in tags %}
+						<li class="mdc-chip">
+							<span class="mdc-chip__text">{{ tag }}</span>
+						</li>
+					{% endfor %}
+				</ul>
+			{%- endif -%}
+		</div>
+	</div>
+</a>
