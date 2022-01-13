@@ -1,13 +1,15 @@
 ---
 title: Wrapping up our first fostering experience
-date: 2021-13-30T00:00:00.000Z
+date: 2021-12-31T08:00:00.000Z
+canonical_url: /blog/2022/01/30/wrapping-up-our-first-fostering-experience/
 tags:
   - personal
   - foster care
   - parenting
 image: /assets/img/2021-foster-placement-family-photo.jpg
 image_alt: two adults walking with two kids in fall leaves.
-image_caption: Photo courtesy of [Destiny Pierce Photography](https://destinypiercephotography.com/)
+image_caption: Photo courtesy of [Destiny Pierce
+  Photography](https://destinypiercephotography.com/)
 ---
 
 After six weeks together our first foster kiddos were able to return to live with family members while their parent's case continues to progress. This is great news for the kids as it will allow them to stay connected with their relatives. Throughout this journey, we were relieved to see how the children's family actively working to connect and reunify with the kiddos. At the same time we are sad to see them go. We cherished the time we spent together and are hopeful we were able to make a positive impact in an extremely difficult time in their lives.
