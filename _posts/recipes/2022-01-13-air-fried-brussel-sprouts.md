@@ -1,6 +1,11 @@
 ---
 title: Air-Fried Brussels Sprouts
 date: 2022-01-13T05:47:40.835Z
+tags:
+  - air fryer
+  - dinner
+  - vegetable
+  - sides
 image: /assets/img/air-fryer-brussels-sprouts.jpg
 image_alt: brussel sprouts in an air fryer.
 ---
