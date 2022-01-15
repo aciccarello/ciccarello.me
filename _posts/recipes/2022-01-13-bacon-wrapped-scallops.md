@@ -1,14 +1,15 @@
 ---
 title: Bacon Wrapped Scallops
-date: 2022-01-13T02:26:08.641Z
+date: 2022-01-15T05:17:59.803Z
 tags:
   - dinner
   - seafood
   - holiday
   - appetizers
 image: /assets/img/bacon-wrapped-scallops.jpg
+image_alt: dish of bacon wrapped scallops.
 ---
-My family loves to eat these christmas eve. It's a simple receipe but the key is not over-cooking the scallops.
+My family loves to eat these Christmas eve. It's a simple recipe but the key is not over-cooking the scallops. I'm still working out the timing but we like the bacon a little crispier so I recommend doing a thinner cut.
 
 ## Summary
 - Prep Time: 10 minutes
@@ -22,7 +23,7 @@ My family loves to eat these christmas eve. It's a simple receipe but the key is
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1. Cook bacon until edges start to golden but is still under done
+1. Cook bacon until edges start to brown but is still under done. 10 minutes at 400 °F (205 °C) if done in oven.
 1. Cut bacon strips in half and wrap around scallops securing with a toothpick
-1. Place on a pan and broil for 8 minutes
+1. Place on a pan and broil for 8 minutes or until scallops turn opaque
 {% endrecipe-directions %}
