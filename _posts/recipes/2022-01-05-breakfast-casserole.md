@@ -1,8 +1,13 @@
 ---
 title: "Breakfast Casserole "
-date: 2022-01-08T16:00:14.256Z
+date: 2022-01-15T06:09:20.299Z
+tags:
+  - breakfast
+  - casserole
+image: /assets/img/breakfast-casserole.jpg
+image_alt: aluminum pan with cheese baked on top of a yellow mixture.
 ---
-Hoesterey recipe book, by Bev Graybill with modifications
+This is the Hoesterey family breakfast bake. It's extra eggy and the green chilies adds a nice mild heat.
 
 ## Summary
 - Prep Time: 15 minutes + 4 hours set time
@@ -18,11 +23,12 @@ Hoesterey recipe book, by Bev Graybill with modifications
 - 6+ eggs
 - 2 1/2+ cups of milk
 - 1/2 teaspoon oregano
-- 1 teaspon garlic
+- 1 teaspoon garlic
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1. Alternate bread, cheese mixed, chilies, sausage, egg, and milk mixture ending with cheeses
+1. Alternate bread, cheese mixed, chilies, sausage, egg, and milk mixture in a 3-quart Glass Baking Dish (or 2 8"x8" dishes)
+1. ending with a topping of cheeses
 1. Let set 4 hours or overnight
 1. Bake at 325 °F (160 °C) for 55 minutes
 {% endrecipe-directions %}
