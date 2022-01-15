@@ -4,6 +4,7 @@ date: 2022-01-15T06:09:20.299Z
 tags:
   - breakfast
   - casserole
+  - family recipe
 image: /assets/img/breakfast-casserole.jpg
 image_alt: aluminum pan with cheese baked on top of a yellow mixture.
 ---
