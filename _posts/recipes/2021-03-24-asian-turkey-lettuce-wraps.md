@@ -23,7 +23,7 @@ Found this on pinterest from [71toes.com](https://71toes.com/2012/11/quick-weekn
 * 1/4 tsp garlic salt
 * 1 bag (12 oz.) of broccoli slaw
 * (optional) additional matchstick carrots as desired
-* 1 small drained water chestnuts
+* 1 small 8 oz. can drained water chestnuts
 * 1/2 c. Teriyaki sauce
 * 1 tsp. sesame oil
 * Approx. 15 butter or romaine lettuce leaves
@@ -36,6 +36,6 @@ Found this on pinterest from [71toes.com](https://71toes.com/2012/11/quick-weekn
 1. Add ground turkey, salt, pepper and garlic salt.
 1. Brown and crumble until cooked through.
 1. When turkey is cooked, stir in broccoli slaw, carrots, water chestnuts, teriyaki sauce and sesame oil.
-1. Cook for another 10-15 minutes or until heated through.  
+1. Cook covered for another 10-15 minutes or until heated through.  
 1. Serve spoonfuls inside lettuce leaves and top with cashews
 {% endrecipe-directions %}
