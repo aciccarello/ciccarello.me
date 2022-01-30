@@ -78,7 +78,7 @@ also means that templates will be converted to the base Angular instructions
 which browsers will be able to run much more optimally than the complex
 functions Angular 1 templates produced.
 
-{% include embed-link.html
+{% include "embed-link.html"
     title: "Aha Moments from ngconf 2016 Part 1: Angular 2.0 Compile Cycle"
     url: "https://medium.com/p/6f462f68632e"
     description: "This is sealed that ngconf is truly the best conference ever, at least for me and I'm sure for a lot of coders like me."

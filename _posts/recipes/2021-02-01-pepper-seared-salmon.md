@@ -7,7 +7,7 @@ image: /assets/img/pepper-seared-salmon.jpg
 image_alt: cooked salmon in a pan
 ---
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/salmon-jam-broccoli-meal.jpg"
     display: "float-right"
     alt: "Plate with salmon, broccoli mousse, and tomato bacon jam"

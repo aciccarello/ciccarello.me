@@ -21,7 +21,7 @@ We arrived in Venice late at night. We drove across the bridge which brings trai
 
 After catching up on sleep, we headed to St. Mark's Square but our first attempt at navigating on our own didn't go so well. We started off in the wrong direction and had to loop around to our destination. The square was bigger than I imagined. On three sides are two tiers of columns defining the square's rectangular outline and hiding small shops and restaurants behind them. At the far end from where we entered was St. Marks Basilica and to our right stood a 99 meter high "[campanile](http://www.basilicasanmarco.it/basilica/campanile/?lang=en)" or tower.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-st-marks-square.jpg"
     alt: "People walking in old city square with ornate church in the background."
     caption: "Walking through St. Mark's Square towards the Basilica"
@@ -31,7 +31,7 @@ When we arrived, the square was busy with people. Some of them were taking pictu
 
 As we made our way to the far end we got a better view of the basilica. The face of it is decorated with mosaics and gold leaf. Up on the balcony stand [4 large horses](https://en.wikipedia.org/wiki/Horses_of_Saint_Mark). The originals, which now sit inside the cathedral, were brought to Venice from Constantinople. Napoleon later brought the horses to Paris but less than two decades later they were returned to Italy until they were finally taken down to protect them from local pollution. Entrance to the Basilica is free, however, we bought tickets to Doge's Palace.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-doges-palace.jpg"
     alt: "Courtyard surrounded by white columns."
     caption: "The entrance to Doge's Palace"
@@ -39,7 +39,7 @@ As we made our way to the far end we got a better view of the basilica. The face
 
 The Doge was the ruler of the Venetian city-state and the palace was as much a government building as it was a residence. There many councils used the building to make decisions. Compared to the colors and gold leaf of the basilica, I wasn't immediately impressed by the white columns of the palace exterior. However, as I got closer I realized everything about the building is intricately decorated. The entrance is flanked by marble columns with detailed carvings which leads to a staircase topped with a finely decorated ceiling. The rooms are decorated with elaborate wood trim, gold leaf, and enormous paintings. Each council had a room with a uniquely themed collection of paintings. Some of the rooms show mythological stories of the ancient gods. Others are painted with biblical themes. However, many of the largest paintings, like those in the great hall, are stories of Venice and its military might.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-naval-painting.jpg"
     alt: "Painting of boats packed with men fighting each other."
     display: "float"
@@ -52,7 +52,7 @@ From inside the palace, you can cross over the enclosed "[Bridge of Sighs](https
 
 I think touring the palace helped me see the part of Venice that once was a thriving commercial city and regional power. The buildings are all tourist attractions now but they once were very functional, if still decadent, facilities. The surrounding area of the square is a must-see for anyone visiting Venice for the first time. Even just walking the shoreline is fun but there are lots of shops and restaurants around the square. On our way back it turned out we were only about 8 blocks from the square when walking directly so we passed by the square a couple time later in the trip.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-doges-palace-chamber-paintings.jpg"
     alt: "People looking up at paintings and gold leaf moldings"
     display: "wide"
@@ -63,7 +63,7 @@ I think touring the palace helped me see the part of Venice that once was a thri
 
 The lagoon surrounding Venice is filled with similar islands, each with its own culture and identity. We visited two of these islands using the local ferry. Unfortunately, we had to wait about an hour in line just to get our ferry tickets. Once we had our tickets, we took a 28-minute ferry from the northern side of Venice, passing by a square cemetery island, and getting off at the first stop on Murano. This island is known for its expert glassblowers as was visible in a workshop a few steps away from the ferry stop.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-murano-glassblower.jpg"
     alt: "Man sitting, working a piece of hot glass with metal tools."
     display: "float"
@@ -76,7 +76,7 @@ From the shop we walked through several stores on the island, traveling along th
 
 From Murano, we took a 45-minute ferry further north to the island of Burano. The ferry came about every 15 minutes however there were so many people that it took two boats for us to finally get on. This ferry passes by some interesting waterways with piers showing the deeper sections and some kind of lanes defined with smaller poles off to the side. There is also a marshy area with no buildings on it and a few small islands occupied by single large buildings. It made me realize how shallow parts of the lagoon are.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-burano-canal.jpg"
     alt: "Row of colorful houses along a canal."
     caption: "Canal in Burano - Photo by Bekah Ciccarello"
@@ -85,7 +85,7 @@ From Murano, we took a 45-minute ferry further north to the island of Burano. Th
 
 Burano is known for its colorful houses. The story goes that the native fishermen paint their houses vibrant colors so they can easily identify their home when they return at the end of the day. You can tell that the island is more residential than Venice because people were driving boats or taking care of their homes as we walked around. It was fun seeing a few elderly residents sitting outside their homes watching the tourists walk by while calling out to their neighbors across the street. For us, the island was a really fun place to take pictures and explore. The colorful homes, waterways with docked boats, and leaning clock tower, made for a really unique setting. I liked that there were more trees and greenspace there too. The island of Mazzorbo across the bridge had a whole vineyard complete with sculptures. However, the prices at the restaurants were significantly higher than Venice so we caught a ferry back to the main city as the sun was going down.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-sunset-from-ferry.jpg"
     alt: "Silhouette of people inside a boat looking out at a city at sunset."
     caption: "View of Venice from the ferry"
@@ -101,7 +101,7 @@ Lastly, there was the gelato. Just two blocks from our apartment was a gelato pl
 
 ---
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-rialto-bridge.jpg"
     alt: "White bridge with a roofline and arches for shops."
     caption: "The Rialto Bridge - Photo by Bekah Ciccarello"
@@ -112,7 +112,7 @@ Venice exceeded my expectations and is a fascinating city to visit. It takes a l
 
 The other fun place we walked around was the southern coast of the Castello neighborhood out past St. Mark's Square. The coastline has beautiful views and there are a few small parks on the edge the island. One small park had a collection of international sculptures on display. As we walked around a loud [European Robin](https://ebird.org/species/eurrob1) flew back and forth, keeping an eye on us. Another park had a small koi pond filled with turtles. It was a beautiful place to walk around and one of the few places that felt like we were walking on solid ground.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-grand-canal.jpg"
     alt: "Large canal lined with multi-story buildings."
     caption: "The entrance to the Grand Canal from the Ponte dell'Accademia - Photo by Bekah Ciccarello."
@@ -122,7 +122,7 @@ Life in Venice seems completely bound to the hoards of tourists that visit each 
 
 Seeing Venice was one of my favorite parts of the trip. While our other destinations in Italy were relaxing or informative, walking through Venice was living a childhood dream. It was a great way to end our trip and a fun place to explore with family. Our exit from Italy involved one more ferry ride to Venice Marco Polo Airport on the mainland. Bekah and I carried our suitcases through the empty stone streets early in the morning to the boat that would take us directly to the airport entrance and out of Italy.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-venice-statue-silhouette.jpg"
     alt: "Silhouette of statue with orange clouds in the sky at sunset."
     display: "wide"

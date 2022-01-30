@@ -16,7 +16,7 @@ Wireless charging has been around for a while now but it's still not ubiquitous.
 
 Wireless phone chargers uses what is call "Inductive charging". An alternating current flowing through a cord induces a small magnetic field. Multiple loops of the wire amplify the effect. Another coil of wire can reverse this affect by converting a magnetic field into an electrical current. This technology is used in electric toothbrushes as well as electric cars.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/wireless-charging-diagram.svg"
     alt: "inductive coupling wire diagram"
 %}
@@ -99,7 +99,7 @@ Two wireless chargers I can recommend personally:
 
 ### Adding wireless charging to a phone without
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/wireless-charging-receiver.jpg"
     alt: "Thin rectangular device on the back of phone"
     caption: "My phone's wireless receiver with the case off"
@@ -109,7 +109,7 @@ After having a flaky micro-USB port on my old phone, I decided that wireless cha
 
 If you are considering this option, choose one that matches your charging connector and that has the appropriate length cord for your device's size. You can usually find one for less than \$20. The major downside of an external wireless receiver is that it takes up your charging port so you will need to unplug the receiver to use the port. With a case, this is inconvenient and makes me avoid using portable chargers.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/wireless-charging-receiver-under-case.jpg"
     alt: "Thin rectangular device on the back of phone"
     caption: "A thin receiver can fit under a soft silicone case"
@@ -117,7 +117,7 @@ If you are considering this option, choose one that matches your charging connec
 
 ### Wireless charging with a pop-socket
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/wireless-charging-pop-power.jpg"
     display: "float"
     alt: "Circular wireless charger with indent in center"

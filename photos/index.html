@@ -54,7 +54,7 @@ a.mdc-grid-tile__primary {
 	<ol class="mdc-grid-list__tiles photo-grid">
 		{%- for post in photos -%}
 		<li class="mdc-grid-tile">
-			<a class="mdc-grid-tile__primary" href="{{ post.url | relative_url }}" role="img">
+			<a class="mdc-grid-tile__primary" href="{{ post.url | url }}" role="img">
 				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}" loading="lazy" class="mdc-grid-tile__primary-content" />
 				<div class="mdc-grid-tile__overlay">
 					<span class="mdc-typography--subtitle2">{{ post.date | fromUTC | trimTime | date: "%b %e, %Y" }}</span>
@@ -67,7 +67,7 @@ a.mdc-grid-tile__primary {
 		{%- endfor -%}
 	</ol>
 	<p class="blog-alternates">
-		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></span>
+		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | url }}">via RSS</a></span>
 	</p>
 
 	{% if pagination.pages.length > 1 %}

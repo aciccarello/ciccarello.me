@@ -21,7 +21,7 @@ permalink: /posts/tags/{{ tag }}/
 	<ol class="post-list">
         {%- for post in collections[tag] reversed %}
         <li>
-			{% include post-card.html post: post %}
+			{% include "post-card.html" post: post %}
         </li>
         {%- endfor %}
     </ol>

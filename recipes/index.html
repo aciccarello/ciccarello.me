@@ -22,12 +22,12 @@ pagination:
 	<ol class="post-list">
 		{%- for post in recipes -%}
 		<li>
-			{% include post-card.html post: post %}
+			{% include "post-card.html" post: post %}
 		</li>
 		{%- endfor -%}
 	</ol>
 	<p class="blog-alternates">
-		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></span>
+		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | url }}">via RSS</a></span>
 	</p>
 
 	{% if pagination.pages.length > 1 %}

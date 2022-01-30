@@ -1,9 +1,9 @@
 <div class="mdc-card mdc-elevation-transition">
 	{%- if post.data.image -%}
-	<a class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | relative_url }}" role="img"
+	<a class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
 		style="background-image: url('{{ post.data.image }}');"></a>
 	{%- endif -%}
-	<a class="mdc-card__primary disable-link-styles" href="{{ post.url | relative_url }}">
+	<a class="mdc-card__primary disable-link-styles" href="{{ post.url | url }}">
 		<div class="post-heading">
 			{%- if post.data.title -%}
 			<h3 class="mdc-typography--headline6">

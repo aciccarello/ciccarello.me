@@ -20,7 +20,7 @@ example of what it look like to love the urban population as Jesus loves. Both
 the church programs and the actions of the church members are an expression of
 love to those around the church.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/wedding-walking-outside.jpg"
     alt: "Couple on wedding day walking outside with flowers, faces obscured, wall of church in background"
     caption: "Walking around the church on our wedding day"

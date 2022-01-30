@@ -7,7 +7,7 @@ image: /assets/img/tomato-bacon-jam.jpg
 image_alt: bits of tomato, pepper, and onion in a sauté pan
 ---
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/salmon-jam-broccoli-meal.jpg"
     display: "float-right"
     alt: "Plate with salmon, broccoli mousse, and tomato bacon jam"

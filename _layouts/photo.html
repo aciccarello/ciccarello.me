@@ -75,7 +75,7 @@ layout: default
 			<h3 class="mdc-typography--subtitle1">
 				Previous
 			</h3>
-			{% include post-card.html post: previousPost %}
+			{% include "post-card.html" post: previousPost %}
 		</div>
 		{% endif %}
 		{% if nextPost %}
@@ -83,7 +83,7 @@ layout: default
 			<h3 class="mdc-typography--subtitle1">
 				Next
 			</h3>
-			{% include post-card.html post: nextPost %}
+			{% include "post-card.html" post: nextPost %}
 		</div>
 		{% endif %}
 	</ul>

@@ -99,7 +99,6 @@ module.exports = function (eleventyConfig) {
 			'<li>',
 			'<li class="p-ingredient ingredient">'
 		);
-		console.log('recipe-ingredients', content, render);
 		return render;
 	});
 	eleventyConfig.addPairedShortcode('recipe-directions', (content) => {
@@ -108,7 +107,6 @@ module.exports = function (eleventyConfig) {
 			'<ol>',
 			'<ol class="e-instructions instructions">'
 		);
-		console.log('recipe-directions', content, render);
 		return render;
 	});
 	eleventyConfig.addShortcode('buildTime', () => new Date().toDateString());

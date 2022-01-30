@@ -7,7 +7,7 @@
     {%- assign pageContent = site.description | markdownify -%}
 {%- endif -%}
 {%- if title or defaultTitle %}
-<title>{{title or defaultTitle}} | {{ site.title }}</title>
+<title>{{title | default : defaultTitle}} | {{ site.title }}</title>
 {%- else %}
 <title>{{ site.title }} | {{ site.description | markdownify }}</title>
 {%- endif %}

@@ -39,13 +39,13 @@ the couple running the orphanage, met us and drove us to his house. It was
 dark by the time we arrived. His wife Wintee treated us to a meal as we caught
 up with them.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-lcim-church.jpg"
     alt: "dirt yard with a tree and a manual water pump and a brightly colored building in the background"
     caption: "View from Emmanuel's house. LCMI church in the background"
 %}
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-inside-lcim-church.jpg"
     alt: "cement building with green walls and atar in front"
     caption: "Inside LCMI Church"
@@ -56,7 +56,7 @@ able to travel to Yekepa where the orphanage was so we stayed in town and
 checked out LCMI Church and the local ministry. Emmanuel also took Paul,
 Margaret, and I around to meet some members of the church and pray with them.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-broken-van.jpg"
     alt: "van with its hood opened with 7 people standing and looking"
     caption: "Waiting for the van to cool down after it overheated"
@@ -75,7 +75,7 @@ upcoming days.
 
 ### Time at the Orphanage
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-sorting-donations.jpg"
     alt: "room with toys and other donations laid across tables and couches with open suitcases on the floor and two people organizing the items"
     caption: "Sorting through the donations"
@@ -88,13 +88,13 @@ Remmington took us for a tour of the town as little children followed us
 "white people" around. We also got to connect with the kids at the orphanage
 for the first time.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-camp-4-kids.jpg"
     alt: "african children of different ages on a dirt road in front of a house with two motorcycle tires for games"
     caption: "Children in Camp Four"
 %}
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-remington-anthony-motorcycle.jpg"
     alt: "African man on seat of motorcycle with a white man on the back ready to drive off"
     caption: "Remington and I traveling to the orphanage"
@@ -114,19 +114,19 @@ and I went with Remington, his wife comfort, and two older children from the
 orphanage to a larger town where we bought mattresses and clothes for the
 children.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-new-yekepa-church.jpg"
     alt: "inside a mud brick building with about 15 adults in colorful dress and 10 kids standing next to wooden benches"
     caption: "The new church in Yekepa"
 %}
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-mattresses.jpg"
     alt: "short yellow car with 3 men strapping about 15 mattresses to the top of the car"
     caption: "Transporting our mattresses"
 %}
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-girls-cake.jpg"
     alt: "9 girls with a bake pan of cake with white icing"
     caption: "Girls and their funfetti cake"
@@ -144,7 +144,7 @@ of our fun happened away from the orphanage. We made giant bubbles, played
 ultimate frisbee, wrote letters, made milk candy, and spent time with the
 children in their dorms.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-giant-bubbles.jpg"
     alt: "white maile holding two sticks with dangling strings making gian bubbles outdoors"
     caption: "Making giant bubbles"
@@ -157,7 +157,7 @@ of the community. Emmanuel Lugon, a boy who had been though the orphanage and
 is now going to the local bible college, lead the ceremony as people gave
 testamonies. The orphanage gave each of us a traditional Liberian outfit.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-ma-pa.jpg"
     alt: "young white couple in bright green african dress next to older afican couple"
     caption: "Bekah and I with Anthony and Betty Jonah"
@@ -172,7 +172,7 @@ continued to travel the long road back to the airport. We arrived with just
 enough time to get through the required screenings and various lines to get
 through the tiny Monrovia airport.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-goodbye-crowd.jpg"
     alt: "about 16 africans of varrious ages, some waving goodbye"
     caption: "Everyone out at the road to say goodbye"

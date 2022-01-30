@@ -8,7 +8,7 @@ layout: page
   }
 </style>
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/foster-care-header.jpg"
     caption: "Photo by Bekah Ciccarello"
     alt: "Child playing with train set."
@@ -663,7 +663,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 	<ol class="post-list">
 		{%- assign post = collections["foster care"] | last %}
         <li>
-        {% include post-card.html post: post %}
+        {% include "post-card.html" post: post %}
         </li>
     </ol>
 </div>

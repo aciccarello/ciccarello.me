@@ -21,7 +21,7 @@ for coming all the way to Camp Four" were common refrains. These people didn't
 even know us or receive anything from us but they were grateful for four
 Americans taking the far journey to their small town in the bush of Africa.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-camp-4-kids.jpg"
     alt: "african children of different ages on a dirt road in front of a house with two motorcycle tires for games"
     caption: "Children in Camp Four"
@@ -53,7 +53,7 @@ perspective, the things we have often seem ordinary but people come from all
 kinds of circumstances. And wherever we have come from, we have not made it on
 our own.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-letter.jpg"
     alt: "hand written letter addressed to bekah and anthony with drawings"
     caption: "Letter from one of the boys at the orphanage"

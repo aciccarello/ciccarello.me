@@ -50,7 +50,7 @@ deepen our relationship.
 
 #### The Marriage Begins
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/honeymoon-dolphin.jpg"
     alt: "woman in life vest being 'kissed' by a dolphin"
     caption: "Enjoying our honeymoon in Cancun"
@@ -113,7 +113,7 @@ actively support her desire to see them again. However, even while the ebola
 virus was still shutting down much of the country, we started trying to plan a
 trip to visit that orphanage.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/liberia-girls-playing.gif"
     alt: "african girls playing with a ball in a small yard"
     caption: "The girls at the orphanage playing games"
@@ -137,7 +137,7 @@ wanted a dog of her own. Shortly after our wedding, Bekah and I fostered a
 golden-black lab mix. When that puppy failed out of the system we tried to
 adopt the puppy it but another family took her in permanently before we could.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/springfield-bekah-bailey-autumn.jpg"
     alt: "Woman and golden retriever on a house portch with autmn decorations all around"
     caption: "Bekah and Bailey enjoying autumn"

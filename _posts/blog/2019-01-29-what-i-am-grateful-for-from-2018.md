@@ -38,7 +38,7 @@ Bekah completed her fellowship program. Just before my old project wound down,
 I had another position lined up. In between jobs, my wife and I took advantage
 of the time off to visit some of the national parks in Utah.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2018-moab-delicate-arch.jpg"
     alt: "two people standing below a giant, orange, natural, stone arch"
     caption: "Us at Delicate Arch -- [by bekahbugs](https://www.instagram.com/p/BlGhI5DFcpd/)"
@@ -110,7 +110,7 @@ contributed to the project worked at a remote company with open positions. I
 was able to reach out to him and make an initial connection before starting
 the interview process.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2018-yellowstone-grand-prismatic.jpg"
     alt: "bright orange and blue body of water with steam rising off of it"
     caption: "Grand Prismatic Spring -- Yellowstone National Park"
@@ -155,7 +155,7 @@ trying to figure out how to live out our faith in a city we didn't grow up in.
 It was our friends who kept us grounded on many hard days. And on moving day,
 our friends came through for us to help us finish our packing and cleaning.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2018-moving-truck.jpg"
     alt: "yellow Penske moving truck on a road through a canyon"
     caption: "Our moving truck driving across Colorado"
@@ -184,7 +184,7 @@ still trying to figure out our next move in life. However, we had a lot to be
 grateful for. We had a church that we could attend; I found a group to play
 ultimate frisbee with; and we had an extended period of time with family.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2018-angels-landing.jpg"
     alt: "looking down at a man in the foreground and a large canyon below and behind him"
     caption: "Hiking [Angel's Landing](https://en.wikipedia.org/wiki/Angels_Landing) -- Zion National Park"
@@ -251,7 +251,7 @@ _She also deserves credit for all the fantastic pictures from our trips._
 
 ---
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2018-yellowstone-little-grand-canyon.jpg"
     alt: "a couple standing at an overlook of a canyon with water below"
     caption: "Bekah and me at the [Grand Canyon of Yellowstone](https://en.wikipedia.org/wiki/Grand_Canyon_of_the_Yellowstone)"

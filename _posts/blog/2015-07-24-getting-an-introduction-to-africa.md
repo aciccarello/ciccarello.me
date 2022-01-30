@@ -37,7 +37,7 @@ countries up the west coast of Africa.We would fid out later that some
 unexpected bad weather had caused a crack in the windshield of the airplane
 and the Dakar airport was better prepared to make the repairs.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/senegal-leaving-airport.jpg"
     alt: "Crowd of people in a parking lot with lots of luggage with a white bus"
     caption: "Waiting outside the airport for a bus to the hotel"
@@ -60,7 +60,7 @@ there were also significant differences. Dakar Senegal had more poverty, more
 English, and more social/open people than Mitrovica, Kosovo. It was great to
 explore this new world.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/senegal-hotel-night.jpg"
     alt: "View of a pool surrounded by palm trees at night"
     caption: "Nighttime view from our hotel room overlooking the ocean and pool"
@@ -71,7 +71,7 @@ housing was a upscale place. We were able to get an ocean view room and meal
 all provided by Brussels Airlines. After so much traveling, it was a blessing
 to be able to relax (and take a shower).
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/senegal-hotel-day.jpg"
     alt: "View of the ocean and a pool surrounded by palm trees from a hotel balcony"
     caption: "Daytime view from hotel"

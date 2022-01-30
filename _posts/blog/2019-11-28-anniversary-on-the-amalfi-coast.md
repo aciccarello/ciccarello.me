@@ -17,7 +17,7 @@ The Amalfi Coast is a beautiful section of coastline on Italy's western shore on
 
 Positano was the first destination on our Italy tour. It took a 12-hour flight, two trains, and two boats to get there but it was well worth it. We left the US around 3:30 PM and didn't arrive until noon the following day which was hard to wrap my mind around. We had to quickly figure out how to get to Salerno before the last ferry of the day. Because of this, we moved through Rome without really having a chance to take anything in. On the high-speed train we saw some of the countryside but you are often in tunnels or gullies where you can't see anything. Honestly, the only thing that stood out to my jet-lagged mind was how many small farms there were. I knew Italy had a strong agrarian history but I didn't expect to see so many farms as our plane approached and as the train passed the countryside.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-amalfi-couple-in-boat.jpg"
     display: "float"
     alt: "Couple in a small boat with coastline visible behind"
@@ -34,7 +34,7 @@ On our second day, we enjoyed breakfast at the hotel. There were lots of fresh b
 
 In the evening we went to a nice restaurant uphill from our hotel for dinner to celebrate our anniversary. The restaurant had a great view overlooking the water. Because it was relatively early, the restaurant was almost empty and we got a table right by the window. We split up our entrees into a three-course meal and enjoyed sharing each delicious course together. The portions were more modest than American food so we had room left over to grab another cannoli on our way back to the hotel.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-positano-view-from-road.jpg"
     alt: "Buildings built into a coastal hillside with a large, tiled church dome below"
     caption: "The church in Positano as seen from the road above. Our hotel is in the lower left."
@@ -46,7 +46,7 @@ Now that we were settled into Positano, we decided to venture out on a hike. We 
 
 But the hike was a lot of fun. On the way up, I was able to see many European Robins which were singing loudly in the olive groves. We made a friend who was also unprepared for the steep start to the hike. Just before reaching the main trail, we passed a small chapel high up on the hill. It seems like quite a hike for a church but is surely an inspiring place to worship. As we traveled along the ridge, we could see the Mediterranean Sea out to our left. For the most part, the trail was open but occasionally it would bend around valleys into the cool forest before coming out over the sea. Thankfully, it was mostly downhill after we joined the main trail so we were able to enjoy the views without being too exhausted.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-hike-view.jpg"
     display: "wide"
     alt: "view of the coastline from up on a ridge looking"
@@ -59,7 +59,7 @@ When we got back to Positano we grabbed our bathing suits, some gelato, and hit 
 
 After our swim, we grabbed a bite to eat, picked up our baggage from the hotel, and caught a ferry to Amalfi. From there we got bus tickets up to Rovello were we would spend the night.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-ravello-tower.jpg"
     display: "float"
     alt: "Tall stone tower with well below"
@@ -74,7 +74,7 @@ Ravello is most well known for its large villas which were owned by wealthy fami
 
 We finished our day in Ravello with a nice dinner. Since we were there during the off season, a lot of the restaurants weren't open till later. We actually arrived 10 minutes before the restaurant opened and waited with a few people as the air outside got colder. But it ended up being a great meal with some creatively presented food.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-ravello-villa-cimbrone-terrace.jpg"
     alt: "Terrace overlooking the water with stone, carved, busts along the railing"
     caption: "Villa Cimbrone Terrace, Ravello - Photo by Bekah Ciccarello"
@@ -84,7 +84,7 @@ We finished our day in Ravello with a nice dinner. Since we were there during th
 
 We made a point to wake up early on our last day in Ravello to catch the sunrise. Because the town is up above the coast, the views were fantastic. The internet had gone out at the hotel so we had to guess what time the sun would rise, but it ended working out just fine. We were able to get a great view of the sun coming up over the ridge. I can't think of a better way to have ended our time in Ravello. We had a nice breakfast at the hotel and caught the bus to Amalfi.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-ravello-sunrise.jpg"
     display: "float"
     alt: "Silhouette of a coastal hillside with the sun peeking over a ridge"
@@ -97,7 +97,7 @@ Our time in Capri was a bit chaotic since we didn't have a set plan but everythi
 
 There are a lot of tours available to see the caves in Capri, but I would highly recommend going up Mount Solaro if you're are short on time. The views from the top are incredible. The views of the Island are great and we were able to see both Naples and the south side of Solerno. There is a trail that takes you up to the top but the single-person lift is fun and quick.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-capri-mount-solaro-view.jpg"
     display: "wide"
     alt: "View from high on an island to nearby coast with buildings visible on the island's ridge"
@@ -108,7 +108,7 @@ Unfortunately, we couldn't stay long in Capri because we had to catch the last f
 
 After we settled in, we went out to get some authentic Italian pizza. It was actually the first time our waiter didn't understand English but we knew enough to order. I really liked the feel of Salerno. The street our hotel was on was pedestrians only and had a lot of shops along it. Along the coast was a park so you could enjoy the views. It all felt very comfortable.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-salerno-hotel-street-view.jpg"
     alt: "View of street from above with circular brick patterns, the light of a street lamp, and people blurred as they walk by."
     caption: "View of the street from our Salerno hotel room balcony"
@@ -118,7 +118,7 @@ After we settled in, we went out to get some authentic Italian pizza. It was act
 
 After arranging a tour the night before, we got up early in the morning and headed to the train station to go to Pompeii. In about an hour we had arrived at the station in Pompeii. We were quickly accosted by one of the tour companies that has an office at the train station. Thankfully they didn't bother us too much about packages because we already had a tour arranged but we paid for them to drive us the short way to the entrance. We weren't exactly sure where our tour guide would be since we arrived early. Eventually we saw someone with the name of the tour company and were handed our headset and told they were waiting for the rest of the group. The rest of the group turned out to be a German-speaking group coming from Rome on a large bus.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-pompeii-mount-vesuvius.jpg"
     display: "float"
     alt: "Ancient buildings with a mountain visible in the background"
@@ -131,7 +131,7 @@ Our guide taught us that Pompeii was a thriving merchant city with a port where 
 
 I was impressed by the engineering involved in the buildings. The streets were all sloped so that the overflow from the flowing fountains would wash away the waste of the city. On the street corners, there would be large stones in the street to act as a cross-walk while still allowing the wheels of chariots to pass through. The bathhouse had double paneled walls to allow the steam to circulate and lead pipes to carry the water. In order to build their structures, the Romans used a combination of cement, brick, and stone facade to reduce to cost of construction. To avoid the noise of the busy streets, most residences would face the inner courtyard while the streets were lined with stores.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-pompeii-street-fountain.jpg"
     alt: "ancient, stone street with the walls of old buildings and tourists walking"
     caption: "Typical street in Pompeii with a communal fountain"
@@ -143,7 +143,7 @@ Overall I'm glad we visited Pompeii but the tour could definitely been better. I
 
 After we arrived in Salerno, we grabbed our bags from the hotel and a quick bite to eat. At a pre-made sandwich/pizza shop we ordered a spaghetti frattata which is like a pasta pie before taking the high-speed train up to Rome.
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/2019-italy-pompeii-mosaic.jpg"
     display: "wide"
     alt: "mosaic floor."

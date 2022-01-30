@@ -7,7 +7,7 @@ image: /assets/img/broccoli-mousse.jpg
 image_alt: ramekin with yellow mousse with green specks
 ---
 
-{% include image.html
+{% include "image.html"
     file: "/assets/img/salmon-jam-broccoli-meal.jpg"
     display: "float-right"
     alt: "Plate with salmon, broccoli mousse, and tomato bacon jam"
