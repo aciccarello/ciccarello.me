@@ -2,6 +2,11 @@
 title: Pineapple Shrimp Tacos
 date: 2022-02-01T05:09:19.062Z
 canonical_url: https://www.halfbakedharvest.com/sheet-pan-hawaiian-pineapple-shrimp-tacos
+tags:
+  - dinner
+  - seafood
+  - tacos
+  - oven
 image: /assets/img/pineapple-shrimp-tacos.jpg
 image_alt: two tortillas filled with shimp, pinapple, and guacamole
 ---

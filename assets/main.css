@@ -285,6 +285,17 @@ footer > nav > a:first-child {
 	box-shadow: 0 6px 20px #afafaf;
 }
 
+.category-menu h3 {
+	display: inline-block;
+}
+.category-menu ul {
+	display: inline-flex;
+	padding: 0 1rem;
+}
+.category-menu li {
+	list-style: none;
+}
+
 a.disable-link-styles {
 	text-decoration: none;
 	color: var(--mdc-theme-text-primary-on-light);

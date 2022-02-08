@@ -5,6 +5,7 @@ layout: default
 back_button: "/posts"
 permalink: "/recipes/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 redirect_from: /recipes/page/1
+mealTags: [breakfast, dinner, dessert]
 pagination:
   data: collections.recipes
   size: 15
@@ -19,6 +20,17 @@ pagination:
 	<p>
 		My own personal recipe book saving recipes we've made over the years. Not all recipes have exact instructions. Cook at your own risk.
 	</p>
+	<nav class="category-menu">
+		<h3 class="mdc-typography--headline5">See items tagged by meal</h3>
+		<ul>
+			{%- for tag in mealTags -%}
+			<li><a class="mdc-button mdc-button--raised
+				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/posts/tags/{{tag}}/">
+				{{tag}}
+			</a></li>
+			{%- endfor -%}
+		</ul>
+	</nav>
 	<ol class="post-list">
 		{%- for post in recipes -%}
 		<li>
