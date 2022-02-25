@@ -1,5 +1,4 @@
 ---
-title: Posts tagged {{ tag }}
 layout: default
 back_button: ..
 pagination:
@@ -7,6 +6,8 @@ pagination:
     size: 1
     alias: tag
 permalink: /posts/tags/{{ tag }}/
+eleventyComputed:
+    title: Posts tagged {{ tag }}
 ---
 
 <div class="home container">
