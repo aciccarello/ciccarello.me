@@ -91,8 +91,10 @@ const amount = params.get("amount");
 
 if (amount) {
 	// https://venmo.com/u/aciccarello?amount=5
-	document.querySelectorAll('a[href*="venmo.com"]').forEach((venmoLink) => venmoLink.href = venmoLink.href + `?amount=${amount}`);
+	document.querySelectorAll('a[href*="venmo.com"]').forEach((venmoLink) => venmoLink.href = venmoLink.href + `?txn=pay&amount=${amount}`);
 	// https://paypal.me/ajciccarello/5
 	document.querySelectorAll('a[href*="paypal.me"]').forEach((paypalLink) => paypalLink.href = paypalLink.href + `/${amount}`);
+	// Honestly not sure if this works ¯\_(ツ)_/¯
+	document.querySelectorAll('a[href*="gpay.app.goo.gl"]').forEach((paypalLink) => paypalLink.href = paypalLink.href + `?am=${amount}`);
 }
 </script>
