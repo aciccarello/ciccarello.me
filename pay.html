@@ -1,0 +1,98 @@
+---
+title: Payment Services
+layout: page
+excludeFromSitemap: true
+eleventyExcludeFromCollections: true
+---
+<style type="text/css">
+h1 {
+	margin: 40px 0;
+}
+
+article {
+	text-align: center;
+}
+
+.providers-list {
+	padding: 0;
+}
+
+.providers-list li {
+	list-style: none;
+	margin: 40px 0;
+}
+
+img.provider-icon {
+	display: block;
+	height: 200px;
+	width: 200px;
+	margin: 12px auto;
+}
+
+.qr-code-section {
+	margin-top: 120px;
+}
+
+img.qr-code {
+	display: block;
+	width: 200px;
+	margin: 24px auto;
+}
+</style>
+
+<p>Accepted services ordered by preference</p>
+<ol class="providers-list">
+  <li>
+	<img src="/assets/img/icon-zele.png" alt="" class="provider-icon"/>
+	Zelle (anthony@ciccarello.me)
+	<p>
+	  Bank-to-bank.
+	  <a href="https://www.zellepay.com/get-started">Learn More</a>
+	</p>
+  </li>
+  <li>
+  	<a href="https://venmo.com/u/aciccarello">
+	  <img src="/assets/img/icon-venmo.svg" alt="" class="provider-icon"/>
+	</a>
+	  Venmo (<a href="https://venmo.com/u/aciccarello">@aciccarello</a>)
+  </li>
+  <li>
+	<a href="https://paypal.me/ajciccarello">
+		<img src="/assets/img/icon-paypal.png" alt="" class="provider-icon"/>
+	</a>
+		Paypal (<a href="https://paypal.me/ajciccarello">@ajciccarello</a>)
+	<p>
+	  <a href="https://py.pl/5dR54IcM71">Create an account</a>
+	</p>
+  </li>
+  <li>
+	<a href="https://gpay.app.goo.gl/pay-moUq8zPwoVf">
+		<img src="/assets/img/icon-google-pay.svg" alt="" class="provider-icon"/>
+	</a>
+	Google Pay (<a href="https://gpay.app.goo.gl/pay-moUq8zPwoVf">anthony@ciccarello.me</a>)
+	<p>
+	  Mobile Only.
+	  <a href="https://pay.google.com/about/">Learn More</a>
+	</p>
+	<p>
+	  <a href="https://g.co/payinvite/mn0q55y">Create an account</a>
+	</p>
+  </li>
+</ol>
+
+<section class="qr-code-section">
+  <h3>Scan to open this page</h3>
+  <img src="/assets/img/qr-code-pay-link.png" alt="QR code for this page" height="200" width="200" class="qr-code" />
+</section>
+
+<script defer>
+const params = new URLSearchParams(window.location.search);
+const amount = params.get("amount");
+
+if (amount) {
+	// https://venmo.com/u/aciccarello?amount=5
+	document.querySelectorAll('a[href*="venmo.com"]').forEach((venmoLink) => venmoLink.href = venmoLink.href + `?amount=${amount}`);
+	// https://paypal.me/ajciccarello/5
+	document.querySelectorAll('a[href*="paypal.me"]').forEach((paypalLink) => paypalLink.href = paypalLink.href + `/${amount}`);
+}
+</script>
