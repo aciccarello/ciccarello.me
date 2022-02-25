@@ -41,8 +41,17 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+header.mdc-top-app-bar {
+	max-width: 100vw;
+	overflow-x: auto;
+}
 footer {
+	max-width: 100vw;
+	overflow-x: auto;
 	flex-shrink: 0;
+}
+footer nav {
+	flex-wrap: wrap;
 }
 
 figure {
