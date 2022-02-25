@@ -1,6 +1,4 @@
 ---
-title: Photo Gallery
-todo_title: Photos - Page x of y
 layout: default
 back_button: "/posts"
 permalink: "/photos/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
@@ -10,6 +8,8 @@ pagination:
   size: 30
   reverse: true
   alias: photos
+eleventyComputed:
+  title: "Photo Gallery{% if pagination.pages.length > 1 %} - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}{% endif %}"
 ---
 
 <style type="text/css">

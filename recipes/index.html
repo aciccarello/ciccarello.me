@@ -1,6 +1,4 @@
 ---
-title: Recipes
-todo_title: Recipes - Page x of y
 layout: default
 back_button: "/posts"
 permalink: "/recipes/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
@@ -11,6 +9,8 @@ pagination:
   size: 15
   reverse: true
   alias: recipes
+eleventyComputed:
+  title: "Recipes - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}"
 ---
 
 <div class="home container">
