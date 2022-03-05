@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Anthony Ciccarello's personal website",
   "scripts": {
-    "start": "eleventy --serve",
+    "start": "eleventy --serve --incremental",
     "start:cms": "netlify-cms-proxy-server",
     "build": "rm -rf _site && eleventy",
     "build:as-previous": "rm -rf _site_previous && npm run build && mv _site _site_previous",
