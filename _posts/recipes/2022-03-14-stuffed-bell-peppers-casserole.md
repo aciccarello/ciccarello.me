@@ -1,5 +1,5 @@
 ---
-title: Stuffed Bell Peppers Casserole
+title: Stuffed Bell Pepper Casserole
 date: 2022-03-14T03:00:37.508Z
 tags:
   - dinner
@@ -10,7 +10,7 @@ tags:
 image: /assets/img/stuffed-peppers-casserole.jpg
 image_alt: Glass casserole dish with cheesy top on ground beef and sauce.
 ---
-We started making this recipe as a traditional stuffed pepper, with the filling placed inside the pepper. However, it was difficult to get the peppers cooked enough and the filling didn't want to stay inside the pepper anyway. So we tried making it as more of a casserole instead which was easier to cook and eat.
+We started making this recipe as a traditional stuffed pepper, with the filling placed inside the pepper. However, it was difficult to get the peppers cooked enough and the filling didn't want to stay inside the pepper anyway. So we tried making it as more of a casserole instead which was easier to cook and eat. We've also had issues with making too much filling, so I've haved the recipe to a more manageable portion.
 
 ## Variations
 If you'd like to make this as a more traditional stuffed pepper dish, cut the peppers either in half from top to bottom or with the tops removed. Then roast the peppers in the dish with about 2 cups of water for about 15 minutes before filling to soften. Then pour out the water before filling the peppers with the mixture of the other ingredients
