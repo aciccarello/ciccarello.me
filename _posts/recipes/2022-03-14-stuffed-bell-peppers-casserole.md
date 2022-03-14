@@ -1,5 +1,5 @@
 ---
-title: '"Stuffed" Bell Peppers Casserole'
+title: Stuffed Bell Peppers Casserole
 date: 2022-03-14T03:00:37.508Z
 tags:
   - dinner
