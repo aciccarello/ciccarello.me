@@ -51,10 +51,10 @@ img.qr-code {
 	</p>
   </li>
   <li>
-  	<a href="https://venmo.com/u/aciccarello">
+  	<a href="https://venmo.com/u/ajciccarello">
 	  <img src="/assets/img/icon-venmo.svg" alt="" class="provider-icon"/>
 	</a>
-	  Venmo (<a href="https://venmo.com/u/aciccarello">@aciccarello</a>)
+	  Venmo (<a href="https://venmo.com/u/ajciccarello">@ajciccarello</a>)
   </li>
   <li>
 	<a href="https://paypal.me/ajciccarello">
@@ -84,7 +84,7 @@ const params = new URLSearchParams(window.location.search);
 const amount = params.get("amount");
 
 if (amount) {
-	// https://venmo.com/u/aciccarello?amount=5
+	// https://venmo.com/u/ajciccarello?amount=5
 	document.querySelectorAll('a[href*="venmo.com"]').forEach((venmoLink) => venmoLink.href = venmoLink.href + `?txn=pay&amount=${amount}`);
 	// https://paypal.me/ajciccarello/5
 	document.querySelectorAll('a[href*="paypal.me"]').forEach((paypalLink) => paypalLink.href = paypalLink.href + `/${amount}`);
