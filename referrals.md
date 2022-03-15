@@ -93,8 +93,24 @@ Okay, this is getting a little ridiculous people. But why not?
 
 In case you're thinking about hosting guests on Airbnb...
 
-**You get**: A new business?? When you sign up and host guests withing 90 days for $100+
+**You get:** A new business?? When you sign up and host guests withing 90 days for $100+
 
-**I get**: $200 cash reward 2-3 weeks after your first guest checks out
+**I get:** $200 cash reward 2-3 weeks after your first guest checks out
 
 [Sign Up as Host](https://www.airbnb.com/r/anthonyc3710?s=6&t=061n1v) [Terms](https://www.airbnb.com/help/article/2699/referral-and-ambassador-terms-and-conditions)
+
+### Rippling HR Platform
+
+**You get:** A $100 Amazon gift card when your company meets for a demo
+
+**I get:** A $100 Amazon gift card
+
+[Sign Up](https://mbsy.co/63vSrP)
+
+### Zenefits HR Platform
+
+**You get:** A new HR platform (nothing extra)
+
+**I get:** A %0-$1,000 gift card when your company signs up for an annual plan
+
+[Reach Out](/#connect)
