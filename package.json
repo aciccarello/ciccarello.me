@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Anthony Ciccarello's personal website",
   "scripts": {
-    "start": "eleventy --serve --incremental",
+    "start": "TZ=utc eleventy --serve --incremental",
     "start:cms": "netlify-cms-proxy-server",
-    "build": "rm -rf _site && eleventy",
+    "build": "rm -rf _site && TZ=utc eleventy",
     "build:as-previous": "rm -rf _site_previous && npm run build && mv _site _site_previous",
     "diff": "git diff --no-index --ignore-all-space --ignore-blank-lines _site_previous/ _site/",
     "diff:filenames": "npm run diff -- --name-status",

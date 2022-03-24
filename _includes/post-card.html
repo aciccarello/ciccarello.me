@@ -11,7 +11,7 @@
 			</h3>
 			{%- endif -%}
 			<time class="mdc-typography--subtitle2 dt-published" datetime="{{ post.date | dateToRfc3339 }}">
-				{{ post.date | fromUTC | trimTime | dateFormat }}
+				{{ post.date | trimTime | dateFormat }}
 			</time>
 		</div>
 		<div class="post-body mdc-typography--body1">

@@ -17,22 +17,6 @@ function yearsSince(date) {
 	const years = new Date(milliseconds).getFullYear() - 1970;
 	return String(years);
 }
-/**
- * Converts UTC date to local date
- * @param date {string | date} UTC date
- */
-const convertFromUTCDate = (date) => {
-	const UTCDate = new Date(date);
-	return new Date(
-		UTCDate.getUTCFullYear(),
-		UTCDate.getUTCMonth(),
-		UTCDate.getUTCDate(),
-		UTCDate.getUTCHours(),
-		UTCDate.getUTCMinutes(),
-		UTCDate.getUTCSeconds(),
-		UTCDate.getUTCMilliseconds()
-	);
-};
 
 const trimTime = (dateInput) => {
 	const date = new Date(dateInput); // Parse date in case it is a string
@@ -126,7 +110,6 @@ module.exports = function (eleventyConfig) {
 		return 'https://www.ciccarello.me' + value;
 	});
 	eleventyConfig.addFilter('yearsSince', yearsSince);
-	eleventyConfig.addFilter('fromUTC', convertFromUTCDate);
 	eleventyConfig.addFilter('trimTime', trimTime);
 	eleventyConfig.addFilter('dateFormat', (date) =>
 		dateFormat.format(new Date(date))
