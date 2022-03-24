@@ -1,6 +1,5 @@
 ---
-# This is used to create the url
-slug: joshua-tree
+slug-text: joshua-tree
 date: 2021-09-17T07:10:07.903Z
 tags:
   - nature

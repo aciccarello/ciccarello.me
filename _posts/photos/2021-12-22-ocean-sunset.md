@@ -1,5 +1,5 @@
 ---
-slug: ocean-sunset
+slug-text: ocean-sunset
 date: 2021-12-23T14:30:00Z
 tags:
 - ocean

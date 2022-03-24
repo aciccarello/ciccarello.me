@@ -1,6 +1,5 @@
 ---
-# This is used to create the url
-slug: childrens-museum
+slug-text: childrens-museum
 date: 2021-10-30T16:50:16.971Z
 tags:
   - foster care

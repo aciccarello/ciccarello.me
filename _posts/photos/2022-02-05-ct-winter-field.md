@@ -1,6 +1,5 @@
 ---
-# This is used to create the url
-slug: ct-winter-field
+slug-text: ct-winter-field
 date: 2022-02-05T07:23:07.598Z
 tags:
   - farm

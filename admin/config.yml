@@ -158,9 +158,9 @@ collections:
     label_singular: 'Photo'
     folder: '_posts/photos'
     create: true
-    identifier_field: slug
+    identifier_field: slug-text
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: photos/{{year}}/{{month}}/{{day}}/{{slug}}
+    preview_path: photos/{{year}}/{{month}}/{{day}}/{{slug-text}}
     editor:
       preview: false
     fields:

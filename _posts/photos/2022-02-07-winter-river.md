@@ -1,6 +1,5 @@
 ---
-# This is used to create the url
-slug: winter-river
+slug-text: winter-river
 date: 2022-02-07T06:25:49.165Z
 tags:
   - landscape

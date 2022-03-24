@@ -1,6 +1,5 @@
 ---
-# This is used to create the url
-slug: gull-sunset
+slug-text: gull-sunset
 date: 2022-02-09T04:46:52.356Z
 tags:
   - sunset
