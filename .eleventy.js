@@ -132,6 +132,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addLiquidFilter('dateToRfc3339', pluginRss.dateToRfc3339);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
+	eleventyConfig.setLiquidOptions({
+		timezoneOffset: 0, // Fix liquid date filter to match server
+	});
 	eleventyConfig.setLibrary('md', md);
 	return {
 		dir: {

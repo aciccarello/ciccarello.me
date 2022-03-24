@@ -9,5 +9,38 @@
 	<body>
 		<!-- Include the script that builds the page and powers Netlify CMS -->
 		<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+		<script>
+			CMS.registerWidget(
+				'id',
+				createClass({
+					componentDidMount() {
+						const { value, onChange } = this.props;
+						if (!value) {
+							const now = new Date();
+							const utcTimeValue = now.valueOf() - new Date(now.toISOString().split('T')[0]);
+							onChange(utcTimeValue);
+						}
+					},
+					handleChange(e) {
+						this.props.onChange(e.target.value.trim());
+					},
+					render() {
+						const {
+							forID,
+							classNameWrapper,
+							value,
+						} = this.props
+						return h('input',{
+								type:'text',
+								className: classNameWrapper,
+								value,
+								id: forID,
+								onChange: this.handleChange,
+							}
+						);
+					}
+				})
+			)
+		</script>
 	</body>
 </html>

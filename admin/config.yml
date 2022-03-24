@@ -164,21 +164,8 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Slug', name: 'slug', widget: 'string', comment: 'This is used to create the url' }
+      - { label: 'Slug', name: 'slug', widget: 'id', comment: 'This is used to create the url' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - {
-          label: 'Canonical URL',
-          name: 'canonical_url',
-          widget: 'string',
-          required: false,
-        }
-      - {
-          label: 'Permalink',
-          name: 'permalink',
-          widget: 'string',
-          required: false,
-          comment: 'This will override the "slug" option'
-        }
       - widget: list
         label: 'tags'
         name: 'tags'
@@ -205,40 +192,41 @@ collections:
           required: false,
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Canonical URL',
+          name: 'canonical_url',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Permalink',
+          name: 'permalink',
+          widget: 'string',
+          required: false,
+          comment: 'This will override the "slug" option'
+        }
 
   - label: 'Notes'
     name: 'notes'
     label_singular: 'Note'
     folder: '_posts/notes'
     create: true
-    identifier_field: slug
+    identifier_field: slug-text
     summary: '{{body}}'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: photos/{{year}}/{{month}}/{{day}}/{{slug}}
+    preview_path: photos/{{year}}/{{month}}/{{day}}/{{slug-text}}
     editor:
       preview: false
     fields:
-      - { label: 'Slug', name: 'slug', widget: 'string', comment: 'This is used to create the url' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - {
-          label: 'Canonical URL',
-          name: 'canonical_url',
-          widget: 'string',
-          required: false,
-        }
-      - {
-          label: 'Permalink',
-          name: 'permalink',
-          widget: 'string',
-          required: false,
-          comment: 'This will override the "slug" option'
-        }
       - widget: list
         label: 'tags'
         name: 'tags'
         multiple: true
         allow_add: true
         required: false
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Slug', name: 'slug-text', widget: 'id' }
       - {
           label: 'Main image',
           name: image,
@@ -258,7 +246,19 @@ collections:
           widget: 'string',
           required: false,
         }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Canonical URL',
+          name: 'canonical_url',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Permalink',
+          name: 'permalink',
+          widget: 'string',
+          required: false,
+          comment: 'This will override the "slug" option'
+        }
 
   - label: 'Settings'
     name: 'settings'

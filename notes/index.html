@@ -1,6 +1,4 @@
 ---
-title: Notes
-todo_title: Notes - Page x of y
 layout: default
 back_button: "/posts"
 permalink: "/notes/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
@@ -10,6 +8,8 @@ pagination:
   size: 15
   reverse: true
   alias: notes
+eleventyComputed:
+  title: "Notes{% if pagination.pages.length > 1 %} - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}{% endif %}"
 ---
 
 <div class="home container">
@@ -22,12 +22,12 @@ pagination:
 	<ol class="post-list">
 		{%- for post in notes -%}
 		<li>
-			{% include post-card.html post: post %}
+			{% include "post-card.html" post: post %}
 		</li>
 		{%- endfor -%}
 	</ol>
 	<p class="blog-alternates">
-		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></span>
+		<span class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | url }}">via RSS</a></span>
 	</p>
 
 	{% if pagination.pages.length > 1 %}
