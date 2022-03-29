@@ -32,7 +32,7 @@ collections:
         widget: 'string'
         required: false
 
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: 'HH:mm:ss [UTC]', picker_utc: true }
       - {
           label: 'Canonical URL',
           name: 'canonical_url',
@@ -87,7 +87,7 @@ collections:
         widget: 'string'
         required: false
 
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: 'HH:mm:ss [UTC]', picker_utc: true }
       - {
           label: 'Canonical URL',
           name: 'canonical_url',
@@ -164,8 +164,8 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Slug', name: 'slug', widget: 'id', comment: 'This is used to create the url' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Slug', name: 'slug', widget: 'id', hint: 'This is used to create the url' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: 'HH:mm:ss [UTC]', picker_utc: true }
       - widget: list
         label: 'tags'
         name: 'tags'
@@ -203,7 +203,7 @@ collections:
           name: 'permalink',
           widget: 'string',
           required: false,
-          comment: 'This will override the "slug" option'
+          hint: 'This will override the "slug" option'
         }
 
   - label: 'Notes'
@@ -218,7 +218,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: 'HH:mm:ss [UTC]', picker_utc: true }
       - widget: list
         label: 'tags'
         name: 'tags'
@@ -257,7 +257,7 @@ collections:
           name: 'permalink',
           widget: 'string',
           required: false,
-          comment: 'This will override the "slug" option'
+          hint: 'This will override the "slug" option'
         }
 
   - label: 'Settings'
