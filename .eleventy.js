@@ -137,6 +137,7 @@ module.exports = function (eleventyConfig) {
 		timezoneOffset: 0, // Fix liquid date filter to match server
 	});
 	eleventyConfig.setLibrary('md', md);
+	eleventyConfig.setWatchThrottleWaitTime(100); // in milliseconds
 	return {
 		dir: {
 			input: './', // Equivalent to Jekyll's source property
