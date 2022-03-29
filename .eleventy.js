@@ -18,10 +18,6 @@ function yearsSince(date) {
 	return String(years);
 }
 
-const trimTime = (dateInput) => {
-	const date = new Date(dateInput); // Parse date in case it is a string
-	return new Date(date.getFullYear(), date.getMonth(), date.getDate());
-};
 const dateFormat = new Intl.DateTimeFormat([], { dateStyle: 'medium' });
 const dateTimeFormat = new Intl.DateTimeFormat([], {
 	dateStyle: 'medium',
@@ -110,13 +106,19 @@ module.exports = function (eleventyConfig) {
 		return 'https://www.ciccarello.me' + value;
 	});
 	eleventyConfig.addFilter('yearsSince', yearsSince);
-	eleventyConfig.addFilter('trimTime', trimTime);
-	eleventyConfig.addFilter('dateFormat', (date) =>
-		dateFormat.format(new Date(date))
-	);
-	eleventyConfig.addFilter('dateTimeFormat', (date) =>
-		dateTimeFormat.format(new Date(date))
-	);
+	eleventyConfig.addFilter('formatHumanDate', (dateInput, trimDate) => {
+		const date = new Date(dateInput);
+		if (trimDate || date.toISOString().endsWith('T00:00:00.000Z')) {
+			return dateFormat.format(date);
+		}
+		return dateTimeFormat.format(date) + ' UTC';
+	});
+	eleventyConfig.addFilter('formatMachineDate', (date) => {
+		const stringDate = pluginRss.dateToRfc3339(date);
+		const [datePart, timePart] = stringDate.split('T');
+		// If there is no time, use the simpler YYYY-MM-DD format
+		return timePart === '00:00:00Z' ? datePart : stringDate;
+	});
 	eleventyConfig.addFilter('markdownify', (value) =>
 		md.renderInline(value || '')
 	);
@@ -129,7 +131,6 @@ module.exports = function (eleventyConfig) {
 		}
 	}); // Helpful for debugging objects
 
-	eleventyConfig.addLiquidFilter('dateToRfc3339', pluginRss.dateToRfc3339);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
 	eleventyConfig.setLiquidOptions({

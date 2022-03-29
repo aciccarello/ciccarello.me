@@ -57,7 +57,7 @@ a.mdc-grid-tile__primary {
 			<a class="mdc-grid-tile__primary" href="{{ post.url | url }}" role="img">
 				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}" loading="lazy" class="mdc-grid-tile__primary-content" />
 				<div class="mdc-grid-tile__overlay">
-					<span class="mdc-typography--subtitle2">{{ post.date | trimTime | date: "%b %e, %Y" }}</span>
+					<span class="mdc-typography--subtitle2">{{ post.date | date: "%b %e, %Y" }}</span>
 					<div class="mdc-grid-tile__title mdc-typography--body1">
 						{{ post.templateContent | strip_html | joinLines | truncatewords: 20 }}
 					</div>

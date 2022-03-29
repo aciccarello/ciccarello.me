@@ -1,6 +1,7 @@
 {
-  "permalink": "/blog/{{ page.date | trimTime | date: '%Y/%m/%d' }}/{{ title | slug }}/",
+  "permalink": "/blog/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/",
   "author": "Anthony Ciccarello",
   "back_button": "../../../..",
-  "layout": "article"
+  "layout": "article",
+  "hideTime": true
 }

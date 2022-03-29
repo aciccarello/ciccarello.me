@@ -28,8 +28,8 @@ layout: default
 		</h2>
 		{%- endif -%}
 		<p class="post-meta">
-			<time class="dt-published" datetime="{{ page.date | trimTime | dateToRfc3339 }}">
-				{{- page.date | trimTime | date: "%b %e, %Y" }}
+			<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
+				{{- page.date | formatHumanDate: hideTime -}}
 			</time>
 			{%- if author -%} •
 			<span class="p-author h-card">{{ author }}</span>

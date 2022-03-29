@@ -28,7 +28,7 @@
 {%- if image %}
 <meta property="og:image" content="{{ image | addBaseUrl }}" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="{{ page.date | trimTime | dateToRfc3339 }}" />
+<meta property="article:published_time" content="{{ page.date | formatMachineDate }}" />
 <meta name="twitter:card" content="summary_large_image" />
 {%- else %}
 <meta name="twitter:card" content="summary" />
@@ -59,7 +59,7 @@
     "headline":"{{finalTitle}}",
     {% if date %}
     {% comment %}check for date frontmatter but use parsed page.date {% endcomment %}
-    "datePublished": "{{ page.date | trimTime | dateToRfc3339 }}",
+    "datePublished": "{{ page.date | formatMachineDate }}",
     {% endif %}
     "description":"{{ pageContent | strip_html }}",
     {% if page.url == "/" %}

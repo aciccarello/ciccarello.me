@@ -1,6 +1,7 @@
 {
-  "permalink": "/recipes/{{ page.date | trimTime | date: '%Y/%m/%d' }}/{{ title | slug }}/",
+  "permalink": "/recipes/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/",
   "author": "Anthony Ciccarello",
   "back_button": "../../../..",
-  "layout": "recipe"
+  "layout": "recipe",
+  "hideTime": true
 }
