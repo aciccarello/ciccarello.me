@@ -98,7 +98,7 @@ module.exports = function (eleventyConfig) {
 		);
 		return render;
 	});
-	eleventyConfig.addShortcode('buildTime', () => new Date().toDateString());
+	eleventyConfig.addGlobalData('buildTime', () => new Date());
 	eleventyConfig.addFilter('addBaseUrl', (value) => {
 		if (value.startsWith('http')) {
 			return value;
