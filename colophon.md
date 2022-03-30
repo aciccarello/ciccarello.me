@@ -12,8 +12,8 @@ In this case using a static site is an intentional exercise to help me think mor
 At the same time I hope to improve the performance of the site and experimenting with optimizations.
 
 I started the site mainly to serve as a professional profile that I could point to instead of updating my bio on every site with a profile page.
-The scope has expaneded over time as I migrated blog content after I became unhappy with the Medium.com reader experience.
-In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. 
+The scope has expanded over time as I migrated blog content after I became unhappy with the Medium.com reader experience.
+In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. In March 2022 I added [support for notes](/posts/2022/03/30/first-note/) and started recording webmentions.
 
 ## Technology
 
