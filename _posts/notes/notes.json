@@ -1,7 +1,4 @@
 {
-  "permalink": "/notes/{{ page.date | date: '%Y/%m/%d' }}/{{ slug-text | slugify}}/",
-  "author": "Anthony Ciccarello",
   "defaultTitle": "Short Note",
-  "back_button": "../../../..",
   "layout": "note"
 }
