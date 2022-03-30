@@ -1,7 +1,5 @@
 {
   "permalink": "/photos/{{ page.date | date: '%Y/%m/%d' }}/{{ slug-text | slugify }}/",
-  "author": "Anthony Ciccarello",
   "defaultTitle": "Photo Post",
-  "back_button": "../../../..",
   "layout": "photo"
 }
