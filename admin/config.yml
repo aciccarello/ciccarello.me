@@ -214,7 +214,7 @@ collections:
     identifier_field: slug-text
     summary: '{{body}}'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: photos/{{year}}/{{month}}/{{day}}/{{slug-text}}
+    preview_path: posts/{{year}}/{{month}}/{{day}}/{{slug-text}}
     editor:
       preview: false
     fields:
