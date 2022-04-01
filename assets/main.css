@@ -373,22 +373,27 @@ a.disable-link-styles {
 	object-fit: cover;
 }
 
-.post-img--float {
+figure.post-img--float {
 	width: 50%;
 	max-width: 350px;
 	margin: 0 1rem 1rem 0;
 	float: left;
 }
 
-.post-img--float-right {
+figure.post-img--float-right {
 	float: right;
 }
 
-.post-img--float img {
+img.post-img--float {
 	max-width: 100%;
 }
 img.post-img--wide {
 	max-width: 100%;
+}
+
+figcaption {
+	font-size: 0.8rem;
+	line-height: 1.25rem;
 }
 
 .post-header,

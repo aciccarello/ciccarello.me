@@ -31,7 +31,7 @@ months later, here we are.
 
 {% include "image.html"
     file: "/assets/img/puebla-letter-board-announcement.jpg"
-    alt: "black letter board with white letters reading 'Hasta luego estados unidos, hola mexico y peru' with plants around it"
+    alt: "black letter board with white letters reading &quot;Hasta luego estados unidos, hola mexico y peru&quot; with plants around it"
     caption: "The plants we left behind  -  [Photo by Bekah](https://www.instagram.com/p/BtT3LVvHNmK/)"
 %}
 
@@ -170,7 +170,7 @@ let us know!
 
 {% include "image.html"
     file: "/assets/img/puebla-cholula-chapel.jpg"
-    alt: "looking up at an ornately decorated yellow chapel with a sign reading 'santuario de la virgen de los remedios cholula puebla'"
+    alt: "looking up at an ornately decorated yellow chapel with a sign reading &quot;santuario de la virgen de los remedios cholula puebla&quot;"
     caption: "Chapel atop the pyramid of Cholula"
 %}
 

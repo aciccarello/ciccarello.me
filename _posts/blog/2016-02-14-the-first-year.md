@@ -52,7 +52,7 @@ deepen our relationship.
 
 {% include "image.html"
     file: "/assets/img/honeymoon-dolphin.jpg"
-    alt: "woman in life vest being 'kissed' by a dolphin"
+    alt: "woman in life vest being &quot;kissed&quot; by a dolphin"
     caption: "Enjoying our honeymoon in Cancun"
     display: "float"
 %}

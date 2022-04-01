@@ -1,7 +1,7 @@
-
-<figure {% if display == 'float' %}class="post-img--float" {% endif %}{% if display == 'float-right' %}class="post-img--float post-img--float-right" {% endif %}>
-	<img src="{{ file }}" alt="{{ alt | escape }}" {% if display  == 'wide' %}class="post-img--wide" {%- endif %} />
-	{% if caption %}<figcaption class="mdc-typography--caption">
-		{{ caption | markdownify }}
-	</figcaption>{% endif %}
-</figure>
+{% capture class %}{% if display == 'float' %} class="post-img--float"{% endif %}{% if display == 'float-right' %} class="post-img--float post-img--float-right"{% endif %}{% if display  == 'wide' %} class="post-img--wide"{% endif -%}{% endcapture %}
+<figure{{ class }}>{{ -}}
+	<img src="{{ file }}" alt="{{ alt }}"{{ class }}>
+	{%- if caption %}<figcaption>
+		{{- caption | markdownify -}}
+	</figcaption>{% endif -%}
+</figure>{{ -}}
