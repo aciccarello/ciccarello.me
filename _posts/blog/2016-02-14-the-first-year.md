@@ -50,12 +50,10 @@ deepen our relationship.
 
 #### The Marriage Begins
 
-{% include "image.html"
-    file: "/assets/img/honeymoon-dolphin.jpg"
-    alt: "woman in life vest being &quot;kissed&quot; by a dolphin"
-    caption: "Enjoying our honeymoon in Cancun"
-    display: "float"
-%}
+![woman in life vest being &quot;kissed&quot; by a dolphin](
+    /assets/img/honeymoon-dolphin.jpg
+    "Enjoying our honeymoon in Cancun"
+){.post-img--float}
 
 Our wedding was a wonderful day. It was fantastic to share our lives with our
 extended family, but the day flew by. Our honeymoon was a welcome break after
@@ -113,11 +111,10 @@ actively support her desire to see them again. However, even while the ebola
 virus was still shutting down much of the country, we started trying to plan a
 trip to visit that orphanage.
 
-{% include "image.html"
-    file: "/assets/img/liberia-girls-playing.gif"
-    alt: "african girls playing with a ball in a small yard"
-    caption: "The girls at the orphanage playing games"
-%}
+![african girls playing with a ball in a small yard](
+    /assets/img/liberia-girls-playing.gif
+    "The girls at the orphanage playing games"
+)
 
 Through the support of many people, Bekah, her parents, and I were able to
 travel to Liberia this past summer. I'll spare most of the details (since I've
@@ -137,12 +134,10 @@ wanted a dog of her own. Shortly after our wedding, Bekah and I fostered a
 golden-black lab mix. When that puppy failed out of the system we tried to
 adopt the puppy it but another family took her in permanently before we could.
 
-{% include "image.html"
-    file: "/assets/img/springfield-bekah-bailey-autumn.jpg"
-    alt: "Woman and golden retriever on a house portch with autmn decorations all around"
-    caption: "Bekah and Bailey enjoying autumn"
-    display: "float"
-%}
+![Woman and golden retriever on a house portch with autmn decorations all around](
+    /assets/img/springfield-bekah-bailey-autumn.jpg
+    "Bekah and Bailey enjoying autumn"
+){.post-img--float}
 
 Following that disappointment, I was hesitant to look for another dog because
 I did not want to add another responsibility to our still disorganized home.

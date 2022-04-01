@@ -14,12 +14,10 @@ Two years ago, I rediscovered one of my favorite hobbies: birdwatching. To some 
 
 During our first stay in Mexico, I realized that the birds I was seeing were different than the ones I grew up with in the Northeastern US. As a child, I loved watching my backyard birds. [Blue Jays](https://ebird.org/species/blujay/) were my favorite, but we had plenty of [American Robins](https://ebird.org/species/amerob/), [Northern Cardinals](https://ebird.org/species/norcar/), and [American Goldfinches](https://ebird.org/species/amegfi/) as well. I remember watching the [Eastern Bluebirds](https://ebird.org/species/easblu/) that nested in the birdhouse in my grandpa's back yard. I would study field guides as a kid to memorize how to identify all the local birds. At one point, I even wanted to grow up to be an Ornithologist (a scientist who studies birds). But as I went through high school and entered college, I paid less and less attention to the birds around me.
 
-{% include "image.html"
-    file: "/assets/img/2019-birding-scarlet-flycatcher.jpg"
-    alt: "Red bird on a string with clothespins against a brick background"
-    caption: "[Vermilion Flycatcher](https://ebird.org/species/verfly) in our friend's back yard"
-    display: "float"
-%}
+![Red bird on a string with clothespins against a brick background](
+    /assets/img/2019-birding-scarlet-flycatcher.jpg
+    "[Vermilion Flycatcher](https://ebird.org/species/verfly) in our friend's back yard"
+){.post-img--float}
 
 Years later in Mexico I got curious about the new birds I was seeing. The most striking was a bright red bird with black accents perched on fence-tops and wires until it acrobatically snatched bugs out of the air. To identify the bird, I downloaded the [Merlin ID app](https://merlin.allaboutbirds.org/) from the Cornell Lab of Ornithology which can come up with a list of possible species based off of some basic information like location, date, bird size, and color. My new bird was a [Vermilion Flycatcher](https://ebird.org/species/verfly).
 
@@ -59,12 +57,10 @@ It was the first country where I focused on seeing new birds and luckily Peru ha
 
 ### Guatemala
 
-{% include "image.html"
-    file: "/assets/img/2019-birding-resplendent-quetzal.jpg"
-    alt: "Green bird on branch with red chest and long tail"
-    caption: "Male Resplendent Quetzal"
-    display: "float"
-%}
+![Green bird on branch with red chest and long tail](
+    /assets/img/2019-birding-resplendent-quetzal.jpg
+    "Male Resplendent Quetzal"
+){.post-img--float}
 
 Guatemala was where I went on my first guided birding tour. I took a morning boat ride across Lago Atitlan to join a small group of tourists in the back of a pickup to see a pair of [Resplendent Quetzal](https://ebird.org/species/resque1/GT). We hiked through the woods, passing some large [Crested Guan](https://ebird.org/species/cregua1/) high in the trees to a small clearing in the forest where the pair's nest was visible. We waited for about 40 mintutes before a guide saw the male with his long green tail feathers and the less vibrant female brought food to the nest. From there one of the guides took me on a solo hike through the jungle to find more species like the [Blue-throated Motmot](https://ebird.org/species/bltmot1/) and [Spot-crowned Woodcreaper](https://ebird.org/species/spcwoo1/). In the thick jungle vegetation, it was hard to locate the birds my guide was pointing at but they were all around.
 
@@ -98,11 +94,10 @@ We only stayed in Costa Rica for a short vacation, but thanks to my [great birdi
 
 During our tour we drove to a neighborhood where hummingbirds like [Purple-crowned Fairy](https://ebird.org/species/pucDuring) our tour and [Charming Hummingbird](https://ebird.org/species/chahum1) fed from the flowers in peoples yards. In someone's tree lived a [Ferringus Pigmie Owl](https://ebird.org/species/fepowl) (below) who was kind enough to let us take photos and video of him through my guide's scope. As we traveled through the small town and passed the old school building, my guide explained how many of the villages no longer had enough locals to support their own schools, paralleling similar demographic changes exhibited in the US. He also shared the funny ways the townspeople responded to seeing birding groups walking around and how he'd built connections with them.
 
-{% include "image.html"
-    file: "/assets/img/2019-birding-ferringus-pigmie-owl.jpg"
-    alt: "Small owl looking at camera from branch"
-    caption: "[Ferringus Pigmie Owl](https://ebird.org/species/fepowl)"
-%}
+![Small owl looking at camera from branch](
+    /assets/img/2019-birding-ferringus-pigmie-owl.jpg
+    "[Ferringus Pigmie Owl](https://ebird.org/species/fepowl)"
+)
 
 One of my favorite bird of the tour was the [Baird's Trogon](https://ebird.org/species/baitro1) which is from a family of birds I had been wanting to see for a while but which stays fairly hidden in the forest. To finish, we headed to a ridge to look for the raptors that would be floating on the hot thermals of air that were developing as we passed mid-day. During certain periods, huge groups of thousands of hawks fly through central america during their annual migration but on my tour we mostly saw resident raptors. We focused on the small dots up in the sky with our binoculars, finding mostly [Black](https://ebird.org/species/blkvul) and [Turkey Vultures](https://ebird.org/species/turvul) with the occasional [Swallow-tailed Kite](https://ebird.org/species/swtkit). Then, just before we were about to head back, my guide excidedly pointed out a [King Vulture](https://ebird.org/species/kinvul1), one of the largest birds in the region, to cap off a great tour.
 
@@ -163,11 +158,10 @@ Our first stay in Mexico, I was just starting to get into birding again. Our sec
 
 Because we did more sight-seeing and spent more time in cities I didn't see as many species in Italy. Still most of the birds I saw were new species because it is in a different region of the world. If you want to get technical, I even recorded a few birds like the White Wagtail within the Vatican grounds which counts as a sovereign country. I mention more in my [Italy series](/blog/2019/11/27/we-traveled-to-italy/) but some of my favorites were [European Robins](https://ebird.org/species/eurrob1), [Gray Wagtail](https://ebird.org/species/grywag), and [Rose-ringed Parakeet](https://ebird.org/species/rorpar).
 
-{% include "image.html"
-    file: "/assets/img/2019-birding-italy-little-egret.jpg"
-    alt: "White egret sitting on railing in front of boats"
-    caption: "Little Egret by the Grand Canal in Venice"
-%}
+![White egret sitting on railing in front of boats](
+    /assets/img/2019-birding-italy-little-egret.jpg
+    "Little Egret by the Grand Canal in Venice"
+)
 
 #### Italy Stats:
 
@@ -198,12 +192,10 @@ Once we returned to the US I tried to take advantage of each trip we took. Visit
 
 In California alone I saw 110 species. I learned to recognize desert species like [Verdin](https://ebird.org/species/verdin/), [Costa's Hummingbirds](https://ebird.org/species/coshum/), and the iconic [Greater Roadrunner](https://ebird.org/species/greroa/). In the mountains we found families of [Acorn Woodpeckers](https://ebird.org/species/acowoo/) and loud, majestic [Steller's Jays](https://ebird.org/species/stejay/) at a local apple farm. On the coast there were a whole host of water birds like [Long-billed Curlew](https://ebird.org/species/lobcur/) and fish snatching [Osprey](https://ebird.org/species/osprey/).
 
-{% include "image.html"
-    file: "/assets/img/2019-birding-snow-geese.jpg"
-    alt: "brown reeds in marsh with hundreds or white dots in the sky overhead"
-    caption: "Hundreds of Snow and Ross Geese near the Salton Sea"
-    display: "wide"
-%}
+![brown reeds in marsh with hundreds or white dots in the sky overhead](
+    /assets/img/2019-birding-snow-geese.jpg
+    "Hundreds of Snow and Ross Geese near the Salton Sea"
+){.post-img--wide}
 
 I also took trips to the Salton Sea which is a major wildlife sanctuary for migrating birds located in the middle of the desert. I saw huge flocks of waterfowl including hundreds of [Snow Geese](https://ebird.org/species/snogoo/). There I started trying to photograph more birds which really helps capture more of the memories of birding and helped me learn more about photography. However, a 55mm lense isn't enough zoom for wildlife so my family generously got me a 250mm lense for Christmas. With that lense I was able to get much better photos and even ID species I couldn't ID in the field adding a new dimension to birding.
 

@@ -29,12 +29,10 @@ from nearby nations, there is a significant number of birds that are missing
 identification information. In contrast, countries like Colombia and most of
 Central America have complete packs of all common birds in the country.
 
-{% include "image.html"
-    file: "/assets/img/peru-andean-cock-of-the-rock.jpg"
-    alt: "bird with a bright orange body and head, black wings and a gray back"
-    caption: "Andean cock-of-the-rock  -  [Photo by Jerry Thompson](https://commons.wikimedia.org/wiki/File:Rupicola_peruviana_%28male%29\_-San_Diego_Zoo-8a.jpg) [[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)]"
-    display: "float"
-%}
+![bird with a bright orange body and head, black wings and a gray back](
+    /assets/img/peru-andean-cock-of-the-rock.jpg
+    "Andean cock-of-the-rock  -  [Photo by Jerry Thompson](https://commons.wikimedia.org/wiki/File:Rupicola_peruviana_%28male%29\_-San_Diego_Zoo-8a.jpg) [[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)]"
+){.post-img--float}
 
 What makes Peru so diverse is the range of habitats within its borders. From
 the fish rich coasts, to arid lowlands, to the heights of the Andes Mountains,
@@ -86,11 +84,10 @@ stocky size.
     alt: "bird with yellow belly, dark gray body, and gray and white stripes on head"
 %}
 
-{% include "image.html"
-    file: "/assets/img/peru-black-crowned-night-heron.jpg"
-    alt: "large brown bird in tree branches"
-    caption: "Black-crowned Night-Heron in a Lima park"
-%}
+![large brown bird in tree branches](
+    /assets/img/peru-black-crowned-night-heron.jpg
+    "Black-crowned Night-Heron in a Lima park"
+)
 
 Some birds took a little work to identify. The [Scrub
 Blackbird](https://ebird.org/species/scrbla1) was extremely common in our part
@@ -207,11 +204,10 @@ Vultures](https://ebird.org/species/turvul).
     alt: "long, gray bird with red legs and a white patch on its neck standing on rocks"
 %}
 
-{% include "image.html"
-    file: "/assets/img/peru-ballestas-islands-peruvian-boobies.jpg"
-    alt: "Birds with white bodies and brown wings on top of a rocky hill"
-    caption: "Peruvian Boobies on the Ballestas Islands"
-%}
+![Birds with white bodies and brown wings on top of a rocky hill](
+    /assets/img/peru-ballestas-islands-peruvian-boobies.jpg
+    "Peruvian Boobies on the Ballestas Islands"
+)
 
 After out boat ride, we drove into the park. Paracas is mostly an empty desert
 with course, orange sand. However, the barrenness of the land contrasts the
@@ -367,12 +363,10 @@ Violetear](https://ebird.org/species/spvear1) hummingbird.
     alt: "green hummingbird with long wings extending past its body, a long bill and a blue streak across its eye"
 %}
 
-{% include "image.html"
-    file: "/assets/img/peru-machu-picchu-blue-and-white-swallows.jpg"
-    alt: "Stone wall of house topped with a blue and white bird, more stone structures in background"
-    caption: "Blue-and-white Swallow on wall in Machu Picchu"
-    display: "wide"
-%}
+![Stone wall of house topped with a blue and white bird, more stone structures in background](
+    /assets/img/peru-machu-picchu-blue-and-white-swallows.jpg
+    "Blue-and-white Swallow on wall in Machu Picchu"
+){.post-img--wide}
 
 Machu Picchu is fairly clear of vegetation and the grass is kept low so it is
 mostly inhabited by [Blue-and-white

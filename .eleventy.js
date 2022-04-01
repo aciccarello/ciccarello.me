@@ -2,14 +2,22 @@ const md = require('markdown-it')({
 	linkify: true,
 	html: true,
 	typographer: true,
-}).use(require('markdown-it-anchor'), {
-	// This only applies to anchors
-	slugify: (s) =>
-		require('slugify')(s, {
-			remove: /[*+~,.()'"’!\?:@]/g,
-			lower: true,
-		}),
-});
+})
+	.use(require('markdown-it-attrs'), {
+		allowedAttributes: ['id', 'class'],
+	})
+	.use(require('markdown-it-image-figures'), {
+		figcaption: true,
+		copyAttrs: 'class',
+	})
+	.use(require('markdown-it-anchor'), {
+		// This only applies to anchors
+		slugify: (s) =>
+			require('slugify')(s, {
+				remove: /[*+~,.()'"’!\?:@]/g,
+				lower: true,
+			}),
+	});
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 function yearsSince(date) {
 	const start = new Date(date);

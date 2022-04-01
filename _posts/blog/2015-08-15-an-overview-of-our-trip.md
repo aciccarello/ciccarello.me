@@ -39,28 +39,25 @@ the couple running the orphanage, met us and drove us to his house. It was
 dark by the time we arrived. His wife Wintee treated us to a meal as we caught
 up with them.
 
-{% include "image.html"
-    file: "/assets/img/liberia-lcim-church.jpg"
-    alt: "dirt yard with a tree and a manual water pump and a brightly colored building in the background"
-    caption: "View from Emmanuel's house. LCMI church in the background"
-%}
+![dirt yard with a tree and a manual water pump and a brightly colored building in the background](
+    /assets/img/liberia-lcim-church.jpg
+    "View from Emmanuel's house. LCMI church in the background"
+)
 
-{% include "image.html"
-    file: "/assets/img/liberia-inside-lcim-church.jpg"
-    alt: "cement building with green walls and atar in front"
-    caption: "Inside LCMI Church"
-%}
+![cement building with green walls and atar in front](
+    /assets/img/liberia-inside-lcim-church.jpg
+    "Inside LCMI Church"
+)
 
 The next day was the celebration of Liberia's independence day and we were not
 able to travel to Yekepa where the orphanage was so we stayed in town and
 checked out LCMI Church and the local ministry. Emmanuel also took Paul,
 Margaret, and I around to meet some members of the church and pray with them.
 
-{% include "image.html"
-    file: "/assets/img/liberia-broken-van.jpg"
-    alt: "van with its hood opened with 7 people standing and looking"
-    caption: "Waiting for the van to cool down after it overheated"
-%}
+![van with its hood opened with 7 people standing and looking](
+    /assets/img/liberia-broken-van.jpg
+    "Waiting for the van to cool down after it overheated"
+)
 
 Tuesday we arranged transportation part way to Yekepa and headed out passing
 through ebola checkpoints, dodging pot holes, and trying to keep the van from
@@ -75,11 +72,10 @@ upcoming days.
 
 ### Time at the Orphanage
 
-{% include "image.html"
-    file: "/assets/img/liberia-sorting-donations.jpg"
-    alt: "room with toys and other donations laid across tables and couches with open suitcases on the floor and two people organizing the items"
-    caption: "Sorting through the donations"
-%}
+![room with toys and other donations laid across tables and couches with open suitcases on the floor and two people organizing the items](
+    /assets/img/liberia-sorting-donations.jpg
+    "Sorting through the donations"
+)
 
 When we had all gotten some rest, we started by going through all of the
 crates of donations we had brought and organizing them. We wanted to take a
@@ -88,17 +84,15 @@ Remmington took us for a tour of the town as little children followed us
 "white people" around. We also got to connect with the kids at the orphanage
 for the first time.
 
-{% include "image.html"
-    file: "/assets/img/liberia-camp-4-kids.jpg"
-    alt: "african children of different ages on a dirt road in front of a house with two motorcycle tires for games"
-    caption: "Children in Camp Four"
-%}
+![african children of different ages on a dirt road in front of a house with two motorcycle tires for games](
+    /assets/img/liberia-camp-4-kids.jpg
+    "Children in Camp Four"
+)
 
-{% include "image.html"
-    file: "/assets/img/liberia-remington-anthony-motorcycle.jpg"
-    alt: "African man on seat of motorcycle with a white man on the back ready to drive off"
-    caption: "Remington and I traveling to the orphanage"
-%}
+![African man on seat of motorcycle with a white man on the back ready to drive off](
+    /assets/img/liberia-remington-anthony-motorcycle.jpg
+    "Remington and I traveling to the orphanage"
+)
 
 Each of the following days followed a similar format, spend some time
 preparing for the day, get some motorbikes to give us a ride to the orphanage,
@@ -114,24 +108,20 @@ and I went with Remington, his wife comfort, and two older children from the
 orphanage to a larger town where we bought mattresses and clothes for the
 children.
 
-{% include "image.html"
-    file: "/assets/img/liberia-new-yekepa-church.jpg"
-    alt: "inside a mud brick building with about 15 adults in colorful dress and 10 kids standing next to wooden benches"
-    caption: "The new church in Yekepa"
-%}
+![inside a mud brick building with about 15 adults in colorful dress and 10 kids standing next to wooden benches](
+    /assets/img/liberia-new-yekepa-church.jpg
+    "The new church in Yekepa"
+)
 
-{% include "image.html"
-    file: "/assets/img/liberia-mattresses.jpg"
-    alt: "short yellow car with 3 men strapping about 15 mattresses to the top of the car"
-    caption: "Transporting our mattresses"
-%}
+![short yellow car with 3 men strapping about 15 mattresses to the top of the car](
+    /assets/img/liberia-mattresses.jpg
+    "Transporting our mattresses"
+)
 
-{% include "image.html"
-    file: "/assets/img/liberia-girls-cake.jpg"
-    alt: "9 girls with a bake pan of cake with white icing"
-    caption: "Girls and their funfetti cake"
-    display: "float"
-%}
+![9 girls with a bake pan of cake with white icing](
+    /assets/img/liberia-girls-cake.jpg
+    "Girls and their funfetti cake"
+){.post-img--float}
 
 On Sunday, we went to Redeemer Baptist Church, where Anthony Jonah is one of
 the pastors. After worshiping with them, we took a sight seeing trip to the
@@ -144,11 +134,10 @@ of our fun happened away from the orphanage. We made giant bubbles, played
 ultimate frisbee, wrote letters, made milk candy, and spent time with the
 children in their dorms.
 
-{% include "image.html"
-    file: "/assets/img/liberia-giant-bubbles.jpg"
-    alt: "white maile holding two sticks with dangling strings making gian bubbles outdoors"
-    caption: "Making giant bubbles"
-%}
+![white maile holding two sticks with dangling strings making gian bubbles outdoors](
+    /assets/img/liberia-giant-bubbles.jpg
+    "Making giant bubbles"
+)
 
 Our last full day at the orphanage it rained on and off. Around mid-afternoon
 the orphanage put together a going-away ceremony for us. The children started
@@ -157,11 +146,10 @@ of the community. Emmanuel Lugon, a boy who had been though the orphanage and
 is now going to the local bible college, lead the ceremony as people gave
 testamonies. The orphanage gave each of us a traditional Liberian outfit.
 
-{% include "image.html"
-    file: "/assets/img/liberia-ma-pa.jpg"
-    alt: "young white couple in bright green african dress next to older afican couple"
-    caption: "Bekah and I with Anthony and Betty Jonah"
-%}
+![young white couple in bright green african dress next to older afican couple](
+    /assets/img/liberia-ma-pa.jpg
+    "Bekah and I with Anthony and Betty Jonah"
+)
 
 ### Our Return
 
@@ -172,11 +160,10 @@ continued to travel the long road back to the airport. We arrived with just
 enough time to get through the required screenings and various lines to get
 through the tiny Monrovia airport.
 
-{% include "image.html"
-    file: "/assets/img/liberia-goodbye-crowd.jpg"
-    alt: "about 16 africans of varrious ages, some waving goodbye"
-    caption: "Everyone out at the road to say goodbye"
-%}
+![about 16 africans of varrious ages, some waving goodbye](
+    /assets/img/liberia-goodbye-crowd.jpg
+    "Everyone out at the road to say goodbye"
+)
 
 ### More To Come
 

@@ -6,11 +6,7 @@ image: /assets/img/peanut-butter-pie.jpg
 image_alt: 'Peanut butter cream pie with slice removed'
 ---
 
-{% include "image.html"
-    file: "/assets/img/peanut-butter-pie-mixing.jpg"
-    display: "float-right"
-    alt: "Mixing bowl with ingredients."
-%}
+![Mixing bowl with ingredients.](/assets/img/peanut-butter-pie-mixing.jpg){.post-img--float .post-img--float-right}
 
 This is a easy, frozen dessert that is so tasty and filling.
 
@@ -32,8 +28,7 @@ This is a easy, frozen dessert that is so tasty and filling.
 1. Thaw before eating
 {% endrecipe-directions %}
 
-{% include "image.html"
-    file: "/assets/img/peanut-butter-pie-oreo.jpg"
-    caption: "The Oreo crust variety of pie"
-    alt: "peanut butter pie with oreo crust"
-%}
+![peanut butter pie with oreo crust](
+    /assets/img/peanut-butter-pie-oreo.jpg
+    "The Oreo crust variety of pie"
+)

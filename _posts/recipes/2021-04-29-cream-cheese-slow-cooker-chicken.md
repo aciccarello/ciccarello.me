@@ -9,12 +9,7 @@ image: /assets/img/cream-cheese-chicken-header.jpg
 ---
 This is a really easy slow cooker meal that requires very little prep. The initial ingredients can all go directly in the slow cooker.
 
-
-{% include "image.html"
-    file: "/assets/img/cream-cheese-chicken-combined.jpg"
-    display: "float-right"
-    alt: "Raw ingredients in a slow cooker."
-%}
+![Raw ingredients in a slow cooker.](/assets/img/cream-cheese-chicken-combined.jpg){.post-img--float .post-img--float-right}
 
 ## Summary
 

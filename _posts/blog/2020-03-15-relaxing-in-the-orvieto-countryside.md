@@ -17,29 +17,24 @@ After meeting up with my family, we drove to the town of Orvieto a little more t
 
 Our family stayed outside the city in a large stone cottage surrounded by olive groves. Our hosts were an older couple who didn't speak any English but my linguistically-inclined sister helped translate so we could settle in. Later that night we ate at a local restaurant where the friendly owner also didn't speak English. My Dad's over-confident attempt to communicate with the "people of his homeland" got us 8 portions of grilled vegetable appetizers rather than a few portions to share. We enjoyed a good laugh and plenty of delicious left-overs the next day. We also had a tasty collection of vegetables in our homemade meals too. Our hosts invited us to harvest from the small vegetable garden next to our cottage. We found a couple of heads of cauliflower, fennel, and bell peppers which went great with the pasta dinner we had as a family.
 
-{% include "image.html"
-    file: "/assets/img/2019-italy-orvieto-cottage.jpg"
-    alt: "2-story stone cottage."
-    caption: "The roomy cottage our family stayed at"
-%}
+![2-story stone cottage.](
+    /assets/img/2019-italy-orvieto-cottage.jpg
+    "The roomy cottage our family stayed at"
+)
 
 I enjoyed the opportunity to rest out in the Italian countryside away from the bustle of the other towns and cities we visited. The mix of grassy and forested areas reminded me of the east coast of the US but with a distinct array of Italian plants. I had fun trying to identify the birds that darted through the olive groves and forest. A few steps into the forest behind the cottage we found an abandoned root cellar dug into the hillside. We later learned that families often built these to keep their olive oil cool and to hide it from any invaders who might want to raid the countryside. One morning Bekah and I ventured out a little farther from the house but then got stuck in light rain. The rain quickly passed but it got us to stop and look back down the hill and see the beautiful countryside we were able to enjoy.
 
-{% include "image.html"
-    file: "/assets/img/2019-italy-orvieto-cottage-farm.jpg"
-    display: "wide"
-    alt: "open field leading to two stone buildings and olive trees. Valley visible in the background."
-    caption: "View from up on the hill overlooking the property we stayed at"
-%}
+![open field leading to two stone buildings and olive trees. Valley visible in the background.](
+    /assets/img/2019-italy-orvieto-cottage-farm.jpg
+    "View from up on the hill overlooking the property we stayed at"
+){.post-img--wide}
 
 ## Exploring Town
 
-{% include "image.html"
-    file: "/assets/img/2019-italy-orvieto-city-sisters.jpg"
-    display: "float"
-    alt: "two teenage girls, black and white, with arms around each other's shoulders looking at buildings along a cobblestone street"
-    caption: "Two of my sisters walking down the city streets"
-%}
+![two teenage girls, black and white, with arms around each other's shoulders looking at buildings along a cobblestone street](
+    /assets/img/2019-italy-orvieto-city-sisters.jpg
+    "Two of my sisters walking down the city streets"
+){.post-img--float}
 
 The town itself is quaint with buildings dating back to the 15th century. There is a network of stone streets lined with high-end tourist shops and eateries. When we would visit, we would park our car at the lower end of the city, meet up with my sister after her classes, and walk everywhere on foot. Our first afternoon, my sister showed us a deli for lunch that sold pork sandwiches. It was just seasoned meat and bread but it was delicious. We also bought gelato and pastries (on multiple occasions) from a local favorite of the students in the university program. One afternoon, my father video-called my grandmother and gave her a tour. She loved seeing all the stonework and character in every building. It was a reminder of just how far from home we were and how beautiful the area was.
 
@@ -51,33 +46,28 @@ One evening we walked to [San Gioveenale Church](https://en.wikipedia.org/wiki/S
 
 From the surrounding hills, the cathedral, usually referred to as the [Duomo](https://en.wikipedia.org/wiki/Orvieto_Cathedral), dominates the skyline of the town. The sides of the 14th-century building are made with alternating black and white bricks making a horizontal striped pattern, but the front of the church is extravagantly decorated in Tuscan Gothic style. The gold and colored stripes line the tall towers from top to bottom and large reliefs flank the doors. On the face of the church above the doors are several large mosaic biblical scenes with gold accents. In the center is a large circular stain glass window surrounded by the faces of dozens of saints.
 
-{% include "image.html"
-    file: "/assets/img/2019-italy-orvieto-duomo.jpg"
-    display: "wide"
-    alt: "large cathedral with horizontally striped sides and a front facade ornately decorated."
-    caption: "View of the Duomo as seen walking from the city center"
-%}
+![large cathedral with horizontally striped sides and a front facade ornately decorated.](
+    /assets/img/2019-italy-orvieto-duomo.jpg
+    "View of the Duomo as seen walking from the city center"
+){.post-img--wide}
 
 Inside the church, the stripes on the exterior continue, though above the first couple layers they are actually painted. The interior, which is already intentionally uncluttered, was undergoing restoration and items were missing around the columns. While we were in the city, trucks came by with a crane to unload restored statues in large boxes. They had been removed from the cathedral 122 years before and were [finally being returned](http://www.italianinsider.it/?q=node/8831) to their original places. One of the biggest sculptures we saw in the church was an octagonal baptismal with a red stone basin and an intricate, white, stone building rising from the middle of the basin.
 
 To the sides of the church are two small chapels. In the [Chapel of the Madonna di San Brizio](https://en.wikipedia.org/wiki/Orvieto_Cathedral#Chapel_of_the_Madonna_di_San_Brizio) to the right, there are large 15th-century frescos on display with intricate, graphic paintings. The chapel is dedicated to the theme of the final judgement, with the holy being raised to glory in heaven and the damned violently destroyed. In the [Chapel of the Corporal](https://en.wikipedia.org/wiki/Orvieto_Cathedral#Chapel_of_the_Corporal) to the left, is a cabinet holding the Corporal of Bolsena which is a cloth relic said to have been involved in a miracle where the bread used in the eucharist "bled" onto the cloth. The cloth is kept in the cabinet except for special holidays when it is put on display.
 
-{% include "image.html"
-    file: "/assets/img/2019-italy-orvieto-duomo-fresco.jpg"
-    alt: "wall painted with a scene of people being attacked by flying, human-like beasts"
-    caption: "Fresco in [Chapel of the Madonna di San Brizio](https://en.wikipedia.org/wiki/Orvieto_Cathedral#Chapel_of_the_Madonna_di_San_Brizio)"
-%}
+![wall painted with a scene of people being attacked by flying, human-like beasts](
+    /assets/img/2019-italy-orvieto-duomo-fresco.jpg
+    "Fresco in [Chapel of the Madonna di San Brizio](https://en.wikipedia.org/wiki/Orvieto_Cathedral#Chapel_of_the_Madonna_di_San_Brizio)"
+)
 
 ## The Underground
 
 One afternoon, we toured a few of the 1000 caves underneath Orvieto, many man-made, that have only recently been studied by archeologists. Early Italians expanded natural caves by digging into the soft rock to take advantage of the cool temperatures and create more working space away from the busy city above. The cave that we toured was used as a workshop, olive press, and quarry. Documents show that the town gave someone permission to expand this quarry but later stopped him when they found he had expanded it too much and risked a cave-in. From there our tour took us to a series of caves that were cellars and emergency passages. We also walked through caves where small cavities lined the interior walls and with windows to the outside. These historic dove roosts are why pigeon is one of the famous culinary dishes of Orvieto but originally the birds were an important food source if the city was under siege. In the last century, people at times used the caves as bomb shelters. Thankfully, the warring parties of World War II agreed to make Orvieto a protected city because the bombs would have completely destroyed the soft rock foundation.
 
-{% include "image.html"
-    file: "/assets/img/2019-italy-orvieto-well.jpg"
-    display: "float"
-    alt: "looking down a large well with windows revealing a surrounding staircase."
-    caption: "The double helix of the [Pozzo di S. Patrizio](https://en.wikipedia.org/wiki/Pozzo_di_S._Patrizio)"
-%}
+![looking down a large well with windows revealing a surrounding staircase.](
+    /assets/img/2019-italy-orvieto-well.jpg
+    "The double helix of the [Pozzo di S. Patrizio](https://en.wikipedia.org/wiki/Pozzo_di_S._Patrizio)"
+){.post-img--float}
 
 One aspect of living in a city on a hill is that water is hard to reach, especially when under attack. On our cave tour, we saw deep, rectangular wells dug by the Etruscans as an emergency water source extending deep into the rock. We also saw basins where people collected rainwater. Later, in the 16th century, Orvieto became an important papal residence because Rome had been sacked. The Pope feared there wouldn't enough water if he were attacked again. So over the next decade, a large well was dug on the lower side of the city in the shape of a double helix. This design allowed donkeys to carry jugs down to the bottom where they could be filled and travel back up another set of stairs without being obstructed. Now, for a small fee, you can walk down all 248 steps down to the bottom.
 
@@ -85,11 +75,10 @@ One aspect of living in a city on a hill is that water is hard to reach, especia
 
 From Orvieto we took an afternoon trip to Porto Santo Stefano which is on a peninsula on the west coast of Italy. The steep hillside roads were a little scary for the large van we had but nothing like the roads in Capri. We continued around the peninsula and eventually found a hotel where we could buy drinks and watch the sunset over the island of Giglio. The view was beautiful and a chance for my siblings to see the coastline. In many ways it was like the Amalfi Coast with hills, cliffs, and shrubs, however, it was a different view of the sea because of the geography. There were large cliffs with shrubs and trees making a green landscape.
 
-{% include "image.html"
-    file: "/assets/img/2019-italy-orvieto-porto-santo-stefano-sunset.jpg"
-    alt: "Sun setting behind an island."
-    caption: "Sunset as seen from Porto Santo Stefano"
-%}
+![Sun setting behind an island.](
+    /assets/img/2019-italy-orvieto-porto-santo-stefano-sunset.jpg
+    "Sunset as seen from Porto Santo Stefano"
+)
 
 After watching the sunset, we went into port and found a restaurant down by the water where we ate seafood. I ate Lobster bisque gnocchi while others had "fruit of the sea" spaghetti. Many of the restaurants didn't open till 7:30 but by the time we finished, the gelato places were already closed so we headed home.
 
@@ -97,11 +86,7 @@ The drive between Orvieto and Porto Santo Stefano was two hours, but there are e
 
 ---
 
-{% include "image.html"
-    file: "/assets/img/2019-italy-orvieto-city-street.jpg"
-    display: "float"
-    alt: "Buildings along a narrow, windy, descending, cobblestone street."
-%}
+![Buildings along a narrow, windy, descending, cobblestone street.](/assets/img/2019-italy-orvieto-city-street.jpg){.post-img--float}
 
 For our family, staying in Orvieto was a nice break. We could go into town and walk around but we could also relax in the countryside. It reminded me of summer vacation growing up when we would rent a cabin on a lake in New Hampshire. For me, it was nice to be able to passively enjoy our travels. Italy is a beautiful country and I recommend spending some time outside the tourist traps. Orvieto had fewer English speakers than the other areas we had been but it was still do-able.
 

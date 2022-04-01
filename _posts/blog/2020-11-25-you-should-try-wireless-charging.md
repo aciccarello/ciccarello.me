@@ -16,10 +16,7 @@ Wireless charging has been around for a while now but it's still not ubiquitous.
 
 Wireless phone chargers uses what is call "Inductive charging". An alternating current flowing through a cord induces a small magnetic field. Multiple loops of the wire amplify the effect. Another coil of wire can reverse this affect by converting a magnetic field into an electrical current. This technology is used in electric toothbrushes as well as electric cars.
 
-{% include "image.html"
-    file: "/assets/img/wireless-charging-diagram.svg"
-    alt: "inductive coupling wire diagram"
-%}
+![inductive coupling wire diagram](/assets/img/wireless-charging-diagram.svg)
 
 The Qi wireless charging standard (pronounced _CHEE_) is the industry standard that allows phones from different manufacturers to work on the same chargers. It's now a mature technology that is integrated into more and more devices. In the past few years, the standard has increased the amount of power supported from 5 Watts, to 7.5W to 10W, allowing faster and faster charging times. Some phones even support "reverse wireless charging' where the phone can share some of its battery power with another phone.
 
@@ -99,30 +96,26 @@ Two wireless chargers I can recommend personally:
 
 ### Adding wireless charging to a phone without
 
-{% include "image.html"
-    file: "/assets/img/wireless-charging-receiver.jpg"
-    alt: "Thin rectangular device on the back of phone"
-    caption: "My phone's wireless receiver with the case off"
-%}
+![Thin rectangular device on the back of phone](
+    /assets/img/wireless-charging-receiver.jpg
+    "My phone's wireless receiver with the case off"
+)
 
 After having a flaky micro-USB port on my old phone, I decided that wireless charging was a must-have feature for me. The low-end phone I wanted to buy didn't have wireless charging built-in, so I decided to buy an external wireless receiver. These are slim, oval or rectangular shaped devices with a charging cord coming out. The USB-C receiver I bought easily fits between my phone and the silicone case.
 
 If you are considering this option, choose one that matches your charging connector and that has the appropriate length cord for your device's size. You can usually find one for less than \$20. The major downside of an external wireless receiver is that it takes up your charging port so you will need to unplug the receiver to use the port. With a case, this is inconvenient and makes me avoid using portable chargers.
 
-{% include "image.html"
-    file: "/assets/img/wireless-charging-receiver-under-case.jpg"
-    alt: "Thin rectangular device on the back of phone"
-    caption: "A thin receiver can fit under a soft silicone case"
-%}
+![Thin rectangular device on the back of phone](
+    /assets/img/wireless-charging-receiver-under-case.jpg
+    "A thin receiver can fit under a soft silicone case"
+)
 
 ### Wireless charging with a pop-socket
 
-{% include "image.html"
-    file: "/assets/img/wireless-charging-pop-power.jpg"
-    display: "float"
-    alt: "Circular wireless charger with indent in center"
-    caption: "[PopPower Charger](https://www.popsockets.com/p/poppower-home-wireless-charger-white/801483.html) from PopSockets"
-%}
+![Circular wireless charger with indent in center](
+    /assets/img/wireless-charging-pop-power.jpg
+    "[PopPower Charger](https://www.popsockets.com/p/poppower-home-wireless-charger-white/801483.html) from PopSockets"
+){.post-img--float}
 
 My wife loves having a pop-socket on her phone to avoid dropping it. Pop-sockets can be flattened but are still too tall for wireless charging to work properly. The newest pop-sockets are removable, which allows you to use a wireless charger. However, removing a tab to charge wirelessly takes a way a lot of the convenience of wireless charging.
 
