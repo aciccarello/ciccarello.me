@@ -5,11 +5,13 @@
     "foster care",
     "travel",
     "birding",
-    "dinner"
+    "dinner",
+    "TIL"
   ],
   "descriptions": {
     "foster care": "Our journey and thoughts as [foster parents](/foster/).",
     "birding": "My experiences enjoying my childhood hobby of bird watching, identifying birds everywhere I go.",
-    "dinner": "Everyone needs somewhere to save their favorite recipes."
+    "dinner": "Everyone needs somewhere to save their favorite recipes.",
+    "TIL": "Short for \"Today I Learned\". Interesting facts, ideas, and tricks I've discovered."
   }
 }

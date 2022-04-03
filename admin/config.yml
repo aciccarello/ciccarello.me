@@ -333,3 +333,4 @@ collections:
               - { label: 'Birding', name: 'birding', widget: string }
               - { label: 'Dinner', name: 'dinner', widget: string }
               - { label: 'Travel', name: 'travel', widget: string }
+              - { label: 'TIL', name: 'TIL', widget: string }
