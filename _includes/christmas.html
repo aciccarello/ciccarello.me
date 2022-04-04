@@ -70,11 +70,13 @@ function onChristmasLoad() {
 function setChristmasClass() {
 	if (christmasThemeEnabled) {
 		document.body.classList.add("christmas-enabled");
-		onChristmasLoad();
+		if ("snowfall" in window) {
+			snowfall.setPaused(false)
+		}
 	} else {
 		document.body.classList.remove("christmas-enabled");
 		if ("snowfall" in window) {
-			snowfall.setDensity(0);
+			snowfall.setPaused(true)
 		}
 	}
 }
