@@ -5,7 +5,7 @@ tags:
   - technology
 slug-text: js-to-const
 ---
-TIL you can emulate the `as const` type oberation in JS with a helper function.  ([source](https://dev.to/adamcoster/the-typescript-as-const-trick-2f4o))
+TIL you can emulate the `as const` type suffix in JS with a helper function.  ([source](https://dev.to/adamcoster/the-typescript-as-const-trick-2f4o))
 
 ```javascript
 /**
