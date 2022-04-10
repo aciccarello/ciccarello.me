@@ -1,5 +1,5 @@
 ---
-slug-text: ct-winter-field
+slug: ct-winter-field
 date: 2022-02-05T07:23:07.598Z
 tags:
   - farm

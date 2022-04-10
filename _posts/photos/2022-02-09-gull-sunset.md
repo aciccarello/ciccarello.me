@@ -1,5 +1,5 @@
 ---
-slug-text: gull-sunset
+slug: gull-sunset
 date: 2022-02-09T04:46:52.356Z
 tags:
   - sunset

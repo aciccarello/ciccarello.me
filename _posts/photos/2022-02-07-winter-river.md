@@ -1,5 +1,5 @@
 ---
-slug-text: winter-river
+slug: winter-river
 date: 2022-02-07T06:25:49.165Z
 tags:
   - landscape

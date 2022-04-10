@@ -11,7 +11,6 @@ public_folder: '/assets/img'
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
-publish_mode: editorial_workflow
 slug:
   encoding: 'unicode'
   clean_accents: true
@@ -21,7 +20,7 @@ collections:
     label_singular: 'Post'
     folder: '_posts/blog'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
     preview_path: blog/{{year}}/{{month}}/{{day}}/{{title}}
     editor:
       preview: false
@@ -76,7 +75,7 @@ collections:
     label_singular: 'Recipe'
     folder: '_posts/recipes'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
     preview_path: recipes/{{year}}/{{month}}/{{day}}/{{title}}
     editor:
       preview: false
@@ -158,9 +157,9 @@ collections:
     label_singular: 'Photo'
     folder: '_posts/photos'
     create: true
-    identifier_field: slug-text
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: photos/{{year}}/{{month}}/{{day}}/{{slug-text}}
+    identifier_field: slug
+    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
+    preview_path: photos/{{year}}/{{month}}/{{day}}/{{slug}}
     editor:
       preview: false
     fields:
@@ -211,10 +210,10 @@ collections:
     label_singular: 'Note'
     folder: '_posts/notes'
     create: true
-    identifier_field: slug-text
+    identifier_field: slug
     summary: '{{body}}'
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: posts/{{year}}/{{month}}/{{day}}/{{slug-text}}
+    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
+    preview_path: posts/{{year}}/{{month}}/{{day}}/{{slug}}
     editor:
       preview: false
     fields:
@@ -226,7 +225,7 @@ collections:
         allow_add: true
         required: false
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Slug', name: 'slug-text', widget: 'id' }
+      - { label: 'Slug', name: 'slug', widget: 'id' }
       - {
           label: 'Main image',
           name: image,

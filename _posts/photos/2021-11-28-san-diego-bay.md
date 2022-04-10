@@ -1,6 +1,6 @@
 ---
 # This is used to create the url
-slug-text: san-diego-bay
+slug: san-diego-bay
 date: 2021-11-28T07:38:04.564Z
 tags:
   - landscape

@@ -1,5 +1,5 @@
 ---
-slug-text: initial-photo
+slug: initial-photo
 date: 2021-06-21
 image: "/assets/img/2021-nor-cal-coast.jpg"
 image_alt: Flowering bush in front of ocean coast.

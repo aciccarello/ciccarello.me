@@ -1,5 +1,5 @@
 ---
-slug-text: childrens-museum
+slug: childrens-museum
 date: 2021-10-30T16:50:16.971Z
 tags:
   - foster care

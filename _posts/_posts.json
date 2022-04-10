@@ -1,5 +1,5 @@
 {
-  "permalink": "/posts/{{ page.date | date: '%Y/%m/%d' }}/{{ slug-text | slugify}}/",
+  "permalink": "/posts/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default : title | slugify}}/",
   "author": "Anthony Ciccarello",
   "defaultTitle": "",
   "back_button": "../../../..",
