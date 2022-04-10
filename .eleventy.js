@@ -33,7 +33,7 @@ const dateTimeFormat = new Intl.DateTimeFormat([], {
 });
 
 module.exports = function (eleventyConfig) {
-	eleventyConfig.addPassthroughCopy('admin');
+	eleventyConfig.addPassthroughCopy('admin/index.html');
 	eleventyConfig.addPassthroughCopy('assets');
 	eleventyConfig.addPassthroughCopy('favicon.ico');
 	eleventyConfig.addPassthroughCopy('styles.css');
