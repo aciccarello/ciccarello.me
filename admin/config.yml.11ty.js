@@ -204,14 +204,27 @@ class CmsConfig {
 	 */
 	render() {
 		const featuredTags = require('../posts/tags/tags.json').featured;
+		/**
+		 * Netlify Build variable
+		 * @see https://docs.netlify.com/configure-builds/environment-variables/#git-metadata
+		 *
+		 * @var {string}
+		 */
+		const branch = process.env.BRANCH || 'localhost';
 
 		const config = {
 			backend: {
-				branch: 'main',
+				branch,
 				squash_merges: true,
 				name: 'github',
 				repo: 'aciccarello/ciccarello.me',
 			},
+			site_url:
+				branch === 'main'
+					? 'https://www.ciccarello.me'
+					: branch === 'dev'
+					? 'https://dev.ciccarello.me'
+					: 'http://localhost:8080',
 			media_folder: 'assets/img',
 			public_folder: '/assets/img',
 			local_backend: true,
@@ -223,7 +236,6 @@ class CmsConfig {
 				addDefaultsToCollection({
 					name: 'blog',
 					label_singular: 'Post',
-					slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}',
 					preview_path: 'blog/{{year}}/{{month}}/{{day}}/{{title}}',
 					fields: [
 						fields.title,
@@ -276,8 +288,6 @@ class CmsConfig {
 				addDefaultsToCollection({
 					name: 'notes',
 					summary: '{{body}}',
-					slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}',
-					preview_path: 'posts/{{year}}/{{month}}/{{day}}/{{slug}}',
 					editor: {
 						preview: false,
 					},
