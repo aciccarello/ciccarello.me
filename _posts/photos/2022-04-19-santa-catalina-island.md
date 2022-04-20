@@ -3,6 +3,7 @@ slug: santa-catalina-island
 date: 2022-04-19T07:14:52.288Z
 tags:
   - landscape
+  - ocean
 image: /assets/img/2022-catalina-island-southern-coast.jpg
 image_alt: Looking down on deep blue waters along cliffs of a coastline with clouds below.
 ---
