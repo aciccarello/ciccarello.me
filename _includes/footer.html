@@ -10,9 +10,11 @@
 			>
 		</nav>
 		<span class="flex-grow"></span>
+		{%- if eleventyExcludeFromCollections != "deleted" -%}
 		<a href="https://github.com/aciccarello/ciccarello.me/blob/main/{{ page.inputPath }}" rel="noopener">
 			View page source
 		</a>
+		{% endif %}
 	</section>
 	{%- if page.url == "/" %}
 		<div class="container"> Site Last Updated:

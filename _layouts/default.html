@@ -15,7 +15,14 @@
 			</aside>
 			{%- endif -%}
 
+			{%- if eleventyExcludeFromCollections == "deleted" -%}
+			<aside class="unlisted-warning">
+				<strong>Content Deleted</strong>
+				<p>This page was removed and is no longer available.</p>
+			</aside>
+			{%- else -%}
             {{ content }}
+			{%- endif -%}
         </main>
 
         {%- include "footer.html" -%}

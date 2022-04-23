@@ -2,6 +2,9 @@
 	<meta charset="utf-8" />
 	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	{%- if eleventyExcludeFromCollections == "deleted" %}
+	<meta http-equiv="Status" content="410 Gone"/>
+	{%- endif %}
 	{%- include "seo" -%}
 	<link href="/assets/css/normalize.css" rel="stylesheet" />
 	<link href="/assets/css/material-components-web.css" rel="stylesheet" />
