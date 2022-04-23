@@ -8,6 +8,13 @@
         {%- include "header.html" -%}
 
         <main aria-label="Content" class="page-content">
+			{%- if eleventyExcludeFromCollections == "draft" -%}
+			<aside class="unlisted-warning">
+				<strong>Draft Content</strong>
+				<p>This page including the URL and contents is subject to change.</p>
+			</aside>
+			{%- endif -%}
+
             {{ content }}
         </main>
 

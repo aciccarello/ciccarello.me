@@ -12,7 +12,7 @@
 <title>{{ site.title }} | {{ site.description | markdownify }}</title>
 {%- endif %}
 <meta name="generator" content="Eleventy" />
-{%- if excludeFromSitemap %}
+{%- if excludeFromSitemap or eleventyExcludeFromCollections %}
 <meta name="robots" content="noindex">
 {%- endif %}
 <meta property="og:title" content="{{finalTitle}}" />

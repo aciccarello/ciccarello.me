@@ -13,3 +13,8 @@ To run the build with a local build server use the `npm start` command. If you n
 ```bash
 DEBUG=Eleventy* npm start
 ```
+
+# Page Properties
+
+- excludeFromSitemap: Don't show in sitemap.xml and mark as `noindex` to robots
+- eleventyExcludeFromCollections: same as excludeFromSitemap plus don't show in feeds. If set to "draft", page will show a warning.

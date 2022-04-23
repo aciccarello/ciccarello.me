@@ -29,6 +29,8 @@
  * @property {string} [preview_path] - public url template string
  * @property {{preview: boolean}} [editor] - editor pannel config
  * @property {Field[]} fields - fields to show on collection items
+ * @property {{label: string, field: string, pattern: any}[]} [view_filters] - filtering options
+ * @property {{label: string, field: string, pattern: any}[]} [view_groups] - grouping options
  */
 
 /**
@@ -125,6 +127,13 @@ const fields = generateFieldMap([
 		name: asConst('body'),
 		widget: 'markdown',
 	},
+	{
+		name: asConst('eleventyExcludeFromCollections'),
+		label: 'Unlisted reason',
+		widget: 'select',
+		required: false,
+		options: ['', 'draft', 'hidden'],
+	},
 ]);
 
 /**
@@ -149,11 +158,12 @@ function toTitleCase(input) {
  */
 function addDefaultsToCollection(collection) {
 	const label = toTitleCase(collection.name);
-	const hasTitle = Boolean(
-		collection.fields &&
-			collection.fields.find(({ name }) => name === 'title')
-	);
-	const titleDependentProps = hasTitle
+	const hasField = (nameToFind) =>
+		Boolean(
+			collection.fields &&
+				collection.fields.find(({ name }) => name === nameToFind)
+		);
+	const titleDependentProps = hasField('title')
 		? {
 				preview_path: 'posts/{{year}}/{{month}}/{{day}}/{{title}}',
 		  }
@@ -163,6 +173,16 @@ function addDefaultsToCollection(collection) {
 					'posts/{{year}}/{{month}}/{{day}}/{{fields.slug}}',
 				summary: '{{body}}',
 		  };
+	const view_filters = hasField('eleventyExcludeFromCollections')
+		? [
+				...(collection.view_filters || []),
+				{
+					label: 'Drafts',
+					field: 'eleventyExcludeFromCollections',
+					pattern: 'draft',
+				},
+		  ]
+		: collection.view_filters;
 	/** @type {Collection} */
 	const defaultedCollection = {
 		// Default values
@@ -177,6 +197,7 @@ function addDefaultsToCollection(collection) {
 		},
 		fields: [], // TODO: Default fields
 		...collection,
+		view_filters,
 	};
 	return defaultedCollection;
 }
@@ -248,6 +269,7 @@ class CmsConfig {
 						fields.image_alt,
 						fields.image_caption,
 						fields.body,
+						fields.eleventyExcludeFromCollections,
 					],
 				}),
 				addDefaultsToCollection({
@@ -269,6 +291,7 @@ class CmsConfig {
 							default:
 								'## Summary\n- Prep Time\n- Cook Time\n- Servings\n\n{% recipe-ingredients %}\n-\n{% endrecipe-ingredients %}\n\n{% recipe-directions %}\n1.\n{% endrecipe-directions %}',
 						},
+						fields.eleventyExcludeFromCollections,
 					],
 				}),
 				addDefaultsToCollection({
@@ -283,6 +306,7 @@ class CmsConfig {
 						fields.body,
 						fields.canonical_url,
 						fields.permalink,
+						fields.eleventyExcludeFromCollections,
 					],
 				}),
 				addDefaultsToCollection({
@@ -301,6 +325,7 @@ class CmsConfig {
 						fields.image_caption,
 						fields.canonical_url,
 						fields.permalink,
+						fields.eleventyExcludeFromCollections,
 					],
 				}),
 				{
