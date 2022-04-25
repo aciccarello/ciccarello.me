@@ -2,6 +2,7 @@
 # This is used to create the url
 slug: san-diego-bay
 date: 2021-11-28T07:38:04.564Z
+permalink: /photos/2021/11/28/san-diego-bay/
 tags:
   - landscape
 image: /assets/img/2021-san-diego-bay.jpg

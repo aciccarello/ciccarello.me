@@ -1,6 +1,7 @@
 ---
 slug: ocean-sunset
 date: 2021-12-23T14:30:00Z
+permalink: /photos/2021/12/23/ocean-sunset/
 tags:
 - ocean
 - sunset

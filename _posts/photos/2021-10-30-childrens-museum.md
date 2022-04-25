@@ -1,6 +1,7 @@
 ---
 slug: childrens-museum
 date: 2021-10-30T16:50:16.971Z
+permalink: /photos/2021/10/30/childrens-museum/
 tags:
   - foster care
 image: /assets/img/2021-foster-childrens-museum-1.jpg

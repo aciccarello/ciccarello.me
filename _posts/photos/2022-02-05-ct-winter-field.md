@@ -1,6 +1,7 @@
 ---
 slug: ct-winter-field
 date: 2022-02-05T07:23:07.598Z
+permalink: /photos/2022/02/05/ct-winter-field/
 tags:
   - farm
   - landscape

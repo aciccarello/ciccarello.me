@@ -1,6 +1,7 @@
 ---
 slug: joshua-tree
 date: 2021-09-17T07:10:07.903Z
+permalink: /photos/2021/09/17/joshua-tree/
 tags:
   - nature
   - plants

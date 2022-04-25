@@ -1,5 +1,6 @@
 {
-  "permalink": "/photos/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | slugify }}/",
+  "permalink": "/posts/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | slugify }}/",
   "defaultTitle": "Photo Post",
+  "back_button": "/photos/",
   "layout": "photo"
 }

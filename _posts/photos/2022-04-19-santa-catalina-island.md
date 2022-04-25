@@ -1,5 +1,6 @@
 ---
 slug: santa-catalina-island
+permalink: /photos/2022/04/19/santa-catalina-island/
 date: 2022-04-19T07:14:52.288Z
 tags:
   - landscape

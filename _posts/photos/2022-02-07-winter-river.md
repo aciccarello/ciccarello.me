@@ -1,6 +1,7 @@
 ---
 slug: winter-river
 date: 2022-02-07T06:25:49.165Z
+permalink: /photos/2022/02/07/winter-river/
 tags:
   - landscape
   - river

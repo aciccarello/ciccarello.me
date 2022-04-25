@@ -1,6 +1,7 @@
 ---
 slug: california-quail
 date: 2022-04-19T07:36:07.238Z
+permalink: /photos/2022/04/19/california-quail/
 tags:
   - nature
   - birding

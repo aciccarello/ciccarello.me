@@ -1,6 +1,7 @@
 ---
 slug: gull-sunset
 date: 2022-02-09T04:46:52.356Z
+permalink: /photos/2022/02/09/gull-sunset/
 tags:
   - sunset
   - birds

@@ -1,6 +1,7 @@
 ---
 slug: cobwebby-thistle
 date: 2022-04-19T07:27:51.003Z
+permalink: /photos/2022/04/19/cobwebby-thistle/
 tags:
   - nature
   - plants
