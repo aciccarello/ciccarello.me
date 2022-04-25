@@ -564,6 +564,14 @@ figcaption {
 	display: inline;
 }
 
+.cooklang-ingredient {
+	font-weight: bold;
+}
+
+.cooklang-timer {
+	font-style: italic;
+}
+
 @media screen and (max-width: 600px) {
 	.hide-xs {
 		display: none;

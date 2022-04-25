@@ -1,23 +1,25 @@
-const md = require('markdown-it')({
-	linkify: true,
-	html: true,
-	typographer: true,
-})
-	.use(require('markdown-it-attrs'), {
-		allowedAttributes: ['id', 'class'],
+const initializeMarkdown = () =>
+	require('markdown-it')({
+		linkify: true,
+		html: true,
+		typographer: true,
 	})
-	.use(require('markdown-it-image-figures'), {
-		figcaption: true,
-		copyAttrs: 'class',
-	})
-	.use(require('markdown-it-anchor'), {
-		// This only applies to anchors
-		slugify: (s) =>
-			require('slugify')(s, {
-				remove: /[*+~,.()'"’!\?:@]/g,
-				lower: true,
-			}),
-	});
+		.use(require('markdown-it-attrs'), {
+			allowedAttributes: ['id', 'class'],
+		})
+		.use(require('markdown-it-image-figures'), {
+			figcaption: true,
+			copyAttrs: 'class',
+		})
+		.use(require('markdown-it-anchor'), {
+			// This only applies to anchors
+			slugify: (s) =>
+				require('slugify')(s, {
+					remove: /[*+~,.()'"’!\?:@]/g,
+					lower: true,
+				}),
+		});
+const md = initializeMarkdown();
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 function yearsSince(date) {
 	const start = new Date(date);
@@ -87,6 +89,9 @@ module.exports = function (eleventyConfig) {
 			throw error;
 		}
 	});
+	const cooklangMd = initializeMarkdown().use(
+		require('markdown-it-cooklang')
+	);
 	eleventyConfig.addPairedShortcode('markdownify', (content) => {
 		return md.render(content || '');
 	});
@@ -100,6 +105,23 @@ module.exports = function (eleventyConfig) {
 	});
 	eleventyConfig.addPairedShortcode('recipe-directions', (content) => {
 		let render = md.render('## Directions\n' + content);
+		render = render.replace(
+			'<ol>',
+			'<ol class="e-instructions instructions">'
+		);
+		return render;
+	});
+	eleventyConfig.addPairedShortcode('recipe-cooklang', (content) => {
+		let render = cooklangMd.render(`## Ingredients
+
+[[ingredients]]
+
+## Directions
+${content}`);
+		render = render.replace(
+			/<li>(?=[\s\S]*?<ol>)/gm, // Only modify list items before directions ordered list
+			'<li class="p-ingredient ingredient">'
+		);
 		render = render.replace(
 			'<ol>',
 			'<ol class="e-instructions instructions">'

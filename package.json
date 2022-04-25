@@ -36,6 +36,7 @@
     "lint-staged": "^12.3.2",
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-attrs": "^4.1.3",
+    "markdown-it-cooklang": "^0.3.6",
     "markdown-it-image-figures": "^2.0.1",
     "netlify-cms-proxy-server": "^1.3.23",
     "prettier": "^2.5.1"
