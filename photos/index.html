@@ -13,6 +13,13 @@ eleventyComputed:
 ---
 
 <style type="text/css">
+.multiple-photo-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, .5))
+}
 .mdc-grid-tile {
 	width: calc(50% - 4px);
 }
@@ -56,6 +63,13 @@ a.mdc-grid-tile__primary {
 		<li class="mdc-grid-tile">
 			<a class="mdc-grid-tile__primary" href="{{ post.url | url }}" role="img">
 				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}" loading="lazy" class="mdc-grid-tile__primary-content" />
+				{% if post.templateContent contains "<figure" %}
+				<svg xmlns="http://www.w3.org/2000/svg" class="multiple-photo-icon" height="24px" viewBox="0 0 24 24" width="24px" role="img" fill="#FFFFFF">
+					<title>Post contains multiple images</title>
+					<path d="M0 0h24v24H0V0z" fill="none"/>
+					<path d="M1 5h2v14H1zm4 0h2v14H5zm17 0H10c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM11 17l2.5-3.15L15.29 16l2.5-3.22L21 17H11z"/>
+				</svg>
+				{% endif %}
 				<div class="mdc-grid-tile__overlay">
 					<span class="mdc-typography--subtitle2">{{ post.date | date: "%b %e, %Y" }}</span>
 					<div class="mdc-grid-tile__title mdc-typography--body1">
