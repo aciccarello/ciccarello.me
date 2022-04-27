@@ -12,8 +12,8 @@ eleventyComputed:
   title: "Blog - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}"
 ---
 
-<div class="home container">
-	<h1 class="post-list-heading mdc-typography--headline4">
+<div class="home container h-feed">
+	<h1 class="post-list-heading mdc-typography--headline4 p-name">
 		{{ page.list_title | default: "Articles" }}
 	</h1>
 	<ol class="post-list">

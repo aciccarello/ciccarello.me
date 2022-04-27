@@ -54,15 +54,15 @@ a.mdc-grid-tile__primary {
 	opacity: 1;
 }
 </style>
-<div class="home container mdc-grid-list">
-	<h1 class="post-list-heading mdc-typography--headline4">
+<div class="home container mdc-grid-list h-feed">
+	<h1 class="post-list-heading mdc-typography--headline4 p-name">
 		{{ page.list_title | default: "Photos" }}
 	</h1>
 	<ol class="mdc-grid-list__tiles photo-grid">
 		{%- for post in photos -%}
-		<li class="mdc-grid-tile">
+		<li class="mdc-grid-tile h-entry">
 			<a class="mdc-grid-tile__primary" href="{{ post.url | url }}" role="img">
-				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}" loading="lazy" class="mdc-grid-tile__primary-content" />
+				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}" loading="lazy" class="mdc-grid-tile__primary-content u-photo" />
 				{% if post.templateContent contains "<figure" %}
 				<svg xmlns="http://www.w3.org/2000/svg" class="multiple-photo-icon" height="24px" viewBox="0 0 24 24" width="24px" role="img" fill="#FFFFFF">
 					<title>Post contains multiple images</title>
@@ -71,8 +71,8 @@ a.mdc-grid-tile__primary {
 				</svg>
 				{% endif %}
 				<div class="mdc-grid-tile__overlay">
-					<span class="mdc-typography--subtitle2">{{ post.date | date: "%b %e, %Y" }}</span>
-					<div class="mdc-grid-tile__title mdc-typography--body1">
+					<span class="mdc-typography--subtitle2 dt-published">{{ post.date | date: "%b %e, %Y" }}</span>
+					<div class="mdc-grid-tile__title mdc-typography--body1 p-summary">
 						{{ post.templateContent | strip_html | joinLines | truncatewords: 20 }}
 					</div>
 				</div>

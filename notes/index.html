@@ -12,8 +12,8 @@ eleventyComputed:
   title: "Notes{% if pagination.pages.length > 1 %} - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}{% endif %}"
 ---
 
-<div class="home container">
-	<h2 class="post-list-heading mdc-typography--headline4">
+<div class="home container h-feed">
+	<h1 class="post-list-heading mdc-typography--headline4 p-name">
 		{{ page.list_title | default: "Notes" }}
 	</h2>
 	<p>

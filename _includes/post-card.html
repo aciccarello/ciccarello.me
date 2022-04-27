@@ -1,12 +1,12 @@
-<div class="mdc-card mdc-elevation-transition">
+<div class="mdc-card mdc-elevation-transition h-entry">
 	{%- if post.data.image -%}
 	<a class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
 		style="background-image: url('{{ post.data.image }}');"></a>
 	{%- endif -%}
-	<a class="mdc-card__primary disable-link-styles {% if post.data.layout == "note" %}note-card{% endif %}" href="{{ post.url | url }}">
+	<a class="mdc-card__primary disable-link-styles u-rul {% if post.data.layout == "note" %}note-card{% endif %}" href="{{ post.url | url }}">
 		<div class="post-heading">
 			{%- if post.data.title -%}
-			<h3 class="mdc-typography--headline6">
+			<h3 class="mdc-typography--headline6 p-name">
 				{{ post.data.title | escape }}
 			</h3>
 			{%- endif -%}
@@ -15,7 +15,7 @@
 			</time>
 		</div>
 		<div class="post-body mdc-typography--body1">
-			<p class="post-text">
+			<p class="post-text p-summary">
 				{%- if post.data.subtitle -%}
 				{{ post.data.subtitle | strip_html }}
 				{%- else -%}

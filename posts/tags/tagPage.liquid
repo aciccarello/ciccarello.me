@@ -10,8 +10,8 @@ eleventyComputed:
     title: Posts tagged {{ tag }}
 ---
 
-<div class="home container">
-	<h1 class="post-list-heading mdc-typography--headline4">
+<div class="home container h-feed">
+	<h1 class="post-list-heading mdc-typography--headline4 p-name">
 		Posts tagged "{{ tag }}"
 	</h1>
     {%- if descriptions[tag] %}
