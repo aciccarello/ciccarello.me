@@ -1,6 +1,9 @@
 ---
 title: Foster Care
 layout: page
+image: /assets/img/foster-care-header.jpg
+image_alt: Child playing with train set.
+image_caption: Photo by Bekah Ciccarello
 ---
 <style type="text/css">
   h1, h2, h3, h4, h5 {
@@ -8,32 +11,30 @@ layout: page
   }
 </style>
 
-{% markdownify %}
-![Child playing with train set.](
-    /assets/img/foster-care-header.jpg
-    "Photo by Bekah Ciccarello"
-){.post-img--wide}
-
 ## Our Foster Care Journey
+
 Bekah and I started our first foster care placement mid September 2021 of a five-year-old boy and a one-year-old girl and they returned to live with family members 6 months later. We received our license for foster care in San Diego California on July 20th, 2021. For more information, check out our [foster care posts](/posts/tags/foster%20care). If you have any questions you can always [reach out to me directly](/#connect).
 
 ## How you can help us
- - Pray for wisdom as we adjust to parenthood and make decisions about who we will foster
- - Pray for the foster kids and their families as they work through this hard transition
- - Help us make our home more kid friendly with items from our [registry](https://www.babylist.com/ciccarello-foster-care)
- - If you live nearby, offer to come over to baby sit or even just play with the kids
- - Be patient with us and our children when we deal with hard days or are unable to attend social engagements
 
- ## How you can help foster kids
- - Learn more about foster care and dignifying ways to acknowledge kid's experiences
- - Get involved with helping foster families through a local organization or church
- - Provide support for struggling families to help protect at risk kids through an organization like [Safe Families](https://safe-families.org/)
- - Become a [Court Appointed Special Advocate (CASA)](https://www.speakupnow.org/) to support a child through the legal process
+- Pray for wisdom as we adjust to parenthood and make decisions about who we will foster
+- Pray for the foster kids and their families as they work through this hard transition
+- Help us make our home more kid friendly with items from our [registry](https://www.babylist.com/ciccarello-foster-care)
+- If you live nearby, offer to come over to baby sit or even just play with the kids
+- Be patient with us and our children when we deal with hard days or are unable to attend social engagements
+
+## How you can help foster kids
+
+- Learn more about foster care and dignifying ways to acknowledge kid's experiences
+- Get involved with helping foster families through a local organization or church
+- Provide support for struggling families to help protect at risk kids through an organization like [Safe Families](https://safe-families.org/)
+- Become a [Court Appointed Special Advocate (CASA)](https://www.speakupnow.org/) to support a child through the legal process
 
 ## Subscribe for updates
-To find out when I've made new posts you can subscribe by email below (or by [RSS](/posts/tags/foster%20care/feed.xml)).
-{% endmarkdownify %}
 
+To find out when I've made new posts you can subscribe by email below (or by [RSS](/posts/tags/foster%20care/feed.xml)).
+
+{% removeindents %}
 <style type="text/css">
 .ml-form-embedSubmitLoad {
   display: inline-block;
@@ -629,8 +630,8 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 </script>
 <!-- <img src="https://track.mailerlite.com/webforms/o/4413934/b2g2o5?v1626849148" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0"> -->
 <script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c" type="text/javascript"></script>
+{% endremoveindents %}
 
-{% markdownify %}
 ## Learn more about Foster Care
 
 - People to Follow
@@ -652,19 +653,20 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 - Books
   - [Three Little Words](http://rhodes-courter.com/three-little-words/)
   - [Kids Matter Inc. Book recommendations](https://kidsmatterinc.org/get-help/for-families/talking-to-kids-about-foster-care/) (bottom of page)
-{% endmarkdownify %}
 
+{% removeindents %}
 <div class="home container">
-	<h2 class="post-list-heading mdc-typography--headline4">
-		Latest Updates
-            <a class="mdc-button mdc-button--outlined" href="/posts/tags/foster care">
-                See All
-            </a>
-	</h2>
-	<ol class="post-list">
-		{%- assign post = collections["foster care"] | last %}
-        <li>
-        {% include "post-card.html" post: post %}
-        </li>
-    </ol>
+ <h2 class="post-list-heading mdc-typography--headline4">
+  Latest Updates
+    <a class="mdc-button mdc-button--outlined" href="/posts/tags/foster care">
+        See All
+    </a>
+ </h2>
+ <ol class="post-list">
+  {%- assign post = collections["foster care"] | last %}
+    <li>
+    {% include "post-card.html" post: post %}
+    </li>
+  </ol>
 </div>
+{% endremoveindents %}

@@ -95,6 +95,10 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPairedShortcode('markdownify', (content) => {
 		return md.render(content || '');
 	});
+	// Remove indents to avoid markdown converting to code blocks
+	eleventyConfig.addPairedShortcode('removeindents', (content) => {
+		return content.replace(/^\s+/gm, '');
+	});
 	eleventyConfig.addPairedShortcode('recipe-ingredients', (content) => {
 		let render = md.render('## Ingredients\n' + content);
 		render = render.replaceAll(
