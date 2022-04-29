@@ -1,34 +1,46 @@
 ---
 title: Foster Care
 layout: page
+last_modified_date: 2022-04-29
 image: /assets/img/foster-care-header.jpg
 image_alt: Child playing with train set.
 image_caption: Photo by Bekah Ciccarello
 ---
 <style type="text/css">
+  :root {
+    --mdc-theme-primary: #8e44ad; /*The theme primary color.*/
+  }
+
   h1, h2, h3, h4, h5 {
     margin-top: 1.5em;
   }
 </style>
 
+## What we're doing now
+
+We are currently working on transferring our license to a different foster care agency we feel better aligns with our values and we can trust to provide solid support. If you have any questions you can always [reach out to me directly](/#connect).
+
 ## Our Foster Care Journey
 
-Bekah and I started our first foster care placement mid September 2021 of a five-year-old boy and a one-year-old girl and they returned to live with family members 6 months later. We received our license for foster care in San Diego California on July 20th, 2021. For more information, check out our [foster care posts](/posts/tags/foster%20care). If you have any questions you can always [reach out to me directly](/#connect).
+We initially started the process to become licensed resource parent license in the middle of 2020. After a series of delays, we [finally were licensed](/blog/2021/07/26/we're-becoming-foster-parents/) in San Diego California on July 20th, 2021. We had our [first foster care placement](/blog/2021/10/03/we've-started-our-first-placement/) mid September 2021 of a five-year-old boy and a one-year-old girl and they [returned](/blog/2022/01/30/wrapping-up-our-first-fostering-experience/) to live with family members 6 weeks later. For more information, check out our [foster care posts](/posts/tags/foster%20care).
 
 ## How you can help us
 
+- Pray that we can use this transitional time to best prepare ourselves and our home for future foster kids
 - Pray for wisdom as we adjust to parenthood and make decisions about who we will foster
-- Pray for the foster kids and their families as they work through this hard transition
+- Pray for our future and former foster kids and their families as they work through life challenges and transitions
 - Help us make our home more kid friendly with items from our [registry](https://www.babylist.com/ciccarello-foster-care)
-- If you live nearby, offer to come over to baby sit or even just play with the kids
+- If you live nearby, let us know if you're able to come over to baby sit or even just play with our future foster kids
 - Be patient with us and our children when we deal with hard days or are unable to attend social engagements
 
 ## How you can help foster kids
 
 - Learn more about foster care and dignifying ways to acknowledge kid's experiences
+- Learn about trauma informed care and how experiences impact kids' brains
 - Get involved with helping foster families through a local organization or church
 - Provide support for struggling families to help protect at risk kids through an organization like [Safe Families](https://safe-families.org/)
 - Become a [Court Appointed Special Advocate (CASA)](https://www.speakupnow.org/) to support a child through the legal process
+- Become a foster parent yourself
 
 ## Subscribe for updates
 
@@ -77,26 +89,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   position: static;
   width: 100% !important;
 }
-#mlb2-4413934.ml-form-embedContainer button,
-#mlb2-4413934.ml-form-embedContainer p,
-#mlb2-4413934.ml-form-embedContainer span {
-  text-transform: none !important;
-  letter-spacing: normal !important;
-}
-#mlb2-4413934.ml-form-embedContainer .ml-form-embedWrapper {
-  border-width: 0;
-  border-color: transparent;
-  border-radius: 4px;
-  border-style: solid;
-  box-sizing: border-box;
-  display: inline-block !important;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-#mlb2-4413934.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
-  width: 100%;
-}
+
 #mlb2-4413934.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -628,7 +621,6 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 <script>
   function ml_webform_success_4413934(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-4413934 .row-success").show(),r(".ml-subscribe-form-4413934 .row-form").hide()}
 </script>
-<!-- <img src="https://track.mailerlite.com/webforms/o/4413934/b2g2o5?v1626849148" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0"> -->
 <script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c" type="text/javascript"></script>
 {% endremoveindents %}
 
@@ -642,8 +634,8 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   - [@adoptioneducationkeys](/instagram.com/adoptioneducationkeys) - Account featuring birth parents
   - [Foster the Family Blog](http://www.fosterthefamilyblog.com/)
 - Organizations
-  - [California Department of Social Services](https://www.cdss.ca.gov/inforesources/foster-care) - Information on Foster Care in California
   - [Child Welfare Information Gateway](https://www.childwelfare.gov/topics/outofhome/resources-foster-families/how-to/) - Federal information on supporting forster kids
+  - [California Department of Social Services](https://www.cdss.ca.gov/inforesources/foster-care) - Information on Foster Care in California
   - [Safe Families](https://safe-families.org/) - Support for bio-families to avoid foster care
   - [Court Appointed Special Advocate (CASA)](https://www.speakupnow.org/) - Foster child advocacy groupp
   - [Restoration225](http://restoration225.org/) - Local foster family support organization
@@ -652,7 +644,9 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   - [Trust Based Relation Intervention](https://child.tcu.edu/about-us/tbri/) (TBRI) - Information on how kids from hard places build attachment relationships
 - Books
   - [Three Little Words](http://rhodes-courter.com/three-little-words/)
-  - [Kids Matter Inc. Book recommendations](https://kidsmatterinc.org/get-help/for-families/talking-to-kids-about-foster-care/) (bottom of page)
+  - [The Connected Child](https://showhope.org/product/the-connected-child/)
+  - [recommendations from Kids Matter Inc.](https://kidsmatterinc.org/get-help/for-families/talking-to-kids-about-foster-care/) (bottom of page)
+  - [recommendations from Show Hope](https://showhope.org/recommended-resources/)
 
 {% removeindents %}
 <div class="home container">
@@ -663,9 +657,15 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
     </a>
  </h2>
  <ol class="post-list">
-  {%- assign post = collections["foster care"] | last %}
+  {%- assign posts = collections["foster care"] %}
     <li>
-    {% include "post-card.html" post: post %}
+    {% include "post-card.html" post: posts[-1] %}
+    </li>
+    <li>
+    {% include "post-card.html" post: posts[-2] %}
+    </li>
+    <li>
+    {% include "post-card.html" post: posts[-3] %}
     </li>
   </ol>
 </div>
