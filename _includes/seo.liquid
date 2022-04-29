@@ -11,7 +11,7 @@
 {%- else %}
 <title>{{ site.title }} | {{ site.description | markdownify }}</title>
 {%- endif %}
-<meta name="generator" content="Eleventy" />
+<meta name="generator" content="{{ eleventy.generator }}" />
 {%- if excludeFromSitemap or eleventyExcludeFromCollections %}
 <meta name="robots" content="noindex">
 {%- endif %}
