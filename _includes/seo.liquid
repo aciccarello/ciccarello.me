@@ -1,6 +1,5 @@
 {%- assign fullUrl = page.url | addBaseUrl -%}
 {%- assign finalTitle = title | default : site.title -%}
-{%- assign collectionData = collections.all | getCollectionItem: page -%}
 {%- if page.inputPath contains ".md" and collectionData -%}
     {%- assign pageContent = collectionData.templateContent | strip_html | joinLines | truncate: 150 | escape -%}
 {%- else -%}

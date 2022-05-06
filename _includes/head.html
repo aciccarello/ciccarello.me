@@ -1,3 +1,4 @@
+{%- assign collectionData = collections.all | getCollectionItem: page -%}
 <head>
 	<meta charset="utf-8" />
 	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
@@ -10,6 +11,9 @@
 	<link href="/assets/css/material-components-web.css" rel="stylesheet" />
 	<link rel="stylesheet" href="/assets/main.css" />
 	<link rel="stylesheet" href="/assets/css/fonts/Roboto/roboto.css" />
+	{%- if collectionData.templateContent contains "</pre>" %}
+	<link rel="stylesheet" href="{{ '/assets/css/highlight.css' | url }}">
+	{%- endif %}
 	<link
 		rel="preload"
 		href="/assets/css/fonts/Roboto/roboto-v20-latin-500.woff2"
