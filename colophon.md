@@ -19,7 +19,7 @@ In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concep
 
 The code for this website is on [GitHub](https://github.com/aciccarello/ciccarello.me) and deployed to [Netlify](https://www.netlify.com/). The build is processed using [Eleventy](11ty.dev) a static site generator for node. This site was originally hosted on GitHub pages with a Jekyll build when it was launched at the end of 2017.
 
-The styles of this site are a combination of hand-written styles and [Material Components for the Web](https://material.io/components/).
+The styles of this site are a combination of hand-written styles and [Material Components for the Web](https://material.io/components/). See the [style guide](/style-guide) for more details on theming.
 The site uses the [Roboto font](https://fonts.google.com/specimen/Roboto#glyphs) (self hosted). Included are some SVG icons from [Material Design Icons](https://material.io/tools/icons/?style=baseline).
 Other icons (like logos) are made by [Pixel perfect](https://icon54.com/) from [www.flaticon.com](https://www.flaticon.com/)
 
@@ -29,4 +29,4 @@ If there is an problem with this website or improvement you'd like to suggest, p
 
 ---
 
-[Colophon](<https://en.wikipedia.org/wiki/Colophon_(publishing)>) is a publishing term typically used to describe the publishing process but has been [expanded to websites](https://indieweb.org/colophon). This page was inspired by [Binyamin Aron Green](https://binyam.in/colophon/) and [Eric Bailey](https://ericwbailey.design/colophon/).
+[Colophon](https://en.wikipedia.org/wiki/Colophon_(publishing)) is a publishing term typically used to describe the publishing process but has been [expanded to websites](https://indieweb.org/colophon). This page was inspired by [Binyamin Aron Green](https://binyam.in/colophon/) and [Eric Bailey](https://ericwbailey.design/colophon/).
