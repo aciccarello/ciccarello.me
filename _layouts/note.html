@@ -51,7 +51,7 @@ layout: default
 
 	<div class="post-footer">
 		{%- if tags.size > 0 -%}
-		<ul class="mdc-chip-set">
+		<ul class="mdc-chip-set" title="Tags">
 			{% for tag in tags %}
 			<a href="/posts/tags/{{tag}}/" rel="tag" class="mdc-chip">
 				<span class="mdc-chip__text">{{ tag }}</span>

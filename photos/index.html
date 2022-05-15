@@ -61,7 +61,7 @@ a.mdc-grid-tile__primary {
 	<ol class="mdc-grid-list__tiles photo-grid">
 		{%- for post in photos -%}
 		<li class="mdc-grid-tile h-entry">
-			<a class="mdc-grid-tile__primary" href="{{ post.url | url }}" role="img">
+			<a class="mdc-grid-tile__primary" href="{{ post.url | url }}">
 				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}" loading="lazy" class="mdc-grid-tile__primary-content u-photo" />
 				{% if post.templateContent contains "<figure" %}
 				<svg xmlns="http://www.w3.org/2000/svg" class="multiple-photo-icon" height="24px" viewBox="0 0 24 24" width="24px" role="img" fill="#FFFFFF">

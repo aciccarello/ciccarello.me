@@ -24,7 +24,7 @@
 			</p>
             {%- assign tags = post.data.tags -%}
             {%- if tags.size > 0 or showKind %}
-                <ul class="mdc-chip-set p-category">
+                <ul class="mdc-chip-set p-category" title="Tags">
 					{%- if showKind %}
 					<span class="mdc-chip">
 						<span class="mdc-chip__text">{{ post.data.layout }}</span>
