@@ -1,26 +1,38 @@
-<footer class="mdc-typography--caption">
-	<section class="container flex-row">
+<footer>
+	<section>
+		<h2>Featured</h2>
 		<nav>
-			<a href="/">Home</a> / <a href="/posts/">Posts</a> /
-			<a href="/foster/">Foster Care</a> /
-			<a href="/links/">Links</a> / <a href="/privacy/">Privacy</a> /
-			<a href="/colophon/">Colophon</a> /
+			<a href="/">Home</a>
+			<a href="/posts/">Posts</a>
+			<a href="/links/">Links</a>
+			<a href="/foster/">Foster Care</a>
+		</nav>
+	</section>
+	<section>
+		<h2>Meta</h2>
+		<nav>
+			<a href="/colophon/">Colophon</a>
+			<a href="/privacy/">Privacy</a>
+			{%- if eleventyExcludeFromCollections != "deleted" -%}
+			<a href="https://github.com/aciccarello/ciccarello.me/blob/main/{{ page.inputPath }}" rel="noopener">
+				Page source
+			</a>
+			{% endif %}
+		</nav>
+	</section>
+	<section>
+		<h2>Elsewhere</h2>
+		<nav>
 			<a href="https://www.linkedin.com/in/anthonyciccarello/" rel="noopener"
 				>LinkedIn</a
 			>
 		</nav>
-		<span class="flex-grow"></span>
-		{%- if eleventyExcludeFromCollections != "deleted" -%}
-		<a href="https://github.com/aciccarello/ciccarello.me/blob/main/{{ page.inputPath }}" rel="noopener">
-			View page source
-		</a>
-		{% endif %}
 	</section>
 	{%- if page.url == "/" %}
-		<div class="container"> Site Last Updated:
-			<time datetime="{{ buildTime | formatMachineDate }}">
-				{{- buildTime | formatHumanDate: true -}}
-			</time>
-		</div>
+	<div class="site-updated"> Site Last Updated:
+		<time datetime="{{ buildTime | formatMachineDate }}">
+			{{- buildTime | formatHumanDate: true -}}
+		</time>
+	</div>
 	{% endif %}
 </footer>

@@ -7,6 +7,7 @@
 	--mdc-theme-secondary-light: #63a4ff; /* The theme secondary color (light variant). */
 	--mdc-theme-secondary-dark: #004ba0; /* The theme secondary color (dark variant). */
 	--mdc-theme-background: #fafafa; /* The theme background color. */
+	--container-width: 64rem;
 }
 
 p {
@@ -19,7 +20,7 @@ p {
 	padding-left: 1rem;
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 64rem;
+	max-width: var(--container-width);
 }
 
 .title-link {
@@ -49,9 +50,32 @@ footer {
 	max-width: 100vw;
 	overflow-x: auto;
 	flex-shrink: 0;
+	background-color: #e0e0e0;
+	border-top: #9f9f9f 1px solid;
+	display: grid;
+	grid: auto / 1fr 1fr 1fr;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem;
 }
-footer nav {
-	flex-wrap: wrap;
+
+footer section {
+	text-align: center;
+}
+
+footer h2 {
+	font-size: 1.25rem;
+	margin: 1rem 0 0.75rem;
+}
+
+footer a {
+	display: block;
+	margin: 0.25rem;
+}
+
+footer .site-updated {
+	text-align: right;
+	grid-column: 1 / 4
 }
 
 figure {
@@ -241,19 +265,6 @@ svg + .mdc-typography--headline6 {
 	text-decoration: none;
 	font-size: 20px;
 	margin: 8px;
-}
-
-footer {
-	padding: 16px 0px 8px;
-	background-color: #e0e0e0;
-}
-
-footer > nav > a {
-	margin: 0 4px;
-}
-
-footer > nav > a:first-child {
-	margin-left: 0;
 }
 
 .flex-row {
@@ -583,7 +594,8 @@ figcaption {
 	}
 
 	/* Specificity fix to avoid the above padding changes */
-	.post.container, .post.author-card {
+	.post.container,
+	.post.author-card {
 		padding: 0;
 	}
 
