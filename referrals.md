@@ -89,6 +89,16 @@ Check out Google Pay, a simple and secure payments app by Google.
 
 Okay, this is getting a little ridiculous people. But why not?
 
+### EnergySage
+
+I used this service while I was looking at solar companies. They offer a way to get solar quotes without being inundated with emails and phone calls. In the end, I chose someone local on www.solarreviews.com but I still like the service and they have helpful information.
+
+**You get:** A $25 Amazon gift card when you choose to go solare with someone through the marketplace
+
+**I get:** A $100 Amazon gift card
+
+[Get solar quotes](https://solarrewards.energysage.com/l/1ANTHONYCIC70/) [Details](https://www.energysage.com/rewards/)
+
 ### Airbnb
 
 In case you're thinking about hosting guests on Airbnb...
