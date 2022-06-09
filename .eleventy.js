@@ -11,6 +11,7 @@ const initializeMarkdown = () =>
 			figcaption: true,
 			copyAttrs: 'class',
 		})
+		.use(require('markdown-it-html5-media').html5Media)
 		.use(require('markdown-it-anchor'), {
 			// This only applies to anchors
 			slugify: (s) =>

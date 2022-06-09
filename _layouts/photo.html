@@ -6,7 +6,14 @@ layout: default
 	{% if image %}
 	<figure class="mdc-card__media post-thumbnail u-featured">
 		<a class="u-url" href="{{ page.url | url }}">
+			{% assign filetype = image | split: "." | last -%}
+			{% if filetype == 'mp4' -%}
+			<video autoplay loop class="u-video post-img--wide" alt="{{ image_alt | escape }}">
+				<source type="video/mp4" src="{{ image }}">
+			</video>
+			{% else -%}
 			<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo post-img--wide" />
+			{% endif %}
 		</a>
 		{% if image_caption %}
 		<figcaption class="mdc-typography--caption">
@@ -37,6 +44,22 @@ layout: default
 
 	<div class="post-content mdc-typography--body1 e-content">
 		{{ content }}
+		{%- if syndication and syndication.size > 0 %}
+		<p><small>Also posted to:
+			{%- for url in syndication -%}
+			{%- if foreloop.index0 > 0 %}, {% endif -%}
+			<a rel="syndication" class="u-syndication" href="{{url}}">
+				{%- assign segments = url | split: '/' %}
+				{%- for segment in segments -%}
+					{%- assign dotSplit = segment | split: '.' -%}
+					{%- if dotSplit.size > 1 -%}
+						{{segment}}
+					{%- endif -%}
+				{%- endfor -%}
+			</a>
+			{%- endfor -%}
+		</small></p>
+		{%- endif %}
 	</div>
 </article>
 <section class="container mdc-card author-card">

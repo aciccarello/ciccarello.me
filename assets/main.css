@@ -165,6 +165,14 @@ hr {
 	flex-direction: column;
 }
 
+.mdc-card__media--16-9 > video {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+}
+
 .note-card .post-text {
 	font-size: 1.1em;
 	-webkit-line-clamp: 5;
@@ -362,7 +370,7 @@ a.disable-link-styles {
 	padding: 0;
 }
 
-.post img {
+.post img, .post video {
 	width: 100%;
 	max-width: 40rem;
 }
@@ -395,16 +403,23 @@ figure.post-img--float-right {
 	float: right;
 }
 
-img.post-img--float {
+img.post-img--float,
+video.post-img--float {
 	max-width: 100%;
 }
-img.post-img--wide {
+img.post-img--wide,
+video.post-img--wide {
 	max-width: 100%;
 }
 
 figcaption {
 	font-size: 0.8rem;
 	line-height: 1.25rem;
+}
+
+.html5-video-player {
+	display: block;
+	margin: auto;
 }
 
 .post-header,

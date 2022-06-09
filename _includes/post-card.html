@@ -1,7 +1,14 @@
 <div class="mdc-card mdc-elevation-transition h-entry">
 	{%- if post.data.image -%}
+	{% assign filetype = post.data.image | split: "." | last -%}
 	<a class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
-		style="background-image: url('{{ post.data.image }}');"></a>
+		{% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
+		{% if filetype == 'mp4' -%}
+		<video preload="metadata" alt="{{ post.data.image_alt | escape }}">
+			<source type="video/mp4" src="{{ post.data.image }}">
+		</video>
+		{% endif %}
+	</a>
 	{%- endif -%}
 	<a class="mdc-card__primary disable-link-styles u-rul {% if post.data.layout == "note" %}note-card{% endif %}" href="{{ post.url | url }}">
 		<div class="post-heading">
