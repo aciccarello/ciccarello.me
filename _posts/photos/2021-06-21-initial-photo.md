@@ -8,6 +8,7 @@ image_caption: The northern California Coast
 tags:
 - nature
 - ocean
+- site changes
 
 ---
 Photography has been a fun hobby to pick up. Though I may backfill older posts I wanted to start with something fresh. I'm looking forward to adding more content to my site.
