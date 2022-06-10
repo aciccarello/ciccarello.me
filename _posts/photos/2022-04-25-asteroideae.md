@@ -6,7 +6,7 @@ tags:
   - nature
 image: /assets/img/2022-yellow-flowers.jpg
 image_alt: small, yellow flowers reaching up in bright sunlight
+syndication:
+ - https://www.inaturalist.org/observations/112709531
 ---
 I got a lot of sun this weekend, but I'd like to think it was worth it.
-
-Also posted on <a href="https://www.inaturalist.org/observations/112709531" class="u-syndication">iNaturalist</a>
