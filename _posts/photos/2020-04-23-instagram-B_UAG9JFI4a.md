@@ -3,6 +3,8 @@ slug: B_UAG9JFI4a
 redirectFrom: 2020/04/23/posts/B_UAG9JFI4a
 date: 2020-04-23T05:59:50.000Z
 tags: 
+  - plants
+  - houseplants
   - earthday
 image: /assets/img/instagram_93974536_236607384418007_8148141117099256171_n_17851993690988118.jpg
 image_alt: "Three succulents in small pots."

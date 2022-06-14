@@ -3,6 +3,9 @@ slug: B9jpD8kAblU
 date: 2020-03-10T14:43:30.000Z
 image: /assets/img/instagram_89450528_135418354653786_6366349397482120512_n_17844092471027649.jpg
 image_alt: "Person kayaking on a river with geese, houses, and hills behind."
+tags:
+ - nature
+ - personal
 syndication:
  - https://www.instagram.com/p/B9jpD8kAblU/
 ---

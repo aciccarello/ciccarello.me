@@ -4,6 +4,8 @@ date: 2020-06-05T16:11:17.000Z
 tags: 
   - BlackBirdersWeek
   - BlackWomenWhoBird
+  - ocean
+  - birding
 image: /assets/img/instagram_101960415_2681908388799221_3130183797543882217_n_17867618557804143.jpg
 image_alt: "Silhouette of palm trees and flying bird with ocean sunset in background."
 syndication:
@@ -19,4 +21,3 @@ The last day of [#BlackBirdersWeek](/posts/tags/BlackBirdersWeek) is for [#Black
 [@ldpharr](https://www.instagram.com/ldpharr/)
 
 Thanks to all these voices for sharing their experiences and especially those who helped organize this [@blackafinstem](https://www.instagram.com/blackafinstem/) event.
-

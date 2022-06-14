@@ -16,5 +16,3 @@ syndication:
 Sometimes the camera captures the picture you want. Sometimes it captures something else.
 
 Pictured in background: Allen's Hummingbird
-
-[#photofail](/posts/tags/photofail) [#photofailfriday](/posts/tags/photofailfriday) [#naturephotography](/posts/tags/naturephotography) [#nature](/posts/tags/nature) [#birds](/posts/tags/birds)

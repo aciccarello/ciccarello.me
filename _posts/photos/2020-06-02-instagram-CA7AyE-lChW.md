@@ -2,6 +2,7 @@
 slug: CA7AyE-lChW
 date: 2020-06-02T06:07:30.000Z
 tags: 
+  - birds
   - postabird
   - BlackBirdersWeek
 image: /assets/img/2020-birding-ca-brown-pelican.jpg

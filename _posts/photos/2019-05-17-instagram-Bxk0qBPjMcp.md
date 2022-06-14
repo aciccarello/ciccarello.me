@@ -5,6 +5,9 @@ image: /assets/img/instagram_59454849_425778354911400_3662362317289161791_n_1802
 image_alt: "Closeup of a stone wall with large blocks covered in lichen."
 tags:
  - texture
+ - travel
+ - Peru
+ - ruins
 syndication:
  - https://www.instagram.com/p/Bxk0qBPjMcp/
 ---

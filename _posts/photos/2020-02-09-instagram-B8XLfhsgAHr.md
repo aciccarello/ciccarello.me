@@ -3,6 +3,10 @@ slug: B8XLfhsgAHr
 date: 2020-02-09T22:02:51.000Z
 image: /assets/img/2019-italy-colosseum-outside.jpg
 image_alt: "View of the outside of the Roman Colosseum."
+tags:
+ - travel
+ - Italy
+ - ruins
 syndication:
  - https://www.instagram.com/p/B8XLfhsgAHr/
 ---

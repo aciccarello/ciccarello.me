@@ -3,6 +3,7 @@ slug: B93B5Y0lpfV
 date: 2020-03-18T03:26:05.000Z
 tags: 
   - workingfromhome
+  - birding
   - birds
 image: /assets/img/instagram_90227639_1107987252882050_2057462979322488435_n_18133337449018244.jpg
 image_alt: "Black and white photo of a black and white bird perched on a white fence."

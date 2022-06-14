@@ -3,6 +3,8 @@ slug: B69lC9Rl4Ti
 date: 2020-01-06T02:54:44.000Z
 image: /assets/img/instagram_FQIoAkMzLBdANKpdsi0RgSZGFzaF9iYXNlbGluZV8xX3YxEQB16gcA_17875836067512800.mp4
 image_alt: "Model train set with train and crane moving."
+tags:
+ - personal
 syndication:
  - https://www.instagram.com/p/B69lC9Rl4Ti/
 ---

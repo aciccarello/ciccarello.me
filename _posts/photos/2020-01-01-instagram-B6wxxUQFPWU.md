@@ -3,6 +3,9 @@ slug: B6wxxUQFPWU
 date: 2020-01-01T03:35:33.000Z
 image: /assets/img/2019-italy-salerno-hotel-street-view.jpg
 image_alt: "View of street from above with circular brick patterns, the light of a street lamp, and people blurred as they walk by."
+tags:
+ - travel
+ - Italy
 syndication:
  - https://www.instagram.com/p/B6wxxUQFPWU/
 ---

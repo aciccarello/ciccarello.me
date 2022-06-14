@@ -3,7 +3,9 @@ slug: CAwVEI0FXug
 date: 2020-05-29T02:33:05.000Z
 image: /assets/img/2020-birding-ca-peregrine.jpg
 image_alt: "Falcon flying over water"
-alt_needs_review: true
+tags:
+ - birding
+ - birds
 syndication:
  - https://www.instagram.com/p/CAwVEI0FXug/
 ---

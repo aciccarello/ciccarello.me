@@ -5,6 +5,8 @@ tags:
   - BlackBirdersWeek
   - BlackinNature
   - BlackinNature
+  - birding
+  - birds
 image: /assets/img/instagram_101437818_248481906431088_757752677007126712_n_17904426061464118.jpg
 image_alt: "Black sea bird with long neck an bill sitting on a nest with water in the background."
 syndication:

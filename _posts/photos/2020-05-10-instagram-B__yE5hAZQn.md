@@ -3,6 +3,8 @@ slug: B__yE5hAZQn
 redirectFrom: 2020/05/10/posts/B__yE5hAZQn
 date: 2020-05-10T06:03:48.000Z
 tags: 
+  - birding
+  - birds
   - GlobalBigDay
 image: /assets/img/instagram_96415737_720287518713548_619672249531827618_n_17882896732586843.jpg
 image_alt: "Roadrunner bird standing in a green field."

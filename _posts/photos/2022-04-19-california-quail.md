@@ -5,6 +5,7 @@ permalink: /photos/2022/04/19/california-quail/
 tags:
   - nature
   - birding
+  - birds
 image: /assets/img/2022-catalina-island-california-quail.jpg
 image_alt: Gray bird with tuft hanging in front of it's black face standing
   upright in grass.

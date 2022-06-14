@@ -6,6 +6,7 @@ image_alt: "Rustic cobblestone street with green plants, colorful shirts, and si
 todo: Add markup for spanish?
 tags:
   - travel
+  - Mexico
 syndication:
  - https://www.instagram.com/p/B-HwlX9FzHD/
 ---

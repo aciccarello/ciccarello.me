@@ -2,7 +2,9 @@
 slug: B-lUGaLFq92
 date: 2020-04-05T02:50:13.000Z
 tags: 
+  - plants
   - houseplants
+  - dog
 image: /assets/img/instagram_91574257_528532847840044_7216385922708326673_n_17862197398767035.jpg
 image_alt: "Closeup of cactus surrounded by other plants."
 syndication:

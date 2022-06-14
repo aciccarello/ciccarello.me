@@ -2,7 +2,8 @@
 slug: CAMXUXHlStU
 date: 2020-05-15T03:20:07.000Z
 tags: 
-  - succulent
+  - plants
+  - houseplants
 image: /assets/img/instagram_97289076_245657583169526_7319720990942812411_n_17900829622470151.jpg
 image_alt: "Three green spiky succulent in 2 colorful pots"
 syndication:
