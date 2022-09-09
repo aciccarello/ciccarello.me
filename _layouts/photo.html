@@ -87,6 +87,7 @@ layout: default
 		</div>
 	</div>
 </section>
+{% include "mentions.html" %}
 <div class="post-suggestions container">
 	{% assign previousPost = collections.photos | getPreviousCollectionItem: page %}
 	{% assign nextPost = collections.photos | getNextCollectionItem: page %}

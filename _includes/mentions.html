@@ -1,0 +1,28 @@
+{%- assign fullUrl = page.url | addBaseUrl -%}
+<section aria-label="responses" class="container mdc-card responses-card">
+	<div id="webmentions">
+		<h2>Responses</h2>
+		<p id="webmentionsPlaceholder">&nbsp;</p>
+	</div>
+	<details>
+		<summary>Responses are collected from posts on other sites</summary>
+		<p>Have you posted somewhere that links to this page? If so, share the link!</p>
+		<form id="manual-webmention" action="https://webmention.io/www.ciccarello.me/webmention" method="post"><input type="url" name="source">
+			<input type="hidden" name="target" value="{{fullUrl}}">
+			<input type="submit" name="submit" value="Share link">
+		</form>
+		<p style="display: inline-block">You can also use <a href="https://commentpara.de/">Comment Parade</a> to create a response post.</p>
+		<form style="display: inline-block" method="get" action="https://quill.p3k.io/favorite" target="_blank"><input type="hidden" name="dontask" value="1">
+			<input type="hidden" name="me" value="https://commentpara.de/">
+			<input type="hidden" name="url" value="{{fullUrl}}">
+			<input type="submit" value="Like">
+		</form>
+		<form style="display: inline-block" method="get" action="https://quill.p3k.io/" target="_blank"><input type="hidden" name="dontask" value="1">
+			<input type="hidden" name="me" value="https://commentpara.de/">
+			<input type="hidden" name="reply" value="{{fullUrl}}">
+			<input type="submit" value="Write Reply">
+		</form>
+	</details>
+	<link rel="stylesheet" href="/assets/css/webmention.css" />
+	<script src="/assets/js/webmention.js" data-page-url="{{fullUrl}}" async></script>
+</section>

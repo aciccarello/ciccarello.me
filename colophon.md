@@ -13,7 +13,8 @@ At the same time I hope to improve the performance of the site and experimenting
 
 I started the site mainly to serve as a professional profile that I could point to instead of updating my bio on every site with a profile page.
 The scope has expanded over time as I migrated blog content after I became unhappy with the Medium.com reader experience.
-In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. In March 2022 I added [support for notes](/posts/2022/03/30/first-note/). In June 2022, I [backfilled photos](/posts/2022/06/10/instagram-photos-import/) I had previously posted on Instagram. In September 2022 I started recording webmentions.
+
+In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. In March 2022 I added [support for notes](/posts/2022/03/30/first-note/). In June 2022, I [backfilled photos](/posts/2022/06/10/instagram-photos-import/) I had previously posted on Instagram. In September 2022 I [started supporting webmention](http://localhost:8080/posts/2022/09/09/displaying-webmentions) responses.
 
 ## Technology
 
@@ -22,6 +23,8 @@ The code for this website is on [GitHub](https://github.com/aciccarello/ciccarel
 The styles of this site are a combination of hand-written styles and [Material Components for the Web](https://material.io/components/). See the [style guide](/style-guide) for more details on theming.
 The site uses the [Roboto font](https://fonts.google.com/specimen/Roboto#glyphs) (self hosted). Included are some SVG icons from [Material Design Icons](https://material.io/tools/icons/?style=baseline).
 Other icons (like logos) are made by [Pixel perfect](https://icon54.com/) from [www.flaticon.com](https://www.flaticon.com/)
+
+Webmention receiving is handled by [webmention.io](https://webmention.io/) while rendering responses is done client-side with code modified from [webmention.js](https://github.com/PlaidWeb/webmention.js). Since webmentions only work with responses posted online, forms linked to [Comment Parade](https://commentpara.de) provide people without their own site a way to reply.
 
 This site currently uses CloudFlare analytics due to its better privacy policy and limited performance impact. Previously I've used GoatCounter.
 

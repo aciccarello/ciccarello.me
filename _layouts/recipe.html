@@ -76,6 +76,7 @@ layout: default
 		</div>
 	</section>
 </article>
+{% include "mentions.html" %}
 <div class="post-suggestions container">
 	{% assign previousPost = collections.recipes | getPreviousCollectionItem: page %}
 	{% assign nextPost = collections.recipes | getNextCollectionItem: page %}

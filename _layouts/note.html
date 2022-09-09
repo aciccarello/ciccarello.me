@@ -3,7 +3,7 @@ layout: default
 ---
 
 <style type="text/css">
-  article.container, .author-card.container {
+  article.container, .author-card.container, .responses-card.container {
     max-width: 32rem;
   }
 
@@ -88,6 +88,7 @@ layout: default
 		</div>
 	</div>
 </section>
+{% include "mentions.html" %}
 <div class="post-suggestions container">
 	{% assign previousPost = collections.notes | getPreviousCollectionItem: page %}
 	{% assign nextPost = collections.notes | getNextCollectionItem: page %}
