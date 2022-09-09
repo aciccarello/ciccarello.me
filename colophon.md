@@ -14,7 +14,7 @@ At the same time I hope to improve the performance of the site and experimenting
 I started the site mainly to serve as a professional profile that I could point to instead of updating my bio on every site with a profile page.
 The scope has expanded over time as I migrated blog content after I became unhappy with the Medium.com reader experience.
 
-In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. In March 2022 I added [support for notes](/posts/2022/03/30/first-note/). In June 2022, I [backfilled photos](/posts/2022/06/10/instagram-photos-import/) I had previously posted on Instagram. In September 2022 I [started supporting webmention](http://localhost:8080/posts/2022/09/09/displaying-webmentions) responses.
+In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. In March 2022 I added [support for notes](/posts/2022/03/30/first-note/). In June 2022, I [backfilled photos](/posts/2022/06/10/instagram-photos-import/) I had previously posted on Instagram. In September 2022 I [started supporting receiving webmention](/posts/2022/09/09/displaying-webmentions) responses.
 
 ## Technology
 
