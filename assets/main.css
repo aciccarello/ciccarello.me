@@ -392,21 +392,34 @@ a.disable-link-styles {
 	object-fit: cover;
 }
 
-figure.post-img--float {
+figure.post-img--float, figure.post-img--float-right {
 	width: 50%;
 	max-width: 350px;
-	margin: 0 1rem 1rem 0;
+	margin: 0 1rem 0.5rem 0;
 	float: left;
 }
 
 figure.post-img--float-right {
 	float: right;
+	margin: 0 0 0.5rem 1rem;
+}
+
+figure img {
+	margin: 0 auto;
+	display: block;
+}
+
+figcaption {
+	margin-top: 0.5rem;
 }
 
 img.post-img--float,
-video.post-img--float {
+video.post-img--float,
+img.post-img--float-right,
+video.post-img--float-right {
 	max-width: 100%;
 }
+
 img.post-img--wide,
 video.post-img--wide {
 	max-width: 100%;
