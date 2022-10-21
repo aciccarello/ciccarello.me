@@ -12,7 +12,7 @@ Rome is such a massively historic city that I didn't know what to expect when ar
 We arrived by train and took a busy metro to our stop at the Spanish steps. We walked down the stone streets from the [Barcaccia Fountain](https://en.wikipedia.org/wiki/Fontana_della_Barcaccia) to our hotel and piled our suitcases into the tiny, retrofitted elevator to climb up to the fourth floor. However, we arrived an hour early to our late checkin and had to wait 45 minutes for someone to let us into our room. Despite the hassle, the great location was well worth a little waiting.
 
 <aside>
-    This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
+    This post is part of a series describing our 2019 trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 
 ## The sights

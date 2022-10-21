@@ -12,7 +12,7 @@ As a boy, I remember my grandmother telling stories of her and my grandfather's 
 Since then the city has always been a place of wonder for me. What would it be like to live in a city navigated by boats? The island is located in a lagoon on the north-west coast of Italy and has been a major port for many years. The island's isolated position helped protect it from attack until they became their own military power. As the population grew they learned how to build up multi-story houses right against the water, using every available piece of land. It is a truly unique place and one I was very glad we were able to visit.
 
 <aside>
-    This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
+    This post is part of a series describing our 2019 trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 
 We arrived in Venice late at night. We drove across the bridge which brings trains to the island or, in our case, cars to the parking garage. From there we took the ferry to meet our Airbnb host who would bring us to the apartment. From the ferry dock, she snaked through small pedestrian walkways while we lugged our suitcases over the stepped footbridges. The entrance to the apartment was down a small alley but the backside had a balcony sticking out into a small canal. We woke in the morning to the sound of motorboats and hired singers in gondolas.

@@ -10,7 +10,7 @@ image_caption: Town of Positano as seen coming back from our hike
 The Amalfi Coast is a beautiful section of coastline on Italy's western shore one providence south of Rome. Its steep hill produces great views pretty much anywhere you stay. We chose to stay in this region for the solo-anniversary portion of our trip based on several recommendations we had heard. It was better than I imagined.
 
 <aside>
-    This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
+    This post is part of a series describing our 2019 trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 
 ## Day 1: Arrival
