@@ -1,16 +1,18 @@
 ---
 title: Hawaiian Ham & Cheese Sliders
-date: 2022-10-21T02:50:00.073Z
+date: 2022-10-21T04:12:32.360Z
 tags:
   - dinner
   - sandwich
   - oven
-eleventyExcludeFromCollections: draft
+image: /assets/img/hawaiian-ham-and-cheese-sliders.jpg
+image_alt: three ham and cheese sliders on a plate smothered with an onion poppy sauce
+eleventyExcludeFromCollections: null
 ---
 This recipe is a Hoesterey family favorite. You can see a version of it on the [King's Hawaiian Website](https://kingshawaiian.com/recipes/Hawaiian-Ham-Swiss-Slider) since the sweet roles make the base of this smothered sandwich. We've halved the servings, added caramelized onions, and adjusted the seasonings so adjust to your liking.
 
 ## Summary
-- Prep Time: 20 minutes
+- Prep Time: 20 minutes (+10 minutes sit time if you can spare)
 - Cook Time: 20 minutes
 - Servings: 6
 
@@ -21,15 +23,14 @@ This recipe is a Hoesterey family favorite. You can see a version of it on the [
 - 1/2 tablespoon poppy seeds
 - 1 tablespoons dijon mustard
 - 1/2 cup butter melted
-- 1 large sweet onion sliced
+- 1 large sweet onion chopped
 - 1/2 teaspoon worcestershire sauce
 - 1 package (12 count) KING'S HAWAIIAN Sweet Dinner Rolls
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
 1. Start by caramelizing the onions on a pan with oil on the stovetop pan, adding water as needed to avoid burning
-
-1. Cut the entire pad of rolls in half and place on a baking dish
+1. Cut the entire pad of rolls in half and place in a baking dish. If you don't have a baking dish, use tin foil on a baking sheet and fold up the sides to contain the sauce.
 1. Spread mayo onto bottom side of the rolls and top with slices of ham and cheese, spreading everything evenly
 1. In a medium bowl, whisk together poppy seeds, dijon mustard, melted butter, and Worcestershire sauce
 1. Once onions have finished caramelizing (consider adding some sugar towards the end), mix in the mustard & butter mixture
