@@ -24,7 +24,7 @@ Ingredients Note: If using fresh oregano, double the amount. Also, the ingredien
 
 {% recipe-cooklang %}
 
-1. Add the @chicken{1.5%lb}, @shallot{2}, 2 cloves of @garlic{2%cloves}, @oregano{1%tbsp dried}, @paprika{1%tsp}, and a pinch of @red pepper{1%pinch}, @salt{1%pinch}, and @black pepper{1%pinch} to a bowl.
+1. Add the @chicken{1.5%lb}, @shallot{2}, 2 cloves of @garlic{3%cloves minced}, @oregano{1%tbsp dried}, @paprika{1%tsp}, and a pinch of @red pepper{1%pinch}, @salt{1%pinch}, and @black pepper{1%pinch} to a bowl.
 1. Mix until it starts to combine. Coat your hands with a bit of oil, roll the meat into tablespoon-size balls (will make about 20-25 meatballs).
 1. Heat a large skillet or dutch oven over medium-high heat and add 2 tablespoons @oil{2%tbsp}.
 1. When the oil is hot, add the meatballs and sear until crisp and cooked through, about ~{8-10%minutes}, turning them 2-3 times. Be careful not to crowd the meatballs, so do two batches if necessary.
@@ -33,10 +33,10 @@ Ingredients Note: If using fresh oregano, double the amount. Also, the ingredien
 1. Remove the lemon from the pan and add to the plate with the meatballs.
 1. To the same skillet, add 1 clove @garlic{1%clove} and the @orzo{1%cup}.
 1. Cook until the garlic is fragrant and the orzo toasted, about ~{2-3%minutes}.
-1. Add the 2 1/2 cups @water{2 1/2%cup} and 1-2 tablespoons @lemon juice lemon{1-2%tbsp}.
-1. Bring to a boil over high heat and cook, stirring often, until al dente, about ~{7-8%minutes}.
-1. Stir in the @zucchini{2%shredded} and @dill{2%tbsp}. Slide the meatballs back into the skillet and cook until warmed through.
-1. Meanwhile, make the sun-dried tomato vinaigrette. In a bowl, whisk together 1/4 cup of the reserved sun-dried tomato oil, 2 tablespoons @lemon juice{2%tbsp}, and the @balsamic vinegar{2%tbsp} until combined. Stir in the @sun-dried tomatoes{1/2%cup oil and chopped}, 1 tablespoon @dill{1%tbsp}, and season with salt, pepper, and red pepper flakes.
-5. To make the @feta{8%oz}. Combine all ingredients in a food processor and pulse until smooth and creamy.
-6. To serve, spread the feta onto plates and drizzle with the vinaigrette. Add the orzo, seared lemons, and meatballs. Can add @arugula or a side salad{}.
+1. Add the 2 1/2 cups @water{2 1/2%cup} and 1 tablespoon @lemon juice lemon{1%tbsp}.
+1. Bring to a boil over high heat and cook, stirring often, until al dente, about ~{7-8%minutes}. Add water if it gets too dry.
+1. Stir in the @zucchini{2%shredded} and @dill{2%tbsp}. Add the meatballs back into the skillet and cook until warmed through.
+1. Meanwhile, make the sun-dried tomato vinaigrette. In a bowl, whisk together 1/4 cup of the reserved sun-dried tomato oil, 2 tablespoons @lemon juice{2%tbsp}, and the @balsamic vinegar{2%tbsp} until combined. Stir in the @sun-dried tomatoes{1/2%cup chopped and oil reserved}, 1 tablespoon @dill{1%tbsp}, and season with salt, pepper, and red pepper flakes.
+1. To make the whipped fetta,. Combine the @feta{8%oz}, @plain greek yogurt{1/4%cup}, and 2 tablespoons @extra virgin olive oil{2%tbsp} in a food processor and pulse until smooth and creamy.
+1. To serve, spread the feta onto plates and drizzle with the vinaigrette. Add the orzo, seared lemons, and meatballs. Can add @arugula or a side salad{}.
 {% endrecipe-cooklang %}
