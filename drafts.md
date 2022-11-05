@@ -26,6 +26,11 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [Web Framework Wishlist](./web-framework-wishlist)
 - [Planning Commission Meeting](./planning-commission)
 - [Web Monetization](./web-monetization/)
+- Italy 2022
+  - [Back to Italy](./back-to-italy/)
+  - [Florence](./florence/)
+  - [Cinque Terre](./cinque-terre/)
+  - [Lake Como](./lake-como/)
 - Finance Stories: - _Not financial advice. My experience & learning that hopefully inspires others to save money. US centric topic._
     - PMI Appraisal 
     - Cash flow tool
