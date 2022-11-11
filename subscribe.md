@@ -30,3 +30,5 @@ This blog also supports subscribing via RSS (technically Atom). Using an feed re
 ## Other options
 
 In addition to the above subscribe options, any of the [feed pages](/posts) are compatible with [IndieWeb readers](https://indieweb.org/reader) (via h-feed microformats).
+
+If you use a federated service like [Mastodon](https://joinmastodon.org/) you can follow me by searching your server for <code>@anthony@ciccarello.me</code> (via ActivityPub).
