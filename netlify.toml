@@ -18,7 +18,6 @@
 
 [build.environment]
   TZ="utc"
-  NODE_VERSION='16.18.1'
 
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
