@@ -5,4 +5,4 @@ tags:
 slug: federation-begins
 eleventyExcludeFromCollections: null
 ---
-Thanks to snarfed.org my website should now be discoverable as @anthony@ciccarello.me on federated ActivityPub services like Mastodon. I'm still ironing out the kinks but I'm impressed by everything fed.brid.gy supports
+Thanks to snarfed.org my website should now be discoverable as @anthony@www.ciccarello.me on federated ActivityPub services like Mastodon. I'm still ironing out the kinks but I'm impressed by everything fed.brid.gy supports
