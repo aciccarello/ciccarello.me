@@ -23,7 +23,7 @@ In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concep
 ## Technology
 
 [![Indieweb](https://svgshare.com/i/5Hh.svg){.badge}](https://indieweb.org/)
-[![Webmention](http://svgshare.com/i/BAX.svg){.badge}](https://indieweb.org/Webmention)
+[![Webmention](https://svgshare.com/i/BAX.svg){.badge}](https://indieweb.org/Webmention)
 [![Microformats](https://svgshare.com/i/BBx.svg){.badge}](http://microformats.org/)
 [![Atom](https://web.badges.world/badges/feeds/atom.png){.badge}](/feed.xml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/af8cd9bd-b0a4-417f-bfa1-d11e6d8ed0f7/deploy-status){.badge}](https://app.netlify.com/sites/mystifying-brahmagupta-67e639/deploys)
