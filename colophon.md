@@ -3,6 +3,10 @@ title: 'Colophon'
 layout: page
 ---
 
+<style>
+    img.badge { height: 15px; width: auto; }
+</style>
+
 ## About this Site
 
 This site is intended to serve as my personal home on the web. I write about many different topics that interest me for fun. It's part profile, part public journal, part playground.
@@ -17,6 +21,12 @@ The scope has expanded over time as I migrated blog content after I became unhap
 In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. In March 2022 I added [support for notes](/posts/2022/03/30/first-note/). In June 2022, I [backfilled photos](/posts/2022/06/10/instagram-photos-import/) I had previously posted on Instagram. In September 2022 I [started supporting receiving webmention](/posts/2022/09/09/displaying-webmentions) responses.
 
 ## Technology
+
+[![Indieweb](https://svgshare.com/i/5Hh.svg){.badge}](https://indieweb.org/)
+[![Webmention](http://svgshare.com/i/BAX.svg){.badge}](https://indieweb.org/Webmention)
+[![Microformats](https://svgshare.com/i/BBx.svg){.badge}](http://microformats.org/)
+[![Atom](https://web.badges.world/badges/feeds/atom.png){.badge}](/feed.xml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/af8cd9bd-b0a4-417f-bfa1-d11e6d8ed0f7/deploy-status){.badge}](https://app.netlify.com/sites/mystifying-brahmagupta-67e639/deploys)
 
 The code for this website is on [GitHub](https://github.com/aciccarello/ciccarello.me) and deployed to [Netlify](https://www.netlify.com/). The build is processed using [Eleventy](11ty.dev) a static site generator for node. This site was originally hosted on GitHub pages with a Jekyll build when it was launched at the end of 2017.
 
