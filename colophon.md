@@ -34,7 +34,7 @@ The styles of this site are a combination of hand-written styles and [Material C
 The site uses the [Roboto font](https://fonts.google.com/specimen/Roboto#glyphs) (self hosted). Included are some SVG icons from [Material Design Icons](https://material.io/tools/icons/?style=baseline).
 Other icons (like logos) are made by [Pixel perfect](https://icon54.com/) from [www.flaticon.com](https://www.flaticon.com/)
 
-Webmention receiving is handled by [webmention.io](https://webmention.io/) while rendering responses is done client-side with code modified from [webmention.js](https://github.com/PlaidWeb/webmention.js). Since webmentions only work with responses posted online, forms linked to [Comment Parade](https://commentpara.de) provide people without their own site a way to reply.
+Webmention receiving is handled by [webmention.io](https://webmention.io/) while rendering responses is done client-side with code modified from [webmention.js](https://github.com/PlaidWeb/webmention.js). Since webmentions only work with responses posted online, forms linked to [Comment Parade](https://commentpara.de) provide people without their own site a way to reply. Webmentions are automatically sent via [webmention.app](https://webmention.app/).
 
 This site currently uses CloudFlare analytics due to its better privacy policy and limited performance impact. Previously I've used GoatCounter.
 
