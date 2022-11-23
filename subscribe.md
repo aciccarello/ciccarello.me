@@ -23,7 +23,7 @@ The easiest way to subscribe is via email. Emails are sent out no more often tha
 
 ## Subscribe Using a Feed Reader
 
-This blog also supports subscribing via RSS (technically Atom). Using an feed reader you can subscribe to the [feed URL]({{ "/feed.xml" | url }}).
+This blog also supports subscribing via RSS (technically Atom). Using an feed reader you can subscribe to the [feed URL]({{ "/feed.xml" | url }}). Learn more about RSS on aboutfeeds.com.
 
 <input type="button" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this)" value="Subscribe via feed reader" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark">
 
