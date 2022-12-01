@@ -1,5 +1,6 @@
 <style>
 #snow-container {
+	display: none;
 	position: fixed;
 	height: 100vh;
 	width: 100vw;
@@ -18,6 +19,9 @@
 	--mdc-theme-secondary-dark: #02601B; /* The theme secondary color (dark variant). */
 }
 
+.christmas-enabled #snow-container {
+	display: block;
+}
 .christmas-enabled footer {
 	background-color: var(--mdc-theme-secondary-light);
 }
