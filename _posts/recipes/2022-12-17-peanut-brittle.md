@@ -3,7 +3,6 @@ title: Peanut Brittle
 date: 2022-12-17T06:19:14.619Z
 tags:
   - holiday
-  - peanut
   - candy
   - dessert
 image: "/assets/img/peanut-brittle.jpg"

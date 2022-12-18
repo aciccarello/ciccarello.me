@@ -4,6 +4,7 @@ date: 2021-11-25T16:15:00-08:00
 tags:
   - pecan
   - dessert
+  - baking
   - family recipe
 image: /assets/img/pecan-tassies.jpg
 image_alt: Closeup of mini cupcake shaped pecan tatties

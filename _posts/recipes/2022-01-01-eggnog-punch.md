@@ -4,6 +4,7 @@ date: 2022-01-01T04:14:11.911Z
 tags:
   - drink
   - holiday
+  - family recipe
 image: /assets/img/eggnog-punch.jpg
 image_alt: short glass with creamy drink and cinnamon next to coffee cake.
 ---
