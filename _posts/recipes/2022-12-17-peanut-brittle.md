@@ -5,8 +5,10 @@ tags:
   - holiday
   - candy
   - dessert
+  - family recipe
 image: "/assets/img/peanut-brittle.jpg"
 image_alt: Sheet with pile of flat, fresh peanut brittle.
+excludeFromSitemap: true
 ---
 Hoesterey family recipe from Bekah's Noonie. You'll want a good candy thermometer to avoid burning the whole batch. Doubling the recipe is NOT recommended.
 

@@ -8,6 +8,7 @@ tags:
   - family recipe
 image: /assets/img/pecan-tassies.jpg
 image_alt: Closeup of mini cupcake shaped pecan tatties
+excludeFromSitemap: true
   
 ---
 

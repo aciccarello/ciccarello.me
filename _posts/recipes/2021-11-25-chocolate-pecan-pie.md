@@ -9,6 +9,7 @@ tags:
   - family recipe
 image: /assets/img/chocolate-pecan-pie.jpg
 image_alt: Chocolate pecan pie
+excludeFromSitemap: true
 ---
 
 This is a Hoesterey family recipe from Bekah's Nana. Bekah has made this the past few Thanksgivings and it's always a hit.

@@ -7,6 +7,7 @@ tags:
   - family recipe
 image: /assets/img/breakfast-casserole.jpg
 image_alt: aluminum pan with cheese baked on top of a yellow mixture.
+excludeFromSitemap: true
 ---
 This is the Hoesterey family breakfast bake. It's extra eggy and the green chilies adds a nice mild heat.
 
