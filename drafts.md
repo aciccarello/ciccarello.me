@@ -11,5 +11,5 @@ Here are some work in progress posts. Their content and URLs will likely change 
 - [Birding in 2022](/blog/2023/04/01/birding-2022)
 - [Group Messaging Doesn't Have to Be This Bad](./group-messaging)
 - [Rethinking my approach to social media](./rethinking-social-media)
+- [Tag Moderation](./tag-moderation)
 - [Rotisserie Chicken Bone Broth](/recipes/2021/10/19/rotisserie-chicken-bone-broth)
-- Tag moderation (TBD)
