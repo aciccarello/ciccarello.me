@@ -8,6 +8,8 @@ image_alt: Dish with sauce and bread bits served with egg, beans, and cucumber.
 When we get Ethiopian food, there's often leftover injera bread. I like to freeze the leftover bread to make Firfir. There are lots of variations on this dish but here is the latest way I've made it.
 
 ## Inspiration
+My recipe is in no way traditional. I used the following recipes as inspiration. Please let me know if you have another, more authentic recommendation.
+
 - <a href="https://www.allrecipes.com/recipe/254856/ethiopian-firfir-with-dried-beef-quanta-firfir/" rel="noopener noreferrer">Ethiopian Firfir with Dried Beef (allrecipes.com)</a>
 - <a href="http://unfussyepicure.com/2015/09/ethiopian-huevos-rancheros-firfir-with-egg.html" rel="noopener noreferrer">Ethiopian Huevos Rancheros (unfussyepicure.com)</a>
 - <a href="https://ethiopianfoodguide.com/quanta-firfir/" rel="noopener noreferrer">Quanta Firfir Recipe (ethiopianfoodguide.com)</a>
