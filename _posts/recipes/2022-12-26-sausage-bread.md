@@ -20,6 +20,7 @@ Growing up we would have this Christmas morning.
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
+1. Preheat oven to 325°F
 1. Brown sausage
 1. Lay out dough
 1. Add cheese
@@ -27,4 +28,5 @@ Growing up we would have this Christmas morning.
 1. Add more cheese
 1. Fold/roll bread and seal the end
 1. Place with seam down on pan
+1. Bake at 325°F for 20 minutes
 {% endrecipe-directions %}
