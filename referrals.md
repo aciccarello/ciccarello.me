@@ -89,6 +89,16 @@ Check out Google Pay, a simple and secure payments app by Google.
 
 Okay, this is getting a little ridiculous people. But why not?
 
+## Eufy
+
+We recently got one of their products for our home. This company has a range of products from Robot vacuums to filtered cat water bowls to security systems. I'm excited about our purchase and like the range of products available. This company is also associated with Anker, which is a brand I like, but be aware that there recently have been some scandals about their video security standards (see news results).
+
+**You get**: Smart home products worth $200+ (nothing extra, $200 is minimum for my referral)
+
+**I get**: A $40 gift card (or other products with multiple referrals)
+
+[View products](https://fbuy.io/eufyus/g7fgzsya)
+
 ### EnergySage
 
 I used this service while I was looking at solar companies. They offer a way to get solar quotes without being inundated with emails and phone calls. In the end, I chose someone local on www.solarreviews.com but I still like the service and they have helpful information.
