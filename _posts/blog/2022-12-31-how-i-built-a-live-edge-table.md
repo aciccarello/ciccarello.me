@@ -1,5 +1,6 @@
 ---
 title: How I built a live edge table
+subtitle: "An excessively detailed description of my plans and failures taking on an ambitious woodworking project"
 date: 2022-12-31T22:56:03.531Z
 tags:
   - personal
