@@ -3,7 +3,7 @@ title: 'Getting An Introduction to Africa'
 subtitle: Detour to Senegal
 date: 2015-07-24
 canonical_url: https://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html
-tags: travel
+tags: [travel, Senegal, Liberia]
 image: /assets/img/senegal-african-renaissance-monument.jpg
 image_alt: large monument of a woman and a man holding a small child with people on steps leading up to the monument
 image_caption: African Resistance Monument was visble from the tarmac - [Photo by Balou46](https://commons.wikimedia.org/wiki/File:SN-dakar-renaiss-monum-2.jpg) [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)

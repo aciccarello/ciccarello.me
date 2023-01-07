@@ -3,7 +3,7 @@ title: 'Do You Think You Are Thankful?'
 subtitle: Humbled by those who know need
 canonical_url: https://liveloveliberia.blogspot.com/2015/08/do-you-think-you-are-thankful.html
 date: 2015-08-31
-tags: culture
+tags: [culture, Liberia]
 image: /assets/img/liberia-cloth-against-wall.jpg
 image_alt: outside of a plaster wall with colorful cloth hanging and a pair of rain boots
 ---

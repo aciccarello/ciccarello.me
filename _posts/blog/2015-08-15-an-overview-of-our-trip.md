@@ -2,7 +2,7 @@
 title: 'An Overview of Our Trip'
 canonical_url: https://liveloveliberia.blogspot.com/2015/08/an-overview-of-our-trip.html
 date: 2015-08-15
-tags: travel
+tags: [travel, Liberia]
 image: /assets/img/liberia-mt-nimba-mining-lake.jpg
 image_alt: green hils enclosing a small lake with people walking a ways away
 image_caption: Blue Lake on Mt. Nimba, Liberia -- former mining site
