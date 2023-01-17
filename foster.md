@@ -633,8 +633,8 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   - Jaymi Matranga ([@familyandcoffee](https://www.instagram.com/familyandcoffee/)) - Social worker, foster parent, and former foster youth
   - Cam Lee Small ([@therapyredeemed](https://www.instagram.com/therapyredeemed/)) - Therapist and Korean adoptee
   - [Laura](https://www.fosterparentpartner.com/) ([@foster.parenting](https://www.instagram.com/foster.parenting/)) - "Foster Parent Partner" with lots of videos and resources
-  - [Karly Pancake](https://www.karlypancake.com/) ([@wefostertruth](https://instagram.com/wefostertruth)) - Foster family we went to college with
-  - [@adoptioneducationkeys](/instagram.com/adoptioneducationkeys) - Account featuring birth parents
+  - [Karly Pancake](https://www.karlypancake.com/) ([@karlypancake](https://instagram.com/karlypancake)) - Foster family we went to college with
+  - [@adoptioneducationkeys](https://instagram.com/adoptioneducationkeys) - Account featuring birth parents
   - [Foster the Family Blog](http://www.fosterthefamilyblog.com/)
 - Organizations
   - [Child Welfare Information Gateway](https://www.childwelfare.gov/topics/outofhome/resources-foster-families/how-to/) - Federal information on supporting forster kids
