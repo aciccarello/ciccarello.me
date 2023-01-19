@@ -3,9 +3,8 @@ title: 'Subscribe'
 layout: page
 ---
 
-Get updates on the latest posts. You can subscribe via RSS or email.
-
-To subscribe only to posts about foster care, use the form on the [foster care](/foster/#subscribe) page.
+Get sent updates on the latest posts!
+If you'd prefer to only subscribe to posts about foster care, use the form on the [foster care](/foster/#subscribe) page.
 
 ## Email Subscription
 
@@ -27,8 +26,16 @@ This blog also supports subscribing via RSS (technically Atom). Using an feed re
 
 <input type="button" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this)" value="Subscribe via feed reader" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark">
 
-## Other options
+In addition to RSS, any of the [feed pages](/posts) are compatible with [IndieWeb readers](https://indieweb.org/reader) (via h-feed microformats).
 
-In addition to the above subscribe options, any of the [feed pages](/posts) are compatible with [IndieWeb readers](https://indieweb.org/reader) (via h-feed microformats).
+## Follow on Mastodon or other fediverse networks
 
 If you use a federated service like [Mastodon](https://joinmastodon.org/) you can follow me by searching your server for <code>@anthony@ciccarello.me</code> (via ActivityPub).
+Enter your account below to be redirected to your server's follow page.
+
+<form method="post" action="https://fed.brid.gy/remote-follow">
+ <label for="follow-address">Follow @anthony@ciccarello.me with your fediverse address:</label>
+ <input id="follow-address" name="address" type="text" required="" placeholder="@you@domain.social" alt="fediverse address" value="">
+ <input name="domain" type="hidden" value="ciccarello.me">
+ <button type="submit" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark">Follow</button>
+</form>
