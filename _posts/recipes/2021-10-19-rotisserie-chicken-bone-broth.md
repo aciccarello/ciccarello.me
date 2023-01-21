@@ -1,5 +1,5 @@
 ---
-title: Rotissery Chicken Bone Broth
+title: Rotisserie Chicken Bone Broth
 date: 2021-10-19T13:33:35.240Z
 eleventyExcludeFromCollections: draft
 ---
