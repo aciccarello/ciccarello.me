@@ -1,4 +1,4 @@
-<div class="mdc-card mdc-elevation-transition h-entry">
+<div class="mdc-card mdc-elevation-transition h-entry" {% if post.excludeFromSitemap %}data-nosnippet{% endif %}>
 	{%- if post.data.image -%}
 	{% assign filetype = post.data.image | split: "." | last -%}
 	<a class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
