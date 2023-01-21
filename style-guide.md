@@ -92,7 +92,7 @@ There are several ways to display images. Above is shown the wide orientation wh
 
 Floated content is also possible and it will wrap around the floated image. However this can lead to situations where later headings also begin to wrap.
 
-To prevent further text from wraping around the image use a clearfix.
+To prevent further text from wraping around the image use a clearfix. Also note that images need an empty line above and below in markdown to be rendered correctly.
 
 ```html
 <div style="clear:both;"></div>
@@ -103,7 +103,7 @@ To prevent further text from wraping around the image use a clearfix.
 ![image displayed to the right of text](
     /assets/img/2020-birding-ca-peregrine.jpg
     "This image is `float: right`"
-){.post-img--float .post-img--float-right}
+){.post-img--float-right}
 
 Captions support markdown syntax but be careful with quotes in alt text. You can use the "stylized" quotes to fixt that. Below is a default width image with a caption. It uses the `.post-img--wide` class name.
 
