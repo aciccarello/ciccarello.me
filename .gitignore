@@ -1,6 +1,7 @@
 _site
 _site_previous
 node_modules
+.env
 .sass-cache
 .vscode
 .DS_Store
