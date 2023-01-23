@@ -10,14 +10,20 @@ If you like to [automate your macOS configuration](https://kalis.me/dotfiles-aut
 setup Mojave, you may be wondering how to enable dark mode, the configuration
 is called "AppleInterfaceStyle" and can be set using the following command.
 
-    defaults write "Apple Global Domain" "AppleInterfaceStyle" "Dark"
+```
+defaults write "Apple Global Domain" "AppleInterfaceStyle" "Dark"
+```
 
 If you would like to revert back to the default (light) theme, delete the key.
 
-    defaults delete "Apple Global Domain" "AppleInterfaceStyle"
+```
+defaults delete "Apple Global Domain" "AppleInterfaceStyle"
+```
 
 Both enabling and disabling will require a restart of your computer to take
 affect. If you would like to try out the theme immediately, open the General
 tab of the mac preferences.
 
-    open /System/Library/PreferencePanes/Appearance.prefPane
+```
+open /System/Library/PreferencePanes/Appearance.prefPane
+```
