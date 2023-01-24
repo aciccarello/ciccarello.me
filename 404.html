@@ -23,6 +23,11 @@ excludeFromSitemap: true
 		display: block;
 		margin: 1rem;
 	}
+
+	#archive-link {
+		display: none;
+		margin: 16px;
+	}
 </style>
 
 <div class="container">
@@ -42,4 +47,11 @@ excludeFromSitemap: true
 	<a class="mdc-button mdc-button--outlined blog-button" href="/#connect">
 		Contact Me
 	</a>
+	<a id="archive-link">Check the Internet Archive</a>
 </div>
+
+<script>
+	const link = document.getElementById('archive-link');
+	link.href = "https://web.archive.org/web/*/" + document.location;
+	link.style.display = 'block';
+</script>
