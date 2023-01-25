@@ -15,8 +15,8 @@
 <meta name="robots" content="noindex">
 {%- endif %}
 <meta property="og:title" content="{{finalTitle}}" />
-{%- if author %}
-<meta name="author" content="{{ author }}" />
+{%- if author.name %}
+<meta name="author" content="{{ author.name }}" />
 {%- endif %}
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="{{ pageContent }}" />
@@ -33,7 +33,7 @@
 <meta name="twitter:card" content="summary" />
 {%- endif %}
 <meta name="twitter:site" content="@ajciccarello" />
-{%- if author %}
+{%- if author.name %}
 <meta name="twitter:creator" content="@Anthony Ciccarello" />
 {%- endif %}
 <script type="application/ld+json">
@@ -48,7 +48,7 @@
         "name":"Anthony Ciccarello"
         {%- endif -%}
     },
-    {%- if page.inputPath contains ".md" -%}
+    {%- if page.inputPath contains ".md" -%}{% comment %}TODO: make this use author property{% endcomment %}
     "author": {
         "@type": "Person",
         "name":"Anthony Ciccarello",

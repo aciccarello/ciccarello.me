@@ -1,0 +1,35 @@
+{% comment %}
+This relies on the author object with the following properties
+- name: string name (required)
+- url: defaults to root URL
+- description: defaults to site.description,
+- type: defaults to "author" but canbe changed for different creator categories (e.g. photographer)
+{% endcomment %}
+<section class="container mdc-card author-card">
+	<div class="author-card__primary-action" tabindex="0">
+		<div class="mdc-card__media mdc-card__media--square author-card__media"></div>
+		<div class="author-card__primary">
+			<h2 class="vcard author author-card__title mdc-typography mdc-typography--headline6">
+				<a class="p-author h-card fn url disable-link-styles" href="{{ author.url | default: "/" }}">
+					{{ author.name }}
+				</a>
+			</h2>
+			<h3 class="author-card__subtitle mdc-typography mdc-typography--subtitle2">
+				About the {{ author.type | default: "author" }}
+			</h3>
+		</div>
+	</div>
+	<p class="author-card__content">
+		{{ author.description | default: site.description }}
+	</p>
+	<div class="mdc-card__actions">
+		<div class="mdc-card__action-buttons">
+			<a href="/#connect" class="mdc-button mdc-card__action mdc-card__action--button">
+				Connect
+			</a>
+			<a href="/subscribe" class="mdc-button mdc-card__action mdc-card__action--button">
+				Subscribe
+			</a>
+		</div>
+	</div>
+</section>

@@ -1,6 +1,8 @@
 {
   "permalink": "/posts/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default : title | slugify}}/",
-  "author": "Anthony Ciccarello",
+  "author": {
+    "name": "Anthony Ciccarello"
+  },
   "defaultTitle": "",
   "back_button": "../../../..",
   "layout": "note"

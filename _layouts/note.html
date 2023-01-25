@@ -39,8 +39,8 @@ layout: default
 			<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
 				{{- page.date | formatHumanDate: hideTime -}}
 			</time>
-			{%- if author %} •
-			<span class="p-author h-card">{{ author }}</span>
+			{%- if author.name %} •
+			<span class="p-author h-card">{{ author.name }}</span>
 			{%- endif -%}
 		</p>
 	</header>
@@ -64,34 +64,7 @@ layout: default
 
 	<a class="u-url" href="{{ page.url | url }}" aria-hidden="true"></a>
 </article>
-<section class="container mdc-card author-card">
-	<div class="author-card__primary-action" tabindex="0">
-		<div class="mdc-card__media mdc-card__media--square author-card__media"></div>
-		<div class="author-card__primary">
-			<h2 class="author-card__title mdc-typography mdc-typography--headline6">
-				<a class="p-author h-card disable-link-styles" href="/">
-					Anthony Ciccarello
-				</a>
-			</h2>
-			<h3 class="author-card__subtitle mdc-typography mdc-typography--subtitle2">
-				About the author
-			</h3>
-		</div>
-	</div>
-	<p class="author-card__content">
-		{{ site.description }}
-	</p>
-	<div class="mdc-card__actions">
-		<div class="mdc-card__action-buttons">
-			<a href="/#connect" class="mdc-button mdc-card__action mdc-card__action--button">
-				Connect
-			</a>
-			<a href="/subscribe" class="mdc-button mdc-card__action mdc-card__action--button">
-				Subscribe
-			</a>
-		</div>
-	</div>
-</section>
+{% include "author.html" %}
 {% include "mentions.html" %}
 <div class="post-suggestions container">
 	{% assign previousPost = collections.notes | getPreviousCollectionItem: page %}
