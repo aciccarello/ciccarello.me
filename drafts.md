@@ -15,4 +15,5 @@ However, I do intend to post these when they are ready.
 - [Group Messaging Doesn't Have to Be This Bad](./group-messaging)
 - [Rethinking my approach to social media](./rethinking-social-media)
 - [Tag Moderation](./tag-moderation)
+- [Instagram Import](./instagram-import)
 - [Rotisserie Chicken Bone Broth](/recipes/2021/10/19/rotisserie-chicken-bone-broth)
