@@ -3,6 +3,7 @@ title: Styling an RSS/Atom feed with XSL
 date: 2021-04-17T23:10:07+00:00
 tags:
   - technology
+  - site changes
 image: /assets/img/feed-xsl-view.jpg
 image_alt: View of feed page
 ---
