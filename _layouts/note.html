@@ -51,15 +51,7 @@ layout: default
 	<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>
 
 	<div class="post-footer">
-		{%- if tags.size > 0 -%}
-		<ul class="mdc-chip-set" title="Tags">
-			{% for tag in tags %}
-			<a href="/posts/tags/{{tag}}/" rel="tag" class="mdc-chip">
-				<span class="mdc-chip__text">{{ tag }}</span>
-			</a>
-			{% endfor %}
-		</ul>
-		{%- endif -%}
+		{% include "tags.html" %}
 	</div>
 
 	<a class="u-url" href="{{ page.url | url }}" aria-hidden="true"></a>
