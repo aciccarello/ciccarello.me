@@ -1,58 +1,8 @@
----json
-{
-  "permalink": "posts/tags/foster care/feed.xml",
-  "eleventyExcludeFromCollections": true,
-  "tagName": "foster care"
-}
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="/assets/feed.xsl" type="text/xsl"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Posts tagged "{{ tagName }}"</title>
-  <subtitle>{{ site.description }}</subtitle>
-  <link href="{{ page.url | addBaseUrl }}" rel="self" type="application/atom+xml" />
-  <link href="{{ "/" | addBaseUrl }}" rel="alternate" type="text/html" />
-  <updated>{{ collection[tagName] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ "/" | addBaseUrl }}</id>
-  <author>
-    <name>Anthony Ciccarello</name>
-    <email>{{ site.email }}</email>
-  </author>
-  {%- for post in (collections[tagName] | reverse).slice(0,31) %}
-  {%- set absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endset %}
-  {%- set postImage %}{% if post.data.image -%}
-      <figure>
-        <img src="{{ post.data.image }}" alt="{{ post.data.image_alt | escape }}" />
-        {%- if image_caption %}
-        <figcaption class="mdc-typography--caption">
-          {{ post.data.image_caption | markdownify }}
-        </figcaption>
-        {%- endif %}
-      </figure>
-  {%- endif %}{% endset %}
-  <entry>
-    <title>{{ post.data.title or post.data.defaultTitle }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    {%- for tag in post.data.tags %}
-    <category term="{{ tag }}"/>
-    {%- endfor %}
-    {%- if loop.index <= 10 %}
-    <content type="html">
-      {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
-      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-    </content>
-    {%- else %}
-    <summary type="html">
-      {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
-      {%- set contentSummary %}
-      <p>{{ post.templateContent | striptags | truncate(500) }}</p>
-      <a href="{{ absolutePostUrl }}">Read More</a>
-      {% endset %}
-      {{ contentSummary }}
-    </summary>
-    {%- endif %}
-  </entry>
-  {%- endfor %}
-</feed>
+permalink: "posts/tags/foster care/feed.xml"
+layout: "atom.xml"
+title: Posts tagged "foster care"
+description: "Subset of posts related to foster care. See the main feed for all posts."
+collectionName: "foster care"
+url: "/posts/tags/foster care"
+---
