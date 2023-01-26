@@ -1,6 +1,7 @@
 ---
 title: Can self reported tags help communities reduce moderation fights?
 permalink: "/drafts/tag-moderation/"
+date: 2022-12-19
 tags:
  - indieweb
 eleventyExcludeFromCollections: draft
