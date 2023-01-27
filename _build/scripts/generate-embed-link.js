@@ -11,7 +11,7 @@ const CookieString = process.env.EMBED_COOKIE ?? '';
  *
  * Run by passing in the desired URL.
  * ```bash
- * node _build/generate-embed-link.js https://ebird.org/species/sctfly/
+ * node _build/scripts/generate-embed-link.js https://ebird.org/species/sctfly/
  * ```
  */
 async function main() {
