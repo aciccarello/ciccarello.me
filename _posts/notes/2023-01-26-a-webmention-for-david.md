@@ -4,7 +4,7 @@ slug: a-webmention-for-david
 eleventyExcludeFromCollections: hidden
 ---
 <div class="h-cite u-in-reply-to">
-Reply to <a class="u-url" href="https://toot.cafe/web/@aciccarello/109324149667546772">a checkin</a> by
+Reply to <a class="u-url" href="https://david.shanske.com/2022/11/12/5771/">a checkin</a> by
 <span class="p-author h-card"><a class="u-url p-name" href="https://david.shanske.com/">David Shanske</a></span>:
 <blockquote class="e-content">
 
