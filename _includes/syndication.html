@@ -1,0 +1,16 @@
+{%- if syndication and syndication.size > 0 %}
+<p class="post-syndication"><small>Also posted to:&nbsp;
+	{%- for url in syndication -%}
+	{%- if foreloop.index0 > 0 %}, {% endif -%}
+	<a rel="syndication" class="u-syndication" href="{{url}}">
+		{%- assign segments = url | split: '/' %}
+		{%- for segment in segments -%}
+			{%- assign dotSplit = segment | split: '.' -%}
+			{%- if dotSplit.size > 1 -%}
+				{{segment}}
+			{%- endif -%}
+		{%- endfor -%}
+	</a>
+	{%- endfor -%}
+</small></p>
+{%- endif %}

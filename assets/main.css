@@ -447,6 +447,15 @@ figcaption {
 	}
 }
 
+.post-syndication {
+	margin: 1rem 2rem;
+}
+
+@media screen and (max-width: 720px) {
+	.post-syndication {
+		margin: 1rem;
+	}
+}
 .post-suggestions {
 	display: grid;
 	grid-template-columns: 1fr 1fr;

@@ -36,23 +36,8 @@ layout: default
 
 	<div class="post-content mdc-typography--body1 e-content">
 		{{ content }}
-		{%- if syndication and syndication.size > 0 %}
-		<p><small>Also posted to:&nbsp;
-			{%- for url in syndication -%}
-			{%- if foreloop.index0 > 0 %}, {% endif -%}
-			<a rel="syndication" class="u-syndication" href="{{url}}">
-				{%- assign segments = url | split: '/' %}
-				{%- for segment in segments -%}
-					{%- assign dotSplit = segment | split: '.' -%}
-					{%- if dotSplit.size > 1 -%}
-						{{segment}}
-					{%- endif -%}
-				{%- endfor -%}
-			</a>
-			{%- endfor -%}
-		</small></p>
-		{%- endif %}
 	</div>
+	{% include "syndication.html" %}
 	<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>
 </article>
 {% include "author.html" %}
