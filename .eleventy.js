@@ -78,6 +78,9 @@ module.exports = function (eleventyConfig) {
 			return Object.keys(value);
 		}
 	}); // Helpful for debugging objects
+	eleventyConfig.addFilter('sanitizeFeedContent', (content) =>
+		content.replace(/object-position: \d+% \w+/gm, '')
+	);
 
 	eleventyConfig.addPlugin(require('./_build/date'));
 	eleventyConfig.addPlugin(require('./_build/markdown'));

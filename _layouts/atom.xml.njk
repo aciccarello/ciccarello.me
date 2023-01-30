@@ -48,7 +48,7 @@
     {%- if loop.index <= 10 %}
     <content type="html">
       {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
-      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+      {{ post.templateContent | sanitizeFeedContent | htmlToAbsoluteUrls(absolutePostUrl) }}
     </content>
     {%- else %}
     <summary type="html">
