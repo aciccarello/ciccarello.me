@@ -13,8 +13,12 @@
 				<strong>Draft Content</strong>
 				<p>This page including the URL and contents is subject to change.</p>
 			</aside>
+			{%- elsif eleventyExcludeFromCollections == "testing" -%}
+			<aside class="unlisted-warning">
+				<strong>Testing page</strong>
+				<p>This page including the URL and contents is subject to change.</p>
+			</aside>
 			{%- endif -%}
-
 			{%- if eleventyExcludeFromCollections == "deleted" -%}
 			<aside class="unlisted-warning">
 				<strong>Content Deleted</strong>

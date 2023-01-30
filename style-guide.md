@@ -306,7 +306,7 @@ TODO: Example shortcodes
 
 # Post previews
 
-Posts can be summarized and shown in feed pages or as suggestions below other posts.
+Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as suggestions below other posts.
 
 {% removeindents %}
 <div class="post-suggestions container">

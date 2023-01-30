@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`microformats should have a recipe 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "category": [
+    "drink",
+    "holiday",
+    "family recipe",
+  ],
+  "content": {
+    "html": "<p>This simple recipe is family favorite over the holidays.</p>
+<h2 id="ingredients" tabindex="-1">Ingredients</h2>
+<ul>
+<li class="p-ingredient ingredient">Ginger ale</li>
+<li class="p-ingredient ingredient">Eggnog</li>
+<li class="p-ingredient ingredient">Vanilla Ice Cream</li>
+<li class="p-ingredient ingredient">Cinnamon</li>
+</ul>
+<h2 id="directions" tabindex="-1">Directions</h2>
+<ol class="e-instructions instructions">
+<li>Combine ginger ale and eggnog in a large container</li>
+<li>Add scoops of vanilla ice cream</li>
+<li>Sprinkle cinnamon on top</li>
+</ol>",
+    "text": "This simple recipe is family favorite over the holidays.
+Ingredients
+
+Ginger ale
+Eggnog
+Vanilla Ice Cream
+Cinnamon
+
+Directions
+
+Combine ginger ale and eggnog in a large container
+Add scoops of vanilla ice cream
+Sprinkle cinnamon on top",
+  },
+  "featured": "https://www.ciccarello.me/short%20glass%20with%20creamy%20drink%20and%20cinnamon%20next%20to%20coffee%20cake.",
+  "ingredient": [
+    "Ginger ale",
+    "Eggnog",
+    "Vanilla Ice Cream",
+    "Cinnamon",
+  ],
+  "instructions": {
+    "html": "<li>Combine ginger ale and eggnog in a large container</li>
+<li>Add scoops of vanilla ice cream</li>
+<li>Sprinkle cinnamon on top</li>",
+    "text": "Combine ginger ale and eggnog in a large container
+Add scoops of vanilla ice cream
+Sprinkle cinnamon on top",
+  },
+  "name": "Eggnog Punch",
+  "photo": [
+    {
+      "alt": "short glass with creamy drink and cinnamon next to coffee cake.",
+      "url": "https://www.ciccarello.me/assets/img/eggnog-punch.jpg",
+    },
+  ],
+  "published": "2022-01-01T04:14:11Z",
+  "type": "recipe",
+  "url": "https://www.ciccarello.me/recipes/2022/01/01/eggnog-punch/",
+}
+`;
+
+exports[`microformats should have an article 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "category": [
+    "travel",
+    "Senegal",
+    "Liberia",
+  ],
+  "content": {
+    "html": "<p>The past two days have destroyed my sense of time. Between changing time zones
+twice, flying through the night, flying for more than 6 hours at a time,
+having periodic naps, and standing in lines for long stretches, I have stopped
+keeping a close eye on time. I guess that is a fitting entrance to Africa.<br>
+On Tuesday I was counting every minute making sure I worked enough hours for
+the week and rushing through getting out the door to make our plane on time.
+This afternoon we didn’t have to manage ant firm times for events to happen.
+Our plan was to fly directly from Brussels to Monrovia, Liberia. God
+apparently had other plans. After about four hours into our “last flight” to
+Liberia the pilots decided it was necessary to divert the flight to Senegal,
+several countries up the west coast of Africa.We would fid out later that some
+unexpected bad weather had caused a crack in the windshield of the airplane
+and the Dakar airport was better prepared to make the repairs.</p>
+<p>The past two days have destroyed my sense of time. Between changing time zones
+twice, flying through the night, flying for more than 6 hours at a time,
+having periodic naps, and standing in lines for long stretches, I have stopped
+keeping a close eye on time. I guess that is a fitting entrance to Africa. On
+Tuesday I was counting every minute making sure I worked enough hours for the
+week and rushing through getting out the door to make our plane on time. This
+afternoon we didn’t have to manage ant firm times for events to happen. Our
+plan was to fly directly from Brussels to Monrovia, Liberia. God apparently
+had other plans. After about four hours into our “last flight” to Liberia the
+pilots decided it was necessary to divert the flight to Senegal, several
+countries up the west coast of Africa.We would fid out later that some
+unexpected bad weather had caused a crack in the windshield of the airplane
+and the Dakar airport was better prepared to make the repairs.</p>
+<figure class="post-img--float"><img src="https://www.ciccarello.me/assets/img/senegal-leaving-airport.jpg" alt="Crowd of people in a parking lot with lots of luggage with a white bus" class="post-img--float"><figcaption>Waiting outside the airport for a bus to the&nbsp;hotel</figcaption></figure>
+<p>We followed the mass of other displaced travelers out of the airport to where
+bus after bus came to shuttle people and their luggage to our hotel. But this
+long wait provided us with an opportunity to connect with the other people on
+our flight to Monrovia including native Liberians and humanitarian/missions
+workers. This first look at Africa was a great introduction to the differences
+in culture that we may have to face. I enjoyed looking at the way people
+dressed, how they interacted with each other, and how the English speaking
+Liberians interacted with the primarily French speaking Senegal workers. When
+our boxes finally got loaded on a bus and we packed inside, we got a small
+tour of the city on the way to our hotel. I was reminded of many scenes from
+Bekah and my trip to Kosovo in eastern Europe last year. Things like the
+concrete buildings, the mix of businesses, and people standing around. But
+there were also significant differences. Dakar Senegal had more poverty, more
+English, and more social/open people than Mitrovica, Kosovo. It was great to
+explore this new world.</p>
+<figure><img src="https://www.ciccarello.me/assets/img/senegal-hotel-night.jpg" alt="View of a pool surrounded by palm trees at night"><figcaption>Nighttime view from our hotel room overlooking the ocean and pool</figcaption></figure>
+<p>As we arrived at the hotel, we were pleasantly surprised to find our temporary
+housing was a upscale place. We were able to get an ocean view room and meal
+all provided by Brussels Airlines. After so much traveling, it was a blessing
+to be able to relax (and take a shower).</p>
+<figure><img src="https://www.ciccarello.me/assets/img/senegal-hotel-day.jpg" alt="View of the ocean and a pool surrounded by palm trees from a hotel balcony"><figcaption>Daytime view from&nbsp;hotel</figcaption></figure>
+<p>Things are still up in the air for our real final flight to Liberia but for
+being stick for a while, we are pretty well off. We will also be looking to
+see how God uses this delay. Update: Our flight to Monrovia has been set for
+Sunday meaning we will be in Senegal another day.</p>
+<hr>
+<p><em>Originally published at <a rel="syndication" class="u-syndication" href="https://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html">liveloveliberia.blogspot.com</a> on July 24, 2015.</em></p>",
+    "text": "The past two days have destroyed my sense of time. Between changing time zones
+twice, flying through the night, flying for more than 6 hours at a time,
+having periodic naps, and standing in lines for long stretches, I have stopped
+keeping a close eye on time. I guess that is a fitting entrance to Africa.
+On Tuesday I was counting every minute making sure I worked enough hours for
+the week and rushing through getting out the door to make our plane on time.
+This afternoon we didn’t have to manage ant firm times for events to happen.
+Our plan was to fly directly from Brussels to Monrovia, Liberia. God
+apparently had other plans. After about four hours into our “last flight” to
+Liberia the pilots decided it was necessary to divert the flight to Senegal,
+several countries up the west coast of Africa.We would fid out later that some
+unexpected bad weather had caused a crack in the windshield of the airplane
+and the Dakar airport was better prepared to make the repairs.
+The past two days have destroyed my sense of time. Between changing time zones
+twice, flying through the night, flying for more than 6 hours at a time,
+having periodic naps, and standing in lines for long stretches, I have stopped
+keeping a close eye on time. I guess that is a fitting entrance to Africa. On
+Tuesday I was counting every minute making sure I worked enough hours for the
+week and rushing through getting out the door to make our plane on time. This
+afternoon we didn’t have to manage ant firm times for events to happen. Our
+plan was to fly directly from Brussels to Monrovia, Liberia. God apparently
+had other plans. After about four hours into our “last flight” to Liberia the
+pilots decided it was necessary to divert the flight to Senegal, several
+countries up the west coast of Africa.We would fid out later that some
+unexpected bad weather had caused a crack in the windshield of the airplane
+and the Dakar airport was better prepared to make the repairs.
+ Crowd of people in a parking lot with lots of luggage with a white bus Waiting outside the airport for a bus to the hotel
+We followed the mass of other displaced travelers out of the airport to where
+bus after bus came to shuttle people and their luggage to our hotel. But this
+long wait provided us with an opportunity to connect with the other people on
+our flight to Monrovia including native Liberians and humanitarian/missions
+workers. This first look at Africa was a great introduction to the differences
+in culture that we may have to face. I enjoyed looking at the way people
+dressed, how they interacted with each other, and how the English speaking
+Liberians interacted with the primarily French speaking Senegal workers. When
+our boxes finally got loaded on a bus and we packed inside, we got a small
+tour of the city on the way to our hotel. I was reminded of many scenes from
+Bekah and my trip to Kosovo in eastern Europe last year. Things like the
+concrete buildings, the mix of businesses, and people standing around. But
+there were also significant differences. Dakar Senegal had more poverty, more
+English, and more social/open people than Mitrovica, Kosovo. It was great to
+explore this new world.
+ View of a pool surrounded by palm trees at night Nighttime view from our hotel room overlooking the ocean and pool
+As we arrived at the hotel, we were pleasantly surprised to find our temporary
+housing was a upscale place. We were able to get an ocean view room and meal
+all provided by Brussels Airlines. After so much traveling, it was a blessing
+to be able to relax (and take a shower).
+ View of the ocean and a pool surrounded by palm trees from a hotel balcony Daytime view from hotel
+Things are still up in the air for our real final flight to Liberia but for
+being stick for a while, we are pretty well off. We will also be looking to
+see how God uses this delay. Update: Our flight to Monrovia has been set for
+Sunday meaning we will be in Senegal another day.
+
+Originally published at liveloveliberia.blogspot.com on July 24, 2015.",
+  },
+  "featured": "https://www.ciccarello.me/large%20monument%20of%20a%20woman%20and%20a%20man%20holding%20a%20small%20child%20with%20people%20on%20steps%20leading%20up%20to%20the%20monument%20African%20Resistance%20Monument%20was%20visble%20from%20the%20tarmac%20-%20Photo%20by%20Balou46%20CC%20BY-SA%204.0",
+  "name": "Getting An Introduction to Africa",
+  "published": "2015-07-24",
+  "summary": "Detour to Senegal",
+  "syndication": "https://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html",
+  "type": "entry",
+  "url": "https://www.ciccarello.me/blog/2015/07/24/getting-an-introduction-to-africa/",
+}
+`;
+
+exports[`microformats should have h-entries on the posts page 1`] = `
+{
+  "children": [
+    {
+      "author": "https://www.ciccarello.me/",
+      "category": [
+        "travel",
+        "Senegal",
+        "Liberia",
+      ],
+      "name": "Getting An Introduction to Africa",
+      "published": "2015-07-24",
+      "summary": "Detour to Senegal",
+      "type": "entry",
+      "url": "https://www.ciccarello.me/blog/2015/07/24/getting-an-introduction-to-africa/",
+    },
+    {
+      "author": "https://www.ciccarello.me/",
+      "category": [
+        "nature",
+        "ocean",
+        "site changes",
+      ],
+      "published": "2021-06-21",
+      "summary": "Photography has been a fun hobby to pick up. Though I may backfill older posts I wanted to start with something fresh. I’m looking forward to adding more content to my site.",
+      "type": "entry",
+      "url": "https://www.ciccarello.me/photos/2021/06/21/initial-photo/",
+    },
+    {
+      "author": "https://www.ciccarello.me/",
+      "category": [
+        "drink",
+        "holiday",
+        "family recipe",
+      ],
+      "name": "Eggnog Punch",
+      "published": "2022-01-01T04:14:11Z",
+      "summary": "This simple recipe is family favorite over the holidays. Ingredients Ginger ale Eggnog Vanilla Ice Cream Cinnamon Directions Combine ginger ale and eggnog in a large container Add scoops of vanilla ice cream Sprinkle cinnamon on top",
+      "type": "recipe",
+      "url": "https://www.ciccarello.me/recipes/2022/01/01/eggnog-punch/",
+    },
+    {
+      "author": "https://www.ciccarello.me/",
+      "category": [
+        "indieweb",
+        "site changes",
+      ],
+      "published": "2022-03-30T05:16:18Z",
+      "summary": "I’ve added a new type of post to my site. This should open a whole world of possibilities integrating with indieweb.org standards!",
+      "type": "entry",
+      "url": "https://www.ciccarello.me/posts/2022/03/30/first-note/",
+    },
+    {
+      "author": "https://www.ciccarello.me/",
+      "category": "indieweb",
+      "published": "2022-11-17T18:41:14Z",
+      "summary": "@abnv@types.pl I know there’s an open issue to add documentation but if it’s helpful you can look at the relevant commits on my site. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format acct:anthony@ciccarello.me to...",
+      "type": "entry",
+      "url": "https://www.ciccarello.me/posts/2022/11/17/bridgy-fed-instructions/",
+    },
+  ],
+  "name": "Test post list",
+  "type": "feed",
+}
+`;

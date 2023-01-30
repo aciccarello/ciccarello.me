@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<article class="container post h-entry mdc-card">
-	{% if image %}
-	<figure class="mdc-card__media post-thumbnail u-featured">
-		<a class="u-url" href="{{ page.url | url }}">
+<div class="h-entry">
+	<article class="container post mdc-card">
+		{% if image %}
+		<figure class="mdc-card__media post-thumbnail u-featured">
 			{% assign filetype = image | split: "." | last -%}
 			{% if filetype == 'mp4' -%}
 			<video autoplay loop class="u-video post-img--wide" alt="{{ image_alt | escape }}">
@@ -14,34 +14,33 @@ layout: default
 			{% else -%}
 			<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo post-img--wide" />
 			{% endif %}
-		</a>
-		{% if image_caption %}
-		<figcaption class="mdc-typography--caption">
-			{{ image_caption | markdownify }}
-		</figcaption>
+			{% if image_caption %}
+			<figcaption class="mdc-typography--caption">
+				{{ image_caption | markdownify }}
+			</figcaption>
+			{% endif %}
+		</figure>
 		{% endif %}
-	</figure>
-	{% endif %}
-	<header class="post-header">
-		<p class="post-meta">
-			<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
-				{{- page.date | formatHumanDate: hideTime -}}
-			</time>
-			{%- if author.name %} •
-			<span class="p-author h-card">{{ author.name }}</span>
-			{%- endif -%}
-		</p>
-		{% include "tags.html" %}
-	</header>
+		<header class="post-header">
+			<p class="post-meta">
+				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
+					<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
+						{{- page.date | formatHumanDate: hideTime -}}
+					</time>
+				</a>
+			</p>
+			{% include "tags.html" %}
+		</header>
 
-	<div class="post-content mdc-typography--body1 e-content">
-		{{ content }}
-	</div>
-	{% include "syndication.html" %}
-	<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>
-</article>
-{% include "author.html" %}
-{% include "mentions.html" %}
+		<div class="post-content mdc-typography--body1 e-content">
+			{{ content }}
+		</div>
+		{% include "syndication.html" %}
+		<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>
+	</article>
+	{% include "author.html" %}
+	{% include "mentions.html" %}
+</div>
 <div class="post-suggestions container">
 	{% assign previousPost = collections.photos | getPreviousCollectionItem: page %}
 	{% assign nextPost = collections.photos | getNextCollectionItem: page %}

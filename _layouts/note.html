@@ -11,54 +11,54 @@ layout: default
 	 font-size: 1.1em;
   }
 </style>
-<article class="container post h-entry mdc-card">
-	{% if image %}
-	<figure class="mdc-card__media post-thumbnail u-featured">
-		<div class="post-thumbnail--wrapper">
-			<img src="{{ image }}" alt="{{ image_alt | escape }}" />
-		</div>
-		{% if image_caption %}
-		<figcaption class="mdc-typography--caption">
-			{{ image_caption | markdownify }}
-		</figcaption>
+<div class="h-entry">
+	<article class="container post mdc-card">
+		{% if image %}
+		<figure class="mdc-card__media post-thumbnail u-featured">
+			<div class="post-thumbnail--wrapper">
+				<img src="{{ image }}" alt="{{ image_alt | escape }}" />
+			</div>
+			{% if image_caption %}
+			<figcaption class="mdc-typography--caption">
+				{{ image_caption | markdownify }}
+			</figcaption>
+			{% endif %}
+		</figure>
 		{% endif %}
-	</figure>
-	{% endif %}
-	<header class="post-header">
-		{%- if title -%}
-		<h1 class="post-title p-name mdc-typography--headline3">
-			{{ title | escape }}
-		</h1>
-		{%- endif -%}
-		{%- if subtitle -%}
-		<h2 class="post-title p-summary mdc-typography--headline6">
-			{{ subtitle | escape }}
-		</h2>
-		{%- endif -%}
-		<p class="post-meta">
-			<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
-				{{- page.date | formatHumanDate: hideTime -}}
-			</time>
-			{%- if author.name %} •
-			<span class="p-author h-card">{{ author.name }}</span>
+		<header class="post-header">
+			{%- if title -%}
+			<h1 class="post-title p-name mdc-typography--headline3">
+				{{ title | escape }}
+			</h1>
 			{%- endif -%}
-		</p>
-	</header>
+			{%- if subtitle -%}
+			<h2 class="post-title p-summary mdc-typography--headline6">
+				{{ subtitle | escape }}
+			</h2>
+			{%- endif -%}
+			<p class="post-meta">
+				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
+					<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
+						{{- page.date | formatHumanDate: hideTime -}}
+					</time>
+				</a>
+			</p>
+		</header>
 
-	<div class="post-content mdc-typography--body1 e-content">
-		{{ content }}
-	</div>
-	<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>
-	{% include "syndication.html" %}
+		<div class="post-content mdc-typography--body1 e-content">
+			{{ content }}
+		</div>
+		<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>
+		{% include "syndication.html" %}
 
-	<div class="post-footer">
-		{% include "tags.html" %}
-	</div>
+		<div class="post-footer">
+			{% include "tags.html" %}
+		</div>
 
-	<a class="u-url" href="{{ page.url | url }}" aria-hidden="true"></a>
-</article>
-{% include "author.html" %}
-{% include "mentions.html" %}
+	</article>
+	{% include "author.html" %}
+	{% include "mentions.html" %}
+</div>
 <div class="post-suggestions container">
 	{% assign previousPost = collections.notes | getPreviousCollectionItem: page %}
 	{% assign nextPost = collections.notes | getNextCollectionItem: page %}

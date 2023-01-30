@@ -1,49 +1,60 @@
-<a class="h-entry u-url mdc-card mdc-elevation-transition disable-link-styles" href="{{ post.url | url }}" {% if post.excludeFromSitemap %}data-nosnippet{% endif %}>
-	{%- if post.data.image -%}
-	{% assign filetype = post.data.image | split: "." | last -%}
-	<div class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
-		{% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
-		{% if filetype == 'mp4' -%}
-		<video preload="metadata" alt="{{ post.data.image_alt | escape }}">
-			<source type="video/mp4" src="{{ post.data.image }}">
-		</video>
-		{% endif %}
-	</div>
-	{%- endif -%}
-	<div class="mdc-card__primary {% if post.data.layout == "note" %}note-card{% endif %}">
-		<div class="post-heading">
-			{%- if post.data.title -%}
-			<h3 class="mdc-typography--headline6 p-name">
-				{{ post.data.title | escape }}
-			</h3>
-			{%- endif -%}
-			<time class="mdc-typography--subtitle2 dt-published" datetime="{{ post.date | formatMachineDate }}">
-				{{- post.date | formatHumanDate: post.data.hideTime -}}
-			</time>
+<div class="
+{%- if post.data.layout == "recipe" -%}
+h-recipe
+{%- else -%}
+h-entry
+{%- endif -%}
+" {% if post.excludeFromSitemap -%}
+	data-nosnippet
+{%- endif %}>
+	<a class="u-url mdc-card mdc-elevation-transition disable-link-styles" href="{{ post.url | url }}">
+		{%- if post.data.image -%}
+		{% assign filetype = post.data.image | split: "." | last -%}
+		<div class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
+			{% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
+			{% if filetype == 'mp4' -%}
+			<video preload="metadata" alt="{{ post.data.image_alt | escape }}">
+				<source type="video/mp4" src="{{ post.data.image }}">
+			</video>
+			{% endif %}
 		</div>
-		<div class="post-body mdc-typography--body1">
-			<p class="post-text p-summary">
-				{%- if post.data.subtitle -%}
-				{{ post.data.subtitle | strip_html }}
-				{%- else -%}
-				{{ post.templateContent | strip_html | joinLines | truncatewords: 50 }}
+		{%- endif -%}
+		<div class="mdc-card__primary {% if post.data.layout == "note" %}note-card{% endif %}">
+			<div class="post-heading">
+				{%- if post.data.title -%}
+				<h3 class="mdc-typography--headline6 p-name">
+					{{ post.data.title | escape }}
+				</h3>
 				{%- endif -%}
-			</p>
-            {%- assign tags = post.data.tags -%}
-            {%- if tags.size > 0 or showKind %}
-                <ul class="mdc-chip-set p-category" title="Tags">
-					{%- if showKind %}
-						<li class="mdc-chip">
-							<span class="mdc-chip__text">{{ post.data.layout }}</span>
-						</li>
-					{%- endif %}
-					{%- for tag in tags %}
-						<li class="mdc-chip">
-							<span class="mdc-chip__text">{{ tag }}</span>
-						</li>
-					{% endfor %}
-				</ul>
-			{%- endif -%}
+				<time class="mdc-typography--subtitle2 dt-published" datetime="{{ post.date | formatMachineDate }}">
+					{{- post.date | formatHumanDate: post.data.hideTime -}}
+				</time>
+			</div>
+			<div class="post-body mdc-typography--body1">
+				<p class="post-text p-summary">
+					{%- if post.data.subtitle -%}
+					{{ post.data.subtitle | strip_html }}
+					{%- else -%}
+					{{ post.templateContent | strip_html | joinLines | truncatewords: 50 }}
+					{%- endif -%}
+				</p>
+				{%- assign tags = post.data.tags -%}
+				{%- if tags.size > 0 or showKind %}
+					<ul class="mdc-chip-set" title="Tags">
+						{%- if showKind %}
+							<li class="mdc-chip">
+								<span class="mdc-chip__text">{{ post.data.layout }}</span>
+							</li>
+						{%- endif %}
+						{%- for tag in tags %}
+							<li class="p-category mdc-chip">
+								<span class="mdc-chip__text">{{ tag }}</span>
+							</li>
+						{% endfor %}
+					</ul>
+				{%- endif -%}
+			</div>
+			<data class="u-author" value="/" />
 		</div>
-	</div>
-</a>
+	</a>
+</div>

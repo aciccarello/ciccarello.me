@@ -295,6 +295,8 @@ svg + .mdc-typography--headline6 {
 	list-style: none;
 }
 
+/* Ensure cards of different heigh content appear same height */
+.post-list>li>div,
 .post-list .mdc-card {
 	margin: 0;
 	height: 100%;

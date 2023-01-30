@@ -9,8 +9,8 @@ This relies on the author object with the following properties
 	<div class="author-card__primary-action" tabindex="0">
 		<div class="mdc-card__media mdc-card__media--square author-card__media"></div>
 		<div class="author-card__primary">
-			<h2 class="vcard author author-card__title mdc-typography mdc-typography--headline6">
-				<a class="p-author h-card fn url disable-link-styles" href="{{ author.url | default: "/" }}">
+			<h2 class="author-card__title mdc-typography mdc-typography--headline6">
+				<a class="u-author h-card author vcard url fn disable-link-styles" href="{{ author.url | default: "/" }}">
 					{{ author.name }}
 				</a>
 			</h2>

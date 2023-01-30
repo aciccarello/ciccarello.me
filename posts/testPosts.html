@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Test post list"
+back_button: ..
+eleventyExcludeFromCollections: testing
+---
+
+<div class="home container h-feed">
+	<h1 class="post-list-heading mdc-typography--headline4 p-name">
+		{{ title }}
+	</h1>
+	<p>
+		A list of example posts
+	</p>
+	<ol class="post-list">
+		{%- for post in collections.testPosts -%}
+		<li>
+			{% include "post-card.html" post: post %}
+		</li>
+		{%- endfor -%}
+	</ol>
+
+	{% include "pagination.html" %}
+
+</div>

@@ -139,7 +139,7 @@ const fields = generateFieldMap([
 		label: 'Unlisted reason',
 		widget: 'select',
 		required: false,
-		options: ['', 'draft', 'hidden', 'deleted'],
+		options: ['', 'draft', 'hidden', 'deleted', 'testing'],
 	},
 ]);
 

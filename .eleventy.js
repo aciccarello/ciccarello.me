@@ -33,6 +33,14 @@ module.exports = function (eleventyConfig) {
 			collection.getFilteredByGlob(glob)
 		)
 	);
+	eleventyConfig.addCollection('testPosts', (collection) => {
+		const { posts } = require('./_data/test.json');
+		const postUrls = Object.values(posts);
+
+		return collection
+			.getAllSorted()
+			.filter((page) => postUrls.includes(page.data.page.url));
+	});
 	eleventyConfig.addCollection('tagList', (collection) => {
 		const tagCountMap = new Map();
 		collection.getAll().forEach((page) => {
