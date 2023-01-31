@@ -437,6 +437,15 @@ figcaption {
 	margin: auto;
 }
 
+.reply-context {
+	margin: 0 2rem;
+	font-style: italic;
+}
+
+blockquote {
+	border-left: solid var(--mdc-theme-secondary-light) 0.5rem;
+	padding-left: 0.5rem;
+}
 .post-header,
 .post-content,
 .post-footer {

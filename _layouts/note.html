@@ -44,7 +44,13 @@ layout: default
 				</a>
 			</p>
 		</header>
-
+		{%- if reply.url %}
+		<section class="p-in-reply-to {% if reply.content or reply.name %}h-cite{% endif %} reply-context">
+			Replying to <a href="{{reply.url}}" class="u-url">a {{ reply.type | default: "post" }}</a>
+			{%- if reply.name %} by <span class="p-author h-card">{{ reply.name }}</span>{% endif %}
+			{%- if reply.content %}: <blockquote class="p-content">{{ reply.content }}</blockquote>{% endif %}
+		</section>
+		{%- endif %}
 		<div class="post-content mdc-typography--body1 e-content">
 			{{ content }}
 		</div>

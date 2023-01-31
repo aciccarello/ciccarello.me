@@ -1,11 +1,17 @@
 import { mf2tojf2 } from '@paulrobertlloyd/mf2tojf2';
-import fs from 'fs/promises';
+import fs from 'node:fs/promises';
 import { mf2 } from 'microformats-parser';
-import testData from '../../_data/test.json' assert { type: 'json' };
 
-const { posts } = testData;
+/** @typedef {import('../../_data/test.json')} testData */
 
 describe('microformats', () => {
+  /** @type {testData.posts} */
+  let posts;
+  beforeAll(async () => {
+    const testData = JSON.parse(await fs.readFile('_data/test.json', 'utf8'));
+    posts = testData.posts;
+  });
+
   it('should have an h-card on the homepage', async () => {
     const homepage = await getPage('/');
 
@@ -50,19 +56,17 @@ describe('microformats', () => {
   });
 
   it('should have an article', async () => {
-    const page = await getPage(
-      '/blog/2015/07/24/getting-an-introduction-to-africa/'
-    );
+    const page = await getPage(posts.article);
 
     expect(jf2Main(page)).toMatchSnapshot();
   });
   it('should have a recipe', async () => {
-    const page = await getPage('/recipes/2022/01/01/eggnog-punch/');
+    const page = await getPage(posts.recipe);
 
     expect(jf2Main(page)).toMatchSnapshot();
   });
   it('should have a note', async () => {
-    const page = await getPage('/posts/2022/03/30/first-note/');
+    const page = await getPage(posts.note);
 
     expect(jf2Main(page)).toMatchInlineSnapshot(`
       {
@@ -87,7 +91,7 @@ describe('microformats', () => {
     `);
   });
   it('should have a photo', async () => {
-    const page = await getPage('/photos/2021/06/21/initial-photo/');
+    const page = await getPage(posts.photo);
 
     expect(jf2Main(page)).toMatchInlineSnapshot(`
       {
@@ -119,10 +123,11 @@ describe('microformats', () => {
       }
     `);
   });
+
   it('should have a reply', async () => {
     const page = await getPage(posts.reply);
 
-    expect(jf2Main(page)).toMatchInlineSnapshot(`
+    expect(jf2(page)).toMatchInlineSnapshot(`
       {
         "author": {
           "name": "Anthony Ciccarello",
@@ -132,15 +137,51 @@ describe('microformats', () => {
         "bridgy-fed": "https://fed.brid.gy/",
         "category": "indieweb",
         "content": {
-          "html": "<p><a href="https://types.pl/@abnv/109360439631118847" class="u-in-reply-to">@abnv@types.pl</a>
-      I know there’s an <a href="https://github.com/snarfed/bridgy-fed/issues/272">open issue</a> to add documentation but if it’s helpful you can look at the <a href="https://github.com/aciccarello/ciccarello.me/compare/d5f25dec5a441fb4f6783facd54e88de30250c0f...61457954adc86d34a67080313cabf24f11ac4eba">relevant commits</a> <a href="https://github.com/aciccarello/ciccarello.me/commit/50a67193255fb81377d77a790b830907469fcc44">on my site</a>. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format <code>acct:anthony@ciccarello.me</code> to your homepage/h-card.</p>",
-          "text": "@abnv@types.pl
-      I know there’s an open issue to add documentation but if it’s helpful you can look at the relevant commits on my site. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format acct:anthony@ciccarello.me to your homepage/h-card.",
+          "html": "<p>I know there’s an <a href="https://github.com/snarfed/bridgy-fed/issues/272">open issue</a> to add documentation but if it’s helpful you can look at the <a href="https://github.com/aciccarello/ciccarello.me/compare/d5f25dec5a441fb4f6783facd54e88de30250c0f...61457954adc86d34a67080313cabf24f11ac4eba">relevant commits</a> <a href="https://github.com/aciccarello/ciccarello.me/commit/50a67193255fb81377d77a790b830907469fcc44">on my site</a>. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format <code>acct:anthony@ciccarello.me</code> to your homepage/h-card.</p>",
+          "text": "I know there’s an open issue to add documentation but if it’s helpful you can look at the relevant commits on my site. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format acct:anthony@ciccarello.me to your homepage/h-card.",
         },
-        "in-reply-to": "https://types.pl/@abnv/109360439631118847",
+        "in-reply-to": {
+          "author": {
+            "name": "@abnv@types.pl",
+            "type": "card",
+          },
+          "type": "cite",
+          "url": "https://types.pl/@abnv/109360439631118847",
+        },
         "published": "2022-11-17T18:41:14Z",
         "type": "entry",
         "url": "https://www.ciccarello.me/posts/2022/11/17/bridgy-fed-instructions/",
+      }
+    `);
+  });
+
+  it('should have a reply with context', async () => {
+    const page = await getPage(posts.replyWithCite);
+
+    expect(jf2(page)).toMatchInlineSnapshot(`
+      {
+        "author": {
+          "name": "Anthony Ciccarello",
+          "type": "card",
+          "url": "https://www.ciccarello.me/",
+        },
+        "bridgy-fed": "https://fed.brid.gy/",
+        "content": {
+          "html": "<p>Don’t say I never sent you a webmention.</p>",
+          "text": "Don’t say I never sent you a webmention.",
+        },
+        "in-reply-to": {
+          "author": {
+            "name": "David Shanske",
+            "type": "card",
+          },
+          "content": "Checked into Aspire Lounge San Diego",
+          "type": "cite",
+          "url": "https://david.shanske.com/2022/11/12/5771/",
+        },
+        "published": "2023-01-26T06:04:30Z",
+        "type": "entry",
+        "url": "https://www.ciccarello.me/posts/2023/01/26/a-webmention-for-david/",
       }
     `);
   });

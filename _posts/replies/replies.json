@@ -1,0 +1,5 @@
+{
+  "defaultTitle": "Comment",
+  "layout": "note",
+  "eleventyExcludeFromCollections": "hidden"
+}
