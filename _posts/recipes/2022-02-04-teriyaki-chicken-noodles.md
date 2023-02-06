@@ -23,7 +23,7 @@ This recipe is in metric because it was [inspired by one in "Nadia Bakes"](https
 - 350ml hot water
 - 30g soft brown sugar
 - 150ml dark soy sauce
-- 15g ginger, not peeled, finely grated
+- 15g ginger (1 tablespoon), not peeled, finely grated
 - 6 cloves of garlic, crushed
 - 1–2 tsp chilli flakes (optional, or adjust to your taste)
 - 5 boneless chicken thighs
@@ -37,7 +37,8 @@ This recipe is in metric because it was [inspired by one in "Nadia Bakes"](https
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1. Make the marinade by mixing the hot water and brown sugar in a medium roasting dish, stirring to allow the sugar to melt and the water to cool.
+
+1. Make the marinade by mixing the hot water and brown sugar in a medium roasting dish, stirring to allow the sugar to melt.
 1. Add the soy, ginger, garlic and chilli and mix well.
 1. Add the chicken and ideally leave to marinate for 30 minutes to a day.
 1. Preheat the oven to 425 °F (220 °C).
