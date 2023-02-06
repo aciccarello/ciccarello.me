@@ -45,17 +45,26 @@ function asConst(v) {
 
 /**
  * Map field templates to a values
+ * @template {Partial<Field> & Pick<Field, 'name'>} T
+ * @param {T} field
+ * @return {Field}
+ */
+function addFieldDefaults(field) {
+	return {
+		label: toTitleCase(field.name),
+		widget: 'string',
+		...field,
+	};
+}
+
+/**
+ * Map field templates to a values
  * @template {Array<Partial<Field> & Pick<Field, 'name'>>} T
  * @param {T} fieldsArray
  * @return {Record<T[number]['name'], Field>}
  */
 function generateFieldMap(fieldsArray) {
-	const defaultedFields = fieldsArray.map((field) => ({
-		// Default values
-		label: toTitleCase(field.name),
-		widget: 'string',
-		...field,
-	}));
+	const defaultedFields = fieldsArray.map(addFieldDefaults);
 	const map = defaultedFields.reduce(
 		(fieldMap, field) => ({
 			...fieldMap,
@@ -133,6 +142,17 @@ const fields = generateFieldMap([
 		multiple: true,
 		allow_add: true,
 		required: false,
+	},
+	{
+		name: asConst('reply'),
+		widget: 'object',
+		required: false,
+		fields: [
+			{ name: asConst('url') },
+			{ name: asConst('name'), required: false },
+			{ name: asConst('type'), required: false },
+			{ name: asConst('content'), required: false },
+		].map(addFieldDefaults),
 	},
 	{
 		name: asConst('eleventyExcludeFromCollections'),
@@ -330,6 +350,27 @@ class CmsConfig {
 						fields.tags,
 						fields.body,
 						fields.slug,
+						fields.image,
+						fields.image_alt,
+						fields.image_caption,
+						fields.syndication,
+						fields.canonical_url,
+						fields.permalink,
+						fields.eleventyExcludeFromCollections,
+					],
+				}),
+				addDefaultsToCollection({
+					name: 'replies',
+					summary: '{{body}}',
+					editor: {
+						preview: false,
+					},
+					fields: [
+						fields.date,
+						{ ...fields.reply, required: true },
+						fields.body,
+						fields.slug,
+						fields.tags,
 						fields.image,
 						fields.image_alt,
 						fields.image_caption,
