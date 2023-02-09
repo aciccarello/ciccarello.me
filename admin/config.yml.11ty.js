@@ -184,7 +184,7 @@ function toTitleCase(input) {
  * @return {Collection}
  */
 function addDefaultsToCollection(collection) {
-	const label = toTitleCase(collection.name);
+	const label = collection.label ?? toTitleCase(collection.name);
 	const hasField = (nameToFind) =>
 		Boolean(
 			collection.fields &&
@@ -214,7 +214,7 @@ function addDefaultsToCollection(collection) {
 	const defaultedCollection = {
 		// Default values
 		label,
-		label_singular: label.replace(/s$/, ''),
+		label_singular: label.replace(/ies$/, 'y').replace(/s$/, ''),
 		folder: `_posts/${collection.name}`,
 		create: true,
 		slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
@@ -283,7 +283,7 @@ class CmsConfig {
 			collections: [
 				addDefaultsToCollection({
 					name: 'blog',
-					label_singular: 'Post',
+					label: 'Articles',
 					preview_path: 'blog/{{year}}/{{month}}/{{day}}/{{title}}',
 					fields: [
 						fields.title,
