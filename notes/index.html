@@ -3,6 +3,7 @@ layout: default
 back_button: "/posts"
 permalink: "/notes/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 redirect_from: /notes/page/1
+excludeFromSitemap: true
 pagination:
   data: collections.notes
   size: 15

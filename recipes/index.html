@@ -4,6 +4,7 @@ back_button: "/posts"
 permalink: "/recipes/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 redirect_from: /recipes/page/1
 mealTags: [breakfast, dinner, dessert]
+excludeFromSitemap: true
 pagination:
   data: collections.recipes
   size: 15

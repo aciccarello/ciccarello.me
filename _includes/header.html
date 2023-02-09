@@ -32,7 +32,7 @@
 		>
 			<a
 				href="https://www.linkedin.com/in/anthonyciccarello/"
-				class="mdc-top-app-bar__navigation-icon mdc-icon-button"
+				class="mdc-top-app-bar__navigation-icon mdc-icon-button {% if back_button %} hide-xs {% endif %}"
 				rel="me"
 				aria-label="LinkedIn profile"
 			>
@@ -48,6 +48,16 @@
 			>
 				<span class="svg-icon">
 					{% include "icons/email.svg" %}
+				</span>
+			</a>
+			<a
+				href="/search/"
+				rel="search"
+				class="mdc-top-app-bar__navigation-icon mdc-icon-button"
+				aria-label="Search"
+			>
+				<span class="svg-icon">
+					{% include "icons/search.svg" %}
 				</span>
 			</a>
 		</section>
