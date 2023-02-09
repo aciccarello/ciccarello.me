@@ -11,7 +11,7 @@
 	<link href="/assets/css/material-components-web.css" rel="stylesheet" />
 	<link rel="stylesheet" href="/assets/main.css" />
 	<link rel="stylesheet" href="/assets/css/fonts/Roboto/roboto.css" />
-	{%- if collectionData.templateContent contains "</pre>" %}
+	{%- if not collectionData or collectionData.templateContent contains "</pre>" %}
 	<link rel="stylesheet" href="{{ '/assets/css/highlight.css' | url }}">
 	{%- endif %}
 	<link
