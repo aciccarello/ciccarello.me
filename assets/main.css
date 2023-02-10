@@ -628,8 +628,15 @@ blockquote {
 	font-style: italic;
 }
 
+.form-inline {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 0.5rem;
+}
 form input,
-form button {
+form button,
+.link-button {
 	background-color: white;
 	border-color: #ccc;
 	border-radius: 4px;
@@ -643,11 +650,16 @@ form button {
 	width: 100%;
 	box-sizing: border-box;
 	max-width: 100%;
+	/* need to unset some link styles */
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
 }
 
 form input[type=submit],
 form input[type=button],
-form button {
+form button,
+.link-button {
 	background-color: var(--mdc-theme-secondary, #333);
 	border: none;
 	box-shadow: none;
@@ -658,7 +670,8 @@ form button {
 
 form input[type=submit]:hover,
 form input[type=button]:hover,
-form button:hover {
+form button:hover,
+.link-button:hover {
 	background-color: var(--mdc-theme-secondary-light, #333);
 }
 
@@ -690,6 +703,10 @@ form label {
 	.profile-card {
 		margin: 8px 4px;
 	}
+.form-inline {
+	display: flex;
+	column-gap: 0.5rem;
+}
 }
 
 @media screen and (max-width: 720px) {

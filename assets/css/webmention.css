@@ -73,3 +73,31 @@
 #webmentions a.source {
 	margin-left: 0.5rem;
 }
+
+.details-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.comment-details {
+	flex-basis: 25%;
+	flex-grow: 1;
+}
+
+.email-details {
+	flex-basis: 25%;
+	flex-grow: 1;
+}
+
+/** comment & email links */
+.mention-action {
+	flex-basis: 25%;
+	flex-grow: 1;
+}
+
+@media screen and (max-width: 600px) {
+	.details-wrapper {
+		display: block;
+	}
+}

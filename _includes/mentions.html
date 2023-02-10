@@ -5,24 +5,62 @@
 		<p id="webmentionsPlaceholder">&nbsp;</p>
 	</div>
 	<details>
-		<summary>Responses are collected from posts on other sites</summary>
-		<p>Have you posted somewhere that links to this page? If so, share the link!</p>
-		<form id="manual-webmention" action="https://webmention.io/www.ciccarello.me/webmention" method="post"><input type="url" name="source">
-			<input type="hidden" name="target" value="{{fullUrl}}">
-			<input type="submit" name="submit" value="Share link">
+		<summary>See how responses are collected...</summary>
+		<h3>Respond from another site</h3>
+		<p>
+			Responses are collected from posts on other sites. Have you posted
+			somewhere that links to this page? If so, share the link!
+		</p>
+		<form
+			id="manual-webmention"
+			action="https://webmention.io/www.ciccarello.me/webmention"
+			method="post"
+		>
+			<input type="url" name="source" />
+			<input type="hidden" name="target" value="{{fullUrl}}" />
+			<input type="submit" name="submit" value="Share link" />
 		</form>
-		<p style="display: inline-block">You can also use <a href="https://commentpara.de/">Comment Parade</a> to create a response post.</p>
-		<form style="display: inline-block" method="get" action="https://quill.p3k.io/favorite" target="_blank"><input type="hidden" name="dontask" value="1">
-			<input type="hidden" name="me" value="https://commentpara.de/">
-			<input type="hidden" name="url" value="{{fullUrl}}">
-			<input type="submit" value="Like">
-		</form>
-		<form style="display: inline-block" method="get" action="https://quill.p3k.io/" target="_blank"><input type="hidden" name="dontask" value="1">
-			<input type="hidden" name="me" value="https://commentpara.de/">
-			<input type="hidden" name="reply" value="{{fullUrl}}">
-			<input type="submit" value="Write Reply">
-		</form>
+		<div class="details-wrapper">
+			<section class="comment-details">
+				<h3>Comment using Comment Parade</h3>
+				<p>
+					You can also use
+					<a href="https://commentpara.de/">Comment Parade</a> to
+					create a guest post via
+					<a href="https://quill.p3k.io/">Quill</a>.
+				</p>
+			</section>
+			<section class="comment-details">
+				<h3>Respond via email</h3>
+				<p>
+					If you'd prefer to message me directly, send an email. If
+					you'd also like your message to be visible on the site I can
+					add it as a comment.
+				</p>
+			</section>
+		</div>
 	</details>
+	<form class="form-inline">
+		<a
+			class="link-button mention-action"
+			href="https://quill.p3k.io/?dontask=1&me=https://commentpara.de/&reply={{fullUrl}}"
+			>Comment</a
+		>
+		{%- assign replySubjectPageTitle = title | default : defaultTitle |
+		default: "A page on your site" %} {%- assign replySubject = "RE: " |
+		concat: replySubjectPageTitle | concat: " on ciccarello.me" | url_encode
+		%} {%- assign replyBody = "In response to: " | concat: fullUrl |
+		url_encode %}
+		<a
+			href="mailto:anthony@ciccarello.me?subject={{replySubject}}&body={{replyBody}}"
+			class="link-button mention-action"
+			>Reply via Email</a
+		>
+	</form>
 	<link rel="stylesheet" href="/assets/css/webmention.css" />
-	<script src="/assets/js/webmention.js" data-page-url="{{fullUrl}}" async></script>
+	<script
+		src="/assets/js/webmention.js"
+		data-page-url="{{fullUrl}}"
+		async
+	></script>
 </section>
