@@ -1,13 +1,28 @@
-/** Theme based on https://material.io/resources/color/#!/?view.left=1&view.right=0&primary.color=D50000&secondary.color=1976D2 */
+/* Palette URL: https://paletton.com/#uid=7050u0kt+lZlOstrKqzzSiaJidt */
 :root {
-	--mdc-theme-primary: #d50000; /* The theme primary color. */
-	--mdc-theme-primary-light: #ff5131; /* The theme primary color (light variant). */
-	--mdc-theme-primary-dark: #9b0000; /* The theme primary color (dark variant). */
-	--mdc-theme-secondary: #1976d2; /* The theme secondary color. */
-	--mdc-theme-secondary-light: #63a4ff; /* The theme secondary color (light variant). */
-	--mdc-theme-secondary-dark: #004ba0; /* The theme secondary color (dark variant). */
+	--mdc-theme-primary: #AF1E0B; /* The theme primary color. */
+	--mdc-theme-primary-light: #D4311C; /* The theme primary color (light variant). */
+	--mdc-theme-primary-dark: #6B0C00; /* The theme primary color (dark variant). */
+	--mdc-theme-secondary: #0A5A6C; /* The theme secondary color. */
+	--mdc-theme-secondary-light: #156E83; /* The theme secondary color (light variant). */
+	--mdc-theme-secondary-dark: #02495A; /* The theme secondary color (dark variant). */
+	--mdc-theme-tertiary: #088328; /* The theme secondary color. */
+	--mdc-theme-tertiary-light: #159E39; /* The theme secondary color (light variant). */
+	--mdc-theme-tertiary-dark: #005015; /* The theme secondary color (dark variant). */
 	--mdc-theme-background: #fafafa; /* The theme background color. */
 	--container-width: 64rem;
+}
+
+a {
+	color: var(--mdc-theme-tertiary);
+}
+a:where(:hover),
+a:where(:visited) {
+	color: var(--mdc-theme-tertiary-dark);
+}
+.mdc-fab, .title-link {
+	color: white;
+	text-decoration: none;
 }
 
 p {
@@ -21,11 +36,6 @@ p {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: var(--container-width);
-}
-
-.title-link {
-	color: white;
-	text-decoration: none;
 }
 
 main {
@@ -71,11 +81,13 @@ footer h2 {
 footer a {
 	display: block;
 	margin: 0.25rem;
+	/* Darker color needed for contrast against gray background */
+	color: var(--mdc-theme-tertiary-dark);
 }
 
 footer .site-updated {
 	text-align: right;
-	grid-column: 1 / 4
+	grid-column: 1 / 4;
 }
 
 figure {
@@ -296,7 +308,7 @@ svg + .mdc-typography--headline6 {
 }
 
 /* Ensure cards of different heigh content appear same height */
-.post-list>li>div,
+.post-list > li > div,
 .post-list .mdc-card {
 	margin: 0;
 	height: 100%;
@@ -372,7 +384,8 @@ a.disable-link-styles {
 	padding: 0;
 }
 
-.post img, .post video {
+.post img,
+.post video {
 	width: 100%;
 	max-width: 40rem;
 }
@@ -394,7 +407,8 @@ a.disable-link-styles {
 	object-fit: cover;
 }
 
-figure.post-img--float, figure.post-img--float-right {
+figure.post-img--float,
+figure.post-img--float-right {
 	width: 50%;
 	max-width: 350px;
 	margin: 0 1rem 0.5rem 0;
@@ -656,8 +670,8 @@ form button,
 	display: inline-block;
 }
 
-form input[type=submit],
-form input[type=button],
+form input[type='submit'],
+form input[type='button'],
 form button,
 .link-button {
 	background-color: var(--mdc-theme-secondary, #333);
@@ -668,8 +682,8 @@ form button,
 	font-weight: 700;
 }
 
-form input[type=submit]:hover,
-form input[type=button]:hover,
+form input[type='submit']:hover,
+form input[type='button']:hover,
 form button:hover,
 .link-button:hover {
 	background-color: var(--mdc-theme-secondary-light, #333);
@@ -703,10 +717,10 @@ form label {
 	.profile-card {
 		margin: 8px 4px;
 	}
-.form-inline {
-	display: flex;
-	column-gap: 0.5rem;
-}
+	.form-inline {
+		display: flex;
+		column-gap: 0.5rem;
+	}
 }
 
 @media screen and (max-width: 720px) {
