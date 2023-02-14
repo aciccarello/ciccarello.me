@@ -12,15 +12,21 @@
   - url: path of HTML file that this feed represents defaults to root
 #}
 {%- set feedCollection = (collections[collectionName] | reverse).slice(0,31) -%}
+{%- set alternateUrl = url | default ("/") | replace(" ", "%20") | addBaseUrl -%}
+{# add bridgy fed syndication for RSS based webmention sender -#}
+{%- set rawBridgyFed -%}{%- if page.url == "/feed.xml" -%}
+  <a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>
+{%- endif -%}{%- endset -%}
+{%- set bridgyFed = rawBridgyFed | htmlToAbsoluteUrls(alternateUrl) -%}
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/assets/feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ title | default(site.title) }}</title>
   <subtitle>{{ description | default(site.description) }}</subtitle>
   <link href="{{ page.url | replace(" ", "%20") | addBaseUrl }}" rel="self" type="application/atom+xml" />
-  <link href="{{ url | default ("/") | replace(" ", "%20") | addBaseUrl }}" rel="alternate" type="text/html" />
+  <link href="{{ alternateUrl }}" rel="alternate" type="text/html" />
   <updated>{{ feedCollection | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{  url | default ("/") | replace(" ", "%20") | addBaseUrl }}</id>
+  <id>{{ alternateUrl }}</id>
   <author>
     <name>Anthony Ciccarello</name>
     <email>{{ site.email }}</email>
@@ -49,6 +55,7 @@
     <content type="html">
       {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
       {{ post.templateContent | sanitizeFeedContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+      {{ bridgyFed }}
     </content>
     {%- else %}
     <summary type="html">

@@ -26,6 +26,9 @@ describe('RSS', () => {
     expect(latestItem.pubDate).toMatch(isoDateRegex);
     expect(latestItem.title).toBeDefined();
     expect(latestItem.content).toBeDefined();
+    expect(latestItem.content).toContain(
+      '<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>'
+    );
 
     const oldestItem = parsedFeed.items[parsedFeed.items.length - 1];
     expect(oldestItem.title).toBeDefined();
