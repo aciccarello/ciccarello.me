@@ -14,7 +14,8 @@
     "load-css": "curl -o assets/css/normalize.css -O https://unpkg.com/normalize.css@8/normalize.css -L && curl -o assets/css/material-components-web.css -O https://unpkg.com/material-components-web@3/dist/material-components-web.min.css -L",
     "now": "node -e 'console.log(new Date().toISOString())'",
     "compress:embed": "npx @squoosh/cli --resize '{\"enabled\":true,\"width\":341,\"height\":256,\"method\":\"lanczos3\",\"fitMethod\":\"stretch\",\"premultiply\":true,\"linearRGB\":true}' --mozjpeg '{\"quality\":75,\"baseline\":false,\"arithmetic\":false,\"progressive\":true,\"optimize_coding\":true,\"smoothing\":0,\"color_space\":3,\"quant_table\":3,\"trellis_multipass\":false,\"trellis_opt_zero\":false,\"trellis_opt_table\":false,\"trellis_loops\":1,\"auto_subsample\":true,\"chroma_subsample\":2,\"separate_chroma_quality\":false,\"chroma_quality\":75}' --output-dir ./assets/img",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "webmention": "webmention https://www.ciccarello.me/feed.xml --send --limit=1"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
     "netlify-cli": "^12.10.0",
     "netlify-cms-proxy-server": "^1.3.24",
     "netlify-plugin-minify-html": "^0.3.1",
+    "netlify-plugin-webmentions": "^1.1.1",
     "node-fetch": "^3.3.0",
     "node-html-parser": "^6.1.4",
     "prettier": "^2.8.4",
