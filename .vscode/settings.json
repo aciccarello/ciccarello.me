@@ -70,5 +70,9 @@
       "no_semicolon": true
     }
   },
-  "html.format.enable": false
+  "html.format.enable": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
