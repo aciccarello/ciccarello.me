@@ -44,8 +44,8 @@
       </figure>
   {%- endif %}{% endset %}
   <entry>
-    <title>{{ post.data.title or post.data.defaultTitle }}</title>
-    <link href="{{ absolutePostUrl }}"/>
+    <title type="text">{{ post.data.title or post.data.defaultTitle }}</title>
+    <link href="{{ absolutePostUrl }}" rel="alternate" type="text/html" />
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     {%- for tag in post.data.tags %}
