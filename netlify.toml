@@ -32,7 +32,7 @@
       'deploy-preview'
     ]
 [[plugins]]
-  package = "netlify-plugin-webmentions"
+  package = "@aciccarello/netlify-plugin-webmentions"
 
 	[plugins.inputs]
 	# Maximum number of feed entries to check for mentions (optional, default: 1)
