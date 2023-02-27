@@ -1,9 +1,9 @@
 {%- assign fullUrl = page.url | addBaseUrl -%}
 {%- assign finalTitle = title | default : site.title -%}
 {%- if page.inputPath contains ".md" and collectionData -%}
-    {%- assign pageContent = collectionData.templateContent | strip_html | joinLines | truncate: 150 | escape -%}
+    {%- assign pageContent = collectionData.templateContent | joinLines | strip_html | truncate: 150 | escape -%}
 {%- else -%}
-    {%- assign pageContent = site.description | markdownify | strip_html -%}
+    {%- assign pageContent = site.description | markdownify | joinLines | strip_html -%}
 {%- endif -%}
 {%- if title or defaultTitle %}
 <title>{{title | default : defaultTitle}} | {{ site.title }}</title>

@@ -33,9 +33,9 @@ h-entry
 			<div class="post-body mdc-typography--body1">
 				<p class="post-text p-summary">
 					{%- if post.data.subtitle -%}
-					{{ post.data.subtitle | strip_html }}
+					{{ post.data.subtitle | joinLines | strip_html }}
 					{%- else -%}
-					{{ post.templateContent | strip_html | joinLines | truncatewords: 50 }}
+					{{ post.templateContent | joinLines | strip_html | truncatewords: 50 }}
 					{%- endif -%}
 				</p>
 				{%- assign tags = post.data.tags -%}

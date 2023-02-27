@@ -83,7 +83,7 @@ a.mdc-grid-tile__primary {
 				<div class="mdc-grid-tile__overlay">
 					<span class="mdc-typography--subtitle2 dt-published">{{ post.date | date: "%b %e, %Y" }}</span>
 					<div class="mdc-grid-tile__title mdc-typography--body1 p-summary">
-						{{ post.templateContent | strip_html | joinLines | truncatewords: 20 }}
+						{{ post.templateContent | joinLines | strip_html | truncatewords: 20 }}
 					</div>
 				</div>
 			</a>
