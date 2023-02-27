@@ -630,7 +630,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 ## Learn more about Foster Care
 
 - People to Follow
-  - Jaymi Matranga ([@familyandcoffee](https://www.instagram.com/familyandcoffee/)) - Social worker, foster parent, and former foster youth
+  - Jaymi ([@familyandcoffee](https://www.instagram.com/familyandcoffee/)) - Social worker, foster parent, and former foster youth
   - Cam Lee Small ([@therapyredeemed](https://www.instagram.com/therapyredeemed/)) - Therapist and Korean adoptee
   - [Laura](https://www.fosterparentpartner.com/) ([@foster.parenting](https://www.instagram.com/foster.parenting/)) - "Foster Parent Partner" with lots of videos and resources
   - [Karly Pancake](https://www.karlypancake.com/) ([@karlypancake](https://instagram.com/karlypancake)) - Foster family we went to college with
