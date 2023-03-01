@@ -2,6 +2,7 @@
 title: Sausage Bread
 date: 2023-01-02T06:56:13.219Z
 tags:
+  - breakfast
   - bread
   - family recipe
 image: /assets/img/sausage-bread.jpg

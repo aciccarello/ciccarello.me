@@ -1,6 +1,8 @@
 ---
 title: Creme Brulee
 date: 2022-12-19T05:36:05.649Z
+tags:
+  - dessert
 image: https://images.unsplash.com/photo-1615234435691-3b7bae98085e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2048&q=50
 image_alt: Shallow cream dish topped with caramelized sugar
 image_caption: 'Photo by <a

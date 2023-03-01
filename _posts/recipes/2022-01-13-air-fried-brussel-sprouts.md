@@ -19,7 +19,7 @@ We got an air fryer for christmas and this was one of the first meals we made. I
 
 {% recipe-ingredients %}
 
-* 1 teaspoon olive oil
+* 2 tablespoons olive oil
 * 2 cups of halved Brussels sprouts
 * 1 teaspoon garlic powder
 * salt and pepper
