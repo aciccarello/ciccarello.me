@@ -177,8 +177,9 @@ module.exports = {
 	allSkills: Array.from(new Set(experience.map(({ skills }) => skills))),
 	experience,
 	personal: [
-		'Spent 6 months traveling around Latin America learning Spanish.',
+		'Passionate about accessibility and evolving web standards',
 		'Member of the <a href="https://indieweb.org">IndieWeb</a> community working on interoperable, personal websites.',
+		'Spent 6 months traveling around Latin America learning Spanish.',
 		'Enjoys <a href="/posts/tags/birds/">birding</a>, gardening and playing disc sports',
 	],
 };
