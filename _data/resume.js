@@ -26,9 +26,12 @@ const experience = [
 			'Full-stack Software development and consulting work for multiple clients.',
 		achievements: [
 			'Acted as team lead on Angular application development for a financial services corporation.',
-			'Developed a large React application for a multi-national accounting org with agile/rapid release flow.',
+			'Developed new React Components for the main page of a multi-national accounting tool with agile/rapid release flow.',
 			'Worked on and with AWS Lambda, DynamoDB, and Elastic Beanstalk back-ends using Express.js and Java Spring.',
 			'Lead test automation implementation and 6-month junior developer coaching program.',
+		],
+		moreAchievements: [
+			'Helped deliver a business management platform using Dojo 2 and a Nest.js backend',
 		],
 		skills: [
 			'Angular',
@@ -38,15 +41,19 @@ const experience = [
 			'AWS Lambda',
 			'DynamoDB',
 			'Elastic Beanstalk',
+			'Node.js',
+			'Git',
 			'Agile',
 			'Scrum',
 			'Java',
 			'Spring',
 			'Express.js',
+			'Nest.js',
 			'Team Leadership',
 			'Coaching',
 			'CI/CD',
 			'Jenkins',
+			'Atlassian',
 		],
 	},
 	{
@@ -58,8 +65,11 @@ const experience = [
 		endDate: new Date('2018-08-15'),
 		summary: 'Contract position with central customer data API team.',
 		achievements: [
-			'Develop Java REST API microservices using Spring Boot in XP/TDD environment',
-			'Help inform API and architectural designs for development team',
+			'Developed Java REST API microservices using Spring Boot in XP/TDD environment',
+			'Helped inform API and architectural designs for development team',
+		],
+		moreAchievements: [
+			'Started regular team discussion on how to improve team processes and designs',
 		],
 		skills: [
 			'Java',
@@ -82,8 +92,9 @@ const experience = [
 			'Developed and maintained internal HR applications for 10,000 employee company. Applications I helped maintain included payroll, sales compensation, and benefits tools.',
 		achievements: [
 			'Designed and lead new AngularJS/ag-grid web application deployment/testing',
-			'Java Spring and Oracle SQL database development plus JSP and Classic ASP page maintenance',
+			'Developed Java Spring and Oracle SQL database backend',
 		],
+		moreAchievements: ['Supported legacy JSP and Classic ASP pages'],
 		skills: [
 			'AngularJS',
 			'ag-grid',
@@ -96,6 +107,7 @@ const experience = [
 	},
 	{
 		companyName: 'Covenant Kitchens & Baths',
+		companyUrl: 'https://www.covenantkitchens.com/',
 		position: 'Web Developer/Systems Technician/CAD Draftsman',
 		location: 'Westbrook, CT/Remote',
 		startDate: new Date('2011-05-15'),
@@ -103,7 +115,7 @@ const experience = [
 		summary:
 			'Range of technical work for Kitchen & Bath design firm. CAD Drafting in-person and web administration later as freelance.',
 		achievements: [
-			'Complete website revamp, G-Suite administration, and SEO optimization',
+			'Completed website revamp and performed G-Suite administration and SEO optimization',
 		],
 		moreAchievements: [
 			'Produced 2D & 3D drawings in AutoCAD and SketchUp',
@@ -127,7 +139,8 @@ const experience = [
 		startDate: new Date('2012-07-15'),
 		endDate: new Date('2013-08-15'),
 		durationText: 'Summers',
-		summary: 'Summer internship with large ',
+		summary:
+			'Summer internship with the business intelligence team of a multinational company.',
 		achievements: [
 			'Automated manual data entry into SAP using VBScript, speeding up migration',
 		],

@@ -7,45 +7,6 @@ layout: default
 		background-color: var(--mdc-theme-background);
 	}
 
-	@media screen {
-		main {
-			margin-right: auto;
-			margin-left: auto;
-			max-width: var(--container-width);
-			padding-left: 1rem;
-			padding-right: 1rem;
-		}
-		/* TODO: Style as timeline */
-
-		ul.experience-skills {
-			display: flex;
-			flex-wrap: wrap;
-		}
-
-		.experience-skills li {
-			border-radius: 16px;
-			background-color: #e0e0e0;
-			/* font-size: 0.875rem;
-			line-height: 1.25rem;
-			font-weight: 400;
-			letter-spacing: 0.0178571429em;
-			text-decoration: inherit;
-			text-transform: inherit; */
-			height: 32px;
-			display: inline-flex;
-			position: relative;
-			align-items: center;
-			box-sizing: border-box;
-			padding: 0 12px;
-			margin: 4px;
-			border-width: 0;
-			outline: none;
-			/* cursor: pointer;
-			-webkit-appearance: none;
-			overflow: hidden; */
-		}
-	}
-
 	main nav > ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -88,7 +49,7 @@ layout: default
 	}
 
 	.job-experience {
-		margin: 1.5rem 0;
+		padding: 0.5rem 0;
 	}
 
 	.experience-title {
@@ -124,16 +85,6 @@ layout: default
 		display: inline-flex;
 	}
 
-	@media print {
-		.experience-skills li:after {
-			content: ', ';
-		}
-
-		.experience-skills li:last-of-type:after {
-			content: '';
-		}
-	}
-
 	.more {
 		transition: 0.5s ease;
 		overflow-y: hidden;
@@ -160,7 +111,7 @@ layout: default
 		flex-direction: row;
 		gap: 0.5rem;
 		justify-content: center;
-		margin: 20px auto;
+		margin: 1rem auto;
 	}
 
 	main form button {
@@ -173,6 +124,78 @@ layout: default
 
 	.hide-more .toggle-text:after {
 		content: 'more';
+	}
+
+	@media print {
+		.experience-skills li:after {
+			content: ', ';
+		}
+
+		.experience-skills li:last-of-type:after {
+			content: '';
+		}
+	}
+
+	@media screen {
+		main {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: var(--container-width);
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
+		.job-experience {
+			--timeline-padding: 0.75rem;
+			--timeline-border-width: 2px;
+			padding-left: var(--timeline-padding);
+			border-left: var(--timeline-border-width) solid var(--mdc-theme-tertiary-light);
+		}
+
+		.job-experience .experience-title {
+			position: relative;
+		}
+
+		.job-experience .experience-title:before {
+			content: '';
+			position: absolute;
+			left: calc(var(--timeline-border-width) / -2 - var(--timeline-padding));
+			bottom: 0;
+			transform: translate(-50%, -0.5rem);
+			width: 0.5rem;
+			height: 0.5rem;
+			border-radius: 50%;
+			background: var(--mdc-theme-tertiary);
+			z-index: 1;
+		}
+
+		ul.experience-skills {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.experience-skills li {
+			border-radius: 16px;
+			background-color: #e0e0e0;
+			/* font-size: 0.875rem;
+			line-height: 1.25rem;
+			font-weight: 400;
+			letter-spacing: 0.0178571429em;
+			text-decoration: inherit;
+			text-transform: inherit; */
+			height: 32px;
+			display: inline-flex;
+			position: relative;
+			align-items: center;
+			box-sizing: border-box;
+			padding: 0 12px;
+			margin: 4px;
+			border-width: 0;
+			outline: none;
+			/* cursor: pointer;
+			-webkit-appearance: none;
+			overflow: hidden; */
+		}
 	}
 </style>
 
@@ -188,7 +211,7 @@ layout: default
 				<a href="mailto:anthony@ciccarello.me">anthony@ciccarello.me</a>
 			</li>
 			<li>
-				{% include "icons/work-history.svg" %}
+				{% include "icons/link.svg" %}
 				<a href="{{page.url}}">www.ciccarello.me</a>
 			</li>
 			<li>
@@ -202,11 +225,6 @@ layout: default
 		</ul>
 	</nav>
 
-	<form class="actions print-hide">
-		<button class="toggle-text" type="button" onclick="toggleExpandedText()">Show </button>
-		<button type="button" onclick="window.print()">Print</button>
-	</form>
-
 	<div class="e-content">
 		<h2 class="summary-title">Summary</h2>
 		<span class="experience-location">﹣ San Diego County, California</span>
@@ -219,6 +237,11 @@ layout: default
 				</li>
 			{% endfor %}
 		</ul>
+
+		<form class="actions print-hide">
+			<button class="toggle-text" type="button" onclick="toggleExpandedText()">Show </button>
+			<button type="button" onclick="window.print()">Print</button>
+		</form>
 
 		<section>
 			<h2>Experience</h2>
