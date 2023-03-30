@@ -1,0 +1,319 @@
+---
+title: 'Resume'
+layout: default
+---
+<style type="text/css">
+	body {
+		background-color: var(--mdc-theme-background);
+	}
+
+	@media screen {
+		main {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: var(--container-width);
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+		/* TODO: Style as timeline */
+
+		ul.experience-skills {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.experience-skills li {
+			border-radius: 16px;
+			background-color: #e0e0e0;
+			/* font-size: 0.875rem;
+			line-height: 1.25rem;
+			font-weight: 400;
+			letter-spacing: 0.0178571429em;
+			text-decoration: inherit;
+			text-transform: inherit; */
+			height: 32px;
+			display: inline-flex;
+			position: relative;
+			align-items: center;
+			box-sizing: border-box;
+			padding: 0 12px;
+			margin: 4px;
+			border-width: 0;
+			outline: none;
+			/* cursor: pointer;
+			-webkit-appearance: none;
+			overflow: hidden; */
+		}
+	}
+
+	main nav > ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		justify-content: space-around;
+		list-style: none;
+		padding: 0;
+	}
+
+	main nav > ul > li {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	main h1 {
+		font-family: Georgia,'Times New Roman',serif;
+		font-size: 2.5em;
+		font-weight: lighter;
+		text-align: center;
+	}
+
+	main h2 {
+		text-transform: uppercase;
+		color: var(--mdc-theme-secondary-light);
+		margin: 2rem 0 1rem;
+	}
+
+	main h3 {
+		margin: 0.5rem 0;
+	}
+
+	main p {
+		margin: 0.5rem 0;
+	}
+
+	.summary-title {
+		display: inline-block;
+		margin: 1rem 0;
+	}
+
+	.job-experience {
+		margin: 1.5rem 0;
+	}
+
+	.experience-title {
+		display: inline-block;
+		margin-right: 0.25rem;
+	}
+
+	.experience-company a {
+		color: black;
+		text-decoration: none;
+	}
+
+	.experience-location {
+		color: rgba(0,0,0,0.6);
+	}
+
+	ul.achievements {
+		padding-left: 1.25rem;
+		margin: 0.5rem 0;
+	}
+
+	.experience-skills-title {
+		margin: 0.5rem 0;
+	}
+
+	ul.experience-skills {
+		list-style: none;
+		padding: 0;
+		margin: 0.5rem 0;
+	}
+
+	.experience-skills li {
+		display: inline-flex;
+	}
+
+	@media print {
+		.experience-skills li:after {
+			content: ', ';
+		}
+
+		.experience-skills li:last-of-type:after {
+			content: '';
+		}
+	}
+
+	.more {
+		transition: 0.5s ease;
+		overflow-y: hidden;
+		opacity: 1;
+		visbility: visible;
+	}
+
+	li.more {
+		/* bullet disappears with overflow hidden */
+		overflow-y: visible;
+	}
+
+	.hide-more .more {
+		height: 0;
+		transform: scaleY(0);
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+		visbility: hidden;
+	}
+
+	main form {
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		justify-content: center;
+		margin: 20px auto;
+	}
+
+	main form button {
+		width: 200px;
+	}
+
+	.toggle-text:after {
+		content: 'less';
+	}
+
+	.hide-more .toggle-text:after {
+		content: 'more';
+	}
+</style>
+
+<div class="h-resume hresume hide-more">
+	<h1>
+		<span class="print-show">Anthony Cicarello</span>
+		<span class="print-hide">Resume</span>
+	</h1>
+	<nav>
+		<ul>
+			<li>
+				{% include "icons/email.svg" %}
+				<a href="mailto:anthony@ciccarello.me">anthony@ciccarello.me</a>
+			</li>
+			<li>
+				{% include "icons/work-history.svg" %}
+				<a href="{{page.url}}">www.ciccarello.me</a>
+			</li>
+			<li>
+				{% include "icons/linkedin.svg" %}
+				<a href="https://www.linkedin.com/in/anthonyciccarello/">in/anthonyciccarello</a>
+			</li>
+			<li>
+				{% include "icons/github.svg" %}
+				<a href="https://github.com/aciccarello">@aciccarello</a>
+			</li>
+		</ul>
+	</nav>
+
+	<form class="actions print-hide">
+		<button class="toggle-text" type="button" onclick="toggleExpandedText()">Show </button>
+		<button type="button" onclick="window.print()">Print</button>
+	</form>
+
+	<div class="e-content">
+		<h2 class="summary-title">Summary</h2>
+		<span class="experience-location">﹣ San Diego County, California</span>
+		<p>{{resume.summary}}</p>
+		<h2>Top Skills</h2>
+		<ul class="experience-skills">
+			{% for skill in resume.topSkills %}
+				<li class="p-skill">
+					{{ skill }}
+				</li>
+			{% endfor %}
+		</ul>
+
+		<section>
+			<h2>Experience</h2>
+			{% for job in resume.experience %}
+				{{ product.title }}
+				<div class="job-experience p-experience h-event">
+					<div class="duration">
+						<time class="dt-start" datetime="{{ job.startDate | formatMachineDate : "month" }}">{{ job.startDate | formatHumanDate : "month" }}</time>
+							﹣
+							{% if job.endDate %}
+							<time class="dt-end" datetime="{{ job.endDate | formatMachineDate : "month" }}">{{ job.endDate | formatHumanDate : "month" }}</time>
+						{% else %}
+							<span class="dt-end">Present</span>
+						{% endif %}
+						{%- assign endDate = job.endDate | default : buildTime -%}
+						{% if job.durationText %}
+							({{job.durationText}})
+						{% else %}
+							({{job.startDate | yearsSince : endDate }})
+						{% endif %}
+					</div>
+					<h3 class="experience-title p-name">
+						{{job.position}}
+					</h3>
+					<span class="experience-company p-location h-card">
+						{% if job.companyUrl %}
+							<a class="p-org u-url" href="{{job.companyUrl}}" rel="noopener noreferrer">
+							{%- endif -%}
+							{{job.companyName}}
+							{%- if job.companyUrl -%}
+							</a>
+						{% endif %}
+					</span>
+					<span class="experience-location p-location more">﹣ {{job.location}}</span>
+
+					<p class="p-summary more">{{job.summary}}</p>
+
+					<ul class="achievements">
+						{% for achievement in job.achievements %}
+							<li>
+								{{ achievement }}
+							</li>
+						{% endfor %}
+						{% for achievement in job.moreAchievements %}
+							<li class="more">
+								{{ achievement }}
+							</li>
+						{% endfor %}
+					</ul>
+
+					{% if job.skills and job.skills.length > 0 %}
+						<h4 class="experience-skills-title more">Skills and Technologies</h4>
+						<ul class="experience-skills more">
+							{% for skill in job.skills %}
+								<li class="p-skill">
+									{{ skill }}
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</section>
+		<section>
+			<h2>Education</h2>
+			<div class="duration">
+				<time class="dt-start" datetime="2010">2010</time>
+						﹣
+						<time class="dt-end" datetime="2014">2014</time>
+			</div>
+			<h3 class="experience-title p-name">Bachelor of Science (BS), Computer Engineering</h3>
+			<span class="experience-company p-location h-card">Cedarville University</span>
+			<p class="p-summary">Minor in Mathematics, and Computer Science.</p>
+		</section>
+		<section class="more">
+			<h2>Personal<span class="print-hide"> Tidbits</span></h2>
+			<ul>
+				{% for item in resume.personal %}
+					<li>{{ item }}</li>
+				{% endfor %}
+			</ul>
+		</section>
+	</div>
+
+	<form class="actions print-hide">
+		<button class="toggle-text" type="button" onclick="toggleExpandedText()">Show </button>
+		<button type="button" onclick="window.print()">Print</button>
+	</form>
+</div>
+
+<script>
+	function toggleExpandedText() {
+		document
+			.querySelector('.h-resume')
+			.classList
+			.toggle('hide-more');
+	}
+</script>

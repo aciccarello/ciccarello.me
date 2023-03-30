@@ -39,7 +39,7 @@ layout: default
 			<p class="post-meta">
 				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
 					<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
-						{{- page.date | formatHumanDate: hideTime -}}
+						{{- page.date | formatHumanDate: dateFormat -}}
 					</time>
 				</a>
 			</p>

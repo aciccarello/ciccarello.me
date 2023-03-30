@@ -5,16 +5,16 @@ layout: default
 <article class="h-recipe hrecipe">
 	<section class="container post mdc-card">
 		{% if image %}
-		<figure class="mdc-card__media post-thumbnail u-featured">
-			<div class="post-thumbnail--wrapper">
-				<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo photo" />
-			</div>
-			{% if image_caption %}
-			<figcaption class="mdc-typography--caption">
-				{{ image_caption | markdownify }}
-			</figcaption>
-			{% endif %}
-		</figure>
+			<figure class="mdc-card__media post-thumbnail u-featured">
+				<div class="post-thumbnail--wrapper">
+					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo photo"/>
+				</div>
+				{% if image_caption %}
+					<figcaption class="mdc-typography--caption">
+						{{ image_caption | markdownify }}
+					</figcaption>
+				{% endif %}
+			</figure>
 		{% endif %}
 		<header class="post-header">
 			<h1 class="post-title p-name fn mdc-typography--headline3">
@@ -23,14 +23,14 @@ layout: default
 				</a>
 			</h1>
 			{%- if subtitle -%}
-			<h2 class="post-title p-summary mdc-typography--headline6">
-				{{ subtitle | escape }}
-			</h2>
+				<h2 class="post-title p-summary mdc-typography--headline6">
+					{{ subtitle | escape }}
+				</h2>
 			{%- endif -%}
 			<p class="post-meta">
 				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
 					<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
-						{{- page.date | formatHumanDate: hideTime -}}
+						{{- page.date | formatHumanDate: dateFormat -}}
 					</time>
 				</a>
 			</p>
@@ -51,21 +51,21 @@ layout: default
 	<h2 class="mdc-typography--headline6">
 		Recent recipes
 	</h2>
-		{% if previousPost %}
+	{% if previousPost %}
 		<div class="post-suggestions__area post-suggestions__previous">
 			<h3 class="mdc-typography--subtitle1">
 				Previous
 			</h3>
 			{% include "post-card.html" post: previousPost %}
 		</div>
-		{% endif %}
-		{% if nextPost %}
+	{% endif %}
+	{% if nextPost %}
 		<div class="post-suggestions__area post-suggestions__next">
 			<h3 class="mdc-typography--subtitle1">
 				Next
 			</h3>
 			{% include "post-card.html" post: nextPost %}
 		</div>
-		{% endif %}
-	</ul>
+	{% endif %}
+</ul>
 </div>

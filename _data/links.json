@@ -6,8 +6,8 @@
       "title": "Homepage"
     },
     {
-      "title": "Foster Care",
-      "url": "/foster/"
+      "title": "Resume",
+      "url": "/resume/"
     },
     {
       "url": "/posts/",
@@ -20,6 +20,10 @@
     {
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/in/anthonyciccarello/"
+    },
+    {
+      "title": "Foster Care",
+      "url": "/foster/"
     },
     {
       "title": "IndieWeb",

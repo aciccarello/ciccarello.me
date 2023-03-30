@@ -242,6 +242,10 @@ hr {
 	background-color: var(--mdc-theme-secondary-dark);
 }
 
+.skills .link-button {
+	width: fit-content;
+}
+
 .skills-list {
 	display: flex;
 	justify-content: center;
@@ -378,6 +382,10 @@ a.disable-link-styles {
 
 .mdc-chip-set li {
 	list-style: none;
+}
+
+.print-show {
+	display: none;
 }
 
 .post {

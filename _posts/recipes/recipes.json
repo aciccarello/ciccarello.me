@@ -1,7 +1,7 @@
 {
   "permalink": "/recipes/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/",
   "layout": "recipe",
-  "hideTime": true,
+  "dateFormat": "day",
   "author": {
     "description": "I'm a software engineer who enjoys collecting recipes I've made and preserving family favorites. My cooking style is laid back and flexible so some recipes may not be exact."
   }

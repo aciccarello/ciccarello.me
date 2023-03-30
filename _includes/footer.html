@@ -5,7 +5,7 @@
 			<a href="/">Home</a>
 			<a href="/posts/">Posts</a>
 			<a href="/links/">Links</a>
-			<a href="/foster/">Foster Care</a>
+			<a href="/resume/">Resume</a>
 		</nav>
 	</section>
 	<section>
@@ -15,7 +15,7 @@
 			<a href="/colophon/">Colophon</a>
 			<a href="/privacy/" rel="privacy-policy">Privacy</a>
 			{%- if eleventyExcludeFromCollections != "deleted" -%}
-			<a href="https://github.com/aciccarello/ciccarello.me/blob/main/{{ page.inputPath }}" rel="noopener">
+				<a href="https://github.com/aciccarello/ciccarello.me/blob/main/{{ page.inputPath }}" rel="noopener">
 				Page source
 			</a>
 			{% endif %}
@@ -30,10 +30,10 @@
 		</nav>
 	</section>
 	{%- if page.url == "/" %}
-	<div class="site-updated"> Site Last Updated:
+		<div class="site-updated"> Site Last Updated:
 		<time datetime="{{ buildTime | formatMachineDate }}">
-			{{- buildTime | formatHumanDate: true -}}
-		</time>
-	</div>
+				{{- buildTime | formatHumanDate: true -}}
+			</time>
+		</div>
 	{% endif %}
 </footer>

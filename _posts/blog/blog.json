@@ -1,5 +1,5 @@
 {
   "permalink": "/blog/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/",
   "layout": "article",
-  "hideTime": true
+  "dateFormat": "day"
 }

@@ -1,0 +1,34 @@
+@media print {
+	body > header,
+	body > footer,
+	.print-hide,
+	.post-suggestions {
+		display: none !important;
+	}
+
+	.print-show {
+		display: unset;
+	}
+
+	main {
+		padding: 0;
+	}
+
+	.container {
+		box-shadow: none;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		page-break-after: avoid;
+		page-break-inside: avoid;
+	}
+
+	figure {
+		page-break-inside: avoid;
+	}
+}
