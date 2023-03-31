@@ -70,7 +70,7 @@ module.exports = function (eleventyConfig) {
 		const stringDate = pluginRss.dateToRfc3339(date);
 		const [datePart, timePart] = stringDate.split('T');
 		if (accuracy === 'month') {
-			return datePart.substring(0, 6);
+			return datePart.substring(0, 7);
 		}
 		if (accuracy === 'day' || timePart === '00:00:00Z') {
 			return datePart;

@@ -30,40 +30,32 @@ layout: default
 	}
 
 	main h2 {
-		text-transform: uppercase;
 		color: var(--mdc-theme-secondary-light);
-		margin: 2rem 0 1rem;
+		display: inline-block;
+		margin: 1rem 0;
+		text-transform: uppercase;
 	}
 
 	main h3 {
-		margin: 0.5rem 0;
+		display: inline-block;
+		margin: 0.5rem 0 0.25rem;
 	}
 
 	main p {
 		margin: 0.5rem 0;
 	}
 
-	.summary-title {
-		display: inline-block;
-		margin: 1rem 0;
+	.resume-location {
+		color: rgba(0,0,0,0.6);
 	}
 
-	.job-experience {
-		padding: 0.5rem 0;
+	.resume-experience {
+		padding: 0.75rem 0;
 	}
 
-	.experience-title {
-		display: inline-block;
-		margin-right: 0.25rem;
-	}
-
-	.experience-company a {
+	.experience-org a {
 		color: black;
 		text-decoration: none;
-	}
-
-	.experience-location {
-		color: rgba(0,0,0,0.6);
 	}
 
 	ul.achievements {
@@ -106,6 +98,11 @@ layout: default
 		visbility: hidden;
 	}
 
+	.hide-more span.more {
+		/* inline elements don't accept height */
+		display: none;
+	}
+
 	main form {
 		display: flex;
 		flex-direction: row;
@@ -115,15 +112,15 @@ layout: default
 	}
 
 	main form button {
-		width: 200px;
+		flex-basis: 200px;
 	}
 
 	.toggle-text:after {
-		content: 'less';
+		content: 'Concise Version';
 	}
 
 	.hide-more .toggle-text:after {
-		content: 'more';
+		content: 'Full Version';
 	}
 
 	@media print {
@@ -145,18 +142,18 @@ layout: default
 			padding-right: 1rem;
 		}
 
-		.job-experience {
+		.resume-experience {
 			--timeline-padding: 0.75rem;
 			--timeline-border-width: 2px;
 			padding-left: var(--timeline-padding);
 			border-left: var(--timeline-border-width) solid var(--mdc-theme-tertiary-light);
 		}
 
-		.job-experience .experience-title {
+		.resume-experience h3 {
 			position: relative;
 		}
 
-		.job-experience .experience-title:before {
+		.resume-experience h3:before {
 			content: '';
 			position: absolute;
 			left: calc(var(--timeline-border-width) / -2 - var(--timeline-padding));
@@ -199,9 +196,9 @@ layout: default
 	}
 </style>
 
-<div class="h-resume hresume hide-more">
-	<h1>
-		<span class="print-show">Anthony Cicarello</span>
+<div class="h-resume">
+	<h1 class="p-name h-card">
+		<a href="/" class="p-name u-url disable-link-styles print-show">Anthony Cicarello</a>
 		<span class="print-hide">Resume</span>
 	</h1>
 	<nav>
@@ -226,8 +223,8 @@ layout: default
 	</nav>
 
 	<div class="e-content">
-		<h2 class="summary-title">Summary</h2>
-		<span class="experience-location">﹣ San Diego County, California</span>
+		<h2>Summary</h2>
+		<span class="resume-location">﹣ San Diego County, California</span>
 		<p>{{resume.summary}}</p>
 		<h2>Top Skills</h2>
 		<ul class="experience-skills">
@@ -246,15 +243,14 @@ layout: default
 		<section>
 			<h2>Experience</h2>
 			{% for job in resume.experience %}
-				{{ product.title }}
-				<div class="job-experience p-experience h-event">
+				<div class="resume-experience p-experience h-event">
 					<div class="duration">
 						<time class="dt-start" datetime="{{ job.startDate | formatMachineDate : "month" }}">{{ job.startDate | formatHumanDate : "month" }}</time>
 							﹣
 							{% if job.endDate %}
 							<time class="dt-end" datetime="{{ job.endDate | formatMachineDate : "month" }}">{{ job.endDate | formatHumanDate : "month" }}</time>
 						{% else %}
-							<span class="dt-end">Present</span>
+							Present
 						{% endif %}
 						{%- assign endDate = job.endDate | default : buildTime -%}
 						{% if job.durationText %}
@@ -263,10 +259,8 @@ layout: default
 							({{job.startDate | yearsSince : endDate }})
 						{% endif %}
 					</div>
-					<h3 class="experience-title p-name">
-						{{job.position}}
-					</h3>
-					<span class="experience-company p-location h-card">
+					<h3 class="p-name">{{job.position}}</h3>
+					<span class="experience-org p-location h-card">
 						{% if job.companyUrl %}
 							<a class="p-org u-url" href="{{job.companyUrl}}" rel="noopener noreferrer">
 							{%- endif -%}
@@ -275,22 +269,24 @@ layout: default
 							</a>
 						{% endif %}
 					</span>
-					<span class="experience-location p-location more">﹣ {{job.location}}</span>
+					<span class="resume-location more">﹣ <span class="p-location">{{job.location}}</span></span>
 
-					<p class="p-summary more">{{job.summary}}</p>
+					<div class="p-summary">
+						<p class="more">{{job.summary}}</p>
 
-					<ul class="achievements">
-						{% for achievement in job.achievements %}
-							<li>
-								{{ achievement }}
-							</li>
-						{% endfor %}
-						{% for achievement in job.moreAchievements %}
-							<li class="more">
-								{{ achievement }}
-							</li>
-						{% endfor %}
-					</ul>
+						<ul class="achievements">
+							{% for achievement in job.achievements %}
+								<li>
+									{{ achievement }}
+								</li>
+							{% endfor %}
+							{% for achievement in job.moreAchievements %}
+								<li class="more">
+									{{ achievement }}
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
 
 					{% if job.skills and job.skills.length > 0 %}
 						<h4 class="experience-skills-title more">Skills and Technologies</h4>
@@ -305,15 +301,17 @@ layout: default
 				</div>
 			{% endfor %}
 		</section>
-		<section>
+		<section class="p-education h-event">
 			<h2>Education</h2>
 			<div class="duration">
 				<time class="dt-start" datetime="2010">2010</time>
 						﹣
 						<time class="dt-end" datetime="2014">2014</time>
 			</div>
-			<h3 class="experience-title p-name">Bachelor of Science (BS), Computer Engineering</h3>
-			<span class="experience-company p-location h-card">Cedarville University</span>
+			<h3 class="p-name">Bachelor of Science (BS), Computer Engineering</h3>
+			<span class="experience-org p-location h-card">
+				<span class="p-org">Cedarville University</span>
+			</span>
 			<p class="p-summary">Minor in Mathematics, and Computer Science.</p>
 		</section>
 		<section class="more">
