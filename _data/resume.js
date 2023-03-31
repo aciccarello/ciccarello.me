@@ -23,10 +23,10 @@ const experience = [
 		location: 'Remote',
 		startDate: new Date('2018-08-21'),
 		summary:
-			'Full-stack Software development and consulting work for multiple clients.',
+			'Full-stack Software development and consulting work for multiple clients. Primarily focused on JavaScript/TypeScript development.',
 		achievements: [
 			'Acted as team lead on Angular application development for a financial services corporation.',
-			'Developed new React Components for the main page of a multi-national accounting tool with agile/rapid release flow.',
+			'Implemented main page redesign with team and developed interactive React components for service cross-selling in major online accounting application',
 			'Worked on and with AWS Lambda, DynamoDB, and Elastic Beanstalk back-ends using Express.js and Java Spring.',
 			'Lead test automation implementation and 6-month junior developer coaching program.',
 		],
@@ -67,7 +67,7 @@ const experience = [
 		endDate: new Date('2018-08-15'),
 		summary: 'Contract position with central customer data API team.',
 		achievements: [
-			'Developed Java REST API microservices using Spring Boot in XP/TDD environment',
+			'Developed Java REST API microservices using Spring Boot in <abbr title="Extreme Programming">XP</abbr>/<abbr title="Test-Driven Development">TDD</abbr> environment',
 			'Helped inform API and architectural designs for development team',
 		],
 		moreAchievements: [
@@ -78,6 +78,7 @@ const experience = [
 			'Spring',
 			'REST',
 			'MongoDB',
+			'TDD',
 			'Extreme Programming',
 			'Agile',
 			'Rally',
