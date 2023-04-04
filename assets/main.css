@@ -658,6 +658,8 @@ blockquote {
 }
 form input,
 form button,
+.form input,
+.form button,
 .link-button {
 	background-color: white;
 	border-color: #ccc;
@@ -681,6 +683,9 @@ form button,
 form input[type='submit'],
 form input[type='button'],
 form button,
+.form input[type='submit'],
+.form input[type='button'],
+.form button,
 .link-button {
 	background-color: var(--mdc-theme-secondary, #333);
 	border: none;
@@ -693,11 +698,15 @@ form button,
 form input[type='submit']:hover,
 form input[type='button']:hover,
 form button:hover,
+.form input[type='submit']:hover,
+.form input[type='button']:hover,
+.form button:hover,
 .link-button:hover {
 	background-color: var(--mdc-theme-secondary-light, #333);
 }
 
-form label {
+form label,
+.form label {
 	margin-bottom: 5px;
 	font-size: 14px;
 	font-weight: 700;

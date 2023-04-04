@@ -103,7 +103,7 @@ layout: default
 		display: none;
 	}
 
-	main form {
+	main .form {
 		display: flex;
 		flex-direction: row;
 		gap: 0.5rem;
@@ -111,7 +111,7 @@ layout: default
 		margin: 1rem auto;
 	}
 
-	main form button {
+	main .form button {
 		flex-basis: 200px;
 	}
 
@@ -235,10 +235,10 @@ layout: default
 			{% endfor %}
 		</ul>
 
-		<form class="actions print-hide">
+		<section class="form actions print-hide">
 			<button class="toggle-text" type="button" onclick="toggleExpandedText()">Show </button>
 			<button type="button" onclick="window.print()">Print for PDF</button>
-		</form>
+		</section>
 
 		<section>
 			<h2>Experience</h2>
@@ -324,10 +324,10 @@ layout: default
 		</section>
 	</div>
 
-	<form class="actions print-hide">
+	<section class="form actions print-hide">
 		<button class="toggle-text" type="button" onclick="toggleExpandedText()">Show </button>
 		<button type="button" onclick="window.print()">Print for PDF</button>
-	</form>
+	</section>
 </div>
 
 <script>

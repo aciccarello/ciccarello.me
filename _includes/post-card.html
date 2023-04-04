@@ -10,7 +10,8 @@ h-entry
 	<a class="u-url mdc-card mdc-elevation-transition disable-link-styles" href="{{ post.url | url }}">
 		{%- if post.data.image -%}
 			{% assign filetype = post.data.image | split: "." | last -%}
-			<div class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}" role="img"
+			<div class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}"
+			{% if post.data.layout == "photo" %}aria-label="{{ post.data.image_alt }}" role="img"{% endif %}
 			{% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
 				{% if filetype == 'mp4' -%}
 					<video preload="metadata" alt="{{ post.data.image_alt | escape }}">

@@ -4,99 +4,105 @@ layout: page
 excludeFromSitemap: true
 ---
 <style type="text/css">
-h1 {
-	margin: 40px 0;
-}
+	h1 {
+		margin: 40px 0;
+	}
 
-article {
-	text-align: center;
-}
+	article {
+		text-align: center;
+	}
 
-.providers-list {
-	padding: 0;
-}
+	.providers-list {
+		padding: 0;
+	}
 
-.providers-list li {
-	list-style: none;
-	margin: 40px 0;
-}
+	.providers-list li {
+		list-style: none;
+		margin: 40px 0;
+	}
 
-img.provider-icon {
-	display: block;
-	height: 200px;
-	width: 200px;
-	margin: 12px auto;
-}
+	img.provider-icon {
+		display: block;
+		height: 200px;
+		width: 200px;
+		margin: 12px auto;
+	}
 
-.qr-code-section {
-	margin-top: 120px;
-}
+	.qr-code-section {
+		margin-top: 120px;
+	}
 
-img.qr-code {
-	display: block;
-	width: 200px;
-	margin: 24px auto;
-}
+	img.qr-code {
+		display: block;
+		width: 200px;
+		margin: 24px auto;
+	}
 </style>
 
 <p>Accepted services ordered by preference. See <a href="/referrals">referrals page</a> for sign up deals.</p>
 <ol class="providers-list">
-  <li>
-	<img src="/assets/img/icon-zele.png" alt="" class="provider-icon"/>
+	<li>
+		<img src="/assets/img/icon-zele.png" alt="" class="provider-icon"/>
 	Zelle (anthony@ciccarello.me)
 	<p>
 	  Bank-to-bank.
 	  <a href="https://www.zellepay.com/get-started">Learn More</a>
-	</p>
-  </li>
-  <li>
-  	<a href="https://venmo.com/u/ajciccarello">
-	  <img src="/assets/img/icon-venmo.svg" alt="" class="provider-icon"/>
-	</a>
+		</p>
+	</li>
+	<li>
+		<a href="https://venmo.com/u/ajciccarello" tabindex="-1" aria-hidden="true">
+			<img src="/assets/img/icon-venmo.svg" alt="" class="provider-icon"/>
+		</a>
 	  Venmo (<a href="https://venmo.com/u/ajciccarello">@ajciccarello</a>)
   </li>
-  <li>
-	<a href="https://paypal.me/ajciccarello">
-		<img src="/assets/img/icon-paypal.png" alt="" class="provider-icon"/>
-	</a>
+	<li>
+		<a href="https://paypal.me/ajciccarello" tabindex="-1" aria-hidden="true">
+			<img src="/assets/img/icon-paypal.png" alt="" class="provider-icon"/>
+		</a>
 		Paypal (<a href="https://paypal.me/ajciccarello">@ajciccarello</a>)
   </li>
-  <li>
-	<a href="https://gpay.app.goo.gl/pay-moUq8zPwoVf">
-		<img src="/assets/img/icon-google-pay.svg" alt="" class="provider-icon"/>
-	</a>
+	<li>
+		<a href="https://gpay.app.goo.gl/pay-moUq8zPwoVf" tabindex="-1" aria-hidden="true">
+			<img src="/assets/img/icon-google-pay.svg" alt="" class="provider-icon"/>
+		</a>
 	Google Pay (<a href="https://gpay.app.goo.gl/pay-moUq8zPwoVf">anthony@ciccarello.me</a>)
 	<p>
 	  Mobile Only.
 	  <a href="https://pay.google.com/about/">Learn More</a>
-	</p>
-  </li>
-  <li>
-	<a href="https://wise.com/invite/spu/anthonyjosephc6">
-		<img src="/assets/img/icon-wise.png" alt="" class="provider-icon"/>
-	</a>
+		</p>
+	</li>
+	<li>
+		<a href="https://wise.com/invite/spu/anthonyjosephc6" tabindex="-1" aria-hidden="true">
+			<img src="/assets/img/icon-wise.png" alt="" class="provider-icon"/>
+		</a>
 	Wise (<a href="https://wise.com/invite/spu/anthonyjosephc6">anthony@ciccarello.me</a>)
 	<p>
 	  International payments
 	</p>
-  </li>
+	</li>
 </ol>
 
 <section class="qr-code-section">
-  <h3>Scan to open this page</h3>
-  <img src="/assets/img/qr-code-pay-link.png" alt="QR code for this page" height="200" width="200" class="qr-code" />
+	<h3>Scan to open this page</h3>
+	<img src="/assets/img/qr-code-pay-link.png" alt="QR code for this page" height="200" width="200" class="qr-code"/>
 </section>
 
 <script defer>
-const params = new URLSearchParams(window.location.search);
-const amount = params.get("amount");
+	const params = new URLSearchParams(window.location.search);
+	const amount = params.get("amount");
 
-if (amount) {
-	// https://venmo.com/u/ajciccarello?amount=5
-	document.querySelectorAll('a[href*="venmo.com"]').forEach((venmoLink) => venmoLink.href = venmoLink.href + `?txn=pay&amount=${amount}`);
-	// https://paypal.me/ajciccarello/5
-	document.querySelectorAll('a[href*="paypal.me"]').forEach((paypalLink) => paypalLink.href = paypalLink.href + `/${amount}`);
-	// Honestly don't think this works ¯\_(ツ)_/¯
-	document.querySelectorAll('a[href*="gpay.app.goo.gl"]').forEach((gpayLink) => gpayLink.href = gpayLink.href + `?am=${amount}`);
-}
+	if (amount) {
+		// https://venmo.com/u/ajciccarello?amount=5
+		document
+			.querySelectorAll('a[href*="venmo.com"]')
+			.forEach((venmoLink) => venmoLink.href = venmoLink.href + `?txn=pay&amount=${amount}`);
+		// https://paypal.me/ajciccarello/5
+		document
+			.querySelectorAll('a[href*="paypal.me"]')
+			.forEach((paypalLink) => paypalLink.href = paypalLink.href + `/${amount}`);
+		// Honestly don't think this works ¯\_(ツ)_/¯
+		document
+			.querySelectorAll('a[href*="gpay.app.goo.gl"]')
+			.forEach((gpayLink) => gpayLink.href = gpayLink.href + `?am=${amount}`);
+	}
 </script>
