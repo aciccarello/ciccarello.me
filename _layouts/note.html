@@ -3,38 +3,40 @@ layout: default
 ---
 
 <style type="text/css">
-  article.container, .author-card.container, .responses-card.container {
-    max-width: 32rem;
-  }
+	.author-card.container,
+	.responses-card.container,
+	article.container {
+		max-width: 32rem;
+	}
 
-  .post-content {
-	 font-size: 1.1em;
-  }
+	.post-content {
+		font-size: 1.1em;
+	}
 </style>
 <div class="h-entry">
 	<article class="container post mdc-card">
 		{% if image %}
-		<figure class="mdc-card__media post-thumbnail u-featured">
-			<div class="post-thumbnail--wrapper">
-				<img src="{{ image }}" alt="{{ image_alt | escape }}" />
-			</div>
-			{% if image_caption %}
-			<figcaption class="mdc-typography--caption">
-				{{ image_caption | markdownify }}
-			</figcaption>
-			{% endif %}
-		</figure>
+			<figure class="mdc-card__media post-thumbnail u-featured">
+				<div class="post-thumbnail--wrapper">
+					<img src="{{ image }}" alt="{{ image_alt | escape }}"/>
+				</div>
+				{% if image_caption %}
+					<figcaption class="mdc-typography--caption">
+						{{ image_caption | markdownify }}
+					</figcaption>
+				{% endif %}
+			</figure>
 		{% endif %}
 		<header class="post-header">
 			{%- if title -%}
-			<h1 class="post-title p-name mdc-typography--headline3">
-				{{ title | escape }}
-			</h1>
+				<h1 class="post-title p-name mdc-typography--headline3">
+					{{ title | escape }}
+				</h1>
 			{%- endif -%}
 			{%- if subtitle -%}
-			<h2 class="post-title p-summary mdc-typography--headline6">
-				{{ subtitle | escape }}
-			</h2>
+				<h2 class="post-title p-summary mdc-typography--headline6">
+					{{ subtitle | escape }}
+				</h2>
 			{%- endif -%}
 			<p class="post-meta">
 				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
@@ -45,16 +47,17 @@ layout: default
 			</p>
 		</header>
 		{%- if reply.url %}
-		<section class="p-in-reply-to {% if reply.content or reply.name %}h-cite{% endif %} reply-context">
+			<section class="p-in-reply-to {% if reply.content or reply.name %}h-cite{% endif %} reply-context">
 			Replying to <a href="{{reply.url}}" class="u-url">a {{ reply.type | default: "post" }}</a>
-			{%- if reply.name %} by <span class="p-author h-card">{{ reply.name }}</span>{% endif %}
-			{%- if reply.content %}: <blockquote class="p-content">{{ reply.content }}</blockquote>{% endif %}
-		</section>
+				{%- if reply.name %} by <span class="p-author h-card">{{ reply.name }}</span>{% endif %}
+				{%- if reply.content %}: <blockquote class="p-content">{{ reply.content }}</blockquote>
+				{%- endif %}
+			</section>
 		{%- endif %}
 		<div class="post-content mdc-typography--body1 e-content">
 			{{ content }}
 		</div>
-		<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true"></a>
+		<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>
 		{% include "syndication.html" %}
 
 		<div class="post-footer">
@@ -71,21 +74,21 @@ layout: default
 	<h2 class="mdc-typography--headline6">
 		Recent notes
 	</h2>
-		{% if previousPost %}
+	{% if previousPost %}
 		<div class="post-suggestions__area post-suggestions__previous">
 			<h3 class="mdc-typography--subtitle1">
 				Previous
 			</h3>
 			{% include "post-card.html" post: previousPost %}
 		</div>
-		{% endif %}
-		{% if nextPost %}
+	{% endif %}
+	{% if nextPost %}
 		<div class="post-suggestions__area post-suggestions__next">
 			<h3 class="mdc-typography--subtitle1">
 				Next
 			</h3>
 			{% include "post-card.html" post: nextPost %}
 		</div>
-		{% endif %}
-	</ul>
+	{% endif %}
+</ul>
 </div>

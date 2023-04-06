@@ -16,9 +16,9 @@
 			action="https://webmention.io/www.ciccarello.me/webmention"
 			method="post"
 		>
-			<input type="url" name="source" />
-			<input type="hidden" name="target" value="{{fullUrl}}" />
-			<input type="submit" name="submit" value="Share link" />
+			<input type="url" name="source" placeholder="https://www.example.com/post-name" aria-label="URL"/>
+			<input type="hidden" name="target" value="{{fullUrl}}"/>
+			<input type="submit" name="submit" value="Share link"/>
 		</form>
 		<div class="details-wrapper">
 			<section class="comment-details">
@@ -40,24 +40,26 @@
 			</section>
 		</div>
 	</details>
-	<form class="form-inline">
+	<div class="form form-inline">
 		<a
 			class="link-button mention-action"
 			href="https://quill.p3k.io/?dontask=1&me=https://commentpara.de/&reply={{fullUrl}}"
 			>Comment</a
 		>
 		{%- assign replySubjectPageTitle = title | default : defaultTitle |
-		default: "A page on your site" %} {%- assign replySubject = "RE: " |
+		default: "A page on your site" %}
+		{%- assign replySubject = "RE: " |
 		concat: replySubjectPageTitle | concat: " on ciccarello.me" | url_encode
-		%} {%- assign replyBody = "In response to: " | concat: fullUrl |
+		%}
+		{%- assign replyBody = "In response to: " | concat: fullUrl |
 		url_encode %}
 		<a
 			href="mailto:anthony@ciccarello.me?subject={{replySubject}}&body={{replyBody}}"
 			class="link-button mention-action"
 			>Reply via Email</a
 		>
-	</form>
-	<link rel="stylesheet" href="/assets/css/webmention.css" />
+	</div>
+	<link rel="stylesheet" href="/assets/css/webmention.css"/>
 	<script
 		src="/assets/js/webmention.js"
 		data-page-url="{{fullUrl}}"
