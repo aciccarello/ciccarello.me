@@ -193,10 +193,12 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 	</section>
 	<section class="container">
 		<h3 class="mdc-typography--headline6">Career</h3>
+		{%- assign currentPosition = resume.experience[0] %}
 		<p>
-            I currently work remotely as a Software Engineer for
-            <a class="p-org h-card" href="https://www.sitepen.com/" title="SitePen home page">SitePen</a>
+            I currently work remotely as a {{currentPosition.position}} for
+            <a class="p-org h-card" href="{{currentPosition.companyUrl}}" title="{{currentPosition.companyName}} home page">{{currentPosition.companyName}}</a>
             doing JavaScript development and technical consulting.
+			Previously I've worked for {{resume.experience[1].companyName}}, {{resume.experience[2].companyName}}, and {{resume.experience[3].companyName}}.
 			I've primarily worked on creating JavaScript front-end applications and Java back-end APIs
 			but have a wide range of experience across various projects.
 			See my <a href="/resume">resume</a> for my full career history.
