@@ -1,5 +1,6 @@
 {
   "defaultTitle": "Comment",
   "layout": "note",
-  "eleventyExcludeFromCollections": "hidden"
+  "type": "reply",
+  "excludeFromMainFeed": "hidden"
 }

@@ -35,8 +35,9 @@
   package = "@aciccarello/netlify-plugin-webmentions"
 
 	[plugins.inputs]
-	# Maximum number of feed entries to check for mentions (optional, default: 1)
-	limit = 1
+	  # Maximum number of feed entries to check for mentions (optional, default: 1)
+	  limit = 1
+    feedPath = "/feed-all.xml"
 
 # Production context: all deploys from the Production branch
 # set in your site’s Branches settings in the UI will inherit

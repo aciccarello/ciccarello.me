@@ -17,4 +17,7 @@ DEBUG=Eleventy* npm start
 # Page Properties
 
 - excludeFromSitemap: Don't show in sitemap.xml and mark as `noindex` to robots
-- eleventyExcludeFromCollections: same as excludeFromSitemap plus don't show in feeds. If set to "draft", page will show a warning.
+- excludeFromMainFeed: Appears in all feeds except the main feed. Used for less important activities like replies and likes.
+- eleventyExcludeFromCollections: same as excludeFromSitemap plus don't show in feeds.
+  - If set to "draft", page will show a warning.
+  - If set to "deleted", page will show a warning and include a 410 http-equiv meta tag

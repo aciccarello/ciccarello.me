@@ -15,7 +15,7 @@
 {%- set alternateUrl = url | default ("/") | replace(" ", "%20") | addBaseUrl -%}
 {# add bridgy fed syndication for RSS based webmention sender -#}
 {%- set rawBridgyFed -%}
-{%- if page.url == "/feed.xml" -%}
+{%- if page.url == "/feed-all.xml" -%}
   <a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>
 {%- endif -%}{%- endset -%}
 {%- set bridgyFed = rawBridgyFed | htmlToAbsoluteUrls(alternateUrl) -%}

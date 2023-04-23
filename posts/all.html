@@ -1,15 +1,15 @@
 ---
 layout: default
-back_button: "/"
-permalink: "/posts/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
-redirect_from: /posts/page/1
+back_button: "/posts/"
+permalink: "/posts/all/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+redirect_from: /posts/all/page/1
 pagination:
-  data: collections.mainPosts
-  size: 15
+  data: collections.posts
+  size: 25
   reverse: true
   alias: posts
 eleventyComputed:
-  title: "Posts - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}"
+  title: "All Posts - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}"
 ---
 
 <div class="home container h-feed">

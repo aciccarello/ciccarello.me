@@ -44,7 +44,7 @@ h-entry
 					<ul class="mdc-chip-set" title="Tags">
 						{%- if showKind %}
 							<li class="mdc-chip">
-								<span class="mdc-chip__text">{{ post.data.layout }}</span>
+								<span class="mdc-chip__text">{{ post.data.type | default: post.data.layout }}</span>
 							</li>
 						{%- endif %}
 						{%- for tag in tags %}

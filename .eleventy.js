@@ -33,6 +33,11 @@ module.exports = function (eleventyConfig) {
 			collection.getFilteredByGlob(glob)
 		)
 	);
+	eleventyConfig.addCollection('mainPosts', (collection) =>
+		collection
+			.getFilteredByGlob(collections.posts)
+			.filter((page) => !page.data.excludeFromMainFeed)
+	);
 	eleventyConfig.addCollection('testPosts', (collection) => {
 		const { posts } = require('./_data/test.json');
 		const postUrls = Object.values(posts);
