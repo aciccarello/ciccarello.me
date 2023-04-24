@@ -45,27 +45,4 @@ layout: default
 	{% include "author.html" %}
 </article>
 {% include "mentions.html" %}
-<div class="post-suggestions container">
-	{% assign previousPost = collections.recipes | getPreviousCollectionItem: page %}
-	{% assign nextPost = collections.recipes | getNextCollectionItem: page %}
-	<h2 class="mdc-typography--headline6">
-		Recent recipes
-	</h2>
-	{% if previousPost %}
-		<div class="post-suggestions__area post-suggestions__previous">
-			<h3 class="mdc-typography--subtitle1">
-				Previous
-			</h3>
-			{% include "post-card.html" post: previousPost %}
-		</div>
-	{% endif %}
-	{% if nextPost %}
-		<div class="post-suggestions__area post-suggestions__next">
-			<h3 class="mdc-typography--subtitle1">
-				Next
-			</h3>
-			{% include "post-card.html" post: nextPost %}
-		</div>
-	{% endif %}
-</ul>
-</div>
+{% include "suggestions.html" %}

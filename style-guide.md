@@ -311,7 +311,7 @@ Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as sugge
 {% removeindents %}
 <div class="post-suggestions container">
  {% assign previousPost = collections.photos | first %}
- {% assign nextPost = collections.blog | last %}
+ {% assign nextPost = collections.articles | last %}
  <h2 class="mdc-typography--headline6">
   Recent articles
  </h2>

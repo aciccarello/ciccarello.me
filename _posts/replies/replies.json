@@ -2,5 +2,6 @@
   "defaultTitle": "Comment",
   "layout": "note",
   "type": "reply",
-  "excludeFromMainFeed": "hidden"
+  "typePlural": "replies",
+  "excludeFromMainFeed": true
 }

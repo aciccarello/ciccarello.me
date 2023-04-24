@@ -21,23 +21,9 @@ describe('microformats', () => {
         "name": "Anthony Ciccarello",
         "note": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
         "org": {
-          "children": [
-            {
-              "name": "SitePen",
-              "type": "card",
-              "url": "https://www.sitepen.com/",
-            },
-            {
-              "name": "Dish Network",
-              "type": "card",
-              "url": "https://www.dish.com/",
-            },
-            {
-              "name": "Teradata",
-              "type": "card",
-              "url": "https://www.teradata.com/",
-            },
-          ],
+          "name": "SitePen",
+          "type": "card",
+          "url": "https://www.sitepen.com/",
         },
         "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
         "type": "card",
@@ -72,6 +58,8 @@ describe('microformats', () => {
       {
         "author": {
           "name": "Anthony Ciccarello",
+          "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+          "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
           "type": "card",
           "url": "https://www.ciccarello.me/",
         },
@@ -97,6 +85,8 @@ describe('microformats', () => {
       {
         "author": {
           "name": "Anthony Ciccarello",
+          "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+          "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
           "type": "card",
           "url": "https://www.ciccarello.me/",
         },
@@ -129,28 +119,43 @@ describe('microformats', () => {
 
     expect(jf2(page)).toMatchInlineSnapshot(`
       {
-        "author": {
-          "name": "Anthony Ciccarello",
-          "type": "card",
-          "url": "https://www.ciccarello.me/",
-        },
-        "bridgy-fed": "https://fed.brid.gy/",
-        "category": "indieweb",
-        "content": {
-          "html": "<p>I know there’s an <a href="https://github.com/snarfed/bridgy-fed/issues/272">open issue</a> to add documentation but if it’s helpful you can look at the <a href="https://github.com/aciccarello/ciccarello.me/compare/d5f25dec5a441fb4f6783facd54e88de30250c0f...61457954adc86d34a67080313cabf24f11ac4eba">relevant commits</a> <a href="https://github.com/aciccarello/ciccarello.me/commit/50a67193255fb81377d77a790b830907469fcc44">on my site</a>. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format <code>acct:anthony@ciccarello.me</code> to your homepage/h-card.</p>",
-          "text": "I know there’s an open issue to add documentation but if it’s helpful you can look at the relevant commits on my site. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format acct:anthony@ciccarello.me to your homepage/h-card.",
-        },
-        "in-reply-to": {
-          "author": {
-            "name": "@abnv@types.pl",
-            "type": "card",
+        "children": [
+          {
+            "author": {
+              "name": "Anthony Ciccarello",
+              "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+              "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+              "type": "card",
+              "url": "https://www.ciccarello.me/",
+            },
+            "bridgy-fed": "https://fed.brid.gy/",
+            "category": "indieweb",
+            "content": {
+              "html": "<p>I know there’s an <a href="https://github.com/snarfed/bridgy-fed/issues/272">open issue</a> to add documentation but if it’s helpful you can look at the <a href="https://github.com/aciccarello/ciccarello.me/compare/d5f25dec5a441fb4f6783facd54e88de30250c0f...61457954adc86d34a67080313cabf24f11ac4eba">relevant commits</a> <a href="https://github.com/aciccarello/ciccarello.me/commit/50a67193255fb81377d77a790b830907469fcc44">on my site</a>. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format <code>acct:anthony@ciccarello.me</code> to your homepage/h-card.</p>",
+              "text": "I know there’s an open issue to add documentation but if it’s helpful you can look at the relevant commits on my site. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format acct:anthony@ciccarello.me to your homepage/h-card.",
+            },
+            "in-reply-to": {
+              "author": {
+                "name": "Abhinav",
+                "type": "card",
+                "url": "https://types.pl/@abnv",
+              },
+              "content": "@aciccarello It would be great if you can publish the instructions for the same. I've tried following the instructions on Bridgy Fed website but they didn't work for me.",
+              "type": "cite",
+              "url": "https://types.pl/@abnv/109360439631118847",
+            },
+            "published": "2022-11-17T18:41:14Z",
+            "type": "entry",
+            "url": "https://www.ciccarello.me/posts/2022/11/17/bridgy-fed-instructions/",
           },
-          "type": "cite",
-          "url": "https://types.pl/@abnv/109360439631118847",
-        },
-        "published": "2022-11-17T18:41:14Z",
-        "type": "entry",
-        "url": "https://www.ciccarello.me/posts/2022/11/17/bridgy-fed-instructions/",
+          {
+            "author": "https://www.ciccarello.me/",
+            "published": "2023-01-26T06:04:30Z",
+            "summary": "Don’t say I never sent you a webmention.",
+            "type": "entry",
+            "url": "https://www.ciccarello.me/posts/2023/01/26/a-webmention-for-david/",
+          },
+        ],
       }
     `);
   });
@@ -158,10 +163,12 @@ describe('microformats', () => {
   it('should have a reply with context', async () => {
     const page = await getPage(posts.replyWithCite);
 
-    expect(jf2(page)).toMatchInlineSnapshot(`
+    expect(jf2Main(page)).toMatchInlineSnapshot(`
       {
         "author": {
           "name": "Anthony Ciccarello",
+          "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+          "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
           "type": "card",
           "url": "https://www.ciccarello.me/",
         },
@@ -174,6 +181,7 @@ describe('microformats', () => {
           "author": {
             "name": "David Shanske",
             "type": "card",
+            "url": "https://david.shanske.com/",
           },
           "content": "Checked into Aspire Lounge San Diego",
           "type": "cite",

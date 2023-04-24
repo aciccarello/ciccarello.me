@@ -22,10 +22,11 @@ module.exports = function (eleventyConfig) {
 	 * @type {Record<string, string>}
 	 */
 	const collections = {
-		blog: '_posts/blog/*.md',
+		articles: '_posts/blog/*.md',
 		recipes: '_posts/recipes/*.md',
 		notes: '_posts/notes/*.md',
 		photos: '_posts/photos/*.md',
+		replies: '_posts/replies/*.md',
 		posts: '_posts/**/*.md',
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>

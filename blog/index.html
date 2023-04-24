@@ -5,7 +5,7 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumbe
 redirect_from: /blog/page/1
 excludeFromSitemap: true
 pagination:
-  data: collections.blog
+  data: collections.articles
   size: 15
   reverse: true
   alias: posts
@@ -19,13 +19,15 @@ eleventyComputed:
 	</h1>
 	<ol class="post-list">
 		{%- for post in posts -%}
-		<li>
-			{% include "post-card.html" post: post %}
-		</li>
+			<li>
+				{% include "post-card.html" post: post %}
+			</li>
 		{%- endfor -%}
 	</ol>
 	<p class="blog-alternates">
-		<span class="rss-subscribe"><a href="/subscribe">Subscribe for updates</a></span>
+		<span class="rss-subscribe">
+			<a href="/subscribe">Subscribe for updates</a>
+		</span>
 		<span class="blog-alternates--other">
 			Also available on <a href="https://medium.com/@aciccarello" rel="noopener">Medium</a>
 		</span>
