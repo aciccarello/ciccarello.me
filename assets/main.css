@@ -637,9 +637,38 @@ blockquote {
 	min-width: 2rem;
 }
 
+.pagination ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	justify-content: center;
+	padding: 0;
+}
+
 .pagination li {
 	list-style: none;
 	display: inline;
+}
+
+.pagination li.separator {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	/* Adjust for wrapping of pagination on narrow screens */
+	.pagination.pagination-wide li.pagination-separator {
+		display: block;
+		flex-basis: 100%;
+		order: 5;
+	}
+
+	.pagination.pagination-wide li:first-child {
+		order: 6;
+	}
+
+	.pagination.pagination-wide li:last-child {
+		order: 7;
+	}
 }
 
 .cooklang-ingredient {
