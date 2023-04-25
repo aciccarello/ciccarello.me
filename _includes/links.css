@@ -19,14 +19,12 @@ ul {
 	padding: 0;
 }
 
-li.mdc-button {
-	display: flex;
+.pinned-links li {
 	margin: 8px 16px;
 }
 
-a.mdc-button__label {
-	text-decoration: none;
-	color: white;
+.pinned-links li a {
+	width: 100%;
 }
 
 .qr-code {
