@@ -5,12 +5,14 @@ This relies on the author object with the following properties
 - description: defaults to site.description,
 - type: defaults to "author" but canbe changed for different creator categories (e.g. photographer)
 {% endcomment %}
-<section class="container mdc-card author-card">
+<section class="h-card u-author vcard author container mdc-card author-card">
 	<div class="author-card__primary-action" tabindex="0">
-		<div class="mdc-card__media mdc-card__media--square author-card__media"></div>
+		<div class="mdc-card__media mdc-card__media--square author-card__media">
+			<img class="u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512" width="48"/>
+		</div>
 		<div class="author-card__primary">
 			<h2 class="author-card__title mdc-typography mdc-typography--headline6">
-				<a class="u-author h-card author vcard url fn disable-link-styles" href="{{ author.url | default: "/" }}">
+				<a class="p-name u-url url fn disable-link-styles" href="{{ author.url | default: "/" }}">
 					{{ author.name }}
 				</a>
 			</h2>
@@ -19,7 +21,7 @@ This relies on the author object with the following properties
 			</h3>
 		</div>
 	</div>
-	<p class="author-card__content">
+	<p class="p-summary author-card__content">
 		{{ author.description | default: site.description }}
 	</p>
 	<div class="mdc-card__actions">
