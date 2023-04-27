@@ -1,5 +1,263 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`microformats should be parsable on the resume 1`] = `
+{
+  "education": {
+    "end": "2014",
+    "location": {
+      "org": "Cedarville University",
+      "type": "card",
+    },
+    "name": "Bachelor of Science (BS), Computer Engineering",
+    "start": "2010",
+    "summary": "Minor in Mathematics, and Computer Science.",
+    "type": "event",
+  },
+  "experience": {
+    "children": [
+      {
+        "location": {
+          "children": [
+            {
+              "org": "SitePen",
+              "type": "card",
+              "url": "https://www.sitepen.com/",
+            },
+            "Remote",
+          ],
+        },
+        "name": "Software Engineer",
+        "skill": [
+          "Angular",
+          "React",
+          "JavaScript",
+          "TypeScript",
+          "AWS Lambda",
+          "DynamoDB",
+          "Elastic Beanstalk",
+          "Node.js",
+          "SCSS",
+          "Git",
+          "Agile",
+          "Scrum",
+          "Java",
+          "Spring",
+          "REST",
+          "Express.js",
+          "Nest.js",
+          "Team Leadership",
+          "Coaching",
+          "CI/CD",
+          "Jenkins",
+          "Atlassian",
+        ],
+        "start": "2018-08",
+        "summary": "Full-stack Software development and consulting work on cross-functional teams for multiple clients. Primarily focused on JavaScript/TypeScript development.
+
+						
+							
+								
+									Acted as team lead on Angular application development for a financial services corporation.
+								
+							
+								
+									Implemented main page redesign with team and developed interactive React components for service cross-selling in major online accounting application
+								
+							
+								
+									Worked on and with AWS Lambda, DynamoDB, and Elastic Beanstalk back-ends using Express.js and Java Spring.
+								
+							
+								
+									Lead test automation implementation and 6-month junior developer coaching program.
+								
+							
+							
+								
+									Helped deliver a business management platform using Dojo 2 and a Nest.js backend",
+        "type": "event",
+      },
+      {
+        "end": "2018-08",
+        "location": {
+          "children": [
+            {
+              "org": "DISH Network",
+              "type": "card",
+              "url": "https://www.dish.com/",
+            },
+            "Denver, CO",
+          ],
+        },
+        "name": "Software Engineer",
+        "skill": [
+          "Java",
+          "Spring",
+          "REST",
+          "MongoDB",
+          "TDD",
+          "Extreme Programming",
+          "Agile",
+          "Rally",
+        ],
+        "start": "2018-05",
+        "summary": "Contract position with central customer data API team.
+
+						
+							
+								
+									Developed Java REST API microservices using Spring Boot in XP/TDD environment
+								
+							
+								
+									Helped inform API and architectural designs for development team
+								
+							
+							
+								
+									Started regular team discussion on how to improve team processes and designs",
+        "type": "event",
+      },
+      {
+        "end": "2018-04",
+        "location": {
+          "children": [
+            {
+              "org": "Teradata",
+              "type": "card",
+              "url": "https://www.teradata.com/",
+            },
+            "Dayton, OH/Remote",
+          ],
+        },
+        "name": "Software/Sys Eng Anlyst, IT Services",
+        "skill": [
+          "AngularJS",
+          "ag-grid",
+          "Java",
+          "Spring",
+          "Bootstrap",
+          "Oracle SQL",
+          "JSP",
+          "Classic ASP",
+        ],
+        "start": "2014-06",
+        "summary": "Developed and maintained internal HR applications for 10,000 employee company. Applications I helped maintain included payroll, sales compensation, and benefits tools.
+
+						
+							
+								
+									Designed and lead new AngularJS/ag-grid web application deployment/testing
+								
+							
+								
+									Developed Java Spring and Oracle SQL database backend
+								
+							
+							
+								
+									Supported legacy JSP and Classic ASP pages",
+        "type": "event",
+      },
+      {
+        "end": "2021-01",
+        "location": {
+          "children": [
+            {
+              "org": "Covenant Kitchens & Baths",
+              "type": "card",
+              "url": "https://www.covenantkitchens.com/",
+            },
+            "Westbrook, CT/Remote",
+          ],
+        },
+        "name": "Web Developer/Systems Technician/CAD Draftsman",
+        "skill": [
+          "Web design",
+          "System Administration",
+          "SEO",
+          "GSuite",
+          "AutoCAD",
+          "SketchUp",
+        ],
+        "start": "2011-05",
+        "summary": "Range of technical work for Kitchen & Bath design firm. CAD Drafting in-person and web administration later as freelance.
+
+						
+							
+								
+									Completed website revamp and performed G-Suite administration and SEO optimization
+								
+							
+							
+								
+									Produced 2D & 3D drawings in AutoCAD and SketchUp
+								
+							
+								
+									Transferred email system to Google Apps
+								
+							
+								
+									Provided website and technical support on a contract basis",
+        "type": "event",
+      },
+      {
+        "end": "2013-08",
+        "location": {
+          "children": [
+            {
+              "name": "Alstom Power",
+              "type": "card",
+            },
+            "Hartford, CT",
+          ],
+        },
+        "name": "Information Systems Coordinator/Business Intelligence Intern",
+        "skill": [
+          "SAP",
+          "BusinessObjects",
+          "Hyperion",
+          "Excel Macros",
+          "VBScript",
+        ],
+        "start": "2012-07",
+        "summary": "Summer internship with the business intelligence team of a multinational company.
+
+						
+							
+								
+									Automated manual data entry into SAP using VBScript, speeding up migration",
+        "type": "event",
+      },
+    ],
+  },
+  "name": {
+    "name": "Anthony Ciccarello",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "skill": [
+    "JavaScript",
+    "TypeScript",
+    "Angular",
+    "React",
+    "Java",
+    "HTML5",
+    "CSS",
+    "Node.js",
+    "AWS",
+    "Maven",
+    "Git",
+    "Automated Testing",
+  ],
+  "summary": "Software Engineer experienced in modern JavaScript front-end frameworks and back-end REST APIs.
+		Knowledgeable in development best practices, automated testing, and agile methodologies.
+		Seeking a remote front end or full stack engineer position building high-quality websites regardless of technology.",
+  "type": "resume",
+}
+`;
+
 exports[`microformats should have a recipe 1`] = `
 {
   "author": {

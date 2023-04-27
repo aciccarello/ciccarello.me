@@ -35,6 +35,12 @@ describe('microformats', () => {
     `);
   });
 
+  it('should be parsable on the resume', async () => {
+    const homepage = await getPage('/resume/');
+
+    expect(jf2(homepage)).toMatchSnapshot();
+  });
+
   it('should have h-entries on the posts page', async () => {
     const page = await getPage('/posts/testPosts/');
 
