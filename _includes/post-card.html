@@ -5,14 +5,14 @@ h-recipe
 h-entry
 {%- endif -%}
 " {% if post.excludeFromSitemap -%}
-	data-nosnippet
+    data-nosnippet
 {%- endif %}>
 	<a class="u-url mdc-card mdc-elevation-transition disable-link-styles" href="{{ post.url | url }}">
 		{%- if post.data.image -%}
 			{% assign filetype = post.data.image | split: "." | last -%}
 			<div class="mdc-card__media mdc-card__media--16-9" href="{{ post.url | url }}"
-			{% if post.data.layout == "photo" %}aria-label="{{ post.data.image_alt }}" role="img"{% endif %}
-			{% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
+            {% if post.data.layout == "photo" %}aria-label="{{ post.data.image_alt }}" role="img"{% endif %}
+            {% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
 				{% if filetype == 'mp4' -%}
 					<video preload="metadata" alt="{{ post.data.image_alt | escape }}">
 						<source type="video/mp4" src="{{ post.data.image }}">
@@ -35,6 +35,11 @@ h-entry
 				<p class="post-text p-summary">
 					{%- if post.data.subtitle -%}
 						{{ post.data.subtitle | joinLines | strip_html }}
+						{%- elsif post.data.type == "link" %}
+						{{ post.data.responseData.plaintextSummary }}
+						{%- if post.data.responseData.content and not post.data.responseData.name %}:
+							“{{ post.data.responseData.content | joinLines | strip_html | truncatewords: 50 }}”
+						{%- endif %}
 					{%- else -%}
 						{{ post.templateContent | joinLines | strip_html | truncatewords: 50 }}
 					{%- endif -%}

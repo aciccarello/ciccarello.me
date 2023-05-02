@@ -460,7 +460,7 @@ figcaption {
 }
 
 .reply-context {
-	margin: 0 2rem;
+	margin: 0 2rem 1rem;
 	font-style: italic;
 }
 
@@ -468,6 +468,12 @@ blockquote {
 	border-left: solid var(--mdc-theme-secondary-light) 0.5rem;
 	padding-left: 0.5rem;
 }
+
+.reply-context blockquote {
+	/* remove duplicate margin */
+	margin-bottom: 0;
+}
+
 .post-header,
 .post-content,
 .post-footer {
@@ -592,9 +598,14 @@ blockquote {
 	height: 48px;
 	width: 48px;
 	margin-right: 1rem;
-	background-image: url('https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=48');
 }
-.author-card__media:first-child {
+.author-card__media::before {
+	/* hide material :before style which takes up space */
+	display: none;
+}
+
+.author-card__media img {
+	width: 100%;
 	border-radius: 50%;
 }
 .author-card__title {

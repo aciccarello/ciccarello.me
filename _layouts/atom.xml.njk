@@ -45,6 +45,15 @@
         {%- endif %}
       </figure>
     {%- endif %}{% endset %}
+    {%- set content %}
+    {%- if post.data.type == "link" %}
+      {{ post.data.responseData.plaintextSummary }}
+      {%- if post.data.responseData.content %}:
+          "{{ post.data.responseData.content | striptags(true) | truncate(300) | escape | nl2br }}"
+        {%- endif %}
+    {%- else -%}
+      {{ post.templateContent }}
+    {%- endif %}{% endset %}
     <entry>
       <title type="text">{{ post.data.title or post.data.defaultTitle }}</title>
       <link href="{{ absolutePostUrl }}" rel="alternate" type="text/html"/>
@@ -55,17 +64,17 @@
       {%- endfor %}
       {%- if loop.index <= 10 %}
         <content type="html">
-          {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
-          {{ post.templateContent | sanitizeFeedContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+          {{- postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
+          {{ content | sanitizeFeedContent | htmlToAbsoluteUrls(absolutePostUrl) }}
           {{ bridgyFed }}
         </content>
       {%- else %}
         <summary type="html">
-          {{ postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
-          {%- set contentSummary %}
-          <p>{{ post.templateContent | striptags | truncate(500) }}</p>
+          {{- postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
+          {%- set contentSummary -%}
+          <p>{{ content | striptags | truncate(500) }}</p>
           <a href="{{ absolutePostUrl }}">Read More</a>
-          {% endset %}
+          {%- endset -%}
           {{ contentSummary }}
         </summary>
       {%- endif %}

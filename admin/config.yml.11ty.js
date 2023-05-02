@@ -144,15 +144,16 @@ const fields = generateFieldMap([
 		required: false,
 	},
 	{
-		name: asConst('reply'),
-		widget: 'object',
+		name: asConst('bookmark-of'),
 		required: false,
-		fields: [
-			{ name: asConst('url') },
-			{ name: asConst('name'), required: false },
-			{ name: asConst('type'), required: false },
-			{ name: asConst('content'), required: false },
-		].map(addFieldDefaults),
+	},
+	{
+		name: asConst('like-of'),
+		required: false,
+	},
+	{
+		name: asConst('in-reply-to'),
+		required: false,
 	},
 	{
 		name: asConst('eleventyExcludeFromCollections'),
@@ -341,7 +342,6 @@ class CmsConfig {
 				}),
 				addDefaultsToCollection({
 					name: 'notes',
-					summary: '{{body}}',
 					editor: {
 						preview: false,
 					},
@@ -361,13 +361,12 @@ class CmsConfig {
 				}),
 				addDefaultsToCollection({
 					name: 'replies',
-					summary: '{{body}}',
 					editor: {
 						preview: false,
 					},
 					fields: [
 						fields.date,
-						{ ...fields.reply, required: true },
+						{ ...fields['in-reply-to'], required: true },
 						fields.body,
 						fields.slug,
 						fields.tags,
@@ -375,7 +374,29 @@ class CmsConfig {
 						fields.image_alt,
 						fields.image_caption,
 						fields.syndication,
-						fields.canonical_url,
+						fields.permalink,
+						fields.eleventyExcludeFromCollections,
+					],
+				}),
+				addDefaultsToCollection({
+					name: 'links',
+					summary:
+						"{{like-of | ternary('Like of ', '')}}{{like-of}}{{bookmark-of | ternary('Bookmark of ', '') }}{{bookmark-of}}",
+					editor: {
+						preview: false,
+					},
+					fields: [
+						fields.date,
+						fields.slug,
+						fields['like-of'],
+						fields['bookmark-of'],
+						fields['in-reply-to'],
+						fields.tags,
+						fields.image,
+						fields.image_alt,
+						fields.image_caption,
+						{ ...fields.body, required: false, minimal: true },
+						fields.syndication,
 						fields.permalink,
 						fields.eleventyExcludeFromCollections,
 					],

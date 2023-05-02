@@ -46,11 +46,19 @@ layout: default
 				</a>
 			</p>
 		</header>
-		{%- if reply.url %}
-			<section class="p-in-reply-to {% if reply.content or reply.name %}h-cite{% endif %} reply-context">
-			Replying to <a href="{{reply.url}}" class="u-url">a {{ reply.type | default: "post" }}</a>
-				{%- if reply.name %} by <span class="p-author h-card">{{ reply.name }}</span>{% endif %}
-				{%- if reply.content %}: <blockquote class="p-content">{{ reply.content }}</blockquote>
+		{%- if responseData %}
+			<section class="{{ responseData.class }} reply-context">
+				{{responseData.actionDescription}}
+				<a href="{{responseData.url}}" class="u-url">{{responseData.postDescription}}</a>
+				{%- if responseData.author %} by <span class="p-author h-card">
+						{%- if responseData.author.url %}
+							<a href="{{responseData.author.url}}" class="u-url p-name">{{ responseData.author.name }}</a>
+						{%- else -%}
+							{{ responseData.author.name }}
+						{%- endif -%}
+					</span>
+				{%- endif %}
+				{%- if responseData.content %}: <blockquote class="p-content">{{ responseData.content | newline_to_br }}</blockquote>
 				{%- endif %}
 			</section>
 		{%- endif %}

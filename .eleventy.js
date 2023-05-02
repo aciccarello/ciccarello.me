@@ -26,6 +26,7 @@ module.exports = function (eleventyConfig) {
 		recipes: '_posts/recipes/*.md',
 		notes: '_posts/notes/*.md',
 		photos: '_posts/photos/*.md',
+		links: '_posts/links/*.md',
 		replies: '_posts/replies/*.md',
 		posts: '_posts/**/*.md',
 	};

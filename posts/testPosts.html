@@ -14,9 +14,9 @@ eleventyExcludeFromCollections: testing
 	</p>
 	<ol class="post-list">
 		{%- for post in collections.testPosts -%}
-		<li>
-			{% include "post-card.html" post: post %}
-		</li>
+			<li>
+				{% include "post-card.html" post: post, showKind: true %}
+			</li>
 		{%- endfor -%}
 	</ol>
 

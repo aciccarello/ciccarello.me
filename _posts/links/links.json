@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "Shared Link",
+  "type": "link",
+  "layout": "note",
+  "excludeFromMainFeed": true
+}
