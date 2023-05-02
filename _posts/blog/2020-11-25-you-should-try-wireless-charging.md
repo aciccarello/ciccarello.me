@@ -55,7 +55,7 @@ When traveling internationally, this was a nice added benefit. I don't want to o
 
 If you can manage keeping your battery between 20-80% you can use wireless chargers to extend the life of your battery! (yes it's a little ridiculous but it's on [YouTube](https://youtu.be/AF2O4l1JprI) and it's probably true)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AF2O4l1JprI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: auto;display: block;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AF2O4l1JprI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: auto;display: block;"></iframe>
 
 ## Cons:
 
