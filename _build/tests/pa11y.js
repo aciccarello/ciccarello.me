@@ -9,6 +9,8 @@ const baseUrl = 'http://localhost:8080';
  * https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md
  */
 module.exports = {
+	// ! Axe is reporting manual check warnings as errors
+	// See https://github.com/pa11y/pa11y/issues/633 and https://github.com/pa11y/pa11y/issues/623
 	// defaults: { runners: ['axe'] },
 	urls: [
 		'/',

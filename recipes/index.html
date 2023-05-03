@@ -21,26 +21,30 @@ eleventyComputed:
 	<p>
 		My own personal recipe book saving recipes we've made over the years. Not all recipes have exact instructions. Cook at your own risk.
 	</p>
-	<nav class="category-menu">
-		<h3 class="mdc-typography--headline5">See items tagged by meal</h3>
+	<nav class="category-menu" aria-labelledby="post-grouping-title">
+		<h3 id="post-grouping-title" class="mdc-typography--headline5">See items tagged by meal</h3>
 		<ul>
 			{%- for tag in mealTags -%}
-			<li><a class="mdc-button mdc-button--raised
+				<li>
+					<a class="mdc-button mdc-button--raised
 				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/posts/tags/{{tag}}/">
-				{{tag}}
-			</a></li>
+						{{tag}}
+					</a>
+				</li>
 			{%- endfor -%}
 		</ul>
 	</nav>
 	<ol class="post-list">
 		{%- for post in recipes -%}
-		<li>
-			{% include "post-card.html" post: post %}
-		</li>
+			<li>
+				{% include "post-card.html" post: post %}
+			</li>
 		{%- endfor -%}
 	</ol>
 	<p class="blog-alternates">
-        <span class="rss-subscribe"><a href="/subscribe">Subscribe for updates</a></span>
+		<span class="rss-subscribe">
+			<a href="/subscribe">Subscribe for updates</a>
+		</span>
 	</p>
 
 	{% include "pagination.html" %}

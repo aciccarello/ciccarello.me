@@ -1,5 +1,5 @@
 {% if pagination.pages.length > 1 %}
-	<nav aria-label="Pagination Navigation" class="pagination
+	<nav aria-label="Pagination" class="pagination
 		{%- if pagination.href.next and pagination.href.previous %} pagination-wide{% endif -%}
 	">
 		<ul>
@@ -23,10 +23,10 @@
 			{%- for pageEntry in pagination.pages %}
 				{% if page.url == pagination.hrefs[forloop.index0] %}
 					<li>
-						<span aria-label="Current page, page {{forloop.index}}" aria-current="true"
+						<a aria-label="Current page, page {{forloop.index}}" href="{{page.url}}" aria-disabled="true" aria-current="page"
 				class="mdc-button mdc-button--outlined mdc-button--disabled">
 									Page {{ forloop.index }}
-						</span>
+						</a>
 					</li>
 				{% endif %}
 			{% endfor %}
