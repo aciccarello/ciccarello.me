@@ -17,13 +17,34 @@
 /** @type {Experience[]} */
 const experience = [
 	{
+		companyName: 'ICD',
+		companyUrl: 'https://icdportal.com/',
+		position: 'Senior Software Engineer',
+		location: 'Remote',
+		startDate: new Date('2023-05-08'),
+		summary: 'Full-stack development of ICD Portal investment platform.',
+		achievements: [],
+		skills: [
+			'React',
+			'JavaScript',
+			'Node.js',
+			'Git',
+			'Agile',
+			'Scrum',
+			'Java',
+			'Spring',
+			'Automated Testing',
+		],
+	},
+	{
 		companyName: 'SitePen',
 		companyUrl: 'https://www.sitepen.com/',
 		position: 'Software Engineer',
 		location: 'Remote',
 		startDate: new Date('2018-08-21'),
+		endDate: new Date('2023-04-28'),
 		summary:
-			'Full-stack Software development and consulting work on cross-functional teams for multiple clients. Primarily focused on JavaScript/TypeScript development.',
+			'Full-stack software development and consulting work on cross-functional teams for multiple clients. Primarily focused on JavaScript/TypeScript development.',
 		achievements: [
 			'Acted as team lead on Angular application development for a financial services corporation.',
 			'Implemented main page redesign with team and developed interactive React components for service cross-selling in major online accounting application',

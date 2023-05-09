@@ -256,7 +256,7 @@ layout: default
 						{% if job.durationText %}
 							({{job.durationText}})
 						{% else %}
-							({{job.startDate | yearsSince : endDate }})
+							({{job.startDate | yearsSince : endDate | default: '1 month' }})
 						{% endif %}
 					</div>
 					<h3 class="p-name">{{job.position}}</h3>
