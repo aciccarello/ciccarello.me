@@ -13,8 +13,8 @@ module.exports = {
 			const bookmark = data['bookmark-of'];
 			const reply = data['in-reply-to'];
 			const url = reply || like || bookmark;
-			if (url && data.references) {
-				const referenceData = { ...data.references[url] };
+			if (url) {
+				const referenceData = { ...data.references?.[url] };
 				let className = 'h-cite';
 				let actionDescription;
 				if (like) {
