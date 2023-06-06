@@ -4,7 +4,7 @@ date: 2023-04-03T04:01:58.861Z
 canonical_url: https://www.halfbakedharvest.com/chocolate-chip-nutella-oatmeal-cookies/
 tags:
   - cookies
-  - desert
+  - dessert
   - chocolate
 image: /assets/img/nutella-chocolate-chip-oatmeal-cookies.jpg
 imageAlt: Chocolate chip oatmeal cookies stacked in a dish.
