@@ -79,60 +79,32 @@ async function main() {
 }
 
 async function downloadImage(imageUrl, fileName) {
+	const sharp = require('sharp');
 	const path = require('path');
 	const fileLocation = path.normalize(
-		`${__dirname}/../assets/img/${fileName}`
+		`${__dirname}/../../assets/img/${fileName}`
 	);
-	const { open, writeFile } = require('fs/promises');
 
 	try {
-		// Check for existing file, catch block will skip if found
-		const { ImagePool } = require('@squoosh/lib');
+		// Download file to buffer
+		const { default: fetch } = await import('node-fetch');
+		const response = await fetch(imageUrl, {
+			headers: { CookieString },
+		});
 
-		/** @type {import('fs/promises').FileHandle} */
-		let fileHandle;
-		/** @type {ImagePool} */
-		let imagePool;
-		try {
-			fileHandle = await open(fileLocation, 'wx');
-			imagePool = new ImagePool();
+		const imageData = await response.arrayBuffer();
 
-			// Download file to buffer
-			const { default: fetch } = await import('node-fetch');
-			const response = await fetch(imageUrl, {
-				headers: { CookieString },
-			});
+		await sharp(imageData)
+			.resize({
+				height: 250,
+			})
+			.jpeg({
+				quality: 75,
+				mozjpeg: true,
+			})
+			.toFile(fileLocation);
 
-			// Compress image using https://www.npmjs.com/package/@squoosh/lib
-			const imageData = await response.arrayBuffer();
-			const image = imagePool.ingestImage(imageData);
-			await image.decoded; //Wait until the image is decoded before running preprocessors.
-
-			const preprocessOptions = {
-				//When both width and height are specified, the image resized to specified size.
-				resize: {
-					enabled: true,
-					height: 250,
-				},
-			};
-			await image.preprocess(preprocessOptions);
-
-			const encodeOptions = {
-				mozjpeg: {}, //an empty object means 'use default settings'
-				jxl: {
-					quality: 75,
-				},
-			};
-			await image.encode(encodeOptions);
-			const binary = (await image.encodedWith.mozjpeg).binary;
-
-			// Save file to assets dir
-			console.log('Saving thumbnail image');
-			writeFile(fileHandle, binary);
-		} finally {
-			await imagePool?.close();
-			await fileHandle?.close();
-		}
+		console.log('Wrote thumbnail image to ', fileLocation);
 	} catch (err) {
 		if (err && err.code === 'EEXIST') {
 			console.warn(fileLocation + ' already exists');

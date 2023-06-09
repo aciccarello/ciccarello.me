@@ -67,6 +67,6 @@
     "singleQuote": true
   },
   "optionalDependencies": {
-    "@squoosh/lib": "^0.4.0"
+    "sharp": "^0.32.1"
   }
 }
