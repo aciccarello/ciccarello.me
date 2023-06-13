@@ -55,7 +55,7 @@ async function main() {
 	console.log('Information parsed', species, checklists);
 
 	console.log(`
-### ${region || 'World'} Stats
+### ${species.regionName} Stats
 - New Species: ${species.newSpecies} (${species.newRegionLifers} Lifers)
 - Year Species: ${species.yearSpeciesTotal}
 - Total Species: ${species.totalSpecies}
@@ -87,6 +87,10 @@ function getTotal(document) {
 async function countSpecies({ year, previousYear, region }) {
 	// Can't get total from #total element because there could be newer species
 	const speciesListDocument = await fetchHtml(SPECIES_URL + region);
+	const regionName =
+		speciesListDocument.querySelector('h1 span')?.innerText.trim() ||
+		region ||
+		'World';
 	const dates = speciesListDocument.querySelectorAll(
 		'#nativeNatProv .Observation-meta-date a'
 	);
@@ -126,6 +130,7 @@ async function countSpecies({ year, previousYear, region }) {
 	).length;
 
 	return {
+		regionName,
 		totalSpecies,
 		newSpecies,
 		newRegionLifers,
