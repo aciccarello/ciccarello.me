@@ -17,12 +17,10 @@
 <meta property="og:title" content="{{finalTitle}}" />
 {%- if author.name %}
 <meta name="author" content="{{ author.name }}" />
+<meta name="twitter:creator" content="@ajciccarello" />
 {%- endif %}
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="{{ pageContent }}" />
-<meta property="og:description" content="{{ pageContent }}" />
-<link rel="canonical" href="{{ collectionData.data.canonical_url | default : fullUrl}}" />
-<meta property="og:url" content="{{ collectionData.data.canonical_url | default : fullUrl}}" />
+<meta name="description" property="og:description" content="{{ pageContent }}" />
+<link rel="canonical" property="og:url" href="{{ collectionData.data.canonical_url | default : fullUrl}}" />
 <meta property="og:site_name" content="{{ site.title }}" />
 {%- if page.inputPath contains "_posts" %}
 <meta property="og:type" content="article" />
@@ -31,13 +29,8 @@
 {%- if image %}
 <meta property="og:image" content="{{ image | addBaseUrl }}" />
 <meta name="twitter:card" content="summary_large_image" />
-{%- else %}
-<meta name="twitter:card" content="summary" />
 {%- endif %}
 <meta name="twitter:site" content="@ajciccarello" />
-{%- if author.name %}
-<meta name="twitter:creator" content="@Anthony Ciccarello" />
-{%- endif %}
 <script type="application/ld+json">
 {% json %}
 {

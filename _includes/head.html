@@ -7,8 +7,8 @@
 		<meta http-equiv="Status" content="410 Gone"/>
 	{%- endif %}
 	{%- include "seo" -%}
-	<link href="/assets/css/normalize.css" rel="stylesheet"/>
-	<link href="/assets/css/material-components-web.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="/assets/css/normalize.css"/>
+	<link rel="stylesheet" href="/assets/css/material-components-web.css"/>
 	<link rel="stylesheet" href="/assets/main.css"/>
 	<link rel="stylesheet" href="/assets/css/fonts/Roboto/roboto.css"/>
 	{%- if not collectionData or collectionData.templateContent contains "</pre>" %}
@@ -52,19 +52,26 @@
 				"image": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256",
 				"address": {
 					"@type": "PostalAddress",
-					"addressLocality": "Indio",
+					"addressLocality": "San Diego",
 					"addressRegion": "California"
 				},
 				"worksFor": [
+					{
+						"@type": "Organization",
+						"name": "Institutional Cash Distributors",
+						"url": "https://icdportal.com/",
+						"logo": "https://icdportal.com/wp-content/uploads/ICD-Logo-with-Tagline_RGB-Green-Reverse.png",
+						"sameAs": ["https://www.linkedin.com/company/sitepen-inc-", "https://twitter.com/sitepen", "https://www.facebook.com/SitePen"]
+					}
+				],
+				"alumniOf": [
 					{
 						"@type": "Organization",
 						"name": "SitePen",
 						"url": "https://www.sitepen.com/",
 						"logo": "http://www.sitepen.com/images/sitepen.svg",
 						"sameAs": ["https://www.linkedin.com/company/sitepen-inc-", "https://twitter.com/sitepen", "https://www.facebook.com/SitePen"]
-					}
-				],
-				"alumniOf": [
+					},
 					{
 						"@type": "Organization",
 						"name": "Dish Network",
@@ -103,7 +110,6 @@
 					"https://twitter.com/ajciccarello",
 					"https://www.linkedin.com/in/anthonyciccarello",
 					"https://medium.com/@aciccarello",
-					"https://plus.google.com/+AnthonyCiccarello",
 					"https://www.linkedin.com/in/anthonyciccarello",
 					"https://www.instagram.com/ajciccarello/"
 				]
@@ -111,5 +117,5 @@
 		</script>
 	{% endif %}
 	<link rel="stylesheet" href="/assets/css/print.css" media="print"/>
-	<script defer type="module" src="/assets/js/common.js"></script>
+	<script type="module" src="/assets/js/common.js"></script>
 </head>
