@@ -33,9 +33,10 @@ h-entry
 			</div>
 			<div class="post-body mdc-typography--body1">
 				<p class="post-text p-summary">
+					{%- assign hasContent = post.templateContent | strip | default: "_false_" %}
 					{%- if post.data.subtitle -%}
 						{{ post.data.subtitle | joinLines | strip_html }}
-						{%- elsif post.data.type == "link" %}
+					{%- elsif post.data.type == "link" and hasContent == "_false_" %}
 						{{ post.data.responseData.plaintextSummary }}
 						{%- if post.data.responseData.content and not post.data.responseData.name %}:
 							“{{ post.data.responseData.content | joinLines | strip_html | truncatewords: 50 }}”

@@ -1,5 +1,5 @@
 {
-  "defaultTitle": "Shared Link",
+  "defaultTitle": "Bookmarked Link",
   "type": "link",
   "layout": "note",
   "excludeFromMainFeed": true

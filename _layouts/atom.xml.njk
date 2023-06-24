@@ -51,9 +51,9 @@
       {%- if post.data.responseData.content %}:
           "{{ post.data.responseData.content | striptags(true) | truncate(300) | escape | nl2br }}"
         {%- endif %}
-    {%- else -%}
+    {%- endif %}
       {{ post.templateContent }}
-    {%- endif %}{% endset %}
+    {% endset %}
     <entry>
       <title type="text">{{ post.data.title or post.data.defaultTitle }}</title>
       <link href="{{ absolutePostUrl }}" rel="alternate" type="text/html"/>
