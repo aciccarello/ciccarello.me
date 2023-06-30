@@ -12,14 +12,19 @@ We often buy a whole rotisserie chicken from the grocery store, especially at Co
 - Servings: 4
 
 ## Ingredients
+
 - Cooked & cleaned chicken carcass
 - Celery roughly chopped
 - Parsley
 - Carrots roughly chopped
 - Onion roughly chopped
+- Salt
+- Pepper
 - Bay leaves
+- Other seasonings as desired
 
 ## Directions
+
 1. Add ingredients to a slow cooker
 1. Fill slow cooker with water until ingredients are mostly covered
 1. Cook for 5+ hours in slow cooker (overnight is great too)
