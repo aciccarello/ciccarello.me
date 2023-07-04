@@ -21,9 +21,9 @@ describe('microformats', () => {
         "name": "Anthony Ciccarello",
         "note": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
         "org": {
-          "name": "SitePen",
+          "name": "ICD",
           "type": "card",
-          "url": "https://www.sitepen.com/",
+          "url": "https://icdportal.com/",
         },
         "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
         "type": "card",

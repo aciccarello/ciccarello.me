@@ -19,6 +19,34 @@ exports[`microformats should be parsable on the resume 1`] = `
         "location": {
           "children": [
             {
+              "org": "ICD",
+              "type": "card",
+              "url": "https://icdportal.com/",
+            },
+            "Remote",
+          ],
+        },
+        "name": "Senior Software Engineer",
+        "skill": [
+          "React",
+          "JavaScript",
+          "Node.js",
+          "Git",
+          "Agile",
+          "Scrum",
+          "Java",
+          "Spring",
+          "Automated Testing",
+        ],
+        "start": "2023-05",
+        "summary": "Full-stack development of ICD Portal investment platform.",
+        "type": "event",
+      },
+      {
+        "end": "2023-04",
+        "location": {
+          "children": [
+            {
               "org": "SitePen",
               "type": "card",
               "url": "https://www.sitepen.com/",
@@ -52,7 +80,7 @@ exports[`microformats should be parsable on the resume 1`] = `
           "Atlassian",
         ],
         "start": "2018-08",
-        "summary": "Full-stack Software development and consulting work on cross-functional teams for multiple clients. Primarily focused on JavaScript/TypeScript development.
+        "summary": "Full-stack software development and consulting work on cross-functional teams for multiple clients. Primarily focused on JavaScript/TypeScript development.
 
 						
 							
