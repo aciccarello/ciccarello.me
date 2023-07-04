@@ -16,7 +16,6 @@ However, I do intend to post these when they are ready.
 - [Rethinking my approach to social media](./rethinking-social-media)
 - [Tag Moderation](./tag-moderation)
 - [Instagram Import](./instagram-import)
-- [Multi-engine search](./search)
 - [City vs Country](./city-vs-country)
 - [Rotisserie Chicken Bone Broth](/recipes/2021/10/19/rotisserie-chicken-bone-broth)
 - [Bean dip](./bean-dip)
