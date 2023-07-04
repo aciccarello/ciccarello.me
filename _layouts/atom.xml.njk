@@ -52,7 +52,7 @@
           "{{ post.data.responseData.content | striptags(true) | truncate(300) | escape | nl2br }}"
         {%- endif %}
     {%- endif %}
-      {{ post.templateContent }}
+      {{ post.templateContent | safe }}
     {% endset %}
     <entry>
       <title type="text">{{ post.data.title or post.data.defaultTitle }}</title>
