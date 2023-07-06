@@ -30,12 +30,14 @@ In addition to RSS, any of the [feed pages](/posts) are compatible with [IndieWe
 
 ## Follow on Mastodon or other fediverse networks
 
-If you use a federated service like [Mastodon](https://joinmastodon.org/) you can follow me by searching your server for <code>@anthony@ciccarello.me</code> (via ActivityPub).
+If you use a federated service like [Mastodon](https://joinmastodon.org/) you can follow me by searching your server for <code>@anthony@ciccarello.me</code>.
+All posts from this site will be federated to the network (via ActivityPub).
 Enter your account below to be redirected to your server's follow page.
 
 <form method="post" action="https://fed.brid.gy/remote-follow">
- <label for="follow-address">Follow @anthony@ciccarello.me with your fediverse address:</label>
+ <label for="follow-address">Follow @anthony@ciccarello.me by entering your fediverse address:</label>
  <input id="follow-address" name="address" type="text" required="" placeholder="@you@domain.social" alt="fediverse address" value="">
  <input name="domain" type="hidden" value="ciccarello.me">
+ <input name="protocol" type="hidden" value="web">
  <button type="submit" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark">Follow</button>
 </form>
