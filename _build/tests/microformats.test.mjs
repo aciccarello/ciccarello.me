@@ -30,6 +30,7 @@ describe('microformats', () => {
         "url": [
           "https://www.ciccarello.me/",
           "acct:anthony@ciccarello.me",
+          "https://www.ciccarello.me/subscribe/#follow-on-mastodon-or-other-fediverse-networks",
         ],
       }
     `);
