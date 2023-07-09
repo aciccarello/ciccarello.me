@@ -7,6 +7,7 @@ tags:
   - chicken
   - corn
 image: /assets/img/creamed-street-corn-chicken.jpg
+image_alt: Large skillet with corn, onions, spices, and cheese over barely visible chicken tenders.
 ---
 We made this recipe from [Half Baked Harvest](https://www.halfbakedharvest.com/creamed-street-corn-chicken/) and liked how it came out. I've made a few adjustments to simplify the recipe and add more veggies.
 

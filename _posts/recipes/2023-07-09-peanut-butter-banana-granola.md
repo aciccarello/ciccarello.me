@@ -6,6 +6,7 @@ tags:
   - peanut butter
   - chocolate
 image: /assets/img/peanut-butter-banana-granola.jpg
+image_alt: Bowl with banana slices topped with granola, peanut butter, and chocolate chips.
 ---
 This recipe has become somewhat of a joke in our house for how over-the-top it is, but I like to make it occasionally as a late-nite treat. I started making it in the cafeteria in college but it's flexible based on what ingredients you have stocked in your pantry.
 
