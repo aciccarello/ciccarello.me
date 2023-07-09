@@ -1,16 +1,17 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.background": "#1976d2",
+    "activityBar.background": "#156e83",
+    "activityBar.activeBackground": "#02495a",
     "activityBar.foreground": "#fafafa",
     "activityBar.inactiveForeground": "#15202b99",
-    "activityBarBadge.background": "#ff5131",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "titleBar.activeBackground": "#9b0000",
-    "titleBar.inactiveBackground": "#d50000",
+    "activityBarBadge.background": "#e35a48",
+    "activityBarBadge.foreground": "#fff",
+    "titleBar.activeBackground": "#af1e0b",
+    "titleBar.inactiveBackground": "#6b0c00",
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveForeground": "#e7e7e799",
-    "statusBar.background": "#9b0000",
-    "statusBarItem.hoverBackground": "#d50000",
+    "statusBar.background": "#af1e0b",
+    "statusBarItem.hoverBackground": "#6b0c00",
     "statusBar.foreground": "#e7e7e7"
   },
   "editor.formatOnPaste": true,
@@ -74,5 +75,11 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "markdownlint.config": {
+    "MD034": false
   }
 }
