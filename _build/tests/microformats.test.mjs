@@ -107,7 +107,12 @@ describe('microformats', () => {
           "html": "<p>Photography has been a fun hobby to pick up. Though I may backfill older posts I wanted to start with something fresh. I’m looking forward to adding more content to my site.</p>",
           "text": "Photography has been a fun hobby to pick up. Though I may backfill older posts I wanted to start with something fresh. I’m looking forward to adding more content to my site.",
         },
-        "featured": "https://www.ciccarello.me/Flowering%20bush%20in%20front%20of%20ocean%20coast.%20The%20northern%20California%20Coast",
+        "featured": [
+          {
+            "alt": "Flowering bush in front of ocean coast.",
+            "url": "https://www.ciccarello.me/assets/img/2021-nor-cal-coast.jpg",
+          },
+        ],
         "photo": [
           {
             "alt": "Flowering bush in front of ocean coast.",

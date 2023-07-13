@@ -5,9 +5,9 @@ layout: default
 <article class="h-recipe hrecipe">
 	<section class="container post mdc-card">
 		{% if image %}
-			<figure class="mdc-card__media post-thumbnail u-featured">
+			<figure class="mdc-card__media post-thumbnail">
 				<div class="post-thumbnail--wrapper">
-					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo photo"/>
+					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-featured"/>
 				</div>
 				{% if image_caption %}
 					<figcaption class="mdc-typography--caption">

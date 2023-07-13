@@ -5,14 +5,14 @@ layout: default
 <div class="h-entry">
 	<article class="container post mdc-card">
 		{% if image %}
-			<figure class="mdc-card__media post-thumbnail u-featured">
+			<figure class="mdc-card__media post-thumbnail">
 				{% assign filetype = image | split: "." | last -%}
 				{% if filetype == 'mp4' -%}
 					<video autoplay loop class="u-video post-img--wide" alt="{{ image_alt | escape }}">
 						<source type="video/mp4" src="{{ image }}">
 					</video>
 				{% else -%}
-					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo post-img--wide"/>
+					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo u-featured post-img--wide"/>
 				{% endif %}
 				{% if image_caption %}
 					<figcaption class="mdc-typography--caption">
