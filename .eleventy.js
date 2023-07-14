@@ -1,7 +1,7 @@
 /**
  * Primary Eleventy configration function
  *
- * @param   {object}  eleventyConfig  Eleventy config API
+ * @param   {import('@11ty/eleventy').UserConfig}  eleventyConfig  Eleventy config API
  *
  * @return  {object}                  Eleventy config object for site
  */
@@ -16,6 +16,10 @@ module.exports = function (eleventyConfig) {
 		'BingSiteAuth.xml',
 	];
 	staticFiles.forEach(eleventyConfig.addPassthroughCopy.bind(eleventyConfig));
+	eleventyConfig.addPassthroughCopy({
+		[require.resolve('webmention.js/static/webmention')]:
+			'assets/js/webmention.js',
+	});
 
 	/**
 	 * Map of collection names to glob patterns
