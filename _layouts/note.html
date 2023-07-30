@@ -58,7 +58,16 @@ layout: default
 						{%- endif -%}
 					</span>
 				{%- endif %}
-				{%- if responseData.content %}: <blockquote class="p-content">{{ responseData.content | newline_to_br }}</blockquote>
+				{%- if responseData.content or responseData.photo%}: <blockquote>
+					{%- if responseData.photo %}
+					{%- assign photo = responseData.photo | first | default: responseData.photo  %}
+					{%- assign photoUrl = photo.value | default: photo %}
+					<img class="u-photo" src="{{photoUrl}}" {% if photo.alt %}alt="{{photo.alt}}"{% endif %} >
+					{%- endif %}
+					{%- if responseData.content %}
+					<p class="p-content">{{ responseData.content | newline_to_br }}</p>
+					{%- endif %}
+				</blockquote>
 				{%- endif %}
 			</section>
 		{%- endif %}
