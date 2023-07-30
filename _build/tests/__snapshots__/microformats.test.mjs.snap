@@ -286,77 +286,7 @@ exports[`microformats should be parsable on the resume 1`] = `
 }
 `;
 
-exports[`microformats should have a recipe 1`] = `
-{
-  "author": {
-    "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer who enjoys collecting recipes I've made and preserving family favorites. My cooking style is laid back and flexible so some recipes may not be exact.",
-    "type": "card",
-    "url": "https://www.ciccarello.me/",
-  },
-  "category": [
-    "drink",
-    "holiday",
-    "family recipe",
-  ],
-  "content": {
-    "html": "<p>This simple recipe is family favorite over the holidays.</p>
-<h2 id="ingredients" tabindex="-1">Ingredients</h2>
-<ul>
-<li class="p-ingredient ingredient">Ginger ale</li>
-<li class="p-ingredient ingredient">Eggnog</li>
-<li class="p-ingredient ingredient">Vanilla Ice Cream</li>
-<li class="p-ingredient ingredient">Cinnamon</li>
-</ul>
-<h2 id="directions" tabindex="-1">Directions</h2>
-<ol class="e-instructions instructions">
-<li>Combine ginger ale and eggnog in a large container</li>
-<li>Add scoops of vanilla ice cream</li>
-<li>Sprinkle cinnamon on top</li>
-</ol>",
-    "text": "This simple recipe is family favorite over the holidays.
-Ingredients
-
-Ginger ale
-Eggnog
-Vanilla Ice Cream
-Cinnamon
-
-Directions
-
-Combine ginger ale and eggnog in a large container
-Add scoops of vanilla ice cream
-Sprinkle cinnamon on top",
-  },
-  "featured": [
-    {
-      "alt": "short glass with creamy drink and cinnamon next to coffee cake.",
-      "url": "https://www.ciccarello.me/assets/img/eggnog-punch.jpg",
-    },
-  ],
-  "ingredient": [
-    "Ginger ale",
-    "Eggnog",
-    "Vanilla Ice Cream",
-    "Cinnamon",
-  ],
-  "instructions": {
-    "html": "<li>Combine ginger ale and eggnog in a large container</li>
-<li>Add scoops of vanilla ice cream</li>
-<li>Sprinkle cinnamon on top</li>",
-    "text": "Combine ginger ale and eggnog in a large container
-Add scoops of vanilla ice cream
-Sprinkle cinnamon on top",
-  },
-  "name": "Eggnog Punch",
-  "published": "2022-01-01T04:14:11Z",
-  "type": "recipe",
-  "url": "https://www.ciccarello.me/recipes/2022/01/01/eggnog-punch/",
-}
-`;
-
-exports[`microformats should have an article 1`] = `
+exports[`microformats should have a(n) article 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
@@ -496,6 +426,257 @@ Originally published at liveloveliberia.blogspot.com on July 24, 2015.",
 }
 `;
 
+exports[`microformats should have a(n) like 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "content": {
+    "html": "",
+  },
+  "like-of": {
+    "author": {
+      "name": "James' Coffee Blog ☕",
+      "type": "card",
+      "url": "https://jamesg.blog",
+    },
+    "content": "I have previously taken long breaks from coding outside of work, some of which have lasted months. I remember last time there was a voice in my brain that said "this is enough" and I decided to take a step back. Building projects for work is one thing; I have support and motivation and I am contributing toward a goal that a whole team is working on. But when I work on personal projects, sometimes I get stuck working on things that don't really matter and that I spe…",
+    "type": "cite",
+    "url": "https://jamesg.blog/2023/01/03/coding-mental-health/",
+  },
+  "published": "2023-01-27T07:38:26Z",
+  "type": "entry",
+  "url": "https://www.ciccarello.me/posts/2023/01/27/jamesg-blog-like/",
+}
+`;
+
+exports[`microformats should have a(n) note 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "category": [
+    "indieweb",
+    "site changes",
+  ],
+  "content": {
+    "html": "<p>I’ve added a new type of post to my site. This should open a whole world of possibilities integrating with <a href="http://indieweb.org">indieweb.org</a> standards!</p>",
+    "text": "I’ve added a new type of post to my site. This should open a whole world of possibilities integrating with indieweb.org standards!",
+  },
+  "published": "2022-03-30T05:16:18Z",
+  "type": "entry",
+  "url": "https://www.ciccarello.me/posts/2022/03/30/first-note/",
+}
+`;
+
+exports[`microformats should have a(n) photo 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "category": [
+    "nature",
+    "ocean",
+    "site changes",
+  ],
+  "content": {
+    "html": "<p>Photography has been a fun hobby to pick up. Though I may backfill older posts I wanted to start with something fresh. I’m looking forward to adding more content to my site.</p>",
+    "text": "Photography has been a fun hobby to pick up. Though I may backfill older posts I wanted to start with something fresh. I’m looking forward to adding more content to my site.",
+  },
+  "featured": [
+    {
+      "alt": "Flowering bush in front of ocean coast.",
+      "url": "https://www.ciccarello.me/assets/img/2021-nor-cal-coast.jpg",
+    },
+  ],
+  "photo": [
+    {
+      "alt": "Flowering bush in front of ocean coast.",
+      "url": "https://www.ciccarello.me/assets/img/2021-nor-cal-coast.jpg",
+    },
+  ],
+  "published": "2021-06-21",
+  "type": "entry",
+  "url": "https://www.ciccarello.me/photos/2021/06/21/initial-photo/",
+}
+`;
+
+exports[`microformats should have a(n) photoLike 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "content": {
+    "html": "",
+  },
+  "like-of": {
+    "content": "Summer sunshine.",
+    "photo": [
+      {
+        "alt": "Rays of sunlight poke through trees in a park as it sets in the distance, giving everything a vivid colour.",
+        "url": "https://paulrobertlloyd.com/media/2023/157/p1/1.jpg?tr=w-960",
+      },
+    ],
+    "type": "cite",
+    "url": "https://paulrobertlloyd.com/2023/157/p1/",
+  },
+  "published": "2023-07-30T20:07:10Z",
+  "type": "entry",
+  "url": "https://www.ciccarello.me/posts/2023/07/30/summer-sunshine-like/",
+}
+`;
+
+exports[`microformats should have a(n) recipe 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer who enjoys collecting recipes I've made and preserving family favorites. My cooking style is laid back and flexible so some recipes may not be exact.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "category": [
+    "drink",
+    "holiday",
+    "family recipe",
+  ],
+  "content": {
+    "html": "<p>This simple recipe is family favorite over the holidays.</p>
+<h2 id="ingredients" tabindex="-1">Ingredients</h2>
+<ul>
+<li class="p-ingredient ingredient">Ginger ale</li>
+<li class="p-ingredient ingredient">Eggnog</li>
+<li class="p-ingredient ingredient">Vanilla Ice Cream</li>
+<li class="p-ingredient ingredient">Cinnamon</li>
+</ul>
+<h2 id="directions" tabindex="-1">Directions</h2>
+<ol class="e-instructions instructions">
+<li>Combine ginger ale and eggnog in a large container</li>
+<li>Add scoops of vanilla ice cream</li>
+<li>Sprinkle cinnamon on top</li>
+</ol>",
+    "text": "This simple recipe is family favorite over the holidays.
+Ingredients
+
+Ginger ale
+Eggnog
+Vanilla Ice Cream
+Cinnamon
+
+Directions
+
+Combine ginger ale and eggnog in a large container
+Add scoops of vanilla ice cream
+Sprinkle cinnamon on top",
+  },
+  "featured": [
+    {
+      "alt": "short glass with creamy drink and cinnamon next to coffee cake.",
+      "url": "https://www.ciccarello.me/assets/img/eggnog-punch.jpg",
+    },
+  ],
+  "ingredient": [
+    "Ginger ale",
+    "Eggnog",
+    "Vanilla Ice Cream",
+    "Cinnamon",
+  ],
+  "instructions": {
+    "html": "<li>Combine ginger ale and eggnog in a large container</li>
+<li>Add scoops of vanilla ice cream</li>
+<li>Sprinkle cinnamon on top</li>",
+    "text": "Combine ginger ale and eggnog in a large container
+Add scoops of vanilla ice cream
+Sprinkle cinnamon on top",
+  },
+  "name": "Eggnog Punch",
+  "published": "2022-01-01T04:14:11Z",
+  "type": "recipe",
+  "url": "https://www.ciccarello.me/recipes/2022/01/01/eggnog-punch/",
+}
+`;
+
+exports[`microformats should have a(n) reply 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "category": "indieweb",
+  "content": {
+    "html": "<p>I know there’s an <a href="https://github.com/snarfed/bridgy-fed/issues/272">open issue</a> to add documentation but if it’s helpful you can look at the <a href="https://github.com/aciccarello/ciccarello.me/compare/d5f25dec5a441fb4f6783facd54e88de30250c0f...61457954adc86d34a67080313cabf24f11ac4eba">relevant commits</a> <a href="https://github.com/aciccarello/ciccarello.me/commit/50a67193255fb81377d77a790b830907469fcc44">on my site</a>. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format <code>acct:anthony@ciccarello.me</code> to your homepage/h-card.</p>",
+    "text": "I know there’s an open issue to add documentation but if it’s helpful you can look at the relevant commits on my site. The piece missing from the docs is adding a link with a class of “u-url” and an href with your username in the format acct:anthony@ciccarello.me to your homepage/h-card.",
+  },
+  "in-reply-to": {
+    "author": {
+      "name": "Abhinav",
+      "type": "card",
+      "url": "https://types.pl/@abnv",
+    },
+    "content": "@aciccarello It would be great if you can publish the instructions for the same. I've tried following the instructions on Bridgy Fed website but they didn't work for me.",
+    "type": "cite",
+    "url": "https://types.pl/@abnv/109360439631118847",
+  },
+  "published": "2022-11-17T18:41:14Z",
+  "type": "entry",
+  "url": "https://www.ciccarello.me/posts/2022/11/17/bridgy-fed-instructions/",
+}
+`;
+
+exports[`microformats should have a(n) replyToCheckin 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "content": {
+    "html": "<p>Don’t say I never sent you a webmention.</p>",
+    "text": "Don’t say I never sent you a webmention.",
+  },
+  "in-reply-to": {
+    "author": {
+      "name": "David Shanske",
+      "type": "card",
+      "url": "https://david.shanske.com/",
+    },
+    "content": "Checked into Aspire Lounge San Diego",
+    "type": "cite",
+    "url": "https://david.shanske.com/2022/11/12/5771/",
+  },
+  "published": "2023-01-26T06:04:30Z",
+  "type": "entry",
+  "url": "https://www.ciccarello.me/posts/2023/01/26/a-webmention-for-david/",
+}
+`;
+
 exports[`microformats should have h-entries on the posts page 1`] = `
 {
   "children": [
@@ -569,6 +750,14 @@ exports[`microformats should have h-entries on the posts page 1`] = `
       "summary": "Liked “Taking a break from personal projects: Mental health and coding” by James' Coffee Blog ☕",
       "type": "entry",
       "url": "https://www.ciccarello.me/posts/2023/01/27/jamesg-blog-like/",
+    },
+    {
+      "author": "https://www.ciccarello.me/",
+      "published": "2023-07-30T20:07:10Z",
+      "summary": "Liked a photo :
+							“Summer sunshine.”",
+      "type": "entry",
+      "url": "https://www.ciccarello.me/posts/2023/07/30/summer-sunshine-like/",
     },
   ],
   "name": "Test post list",
