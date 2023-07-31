@@ -34,6 +34,7 @@ eleventyExcludeFromCollections: true
     {%- capture absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endcapture %}
     {%- capture postImage %}
 		{%- include "featured-media.html", image: post.data.image, image_alt: post.data.image_alt, image_caption: post.data.image_caption %}
+		{%- include "reply-context.html", responseData: post.data.responseData %}
     {%- endcapture %}
     {%- capture content %}
     {%- if post.data.type == "link" %}
