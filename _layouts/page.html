@@ -3,18 +3,7 @@ layout: default
 ---
 <article class="post container">
 
-  {% if image %}
-  <figure class="mdc-card__media post-thumbnail">
-    <a class="u-url" href="{{ page.url | url }}">
-      <img src="{{ image }}" alt="{{ image_alt | escape }}" class="post-img--wide" />
-    </a>
-    {% if image_caption %}
-    <figcaption class="mdc-typography--caption">
-      {{ image_caption | markdownify }}
-    </figcaption>
-    {% endif %}
-  </figure>
-  {% endif %}
+  {% include "featured-media.html" %}
   <header class="post-header">
     <h1 class="post-title">{{ title | escape }}</h1>
   </header>

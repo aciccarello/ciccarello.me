@@ -15,18 +15,7 @@ layout: default
 </style>
 <div class="h-entry">
 	<article class="container post mdc-card">
-		{% if image %}
-			<figure class="mdc-card__media post-thumbnail">
-				<div class="post-thumbnail--wrapper">
-					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-featured"/>
-				</div>
-				{% if image_caption %}
-					<figcaption class="mdc-typography--caption">
-						{{ image_caption | markdownify }}
-					</figcaption>
-				{% endif %}
-			</figure>
-		{% endif %}
+		{% include "featured-media.html" %}
 		<header class="post-header">
 			{%- if title -%}
 				<h1 class="post-title p-name mdc-typography--headline3">

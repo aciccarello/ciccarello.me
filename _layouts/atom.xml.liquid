@@ -33,16 +33,8 @@ eleventyExcludeFromCollections: true
   {%- for post in feedCollection limit: 31 %}
     {%- capture absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endcapture %}
     {%- capture postImage %}
-    {%- if post.data.image -%}
-      <figure>
-        <img src="{{ post.data.image }}" alt="{{ post.data.image_alt | escape }}"/>
-        {%- if image_caption %}
-          <figcaption class="mdc-typography--caption">
-            {{ post.data.image_caption | markdownify }}
-          </figcaption>
-        {%- endif %}
-      </figure>
-    {%- endif %}{% endcapture %}
+		{%- include "featured-media.html", image: post.data.image, image_alt: post.data.image_alt, image_caption: post.data.image_caption %}
+    {%- endcapture %}
     {%- capture content %}
     {%- if post.data.type == "link" %}
       {{ post.data.responseData.plaintextSummary }}

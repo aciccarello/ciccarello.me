@@ -1,0 +1,19 @@
+{% if image %}
+	<figure class="mdc-card__media post-thumbnail">
+		<div class="post-thumbnail--wrapper">
+			{%- assign filetype = image | split: "." | last %}
+			{%- if filetype == 'mp4' %}
+				<video autoplay loop class="{% if layout == 'photo' %}u-video {% endif %}" alt="{{ image_alt | escape }}">
+					<source type="video/mp4" src="{{ image }}">
+				</video>
+			{%- else %}
+				<img src="{{ image }}" alt="{{ image_alt | escape }}" class="{% if layout == 'photo' %}u-photo {% endif %}u-featured"/>
+			{%- endif %}
+		</div>
+		{%- if image_caption %}
+			<figcaption class="mdc-typography--caption">
+				{{ image_caption | markdownify }}
+			</figcaption>
+		{%- endif %}
+	</figure>
+{% endif %}
