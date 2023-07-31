@@ -12,11 +12,9 @@ eleventyExcludeFromCollections: true
 {%- assign feedCollection = collections[collectionName] | reverse -%}
 {%- assign alternateUrl = url | default: "/" | replace: " ", "%20" | addBaseUrl -%}
 {%- comment %}add bridgy fed syndication for RSS based webmention sender{% endcomment -%}
-{%- capture rawBridgyFed -%}
-{%- if page.url == "/feed-all.xml" -%}
+{%- capture bridgyFed %}{% if page.url == "/feed-all.xml" -%}
   <a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>
-{%- endif -%}{%- endcapture -%}
-{%- assign bridgyFed = rawBridgyFed | htmlToAbsoluteUrls: alternateUrl -%}
+{%- endif %}{% endcapture -%}
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/assets/feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -31,19 +29,17 @@ eleventyExcludeFromCollections: true
     <email>{{ site.email }}</email>
   </author>
   {%- for post in feedCollection limit: 31 %}
-    {%- capture absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endcapture %}
-    {%- capture postImage %}
-		{%- include "featured-media.html", image: post.data.image, image_alt: post.data.image_alt, image_caption: post.data.image_caption %}
-		{%- include "reply-context.html", responseData: post.data.responseData %}
-    {%- endcapture %}
+    {%- assign absolutePostUrl = post.url | url | addBaseUrl %}
     {%- capture content %}
-    {%- if post.data.type == "link" %}
-      {{ post.data.responseData.plaintextSummary }}
-      {%- if post.data.responseData.content %}:
-          "{{ post.data.responseData.content | strip_html | truncate: 300 | newline_to_br | escape }}"
-        {%- endif %}
-    {%- endif %}
+      {%- include "featured-media.html", image: post.data.image, image_alt: post.data.image_alt, image_caption: post.data.image_caption %}
+      {%- include "reply-context.html", responseData: post.data.responseData %}
+      {%- if forloop.index <= 10 %}
       {{ post.templateContent }}
+        {{ bridgyFed }}
+      {%- else %}
+      <p>{{ post.templateContent | strip_html | truncate: 500 }}</p>
+      <a href="{{ absolutePostUrl }}">Read More</a>
+      {%- endif %}
     {% endcapture %}
     <entry>
       <title type="text">{{ post.data.title | default: post.data.defaultTitle }}</title>
@@ -55,18 +51,11 @@ eleventyExcludeFromCollections: true
       {%- endfor %}
       {%- if forloop.index <= 10 %}
         <content type="html">
-          {{- postImage | htmlToAbsoluteUrls: absolutePostUrl | escape }}
           {{ content | sanitizeFeedContent | htmlToAbsoluteUrls: absolutePostUrl | escape }}
-          {{ bridgyFed | escape }}
         </content>
       {%- else %}
         <summary type="html">
-          {{- postImage | htmlToAbsoluteUrls: absolutePostUrl | escape }}
-          {%- capture contentSummary -%}
-          <p>{{ content | strip_html | truncate: 500 }}</p>
-          <a href="{{ absolutePostUrl }}">Read More</a>
-          {%- endcapture -%}
-          {{ contentSummary | escape }}
+          {{ content | sanitizeFeedContent | htmlToAbsoluteUrls: absolutePostUrl | escape }}
         </summary>
       {%- endif %}
     </entry>
