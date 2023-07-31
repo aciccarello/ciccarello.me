@@ -1,30 +1,28 @@
----json
-{
-  "eleventyExcludeFromCollections": true
-}
 ---
-{#
+eleventyExcludeFromCollections: true
+---
+{% comment %}
   Outputs an Atom feed
   Key properties
   - collectioName: string
   - title: defaults to site.title
   - description: defaults to site.description
   - url: path of HTML file that this feed represents defaults to root
-#}
-{%- set feedCollection = (collections[collectionName] | reverse).slice(0,31) -%}
-{%- set alternateUrl = url | default ("/") | replace(" ", "%20") | addBaseUrl -%}
-{# add bridgy fed syndication for RSS based webmention sender -#}
-{%- set rawBridgyFed -%}
+{% endcomment %}
+{%- assign feedCollection = collections[collectionName] | reverse -%}
+{%- assign alternateUrl = url | default: "/" | replace: " ", "%20" | addBaseUrl -%}
+{%- comment %}add bridgy fed syndication for RSS based webmention sender{% endcomment -%}
+{%- capture rawBridgyFed -%}
 {%- if page.url == "/feed-all.xml" -%}
   <a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>
-{%- endif -%}{%- endset -%}
-{%- set bridgyFed = rawBridgyFed | htmlToAbsoluteUrls(alternateUrl) -%}
+{%- endif -%}{%- endcapture -%}
+{%- assign bridgyFed = rawBridgyFed | htmlToAbsoluteUrls: alternateUrl -%}
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/assets/feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ title | default(site.title) }}</title>
-  <subtitle>{{ description | default(site.description) }}</subtitle>
-  <link href="{{ page.url | replace(" ", "%20") | addBaseUrl }}" rel="self" type="application/atom+xml"/>
+  <title>{{ title | default: site.title }}</title>
+  <subtitle>{{ description | default: site.description | escape }}</subtitle>
+  <link href="{{ page.url | replace: " ", "%20" | addBaseUrl }}" rel="self" type="application/atom+xml"/>
   <link href="{{ alternateUrl }}" rel="alternate" type="text/html"/>
   <updated>{{ feedCollection | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ alternateUrl }}</id>
@@ -32,9 +30,9 @@
     <name>Anthony Ciccarello</name>
     <email>{{ site.email }}</email>
   </author>
-  {%- for post in feedCollection %}
-    {%- set absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endset %}
-    {%- set postImage %}
+  {%- for post in feedCollection limit: 31 %}
+    {%- capture absolutePostUrl %}{{ post.url | url | addBaseUrl }}{% endcapture %}
+    {%- capture postImage %}
     {%- if post.data.image -%}
       <figure>
         <img src="{{ post.data.image }}" alt="{{ post.data.image_alt | escape }}"/>
@@ -44,38 +42,38 @@
           </figcaption>
         {%- endif %}
       </figure>
-    {%- endif %}{% endset %}
-    {%- set content %}
+    {%- endif %}{% endcapture %}
+    {%- capture content %}
     {%- if post.data.type == "link" %}
       {{ post.data.responseData.plaintextSummary }}
       {%- if post.data.responseData.content %}:
-          "{{ post.data.responseData.content | striptags(true) | truncate(300) | escape | nl2br }}"
+          "{{ post.data.responseData.content | strip_html | truncate: 300 | newline_to_br | escape }}"
         {%- endif %}
     {%- endif %}
-      {{ post.templateContent | safe }}
-    {% endset %}
+      {{ post.templateContent }}
+    {% endcapture %}
     <entry>
-      <title type="text">{{ post.data.title or post.data.defaultTitle }}</title>
+      <title type="text">{{ post.data.title | default: post.data.defaultTitle }}</title>
       <link href="{{ absolutePostUrl }}" rel="alternate" type="text/html"/>
       <updated>{{ post.date | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
       {%- for tag in post.data.tags %}
         <category term="{{ tag }}"/>
       {%- endfor %}
-      {%- if loop.index <= 10 %}
+      {%- if forloop.index <= 10 %}
         <content type="html">
-          {{- postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
-          {{ content | sanitizeFeedContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-          {{ bridgyFed }}
+          {{- postImage | htmlToAbsoluteUrls: absolutePostUrl | escape }}
+          {{ content | sanitizeFeedContent | htmlToAbsoluteUrls: absolutePostUrl | escape }}
+          {{ bridgyFed | escape }}
         </content>
       {%- else %}
         <summary type="html">
-          {{- postImage | htmlToAbsoluteUrls(absolutePostUrl) }}
-          {%- set contentSummary -%}
-          <p>{{ content | striptags | truncate(500) }}</p>
+          {{- postImage | htmlToAbsoluteUrls: absolutePostUrl | escape }}
+          {%- capture contentSummary -%}
+          <p>{{ content | strip_html | truncate: 500 }}</p>
           <a href="{{ absolutePostUrl }}">Read More</a>
-          {%- endset -%}
-          {{ contentSummary }}
+          {%- endcapture -%}
+          {{ contentSummary | escape }}
         </summary>
       {%- endif %}
     </entry>

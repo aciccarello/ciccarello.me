@@ -1,3 +1,4 @@
+const rssPlugin = require('@11ty/eleventy-plugin-rss');
 /**
  * Primary Eleventy configration function
  *
@@ -36,13 +37,13 @@ module.exports = function (eleventyConfig) {
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>
 		eleventyConfig.addCollection(collectionName, (collection) =>
-			collection.getFilteredByGlob(glob)
-		)
+			collection.getFilteredByGlob(glob),
+		),
 	);
 	eleventyConfig.addCollection('mainPosts', (collection) =>
 		collection
 			.getFilteredByGlob(collections.posts)
-			.filter((page) => !page.data.excludeFromMainFeed)
+			.filter((page) => !page.data.excludeFromMainFeed),
 	);
 	eleventyConfig.addCollection('testPosts', (collection) => {
 		const { posts } = require('./_data/test.json');
@@ -90,7 +91,7 @@ module.exports = function (eleventyConfig) {
 		return 'https://www.ciccarello.me' + value;
 	});
 	eleventyConfig.addFilter('joinLines', (value) =>
-		value.replace(/\n/gm, ' ')
+		value.replace(/\n/gm, ' '),
 	);
 	eleventyConfig.addFilter('keys', (value) => {
 		if (value) {
@@ -98,14 +99,27 @@ module.exports = function (eleventyConfig) {
 		}
 	}); // Helpful for debugging objects
 	eleventyConfig.addFilter('sanitizeFeedContent', (content) =>
-		content.replace(/object-position: \d+% \w+/gm, '')
+		content.replace(/object-position: \d+% \w+/gm, ''),
 	);
 
 	eleventyConfig.addPlugin(require('./_build/date'));
 	eleventyConfig.addPlugin(require('./_build/markdown'));
 	eleventyConfig.addPlugin(require('./_build/recipe'));
-	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-rss'));
 	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
+
+	// Add RSS filters to liquid
+	// See https://www.11ty.dev/docs/plugins/rss/#use-with-other-template-languages
+	eleventyConfig.addPlugin(rssPlugin);
+	eleventyConfig.addLiquidFilter(
+		'htmlToAbsoluteUrls',
+		rssPlugin.convertHtmlToAbsoluteUrls,
+	);
+	eleventyConfig.addLiquidFilter(
+		'getNewestCollectionItemDate',
+		rssPlugin.getNewestCollectionItemDate,
+	);
+	eleventyConfig.addLiquidFilter('dateToRfc3339', rssPlugin.dateToRfc3339);
+
 	eleventyConfig.setLiquidOptions({
 		timezoneOffset: 0, // Fix liquid date filter to match server
 	});
