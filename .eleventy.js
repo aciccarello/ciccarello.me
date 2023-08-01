@@ -99,7 +99,12 @@ module.exports = function (eleventyConfig) {
 		}
 	}); // Helpful for debugging objects
 	eleventyConfig.addFilter('sanitizeFeedContent', (content) =>
-		content.replace(/object-position: \d+% \w+/gm, ''),
+		content
+			.replace(/object-position: \d+% \w+/gm, '')
+			// WM sender gets confused by u-url on nested h-cite
+			// Would also strip from text from feed but should be rare
+			// See https://github.com/remy/wm/issues/62
+			.replace(/u-url/gm, ''),
 	);
 
 	eleventyConfig.addPlugin(require('./_build/date'));
