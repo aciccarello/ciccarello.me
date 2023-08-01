@@ -1,12 +1,12 @@
 {% assign domain = url | split: "//" %} {% assign domain = domain[1]| split: "/" | first %}
-<div>
-	<a href="{{ url }}" class="disable-link-styles">
+<div class="h-cite">
+	<a href="{{ url }}" class="u-url disable-link-styles">
 		<blockquote class="mdc-card embed-card mdc-elevation-transition">
 			<h3 class="post-title p-name mdc-typography--subtitle1">
 				{{ title }}
 			</h3>
 			<p class="mdc-typography--body2">
-				{{ description }}
+				<span class="p-content">{{ description }}</span>
 				<cite class="mdc-typography--caption">{{ domain }}</cite>
 			</p>
 			<img
@@ -14,6 +14,7 @@
 				alt="{{ alt }}"
 				{%- if objectPosition %}
 				style="object-position: {{objectPosition}}"
+				class="u-featured"
 				{%- endif %}
 			/>
 		</blockquote>
