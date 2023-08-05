@@ -2,8 +2,9 @@
 date: 2023-03-13T15:58:59.586Z
 in-reply-to: https://darthmall.net/weblog/2023/npms-effect-on-dev-workflow/
 references:
-  https://darthmall.net/weblog/2023/npms-effect-on-dev-workflow/:
-    author: W. Evan Sheehan
+  - url: https://darthmall.net/weblog/2023/npms-effect-on-dev-workflow/
+    author:
+      name: W. Evan Sheehan
     content: "What I’d like to do is just rely on ECMAScript modules (ESM) imports
       in development because I’m not worried about the network latency and chained
       requests in development. Then for production I can bundle everything for

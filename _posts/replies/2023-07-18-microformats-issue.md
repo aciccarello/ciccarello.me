@@ -3,8 +3,7 @@ date: 2023-07-18T06:53:57.214Z
 slug: microformats-issue
 in-reply-to: https://lifeofpablo.com/reply/liked-photo-post
 references:
-  https://lifeofpablo.com/reply/liked-photo-post:
-    url: https://lifeofpablo.com/reply/liked-photo-post
+  - url: https://lifeofpablo.com/reply/liked-photo-post
     name: Liked Photo Post
     author:
       name: Pablo Morales

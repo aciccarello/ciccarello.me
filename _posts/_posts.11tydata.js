@@ -14,7 +14,10 @@ module.exports = {
 			const reply = data['in-reply-to'];
 			const url = reply || like || bookmark;
 			if (url) {
-				const referenceData = { ...data.references?.[url] };
+				const original = data.references?.find(
+					({ url: refUrl }) => url === refUrl,
+				);
+				const referenceData = { ...original };
 				let className = 'h-cite';
 				let actionDescription;
 				if (like) {

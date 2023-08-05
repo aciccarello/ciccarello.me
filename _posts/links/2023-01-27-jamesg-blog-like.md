@@ -3,8 +3,7 @@ date: 2023-01-27T07:38:26.697Z
 slug: jamesg-blog-like
 like-of: https://jamesg.blog/2023/01/03/coding-mental-health/
 references:
-  https://jamesg.blog/2023/01/03/coding-mental-health/:
-    name: "Taking a break from personal projects: Mental health and coding"
+  - name: "Taking a break from personal projects: Mental health and coding"
     published: 2021-01-03
     url: https://jamesg.blog/2023/01/03/coding-mental-health/
     type: entry

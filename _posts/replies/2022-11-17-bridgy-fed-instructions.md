@@ -5,8 +5,7 @@ tags:
 slug: bridgy-fed-instructions
 in-reply-to: https://types.pl/@abnv/109360439631118847
 references:
-  https://types.pl/@abnv/109360439631118847:
-    url: https://types.pl/@abnv/109360439631118847
+  - url: https://types.pl/@abnv/109360439631118847
     type: entry
     published: 2022-11-17T17:58:00+00:00
     author:

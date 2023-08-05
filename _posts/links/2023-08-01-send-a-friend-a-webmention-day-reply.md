@@ -3,8 +3,7 @@ date: 2023-08-01T05:51:13.568Z
 slug: send-a-friend-a-webmention-day-reply
 in-reply-to: https://lifeofpablo.com/blog/send-a-friend-a-webmention-day
 references:
-  https://lifeofpablo.com/blog/send-a-friend-a-webmention-day:
-    url: https://lifeofpablo.com/blog/send-a-friend-a-webmention-day
+  - url: https://lifeofpablo.com/blog/send-a-friend-a-webmention-day
     name: Send a Friend a Webmention Day
     author:
       name: Pablo Morales

@@ -2,10 +2,9 @@
 date: 2023-07-30T21:24:42.234Z
 slug: why-i-also-blog
 in-reply-to: https://lifeofpablo.com/blog/why-i-blog
-"excludeFromMainFeed": false
+excludeFromMainFeed: false
 references:
-  https://lifeofpablo.com/blog/why-i-blog:
-    url: https://lifeofpablo.com/blog/why-i-blog
+  - url: https://lifeofpablo.com/blog/why-i-blog
     name: Why I Blog?
     author:
       name: Pablo Morales

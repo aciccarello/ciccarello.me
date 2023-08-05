@@ -3,8 +3,7 @@ date: 2023-06-23T23:34:26.312Z
 slug: grand-river
 bookmark-of: https://www.audubon.org/news/whats-rivers-name
 references:
-  https://www.audubon.org/news/whats-rivers-name:
-    name: "What’s in a River’s Name? | Audubon"
+  - name: "What’s in a River’s Name? | Audubon"
     published: 2023-06-22
     url: https://www.audubon.org/news/whats-rivers-name
     type: entry

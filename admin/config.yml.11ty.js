@@ -162,6 +162,42 @@ const fields = generateFieldMap([
 		required: false,
 		options: ['', 'draft', 'hidden', 'deleted', 'testing'],
 	},
+	{
+		name: asConst('references'),
+		widget: 'list',
+		fields: [
+			{ name: 'url', widget: 'string', required: true },
+			{ name: 'name', widget: 'string', required: false },
+			{ name: 'content', widget: 'text', required: false },
+			{
+				name: 'published',
+				widget: 'date',
+				required: false,
+				default: '', // Default and format are required to allow empty input
+				format: 'YYYY-MM-DDTHH:mm:ss',
+			},
+			{ name: 'post-type', widget: 'string', required: false },
+			{
+				name: 'author',
+				widget: 'object',
+				required: false,
+				fields: [
+					{ name: 'url', widget: 'string', required: false },
+					{ name: 'name', widget: 'text', required: false },
+					{ name: 'photo', widget: 'string', required: false },
+				],
+			},
+			{
+				name: 'photo',
+				widget: 'object',
+				required: false,
+				fields: [
+					{ name: 'value', widget: 'string', required: false },
+					{ name: 'alt', widget: 'text', required: false },
+				],
+			},
+		],
+	},
 ]);
 
 /**
@@ -189,7 +225,7 @@ function addDefaultsToCollection(collection) {
 	const hasField = (nameToFind) =>
 		Boolean(
 			collection.fields &&
-				collection.fields.find(({ name }) => name === nameToFind)
+				collection.fields.find(({ name }) => name === nameToFind),
 		);
 	const titleDependentProps = hasField('title')
 		? {
@@ -369,6 +405,7 @@ class CmsConfig {
 						{ ...fields['in-reply-to'], required: true },
 						fields.body,
 						fields.slug,
+						fields.references,
 						fields.tags,
 						fields.image,
 						fields.image_alt,
@@ -391,6 +428,7 @@ class CmsConfig {
 						fields['like-of'],
 						fields['bookmark-of'],
 						fields['in-reply-to'],
+						fields.references,
 						fields.tags,
 						fields.image,
 						fields.image_alt,

@@ -3,8 +3,7 @@ date: 2023-07-30T20:07:10.963Z
 slug: summer-sunshine-like
 like-of: https://paulrobertlloyd.com/2023/157/p1/
 references:
-  'https://paulrobertlloyd.com/2023/157/p1/':
-    type: h-entry
+  - type: h-entry
     post-type: photo
     published: '2023-06-06T21:16:34.272+01:00'
     content: Summer sunshine.
@@ -16,4 +15,7 @@ references:
       value: 'https://paulrobertlloyd.com/media/2023/157/p1/1.jpg?tr=w-960'
     syndication:
       - 'https://mastodon.social/@paulrobertlloyd/110499163680447517'
+    author:
+      name: Paul Robert Lloyd
+      url: https://paulrobertlloyd.com/
 ---

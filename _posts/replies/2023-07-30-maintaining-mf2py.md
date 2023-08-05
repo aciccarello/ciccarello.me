@@ -3,8 +3,7 @@ date: 2023-07-30T21:34:19.905Z
 slug: maintaining-mf2py
 in-reply-to: https://jamesg.blog/2023/06/29/maintaining-mf2/
 references:
-  https://jamesg.blog/2023/06/29/maintaining-mf2/:
-    url: https://jamesg.blog/2023/06/29/maintaining-mf2/
+  - url: https://jamesg.blog/2023/06/29/maintaining-mf2/
     name: "Maintaining mf2py "
     content: mf2py, the official Python microformats parser, is now under active
       development. After a hiatus without a lead maintainer, a few community
