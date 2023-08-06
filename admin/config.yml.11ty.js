@@ -156,6 +156,13 @@ const fields = generateFieldMap([
 		required: false,
 	},
 	{
+		name: asConst('excludeFromMainFeed'),
+		label: 'Exclude from main feed',
+		widget: 'boolean',
+		required: false,
+		default: undefined,
+	},
+	{
 		name: asConst('eleventyExcludeFromCollections'),
 		label: 'Unlisted reason',
 		widget: 'select',
@@ -165,6 +172,7 @@ const fields = generateFieldMap([
 	{
 		name: asConst('references'),
 		widget: 'list',
+		required: false,
 		fields: [
 			{ name: 'url', widget: 'string', required: true },
 			{ name: 'name', widget: 'string', required: false },
@@ -412,6 +420,7 @@ class CmsConfig {
 						fields.image_caption,
 						fields.syndication,
 						fields.permalink,
+						fields.excludeFromMainFeed,
 						fields.eleventyExcludeFromCollections,
 					],
 				}),
@@ -436,6 +445,7 @@ class CmsConfig {
 						{ ...fields.body, required: false, minimal: true },
 						fields.syndication,
 						fields.permalink,
+						fields.excludeFromMainFeed,
 						fields.eleventyExcludeFromCollections,
 					],
 				}),
