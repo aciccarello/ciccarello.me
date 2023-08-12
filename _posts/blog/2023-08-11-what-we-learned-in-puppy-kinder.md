@@ -6,6 +6,8 @@ tags:
   - Denver
 image: /assets/img/denver-kinder-closeup.jpg
 image_alt: Closeup of golden retriever laying on a dog bed
+syndication:
+  - https://denver.ciccarello.me/posts/what-we-learned-in-puppy-kinder/
 ---
 Earlier this year, we took Denver, our Golden Retriever, to a [puppy kinder class](https://www.getpawsitive.com/).
 While my wife is very experienced with dogs and Denver was making good progress, a significant reason we enrolled him was to expose him to working around other dogs.
