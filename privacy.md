@@ -14,4 +14,4 @@ This site uses Cloudflare Web Analytics a privacy-first analytics product that d
 [Email subscriptions](/subscribe) are handled by MailerLite and is subject to their [privacy policy](https://www.mailerlite.com/legal/privacy-policy). I promise not to sell email addresses or use them other than to share updates. You may unsubscribe at any time using the link in the emails or by contacting me directly.
 ## Third-party Code
 
-The use of third-party code is intentionally limited to only where necessary to protect people's privacy. Outside of the above analytics code, some pages include embedded content such as YouTube or Twitter content which likely include their own tracking code and is subject to the privacy policy of those websites.
+The use of third-party code is intentionally limited to only where necessary to protect people's privacy. Outside of the above analytics code, some pages include embedded content such as YouTube, Instagram, or Twitter content which likely include their own tracking code and is subject to the privacy policy of those websites.
