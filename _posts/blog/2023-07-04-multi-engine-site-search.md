@@ -2,7 +2,8 @@
 title: Multi-engine site search
 date: 2023-07-04T08:06:21.540Z
 tags:
-  - site updates, technology
+  - site updates
+  - technology
 image: /assets/img/search-engine-feature-photo.jpg
 image_alt: Woman looking up at trees through binoculars.
 image_caption: Photo by <a href="https://unsplash.com/@imagesbykayla?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kayla Farmer</a> on <a href="https://unsplash.com/photos/nhi3_11E6zM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
