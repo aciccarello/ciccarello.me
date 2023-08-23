@@ -14,7 +14,7 @@ The roses were in full bloom this weekend at the rose gardens. So many interesti
 ![Roses on bush with petals mixing red and white stripes.](/assets/img/2022-rose-rock-n-roll.jpg "“Rock-n-roll“ roses")
 
 <figure>
-    <video autoplay loop muted width="100%" style="max-width: 768px; max-height: 100vh;" alt="Red roses on a bush swaying in the wind.">
+    <video autoplay loop muted width="100%" style="max-width: 768px; max-height: 100vh;" aria-label="Red roses on a bush swaying in the wind.">
         <source type="video/mp4" src="/assets/img/2022-rose-in-wind.mp4">
     </video>
     <figcaption>I'm a little mesmerized by this animation</figcaption>

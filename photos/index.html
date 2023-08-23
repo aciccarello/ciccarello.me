@@ -63,7 +63,7 @@ a.mdc-grid-tile__primary {
 			<a class="mdc-grid-tile__primary" href="{{ post.url | url }}">
 				{% assign filetype = post.data.image | split: "." | last -%}
 				{% if filetype == 'mp4' -%}
-				<video preload="metadata" class="mdc-grid-tile__primary-content u-video" alt="{{ post.data.image_alt | escape }}">
+				<video preload="metadata" class="mdc-grid-tile__primary-content u-video" aria-label="{{ post.data.image_alt | escape }}">
 					<source type="video/mp4" src="{{ post.data.image }}">
 				</video>
 				<svg xmlns="http://www.w3.org/2000/svg" class="photo-grid-icon" height="24px" viewBox="0 0 24 24" width="24px" role="img" fill="#FFFFFF">

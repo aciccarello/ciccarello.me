@@ -14,7 +14,7 @@ h-entry
             {% if post.data.layout == "photo" %}aria-label="{{ post.data.image_alt | escape }}" role="img"{% endif %}
             {% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
 				{% if filetype == 'mp4' -%}
-					<video preload="metadata" alt="{{ post.data.image_alt | escape }}">
+					<video preload="metadata" aria-label="{{ post.data.image_alt | escape }}">
 						<source type="video/mp4" src="{{ post.data.image }}">
 					</video>
 				{% endif %}
