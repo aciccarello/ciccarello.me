@@ -129,6 +129,7 @@ module.exports = function (eleventyConfig) {
 		timezoneOffset: 0, // Fix liquid date filter to match server
 	});
 	eleventyConfig.setWatchThrottleWaitTime(100); // in milliseconds
+	eleventyConfig.setServerPassthroughCopyBehavior('passthrough');
 	return {
 		dir: {
 			input: './', // Equivalent to Jekyll's source property
@@ -138,6 +139,5 @@ module.exports = function (eleventyConfig) {
 			includes: '_includes',
 			layouts: '_layouts',
 		},
-		passthroughFileCopy: true,
 	};
 };
