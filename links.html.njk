@@ -19,3 +19,18 @@ permalink: /links/index.html
 </ul>
 <h3>Share this page!</h3>
 <img src="/assets/img/links-qr-code.png" alt="QR code for this page" height="200" width="200" class="qr-code" />
+
+<h3>Recently Saved Links</h3>
+
+<ul class="recent-links">
+{%- for link in collections.links | reverse %}
+{%- if loop.index < 10 %}
+{%- set reference = link.data.responseData %}
+    <li>
+        <a href="{% if link.templateContent %}{{link.url}}{% else %}{{reference.url}}{% endif %}">
+            {{reference.plaintextSummary}}
+        </a>
+    </li>
+{%- endif %}
+{%- endfor %}
+</ul>

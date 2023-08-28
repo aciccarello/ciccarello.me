@@ -14,7 +14,7 @@ main {
 	width: 128px;
 }
 
-ul {
+.pinned-links {
 	list-style: none;
 	padding: 0;
 }
@@ -30,4 +30,13 @@ ul {
 .qr-code {
 	display: block;
 	margin: 24px auto;
+}
+
+.recent-links {
+	text-align: left;
+	margin: 1rem;
+}
+
+.recent-links li {
+	margin: 8px 0;
 }
