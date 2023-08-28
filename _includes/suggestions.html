@@ -1,6 +1,6 @@
 <div class="post-suggestions container">
 	{%- assign defaultTypePlural = type | default: layout | append: "s" %}
-	{%- assign collectionName = typePlural | default: defaultTypePlural %}
+	{%- assign collectionName = collectionName | default: typePlural | default: defaultTypePlural %}
 	{%- assign collection = collections | map: collectionName | first %}
 	{%- assign previousPost = collection | getPreviousCollectionItem: page %}
 	{%- assign nextPost = collection | getNextCollectionItem: page %}
