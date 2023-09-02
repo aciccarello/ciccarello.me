@@ -9,7 +9,8 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 module.exports = function (eleventyConfig) {
 	const staticFiles = [
 		'admin/index.html',
-		'assets',
+		'assets/img',
+		'assets/js',
 		'favicon.ico',
 		'styles.css',
 		'pinterest-60576.html',
@@ -110,6 +111,13 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(require('./_build/markdown'));
 	eleventyConfig.addPlugin(require('./_build/recipe'));
 	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
+	eleventyConfig.addPlugin(
+		require('@11tyrocks/eleventy-plugin-lightningcss'),
+		{
+			minify: false, // TODO: Enable based on env flags
+			sourceMap: true,
+		},
+	);
 
 	// Add RSS filters to liquid
 	// See https://www.11ty.dev/docs/plugins/rss/#use-with-other-template-languages
