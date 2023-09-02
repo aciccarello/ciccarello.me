@@ -148,7 +148,8 @@ listen tell I hears it agin.”
 
 ## Code Blocks
 
-Currently using highlight.css to style code. Markdown's inline code references `<div>example</div>` are not syntax highlighted.
+Currently using [highlight.css](/assets/css/highlight.css) or [highlight-dark.css](/assets/css/highlight-dark.css) to style code depending on the user's preferred color scheme.
+Markdown's inline code references `<div>example</div>` are not syntax highlighted.
 
 ```javascript
 const trimTime = (dateInput) => {

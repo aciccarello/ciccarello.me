@@ -12,7 +12,12 @@
 	<link rel="stylesheet" href="/assets/main.css"/>
 	<link rel="stylesheet" href="/assets/css/fonts/Roboto/roboto.css"/>
 	{%- if not collectionData or collectionData.templateContent contains "</pre>" %}
-		<link rel="stylesheet" href="{{ '/assets/css/highlight.css' | url }}">
+	 	{%- comment %}
+			Future proof them selection by requiring on of two options using "not"
+			See https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme for details
+		{% endcomment %}
+		<link rel="stylesheet" media="(not (prefers-color-scheme: dark))" href="{{ '/assets/css/highlight.css' | url }}">
+		<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="{{ '/assets/css/highlight-dark.css' | url }}">
 	{%- endif %}
 	<link
 		rel="preload"
