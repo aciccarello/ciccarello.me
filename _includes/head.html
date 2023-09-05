@@ -8,9 +8,7 @@
 	{%- endif %}
 	{%- include "seo" -%}
 	<link rel="stylesheet" href="/assets/css/normalize.css"/>
-	<link rel="stylesheet" href="/assets/css/material-components-web.css"/>
 	<link rel="stylesheet" href="/assets/main.css"/>
-	<link rel="stylesheet" href="/assets/css/fonts/Roboto/roboto.css"/>
 	{%- if not collectionData or collectionData.templateContent contains "</pre>" %}
 	 	{%- comment %}
 			Future proof them selection by requiring on of two options using "not"
@@ -19,18 +17,6 @@
 		<link rel="stylesheet" media="(not (prefers-color-scheme: dark))" href="{{ '/assets/css/highlight.css' | url }}">
 		<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="{{ '/assets/css/highlight-dark.css' | url }}">
 	{%- endif %}
-	<link
-		rel="preload"
-		href="/assets/css/fonts/Roboto/roboto-v20-latin-500.woff2"
-		as="font"
-		crossorigin="anonymous"
-	/>
-	<link
-		rel="preload"
-		href="/assets/css/fonts/Roboto/roboto-v20-latin-regular.woff2"
-		as="font"
-		crossorigin="anonymous"
-	/>
 	<link
 		type="application/atom+xml"
 		rel="alternate"
