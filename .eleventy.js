@@ -12,7 +12,6 @@ module.exports = function (eleventyConfig) {
 		'assets/img',
 		'assets/js',
 		'favicon.ico',
-		'styles.css',
 		'pinterest-60576.html',
 		'mywotc6b2477c57f015eaa645.html',
 		'BingSiteAuth.xml',
