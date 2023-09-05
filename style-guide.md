@@ -161,13 +161,19 @@ const trimTime = (dateInput) => {
 Sometimes HTML shows up unexpectedly as code blocks due to indenting, sometimes hidden by liquid pre-processing. This can be escaped using a custom `removeindents` shortcode.
 
 ```liquid
-{% raw %}
-{% removeindents %}
+{% raw %}{% removeindents %}
 <div>
     <p>Accidentally indented</p>
 </div>
-{% endremoveindents %}
-{% endraw %}
+{% endremoveindents %}{% endraw %}
+```
+
+Note that setting a language is required to get syntax highlighting.
+A default code block is shown more simply.
+The prism theme needed to be modified to not require the `language-*` class name.
+
+```
+This text has no highlighting
 ```
 
 ## Horizontal Ruler

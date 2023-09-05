@@ -5,10 +5,9 @@
  */
 
 code[class*='language-'],
-pre[class*='language-'] {
+pre {
 	color: #393a34;
-	font-family: 'Consolas', 'Bitstream Vera Sans Mono', 'Courier New', Courier,
-		monospace;
+	font-family: var(--code-font, monospace);
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -28,7 +27,7 @@ pre[class*='language-'] {
 	hyphens: none;
 }
 
-pre > code[class*='language-'] {
+pre > code {
 	font-size: 1.1em;
 }
 
@@ -47,7 +46,7 @@ code[class*='language-'] ::selection {
 }
 
 /* Code blocks */
-pre[class*='language-'] {
+pre {
 	padding: 1em;
 	margin: 0.5em 0;
 	overflow: auto;
