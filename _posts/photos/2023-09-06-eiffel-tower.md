@@ -8,4 +8,4 @@ tags:
 image: /assets/img/2023-france-eiffel-tower-bw.jpg
 image_alt: "Black and white silhouette of the Eiffel tower from below. "
 ---
-T﻿his tower is impressively tall. I loved getting brunch at a nearby cafe and walking around the neighborhood.
+This tower is impressively tall. I loved getting brunch at a nearby cafe and walking around the neighborhood.
