@@ -70,7 +70,7 @@ function generateFieldMap(fieldsArray) {
 			...fieldMap,
 			[field.name]: field,
 		}),
-		/** @type {Record<T[number]['name'], Field>} */ ({})
+		/** @type {Record<T[number]['name'], Field>} */ ({}),
 	);
 	return map;
 }
@@ -191,7 +191,7 @@ const fields = generateFieldMap([
 				required: false,
 				fields: [
 					{ name: 'url', widget: 'string', required: false },
-					{ name: 'name', widget: 'text', required: false },
+					{ name: 'name', widget: 'string', required: false },
 					{ name: 'photo', widget: 'string', required: false },
 				],
 			},
