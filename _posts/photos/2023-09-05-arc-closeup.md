@@ -3,7 +3,6 @@ slug: arc-closeup
 date: 2023-09-05T20:33:28.374Z
 tags:
   - France
-  - Paris
   - architecture
   - travel
 image: /assets/img/2023-france-arc-closeup.jpg
