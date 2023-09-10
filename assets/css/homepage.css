@@ -1,0 +1,46 @@
+.introduction {
+	display: flex;
+	justify-content: center;
+	margin: 2rem auto;
+	max-width: 76rem;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	height: 256px;
+	width: 256px;
+	/* Fix Firefox rendering bug */
+	flex-shrink: 0;
+	margin: 1rem;
+}
+
+.introduction-text {
+	margin: 1rem;
+}
+
+.skills {
+	text-align: center;
+	padding: 64px 16px 64px;
+	background-color: var(--color-accent-dark);
+	color: var(--text-on-dark-background);
+
+	& .btn-link {
+		width: fit-content;
+	}
+}
+
+.skills-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	& > div {
+		flex: 1;
+		margin: 32px;
+		max-width: 300px;
+	}
+
+	& svg {
+		opacity: 0.5;
+	}
+}

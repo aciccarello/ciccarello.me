@@ -1,13 +1,10 @@
-<header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+<header>
 	{%- assign page_paths = site.header_pages -%}
-	<div class="mdc-top-app-bar__row">
-		<section
-			class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
-		>
+		<section>
 			{% if back_button %}
 			<a
 				href="{{ back_button }}"
-				class="mdc-top-app-bar__navigation-icon mdc-icon-button"
+				class="icon-button"
 				aria-label="Back button"
 			>
 				<svg
@@ -23,16 +20,14 @@
 				</svg>
 			</a>
 			{% endif %}
-			<a class="mdc-top-app-bar__title title-link" href="/"
+			<a class="title-link" href="/"
 				>Anthony Ciccarello</a
 			>
 		</section>
-		<section
-			class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
-		>
+		<section>
 			<a
 				href="https://www.linkedin.com/in/anthonyciccarello/"
-				class="mdc-top-app-bar__navigation-icon mdc-icon-button {% if back_button %} hide-xs {% endif %}"
+				class="icon-button {% if back_button %} hide-xs {% endif %}"
 				rel="me"
 				aria-label="LinkedIn profile"
 			>
@@ -43,7 +38,7 @@
 			<a
 				href="mailto:anthony@ciccarello.me"
 				rel="me"
-				class="mdc-top-app-bar__navigation-icon mdc-icon-button {% if back_button %} hide-xs {% endif %}"
+				class="icon-button {% if back_button %} hide-xs {% endif %}"
 				aria-label="Email"
 			>
 				<span class="svg-icon">
@@ -53,7 +48,7 @@
 			<a
 				href="/search/"
 				rel="search"
-				class="mdc-top-app-bar__navigation-icon mdc-icon-button"
+				class="icon-button"
 				aria-label="Search"
 			>
 				<span class="svg-icon">
@@ -61,5 +56,4 @@
 				</span>
 			</a>
 		</section>
-	</div>
 </header>

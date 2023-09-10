@@ -1,5 +1,5 @@
 {%- assign fullUrl = page.url | addBaseUrl -%}
-<section aria-label="responses" class="container mdc-card responses-card">
+<section aria-label="responses" class="container card responses-card">
 	<div id="webmentions">
 		<h2>Responses</h2>
 		<p id="webmentionsPlaceholder">&nbsp;</p>
@@ -42,7 +42,7 @@
 	</details>
 	<div class="form form-inline">
 		<a
-			class="link-button mention-action"
+			class="btn-link mention-action"
 			href="https://quill.p3k.io/?dontask=1&me=https://commentpara.de/&reply={{fullUrl}}"
 			>Comment</a
 		>
@@ -55,7 +55,7 @@
 		url_encode %}
 		<a
 			href="mailto:anthony@ciccarello.me?subject={{replySubject}}&body={{replyBody}}"
-			class="link-button mention-action"
+			class="btn-link mention-action"
 			>Reply via Email</a
 		>
 	</div>

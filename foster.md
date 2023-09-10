@@ -8,7 +8,7 @@ image_caption: Photo by Bekah Ciccarello
 ---
 <style type="text/css">
   :root {
-    --mdc-theme-primary: #8e44ad; /*The theme primary color.*/
+    --color-base: #8e44ad; /*The theme primary color.*/
   }
 
   h1, h2, h3, h4, h5 {
@@ -440,8 +440,8 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   overflow-y: initial;
 }
 #mlb2-4413934.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
-  background-color: var(--mdc-theme-secondary, #4c04b8);
-  border-color: var(--mdc-theme-secondary, #4c04b8);
+  background-color: var(--color-accent, #4c04b8);
+  border-color: var(--color-accent, #4c04b8);
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
@@ -457,8 +457,8 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   height: auto;
 }
 #mlb2-4413934.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
-  background-color: var(--mdc-theme-secondary-light, #333);
-  border-color: var(--mdc-theme-secondary-light, #333);
+  background-color: var(--color-accent-light, #333);
+  border-color: var(--color-accent-light, #333);
 }
 #mlb2-4413934.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
   box-sizing: border-box;
@@ -509,7 +509,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   width: 100%;
 }
 #mlb2-4413934.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-  background-color: var(--mdc-theme-secondary, #4c04b8);
+  background-color: var(--color-accent, #4c04b8);
   border: none !important;
   border-radius: 4px !important;
   box-shadow: none !important;
@@ -527,7 +527,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   display: none;
 }
 #mlb2-4413934.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-  background-color: var(--mdc-theme-secondary-light, #333);
+  background-color: var(--color-accent-light, #333);
 }
 .ml-subscribe-close {
   width: 30px;
@@ -655,7 +655,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 <div class="home container">
  <h2 class="post-list-heading mdc-typography--headline4">
   Latest Updates
-    <a class="mdc-button mdc-button--outlined" href="/posts/tags/foster care">
+    <a class="mdc-button btn-alternate" href="/posts/tags/foster care">
         See All
     </a>
  </h2>

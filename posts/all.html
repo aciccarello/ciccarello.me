@@ -16,49 +16,18 @@ eleventyComputed:
 	<h1 class="post-list-heading mdc-typography--headline4 p-name">
 		{{ page.list_title | default: "Posts" }}
 	</h1>
-	<nav class="category-menu" aria-labelledby="post-grouping-title">
-		<h3 id="post-grouping-title" class="mdc-typography--headline5">See all posts</h3>
-		<ul>
+	<ol class="post-list">
+		{%- for post in posts -%}
 			<li>
-				<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/blog">
-                Blog
-            </a>
-			</li>
-			<li>
-				<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/recipes">
-				Recipes
-            </a>
-			</li>
-			<li>
-				<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/photos">
-                Photos
-            </a>
-			</li>
-			<li>
-				<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/notes">
-                Notes
-            </a>
-			</li>
-		</li>
-	</ul>
-	<a class="mdc-button mdc-button--outlined" href="/posts/tags">Browse Tags</a>
-</nav>
-<ol class="post-list">
-	{%- for post in posts -%}
-		<li>
 			{% include "post-card.html" post: post, showKind: true %}
-		</li>
-	{%- endfor -%}
-</ol>
-<p class="blog-alternates">
-	<span class="rss-subscribe">
-		<a href="/subscribe">Subscribe for updates</a>
-	</span>
-</p>
+			</li>
+		{%- endfor -%}
+	</ol>
+	<p class="blog-alternates">
+		<span class="rss-subscribe">
+			<a href="/subscribe">Subscribe for updates</a>
+		</span>
+	</p>
 
 {% include "pagination.html" %}
 

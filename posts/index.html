@@ -18,47 +18,42 @@ eleventyComputed:
 	</h1>
 	<nav class="category-menu" aria-labelledby="post-grouping-title">
 		<h3 id="post-grouping-title" class="mdc-typography--headline5">See posts by category</h3>
-		<ul>
+		<ul class="btn-group">
 			<li>
-				<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/blog">
-                Blog
-            </a>
+				<a class="btn-link" href="/blog">
+					Blog
+				</a>
 			</li>
 			<li>
-				<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/recipes">
-				Recipes
-            </a>
+				<a class="btn-link" href="/recipes">
+					Recipes
+				</a>
 			</li>
 			<li>
-				<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/photos">
-                Photos
-            </a>
+				<a class="btn-link" href="/photos">
+					Photos
+				</a>
 			</li>
 			<li>
-				<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="/notes">
-                Notes
-            </a>
+				<a class="btn-link" href="/notes">
+					Notes
+				</a>
 			</li>
-		</li>
-	</ul>
-	<a class="mdc-button mdc-button--outlined" href="/posts/tags">Browse Tags</a>
-</nav>
-<ol class="post-list">
-	{%- for post in posts -%}
-		<li>
+		</ul>
+		<a class="btn-link btn-alternate" href="/posts/tags">Browse Tags</a>
+	</nav>
+	<ol class="post-list">
+		{%- for post in posts -%}
+			<li>
 			{% include "post-card.html" post: post, showKind: true %}
-		</li>
-	{%- endfor -%}
-</ol>
-<p class="blog-alternates">
-	<span class="rss-subscribe">
-		<a href="/subscribe">Subscribe for updates</a>
-	</span>
-</p>
+			</li>
+		{%- endfor -%}
+	</ol>
+	<p class="blog-alternates">
+		<span class="rss-subscribe">
+			<a href="/subscribe">Subscribe for updates</a>
+		</span>
+	</p>
 
 {% include "pagination.html" %}
 

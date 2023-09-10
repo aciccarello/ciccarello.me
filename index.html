@@ -4,6 +4,8 @@ title: Home
 image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256"
 ---
 
+<link rel="stylesheet" href="/assets/css/homepage.css"/>
+
 <span class="h-card">
 	<section class="introduction">
 		<img alt="" class="profile-pic u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512" height="256" width="256" crossorigin="anonymous"/>
@@ -14,18 +16,19 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 			<p class="p-note">
 				{{ site.description}}
 			</p>
-			<a class="mdc-button mdc-button--raised
-				mdc-theme--secondary-bg mdc-theme--text-primary-on-dark connect-button" href="#connect">
-                Connect with me
-            </a>
-			<a rel="feed" class="mdc-button mdc-button--outlined blog-button" href="/posts">
-                See Posts
-            </a>
+			<div class="btn-group">
+				<a class="btn-link" href="#connect">
+					Connect with me
+				</a>
+				<a rel="feed" class="btn-link btn-alternate" href="/posts">
+					See Posts
+				</a>
+			<div>
 		</div>
 	</section>
 
 	<section class="profiles container">
-		<div class="mdc-card profile-card">
+		<div class="card profile-card">
 			<div class="profile-card__title">
 				<h2 class="mdc-typography--headline5" id="social-links">Social</h2>
 				<p class="mdc-typography--subtitle2">Personal Accounts</p>
@@ -71,7 +74,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 				</div>
 			</div>
 		</div>
-		<div class="mdc-card profile-card">
+		<div class="card profile-card">
 			<div class="profile-card__title">
 				<h2 class="mdc-typography--headline5" id="software-links">
                     Software
@@ -118,7 +121,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 				</div>
 			</div>
 		</div>
-		<div class="mdc-card profile-card">
+		<div class="card profile-card">
 			<div class="profile-card__title">
 				<h2 class="mdc-typography--headline5" id="career-links">Career</h2>
 				<p class="mdc-typography--subtitle2">Professional Information</p>
@@ -190,7 +193,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
                 </p>
 			</div>
 		</div>
-		<a href="/resume" class="link-button">Learn More</a>
+		<a href="/resume" class="btn-link">Learn More</a>
 	</section>
 	<section class="container">
 		<h3 class="mdc-typography--headline6">Career</h3>

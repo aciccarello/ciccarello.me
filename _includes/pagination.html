@@ -5,18 +5,18 @@
 		<ul>
 			<li>
 				{% if pagination.href.previous -%}
-					<a class="mdc-button" rel="first" href="{{ pagination.hrefs[0] }}">
-						<span class="mdc-button__label">Page 1</span>
+					<a class="btn-link btn-alternate" rel="first" href="{{ pagination.hrefs[0] }}">
+						Page 1
 					</a>
 				</li>
 				<li>
-					<a rel="prev" href="{{ pagination.href.previous }}" class="mdc-button mdc-button--outlined" aria-label="Goto previous page">
-						<span class="material-icons mdc-button__icon" aria-hidden="true">
+					<a rel="prev" href="{{ pagination.href.previous }}" class="btn-link btn-alternate" aria-label="Goto previous page">
+						<span aria-hidden="true">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 								<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
 								<path d="M0 0h24v24H0z" fill="none"/></svg>
 						</span>
-						<span class="mdc-button__label">Prev</span>
+						Prev
 					</a>
 				{% endif %}
 			</li>
@@ -24,7 +24,8 @@
 				{% if page.url == pagination.hrefs[forloop.index0] %}
 					<li>
 						<a aria-label="Current page, page {{forloop.index}}" href="{{page.url}}" aria-disabled="true" aria-current="page"
-				class="mdc-button mdc-button--outlined mdc-button--disabled">
+						 	disabled
+							class="btn-link btn-alternate">
 									Page {{ forloop.index }}
 						</a>
 					</li>
@@ -33,10 +34,10 @@
 
 			<li>
 				{% if pagination.href.next %}
-					<a aria-label="Goto next page" class="mdc-button mdc-button--outlined" rel="next" href="{{ pagination.href.next }}">
-						<span class="mdc-button__label">Next</span>
-						<span class="material-icons mdc-button__icon" aria-hidden="true">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<a aria-label="Goto next page" class="btn-link btn-alternate" rel="next" href="{{ pagination.href.next }}">
+						Next
+						<span aria-hidden="true">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
 								<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
 								<path d="M0 0h24v24H0z" fill="none"/></svg>
 						</span>
@@ -45,7 +46,7 @@
 				<li class="pagination-separator"></li>
 				<li>
 					{%- assign lastPageIndex = pagination.pages.length | minus : 1 -%}
-					<a class="mdc-button" rel="last" href="{{ pagination.hrefs[lastPageIndex] }}">
+					<a class="btn-link btn-alternate" rel="last" href="{{ pagination.hrefs[lastPageIndex] }}">
 						<span class="mdc-button__label">Page {{lastPageIndex | plus : 1}}</span>
 					</a>
 				{% endif %}

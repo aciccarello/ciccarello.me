@@ -13,24 +13,24 @@
 }
 
 .christmas-enabled {
-	--mdc-theme-background: #b5ecff;
-	--mdc-theme-secondary: #048a27; /* The theme secondary color. */
-	--mdc-theme-secondary-light: #36A152; /* The theme secondary color (light variant). */
-	--mdc-theme-secondary-dark: #02601B; /* The theme secondary color (dark variant). */
+	--color-background: #b5ecff;
+	--color-accent: #048a27; /* The theme secondary color. */
+	--color-accent-light: #36A152; /* The theme secondary color (light variant). */
+	--color-accent-dark: #02601B; /* The theme secondary color (dark variant). */
 }
 
 .christmas-enabled #snow-container {
 	display: block;
 }
 .christmas-enabled footer {
-	background-color: var(--mdc-theme-secondary-light);
+	background-color: var(--color-accent-light);
 }
 .christmas-enabled footer a, .christmas-enabled footer a:visited {
 	color: black;
 }
 </style>
 <div id="snow-container"></div>
-<button id="snow-toggle" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark" onclick="toggleChristmasTheme()">Toggle Theme</button>
+<button id="snow-toggle" onclick="toggleChristmasTheme()">Toggle Theme</button>
 
 <script
   type="text/javascript"

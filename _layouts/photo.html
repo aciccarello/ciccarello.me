@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="h-entry">
-	<article class="container post mdc-card">
+	<article class="container post card">
 		{% if image %}
-			<figure class="mdc-card__media post-thumbnail">
+			<figure class="card__media post-thumbnail">
 				{% assign filetype = image | split: "." | last -%}
 				{% if filetype == 'mp4' -%}
 					<video autoplay loop class="u-video post-img--wide" aria-label="{{ image_alt | escape }}">

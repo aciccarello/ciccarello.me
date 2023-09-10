@@ -1,6 +1,8 @@
 ---
 title: Style Guide
 layout: page
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsExplanation: Need to avoid circular reference in list of pages with custom styles
 examplePagination:
   href:
     prev: null
@@ -19,31 +21,136 @@ examplePagination:
 
 This page lays out the site-wide styles and how to use them. It's a form of visual documentation and a reference for how to display visual elements. It also allows easier testing of styles and cross-browser compatibility checks. This page was partially inspired by pages like [gRegor Morrill's style guide](https://gregorlove.com/style-guide/) and some CSS framework documentation sites.
 
-See the source of [main.css](/assets/main.css) for the complete styles. Custom shortcodes and other build customizations are defined in [.eleventy.js](https://github.com/aciccarello/ciccarello.me/blob/main/.eleventy.js) and the imported files. Includes are defined in the [/_includes](https://github.com/aciccarello/ciccarello.me/blob/main/_includes) directory.
+See the source of [common.css](/assets/css/common.css) for the complete styles. Custom shortcodes and other build customizations are defined in [.eleventy.js](https://github.com/aciccarello/ciccarello.me/blob/main/.eleventy.js) and the imported files. Includes are defined in the [/\_includes](https://github.com/aciccarello/ciccarello.me/blob/main/_includes) directory.
 
 # CSS Units
 
-Use REM units where reasonable with a base-2 sizing structure based on 4, 8, 16 or
+Use REM units where reasonable with a base-2 sizing structure based on a 16px default that can be modified by users for accessibility.
+Units that should adjust with the font size can use em units.
 
-- Use css custom properties for colors (for theming) and base styles. The most significant styles would be widths and margins that my need to be referenced elsewhere.
+Use css custom properties for colors (for theming) and base styles.
+The most significant styles would be widths and margins that my need to be referenced elsewhere.
+
+# Colors
+
+Three theme colors are defined. The muted and distinct colors are set to flip between light and dark color schemes.
+
+<style>
+.color-container {
+  display: flex;
+  height: 8rem;
+}
+
+.color-example {
+  /* split evenly across width */
+  flex-grow: 1;
+  flex-basis: 0;
+
+	color: var(--text-on-primary);
+  font-size: 1.25em;
+
+  /* center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-base .color-root {
+  background: var(--color-base);
+}
+
+.color-base .color-muted {
+  background: var(--color-base-muted);
+}
+
+.color-base .color-distinct {
+  background: var(--color-base-distinct);
+}
+
+.color-accent .color-root {
+  background: var(--color-accent);
+}
+
+.color-accent .color-muted {
+  background: var(--color-accent-muted);
+}
+
+.color-accent .color-distinct {
+  background: var(--color-accent-distinct);
+}
+
+.color-alternate .color-root {
+  background: var(--color-alternate);
+}
+
+.color-alternate .color-muted {
+  background: var(--color-alternate-muted);
+}
+
+.color-alternate .color-distinct {
+  background: var(--color-alternate-distinct);
+}
+</style>
+
+## Base
+
+The base color is used for the header and outlined buttons.
+
+<div class="color-container color-base">
+  <div class="color-example color-root">Base color</div>
+  <div class="color-example color-muted">Muted base</div>
+  <div class="color-example color-distinct">Distinct base</div>
+</div>
+
+## Accent
+
+The accent color is used for buttons
+
+<div class="color-container color-accent">
+  <div class="color-example color-root">Accent color</div>
+  <div class="color-example color-muted">Muted accent</div>
+  <div class="color-example color-distinct">Distinct accent</div>
+</div>
+
+## Alternate
+
+The alternate color is used for links
+
+<div class="color-container color-alternate">
+  <div class="color-example color-root">Base color</div>
+  <div class="color-example color-muted">Muted base</div>
+  <div class="color-example color-distinct">Distinct base</div>
+</div>
 
 # Headers
 
-TODO: Describe the primary header and define a secondary heading option for the
+TODO: Describe the primary header and define a secondary heading option?
 
 # Typeography
 
-Currently the site uses the Roboto font but the ultimate goal is to move to primarily system fonts. Headings each have their own size. To allow for flexibility while retaining semantic accuracy, there should be a class to override heading styles.
+The site uses native OS system fonts.
+Headings each have their own size.
+To allow for flexibility while retaining semantic accuracy, there should be a class to override heading styles.
 
 # Heading Level 1
 
+##### Simulated Heading Level 1{.h1}
+
 ## Heading Level 2
+
+##### Simulated Heading Level 2{.h2}
 
 ### Heading Level 3
 
+##### Simulated Heading Level 3{.h3}
+
 #### Heading Level 4
 
+##### Simulated Heading Level 4{.h4}
+
 ##### Heading Level 5
+
+##### Simulated Heading Level 5{.h5}
 
 ## Body text example: Adventures of Huckleberry Finn
 
@@ -79,6 +186,40 @@ Text can be **strengthened**, _emphasized_, or even made <small>smaller</small>.
 [Links in paragraph](.) are styled to increase readability and make it clear they are links. This includes different colored text and underlining, though bold text has been considered. Links should ideally contain [multiple word](.) for increased readability.
 
 In navigation sections, links aren't blue, but their linkyness should probably be emphasized with underlining, at least on hover.
+
+## Buttons
+
+Buttons can be styled with classes.
+Disabled buttons should not be clickable.
+
+<div class="btn-group">
+  <button>Standard</button>
+  <button class="btn-alternate">Alternate</button>
+  <button class="btn-flat">Flat</button>
+  <button disabled>Standard</button>
+  <button disabled class="btn-alternate">Alternate</button>
+  <button disabled class="btn-flat">Flat</button>
+</div>
+
+Input buttons are also styled like buttons.
+
+<div class="btn-group">
+  <input type="button" value="Button Input">
+  <input type="submit" value="Submit Input">
+  <input disabled type="button" value="Button Input">
+  <input disabled type="submit" value="Submit Input">
+</div>
+
+Links can also be styled to look similar to buttons but are underlined on hover or focus.
+
+<div class="btn-group">
+  <a href="" class="btn-link">Standard</a>
+  <a href="" class="btn-link btn-alternate">Alternate</a>
+  <a href="" class="btn-link btn-flat">Flat</a>
+  <a href="" disabled class="btn-link">Standard</a>
+  <a href="" disabled class="btn-link btn-alternate">Alternate</a>
+  <a href="" disabled class="btn-link btn-flat">Flat</a>
+</div>
 
 ## Images
 
@@ -130,10 +271,10 @@ Captions support markdown syntax but be careful with quotes in alt text. You can
 
 1. Fist item
 1. Second item
-    1. Two point one
-    1. Two point two
-    1. Two point three
-        1. Two point three one
+   1. Two point one
+   1. Two point two
+   1. Two point three
+      1. Two point three one
 1. Third item
 
 ## Quotes
@@ -141,8 +282,8 @@ Captions support markdown syntax but be careful with quotes in alt text. You can
 Text in a `<blockquote>`
 
 > “Say, who is you? Whar is you? Dog my cats ef I didn' hear sumf'n.
-Well, I know what I's gwyne to do: I's gwyne to set down here and
-listen tell I hears it agin.”
+> Well, I know what I's gwyne to do: I's gwyne to set down here and
+> listen tell I hears it agin.”
 >
 > —Mark Twain, "Adventures of Huckleberry Finn"
 
@@ -194,6 +335,23 @@ These are inspired by Medium's approach to linking to external content. It shows
     alt: "green bird with bright blue throat and a long skinny tail"
 %}
 
+{% include "embed-link.html"
+    title: "Chilean Flamingo"
+    url: "https://ebird.org/species/chifla1"
+    description: "Widespread and often numerous; found at shallow lakes and lagoons from the high Andes to Patagonian steppe and even in coastal waters. Adult is distinctive: pale pink with a salmon-pink “bustle” and grayish legs with red feet and “knees.” Immature often obviously smaller than adult, but has longer bill “hook” than the smaller and shorter-legged James’s Flamingo. Chilean Flamingo lacks the clean-cut black triangle on closed wings seen on Andean Flamingo. Far-carrying calls can suggest honking of geese."
+    img: "/assets/img/embed-thumbnail-chilean-flamingo.jpg"
+    alt: "large pink bird standing in water with a long neck and a down-curved beak"
+    objectPosition: "85% center"
+%}
+
+{% include "embed-link.html"
+    title: "Humboldt Penguin"
+    url: "https://ebird.org/species/humpen1"
+    description: "But what if there's little text?"
+    img: "/assets/img/embed-thumbnail-humboldt-penguin.jpg"
+    alt: "penguin on rock ledge"
+%}
+
 ```liquid
 {% raw %}
 {% include "embed-link.html"
@@ -215,16 +373,21 @@ These need to be formalized but they are usefull for calling out the context of 
 </aside>
 
 ```html
-<aside style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;">
-    This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
+<aside
+  style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;"
+>
+  This post is part of a series describing our trip to Italy. To read an
+  overview of our trip and why we went, check out this
+  <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 ```
 
 ## Forms
 
-Forms are designed for one column. Buttons can be used outside of forms, but should ideally only be used for actions (not links).
+Forms are designed for one column. Buttons within a form will be full width.
 
 {% removeindents %}
+
 <form method="get" action="#">
     <fieldset>
         <legend>Here is a form with <code>&lt;fieldset&gt;</code>:</legend>
@@ -307,6 +470,8 @@ Forms are designed for one column. Buttons can be used outside of forms, but sho
 </form>
 {% endremoveindents %}
 
+Links can be styled more like buttons with the `.btn-link` class.
+
 # Recipes
 
 TODO: Example shortcodes
@@ -316,6 +481,7 @@ TODO: Example shortcodes
 Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as suggestions below other posts.
 
 {% removeindents %}
+
 <div class="post-suggestions container">
  {% assign previousPost = collections.photos | first %}
  {% assign nextPost = collections.articles | last %}
@@ -351,6 +517,7 @@ Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as sugge
 Different post types appear differently
 
 {% removeindents %}
+
 <div class="post-suggestions container">
  {% assign previousPost = collections.notes | first %}
  {% assign nextPost = collections.recipes | last %}
@@ -367,6 +534,20 @@ Different post types appear differently
  </ul>
 </div>
 {% endremoveindents %}
+
+# Pages with custom styles
+
+Review the following pages for issues as they have their own unique styles.
+
+<ul>
+  {%- for page in collections.all %}
+  {%- if page.templateContent contains "<style" or post.templateContent contains ".css" %}
+    <li>
+      <a href="{{page.url}}">{{page.data.title | default: page.url}}</a>
+    </li>
+  {%- endif %}
+  {%- endfor %}
+</ul>
 
 # Pagination
 

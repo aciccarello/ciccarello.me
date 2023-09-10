@@ -1,9 +1,9 @@
 {%- if tags.size > 0 -%}
-<ul class="mdc-chip-set" title="Tags">
+<ul class="chip-set" title="Tags">
 	{% for tag in tags -%}
 	<li>
-		<a href="/posts/tags/{{tag}}/" rel="tag" class="p-category tag mdc-chip">
-			<span class="mdc-chip__text">{{ tag }}</span>
+		<a href="/posts/tags/{{tag}}/" rel="tag" class="p-category tag chip-item">
+			{{ tag }}
 		</a>
 	</li>
 	{% endfor -%}

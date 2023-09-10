@@ -17,14 +17,14 @@ The easiest way to subscribe is via email. Emails are sent out no more often tha
     <input type="hidden" name="groups[]" value="105825814">
     <input type="hidden" name="ml-submit" value="1">
     <input type="hidden" name="anticsrf" value="true">
-    <button type="submit" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark">Subscribe via email</button>
+    <button type="submit">Subscribe via email</button>
 </form>
 
 ## Subscribe Using a Feed Reader
 
 This blog also supports subscribing via RSS (technically Atom). Using an feed reader you can subscribe to the [feed URL]({{ "/feed.xml" | url }}). Learn more about RSS on aboutfeeds.com.
 
-<input type="button" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this)" value="Subscribe via feed reader" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark">
+<input type="button" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this)" value="Subscribe via feed reader">
 
 In addition to RSS, any of the [feed pages](/posts) are compatible with [IndieWeb readers](https://indieweb.org/reader) (via h-feed microformats).
 
@@ -39,5 +39,5 @@ Enter your account below to be redirected to your server's follow page.
  <input id="follow-address" name="address" type="text" required="" placeholder="@you@domain.social" alt="fediverse address" value="">
  <input name="domain" type="hidden" value="ciccarello.me">
  <input name="protocol" type="hidden" value="web">
- <button type="submit" class="mdc-button mdc-button--raised mdc-theme--secondary-bg mdc-theme--text-primary-on-dark">Follow</button>
+ <button type="submit">Follow</button>
 </form>
