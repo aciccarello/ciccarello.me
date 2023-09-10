@@ -1,31 +1,35 @@
 ---
 title: Group messaging doesn't have to be this bad
-permalink: "/drafts/group-messaging/"
-date: 2023-01-23T22:56:56.477Z
-eleventyExcludeFromCollections: draft
+subtitle: A rant about Apple not playing nice with RCS interoperability
+date: 2023-09-10T14:29:49.356Z
+tags:
+  - technology
+  - rant
+image: /assets/img/2023-apple-rcs-text.png
+image_alt: "Text thread where a message from 'People' says 'Can we have better messaging?'. Apple Inc responds with '👎 to Can we have better messaging?'. Bottom of messaging view says 'RSS Messaging is not available with Apple Inc right now'."
 ---
 
 As one of the few members of my family who doesn't use an iPhone, I frequently get blamed for ruining group messaging.
 Photos and videos come through compressed beyond recognition.
-Reactions come through as additional texts.
+Reactions come through as separate messages (on iPhones at least, Google shows the texts as proper reactions).
 Adding and removing group members results in entirely new threads.
 
-I agree that these issues are a pain.
-The reality is that SMS and the later MMS texting standard is extremely limited.
-iMessage supports a lot of features natively but it isn't available for all platforms.
-But using a third party messaging service isn't ideal either.
+These issues makes texting clunky.
+The SMS texting standard and the later MMS standard are extremely limited.
+iMessage supports a lot of more modern features natively but is only available on Apple devices.
+There are lots of third party messaging services that try to fill the gap, but these aren't ideal either.
 
 It seems like every social group has a different app they prefer.
-Yes, many international groups use Whatsapp which is controlled by Meta, but not everyone has that installed.
+Many international groups use Whatsapp but not everyone in the US has that installed and it is controlled by Meta.
 Some people even actively avoid it.
 There are more privacy centered options like Signal and Telegram but those aren't common in my circles.
-I've seen organizations where people avoid chat messages entirely and use something like Voxer voice recordings.
-My least favorite is Marco Polo which entirely revolves around video messages.
+I've seen organizations where people avoid written messages entirely and use something like Voxer voice recordings.
+My personal least favorite is Marco Polo which entirely revolves around video messages.
 
 ## An updated texting standard
 
 But for years now, there has been a standard that solves many of these issues: RCS.
-Designed to replace SMS texting, RCS is a modern messaging standard.
+Designed to replace SMS texting, RCS is a modern messaging standard that works over the internet, including on wifi-only connections.
 It supports sending larger multimedia files including video and voice messages.
 Other modern messaging features like reactions and typing indicators make conversations smother.
 Group management is much simpler, with named groups and the ability to edit recipients without splintering into multiple text chains.
@@ -40,15 +44,15 @@ Initially, Apple indicated the standard wasn't ready yet.
 It complained about a lack of encryption saying it weakened user's security.
 But SMS already isn't encrypted so users aren't protected now.
 Furthermore, Google has added support for encryption to RCS, giving actual protection that Apple could also support.
-Even more blatantly, Apple's CEO Tim Cook has said that anyone who to message their family member with an Android should just buy them an iPhone.
+Even more blatantly, Apple's CEO [Tim Cook has said](https://www.theverge.com/2022/9/7/23342243/tim-cook-apple-rcs-imessage-android-iphone-compatibility) that people wanting to send videos should "buy your mom an iPhone".
 In short, it looks like Apple is afraid interoperability would weaken their iMessage monopoly.
 
 RCS is not without it's issues.
-The RCS rollout was a slow and painful process.
-It's unclear if international telecoms will offer free RCS messaging rates like they have with Whatsapp.
-There are still sometime connections issues and you need to disable it when switching phones.
+The RCS rollout was a slow and painful process leaving some companies hesitant to jump in.
+There are still sometime connections issues and problems when switching phones.
 I also would prefer for Google to be less central of a player in the standard.
-There is also a risk that RCS will become a target for spam.
+There are also existing challenges to texting like the risk of spam.
+It's unclear if international telecoms will offer free RCS messaging rates or only subsidize Meta's Whatsapp.
 
 ## Waiting for change
 

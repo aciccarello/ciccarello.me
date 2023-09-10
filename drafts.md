@@ -12,7 +12,6 @@ I was partially inspired to share these drafts in the spirit of 🌱[digital gar
 However, I do intend to post these when they are ready.
 
 - [Birding in 2023](./birding-in-2023)
-- [Group Messaging Doesn't Have to Be This Bad](./group-messaging)
 - [Rethinking my approach to social media](./rethinking-social-media)
 - [Tag Moderation](./tag-moderation)
 - [Instagram Import](./instagram-import)
