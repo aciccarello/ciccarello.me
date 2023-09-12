@@ -33,128 +33,115 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 				<h2 class="mdc-typography--headline5" id="social-links">Social</h2>
 				<p class="mdc-typography--subtitle2">Personal Accounts</p>
 			</div>
-			<div>
-				<div class="mdc-list-group">
-					<nav aria-labelledby="social-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
-						<a class="u-url" href="acct:anthony@ciccarello.me"></a>
-						<a class="mdc-list-item u-url" href="/subscribe/#follow-on-mastodon-or-other-fediverse-networks">
-							<span class="mdc-list-item__graphic list-avatar" role="presentation">
-								<span class="svg-icon">
-									{% include "icons/mastodon.svg" %}
-								</span>
-							</span>
-							<span class="mdc-list-item__text">
-                                Mastodon/Fediverse
-                                <span class="mdc-list-item__secondary-text">@anthony@ciccarello.me</span>
-							</span>
-						</a>
-						<a class="mdc-list-item" href="https://twitter.com/ajciccarello" rel="me">
-							<span class="mdc-list-item__graphic list-avatar" role="presentation">
-								<span class="svg-icon">
-									{% include "icons/twitter.svg" %}
-								</span>
-							</span>
-							<span class="mdc-list-item__text">
-                                Twitter
-                                <span class="mdc-list-item__secondary-text">Dumpster Fire Archive</span>
-							</span>
-						</a>
-						<a class="mdc-list-item" href="https://www.instagram.com/ajciccarello/" rel="me">
-							<span class="mdc-list-item__graphic list-avatar" role="presentation">
-								<span class="svg-icon">
-									{% include "icons/instagram.svg" %}
-								</span>
-							</span>
-							<span class="mdc-list-item__text">
-                                Instagram
-                                <span class="mdc-list-item__secondary-text">Photo Archive</span>
-							</span>
-						</a>
-					</nav>
-				</div>
-			</div>
+			<nav aria-labelledby="social-links">
+				<a class="u-url" href="acct:anthony@ciccarello.me"></a>
+				<a class="account-link u-url" href="/subscribe/#follow-on-mastodon-or-other-fediverse-networks">
+					<span class="account-link__graphic" role="presentation">
+						<span class="svg-icon">
+							{% include "icons/mastodon.svg" %}
+						</span>
+					</span>
+					<span class="account-link__text">
+						Mastodon/Fediverse
+						<span class="account-link__secondary-text">@anthony@ciccarello.me</span>
+					</span>
+				</a>
+				<a class="account-link" href="https://twitter.com/ajciccarello" rel="me">
+					<span class="account-link__graphic" role="presentation">
+						<span class="svg-icon">
+							{% include "icons/twitter.svg" %}
+						</span>
+					</span>
+					<span class="account-link__text">
+						Twitter
+						<span class="account-link__secondary-text">Dumpster Fire Archive</span>
+					</span>
+				</a>
+				<a class="account-link" href="https://www.instagram.com/ajciccarello/" rel="me">
+					<span class="account-link__graphic" role="presentation">
+						<span class="svg-icon">
+							{% include "icons/instagram.svg" %}
+						</span>
+					</span>
+					<span class="account-link__text">
+						Instagram
+						<span class="account-link__secondary-text">Photo Archive</span>
+					</span>
+				</a>
+			</nav>
+	</div>
+	<div class="card profile-card">
+		<div class="profile-card__title">
+			<h2 class="mdc-typography--headline5" id="software-links">
+				Software
+			</h2>
+			<p class="mdc-typography--subtitle2">Development Profiles</p>
 		</div>
-		<div class="card profile-card">
-			<div class="profile-card__title">
-				<h2 class="mdc-typography--headline5" id="software-links">
-                    Software
-                </h2>
-				<p class="mdc-typography--subtitle2">Development Profiles</p>
-			</div>
-			<div>
-				<div class="mdc-list-group">
-					<nav aria-labelledby="software-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
-						<a class="mdc-list-item" href="https://github.com/aciccarello" rel="me">
-							<span class="mdc-list-item__graphic list-avatar" role="presentation">
-								<span class="svg-icon">
-									{% include "icons/github.svg" %}
-								</span>
-							</span>
-							<span class="mdc-list-item__text">
-                                GitHub
-                                <span class="mdc-list-item__secondary-text">Code repository</span>
-							</span>
-						</a>
-						<a class="mdc-list-item" href="https://stackoverflow.com/users/4252741/chic" rel="me">
-							<span class="mdc-list-item__graphic list-avatar" role="presentation">
-								<span class="svg-icon">
-									{% include "icons/stack-overflow.svg" %}
-								</span>
-							</span>
-							<span class="mdc-list-item__text">
-                                Stack Overflow
-                                <span class="mdc-list-item__secondary-text">Software Q & A</span>
-							</span>
-						</a>
-						<a class="mdc-list-item" href="https://www.npmjs.com/~aciccarello" rel="me">
-							<span class="mdc-list-item__graphic list-avatar" role="presentation">
-								<span class="svg-icon">
-									{% include "icons/npm.svg" %}
-								</span>
-							</span>
-							<span class="mdc-list-item__text">
-                                npm
-                                <span class="mdc-list-item__secondary-text">Package manager</span>
-							</span>
-						</a>
-					</nav>
-				</div>
-			</div>
+		<nav aria-labelledby="software-links">
+			<a class="account-link" href="https://github.com/aciccarello" rel="me">
+				<span class="account-link__graphic" role="presentation">
+					<span class="svg-icon">
+						{% include "icons/github.svg" %}
+					</span>
+				</span>
+				<span class="account-link__text">
+					GitHub
+					<span class="account-link__secondary-text">Code repository</span>
+				</span>
+			</a>
+			<a class="account-link" href="https://stackoverflow.com/users/4252741/chic" rel="me">
+				<span class="account-link__graphic" role="presentation">
+					<span class="svg-icon">
+						{% include "icons/stack-overflow.svg" %}
+					</span>
+				</span>
+				<span class="account-link__text">
+					Stack Overflow
+					<span class="account-link__secondary-text">Software Q & A</span>
+				</span>
+			</a>
+			<a class="account-link" href="https://www.npmjs.com/~aciccarello" rel="me">
+				<span class="account-link__graphic" role="presentation">
+					<span class="svg-icon">
+						{% include "icons/npm.svg" %}
+					</span>
+				</span>
+				<span class="account-link__text">
+					npm
+					<span class="account-link__secondary-text">Package manager</span>
+				</span>
+			</a>
+		</nav>
+	</div>
+	<div class="card profile-card">
+		<div class="profile-card__title">
+			<h2 class="mdc-typography--headline5" id="career-links">Career</h2>
+			<p class="mdc-typography--subtitle2">Professional Information</p>
 		</div>
-		<div class="card profile-card">
-			<div class="profile-card__title">
-				<h2 class="mdc-typography--headline5" id="career-links">Career</h2>
-				<p class="mdc-typography--subtitle2">Professional Information</p>
-			</div>
-			<div>
-				<div class="mdc-list-group">
-					<nav aria-labelledby="career-links" class="mdc-list mdc-list--two-line mdc-list--avatar-list">
-						<a class="mdc-list-item" href="/resume" rel="me">
-							<span class="mdc-list-item__graphic list-avatar" role="presentation">
-								<span class="svg-icon">
-									{% include "icons/work-history.svg" %}
-								</span>
-							</span>
-							<span class="mdc-list-item__text">
-                                Resume
-                                <span class="mdc-list-item__secondary-text">Printable work history</span>
-							</span>
-						</a>
-						<a class="mdc-list-item" href="https://www.linkedin.com/in/anthonyciccarello/" rel="me">
-							<span class="mdc-list-item__graphic list-avatar" role="presentation">
-								<span class="svg-icon">
-									{% include "icons/linkedin.svg" %}
-								</span>
-							</span>
-							<span class="mdc-list-item__text">
-                                LinkedIn
-                                <span class="mdc-list-item__secondary-text">Career profile</span>
-							</span>
-						</a>
-					</nav>
-				</div>
-			</div>
-		</div>
+		<nav aria-labelledby="career-links">
+			<a class="account-link" href="/resume" rel="me">
+				<span class="account-link__graphic" role="presentation">
+					<span class="svg-icon">
+						{% include "icons/work-history.svg" %}
+					</span>
+				</span>
+				<span class="account-link__text">
+					Resume
+					<span class="account-link__secondary-text">Printable work history</span>
+				</span>
+			</a>
+			<a class="account-link" href="https://www.linkedin.com/in/anthonyciccarello/" rel="me">
+				<span class="account-link__graphic" role="presentation">
+					<span class="svg-icon">
+						{% include "icons/linkedin.svg" %}
+					</span>
+				</span>
+				<span class="account-link__text">
+					LinkedIn
+					<span class="account-link__secondary-text">Career profile</span>
+				</span>
+			</a>
+		</nav>
 	</section>
 
 	<section class="skills mdc-theme--text-primary-on-dark">

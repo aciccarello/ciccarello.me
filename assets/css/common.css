@@ -466,18 +466,6 @@ button,
 	margin: 0;
 }
 
-.list-avatar {
-	background: rgba(0, 0, 0, 0.26);
-	color: white;
-	font-size: 20px;
-	align-items: center;
-	justify-content: center;
-}
-
-.mdc-list--two-line .mdc-list-item__text {
-	align-self: unset;
-}
-
 .mdc-typography--subheading2 {
 	margin-top: 2rem;
 }

@@ -18,6 +18,37 @@
 	margin: 1rem;
 }
 
+.account-link {
+	display: flex;
+	color: var(--text-on-background);
+
+	&:not(:hover, :focus) {
+		text-decoration: none;
+	}
+}
+
+.account-link__graphic {
+	display: flex;
+	height: 3rem;
+	width: 3rem;
+	margin: 0.5rem 0 0.5rem 1rem;
+	background: hsl(0 0% 26%);
+	color: white;
+	border-radius: 50%;
+	font-size: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.account-link__text {
+	padding: 0.5rem;
+}
+
+.account-link__secondary-text {
+	display: block;
+	font-size: 0.9em;
+}
+
 .skills {
 	text-align: center;
 	padding: 64px 16px 64px;
