@@ -15,7 +15,7 @@ eleventyComputed:
 
 <style type="text/css">
 
-.mdc-grid-list__tiles {
+.photo-grid-list__tiles {
 	display: flex;
     flex-flow: row wrap;
     padding: 0;
@@ -28,31 +28,31 @@ eleventyComputed:
 	right: 1rem;
 	filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, .5))
 }
-.mdc-grid-tile {
+.photo-grid-tile {
 	display: block;
 	width: calc(50% - 4px);
 	aspect-ratio: 1 / 1;
 	position: relative
 }
 @media screen and (min-width: 720px) {
-	.mdc-grid-tile {
+	.photo-grid-tile {
 		width: calc(100% / 3 - 4px);
 	}
-	.mdc-grid-tile:first-child, .mdc-grid-tile:nth-child(2) {
+	.photo-grid-tile:first-child, .photo-grid-tile:nth-child(2) {
 		width: calc(50% - 4px);
 	}
 }
-a.grid-tile__link {
+.photo-grid-tile a {
 	display: block;
 	color: var(--text-on-dark-background);
 }
-.grid-tile__media {
+.photo-grid-tile__media {
 	display: block;
 	aspect-ratio: 1 / 1;
 	width: 100%;
 	object-fit: cover;
 }
-.grid-tile__overlay {
+.photo-grid-tile__overlay {
 	position: absolute;
 	bottom: 0;
 	opacity: 0;
@@ -69,30 +69,34 @@ a.grid-tile__link {
 	transition: opacity 250ms;
 }
 
-.mdc-grid-tile:hover .grid-tile__overlay {
+.photo-grid-tile:hover .photo-grid-tile__overlay {
 	visibility: visible;
 	opacity: 1;
 }
-.grid-tile__overlay p {
+.photo-grid-tile__overlay p {
 	margin: 0.25rem 0 0;
 }
 
-.mdc-grid-tile__description {
+.photo-grid-tile__description {
 	margin: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 </style>
-<div class="home container mdc-grid-list h-feed">
+<div class="home container h-feed">
 	<h1 class="post-list-heading mdc-typography--headline4 p-name">
 		{{ page.list_title | default: "Photos" }}
 	</h1>
-	<ol class="mdc-grid-list__tiles photo-grid">
+	<ol class="photo-grid-list__tiles">
 		{%- for post in photos -%}
-		<li class="mdc-grid-tile h-entry">
-			<a class="grid-tile__link" href="{{ post.url | url }}">
+		<li class="photo-grid-tile h-entry">
+			<a href="{{ post.url | url }}">
 				{% assign filetype = post.data.image | split: "." | last -%}
 				{% if filetype == 'mp4' -%}
-				<video preload="metadata" class="grid-tile__media u-video" aria-label="{{ post.data.image_alt | escape }}">
+				<video preload="metadata" class="photo-grid-tile__media u-video" aria-label="{{ post.data.image_alt | escape }}">
 					<source type="video/mp4" src="{{ post.data.image }}">
 				</video>
 				<svg xmlns="http://www.w3.org/2000/svg" class="photo-grid-icon" height="24px" viewBox="0 0 24 24" width="24px" role="img" fill="#FFFFFF">
@@ -100,7 +104,7 @@ a.grid-tile__link {
 					<path xmlns="http://www.w3.org/2000/svg" d="M4 4 6 8H9L7 4H9L11 8H14L12 4H14L16 8H19L17 4H20Q20.825 4 21.413 4.588Q22 5.175 22 6V18Q22 18.825 21.413 19.413Q20.825 20 20 20H4Q3.175 20 2.588 19.413Q2 18.825 2 18V6Q2 5.175 2.588 4.588Q3.175 4 4 4ZM4 10V18Q4 18 4 18Q4 18 4 18H20Q20 18 20 18Q20 18 20 18V10ZM4 10V18Q4 18 4 18Q4 18 4 18Q4 18 4 18Q4 18 4 18Z"/>
 				</svg>
 				{% else -%}
-				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt | escape }}" loading="lazy" class="grid-tile__media u-photo" />
+				<img src="{{ post.data.image }}" alt="{{ post.data.image_alt | escape }}" loading="lazy" class="photo-grid-tile__media u-photo" />
 				{% endif -%}
 				{% if post.templateContent contains "<figure" %}
 				<svg xmlns="http://www.w3.org/2000/svg" class="photo-grid-icon" height="24px" viewBox="0 0 24 24" width="24px" role="img" fill="#FFFFFF">
@@ -109,11 +113,11 @@ a.grid-tile__link {
 					<path d="M1 5h2v14H1zm4 0h2v14H5zm17 0H10c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM11 17l2.5-3.15L15.29 16l2.5-3.22L21 17H11z"/>
 				</svg>
 				{% endif %}
-				<div class="grid-tile__overlay">
+				<div class="photo-grid-tile__overlay">
 					<time class="datetime="{{ post.date | formatMachineDate }}">
 						{{- post.date | formatHumanDate: post.data.dateFormat -}}
 					</time>
-					<p class="grid-tile__description">
+					<p class="photo-grid-tile__description">
 						{{ post.templateContent | joinLines | strip_html | truncatewords: 20 }}
 					</p>
 				</div>
