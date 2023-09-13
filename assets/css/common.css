@@ -763,12 +763,10 @@ blockquote {
 	padding: 0;
 	max-width: 50rem;
 	display: grid;
-	grid-template-columns: 1fr 10rem;
+	grid-template-columns: minmax(100px, 4fr) 1fr 25%;
 	grid-template-rows: auto;
-	grid-template-areas: 'header img' 'text img';
-	/* TODO: get text to adjust overflow automatically
-	overflow: hidden;
-	max-height: var(--embed-card-max-height); */
+	grid-template-areas: 'header domain img' 'text text img' 'spacer spacer img';
+	transition: box-shadow ease-out 0.2s;
 
 	&:hover {
 		box-shadow: var(--box-shadow-standard);
@@ -790,17 +788,22 @@ blockquote {
 	& p {
 		grid-area: text;
 		margin: 0 1rem 1rem;
+
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+
+		@media screen and (max-width: 600px) {
+			-webkit-line-clamp: 2;
+		}
 	}
 
-	& p cite {
+	& cite {
+		grid-area: domain;
 		display: block;
 		text-align: right;
-	}
-}
-
-@media screen and (max-width: 720px) {
-	.embed-card {
-		grid-template-columns: 1fr 25%;
+		margin: 1rem;
 	}
 }
 

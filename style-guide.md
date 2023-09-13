@@ -338,7 +338,7 @@ These are inspired by Medium's approach to linking to external content. It shows
 {% include "embed-link.html"
     title: "Chilean Flamingo"
     url: "https://ebird.org/species/chifla1"
-    description: "Widespread and often numerous; found at shallow lakes and lagoons from the high Andes to Patagonian steppe and even in coastal waters. Adult is distinctive: pale pink with a salmon-pink “bustle” and grayish legs with red feet and “knees.” Immature often obviously smaller than adult, but has longer bill “hook” than the smaller and shorter-legged James’s Flamingo. Chilean Flamingo lacks the clean-cut black triangle on closed wings seen on Andean Flamingo. Far-carrying calls can suggest honking of geese."
+    description: "Flamingo [text] can be tall and found at shallow lakes and lagoons from the high Andes to Patagonian steppe and even in coastal waters. Adult is distinctive: pale pink with a salmon-pink “bustle” and grayish legs with red feet and “knees.” Immature often obviously smaller than adult, but has longer bill “hook” than the smaller and shorter-legged James’s Flamingo. Chilean Flamingo lacks the clean-cut black triangle on closed wings seen on Andean Flamingo. Far-carrying calls can suggest honking of geese."
     img: "/assets/img/embed-thumbnail-chilean-flamingo.jpg"
     alt: "large pink bird standing in water with a long neck and a down-curved beak"
     objectPosition: "85% center"
