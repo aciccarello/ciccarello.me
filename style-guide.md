@@ -353,8 +353,7 @@ These are inspired by Medium's approach to linking to external content. It shows
 %}
 
 ```liquid
-{% raw %}
-{% include "embed-link.html"
+{% raw %}{% include "embed-link.html"
     title: "Blue-throated Motmot"
     url: "https://ebird.org/species/bltmot1/"
     description: "Scarce inhabitant of highland forests in Chiapas and south to Honduras. Found in humid pine and evergreen forest, perching at all levels. Like other motmots, rather inactive a…"
@@ -509,8 +508,7 @@ Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as sugge
 {% endremoveindents %}
 
 ```liquid
-{% raw %}
-{% include "post-card.html" post: nextPost %}
+{% raw %}{% include "post-card.html" post: nextPost %}
 {% endraw %}
 ```
 
@@ -559,8 +557,7 @@ For paginated pages, you can show pagination links at the bottom.
 {% endremoveindents %}
 
 ```liquid
-{% raw %}
-{% include "pagination.html" %}
+{% raw %}{% include "pagination.html" %}
 {% endraw %}
 ```
 
