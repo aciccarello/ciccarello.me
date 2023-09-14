@@ -34,7 +34,9 @@
 
 	--text-on-primary: oklch(98% 0 0);
 	--container-width: 64rem;
-	--color-disabled: rgba(0, 0, 0, 0.37) !important;
+	--color-disabled: rgba(0, 0, 0, 0.37);
+	--color-border: oklch(70% 0 0 / 40%);
+	--border-radius: 0.5rem;
 
 	/* Fonts from https://github.com/system-fonts/modern-font-stacks */
 	--body-font: system-ui, sans-serif;
@@ -181,7 +183,7 @@ footer {
 	overflow-x: auto;
 	flex-shrink: 0;
 	background-color: #e0e0e0;
-	border-top: #9f9f9f 1px solid;
+	border-top: var(--color-border) 1px solid;
 	color: black;
 	display: grid;
 	grid: auto / 1fr 1fr 1fr;
@@ -264,14 +266,15 @@ pre {
 	display: block;
 	font-family: var(--code-font, monospace);
 	clear: both;
+	border-radius: var(--border-radius);
 }
 
 input,
 button,
 .btn-link {
 	background-color: white;
-	border-color: #ccc;
-	border-radius: 0.25rem;
+	border-color: var(--color-border);
+	border-radius: var(--border-radius);
 	border-style: solid;
 	border-width: 1px;
 	font-size: 1em;
@@ -286,6 +289,15 @@ button,
 	}
 	text-align: center;
 	display: inline-block;
+}
+
+fieldset {
+	border-radius: var(--border-radius);
+	border: 0.125rem solid var(--color-border);
+}
+
+legend {
+	padding: 0 0.5rem;
 }
 
 form,
@@ -394,12 +406,14 @@ button,
 		flex-wrap: wrap;
 	}
 }
+
 .card {
 	/* background-color: white; */
 	display: block;
 	margin: 1rem auto;
-	border-radius: 0.25rem;
-	border: 0.125rem solid var(--text-on-background);
+	border-radius: var(--border-radius);
+	border: 0.125rem solid var(--color-border);
+	overflow: hidden;
 }
 
 .card__primary {
@@ -590,7 +604,7 @@ a.disable-link-styles {
 }
 
 .chip-item {
-	border-radius: 16px;
+	border-radius: 1rem;
 	background-color: #e0e0e0;
 	color: rgba(0, 0, 0, 0.87);
 	font-size: 0.875rem;
