@@ -31,10 +31,11 @@
 	--text-on-light-background: oklch(5% 0 0);
 	--text-on-dark-background: oklch(95% 0 0);
 	--text-on-background: var(--text-on-light-background);
+	--text-on-distinct: var(--text-on-dark-background);
 
 	--text-on-primary: oklch(98% 0 0);
 	--container-width: 64rem;
-	--color-disabled: rgba(0, 0, 0, 0.37);
+	--color-disabled: oklch(70% 0 0 / 60%);
 	--color-border: oklch(70% 0 0 / 40%);
 	--border-radius: 0.5rem;
 
@@ -43,13 +44,14 @@
 	--code-font: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
 		Consolas, 'DejaVu Sans Mono', monospace;
 
-	--box-shadow-standard: 0 0.5rem 1rem #afafaf;
+	--box-shadow-standard: 0 0.5rem 1rem var(--color-border);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-background: var(--color-dark-background);
 		--text-on-background: var(--text-on-dark-background);
+		--text-on-distinct: var(--text-on-light-background);
 		--color-base-muted: var(--color-base-dark);
 		--color-base-distinct: var(--color-base-light);
 		--color-accent-muted: var(--color-accent-dark);
@@ -277,7 +279,7 @@ button,
 	border-radius: var(--border-radius);
 	border-style: solid;
 	border-width: 1px;
-	font-size: 1em;
+	font-size: 1.1rem;
 	height: auto;
 	margin: 0.5em 0 0;
 	padding: 0.5em 0.75em;
@@ -340,7 +342,7 @@ button,
 	color: #fff;
 
 	&[disabled] {
-		background-color: var(--color-disabled);
+		color: var(--color-disabled);
 		cursor: default;
 		pointer-events: none;
 	}
@@ -353,15 +355,15 @@ button,
 
 	&.btn-alternate {
 		background-color: transparent;
-		border: 1px solid var(--color-base);
-		color: var(--color-base);
+		border: 1px solid var(--color-base-distinct);
+		color: var(--color-base-distinct);
 
 		&:hover {
 			background-color: var(--color-base-muted);
 		}
 
 		&[disabled] {
-			border-color: var(--color-disabled);
+			/* border-color: var(--color-disabled); */
 			color: var(--color-disabled);
 		}
 	}

@@ -46,7 +46,7 @@ Three theme colors are defined. The muted and distinct colors are set to flip be
   flex-grow: 1;
   flex-basis: 0;
 
-	color: var(--text-on-primary);
+  color: var(--text-on-primary);
   font-size: 1.25em;
 
   /* center the text */
@@ -61,10 +61,12 @@ Three theme colors are defined. The muted and distinct colors are set to flip be
 
 .color-base .color-muted {
   background: var(--color-base-muted);
+  color: var(--text-on-background);
 }
 
 .color-base .color-distinct {
   background: var(--color-base-distinct);
+  color: var(--text-on-distinct);
 }
 
 .color-accent .color-root {
@@ -73,6 +75,7 @@ Three theme colors are defined. The muted and distinct colors are set to flip be
 
 .color-accent .color-muted {
   background: var(--color-accent-muted);
+  color: var(--text-on-background);
 }
 
 .color-accent .color-distinct {
@@ -85,10 +88,12 @@ Three theme colors are defined. The muted and distinct colors are set to flip be
 
 .color-alternate .color-muted {
   background: var(--color-alternate-muted);
+  color: var(--text-on-background);
 }
 
 .color-alternate .color-distinct {
   background: var(--color-alternate-distinct);
+  color: var(--text-on-distinct);
 }
 </style>
 
