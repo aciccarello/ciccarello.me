@@ -30,12 +30,11 @@
 .account-link__graphic {
 	display: flex;
 	height: 3rem;
-	width: 3rem;
+	min-width: 3rem;
 	margin: 0.5rem 0 0.5rem 1rem;
 	background: hsl(0 0% 26%);
 	color: white;
 	border-radius: 50%;
-	font-size: 20px;
 	align-items: center;
 	justify-content: center;
 }
@@ -51,7 +50,7 @@
 
 .skills {
 	text-align: center;
-	padding: 64px 16px 64px;
+	padding: 4rem 1rem 4rem;
 	background-color: var(--color-accent-dark);
 	color: var(--text-on-dark-background);
 
@@ -67,8 +66,8 @@
 
 	& > div {
 		flex: 1;
-		margin: 32px;
-		max-width: 300px;
+		margin: 2rem;
+		max-width: 19rem;
 	}
 
 	& svg {
@@ -77,7 +76,5 @@
 }
 
 .connect-icons a {
-	text-decoration: none;
-	font-size: 20px;
-	margin: 8px;
+	margin: 0.5rem;
 }

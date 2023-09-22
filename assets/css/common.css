@@ -494,7 +494,7 @@ button,
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
-	margin-bottom: 32px;
+	margin-bottom: 2rem;
 }
 
 .profile-card {
@@ -510,7 +510,7 @@ button,
 
 .profile-card__title > .mdc-typography--headline5 {
 	margin: 0;
-	padding-top: 8px;
+	padding-top: 0.5rem;
 }
 
 .profile-card__title > .mdc-typography--subtitle2 {
