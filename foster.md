@@ -655,7 +655,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 <div class="home container">
  <h2 class="post-list-heading mdc-typography--headline4">
   Latest Updates
-    <a class="mdc-button btn-alternate" href="/posts/tags/foster care">
+    <a class="btn-link btn-alternate" href="/posts/tags/foster care">
         See All
     </a>
  </h2>

@@ -11,7 +11,7 @@
 				</li>
 				<li>
 					<a rel="prev" href="{{ pagination.href.previous }}" class="btn-link btn-alternate" aria-label="Goto previous page">
-						<span aria-hidden="true">
+						<span aria-hidden="true" class="svg-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 								<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
 								<path d="M0 0h24v24H0z" fill="none"/></svg>
@@ -36,7 +36,7 @@
 				{% if pagination.href.next %}
 					<a aria-label="Goto next page" class="btn-link btn-alternate" rel="next" href="{{ pagination.href.next }}">
 						Next
-						<span aria-hidden="true">
+						<span class="svg-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
 								<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
 								<path d="M0 0h24v24H0z" fill="none"/></svg>
@@ -47,7 +47,7 @@
 				<li>
 					{%- assign lastPageIndex = pagination.pages.length | minus : 1 -%}
 					<a class="btn-link btn-alternate" rel="last" href="{{ pagination.hrefs[lastPageIndex] }}">
-						<span class="mdc-button__label">Page {{lastPageIndex | plus : 1}}</span>
+						Page {{lastPageIndex | plus : 1}}
 					</a>
 				{% endif %}
 			</li>

@@ -207,11 +207,11 @@ pre {
 }
 
 .token.tag .token.punctuation {
-	color: #808080;
+	color: #aaa;
 }
 
 .token.cdata {
-	color: #808080;
+	color: #aaa;
 }
 
 .token.attr-name {
@@ -264,7 +264,7 @@ code[class*='language-html'] {
 }
 
 .language-html .token.punctuation {
-	color: #808080;
+	color: #aaa;
 }
 /*********************************************************
 * Line highlighting

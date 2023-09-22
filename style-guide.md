@@ -81,20 +81,6 @@ Three theme colors are defined. The muted and distinct colors are set to flip be
 .color-accent .color-distinct {
   background: var(--color-accent-distinct);
 }
-
-.color-alternate .color-root {
-  background: var(--color-alternate);
-}
-
-.color-alternate .color-muted {
-  background: var(--color-alternate-muted);
-  color: var(--text-on-background);
-}
-
-.color-alternate .color-distinct {
-  background: var(--color-alternate-distinct);
-  color: var(--text-on-distinct);
-}
 </style>
 
 ## Base
@@ -121,11 +107,8 @@ The accent color is used for buttons
 
 The alternate color is used for links
 
-<div class="color-container color-alternate">
-  <div class="color-example color-root">Base color</div>
-  <div class="color-example color-muted">Muted base</div>
-  <div class="color-example color-distinct">Distinct base</div>
-</div>
+<a href="">Current page</a>
+<a href="not-found.example">Random Page</a>
 
 # Headers
 

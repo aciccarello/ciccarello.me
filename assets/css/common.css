@@ -15,18 +15,21 @@
 	--color-accent-distinct: var(--color-accent-dark);
 
 	--color-alternate-hue: 146.71;
-	--color-alternate: oklch(53.16% 0.161 var(--color-alternate-hue));
-	--color-alternate-light: oklch(61.1% 0.178 var(--color-alternate-hue));
+	--color-alternate-base: oklch(53.16% 0.161 var(--color-alternate-hue));
+	--color-alternate-extra-light: oklch(90% 0.158 var(--color-alternate-hue));
+	--color-alternate-light: oklch(78% 0.318 var(--color-alternate-hue));
 	--color-alternate-dark: oklch(
 		37.53% 0.11451772731002564 var(--color-alternate-hue)
 	);
-	--color-alternate-extra-light: oklch(80% 0.158 var(--color-alternate-hue));
-	--color-alternate-muted: var(--color-alternate-light);
+	--color-alternate: var(--color-alternate-base);
 	--color-alternate-distinct: var(--color-alternate-dark);
 
 	--color-light-background: oklch(98% 0 0);
+	--color-less-light-background: oklch(90% 0 0);
 	--color-dark-background: oklch(2% 0 0);
+	--color-less-dark-background: oklch(30% 0 0);
 	--color-background: var(--color-light-background);
+	--color-background-1: var(--color-less-light-background);
 
 	--text-on-light-background: oklch(5% 0 0);
 	--text-on-dark-background: oklch(95% 0 0);
@@ -50,6 +53,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-background: var(--color-dark-background);
+		--color-background-1: var(--color-less-dark-background);
 		--text-on-background: var(--text-on-dark-background);
 		--text-on-distinct: var(--text-on-light-background);
 		--color-base-muted: var(--color-base-dark);
@@ -58,7 +62,6 @@
 		--color-accent-distinct: var(--color-accent-light);
 		/* shift alternate colors for more contrast */
 		--color-alternate: var(--color-alternate-light);
-		--color-alternate-muted: var(--color-alternate);
 		--color-alternate-distinct: var(--color-alternate-extra-light);
 	}
 }
@@ -109,7 +112,6 @@ a:where(:hover:visited) {
 	color: var(--color-alternate);
 }
 
-.mdc-fab,
 .title-link {
 	color: white;
 	text-decoration: none;
@@ -166,13 +168,39 @@ body > header {
 	}
 
 	& .title-link {
+		padding: 0.5rem;
+			margin-left: -0.5rem;
 		&:first-child {
-			padding-left: 1rem;
+			margin-left: 0.5rem;
 		}
 
 		font-size: larger;
 		font-weight: bold;
 	}
+& a {
+	position: relative;
+	outline: none;
+	color: var(--text-on-primary);
+
+	&:before {
+		display: block;
+		content: "";
+		background-color: var(--text-on-primary);
+		border-radius: var(--border-radius);
+		top: calc(50% - 50%);
+		left: calc(50% - 50%);
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		position: absolute;
+		opacity: 0;
+		transition: opacity 50ms linear;
+	}
+
+	&:is(:focus, :hover):before {
+		opacity: 0.3;
+	}
+}
 }
 
 header.mdc-top-app-bar {
@@ -181,6 +209,8 @@ header.mdc-top-app-bar {
 }
 
 footer {
+	--color-alternate: var(--color-alternate-base);
+	--color-alternate-distinct: var(--color-alternate-dark);
 	max-width: 100vw;
 	overflow-x: auto;
 	flex-shrink: 0;
@@ -213,23 +243,6 @@ footer a {
 footer .site-updated {
 	text-align: right;
 	grid-column: 1 / 4;
-}
-
-.icon-button {
-	width: 3rem;
-	height: 3rem;
-	padding: 0.75rem;
-	font-size: 1.5rem;
-	display: inline-block;
-	position: relative;
-	border: none;
-	outline: none;
-	background-color: transparent;
-	fill: currentColor;
-	color: inherit;
-	text-decoration: none;
-	cursor: pointer;
-	user-select: none;
 }
 
 figure {
@@ -347,30 +360,29 @@ button,
 		pointer-events: none;
 	}
 
-	&:hover {
+	&:is(:hover, :focus) {
 		background-color: var(--color-accent-muted);
 	}
-
-	/* TODO: :focused */
 
 	&.btn-alternate {
 		background-color: transparent;
 		border: 1px solid var(--color-base-distinct);
 		color: var(--color-base-distinct);
 
-		&:hover {
-			background-color: var(--color-base-muted);
+		&:is(:hover, :focus) {
+			border-color: var(--color-base);
+				color: var(--color-base);
 		}
 
 		&[disabled] {
-			/* border-color: var(--color-disabled); */
+			border-color: var(--color-disabled);
 			color: var(--color-disabled);
 		}
 	}
 
 	&.btn-flat {
 		/* TODO: rename */
-		background-color: transparent;
+		background-color: var(--color-background-1);
 		color: var(--color-alternate);
 
 		&:hover {
@@ -384,6 +396,24 @@ button,
 }
 
 .btn-link:visited {
+/* TODO */
+}
+
+
+.icon-button {
+	width: 3rem;
+	min-width: 0;
+	height: 3rem;
+	padding: 0.75rem;
+	font-size: 1.5rem;
+	display: inline-block;
+	position: relative;
+	border: none;
+	outline: none;
+	fill: currentColor;
+	text-decoration: none;
+	cursor: pointer;
+	user-select: none;
 }
 
 .btn-group {
@@ -416,6 +446,11 @@ button,
 	border-radius: var(--border-radius);
 	border: 0.125rem solid var(--color-border);
 	overflow: hidden;
+	transition: box-shadow ease-out 0.2s;
+
+	&a:hover {
+		box-shadow: var(--box-shadow-standard);
+	}
 }
 
 .card__primary {
@@ -497,12 +532,6 @@ svg + .mdc-typography--headline6 {
 #connect {
 	padding: 150px 32px;
 	text-align: center;
-}
-
-.connect-icons a {
-	text-decoration: none;
-	font-size: 20px;
-	margin: 8px;
 }
 
 .flex-row {
@@ -773,53 +802,54 @@ blockquote {
 }
 
 .embed-card {
-	--embed-card-max-height: 9rem;
-	box-sizing: content-box;
 	margin: 2rem auto;
-	padding: 0;
 	max-width: 50rem;
-	display: grid;
-	grid-template-columns: minmax(100px, 4fr) 1fr 25%;
-	grid-template-rows: auto;
-	grid-template-areas: 'header domain img' 'text text img' 'spacer spacer img';
-	transition: box-shadow ease-out 0.2s;
 
-	&:hover {
-		box-shadow: var(--box-shadow-standard);
-	}
+	& > blockquote {
+		all: unset;
+		--embed-card-max-height: 9rem;
+		box-sizing: content-box;
+		/* border: none;
+		margin: 0;
+		padding: 0; */
+		display: grid;
+		grid-template-columns: minmax(100px, 4fr) 1fr 25%;
+		grid-template-rows: auto;
+		grid-template-areas: 'header domain img' 'text text img' 'spacer spacer img';
 
-	& h3 {
-		grid-area: header;
-		margin: 1rem;
-	}
-
-	& img {
-		grid-area: img;
-		object-fit: cover;
-		/* safari fix to prevent 100% page height */
-		height: 100%;
-		max-height: var(--embed-card-max-height);
-	}
-
-	& p {
-		grid-area: text;
-		margin: 0 1rem 1rem;
-
-		-webkit-line-clamp: 3;
-		overflow: hidden;
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-
-		@media screen and (max-width: 600px) {
-			-webkit-line-clamp: 2;
+		& h3 {
+			grid-area: header;
+			margin: 1rem;
 		}
-	}
 
-	& cite {
-		grid-area: domain;
-		display: block;
-		text-align: right;
-		margin: 1rem;
+		& img {
+			grid-area: img;
+			object-fit: cover;
+			/* safari fix to prevent 100% page height */
+			height: 100%;
+			max-height: var(--embed-card-max-height);
+		}
+
+		& p {
+			grid-area: text;
+			margin: 0 1rem 1rem;
+
+			-webkit-line-clamp: 3;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+
+			@media screen and (max-width: 600px) {
+				-webkit-line-clamp: 2;
+			}
+		}
+
+		& cite {
+			grid-area: domain;
+			display: block;
+			text-align: right;
+			margin: 1rem;
+		}
 	}
 }
 
@@ -831,6 +861,7 @@ blockquote {
 }
 
 .twitter-tweet {
+	/* TODO: Look into this for instagram embeds */
 	margin: 2rem auto !important;
 }
 
@@ -878,14 +909,6 @@ blockquote {
 	margin: 0 1rem;
 }
 
-.material-icons.mdc-button__icon {
-	fill: currentColor;
-}
-
-.material-icons.mdc-button__icon svg {
-	margin: -6px;
-}
-
 .blog-alternates {
 	display: flex;
 	justify-content: space-between;
@@ -894,27 +917,42 @@ blockquote {
 .pagination {
 	text-align: center;
 	margin: 2rem;
-}
 
-.pagination .mdc-button {
-	min-width: 2rem;
-}
+	& ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem;
+		justify-content: center;
+		padding: 0;
 
-.pagination ul {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.25rem;
-	justify-content: center;
-	padding: 0;
-}
+		& li {
+			list-style: none;
+			display: inline;
 
-.pagination li {
-	list-style: none;
-	display: inline;
-}
+			&.pagination-separator {
+					display: none;
+			}
+		}
+	}
 
-.pagination li.separator {
-	display: none;
+	& .btn-link {
+		display: flex;
+		min-width: 2rem;
+
+		& span.svg-icon {
+			/* Don't want icon changing button height */
+			height: 0;
+		}
+
+		/* Adjust margin to make up for narrow arrow icons */
+		&[rel="prev"] span.svg-icon {
+			margin-inline-start: -0.5rem;
+		}
+
+		&[rel="next"] span.svg-icon {
+			margin-inline-end: -0.5rem;
+		}
+	}
 }
 
 @media screen and (max-width: 600px) {

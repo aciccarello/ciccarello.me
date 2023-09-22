@@ -7,7 +7,7 @@ h-entry
 " {% if post.excludeFromSitemap -%}
     data-nosnippet
 {%- endif %}>
-	<a class="u-url card mdc-elevation-transition disable-link-styles" href="{{ post.url | url }}">
+	<a class="u-url card disable-link-styles" href="{{ post.url | url }}">
 		{%- if post.data.image -%}
 			{% assign filetype = post.data.image | split: "." | last -%}
 			<div class="card__media card__media--16-9"
