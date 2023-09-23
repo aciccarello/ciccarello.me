@@ -373,6 +373,8 @@ These need to be formalized but they are usefull for calling out the context of 
 
 Forms are designed for one column. Buttons within a form will be full width.
 
+Many form elements that aren't necessary have not been implemented but are listed below.
+
 {% removeindents %}
 
 <form method="get" action="#">
@@ -448,10 +450,15 @@ Forms are designed for one column. Buttons within a form will be full width.
         <label for="email">Email</label> <small>Must be unique</small> <input name="email" type="text" id="email" size="25" /> <label for="password">Password</label> <input name="password" type="password" id="password" size="25" />
         <label for="address">Address</label> <textarea name="address" id="address" placeholder="PO BOX ok"></textarea>
         <h3>Preferences</h3>
-        <label>Color Preference</label> <label><input type="radio" id="yellow" name="age" value="yellow" /> I prefer yellow</label> <label><input type="radio" id="gold" name="age" value="gold" /> I prefer gold</label>
-        <label><input type="radio" id="yellow-orange" name="age" value="yellow-orange" /> I prefer yellow-orange</label> <label>Automobile Preference</label>
+        <label>Color Preference</label>
+        <fieldset>
+            <label><input type="radio" id="yellow" name="age" value="yellow" /> I prefer yellow</label> <label><input type="radio" id="gold" name="age" value="gold" /> I prefer gold</label>
+            <label><input type="radio" id="yellow-orange" name="age" value="yellow-orange" /> I prefer yellow-orange</label>
+        </fieldset>
+        <label>Automobile Preference</label>
         <label><input type="checkbox" name="automobile" value="maserati" />Maserati</label> <label><input type="checkbox" name="automobile" value="koenigsegg" />Koenigsegg</label>
-        <label><input type="checkbox" name="automobile" value="mclaren" />McLaren</label> <label><input type="checkbox" name="automobile" value="mitsubishi" />Mitsubishi</label> <button type="submit">Register</button>
+        <label><input type="checkbox" name="automobile" value="mclaren" />McLaren</label> <label><input type="checkbox" name="automobile" value="mitsubishi" />Mitsubishi</label>
+        <button type="submit">Register</button>
         <button type="reset">Reset</button> <button disabled="">No clicky</button>
     </fieldset>
 </form>
