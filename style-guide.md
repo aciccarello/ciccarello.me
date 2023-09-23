@@ -23,6 +23,17 @@ This page lays out the site-wide styles and how to use them. It's a form of visu
 
 See the source of [common.css](/assets/css/common.css) for the complete styles. Custom shortcodes and other build customizations are defined in [.eleventy.js](https://github.com/aciccarello/ciccarello.me/blob/main/.eleventy.js) and the imported files. Includes are defined in the [/\_includes](https://github.com/aciccarello/ciccarello.me/blob/main/_includes) directory.
 
+# Testing Steps
+
+The following steps should be completed to check site-wide style changes.
+
+- Visual check of light/dark mode
+- Accessibility check of light/dark mode
+- Check multiple browsers (Chrome, Safari, Firefox, Mobile)
+- Check multiple screen readers
+- Zooming on page
+- Changing default font size
+
 # CSS Units
 
 Use REM units where reasonable with a base-2 sizing structure based on a 16px default that can be modified by users for accessibility.
