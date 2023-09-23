@@ -461,7 +461,31 @@ Links can be styled more like buttons with the `.btn-link` class.
 
 # Recipes
 
-TODO: Example shortcodes
+To add microformats to recipes, use the `recipe-ingredients` and `recipe-directions` shortcodes.
+
+```liquid
+{% raw %}{% recipe-ingredients %}
+- 1/2 cup Ingredient one
+- 1 tablespoon Ingredient one
+{% endrecipe-ingredients %}
+
+{% recipe-directions %}
+1. Step one details
+1. Step two details
+{% endrecipe-directions %}
+{% endraw %}
+```
+
+I've also experimented with [Cooklang](https://cooklang.org/) via [markdown-it-cooklang](https://github.com/ulfschneider/markdown-it-cooklang). Use the `recipe-cooklang` shortcode to enable parsing that syntax.
+
+```liquid
+{% raw %}{% recipe-cooklang %}
+1. Add the @chicken{1.5%lb}, @shallot{2}, 2 cloves of @garlic{3%cloves minced}, @oregano{1%tbsp dried}, @paprika{1%tsp}, and a pinch of @red pepper{1%pinch}, @salt{1%pinch}, and @black pepper{1%pinch} to a bowl.
+1. Mix until it starts to combine. Coat your hands with a bit of oil, roll the meat into tablespoon-size balls (will make about 20-25 meatballs).
+{% endrecipe-cooklang %}
+{% endraw %}
+```
+
 
 # Post previews
 
