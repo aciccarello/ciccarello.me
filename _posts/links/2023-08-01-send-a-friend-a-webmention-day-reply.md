@@ -11,4 +11,4 @@ references:
 
 ---
 
-You're very welcome. It's great seeing your site come together! You'll have to come down to southern California if you want to pet our little fur ball.
+You're very welcome. It's great seeing your site come together! You'll have to come down to Southern California if you want to pet our little fur ball.

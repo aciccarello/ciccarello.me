@@ -78,7 +78,7 @@ blessed to be able to spend time with my wife.
 #### Our First Christmas
 
 Around the holidays Bekah had some time off so we planned for her to travel to
-her parent's house in southern California and a week later I would fly out to
+her parent's house in Southern California and a week later I would fly out to
 join her. When her grandmother passed away less than a week before her
 scheduled departure, we changed our plans to have Bekah leave earlier to go to
 the funeral. This was our longest time apart since getting married and I hated

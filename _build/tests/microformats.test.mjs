@@ -36,7 +36,7 @@ describe('microformats', () => {
       {
         "email": "mailto:anthony@ciccarello.me",
         "name": "Anthony Ciccarello",
-        "note": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+        "note": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
         "org": {
           "name": "ICD",
           "type": "card",

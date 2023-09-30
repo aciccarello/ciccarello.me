@@ -291,7 +291,7 @@ exports[`microformats should have a(n) article 1`] = `
   "author": {
     "name": "Anthony Ciccarello",
     "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -431,7 +431,7 @@ exports[`microformats should have a(n) like 1`] = `
   "author": {
     "name": "Anthony Ciccarello",
     "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -460,7 +460,7 @@ exports[`microformats should have a(n) note 1`] = `
   "author": {
     "name": "Anthony Ciccarello",
     "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -484,7 +484,7 @@ exports[`microformats should have a(n) photo 1`] = `
   "author": {
     "name": "Anthony Ciccarello",
     "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -521,7 +521,7 @@ exports[`microformats should have a(n) photoLike 1`] = `
   "author": {
     "name": "Anthony Ciccarello",
     "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -621,7 +621,7 @@ exports[`microformats should have a(n) reply 1`] = `
   "author": {
     "name": "Anthony Ciccarello",
     "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -652,7 +652,7 @@ exports[`microformats should have a(n) replyToCheckin 1`] = `
   "author": {
     "name": "Anthony Ciccarello",
     "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
