@@ -18,3 +18,4 @@ However, I do intend to post these when they are ready.
 - [City vs Country](./city-vs-country)
 - [Rotisserie Chicken Bone Broth](/recipes/2021/10/19/rotisserie-chicken-bone-broth)
 - [Bean dip](./bean-dip)
+- [Web Framework Wishlist](./web-framework-wishlist)
