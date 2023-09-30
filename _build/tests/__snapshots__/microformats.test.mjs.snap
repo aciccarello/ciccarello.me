@@ -530,6 +530,11 @@ exports[`microformats should have a(n) photoLike 1`] = `
     "html": "",
   },
   "like-of": {
+    "author": {
+      "name": "Paul Robert Lloyd",
+      "type": "card",
+      "url": "https://paulrobertlloyd.com/",
+    },
     "content": "Summer sunshine.",
     "photo": [
       {
@@ -754,7 +759,7 @@ exports[`microformats should have h-entries on the posts page 1`] = `
     {
       "author": "https://www.ciccarello.me/",
       "published": "2023-07-30T20:07:10Z",
-      "summary": "Liked a photo :
+      "summary": "Liked a photo by Paul Robert Lloyd:
 							“Summer sunshine.”",
       "type": "entry",
       "url": "https://www.ciccarello.me/posts/2023/07/30/summer-sunshine-like/",
