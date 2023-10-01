@@ -23,7 +23,7 @@ This page lays out the site-wide styles and how to use them. It's a form of visu
 
 See the source of [common.css](/assets/css/common.css) for the complete styles. Custom shortcodes and other build customizations are defined in [.eleventy.js](https://github.com/aciccarello/ciccarello.me/blob/main/.eleventy.js) and the imported files. Includes are defined in the [/\_includes](https://github.com/aciccarello/ciccarello.me/blob/main/_includes) directory.
 
-# Testing Steps
+## Testing Steps
 
 The following steps should be completed to check site-wide style changes.
 
@@ -34,7 +34,7 @@ The following steps should be completed to check site-wide style changes.
 - Zooming on page
 - Changing default font size
 
-# CSS Units
+## CSS Units
 
 Use REM units where reasonable with a base-2 sizing structure based on a 16px default that can be modified by users for accessibility.
 Units that should adjust with the font size can use em units.
@@ -42,7 +42,7 @@ Units that should adjust with the font size can use em units.
 Use css custom properties for colors (for theming) and base styles.
 The most significant styles would be widths and margins that my need to be referenced elsewhere.
 
-# Colors
+## Colors
 
 Three theme colors are defined. The muted and distinct colors are set to flip between light and dark color schemes.
 
@@ -94,7 +94,7 @@ Three theme colors are defined. The muted and distinct colors are set to flip be
 }
 </style>
 
-## Base
+### Base
 
 The base color is used for the header and outlined buttons.
 
@@ -104,7 +104,7 @@ The base color is used for the header and outlined buttons.
   <div class="color-example color-distinct">Distinct base</div>
 </div>
 
-## Accent
+### Accent
 
 The accent color is used for buttons
 
@@ -114,44 +114,47 @@ The accent color is used for buttons
   <div class="color-example color-distinct">Distinct accent</div>
 </div>
 
-## Alternate
+### Alternate
 
 The alternate color is used for links
 
 <a href="">Current page</a>
 <a href="not-found.example">Random Page</a>
 
-# Headers
-
-TODO: Describe the primary header and define a secondary heading option?
-
-# Typeography
+## Typeography
 
 The site uses native OS system fonts.
 Headings each have their own size.
 To allow for flexibility while retaining semantic accuracy, there should be a class to override heading styles.
 
-# Heading Level 1
 
-##### Simulated Heading Level 1{.h1}
+### Headers
 
-## Heading Level 2
+Headers break up the page content.
+They are semantically significant, so if a different heading is visually needed than semantically, specific classes can be used to fake a heading style.
+Typically I write headers with "Title Casing" but adjust based on the context.
 
-##### Simulated Heading Level 2{.h2}
+#### Heading Level 1{.h1}
 
-### Heading Level 3
+H1s are used for the title of a page. H1 styling can be forced with the `.h1` class.
 
-##### Simulated Heading Level 3{.h3}
+#### Heading Level 2{.h2}
 
-#### Heading Level 4
+H2s help define the major sections of an article. H2 styling can be forced with the `.h2` class.
 
-##### Simulated Heading Level 4{.h4}
+#### Heading Level 3{.h3}
 
-##### Heading Level 5
+H3s are used under h2s. H3 styling can be forced with the `.h3` class.
 
-##### Simulated Heading Level 5{.h5}
+#### Heading Level 4{.h4}
 
-## Body text example: Adventures of Huckleberry Finn
+H4s are used under h3s. H4 styling can be forced with the `.h4` class.
+
+#### Heading Level 5{.h5}
+
+H5s are used under h4s. H5 styling can be forced with the `.h5` class.
+
+### Body Text Example: Adventures of Huckleberry Finn
 
 You don't know about me without you have read a book by the name of The
 Adventures of Tom Sawyer; but that ain't no matter. That book was made
@@ -176,11 +179,11 @@ again, and was free and satisfied. But Tom Sawyer he hunted me up and
 said he was going to start a band of robbers, and I might join if I
 would go back to the widow and be respectable. So I went back.
 
-## Special Text
+### Special Text
 
 Text can be **strengthened**, _emphasized_, or even made <small>smaller</small>. In markdown quotes in "quoted text" are stylized to highlight the begining vs the end.
 
-## Links
+### Links
 
 [Links in paragraph](.) are styled to increase readability and make it clear they are links. This includes different colored text and underlining, though bold text has been considered. Links should ideally contain [multiple word](.) for increased readability.
 
@@ -477,7 +480,7 @@ Many form elements that aren't necessary have not been implemented but are liste
 
 Links can be styled more like buttons with the `.btn-link` class.
 
-# Recipes
+## Recipes
 
 To add microformats to recipes, use the `recipe-ingredients` and `recipe-directions` shortcodes.
 
@@ -505,7 +508,7 @@ I've also experimented with [Cooklang](https://cooklang.org/) via [markdown-it-c
 ```
 
 
-# Post previews
+## Post previews
 
 Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as suggestions below other posts.
 
@@ -563,7 +566,7 @@ Different post types appear differently
 </div>
 {% endremoveindents %}
 
-# Pages with custom styles
+## Pages with custom styles
 
 Review the following pages for issues as they have their own unique styles.
 
@@ -577,7 +580,7 @@ Review the following pages for issues as they have their own unique styles.
   {%- endfor %}
 </ul>
 
-# Pagination
+## Pagination
 
 For paginated pages, you can show pagination links at the bottom.
 
@@ -591,6 +594,6 @@ For paginated pages, you can show pagination links at the bottom.
 {% endraw %}
 ```
 
-# Footer
+## Footer
 
 TODO: Describe the footer below.
