@@ -1,5 +1,6 @@
 ---
 title: How I converted my Instagram export to Markdown
+slug: instagram-import
 date: 2023-01-25T08:38:22.912Z
 permalink: /drafts/instagram-import/
 tags:
@@ -8,17 +9,26 @@ tags:
   - technology
 eleventyExcludeFromCollections: draft
 ---
+
 After I started posting photos to my site, I wanted to import all of the photos I had previously posted to Instagram.
-Instagram does have an export option, however I found the export data lacking. Firstly, it does not include the alt-text for images, even if those were defined.
+Instagram does have an export option, however I found the export data lacking.
+Firstly, it does not include the alt-text for images, even if those were manually entered rather than machine generated.
 Secondly, the export does not provide the original URL for the post, which I wanted to include in the copy I posted to my site.
 
 To fix this issue and to generate the markdown files I would use in my site's build, I created the below script.
 This script includes a function to run within the browser to gather alt text and post URLs.
 The resulting function is then copied to the script file before generating the markdown files.
 
-Since it has been a while since [I completed my migration](/posts/2022/06/10/instagram-photos-import/), I can't guarantee that this script will work for everyone.
+There are a few other features this script handles to improve the outputted markdown.
+It parses for hashtags so they can be linked and included in the metadata.
+Instagram @-mentions are also linked to the Instagram site.
+Images are copied to the desired directory.
+There is also some content encoding which should help with things like emojis.
+
+It has been a while since [I completed my migration](/posts/2022/06/10/instagram-photos-import/), and I can't guarantee that this script will work for everyone.
 Even with this script, I still needed to do some manual adjustments and add alt-text to some of my posts.
-However, for those looking to export it may provide a few hints or tips you can use.
+Later I used a modified version of the script for <denver.ciccarello.me>.
+Even with it's limitations, hopefully it provides a few hints or tips others can use.
 
 {% raw -%}
 
