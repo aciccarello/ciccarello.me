@@ -169,7 +169,7 @@ body > header {
 
 	& .title-link {
 		padding: 0.5rem;
-			margin-left: -0.5rem;
+		margin-left: -0.5rem;
 		&:first-child {
 			margin-left: 0.5rem;
 		}
@@ -177,30 +177,30 @@ body > header {
 		font-size: larger;
 		font-weight: bold;
 	}
-& a {
-	position: relative;
-	outline: none;
-	color: var(--text-on-primary);
+	& a {
+		position: relative;
+		outline: none;
+		color: var(--text-on-primary);
 
-	&:before {
-		display: block;
-		content: "";
-		background-color: var(--text-on-primary);
-		border-radius: var(--border-radius);
-		top: calc(50% - 50%);
-		left: calc(50% - 50%);
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		position: absolute;
-		opacity: 0;
-		transition: opacity 50ms linear;
-	}
+		&:before {
+			display: block;
+			content: '';
+			background-color: var(--text-on-primary);
+			border-radius: var(--border-radius);
+			top: calc(50% - 50%);
+			left: calc(50% - 50%);
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			position: absolute;
+			opacity: 0;
+			transition: opacity 50ms linear;
+		}
 
-	&:is(:focus, :hover):before {
-		opacity: 0.3;
+		&:is(:focus, :hover):before {
+			opacity: 0.3;
+		}
 	}
-}
 }
 
 footer {
@@ -326,8 +326,8 @@ form,
 	& .btn-link {
 		width: 100%;
 
-		&[type=radio],
-		&[type=checkbox] {
+		&[type='radio'],
+		&[type='checkbox'] {
 			width: unset;
 			margin-inline-end: 0.5rem;
 		}
@@ -381,7 +381,7 @@ button,
 
 		&:is(:hover, :focus) {
 			border-color: var(--color-base);
-				color: var(--color-base);
+			color: var(--color-base);
 		}
 
 		&[disabled] {
@@ -406,9 +406,8 @@ button,
 }
 
 .btn-link:visited {
-/* TODO */
+	/* TODO */
 }
-
 
 .icon-button {
 	width: 3rem;
@@ -931,7 +930,7 @@ blockquote {
 			display: inline;
 
 			&.pagination-separator {
-					display: none;
+				display: none;
 			}
 		}
 	}
@@ -946,11 +945,11 @@ blockquote {
 		}
 
 		/* Adjust margin to make up for narrow arrow icons */
-		&[rel="prev"] span.svg-icon {
+		&[rel='prev'] span.svg-icon {
 			margin-inline-start: -0.5rem;
 		}
 
-		&[rel="next"] span.svg-icon {
+		&[rel='next'] span.svg-icon {
 			margin-inline-end: -0.5rem;
 		}
 	}
