@@ -20,7 +20,7 @@ experience with you now. For brevity, I will just give you a summary of what
 we did as there is too much to put in one post. Hopefully we will be able to
 tell you more after we have had time to write.
 
-### Senegal
+## Senegal
 
 As stated in our [one post](/blog/2015/07/24/getting-an-introduction-to-africa/) made during the trip, on our flight from
 Brussels to Monrovia, one of the layers of our airplane developed a crack and
@@ -31,7 +31,7 @@ and certainly our best accommodations during the trip but it was disappointing
 to be held back from our desired destination. On Sunday afternoon, we were
 loaded back onto the repaired plane and headed to Liberia.
 
-### Arrival in Monrovia
+## Arrival in Monrovia
 
 When we got to the airport late Sunday we passed by temperature reading
 cameras and grabbed our many pieces of luggage. Pastor Emmanuel Jonah, son of
@@ -70,7 +70,7 @@ housing in the larger town of Yekepa where Remmington, the missionary that
 Bekah helped support through bible school met us and helped us prepare for the
 upcoming days.
 
-### Time at the Orphanage
+## Time at the Orphanage
 
 ![room with toys and other donations laid across tables and couches with open suitcases on the floor and two people organizing the items](
     /assets/img/liberia-sorting-donations.jpg
@@ -151,7 +151,7 @@ testamonies. The orphanage gave each of us a traditional Liberian outfit.
     "Bekah and I with Anthony and Betty Jonah"
 )
 
-### Our Return
+## Our Return
 
 We had been planning on leaving Yekepa at about 6 the next morning but more
 transportation trouble and couldn't leave till 8. As we passed by the
@@ -165,7 +165,7 @@ through the tiny Monrovia airport.
     "Everyone out at the road to say goodbye"
 )
 
-### More To Come
+## More To Come
 
 Again, thank you all who supported and prayed for us and our trip. It was a
 blessing to be able to bring the gifts and encouragement to the people of

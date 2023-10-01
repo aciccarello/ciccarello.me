@@ -15,7 +15,7 @@ didn't seem to be but eventually I was able to please the TypeScript compiler.
 Since information online seemed to be lacking I thought I'd jot down a few
 quick notes on what I learned.
 
-#### Global types are only types (not the global object)
+## Global types are only types (not the global object)
 
 After installing the angular types, all of my references to the global angular
 object started throwing compilation errors. This confounded me because all of
@@ -30,7 +30,7 @@ syntax.
 import * as angular from 'angular';
 ```
 
-#### Libraries can mess with the global types
+## Libraries can mess with the global types
 
 Our project is using a library called [ng-metadata](https://github.com/ngParty/ng-metadata) to allow writing our Angular 1 application in a style in line
 with Angular 2. This has made our development much easier. Because the project
@@ -41,7 +41,7 @@ didn't realize that some of the compilation errors were due to the library. It
 wasn't until I updated ng-metadata that 3/4 of the compilation errors went
 away.
 
-#### You should use imports instead of global types
+## You should use imports instead of global types
 
 Something I learned while migrating was that you don't need to use the global
 types. In fact I would recommend importing your types to shorten how many

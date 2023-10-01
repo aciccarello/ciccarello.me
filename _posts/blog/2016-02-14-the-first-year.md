@@ -21,7 +21,7 @@ American culture can't seem to figure out what it expects a marriage to look
 like. While I may not be able to explain these contradictions, I would like to
 add my perspective.
 
-#### Preface
+## Preface
 
 Bekah and I met in college and were friends with each other for a couple years
 before we got married. I can't claim any responsibility for how lucky I was.
@@ -48,7 +48,7 @@ stock one pantry but more significantly to not having to say goodbye to each
 other at the end of the day. Being engaged was exciting but I was longing to
 deepen our relationship.
 
-#### The Marriage Begins
+## The Marriage Begins
 
 ![woman in life vest being &quot;kissed&quot; by a dolphin](
     /assets/img/honeymoon-dolphin.jpg
@@ -75,7 +75,7 @@ gifts. Bekah was consistently there to help me avoid getting overwhelmed with
 all of the stress. No matter what we worked on or how exhausting it was, I was
 blessed to be able to spend time with my wife.
 
-#### Our First Christmas
+### Our First Christmas
 
 Around the holidays Bekah had some time off so we planned for her to travel to
 her parent's house in Southern California and a week later I would fly out to
@@ -100,7 +100,7 @@ I really enjoyed. It was also great sharing our marriage with my wife's
 friends on the west coast. Still, the best part of our first year was still
 yet to come.
 
-#### Traveling to Liberia
+### Traveling to Liberia
 
 Bekah and I had taken the opportunity at our wedding to raise support for an
 orphanage in the West African country of Liberia. Bekah had visited the
@@ -125,7 +125,7 @@ Bekah had missed so badly. Many thanks to the people who supported us in this
 trip as it would not have been possible without you. As much as we tried to
 aid and encourage our Liberian friends, they have blessed us many times more.
 
-#### Bailey 🐾
+### Bailey 🐾
 
 The final chapter of our first year of marriage fulfilled a wish from before
 we were even engaged. My wife is an avid dog lover. While we dated, Bekah
@@ -154,9 +154,9 @@ with us. She is energetic, social, and protective. In order to relieve some of
 her energy, Bekah and I now take her on a walk most mornings which has been a
 great time together (though sometimes difficult to get up for).
 
----
+<div style="clear:both;"></div>
 
-### The Lessons I'm Learning
+## The Lessons I'm Learning
 
 I am coming to see how much relationships are about trust and communication.
 Communication is often hailed as an important skill for any couple. It is
@@ -205,8 +205,6 @@ relationship with **her** _and_ my relationship with **Him** fall apart.
 I have had to learn this lesson repeatedly (even before we were dating) and
 apparently will have to learn again.
 
----
-
 I am so grateful for my wife. Being married to her has been a great blessing.
 It has not necessarily made things easier, but I'd argue that it has made
 things better. I love being able to spend time with my beautiful bride. Her
@@ -219,5 +217,5 @@ Him.
 
 _This post was at least partly inspired by my cousin's
 [anniversary](https://debarbibee.wordpress.com/2015/06/08/why-i-changed-my-name-when-i-got-married/)
-[posts](https://debarbibee.wordpress.com/2015/06/30/2-years/). I
-encourage you to check out her[blog](https://debarbibee.wordpress.com/)._
+[posts](https://debarbibee.wordpress.com/2015/06/30/2-years/).
+I encourage you to check out her [blog](https://debarbibee.wordpress.com/)._

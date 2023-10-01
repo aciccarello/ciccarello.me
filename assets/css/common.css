@@ -310,10 +310,8 @@ hr {
 	border-top: medium double var(--text-on-background);
 	color: var(--text-on-background);
 	text-align: center;
-}
-
-hr {
 	margin: 3rem 0;
+	clear: both;
 }
 
 pre {

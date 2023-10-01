@@ -28,7 +28,7 @@ been blazing my own trails. After those three days, I had a much broader
 exposure to what the community was doing and where Angular is heading. Here
 are the things that stood out the most to me.
 
-#### Angular is being used in production
+## Angular is being used in production
 
 One thing that Brad Green emphasized in his
 [keynote](https://www.youtube.com/watch?v=gdlpE9vPQFs) was that Angular 2 is
@@ -39,7 +39,7 @@ candidate, signaling that the API is narrowing in on its final form.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">From <a href="https://twitter.com/hashtag/ngConf?src=hash&amp;ref_src=twsrc%5Etfw">#ngConf</a>, Angular 2 is already used in production including Google AdWords, Capital One and the Weather Channel.</p>&mdash; Rachid Al Khayat 🍕 (@rakhayyat) <a href="https://twitter.com/rakhayyat/status/729032357462806528?ref_src=twsrc%5Etfw">May 7, 2016</a></blockquote>
 
-#### Angular is multi-platform
+## Angular is multi-platform
 
 > Chef [@jenlooper](https://twitter.com/jenlooper) and chef [@tjvantoll](https://twitter.com/tjvantoll) are cooking up cross platform [@nativescript](https://twitter.com/nativescript) apps at [#ngconf](https://twitter.com/hashtag/ngconf)
 >  —  [@ruslanml](https://twitter.com/ruslanml/status/727997662687944705)
@@ -56,7 +56,7 @@ universal](https://www.youtube.com/watch?v=TCj_oC3m6_U) is leveraging Angular
 server-side to pre-render applications before serving them to the client. With
 all these options, the possibilities seem endless for Angular 2.
 
-#### TypeScript is being embraced by the JavaScript community
+## TypeScript is being embraced by the JavaScript community
 
 As a new-grad hire who only worked with JavaScript minimally before starting a
 project with TypeScript, I honestly have had more experience with TypeScript
@@ -69,7 +69,7 @@ language and I hope it leads to better integration with other build tools.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yes yes yes! <br>&quot;This is <a href="https://twitter.com/hashtag/TypeScript?src=hash&amp;ref_src=twsrc%5Etfw">#TypeScript</a>&quot; - <a href="https://twitter.com/scotups?ref_src=twsrc%5Etfw">@scotups</a> <br>Let the people know! <a href="https://twitter.com/hashtag/ngconf?src=hash&amp;ref_src=twsrc%5Etfw">#ngconf</a> <a href="https://t.co/CQzeJJUAay">pic.twitter.com/CQzeJJUAay</a></p>&mdash; Justin Schwartzenberger (@schwarty) <a href="https://twitter.com/schwarty/status/728637802951245825?ref_src=twsrc%5Etfw">May 6, 2016</a></blockquote>
 
-#### You will want to use the offline template compiler
+## You will want to use the offline template compiler
 
 In Angular 1 templates were retrieved and interpreted in the browser. Angular
 2 will have the option of handling this step during the build process. This
@@ -86,7 +86,7 @@ functions Angular 1 templates produced.
     alt: "diagram with flow chart demonstrating angular compile flow"
 %}
 
-#### The Angular CLI will be the goto way to build Angular apps
+## The Angular CLI will be the goto way to build Angular apps
 
 I didn't understand the value of the [angular-cli
 project](https://cli.angular.io/) going into the conference, but it was

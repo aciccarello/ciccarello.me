@@ -18,7 +18,7 @@ standard. However, the proposal has seen significant changes through the
 standardization process. Decorators will soon arrive in JavaScript, and there
 are many questions to answer.
 
-### What are decorators and why should you care?
+## What are decorators and why should you care?
 
 Decorators are a
 [metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming) language

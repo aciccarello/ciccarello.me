@@ -14,7 +14,7 @@ Peru is not known as an eco-tourism hot-spot, perhaps due to the amazing
 cultures that have lived in the region, but Peru should be considered for
 anyone interested in seeing birds around the world.
 
-### What is so interesting about Peru?
+## What is so interesting about Peru?
 
 Peru has the [second highest
 recorded](https://ebird.org/region/world/regions?yr=cur&hsStats_sortBy=num_species)
@@ -32,7 +32,7 @@ Central America have complete packs of all common birds in the country.
 ![bird with a bright orange body and head, black wings and a gray back](
     /assets/img/peru-andean-cock-of-the-rock.jpg
     "Andean cock-of-the-rock  -  [Photo by Jerry Thompson](https://commons.wikimedia.org/wiki/File:Rupicola_peruviana_%28male%29\_-San_Diego_Zoo-8a.jpg) [[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)]"
-){.post-img--float}
+){.post-img--float-right}
 
 What makes Peru so diverse is the range of habitats within its borders. From
 the fish rich coasts, to arid lowlands, to the heights of the Andes Mountains,
@@ -43,7 +43,7 @@ condors](https://ebird.org/species/andcon1/L879938), and the national bird:
 the Andean cock-of the-rock. While in Peru, we were only able to travel to 4
 different regions, however we still saw many different species.
 
-### Lima
+## Lima
 
 We spent most of our time in the southern portion of the city of Lima which
 has exploded in size in recent decades. One of the things I loved about Lima
@@ -158,7 +158,7 @@ Pelican](https://ebird.org/species/perpel1/) flying out a ways from the coast.
     objectPosition: "75% center"
 %}
 
-### Paracas
+## Paracas
 
 In May, we drove down to the national reserve of Paracas about 3 hours south
 of Lima. I wasn't sure what to expect other than that people said it was known
@@ -246,7 +246,7 @@ see the flamingos in person.
     objectPosition: "85% center"
 %}
 
-### Cañete
+## Cañete
 
 After our day in Paracas we spent the week in the region of Cañete about an
 hour north but a little inland. The area is dry but irrigated for farming. My
@@ -315,7 +315,7 @@ surprise.
     objectPosition: "75% center"
 %}
 
-### Cuzco
+## Cuzco
 
 The most exciting excursion we did in Peru was to fly to the region of Cuzco.
 We were there to visit Sacred Valley and see Machu Picchu, but it was also a

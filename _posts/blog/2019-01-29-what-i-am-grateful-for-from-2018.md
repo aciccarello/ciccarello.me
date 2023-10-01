@@ -14,7 +14,7 @@ through January, I would learn that my job was being eliminated as part of a
 corporate restructuring. This made our year of expected transitions a little
 more complicated, but it also brought a series of blessings along with it.
 
-### Act 1: The Layoff
+## Act 1: The Layoff
 
 A year after his hiring, our CTO called a department wide meeting and
 announced it was time to restructure. I joined the conference call from my
@@ -63,7 +63,7 @@ computer work. Having the chance to take a week off early in the year was
 really impactful for Bekah and me. Seeing these parks was a unexpected
 blessing of changing jobs and was a nice reprieve from my technical work.
 
-### Act 2: The Contract
+## Act 2: The Contract
 
 Previously, I had focused my career on front end web development, writing
 JavaScript and creating the visual parts of websites people interact with. In
@@ -132,7 +132,7 @@ simple cabin, and a comfortable hotel room. After Bekah graduated from her
 fellowship and I landed my new job, Yellowstone was a great way to cap off the
 summer and lead into our final few weeks in Denver.
 
-### Act 3: The Move
+## Act 3: The Move
 
 Following Yellowstone, I began my new job. In some ways, it was a typical
 first day; I spent a lot of time acclimating myself to my new employer. My new
@@ -184,14 +184,14 @@ ultimate frisbee with; and we had an extended period of time with family.
     "Hiking [Angel's Landing](https://en.wikipedia.org/wiki/Angels_Landing) -- Zion National Park"
 ){.post-img--wide}
 
-### Acknowledgements
+## Acknowledgements
 
 This past year, there was much I was grateful for. I make a point to say this
 because, considering all the change, God really took care of us. At times it
 seemed to fly by but I want to make sure I slow down and recognize all that we
 were given.
 
-#### Good friends
+### Good friends
 
 Even as an introvert, I enjoyed the extra time we spent with our friends in 2018.
 Whether it was hiking, camping, going out to eat, hanging out in our
@@ -200,7 +200,7 @@ ourselves with others. Personally, I appreciate the friends who made a point
 to reach out to us and ensure we got together. While Colorado is pretty great
 on its own, it was our friends that made it a great place to live.
 
-#### Supportive family
+### Supportive family
 
 I am grateful for how our family took care of us this past year. Both sides of
 our family traveled halfway across the country to visit us in 2018. My family
@@ -209,20 +209,20 @@ family provided us a temporary place to live. I am grateful for everything our
 family did for us and I am thankful that we have been able to spend a lot of
 time together despite living far away.
 
-#### A stable job
+### A stable job
 
 I cannot be happy enough to say that I am no longer looking for a job. I am
 grateful that God has provided for our family in greater ways that I ever
 expected this year. Though employment has been one of the defining challenges
 from this past year, it is also one of the biggest successes.
 
-#### Good co-workers
+### Good co-workers
 
 At each step this year, I have had supportive co-workers. Whether it was
 writing referrals, getting me ramped up on a project, or simply welcoming me
 to the team, my co-workers have been the anti-acid to my employment heartburn.
 
-#### The opportunity to see multiple national parks
+### The opportunity to see multiple national parks
 
 There is a lot of beauty in the world. Even just within the western U.S.,
 there are hundreds of square miles of beautiful and dramatic landscapes. I am
@@ -230,7 +230,7 @@ so glad we were able to go out and visit many national parks this year. I
 highly recommend making it a priority to get away from the stresses of daily
 life enjoy being out somewhere new.
 
-#### My awesome wife
+### My awesome wife
 
 Through all of this, my wife kept us focused. She had her own list of
 challenges and accomplishments during the year -- working at a non-profit,

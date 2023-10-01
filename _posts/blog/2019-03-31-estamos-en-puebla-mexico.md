@@ -53,7 +53,7 @@ We had a friend that offered to show us around. While Puebla has a lot of cool
 places, it is more than just a tourism destination so the prices aren't
 inflated and we are forced to use Spanish much more. There's a lot to like.
 
-### What's in Puebla?
+## What's in Puebla?
 
 ![hillside with a section of a tiered pyramid exposed, red flowers in the foreground](
     /assets/img/puebla-pyramid-flowers.jpg
@@ -85,7 +85,7 @@ can walk down into the crater.
     "Our friendly neighborhood volcano"
 )
 
-### What have we been up to?
+## What have we been up to?
 
 In Puebla, we have been staying at an Airbnb just to the west of the city.
 From our rental we have internet so we can continue to work and study.
@@ -138,7 +138,7 @@ them as they have greatly enriched out time here.
     "With our friends at Fort Loreto  -  [Photo by Bekah](https://www.instagram.com/p/BvSlFn2nVck/)"
 )
 
-### What's Our Plan?
+## What's Our Plan?
 
 We plan to stay in Mexico until mid April. Before we leave, we hope to travel
 a few hours north to visit some old friends. In April, we will head back to
@@ -165,7 +165,7 @@ let us know!
     "Chapel atop the pyramid of Cholula"
 )
 
-### Will you ever return?
+## Will you ever return?
 
 This trip certainly isn't forever. We will eventually return home to the US
 sometime in late summer. While seeing different parts of the world is fun, I

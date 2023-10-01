@@ -33,7 +33,7 @@ thank him for his dedication and the example that he sets in everything he
 does. Before I move on, I want to share a few lessons I've learned while
 serving alongside others in ministry.
 
-#### All people are valuable to God
+## All people are valuable to God
 
 The bible is clear that all people are valued to God, beginning with humanity
 being created in God's image, through Jesus's example loving those rejected by
@@ -50,7 +50,7 @@ constantly reject them. Being around loving Christians who reach out to all
 sorts of people has helped me recognize how greatly God loves each of us right
 where we are.
 
-#### People are as much a product of their environment as of their choices
+## People are as much a product of their environment as of their choices
 
 It's convenient to blame people's problems on their choices. But as I became
 exposed to people in less than ideal environments, I began to see that choice
@@ -61,7 +61,7 @@ place. While people's choices may keep them trapped, their environment often
 set's them up for failure. Without an ally to broaden their perspective,
 people's choices won't change.
 
-#### The Church cannot wait for people to come
+## The Church cannot wait for people to come
 
 Growing up, I felt very little responsibility to help others discover a
 relationship with Christ. It was easy to just assume that someone didn't think
@@ -79,7 +79,7 @@ that they need God but also need help taking the next step. People need to be
 reminded of God's truth, people need to be encouraged, and God has already
 called us come alongside of others to support them on their journey.
 
-### What do we hope to learn in Denver?
+## What do we hope to learn in Denver?
 
 While Bekah and I have grown so much living in Ohio, we believe that God has
 given us a great opportunity in Denver. My wife will be joining a

@@ -36,16 +36,14 @@ yielded only a few groups who had their own geographical region. But at our
 point in history individual church congregations are often highly
 independently and exist within a short radius of several others.
 
----
-
-### Questioning where we are today
+## Questioning where we are today
 
 In the long history following the Reformation, what has happened to our
 understanding of church unity? How did we get to a point where churches are so
 geographically close but so socially isolated? Have churches become siloed,
 operating independent of the larger christian community?
 
-#### Do I think of local ministry in terms of my church or the whole Church?
+### Do I think of local ministry in terms of my church or the whole Church?
 
 Back in high school my family switched churches. But our new church did not
 have a thriving youth group like our old church so I kept going to my old
@@ -60,7 +58,7 @@ logically believe that God was working outside my church. But when I thought
 about God working in other people I didn't imagine the people in my town who
 went to a different church.
 
-#### Why do churches act so independently?
+### Why do churches act so independently?
 
 As I've moved about the country and seen several approaches to christian
 ministry, I've struggled to broaden my perspective beyond the work of my own
@@ -69,7 +67,7 @@ exposure to the work of other churches. But I also think that our churches are
 built around the expectation that you are limited to the ministries that your
 church offers.
 
-#### What types of ministries would work well for cross-church partnerships?
+### What types of ministries would work well for cross-church partnerships?
 
 While keeping christian ministry in-house makes control and communication
 easier, I also think it can often be ineffective. At a small church, it is
@@ -80,7 +78,7 @@ connect with? What about ministries focused on adoption or foster care? Even
 in churches that are large enough to support a ministry I think there are
 benefits to reaching out and partnering with others.
 
-#### What theological differences are important?
+### What theological differences are important?
 
 Wading into a new christian community is uncomfortable because we may
 encounter beliefs and cultures that differ than our own. Scary as that may be,
@@ -95,7 +93,7 @@ ministries of biblical teaching will impact theology more than a youth sports
 ministry. Ultimately every person will have to examine for themselves what
 they are comfortable with.
 
-### What do you think?
+## What do you think?
 
 My church experience has been mainly limited to small/non-denominational
 churches. I want to hear other perspectives across the diverse community that
