@@ -148,11 +148,11 @@ H3s are used under h2s. H3 styling can be forced with the `.h3` class.
 
 #### Heading Level 4{.h4}
 
-H4s are used under h3s. H4 styling can be forced with the `.h4` class.
+H4s are used under h3s but should be rarely used. H4 styling can be forced with the `.h4` class.
 
 #### Heading Level 5{.h5}
 
-H5s are used under h4s. H5 styling can be forced with the `.h5` class.
+H5s are used under h4s but should be rarely used. H5 styling can be forced with the `.h5` class.
 
 ### Body Text Example: Adventures of Huckleberry Finn
 

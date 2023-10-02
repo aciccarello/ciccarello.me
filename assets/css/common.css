@@ -35,6 +35,8 @@
 	--text-on-dark-background: oklch(95% 0 0);
 	--text-on-background: var(--text-on-light-background);
 	--text-on-distinct: var(--text-on-dark-background);
+	--text-short-line-height: 1.25;
+	--text-tall-line-height: 1.5;
 
 	--text-on-primary: oklch(98% 0 0);
 	--container-width: 64rem;
@@ -46,6 +48,7 @@
 	--body-font: system-ui, sans-serif;
 	--code-font: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
 		Consolas, 'DejaVu Sans Mono', monospace;
+	--accent-font: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 
 	--box-shadow-standard: 0 0.5rem 1rem var(--color-border);
 }
@@ -72,7 +75,7 @@ html {
 	text-size-adjust: none;
 	font-family: var(--body-font);
 	color: var(--text-on-background);
-	line-height: 1.2;
+	line-height: var(--text-short-line-height);
 	/* Disable mobile browser compatibility adjustment */
 	text-size-adjust: none;
 }
@@ -121,46 +124,60 @@ h3,
 h4,
 .h4,
 h5,
-.h1 {
+.h5 {
 	/* Any styles in the individual header sections should be defined here so that class styles override */
 	margin: 1.5em 0 0.5em;
 	font-weight: bolder;
 	font-style: normal;
 	text-transform: none;
+	line-height: var(--text-short-line-height);
+	/* fall back to root style */
+	font-family: unset;
 }
 
 h1,
 .h1 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: normal;
 }
 
 h2,
 .h2 {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 h3,
 .h3 {
-	font-size: 1.25rem;
+	font-family: var(--accent-font);
+	font-size: 1.125rem;
 	font-style: italic;
 	font-weight: normal;
 }
 
 h4,
 .h4 {
-	font-size: 1rem;
+	font-size: 0.9375rem;
+	text-transform: uppercase;
 }
 
 h5,
 .h5 {
-	font-size: 0.9rem;
-	text-transform: uppercase;
+	font-family: var(--accent-font);
+	font-size: 0.875rem;
+	font-weight: normal;
 }
 
-p {
+p,
+ul,
+ol {
 	margin: 1rem 0;
-	line-height: 1.5;
+	line-height: var(--text-tall-line-height);
+
+	& ul,
+	& ol {
+		/* Don't want margin on nested lists */
+		margin: 0;
+	}
 }
 
 time {
@@ -681,7 +698,7 @@ a.disable-link-styles {
 	background-color: #e0e0e0;
 	color: rgba(0, 0, 0, 0.87);
 	font-size: 0.875rem;
-	line-height: 1.25rem;
+	line-height: var(--text-short-line-height);
 	font-weight: 400;
 	letter-spacing: 0.0178571429em;
 	text-decoration: inherit;
