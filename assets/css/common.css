@@ -557,42 +557,6 @@ button,
 	fill: currentColor;
 }
 
-.profiles {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: flex-start;
-	margin-bottom: 2rem;
-}
-
-.profile-card {
-	flex: 1;
-	min-width: 250px;
-	max-width: 400px;
-	margin: 1rem;
-}
-
-.profile-card__title {
-	padding: 1rem;
-}
-
-.profile-card__title > .mdc-typography--headline5 {
-	margin: 0;
-	padding-top: 0.5rem;
-}
-
-.profile-card__title > .mdc-typography--subtitle2 {
-	margin: 0;
-}
-
-.mdc-typography--subheading2 {
-	margin-top: 2rem;
-}
-
-.mdc-typography--headline6 {
-	margin-top: 2rem;
-}
-
 .flex-row {
 	display: flex;
 	flex-direction: row;

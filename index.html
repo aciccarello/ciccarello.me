@@ -10,7 +10,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 	<section class="introduction">
 		<img alt="" class="profile-pic u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512" height="256" width="256" crossorigin="anonymous"/>
 		<div class="introduction-text">
-			<h1 class="mdc-typography--headline3">Hi, I'm
+			<h1>Hi, I'm
                 <a href="https://www.ciccarello.me/ " class="p-name u-url disable-link-styles" rel="me">Anthony Ciccarello</a>!
             </h1>
 			<p class="p-note">
@@ -30,8 +30,8 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 	<section class="profiles container">
 		<div class="card profile-card">
 			<div class="profile-card__title">
-				<h2 class="mdc-typography--headline5" id="social-links">Social</h2>
-				<p class="mdc-typography--subtitle2">Personal Accounts</p>
+				<h2 id="social-links">Social</h2>
+				<p>Personal Accounts</p>
 			</div>
 			<nav aria-labelledby="social-links">
 				<a class="u-url" href="acct:anthony@ciccarello.me"></a>
@@ -72,10 +72,10 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 	</div>
 	<div class="card profile-card">
 		<div class="profile-card__title">
-			<h2 class="mdc-typography--headline5" id="software-links">
+			<h2 id="software-links">
 				Software
 			</h2>
-			<p class="mdc-typography--subtitle2">Development Profiles</p>
+			<p>Development Profiles</p>
 		</div>
 		<nav aria-labelledby="software-links">
 			<a class="account-link" href="https://github.com/aciccarello" rel="me">
@@ -115,8 +115,8 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 	</div>
 	<div class="card profile-card">
 		<div class="profile-card__title">
-			<h2 class="mdc-typography--headline5" id="career-links">Career</h2>
-			<p class="mdc-typography--subtitle2">Professional Information</p>
+			<h2 id="career-links">Career</h2>
+			<p>Professional Information</p>
 		</div>
 		<nav aria-labelledby="career-links">
 			<a class="account-link" href="/resume" rel="me">
@@ -144,14 +144,14 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 		</nav>
 	</section>
 
-	<section class="skills mdc-theme--text-primary-on-dark">
-		<h2 class="mdc-typography--headline4">Skills for the Web</h2>
+	<section class="skills">
+		<h2 class="h1">Skills for the Web</h2>
 		<div class="skills-list">
 			<div>
 				<svg height="64" viewbox="0 0 48 48" width="64" xmlns="http://www.w3.org/2000/svg">
 					<path d="M18.8 33.2L9.7 24l9.2-9.2L16 12 4 24l12 12 2.8-2.8zm10.4 0l9.2-9.2-9.2-9.2L32 12l12 12-12 12-2.8-2.8z"/>
 				</svg>
-				<h3 class="mdc-typography--headline6">Programming</h3>
+				<h3 class="h4">Programming</h3>
 				<p>
 					<span id="years">{{ '2014-06-01' | yearsSince }}</span>
                     years experience with JavaScript/TypeScript, HTML/CSS, and Java.
@@ -162,7 +162,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 				<svg height="64" viewbox="0 0 48 48" width="64" xmlns="http://www.w3.org/2000/svg">
 					<path d="M6 34.5V42h7.5l22.13-22.13-7.5-7.5L6 34.5zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z"/>
 				</svg>
-				<h3 class="mdc-typography--headline6">Design</h3>
+				<h3 class="h4">Design</h3>
 				<p>
                     User interfaces, user experience flows, and code that are easy
 					to understand, accessible, and aesthetically pleasing
@@ -173,7 +173,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 					<path d="M10 26.36v8L24 42l14-7.64v-8L24 34l-14-7.64zM24 6L2 18l22 12 18-9.82V34h4V18L24 6z"/>
 				</svg>
 
-				<h3 class="mdc-typography--headline6">Learning</h3>
+				<h3 class="h4">Learning</h3>
 				<p>
                     Flexibility to learn new tools, frameworks, and langugages.
 					Experience to teach software development best practices.
@@ -183,7 +183,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 		<a href="/resume" class="btn-link">Learn More</a>
 	</section>
 	<section class="container">
-		<h3 class="mdc-typography--headline6">Career</h3>
+		<h3>Career</h3>
 		{%- assign currentPosition = resume.experience[0] %}
 		<p>
             I currently work remotely as a {{currentPosition.position}} for
@@ -194,7 +194,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 			but have a wide range of experience across various projects.
 			See my <a href="/resume">resume</a> for my full career history.
         </p>
-		<h3 class="mdc-typography--headline6">
+		<h3>
             Personal
         </h3>
 		<p>
@@ -209,7 +209,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
             <a href="https://typedoc.org/">TypeDoc</a>
             project.
         </p>
-		<h3 class="mdc-typography--headline6">
+		<h3>
             Podcast
         </h3>
 		<p>
@@ -250,7 +250,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 		</p>
 	</section>
 	<section class="" id="connect">
-		<h2 class="mdc-typography--headline4">Connect</h2>
+		<h2>Connect</h2>
 		<p>Connect with me using one of my preferred channels</p>
 		<div class="connect-icons">
 			<a aria-label="Email" class="icon-button btn-link u-email" href="mailto:anthony@ciccarello.me" rel="me">
