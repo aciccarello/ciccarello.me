@@ -167,6 +167,10 @@ h5,
 	font-weight: normal;
 }
 
+small {
+	font-size: 80%;
+}
+
 p,
 ul,
 ol {
@@ -207,6 +211,7 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
+	margin: 0;
 }
 
 body > header {
