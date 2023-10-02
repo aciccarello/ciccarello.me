@@ -6,6 +6,9 @@ layout: default
 	<section class="container post card">
 		{% include "featured-media.html" %}
 		<header class="post-header">
+			{%- if subtitle -%}
+			<hgroup>
+			{%- endif -%}
 			<h1 class="post-title p-name">
 				<a class="disable-link-styles" href="{{ page.url | url }}">
 					{{ title | escape }}
@@ -15,6 +18,7 @@ layout: default
 				<p role="doc-subtitle" class="post-title p-summary h2">
 					{{ subtitle | escape }}
 				</p>
+			</hgroup>
 			{%- endif -%}
 			<p class="post-meta">
 				<a class="u-url disable-link-styles" href="{{ page.url | url }}">

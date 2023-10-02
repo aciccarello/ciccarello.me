@@ -10,7 +10,7 @@ This relies on the author object with the following properties
 		<div class="card__media card__media--square author-card__media">
 			<img alt="" class="u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512" width="48"/>
 		</div>
-		<div class="author-card__primary">
+		<hgroup class="author-card__primary">
 			<h2 class="author-card__title">
 				<a class="p-name u-url url fn disable-link-styles" href="{{ author.url | default: "/" }}">
 					{{ author.name }}
@@ -19,7 +19,7 @@ This relies on the author object with the following properties
 			<p id="author-section-title" class="author-card__subtitle">
 				About the {{ author.type | default: "author" }}
 			</p>
-		</div>
+		</hgroup>
 	</div>
 	<p class="p-summary author-card__content">
 		{{ author.description | default: site.description }}

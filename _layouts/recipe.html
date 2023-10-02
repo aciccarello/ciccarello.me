@@ -6,15 +6,19 @@ layout: default
 	<section class="container post card">
 		{% include "featured-media.html" %}
 		<header class="post-header">
+			{%- if subtitle -%}
+			<hgroup>
+			{%- endif -%}
 			<h1 class="post-title p-name fn">
 				<a class="disable-link-styles" href="{{ page.url | url }}">
 					{{ title | escape }}
 				</a>
 			</h1>
 			{%- if subtitle -%}
-				<h2 class="post-title p-summary">
+				<p class="post-title h2 p-summary">
 					{{ subtitle | escape }}
-				</h2>
+				</p>
+			</hgroup>
 			{%- endif -%}
 			<p class="post-meta">
 				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
