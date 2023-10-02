@@ -8,11 +8,11 @@ image_caption: Photo by Bekah Ciccarello
 ---
 <style type="text/css">
   :root {
-    --color-base: #8e44ad; /*The theme primary color.*/
+    --color-base-hue: 325;
   }
 
-  h1, h2, h3, h4, h5 {
-    margin-top: 1.5em;
+  .post-list-heading > .btn-link {
+    margin-left: 0.5rem;
   }
 </style>
 
@@ -653,7 +653,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 
 {% removeindents %}
 <div class="home container">
- <h2 class="post-list-heading mdc-typography--headline4">
+ <h2 class="post-list-heading">
   Latest Updates
     <a class="btn-link btn-alternate" href="/posts/tags/foster care">
         See All
