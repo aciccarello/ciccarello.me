@@ -6,15 +6,15 @@ layout: default
 	<section class="container post card">
 		{% include "featured-media.html" %}
 		<header class="post-header">
-			<h1 class="post-title p-name mdc-typography--headline3">
+			<h1 class="post-title p-name">
 				<a class="disable-link-styles" href="{{ page.url | url }}">
 					{{ title | escape }}
 				</a>
 			</h1>
 			{%- if subtitle -%}
-				<h2 class="post-title p-summary mdc-typography--headline6">
+				<p role="doc-subtitle" class="post-title p-summary h2">
 					{{ subtitle | escape }}
-				</h2>
+				</p>
 			{%- endif -%}
 			<p class="post-meta">
 				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
@@ -26,7 +26,7 @@ layout: default
 			{% include "tags.html" %}
 		</header>
 
-		<div class="post-content mdc-typography--body1 e-content">
+		<div class="post-content e-content">
 			{{ content }}
 		</div>
 		{% include "syndication.html" %}

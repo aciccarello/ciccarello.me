@@ -18,12 +18,12 @@ layout: default
 		{% include "featured-media.html" %}
 		<header class="post-header">
 			{%- if title -%}
-				<h1 class="post-title p-name mdc-typography--headline3">
+				<h1 class="post-title p-name">
 					{{ title | escape }}
 				</h1>
 			{%- endif -%}
 			{%- if subtitle -%}
-				<h2 class="post-title p-summary mdc-typography--headline6">
+				<h2 class="post-title p-summary">
 					{{ subtitle | escape }}
 				</h2>
 			{%- endif -%}
@@ -36,7 +36,7 @@ layout: default
 			</p>
 		</header>
 		{% include "reply-context.html" %}
-		<div class="post-content mdc-typography--body1 e-content">
+		<div class="post-content e-content">
 			{{ content }}
 		</div>
 		<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>

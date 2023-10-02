@@ -15,7 +15,7 @@ layout: default
 					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo u-featured post-img--wide"/>
 				{% endif %}
 				{% if image_caption %}
-					<figcaption class="mdc-typography--caption">
+					<figcaption>
 						{{ image_caption | markdownify }}
 					</figcaption>
 				{% endif %}
@@ -32,7 +32,7 @@ layout: default
 			{% include "tags.html" %}
 		</header>
 
-		<div class="post-content mdc-typography--body1 e-content">
+		<div class="post-content e-content">
 			{{ content }}
 		</div>
 		{% include "syndication.html" %}
