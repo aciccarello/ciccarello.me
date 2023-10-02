@@ -4,12 +4,12 @@
 	{%- assign collection = collections | map: collectionName | first %}
 	{%- assign previousPost = collection | getPreviousCollectionItem: page %}
 	{%- assign nextPost = collection | getNextCollectionItem: page %}
-	<h2 class="mdc-typography--headline6">
-		Recent {{collectionName}}
+	<h2 class="h3">
+		View more {{collectionName}}
 	</h2>
 	{% if previousPost %}
 		<div class="post-suggestions__area post-suggestions__previous">
-			<h3 class="mdc-typography--subtitle1">
+			<h3 class="h4">
 				Previous
 			</h3>
 			{% include "post-card.html" post: previousPost %}
@@ -17,7 +17,7 @@
 	{% endif %}
 	{% if nextPost %}
 		<div class="post-suggestions__area post-suggestions__next">
-			<h3 class="mdc-typography--subtitle1">
+			<h3 class="h4">
 				Next
 			</h3>
 			{% include "post-card.html" post: nextPost %}

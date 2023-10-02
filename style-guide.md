@@ -517,12 +517,12 @@ Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as sugge
 <div class="post-suggestions container">
  {% assign previousPost = collections.photos | first %}
  {% assign nextPost = collections.articles | last %}
- <h2 class="mdc-typography--headline6">
-  Recent articles
+ <h2 class="h3">
+  View more articles
  </h2>
   {% if previousPost %}
   <div class="post-suggestions__area post-suggestions__previous">
-   <h3 class="mdc-typography--subtitle1">
+   <h3 class="h4">
     Previous
    </h3>
    {% include "post-card.html" post: previousPost %}
@@ -530,7 +530,7 @@ Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as sugge
   {% endif %}
   {% if nextPost %}
   <div class="post-suggestions__area post-suggestions__next">
-   <h3 class="mdc-typography--subtitle1">
+   <h3 class="h4">
     Next
    </h3>
    {% include "post-card.html" post: nextPost %}

@@ -602,7 +602,8 @@ button,
 	flex-grow: 1;
 }
 
-.post-list {
+.post-list,
+.post-suggestions {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 2rem 1rem;
@@ -612,6 +613,8 @@ button,
 		list-style: none;
 	}
 	/* Ensure cards of different heigh content appear same height */
+	& > .post-suggestions__area,
+	& > .post-suggestions__area > div,
 	& > li > div,
 	& .card {
 		display: flex;
@@ -619,10 +622,6 @@ button,
 		margin: 0;
 		padding: 0;
 		height: 100%;
-	}
-
-	& .chip-set {
-		margin-top: 1rem;
 	}
 
 	@media screen and (min-width: 720px) {
@@ -658,6 +657,10 @@ button,
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 	overflow: hidden;
+
+	& .chip-set {
+		margin-top: 1rem;
+	}
 }
 
 .category-menu h3 {
