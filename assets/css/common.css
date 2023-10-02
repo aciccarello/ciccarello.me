@@ -607,41 +607,63 @@ button,
 	grid-template-columns: 1fr;
 	grid-gap: 2rem 1rem;
 	padding-left: 0;
-}
 
-.post-list > li {
-	list-style: none;
-}
-
-/* Ensure cards of different heigh content appear same height */
-.post-list > li > div,
-.post-list .card {
-	margin: 0;
-	padding: 4p;
-	height: 100%;
-}
-
-@media screen and (min-width: 720px) {
-	.post-list {
-		grid-template-columns: 1fr 1fr;
+	& > li {
+		list-style: none;
+	}
+	/* Ensure cards of different heigh content appear same height */
+	& > li > div,
+	& .card {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		height: 100%;
 	}
 
-	.post-list > li:first-child {
-		grid-column-start: 1;
-		grid-column-end: span 2;
+	& .chip-set {
+		margin-top: 1rem;
 	}
 
-	.post-list > li:first-child .card__media--16-9 {
-		aspect-ratio: 32/9;
+	@media screen and (min-width: 720px) {
+		& {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		& > li:first-child {
+			grid-column-start: 1;
+			grid-column-end: span 2;
+		}
+
+		& > li:first-child .card__media--16-9 {
+			aspect-ratio: 32/9;
+		}
+	}
+
+	& .card:hover {
+		box-shadow: var(--box-shadow-standard);
 	}
 }
 
-.post-list .card:hover {
-	box-shadow: var(--box-shadow-standard);
+.post-body {
+	margin: 0 1rem 1rem;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.post-text {
+	margin: 0 0 auto;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
 }
 
 .category-menu h3 {
+	all: unset;
 	display: inline-block;
+	font-size: 1.25rem;
 }
 
 .category-menu ul {
@@ -664,21 +686,6 @@ a.disable-link-styles {
 
 .post-heading > h3 {
 	margin: 0;
-}
-
-.post-body {
-	margin: 1rem;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-}
-
-.post-text {
-	margin: 0 0 auto;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-	overflow: hidden;
 }
 
 .chip-set {
@@ -877,6 +884,8 @@ blockquote {
 		grid-template-areas: 'header domain img' 'text text img' 'spacer spacer img';
 
 		& h3 {
+			/* Remove header styles */
+			all: unset;
 			grid-area: header;
 			margin: 1rem;
 		}
@@ -892,6 +901,7 @@ blockquote {
 		& p {
 			grid-area: text;
 			margin: 0 1rem 1rem;
+			font-size: 0.875rem;
 
 			-webkit-line-clamp: 3;
 			overflow: hidden;
@@ -906,6 +916,7 @@ blockquote {
 		& cite {
 			grid-area: domain;
 			display: block;
+			font-size: 0.875rem;
 			text-align: right;
 			margin: 1rem;
 		}
