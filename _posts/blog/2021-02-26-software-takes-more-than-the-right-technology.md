@@ -10,7 +10,7 @@ image_alt: ''
 
 Carpenters have lots of tools to pick from. Drills, impact drivers, circular saws, and miter saws; each tool may be really good for a specific purpose and a great carpenter will know when to use each one. However, the best carpenter is not necessarily the one who uses the most tools, but the one who best knows how to use the tools he has to get the job done quickly and accurately.
 
-<aside style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;">
+<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
     This post is an excerpt. To you can read the full post on the <a href="https://www.sitepen.com/blog/software-takes-more-than-the-right-technology">SitePen blog</a>.
 </aside>
 

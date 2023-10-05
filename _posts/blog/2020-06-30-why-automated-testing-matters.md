@@ -9,7 +9,7 @@ image_alt: ''
 
 Your software development team released an MVP application into production. The application only had a few features and the codebase is far from perfect, but there are big plans for the future! Your team presses on, adding features and your user base continues to grow. After a few months, cracks begin to surface. Users started reporting issues and developers get sidelined to fix problems appearing in production. Your release cycles slow as pressure mounts to manually test a growing list of features. Someone asks your development team why issues keep arising. Your team replies “We haven’t had sufficient time to create enough automated tests. Do you want us to invest time testing or do you want us to continue releasing more features as quickly as possible?”
 
-<aside style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;">
+<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
     This post is an excerpt. To you can read the full post on the <a href="https://www.sitepen.com/blog/why-automated-testing-matters/">SitePen blog</a>.
 </aside>
 

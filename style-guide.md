@@ -38,6 +38,7 @@ The following steps should be completed to check site-wide style changes.
 
 Use REM units where reasonable with a base-2 sizing structure based on a 16px default that can be modified by users for accessibility.
 Units that should adjust with the font size can use em units.
+Some things like borders or images still are defined in pixels.
 
 Use css custom properties for colors (for theming) and base styles.
 The most significant styles would be widths and margins that my need to be referenced elsewhere.
@@ -369,13 +370,13 @@ These are inspired by Medium's approach to linking to external content. It shows
 
 These need to be formalized but they are usefull for calling out the context of an article. So far I've added inline styles since I want them to appear in RSS readers.
 
-<aside style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;">
+<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
     This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 
 ```html
 <aside
-  style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;"
+  style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;"
 >
   This post is part of a series describing our trip to Italy. To read an
   overview of our trip and why we went, check out this

@@ -17,13 +17,13 @@
             margin: 0;
           }
           aside {
-            padding: 16px;
+            padding: 1rem;
             background: lightgray;
             text-align: center;
           }
           .summary {
-            max-width: 800px;
-            margin: 32px auto;
+            max-width: 50rem;
+            margin: 2rem auto;
           }
           h1 {
             font-size: 3rem;
@@ -37,9 +37,9 @@
             text-decoration: none;
           }
           article {
-            max-width: 700px;
+            max-width: 44rem;
             margin: auto;
-            padding: 0 24px;
+            padding: 0 1.5rem;
             border-top: lightgray 1px solid;
           }
           dt {

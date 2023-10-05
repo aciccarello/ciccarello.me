@@ -9,7 +9,7 @@ image_alt: ''
 
 Your team realizes that testing is valuable. Your team creates tests for already completed features. The result was encouraging and your team even found a few bugs hiding in the application. Your team returns to feature development and attempts to add new tests. Features took more time to complete because of the need to create corresponding tests, but your team remains committed to testing. However, some tests keep breaking and some aspects seem too difficult to test. The test suite begins to get neglected and trust in the tests fades. What went wrong? (Be sure to also catch part one of this two-part automated testing series – [Why Automated Testing Matters](https://www.sitepen.com/blog/why-automated-testing-matters/))
 
-<aside style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;">
+<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
     This post is an excerpt. To you can read the full post on the <a href="https://www.sitepen.com/blog/writing-tests-that-work/">SitePen blog</a>.
 </aside>
 

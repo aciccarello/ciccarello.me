@@ -30,16 +30,16 @@ eleventyComputed:
 }
 .photo-grid-tile {
 	display: block;
-	width: calc(50% - 4px);
+	width: calc(50% - 0.25rem);
 	aspect-ratio: 1 / 1;
 	position: relative
 }
 @media screen and (min-width: 45em) {
 	.photo-grid-tile {
-		width: calc(100% / 3 - 4px);
+		width: calc(100% / 3 - 0.25rem);
 	}
 	.photo-grid-tile:first-child, .photo-grid-tile:nth-child(2) {
-		width: calc(50% - 4px);
+		width: calc(50% - 0.25rem);
 	}
 }
 .photo-grid-tile a {

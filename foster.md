@@ -42,8 +42,7 @@ We initially started the process to become licensed resource parent license in t
 - Become a [Court Appointed Special Advocate (CASA)](https://www.speakupnow.org/) to support a child through the legal process
 - Become a foster parent yourself
 
-<!-- Anchor without hiding behind header -->
-<div id="subscribe" style="padding-top: 50px; margin-top: -50px;"></div>
+<div id="subscribe"></div>
 
 ## Subscribe for updates
 
