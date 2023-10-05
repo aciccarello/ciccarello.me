@@ -195,6 +195,18 @@ time {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: var(--container-width);
+
+	/*
+	 * Because cards have a border, we want to maintain some margin on small screens
+	 * where margin:auto doesn't apply
+	 * Container width is 64rem so 64rem - left margin - right margin
+	 */
+	@media screen and (max-width: 63em) {
+		&.card, &.post-suggestions {
+			margin-right: 0.5rem;
+			margin-left: 0.5rem;
+		}
+	}
 }
 
 main {
@@ -506,7 +518,7 @@ button,
 	white-space: nowrap;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 45em) {
 	.introduction {
 		flex-wrap: wrap;
 	}
@@ -577,6 +589,7 @@ button,
 	grid-template-columns: 1fr;
 	grid-gap: 2rem 1rem;
 	padding-left: 0;
+	padding-right: 0;
 
 	& > li {
 		list-style: none;
@@ -593,7 +606,7 @@ button,
 		height: 100%;
 	}
 
-	@media screen and (min-width: 720px) {
+	@media screen and (min-width: 45em) {
 		& {
 			grid-template-columns: 1fr 1fr;
 		}
@@ -787,7 +800,7 @@ blockquote {
 	margin: 0 2rem;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 45em) {
 	.post-header,
 	.post-content {
 		margin: 0 1rem;
@@ -798,7 +811,7 @@ blockquote {
 	margin: 1rem 2rem;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 45em) {
 	.post-syndication {
 		margin: 1rem;
 	}
@@ -811,7 +824,7 @@ blockquote {
 	grid-gap: 0 1rem;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 45em) {
 	.post-list {
 		grid-template-columns: 1fr;
 	}
@@ -880,7 +893,7 @@ blockquote {
 			display: -webkit-box;
 			-webkit-box-orient: vertical;
 
-			@media screen and (max-width: 600px) {
+			@media screen and (max-width: 40em) {
 				-webkit-line-clamp: 2;
 			}
 		}
@@ -895,7 +908,7 @@ blockquote {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 40em) {
 	.embed-card > img {
 		/* safari fix to prevent 100% page height */
 		max-height: 12rem;
@@ -997,7 +1010,7 @@ blockquote {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 40em) {
 	/* Adjust for wrapping of pagination on narrow screens */
 	.pagination.pagination-wide li.pagination-separator {
 		display: block;
@@ -1022,11 +1035,13 @@ blockquote {
 	font-style: italic;
 }
 
-@media screen and (max-width: 600px) {
-	.hide-xs {
+@media screen and (max-width: 28em) {
+	.extra-icon {
 		display: none;
 	}
+}
 
+@media screen and (max-width: 40em) {
 	.container {
 		padding-right: 0.5rem;
 		padding-left: 0.5rem;
@@ -1048,22 +1063,9 @@ blockquote {
 	}
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 45em) {
 	.introduction {
 		flex-wrap: wrap;
-	}
-}
-
-@media screen and (max-width: 960px) {
-	.skills-list {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.skills-list > div {
-		max-width: 600px;
-		margin: 1rem 0;
 	}
 }
 

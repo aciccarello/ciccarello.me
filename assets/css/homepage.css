@@ -91,7 +91,7 @@
 	& > div {
 		flex: 1;
 		margin: 2rem;
-		max-width: 19rem;
+		max-width: 20rem;
 	}
 
 	& svg {
@@ -100,6 +100,17 @@
 
 	& svg + h3 {
 		margin-top: 1rem;
+	}
+
+	@media screen and (max-width: 40em) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& > div {
+			max-width: 40rem;
+			margin: 1rem 0;
+		}
 	}
 }
 

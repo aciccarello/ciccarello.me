@@ -96,7 +96,7 @@
 	flex-grow: 1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 40em) {
 	.details-wrapper {
 		display: block;
 	}
