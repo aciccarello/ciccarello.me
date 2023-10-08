@@ -11,11 +11,17 @@ Their content and URLs will likely change (and links break) but you can check ou
 I was partially inspired to share these drafts in the spirit of 🌱[digital gardens](https://maggieappleton.com/garden-history)🪴.
 However, I do intend to post these when they are ready.
 
+### Blog Posts
+
 - [Birding in 2023](./birding-in-2023)
 - [Rethinking my approach to social media](./rethinking-social-media)
 - [Tag Moderation](./tag-moderation)
 - [Instagram Import](./instagram-import)
 - [City vs Country](./city-vs-country)
-- [Rotisserie Chicken Bone Broth](/recipes/2021/10/19/rotisserie-chicken-bone-broth)
-- [Bean dip](./bean-dip)
 - [Web Framework Wishlist](./web-framework-wishlist)
+
+### Recipes
+
+- [Rotisserie Chicken Bone Broth](/recipes/2021/10/19/rotisserie-chicken-bone-broth/)
+- [Bean dip](./bean-dip/)
+- [Breakfast Bake](./breakfast-bake/)
