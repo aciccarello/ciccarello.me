@@ -1,7 +1,7 @@
 ---
 date: 2022-11-17T18:41:14.251Z
 tags:
-  - indieweb
+  - IndieWeb
 slug: bridgy-fed-instructions
 in-reply-to: https://types.pl/@abnv/109360439631118847
 references:

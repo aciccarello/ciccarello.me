@@ -1,7 +1,7 @@
 ---
 date: 2022-09-09T23:14:29.007Z
 tags:
-  - indieweb
+  - IndieWeb
   - site changes
 slug: displaying-webmentions
 ---

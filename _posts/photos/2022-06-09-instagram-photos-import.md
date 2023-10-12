@@ -5,7 +5,7 @@ tags:
  - nature
  - flowers
  - plants
- - indieweb
+ - IndieWeb
  - site changes
 image: /assets/img/2022-connecticut-beach-rose.jpg
 image_alt: "Pink flower against a bed of green leaves"

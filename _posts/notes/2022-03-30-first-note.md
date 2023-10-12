@@ -1,7 +1,7 @@
 ---
 date: 2022-03-30T05:16:18.914Z
 tags:
-  - indieweb
+  - IndieWeb
   - site changes
 slug: first-note
 ---

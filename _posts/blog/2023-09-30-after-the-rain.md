@@ -3,7 +3,7 @@ title: After the Rain
 subtitle: "IndieWeb Carnival: My Kind Of Weather"
 date: 2023-09-30T15:53:02.566Z
 tags:
-  - indieweb
+  - IndieWeb
   - carnival
 image: /assets/img/2023-rain-puddle.jpg
 ---
