@@ -20,13 +20,37 @@ back_button: /posts
 	<h2 class="post-list-heading h1">
 		Tags Across All Posts
 	</h2>
-    <ul class="chip-set">
+    <section>
+        Sort by:
+        <label><input type="radio" name="sort" value="frequency" checked> Frequency</label>
+        <label><input type="radio" name="sort" value="alphabetically"> Alphabetically</label>
+    </section>
+    <ul id="fullTagList" class="chip-set">
         {%- for tag in collections.tagList %}
         <li>
-            <a href="/posts/tags/{{tag}}/" class="chip-item">
+            <a href="/posts/tags/{{tag}}/" class="chip-item" data-position="{{forloop.index}}">
                 {{ tag }}
             </a>
         </li>
         {% endfor %}
     </ul>
 </div>
+
+<script>
+document.querySelector('input[name=sort][value=frequency]')
+    .addEventListener('change', () => sortTags((a, b) => {
+        aValue = Number(a.firstElementChild.getAttribute('data-position'));
+        bValue = Number(b.firstElementChild.getAttribute('data-position'));
+        return aValue > bValue ? 1 : -1
+    }));
+document.querySelector('input[name=sort][value=alphabetically]')
+    .addEventListener('change', () => sortTags((a, b) => a.innerText > b.innerText ? 1 : -1));
+
+function sortTags(sortFn) {
+    const list = document.querySelector('#fullTagList');
+
+    Array.from(list.children)
+        .sort(sortFn)
+        .forEach(node => list.appendChild(node));
+}
+</script>
