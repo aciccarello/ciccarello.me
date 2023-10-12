@@ -44,7 +44,9 @@ document.querySelector('input[name=sort][value=frequency]')
         return aValue > bValue ? 1 : -1
     }));
 document.querySelector('input[name=sort][value=alphabetically]')
-    .addEventListener('change', () => sortTags((a, b) => a.innerText > b.innerText ? 1 : -1));
+    .addEventListener('change', () => sortTags((a, b) => (
+        a.innerText.toLowerCase() > b.innerText.toLowerCase() ? 1 : -1
+    )));
 
 function sortTags(sortFn) {
     const list = document.querySelector('#fullTagList');
