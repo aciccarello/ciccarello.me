@@ -15,7 +15,7 @@ We started making this recipe as a traditional stuffed pepper, with the filling 
 ## Variations
 If you'd like to make this as a more traditional stuffed pepper dish, cut the peppers either in half from top to bottom or with the tops removed. Then roast the peppers in the dish with about 2 cups of water for about 15 minutes before filling to soften. Then pour out the water before filling the peppers with the mixture of the other ingredients
 
-This could also be made in a dutch oven, reducing the need for an additional pan and possibly cooking on the stove. A similar meal we've made before is this [Stuffed Pepper Soup](https://www.recipesthatcrock.com/slow-cooker-stuffed-pepper-soup/#recipe) which is a good slow cooker recipe.
+This could also be made in a dutch oven, reducing the need for an additional pan and possibly cooking on the stove. A similar meal we've made before is this [Stuffed Pepper Soup](/recipes/2023/10/12/stuffed-pepper-soup/) which is a good slow cooker recipe.
 
 ## Summary
 - Prep Time: 10 minutes
