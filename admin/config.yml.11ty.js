@@ -275,7 +275,7 @@ function addDefaultsToCollection(collection) {
 }
 
 /**
- * NetlifyCMS Admin Config
+ * Decap CMS Admin Config
  */
 class CmsConfig {
 	/**
@@ -478,41 +478,8 @@ class CmsConfig {
 								},
 							],
 						},
-					],
-				},
-				{
-					label: 'Pages',
-					name: 'pages',
-					files: [
 						{
-							label: 'Colophon',
-							name: 'colophon',
-							file: 'colophon.md',
-							preview_path: 'colophon',
-							fields: [fields.title, fields.body],
-						},
-						{
-							label: 'Foster Care',
-							name: 'foster',
-							file: 'foster.liquid',
-							preview_path: 'foster',
-							fields: [fields.title, fields.body],
-						},
-						{
-							label: 'Privacy',
-							name: 'privacy',
-							file: 'privacy.md',
-							preview_path: 'privacy',
-							fields: [fields.title, fields.body],
-						},
-						{
-							label: 'Subscribe',
-							name: 'subscribe',
-							file: 'subscribe.md',
-							fields: [fields.title, fields.body],
-						},
-						{
-							label: 'Links',
+							label: 'Featured Links',
 							name: 'links',
 							file: '_data/links.json',
 							preview_path: 'links',
@@ -568,6 +535,32 @@ class CmsConfig {
 								},
 							],
 						},
+					],
+				},
+				{
+					label: 'Pages',
+					name: 'pages',
+					files: [
+						...[
+							{ file: 'colophon.md' },
+							{ file: 'foster.liquid', label: 'Foster Care' },
+							{ file: 'privacy.md' },
+							{ file: 'subscribe.md' },
+							{ file: 'referrals.md' },
+							{ file: 'drafts.md' },
+							{ file: 'search.md' },
+						].map(({ file, ...other }) => {
+							const [preview_path] = file.split('.');
+
+							return {
+								file,
+								preview_path,
+								name: preview_path,
+								label: toTitleCase(preview_path),
+								fields: [fields.title, fields.body],
+								...other,
+							};
+						}),
 					],
 				},
 			],

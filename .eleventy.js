@@ -16,12 +16,15 @@ module.exports = function (eleventyConfig) {
 		'mywotc6b2477c57f015eaa645.html',
 		'BingSiteAuth.xml',
 	];
-	staticFiles.forEach(eleventyConfig.addPassthroughCopy.bind(eleventyConfig));
 	eleventyConfig.addPassthroughCopy({
 		[require.resolve('webmention.js/static/webmention')]:
 			'assets/js/webmention.js',
+		[require.resolve('decap-cms')]: 'assets/js/decap-cms.js',
+		...staticFiles.reduce((collection, path) => {
+			collection[path] = path;
+			return collection;
+		}, {}),
 	});
-
 	/**
 	 * Map of collection names to glob patterns
 	 * @type {Record<string, string>}
