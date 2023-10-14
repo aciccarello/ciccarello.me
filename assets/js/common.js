@@ -60,7 +60,48 @@ export function formatDateTimeString(date) {
 
 document.addEventListener('DOMContentLoaded', () => {
 	initializeLightbox();
+	initializeCardTransitions();
 });
+
+/**
+ * Cross-document view transitions for post-suggestion cards.
+ *
+ * To avoid crossing view transitions between the main content and suggestions,
+ * the transition on suggestions is only added on-click.
+ * This allows the suggestion to expand, but won't cause the previous post to
+ * shrink to a post card preview on the next page.
+ * Links from post lists to a post should work as normal.
+ */
+function initializeCardTransitions() {
+	document.addEventListener(
+		'click',
+		(event) => {
+			// Only plain left-clicks that result in a same-tab navigation.
+			if (
+				event.defaultPrevented ||
+				event.button !== 0 ||
+				event.metaKey ||
+				event.ctrlKey ||
+				event.shiftKey ||
+				event.altKey
+			) {
+				return;
+			}
+
+			const link = event.target.closest('a[href]');
+			if (!link) return;
+
+			const tagged = [
+				...(link.hasAttribute('data-vt') ? [link] : []),
+				...link.querySelectorAll('[data-vt]'),
+			];
+			tagged.forEach((el) => {
+				el.style.viewTransitionName = el.dataset.vt;
+			});
+		},
+		true,
+	);
+}
 
 function initializeLightbox() {
 	const images = Array.from(

@@ -12,19 +12,19 @@ layout: default
 	}
 </style>
 <div class="h-entry">
-	<article class="container post" data-pagefind-body>
+	<article class="container post" data-pagefind-body style="view-transition-name: {{page.url | slugify}}">
 		{% include "featured-media.html" %}
 		<header class="post-header">
 			{%- if subtitle -%}
 			<hgroup>
 			{%- endif -%}
 			{%- if title -%}
-				<h1 class="post-title p-name">
+				<h1 class="post-title p-name" style="view-transition-name: {{page.url | slugify}}-title">
 					{{ title | escape }}
 				</h1>
 			{%- endif -%}
 			{%- if subtitle -%}
-				<p class="post-title h2 p-summary">
+				<p class="post-title h2 p-summary" style="view-transition-name: {{page.url | slugify}}-subtitle">
 					{{ subtitle | escape }}
 				</p>
 			</hgroup>

@@ -614,6 +614,33 @@ button,
 	}
 }
 
+/* Cross-document (MPA) view transitions. Elements that share a
+   view-transition-name across pages (set inline in the layouts and
+   post-card include) morph into one another automatically. */
+@view-transition {
+	navigation: auto;
+}
+
+:root {
+	--transition-duration: 0.3s;
+}
+
+/* Tune the browser's default cross-fade/morph timing without replacing
+   the generated animations. The universal selector targets every named group. */
+::view-transition-group(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+	animation-duration: var(--transition-duration);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}
+
 .card__primary {
 	flex-grow: 1;
 	display: flex;
@@ -640,7 +667,9 @@ button,
 
 .note-card .post-text {
 	font-size: 1.1em;
+	display: -webkit-box;
 	-webkit-line-clamp: 5;
+	line-clamp: 5;
 }
 
 .svg-icon,
@@ -1015,7 +1044,7 @@ iframe[src*='macaulaylibrary.org'] {
 	background-color: #fff;
 	padding: 0.5rem;
 	box-sizing: border-box;
-max-width: 100%;
+	max-width: 100%;
 }
 
 .author-description {

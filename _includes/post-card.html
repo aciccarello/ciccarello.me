@@ -1,4 +1,12 @@
 {% removeindents %}
+{%- comment -%}
+View-transition names. By default they are live (`view-transition-name`) so
+list/grid → post navigations morph forwards and backwards. When `deferTransition`
+is passed (from suggestions.html) they are emitted as inert `data-vt` attributes
+that JS promotes only on click, so a suggestion you didn't click can't reverse-morph
+the post you're leaving.
+{%- endcomment -%}
+{%- assign vtName = post.url | slugify -%}
 <div class="
 {%- if post.data.layout == "recipe" -%}
 h-recipe
@@ -8,12 +16,13 @@ h-entry
 " {% if post.excludeFromSitemap -%}
     data-nosnippet
 {%- endif %}  data-pagefind-ignore>
-	<a class="u-url card disable-link-styles" href="{{ post.url | url }}">
+	<a class="u-url card disable-link-styles" href="{{ post.url | url }}" {% if deferTransition %}data-vt="{{ vtName }}"{% else %}style="view-transition-name: {{ vtName }}"{% endif %}>
 		{%- if post.data.image -%}
 			{% assign filetype = post.data.image | split: "." | last -%}
 			<div class="card__media card__media--16-9"
+            {% if deferTransition %}data-vt="{{ vtName }}-media"{% endif %}
             {% if post.data.layout == "photo" %}aria-label="{{ post.data.image_alt | escape }}" role="img"{% endif %}
-            {% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
+            style="{% if filetype != 'mp4' %}background-image: url('{{ post.data.image }}');{% endif %}{% unless deferTransition %}view-transition-name: {{ vtName }}-media;{% endunless %}">
 				{% if filetype == 'mp4' -%}
 					<video preload="metadata" aria-label="{{ post.data.image_alt | escape }}">
 						<source type="video/mp4" src="{{ post.data.image }}">
@@ -24,7 +33,7 @@ h-entry
 		<div class="card__primary {% if post.data.layout == "note" %}note-card{% endif %}">
 			<div class="post-heading">
 				{%- if post.data.title -%}
-					<h3 class="p-name">
+					<h3 class="p-name" {% if deferTransition %}data-vt="{{ vtName }}-title"{% else %}style="view-transition-name: {{ vtName }}-title"{% endif %}>
 						{{ post.data.title | escape }}
 					</h3>
 				{%- endif -%}

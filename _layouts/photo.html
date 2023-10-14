@@ -3,16 +3,16 @@ layout: default
 ---
 
 <div class="h-entry">
-	<article class="container post" data-pagefind-body>
+	<article class="container post" data-pagefind-body style="view-transition-name: {{page.url | slugify}}">
 		{% if image %}
-			<figure class="card__media post-thumbnail">
+			<figure class="card__media post-thumbnail" style="view-transition-name: {{page.url | slugify}}-media">
 				{% assign filetype = image | split: "." | last -%}
 				{% if filetype == 'mp4' -%}
 					<video autoplay muted controls loop class="u-video post-img--wide" aria-label="{{ image_alt | escape }}">
 						<source type="video/mp4" src="{{ image }}">
 					</video>
 				{% else -%}
-					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo u-featured post-img--wide" data-pagefind-meta="image[src], image_alt[alt]">
+					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo u-featured post-img--wide" data-pagefind-meta="image[src], image_alt[alt]" fetchpriority="high">
 				{% endif %}
 				{% if image_caption %}
 					<figcaption>

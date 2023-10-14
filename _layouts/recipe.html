@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<article class="h-recipe hrecipe" data-pagefind-body>
-	<section class="container post">
+<article class="h-recipe hrecipe">
+	<section class="container post" data-pagefind-body style="view-transition-name: {{page.url | slugify}}">
 		{% include "featured-media.html" %}
 		<header class="post-header">
 			{%- if subtitle -%}
 			<hgroup>
 			{%- endif -%}
-			<h1 class="post-title p-name fn">
+			<h1 class="post-title p-name fn" style="view-transition-name: {{page.url | slugify}}-title">
 				<a class="disable-link-styles" href="{{ page.url | url }}">
 					{{ title | escape }}
 				</a>
