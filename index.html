@@ -210,6 +210,36 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
             project.
         </p>
 	</section>
+	<section>
+		{% removeindents %}
+		<div class="home container">
+		<h2 class="post-list-heading">
+		Latest Posts
+			<a class="btn-link btn-alternate" href="/posts">
+				See All
+			</a>
+		</h2>
+		<ol class="post-list">
+		{%- assign posts = collections["mainPosts"] %}
+			<li>
+			{% include "post-card.html" post: posts[-1] %}
+			</li>
+			<li>
+			{% include "post-card.html" post: posts[-2] %}
+			</li>
+			<li>
+			{% include "post-card.html" post: posts[-3] %}
+			</li>
+			<li>
+			{% include "post-card.html" post: posts[-4] %}
+			</li>
+			<li>
+			{% include "post-card.html" post: posts[-5] %}
+			</li>
+		</ol>
+		</div>
+		{% endremoveindents %}
+	</section>
 	<section class="" id="connect">
 		<h2>Connect</h2>
 		<p>Connect with me using one of my preferred channels</p>
