@@ -179,7 +179,7 @@ const fields = generateFieldMap([
 			{ name: 'content', widget: 'text', required: false },
 			{
 				name: 'published',
-				widget: 'date',
+				widget: 'datetime',
 				required: false,
 				default: '', // Default and format are required to allow empty input
 				format: 'YYYY-MM-DDTHH:mm:ss',
