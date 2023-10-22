@@ -31,11 +31,6 @@ main {
 	width: 100%;
 }
 
-.qr-code {
-	display: block;
-	margin: 1.5rem auto;
-}
-
 .recent-links {
 	text-align: left;
 	margin: 1rem;
