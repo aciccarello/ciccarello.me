@@ -11,7 +11,7 @@ permalink: /links/index.html
 <img alt="avatar" class="profile-pic u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512" height="128" width="128" crossorigin="anonymous"/>
 <p>{{ links.description }}</p>
 <ul class="pinned-links">
-{% for link in links.links %}
+{% for link in links.featured %}
         <li>
             <a href="{{link.url}}" class="btn-link">{{link.title}}</a>
     </li>

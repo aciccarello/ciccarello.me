@@ -26,6 +26,10 @@
 	margin-bottom: 2rem;
 }
 
+.profiles__title {
+	flex: 100%;
+}
+
 .profile-card {
 	flex: 1;
 	min-width: 250px;

@@ -32,25 +32,7 @@ describe('microformats', () => {
   it('should have an h-card on the homepage', async () => {
     const homepage = await getPage('/');
 
-    expect(jf2(homepage)).toMatchInlineSnapshot(`
-      {
-        "email": "mailto:anthony@ciccarello.me",
-        "name": "Anthony Ciccarello",
-        "note": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
-        "org": {
-          "name": "ICD",
-          "type": "card",
-          "url": "https://icdportal.com/",
-        },
-        "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-        "type": "card",
-        "url": [
-          "https://www.ciccarello.me/",
-          "acct:anthony@ciccarello.me",
-          "https://www.ciccarello.me/subscribe/#follow-on-mastodon-or-other-fediverse-networks",
-        ],
-      }
-    `);
+    expect(jf2(homepage)).toMatchSnapshot();
   });
 
   it('should be parsable on the resume', async () => {

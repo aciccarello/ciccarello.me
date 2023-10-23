@@ -1,6 +1,82 @@
 {
   "description": "Software Engineer",
-  "links": [
+  "homepage": [
+    {
+      "name": "Social",
+      "links": [
+        {
+          "url": "/subscribe/#follow-on-mastodon-or-other-fediverse-networks",
+          "title": "Mastodon/Fediverse",
+          "description": "@anthony@ciccarello.me",
+          "icon": "icons/mastodon.svg"
+        },
+        {
+          "url": "https://www.npmjs.com/~aciccarello",
+          "title": "LinkedIn",
+          "description": "Professional",
+          "icon": "icons/linkedin.svg"
+        }
+      ]
+    },
+    {
+      "name": "Nature",
+      "links": [
+        {
+          "url": "https://ebird.org/profile/OTUwMDI4",
+          "title": "eBird",
+          "description": "Bird sightings",
+          "icon": "icons/ebird.svg"
+        },
+        {
+          "url": "https://www.inaturalist.org/people/aciccarello",
+          "title": "iNaturalist",
+          "description": "Nature sightings",
+          "icon": "icons/inaturalist.svg"
+        }
+      ]
+    },
+    {
+      "name": "Games",
+      "links": [
+        {
+          "url": "https://www.duolingo.com/profile/a3chic9",
+          "title": "Duolingo",
+          "description": "Language learning",
+          "icon": "icons/duolingo.svg"
+        },
+        {
+          "url": "https://www.chess.com/member/a3chic9",
+          "title": "Chess.com",
+          "description": "Online Chess",
+          "icon": "icons/chess.svg"
+        }
+      ]
+    },
+    {
+      "name": "Software",
+      "links": [
+        {
+          "url": "https://github.com/aciccarello",
+          "title": "GitHub",
+          "description": "Code repository",
+          "icon": "icons/github.svg"
+        },
+        {
+          "url": "https://stackoverflow.com/users/4252741/chic",
+          "title": "Stack Overflow",
+          "description": "Software Q & A",
+          "icon": "icons/stack-overflow.svg"
+        },
+        {
+          "url": "https://www.npmjs.com/~aciccarello",
+          "title": "npm",
+          "description": "Package manager",
+          "icon": "icons/npm.svg"
+        }
+      ]
+    }
+  ],
+  "featured": [
     {
       "url": "https://www.ciccarello.me",
       "title": "Homepage"

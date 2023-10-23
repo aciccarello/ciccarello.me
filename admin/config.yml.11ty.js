@@ -485,13 +485,13 @@ class CmsConfig {
 							preview_path: 'links',
 							fields: [
 								{
-									label: 'Description',
+									label: 'Links Page Description',
 									name: 'description',
 									widget: 'string',
 								},
 								{
 									label: 'Links',
-									name: 'links',
+									name: 'featured',
 									widget: 'list',
 									fields: [
 										{
@@ -503,6 +503,46 @@ class CmsConfig {
 											label: 'URL',
 											name: 'url',
 											widget: 'string',
+										},
+									],
+								},
+								{
+									label: 'Homepage',
+									label_singular: 'group',
+									name: 'homepage',
+									widget: 'list',
+									fields: [
+										{
+											label: 'Group Name',
+											name: 'name',
+											widget: 'string',
+										},
+										{
+											label: 'Links',
+											name: 'links',
+											widget: 'list',
+											fields: [
+												{
+													label: 'Title',
+													name: 'title',
+													widget: 'string',
+												},
+												{
+													label: 'URL',
+													name: 'url',
+													widget: 'string',
+												},
+												{
+													label: 'description',
+													name: 'description',
+													widget: 'string',
+												},
+												{
+													label: 'Icon',
+													name: 'icon',
+													widget: 'string',
+												},
+											],
 										},
 									],
 								},
