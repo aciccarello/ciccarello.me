@@ -9,7 +9,7 @@ image: /assets/img/2023-spider-web.jpg
 image_alt: Silhouette of a spider in the center of its web, ready to pounce.
 image_caption: Sometimes the web can be an unfriendly place.
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/www.ciccarello.me/blog/2023/10/23/rethinking-social-media/
 ---
 
 For about 2 years now, I have pulled back from the major social media platforms.
