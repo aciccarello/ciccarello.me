@@ -14,7 +14,6 @@ However, I do intend to post these when they are ready.
 ### Blog Posts
 
 - [Birding in 2023](./birding-in-2023)
-- [Rethinking my approach to social media](./rethinking-social-media)
 - [Tag Moderation](./tag-moderation)
 - [Instagram Import](./instagram-import)
 - [City vs Country](./city-vs-country)

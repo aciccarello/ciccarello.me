@@ -7,6 +7,11 @@ image_alt: Scrub Jay
 image_caption: Scrub Jay - Photo by [Ken Goulding](https://unsplash.com/photos/WAxRivz5VtM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
+
+<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
+    Since writing this post, I've moved away from Twitter. To see why, read <a href="/blog/2023/10/23/rethinking-social-media/">Rethinking my approach to social media</a>.
+</aside>
+
 My friends and family often ask me about my Twitter account which is
 frequently filled with web development specific comments like this:
 

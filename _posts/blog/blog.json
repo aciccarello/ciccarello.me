@@ -1,5 +1,5 @@
 {
-  "permalink": "/blog/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/",
+  "permalink": "/blog/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default: title | slug }}/",
   "layout": "article",
   "dateFormat": "day"
 }
