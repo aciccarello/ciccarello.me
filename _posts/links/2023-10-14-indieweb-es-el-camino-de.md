@@ -16,6 +16,6 @@ references:
 tags:
   - IndieWeb
 syndication:
-  - https://news.indieweb.org/es
+  - https://news.indieweb.org/es/berniethewordsmith.micro.blog/2023/10/14/el-camino-de.html
 ---
 ¡Me encanta ver más artículos sobre la web indie en español! Micro.blog es un buen servicio.
