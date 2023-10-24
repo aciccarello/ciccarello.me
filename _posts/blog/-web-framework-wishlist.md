@@ -1,10 +1,10 @@
 ---
 title: Web Framework Wishlist
-permalink: "/drafts/web-framework-wishlist/"
 date: 2023-09-29
+permalink: /drafts/web-framework-wishlist/
 tags:
- - technology
- - JavaScript
+  - technology
+  - JavaScript
 eleventyExcludeFromCollections: draft
 ---
 
@@ -28,3 +28,9 @@ After listening to [Full Stack Radio episode with Rich Harris](https://fullstack
 - Pre-fetching pages
 - Simplify rendering
 - Library support
+
+## Meta Frameworks to look at
+Originally from [Kent C. Dodds on Hanselminutes](https://hanselminutes.com/878/the-webs-next-transition-with-kent-c-dodds)
+- [Remix](https://remix.run/)
+- [Solid Start](https://start.solidjs.com/)
+- [Svelte Kit](https://kit.svelte.dev/)
