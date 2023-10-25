@@ -114,7 +114,7 @@ eleventyComputed:
 				</svg>
 				{% endif %}
 				<div class="photo-grid-tile__overlay">
-					<time class="datetime="{{ post.date | formatMachineDate }}">
+					<time datetime="{{ post.date | formatMachineDate }}">
 						{{- post.date | formatHumanDate: post.data.dateFormat -}}
 					</time>
 					<p class="photo-grid-tile__description">
