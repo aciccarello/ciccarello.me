@@ -76,10 +76,8 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  },
   "markdownlint.config": {
     "MD034": false
-  }
+  },
+  "jest.jestCommandLine": "npm run test --"
 }
