@@ -22,6 +22,7 @@ describe('microformats', () => {
     'photoLike',
     'reply',
     'replyToCheckin',
+    'multipleUpdates',
   ];
 
   beforeAll(async () => {
@@ -32,7 +33,14 @@ describe('microformats', () => {
   it('should have an h-card on the homepage', async () => {
     const homepage = await getPage('/');
 
-    expect(jf2(homepage)).toMatchSnapshot();
+    const parsedJf2 = jf2(homepage);
+    const hFeed = parsedJf2.children.find((child) => child.type == 'feed');
+
+    expect(hFeed.name).toContain('Latest Posts');
+    expect(hFeed.children.length).toEqual(5);
+
+    hFeed.children = ['Changing content removed'];
+    expect(parsedJf2).toMatchSnapshot();
   });
 
   it('should be parsable on the resume', async () => {

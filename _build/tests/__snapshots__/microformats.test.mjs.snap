@@ -455,6 +455,40 @@ exports[`microformats should have a(n) like 1`] = `
 }
 `;
 
+exports[`microformats should have a(n) multipleUpdates 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "content": {
+    "html": "<style>
+  .dt-updated {
+    color: red;
+  }
+</style>
+<p>This post is for testing how updates are handled.
+Typically we’ll want the updates to be in order but that’s not guaranteed.
+So we want to check for the date matching the calculated <code>lastUpdated</code> value.
+The most recent update will get the microformats dt-updated class.</p>
+<p>The lastUpdated value is: 2023-10-23T06:43:26Z</p>",
+    "text": "This post is for testing how updates are handled.
+Typically we’ll want the updates to be in order but that’s not guaranteed.
+So we want to check for the date matching the calculated lastUpdated value.
+The most recent update will get the microformats dt-updated class.
+The lastUpdated value is: 2023-10-23T06:43:26Z",
+  },
+  "published": "2023-10-23T05:46:06Z",
+  "type": "entry",
+  "updated": "2023-10-23T06:43:26Z",
+  "url": "https://www.ciccarello.me/posts/2023/10/23/updates-test/",
+}
+`;
+
 exports[`microformats should have a(n) note 1`] = `
 {
   "author": {
@@ -686,63 +720,13 @@ exports[`microformats should have an h-card on the homepage 1`] = `
 {
   "children": [
     {
-      "author": "https://www.ciccarello.me/",
-      "category": [
-        "dinner",
-        "soup",
-        "pepper",
-        "beef",
-        "pressure cooker",
-        "slow cooker",
+      "children": [
+        "Changing content removed",
       ],
-      "name": "Stuffed Pepper Soup",
-      "published": "2023-10-12T07:09:43Z",
-      "summary": "We originally got this recipe from Recipes that Crock. It can be done in a slow cooker but we like to make this in the pressure cooker. I’d also recommend keeping some extra beef broth on hand in case you want it soupier after the rice absorbs the liquid. A...",
-      "type": "recipe",
-      "url": "https://www.ciccarello.me/recipes/2023/10/12/stuffed-pepper-soup/",
-    },
-    {
-      "author": "https://www.ciccarello.me/",
-      "category": [
-        "dessert",
-        "apple",
-      ],
-      "name": "Apple Crisp",
-      "published": "2023-10-12T07:09:18Z",
-      "summary": "This recipe was shared by Bekah’s mom from an apple shaped recipe book. We’ve increased the proportions on the topper by 50% because who doesn’t want more topping? Summary Prep Time: 10 minutes Cook Time: 45 minutes Servings: 6 Ingredients 1 1/2 cup flour 1 1/2 cup quick oatmeal, uncooked...",
-      "type": "recipe",
-      "url": "https://www.ciccarello.me/recipes/2023/10/12/apple-crisp/",
-    },
-    {
-      "author": "https://www.ciccarello.me/",
-      "category": "site changes",
-      "published": "2023-10-02T05:02:42Z",
-      "summary": "I just merged a big update to the site which adds dark mode and some other style changes. The site now uses system fonts and doesn’t include the material css library which should reduce the size of the initial page load. The main goal was simplifying the codebase but css...",
-      "type": "entry",
-      "url": "https://www.ciccarello.me/posts/2023/10/02/now-with-dark-mode/",
-    },
-    {
-      "author": "https://www.ciccarello.me/",
-      "category": [
-        "IndieWeb",
-        "carnival",
-      ],
-      "name": "After the Rain",
-      "published": "2023-09-30T15:53:02Z",
-      "summary": "IndieWeb Carnival: My Kind Of Weather",
-      "type": "entry",
-      "url": "https://www.ciccarello.me/blog/2023/09/30/after-the-rain/",
-    },
-    {
-      "author": "https://www.ciccarello.me/",
-      "category": [
-        "TIL",
-        "technology",
-      ],
-      "published": "2023-09-25T17:44:41Z",
-      "summary": "Today I learned that the standard CSS definition for gray is darker than darkgray. 🙈 Turns out things can get inconsistent if you combine two different lists of color names.",
-      "type": "entry",
-      "url": "https://www.ciccarello.me/posts/2023/09/25/css-darkgray/",
+      "name": "Latest Posts
+
+See All",
+      "type": "feed",
     },
   ],
   "email": "mailto:anthony@ciccarello.me",

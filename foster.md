@@ -651,8 +651,8 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   - [recommendations from Show Hope](https://showhope.org/recommended-resources/)
 
 {% removeindents %}
-<div class="home container">
- <h2 class="post-list-heading">
+<div class="container h-feed">
+ <h2 class="post-list-heading p-name">
   Latest Updates
     <a class="btn-link btn-alternate" href="/posts/tags/foster care">
         See All
