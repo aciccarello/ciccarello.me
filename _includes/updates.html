@@ -1,0 +1,17 @@
+{%- if updates and updates.size > 0 %}
+<section class="post-updates">
+	<h2 class="h3">Updates:</h2>
+	<ol>
+	{%- assign latestMachineDate = lastUpdated | formatMachineDate %}
+	{%- for update in updates | sort: 'date' -%}
+	<li>
+		{%- assign machineDate = update.date | formatMachineDate %}
+		<time {% if machineDate == latestMachineDate %}class="dt-updated"{% endif %} datetime="{{ machineDate }}">
+			{{- update.date | formatHumanDate: dateFormat -}}
+		</time>
+		{{update.description}}
+	</li>
+	{%- endfor -%}
+	</ol>
+</section>
+{%- endif %}

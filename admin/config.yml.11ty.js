@@ -170,6 +170,23 @@ const fields = generateFieldMap([
 		options: ['', 'draft', 'hidden', 'deleted', 'testing'],
 	},
 	{
+		name: asConst('updates'),
+		widget: 'list',
+		required: false,
+		fields: [
+			{
+				name: 'date',
+				widget: 'datetime',
+				required: false,
+				default: '', // Default and format are required to allow empty input
+				date_format: 'YYYY-MM-DD',
+				time_format: 'HH:mm:ss [UTC]',
+				picker_utc: true,
+			},
+			{ name: 'description', widget: 'string', required: false },
+		],
+	},
+	{
 		name: asConst('references'),
 		widget: 'list',
 		required: false,
@@ -182,7 +199,9 @@ const fields = generateFieldMap([
 				widget: 'datetime',
 				required: false,
 				default: '', // Default and format are required to allow empty input
-				format: 'YYYY-MM-DDTHH:mm:ss',
+				date_format: 'YYYY-MM-DD',
+				time_format: 'HH:mm:ss [UTC]',
+				picker_utc: true,
 			},
 			{ name: 'post-type', widget: 'string', required: false },
 			{
@@ -343,6 +362,7 @@ class CmsConfig {
 						fields.body,
 						fields.syndication,
 						fields.eleventyExcludeFromCollections,
+						fields.updates,
 					],
 				}),
 				addDefaultsToCollection({
@@ -366,6 +386,7 @@ class CmsConfig {
 						},
 						fields.syndication,
 						fields.eleventyExcludeFromCollections,
+						fields.updates,
 					],
 				}),
 				addDefaultsToCollection({
@@ -382,6 +403,7 @@ class CmsConfig {
 						fields.canonical_url,
 						fields.permalink,
 						fields.eleventyExcludeFromCollections,
+						fields.updates,
 					],
 				}),
 				addDefaultsToCollection({
@@ -401,6 +423,7 @@ class CmsConfig {
 						fields.canonical_url,
 						fields.permalink,
 						fields.eleventyExcludeFromCollections,
+						fields.updates,
 					],
 				}),
 				addDefaultsToCollection({
@@ -422,6 +445,7 @@ class CmsConfig {
 						fields.permalink,
 						fields.excludeFromMainFeed,
 						fields.eleventyExcludeFromCollections,
+						fields.updates,
 					],
 				}),
 				addDefaultsToCollection({
@@ -447,6 +471,7 @@ class CmsConfig {
 						fields.permalink,
 						fields.excludeFromMainFeed,
 						fields.eleventyExcludeFromCollections,
+						fields.updates,
 					],
 				}),
 				{

@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
 {% endcomment %}
 {%- assign feedCollection = collections[collectionName] | reverse -%}
 {%- assign alternateUrl = url | default: "/" | replace: " ", "%20" | addBaseUrl -%}
-{%- comment %}add bridgy fed syndication for RSS based webmention sender{% endcomment -%}
+{%- comment %}add syndication for RSS based webmention sender{% endcomment -%}
 {%- capture bridgyFed %}{% if page.url == "/feed-all.xml" -%}
   <a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>
 {%- endif %}{% endcapture -%}
@@ -44,7 +44,8 @@ eleventyExcludeFromCollections: true
     <entry>
       <title type="text">{{ post.data.title | default: post.data.defaultTitle }}</title>
       <link href="{{ absolutePostUrl }}" rel="alternate" type="text/html"/>
-      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <published>{{ post.date | dateToRfc3339 }}</published>
+      <updated>{{ post.data.lastUpdated | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
       {%- for tag in post.data.tags %}
         <category term="{{ tag }}"/>

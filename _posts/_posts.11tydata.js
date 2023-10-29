@@ -8,6 +8,17 @@ module.exports = {
 	back_button: '../../../..',
 	layout: 'note',
 	eleventyComputed: {
+		lastUpdated:
+			/** @type {(data: {date: Date, updates?: {date: string}[]}) => Date} */ (
+				(data) =>
+					!data.updates
+						? data.date
+						: data.updates
+								.map(({ date }) => new Date(date))
+								.concat(data.date)
+								.sort((a, b) => a - b)
+								.at(-1)
+			),
 		responseData: (data) => {
 			const like = data['like-of'];
 			const bookmark = data['bookmark-of'];
@@ -58,7 +69,7 @@ module.exports = {
 				}
 				const plaintextSummary = `${actionDescription} ${postDescription.replace(
 					/<\/*cite>/g,
-					''
+					'',
 				)} ${
 					referenceData.author?.name
 						? `by ${referenceData.author.name}`

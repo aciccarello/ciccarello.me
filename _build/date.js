@@ -67,7 +67,7 @@ module.exports = function (eleventyConfig) {
 		return dateTimeFormat.format(date) + ' UTC';
 	});
 	eleventyConfig.addFilter('formatMachineDate', (date, accuracy) => {
-		const stringDate = pluginRss.dateToRfc3339(date);
+		const stringDate = pluginRss.dateToRfc3339(new Date(date));
 		const [datePart, timePart] = stringDate.split('T');
 		if (accuracy === 'month') {
 			return datePart.substring(0, 7);

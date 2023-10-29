@@ -508,6 +508,10 @@ I've also experimented with [Cooklang](https://cooklang.org/) via [markdown-it-c
 {% endraw %}
 ```
 
+## Updates
+
+Pages can have updates listed below.
+See [/updates-test/](/posts/2023/10/23/updates-test/) for an example.
 
 ## Post previews
 

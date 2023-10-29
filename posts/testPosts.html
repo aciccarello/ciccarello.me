@@ -23,3 +23,18 @@ eleventyExcludeFromCollections: testing
 	{% include "pagination.html" %}
 
 </div>
+
+<section class="container">
+	<h2>All test posts</h2>
+	<p>Posts excluded from collections cannot be shown with a preview card. All test posts are listed below.</p>
+	{%- assign parsedPosts = test.posts | json | replace: "{", "" | replace: "}", "" | replace: "\"", "" | split: "," %}
+	<ul>
+		{%- for testPost in parsedPosts %}
+		<li>
+			{%- assign parts = testPost | split: ':' %}
+			{{ parts | first}}:
+			<a href="{{parts | last}}">{{parts | last}}</a>
+		</li>
+	{%- endfor %}
+	</ul>
+</section>

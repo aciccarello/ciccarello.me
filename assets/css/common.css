@@ -800,20 +800,18 @@ blockquote {
 	margin: 0 2rem;
 }
 
-@media screen and (max-width: 45em) {
-	.post-header,
-	.post-content {
-		margin: 0 1rem;
-	}
-}
-
-.post-syndication {
+.post-syndication,
+.post-updates {
 	margin: 1rem 2rem;
 }
 
 @media screen and (max-width: 45em) {
-	.post-syndication {
-		margin: 1rem;
+	.post-header,
+	.post-content,
+	.post-syndication,
+	.post-updates {
+		margin-inline-start: 1rem;
+		margin-inline-end: 1rem;
 	}
 }
 

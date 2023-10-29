@@ -5,6 +5,9 @@ date: 2018-01-29
 image: /assets/img/scrub-jay-thumbnail.jpg
 image_alt: Scrub Jay
 image_caption: Scrub Jay - Photo by [Ken Goulding](https://unsplash.com/photos/WAxRivz5VtM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+updates:
+  - date: 2023-10-23T03:53:26.365Z
+    description: Added link to Rethinking social media post.
 ---
 
 
