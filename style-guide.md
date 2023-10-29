@@ -323,8 +323,14 @@ This text has no highlighting
 ## Horizontal Ruler
 
 The following is an `<hr>` tag which can also be defined in markdown with three dashes (`---`) on their own line.
+It's an empty tag and yes I am stalling to write a larger block of text so this looks more like a normal context.
+Please accept my apology for wasting your time.
 
 ---
+
+It's often used to break up two paragraphs with a hard pivot but without a heading change.
+It gives some visual space between the two groups of text.
+You can see an example on the [Migrating Angular Types Blog Post](http://localhost:8080/blog/2016/11/16/migrating-angular-1-to-types/).
 
 ## Embed links
 
