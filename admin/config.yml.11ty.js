@@ -177,13 +177,12 @@ const fields = generateFieldMap([
 			{
 				name: 'date',
 				widget: 'datetime',
-				required: false,
-				default: '', // Default and format are required to allow empty input
+				required: true,
 				date_format: 'YYYY-MM-DD',
 				time_format: 'HH:mm:ss [UTC]',
 				picker_utc: true,
 			},
-			{ name: 'description', widget: 'string', required: false },
+			{ name: 'description', widget: 'string', required: true },
 		],
 	},
 	{
