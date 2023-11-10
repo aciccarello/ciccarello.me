@@ -52,7 +52,7 @@
     "markdown-it-html5-media": "^0.7.1",
     "markdown-it-image-figures": "^2.1.1",
     "microformats-parser": "^2.0.1",
-    "netlify-cli": "^16.9.1",
+    "netlify-cli": "^16.9.3",
     "netlify-plugin-minify-html": "^0.3.1",
     "node-fetch": "^3.3.2",
     "node-html-parser": "^6.1.10",
