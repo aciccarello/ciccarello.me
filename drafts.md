@@ -18,6 +18,7 @@ However, I do intend to post these when they are ready.
 - [Instagram Import](./instagram-import)
 - [City vs Country](./city-vs-country)
 - [Web Framework Wishlist](./web-framework-wishlist)
+- [Planning Commission Meeting](./planning-commission)
 
 ### Recipes
 

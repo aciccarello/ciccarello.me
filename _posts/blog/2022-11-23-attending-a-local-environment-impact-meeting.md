@@ -3,6 +3,7 @@ title: Attending a local environment impact meeting
 date: 2022-11-23T04:45:45.560Z
 tags:
   - local
+  - Oceanside
 image: /assets/img/2022-pacifica-elementary-lot-sunset.jpg
 image_alt: Sunset over an empty concrete lot surrounded by homes.
 image_caption: The lot where Pacifica Elementary previously stood
