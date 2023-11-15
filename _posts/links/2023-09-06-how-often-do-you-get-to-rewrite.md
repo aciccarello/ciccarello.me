@@ -19,7 +19,7 @@ references:
       approached a problem any particular way instead of being pressured to
       finish quickly and move on to the next thing.
 tags:
-  - technolog
+  - technology
 ---
 This tension resonates with me. Reworking code is an investment in the team's future. But judging and justifying investments is not easy.
 
