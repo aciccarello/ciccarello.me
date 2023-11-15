@@ -25,3 +25,4 @@ However, I do intend to post these when they are ready.
 - [Rotisserie Chicken Bone Broth](/recipes/2021/10/19/rotisserie-chicken-bone-broth/)
 - [Bean dip](./bean-dip/)
 - [Breakfast Bake](./breakfast-bake/)
+- [Ramen Noodles](./ramen-noodles/)
