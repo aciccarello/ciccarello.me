@@ -9,13 +9,14 @@
  * @property {string} name - identifier for the field
  * @property {string} label - a number property of SpecialType
  * @property {string} widget - a number property of SpecialType
+ * @property {string} [hint] - helper text directly below a widget. Useful for including instructions. Accepts markdown for bold, italic, strikethrough, and links.
  * @property {string} [date_format] - moment format for displayed date only, for datetime widgets
  * @property {string} [time_format] - moment format for displayed time only, for datetime widgets
  * @property {boolean} [picker_utc] - whether to use UTC for dates, for datetime widgets
- * @prop {boolean} [required] - whether the field is required or not
- * @prop {boolean} [allow_multiple] - ??
- * @prop {boolean} [multiple] - ??
- * @prop {boolean} [allow_add] - wether to allow adding values, for widgets with multiple=true
+ * @property {boolean} [required] - whether the field is required or not
+ * @property {boolean} [allow_multiple] - ??
+ * @property {boolean} [multiple] - ??
+ * @property {boolean} [allow_add] - wether to allow adding values, for widgets with multiple=true
  */
 
 /**
@@ -191,6 +192,13 @@ const fields = generateFieldMap([
 		required: false,
 		fields: [
 			{ name: 'url', widget: 'string', required: true },
+			{
+				label: 'Reference URL',
+				name: 'referenceIdUrl',
+				hint: 'URL to match with like/reply/bookmark property. Primarily for micropub generated posts which might generate a reference object with a different `url` property.',
+				widget: 'string',
+				required: false,
+			},
 			{ name: 'name', widget: 'string', required: false },
 			{ name: 'content', widget: 'text', required: false },
 			{

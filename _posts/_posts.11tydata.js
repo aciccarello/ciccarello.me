@@ -26,7 +26,8 @@ module.exports = {
 			const url = reply || like || bookmark;
 			if (url) {
 				const original = data.references?.find(
-					({ url: refUrl }) => url === refUrl,
+					({ referenceIdUrl, url: entryUrl }) =>
+						url === (referenceIdUrl || entryUrl),
 				);
 				const referenceData = { ...original };
 				let className = 'h-cite';
