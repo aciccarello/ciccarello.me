@@ -295,27 +295,31 @@ footer {
 	justify-content: center;
 	gap: 1rem;
 	padding: 1rem;
-}
 
-footer section {
-	text-align: center;
-}
+	& section {
+		text-align: center;
+	}
 
-footer h2 {
-	font-size: 1.25rem;
-	margin: 1rem 0 0.75rem;
-}
+	& h2 {
+		font-size: 1.25rem;
+		margin: 1rem 0 0.75rem;
+	}
 
-footer a {
-	display: block;
-	margin: 0.25rem;
-	/* Darker color needed for contrast against gray background */
-	color: var(--color-alternate-distinct);
-}
+	& a {
+		display: block;
+		margin: 0.25rem;
+		/* Darker color needed for contrast against gray background */
+		color: var(--color-alternate-distinct);
+	}
 
-footer .site-updated {
-	text-align: right;
-	grid-column: 1 / 4;
+	& .indiewebring a {
+		display: inline-block;
+	}
+
+	& .site-updated {
+		text-align: right;
+		grid-column: 1 / 4;
+	}
 }
 
 figure {
