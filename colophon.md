@@ -21,6 +21,8 @@ The scope has expanded over time as I migrated blog content after I became unhap
 
 In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concepts and added other kinds of posts as I became more unhappy with the impact of traditional social media sites. In March 2022 I added [support for notes](/posts/2022/03/30/first-note/). In June 2022, I [backfilled photos](/posts/2022/06/10/instagram-photos-import/) I had previously posted on Instagram. In September 2022 I [started supporting receiving webmention](/posts/2022/09/09/displaying-webmentions) responses.
 
+See <a href="/posts/tags/site changes/" class="tag chip-item">site changes</a> for posts about site changes over time.
+
 ## Technology
 
 <a href="https://indieweb.org/" aria-label="IndieWeb"><svg width="80" height="15" class="badge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 15"><rect x="0" y="0" width="80" height="15" fill="white" stroke-width="2" stroke="#666" /><rect x="3" y="4" width="7" height="2" fill="#FC0D1B" /><rect x="3" y="7" width="7" height="4" fill="#FC0D1B" /><rect x="11" y="4" width="1" height="2" fill="#fc5d20" /><rect x="12" y="6" width="1" height="3" fill="#fc5d20" /><rect x="13" y="9" width="1" height="2" fill="#fc5d20" /><polygon points="13,4 19,4 19,6 18,6 18,9 17,9 17,11 15,11 15,9 14,9 14,6 13,6" fill="#fc5d20" /><polygon points="21,4 25,4 25,5 26,5 26,7 22,7 22,8 26,8 26,10 25,10 25,11 21,11 21,10 20,10 20,8 19,8 19,7 20,7 20,5 21,5" fill="#fdb02a" /><rect x="28" y="2" width="50" height="1" fill="#fda829" /><rect x="28" y="3" width="50" height="1" fill="#fd9c27" /><rect x="28" y="4" width="50" height="1" fill="#fd9025" /><rect x="28" y="5" width="50" height="1" fill="#fd8124" /><rect x="28" y="6" width="50" height="1" fill="#fd7222" /><rect x="28" y="7" width="50" height="1" fill="#fd6420" /><rect x="28" y="8" width="50" height="1" fill="#fc561f" /><rect x="28" y="9" width="50" height="1" fill="#fc481e" /><rect x="28" y="10" width="50" height="1" fill="#fc371d" /><rect x="28" y="11" width="50" height="1" fill="#fc291c" /><rect x="28" y="12" width="50" height="1" fill="#fc1c1c" /><path d="m33,5 h1 v5 h-1 z" fill="#fff" /><path d="m36,5 h1 v1 h1 v1 h1 v1 h1 v-3 h1 v5 h-1 v-1 h-1 v-1 h-1 v-1 h-1 v3 h-1 z" fill="#fff" /><path d="m43,5 h3 v1 h-2 v3 h2 v1 h-3 z" fill="#fff" /><path d="m46,6 h1 v3 h-1 z" fill="#fff" /><path d="m49,5 h1 v5 h-1 z" fill="#fff" /><path d="m52,5 h3 v1 h-2 v1 h2 v1 h-2 v1 h2 v1 h-3 z" fill="#fff" /><path d="m57,5 h1 v4 h1 v-3 h1 v3 h1 v-4 h1 v4 h-1 v1 h-1 v-1 h-1 v1 h-1 v-1 h-1 z" fill="#fff" /><path d="m64,5 h3 v1 h-2 v1 h2 v1 h-2 v1 h2 v1 h-3 z" fill="#fff" /><path d="m69,5 h3 v1 h-2 v1 h2 v1 h-2 v1 h2 v1 h-3 z" fill="#fff" /><rect x="72" y="6" width="1" height="1" fill="#fff" /><rect x="72" y="8" width="1" height="1" fill="#fff" /></svg></a>
@@ -30,7 +32,10 @@ In 2021 I began experimenting more with [IndieWeb](https://indieweb.org/) concep
 <a href="https://archiveready.com/check?url=https://www.ciccarello.me/"><img src="https://archiveready.com/img/archiveready-badge.png" alt="Website Archivability Testing" class="badge"></a>
 <a href="https://app.netlify.com/sites/mystifying-brahmagupta-67e639/deploys"><img src="https://api.netlify.com/api/v1/badges/af8cd9bd-b0a4-417f-bfa1-d11e6d8ed0f7/deploy-status" alt="Netlify Status" class="badge"></a>
 
-The code for this website is on [GitHub](https://github.com/aciccarello/ciccarello.me) and deployed to [Netlify](https://www.netlify.com/). The build is processed using [Eleventy](11ty.dev) a static site generator for node. This site was originally hosted on GitHub pages with a Jekyll build when it was launched at the end of 2017.
+The code for this website is on [GitHub](https://github.com/aciccarello/ciccarello.me) and deployed to [Netlify](https://www.netlify.com/).
+Posts are saved as markdown files and created manually, using [Decap CMS](https://decapcms.org/), or via an [Indiekit](https://getindiekit.com/) micropub server.
+The build is processed using [Eleventy](11ty.dev), a static site generator for node.
+This site was originally hosted on GitHub pages with a Jekyll build when it was launched at the end of 2017.
 
 The styles of this site are primarily hand written and designed to be minimal.
 Some downleveling of new CSS standards is done via [lightning CSS](https://lightningcss.dev/).
@@ -39,7 +44,9 @@ The site uses system fonts to minimize page size and load times.
 Included are some SVG icons from [Material Design Icons](https://material.io/tools/icons/?style=baseline).
 Other icons (like logos) are made by [Pixel perfect](https://icon54.com/) from [www.flaticon.com](https://www.flaticon.com/)
 
-Webmention receiving is handled by [webmention.io](https://webmention.io/) while rendering responses is done client-side with code modified from [webmention.js](https://github.com/PlaidWeb/webmention.js). Since webmentions only work with responses posted online, forms linked to [Comment Parade](https://commentpara.de) provide people without their own site a way to reply. Webmentions are automatically sent via [webmention.app](https://webmention.app/).
+Webmention receiving is handled by [webmention.io](https://webmention.io/) while rendering responses is done client-side with code modified from [webmention.js](https://github.com/PlaidWeb/webmention.js).
+Webmentions are automatically sent via a fork of [webmention.app](https://webmention.app/) triggered during the static site build by [netlify-plugin-webmentions](https://github.com/CodeFoodPixels/netlify-plugin-webmentions).
+Interactions with the fediverse are translated to and from ActivityPub via [Bridgy Fed](https://fed.brid.gy/).
 
 This site currently uses CloudFlare analytics due to its better privacy policy and limited performance impact. Previously I've used GoatCounter.
 
