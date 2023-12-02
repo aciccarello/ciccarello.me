@@ -202,7 +202,8 @@ time {
 	 * Container width is 64rem so 64rem - left margin - right margin
 	 */
 	@media screen and (max-width: 63em) {
-		&.card, &.post-suggestions {
+		&.card,
+		&.post-suggestions {
 			margin-right: 0.5rem;
 			margin-left: 0.5rem;
 		}
@@ -214,16 +215,20 @@ main {
 	flex: 1 0 auto;
 }
 
-html,
-body {
+html {
+	/*
+	 * Want to maintain full height even when content not tall enough
+	 * but maintain background when content is tall (body styles)
+	*/
 	height: 100%;
-	background-color: var(--color-background);
 }
 
 body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	min-height: 100%;
+	background-color: var(--color-background);
 }
 
 body > header {
