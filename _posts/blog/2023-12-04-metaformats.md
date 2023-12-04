@@ -36,7 +36,7 @@ When implemented, the spec only skipped metaformats parsing if there were no roo
 However, adding metaformats to a page with microformats could lead to multiple `h-entry`s in a document, confusing any downstream microformats logic.
 There's a [more recent proposal](https://github.com/microformats/metaformats/issues/2#issuecomment-1836962415) to parse metaformats as a separate property from the true microformats on the page.
 
-I suggest only parsing microformats if there are no microformats found on the page.
+I suggest only parsing meta tags if there are no microformats found on the page.
 This avoids the "multiple entries" problem from the original spec and fits with the goal of metaformats being a fallback definition.
 This design could potentially have issues if sites have incomplete microformats, such as those from a Wordpress template.
 If this issue is common, a quality heuristic such as check that an `h-entry` has properties, could be defined to weed out bad microformats but I wasn't sure what to check for.
