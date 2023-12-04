@@ -8,7 +8,7 @@ image: /assets/img/code-html-ide.jpg
 image_alt: "Photo of HTML computer code"
 image_caption: Photo by <a href="https://unsplash.com/@pankajpatel">Pankaj Patel</a> on <a href="https://unsplash.com/photos/computer-source-code-screengrab-bYiw48KLbmw">Unsplash</a>
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/www.ciccarello.me/blog/2023/12/04/ideas-for-improving-metaformats-parsing/
 ---
 
 ## Why metaformats
