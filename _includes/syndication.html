@@ -8,6 +8,7 @@
 			{%- assign dotSplit = segment | split: '.' -%}
 			{%- if dotSplit.size > 1 -%}
 				{{segment}}
+				{% break %}
 			{%- endif -%}
 		{%- endfor -%}
 	</a>
