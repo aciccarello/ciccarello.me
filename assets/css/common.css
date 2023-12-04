@@ -365,6 +365,12 @@ pre {
 	border-radius: var(--border-radius);
 }
 
+code {
+	font-family: var(--code-font, monospace);
+	font-size: .875rem;
+	padding: 1px 0.2em;
+}
+
 input,
 button,
 .btn-link {
