@@ -118,6 +118,11 @@
 	}
 }
 
+.post-list-heading,
+.category-menu {
+	display: inline-block;
+}
+
 #connect {
 	padding: 10rem 2rem;
 	text-align: center;

@@ -127,12 +127,34 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 	<section class="h-feed">
 		{% removeindents %}
 		<div class="container">
-		<h2 class="post-list-heading p-name">
-		Latest Posts
+		<h2 class="post-list-heading p-name">Latest Posts</h2>
+		<nav class="category-menu" aria-labelledby="post-grouping-title">
+			<ul class="btn-group">
+				<li>
+					<a class="btn-link" href="/blog">
+						Blog
+					</a>
+				</li>
+				<li>
+					<a class="btn-link" href="/recipes">
+						Recipes
+					</a>
+				</li>
+				<li>
+					<a class="btn-link" href="/photos">
+						Photos
+					</a>
+				</li>
+				<li>
+					<a class="btn-link" href="/notes">
+						Notes
+					</a>
+				</li>
+			</ul>
 			<a class="btn-link btn-alternate" href="/posts">
 				See All
 			</a>
-		</h2>
+		</nav>
 		<ol class="post-list">
 		{%- assign posts = collections["mainPosts"] %}
 			<li>
