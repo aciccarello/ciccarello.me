@@ -19,6 +19,7 @@ However, I do intend to post these when they are ready.
 - [City vs Country](./city-vs-country)
 - [Web Framework Wishlist](./web-framework-wishlist)
 - [Planning Commission Meeting](./planning-commission)
+- [IndieWebCamp San Diego](./iwc-sd)
 
 ### Recipes
 

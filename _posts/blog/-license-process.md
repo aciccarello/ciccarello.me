@@ -1,5 +1,5 @@
 ---
-title: Metaformats
+title: License Process
 permalink: '/drafts/license/'
 date: 2022-11-30
 tags:
