@@ -1,6 +1,10 @@
 const { initializeMarkdown, md } = require('./markdown');
 
-const cooklangMd = initializeMarkdown().use(require('markdown-it-cooklang'));
+const cooklangMd = initializeMarkdown().use(require('markdown-it-cooklang'), {
+	ingredients: {
+		inlineDisplayAmount: true,
+	},
+});
 
 /**
  * Custom plugin configuration for recipe template helpers

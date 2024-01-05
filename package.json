@@ -48,7 +48,7 @@
     "lint-staged": "^15.0.2",
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-attrs": "^4.1.6",
-    "markdown-it-cooklang": "^0.3.6",
+    "markdown-it-cooklang": "^0.4.0",
     "markdown-it-html5-media": "^0.7.1",
     "markdown-it-image-figures": "^2.1.1",
     "microformats-parser": "^2.0.1",
