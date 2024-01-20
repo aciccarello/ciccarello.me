@@ -36,6 +36,14 @@ A couple apps I use daily have a free premium bonus (for me) if someone else joi
 
 These financial accounts have cash incentives for joining under my referral link.
 
+### Ally Bank
+
+**You get:** $125 for opening a high-yield savings account by March 1, 2024
+
+**I get:** $50
+
+[Enroll](https://www.ally.com/referral?code=8C5B3C3X7Q)
+
 ### Venmo
 
 **You get:** $5 for signing up and making a payment of at least $5 within 14 days
