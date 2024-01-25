@@ -35,11 +35,26 @@ exports[`microformats should be parsable on the resume 1`] = `
           "Agile",
           "Scrum",
           "Java",
+          "Groovy",
           "Spring",
+          "Oracle SQL",
           "Automated Testing",
         ],
         "start": "2023-05",
-        "summary": "Full-stack development of ICD Portal investment platform.",
+        "summary": "Full-stack development of ICD Portal investment platform.
+
+						
+							
+								
+									Helped team revamp Agile processes and consulted on setup of Jira project management.
+								
+							
+								
+									Led migration of existing codebase to TypeScript.
+								
+							
+								
+									Created web app to view automation testing result logs.",
         "type": "event",
       },
       {
@@ -734,9 +749,7 @@ exports[`microformats should have an h-card on the homepage 1`] = `
       "children": [
         "Changing content removed",
       ],
-      "name": "Latest Posts
-
-See All",
+      "name": "Latest Posts",
       "type": "feed",
     },
   ],
