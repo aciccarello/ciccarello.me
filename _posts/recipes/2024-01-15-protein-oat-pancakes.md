@@ -8,7 +8,7 @@ image_alt: "Plate of pancakes with peanut butter and syrup"
 canonical_url: https://www.bbcgoodfood.com/recipes/easy-protein-pancakes
 ---
 
-We were looking for a higher protein breakfast that didn't just taste like eggs and found this recipe from [bbcgoodfood.com](https://www.bbcgoodfood.com/recipes/easy-protein-pancakes).
+We were looking for a higher protein breakfast that didn't just taste like eggs and found this recipe from [bbcgoodfood.com](https://www.bbcgoodfood.com/recipes/easy-protein-pancakes){.u-remix-of}.
 
 We would like to try adding another scoop of protein powder to increase the protein content more but might need to adjust for consistency.
 Some other recipes we've looked at also added greek yogurt which would be interesting to try.
@@ -17,7 +17,8 @@ Some other recipes we've looked at also added greek yogurt which would be intere
 
 - Prep Time: 15 minutes
 - Cook Time: 15 minutes
-- Servings: 2 (about 8 4-inch pancakes)
+- Total Time: <time class="duration dt-duration" datetime="30M"><span class="value-title" title="PT30M"> </span>30 minutes</time>
+- Servings: <span class="p-yield">2</span> (about 8 4-inch pancakes)
 
 {% recipe-cooklang %}
 
