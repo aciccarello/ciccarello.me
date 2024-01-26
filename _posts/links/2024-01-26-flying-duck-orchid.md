@@ -15,7 +15,7 @@ references:
       name: ambikab
       photo: ""
     photo:
-      value: https://www.inaturalist.org/photos/57559055?size=small
+      value: https://inaturalist-open-data.s3.amazonaws.com/photos/57559055/medium.jpg
       alt: Orchid flower who's petals look like a duck in flight, wings back like it
         is about to land on a pond.
 tags:
