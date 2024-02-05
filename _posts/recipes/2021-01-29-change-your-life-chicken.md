@@ -1,13 +1,13 @@
 ---
 title: 'Change Your Life Chicken'
 date: 2021-01-29
-canonical_url: https://www.thelazygeniuscollective.com/blog/change-your-life-chicken
+canonical_url: https://www.thelazygeniuscollective.com/cylc
 tags: ['chicken', 'dinner']
 image: /assets/img/change-your-life-chicken.jpg
 image_alt: Chopped vegetables on a baking sheet with pieces of chicken on top
 ---
 
-A friend shared this recipe with an over the top title, but we've made it several times now and we love it. The key is cooking the skin-on chicken on top of vegetables is a delicious combination of flavors. It's a decent amount of prep to cut the vegetables but it cooks in a single pan making cleaning easier. You can check out the original at <a rel="canonical" href="https://www.thelazygeniuscollective.com/blog/change-your-life-chicken">The Lazy Genius Collective</a>.
+A friend shared this recipe with an over the top title, but we've made it several times now and we love it. The key is cooking the skin-on chicken on top of vegetables is a delicious combination of flavors. It's a decent amount of prep to cut the vegetables but it cooks in a single pan making cleaning easier. You can check out the original at <a rel="canonical" href="https://www.thelazygeniuscollective.com/cylc">The Lazy Genius Collective</a>.
 
 ## Summary
 
