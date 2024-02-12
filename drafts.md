@@ -22,5 +22,4 @@ However, I do intend to post these when they are ready.
 
 ### Recipes
 
-- [Bean dip](./bean-dip/)
 - [Breakfast Bake](./breakfast-bake/)
