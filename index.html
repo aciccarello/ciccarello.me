@@ -12,6 +12,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 		<div class="introduction-text">
 			<h1>Hi, I'm
                 <a href="https://www.ciccarello.me/ " class="p-name u-url disable-link-styles" rel="me">Anthony Ciccarello</a>!
+				<button id="pronounce-name-button" aria-label="Pronounce name" title="Pronounce 'Anthony Ciccarello'" style="display: none;">🔈</button>
             </h1>
 			<p class="p-note">
 				{{ site.description}}
@@ -193,3 +194,19 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 		</div>
 	</section>
 </span>
+
+<script>
+if (window.SpeechSynthesisUtterance) {
+	const speakButton = document.getElementById('pronounce-name-button');
+	speakButton.addEventListener('click', speakName);
+	speakButton.style.display = 'inline-block';
+}
+
+function speakName() {
+	var utterance = new SpeechSynthesisUtterance();
+	utterance.text = 'Anthony Chicka-rello';
+	utterance.lang = 'en-US';
+	utterance.rate = 0.75;
+	speechSynthesis.speak(utterance)
+}
+</script>

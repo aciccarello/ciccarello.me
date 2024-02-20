@@ -18,6 +18,17 @@
 	margin: 1rem;
 }
 
+#pronounce-name-button {
+	all: unset;
+	cursor: help;
+	margin-inline: 0.5rem;
+}
+
+#pronounce-name-button:focus {
+	/* Don't override focus styles so users can see it's focused */
+	outline: auto;
+}
+
 .profiles {
 	display: flex;
 	flex-wrap: wrap;
