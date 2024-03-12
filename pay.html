@@ -54,6 +54,7 @@ excludeFromSitemap: true
 	Wise (<a href="https://wise.com/invite/spu/anthonyjosephc6">anthony@ciccarello.me</a>)
 	<p>
 	  International payments
+	  <a href="https://wise.com/invite/dic/anthonyjosephc6">Referral code</a>
 	</p>
 	</li>
 </ol>
@@ -71,9 +72,5 @@ excludeFromSitemap: true
 		document
 			.querySelectorAll('a[href*="paypal.me"]')
 			.forEach((paypalLink) => paypalLink.href = paypalLink.href + `/${amount}`);
-		// Honestly don't think this works ¯\_(ツ)_/¯
-		document
-			.querySelectorAll('a[href*="gpay.app.goo.gl"]')
-			.forEach((gpayLink) => gpayLink.href = gpayLink.href + `?am=${amount}`);
 	}
 </script>

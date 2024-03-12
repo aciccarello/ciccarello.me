@@ -36,27 +36,13 @@ A couple apps I use daily have a free premium bonus (for me) if someone else joi
 
 These financial accounts have cash incentives for joining under my referral link.
 
-### Ally Bank
+### Wise
 
-**You get:** $125 for opening a high-yield savings account by March 1, 2024
+**You get:** A fee-free transfer up to $600 when they sign up with your link.
 
-**I get:** $50
+**I get:** $115 when 3 friends sed over $300 in one go. (Same currency transactions don’t apply.)
 
-[Enroll](https://www.ally.com/referral?code=8C5B3C3X7Q)
-
-### Venmo
-
-**You get:** $5 for signing up and making a payment of at least $5 within 14 days
-
-**I get:** $5
-
-[Sign Up](https://payp.al/ref) _(For family, friends, and acquaintances only per [terms](https://help.venmo.com/hc/en-us/articles/360062742273))_
-
-### Google pay
-
-Check out Google Pay, a simple and secure payments app by Google.
-
-[Sign Up](https://g.co/payinvite/mn0q55y) (mobile only)
+[Sign Up](https://wise.com/invite/dic/anthonyjosephc6)
 
 ## Transportation and Delivery Apps
 
