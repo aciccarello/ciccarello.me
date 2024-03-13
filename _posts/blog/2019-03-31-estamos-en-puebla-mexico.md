@@ -5,6 +5,8 @@ tags: travel
 image: /assets/img/puebla-baroque-museum-sign.jpg
 image_alt: Colorful letters mounted to the ground spelling puebla with a white museum in the background with tall, white, curving walls
 image_caption: Photo from our trip to [The International Baroque Museum](http://mib.puebla.gob.mx/en/)
+syndication:
+  - https://medium.com/@aciccarello/estamos-en-puebla-m%C3%A9xico-d2171d70abd4
 ---
 
 Back in February, my wife Bekah and I packed up our things and left the United

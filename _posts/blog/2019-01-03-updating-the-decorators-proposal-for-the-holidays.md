@@ -6,6 +6,8 @@ canonical_url: https://www.sitepen.com/blog/2019/01/03/updating-the-decorators-p
 image: /assets/img/decorators-package-thumbnail.png
 image_alt: wrapped christmas gift
 image_caption: _Photo by Annie Spratt on  Unsplash_
+syndication:
+  - https://medium.com/@aciccarello/updating-the-decorators-proposal-for-the-holidays-7d67eb823022
 ---
 
 The [Ecma TC39 committee](https://github.com/tc39), which standardizes the

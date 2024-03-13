@@ -6,6 +6,8 @@ permalink: '/blog/2016/11/16/migrating-angular-1-to-types/'
 image: /assets/img/angular-1-types-thumbnail.jpg
 image_alt: peacock
 image_caption: Photo by [Andre Mouton](https://unsplash.com/@andremouton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+syndication:
+  - https://medium.com/@aciccarello/migrating-an-angular-1-application-to-types-450731dd0df
 ---
 
 I upgraded an application at work to use @types instead of Typings today.

@@ -4,6 +4,8 @@ date: 2018-09-25
 tags: technology
 image: /assets/img/imac-dark-mode-thumbnail.jpg
 image_alt: Mac computer with dark desktop theme
+syndication:
+  - https://medium.com/@aciccarello/automate-mojave-dark-mode-configuration-79d005c49f2
 ---
 
 If you like to [automate your macOS configuration](https://kalis.me/dotfiles-automating-macos-system-configuration/) via bash scripts and have recently

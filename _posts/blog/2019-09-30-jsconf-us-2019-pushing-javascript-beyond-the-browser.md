@@ -6,6 +6,8 @@ canonical_url: https://www.sitepen.com/blog/jsconf-us-2019-pushing-javascript-be
 tags: technology
 image: /assets/img/2019-jsconf-header.png
 image_alt: JS Conf logo with text August 12-14, 2019 Carlsbad, CA
+syndication:
+  - https://medium.com/@aciccarello/jsconf-us-2010-pushing-javascript-beyond-the-browser-4448e1d0f584
 ---
 
 This year I was able to attend JSConf US 2019 as a representative of SitePen. It was a very fun conference where people showed off the cool things they were building with JavaScript. There was a workshop day where I was able to program a microcontroller running Node. There were also inspiring talks showing how people in the community are affecting positive change both with technological projects and community organizing.

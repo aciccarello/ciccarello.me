@@ -7,6 +7,8 @@ tags: [travel, Senegal, Liberia]
 image: /assets/img/senegal-african-renaissance-monument.jpg
 image_alt: large monument of a woman and a man holding a small child with people on steps leading up to the monument
 image_caption: African Resistance Monument was visble from the tarmac - [Photo by Balou46](https://commons.wikimedia.org/wiki/File:SN-dakar-renaiss-monum-2.jpg) [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+syndication:
+  - https://medium.com/@aciccarello/getting-an-introduction-to-africa-91d11e5914e7
 ---
 
 The past two days have destroyed my sense of time. Between changing time zones

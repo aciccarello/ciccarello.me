@@ -5,6 +5,8 @@ tags: [personal]
 image: /assets/img/2018-grand-tetons.jpg
 image_alt: Man with backpack looking at three mountain peaks with green landscape in front
 image_caption: Me looking back a the mountains of Grand Teton National Park
+syndication:
+  - https://medium.com/@aciccarello/what-i-am-grateful-for-from-2018-f33978d18cbb
 ---
 
 Looking back, the past year has been filled with transition. My wife and I

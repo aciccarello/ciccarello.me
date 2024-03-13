@@ -5,6 +5,8 @@ tags: christianity
 image: /assets/img/church-against-starry-night-thumbnail.jpg
 image_alt: church against starry night
 image_caption: Photo by [Sergio Souza](https://unsplash.com/photos/hs_B4Cs9oUQ) on [Unsplash](https://unsplash.com/)
+syndication:
+  - https://medium.com/@aciccarello/are-our-churches-too-siloed-b6f80f5904c9
 ---
 
 With the 500th anniversary of the beginning of the Reformation coming up, it

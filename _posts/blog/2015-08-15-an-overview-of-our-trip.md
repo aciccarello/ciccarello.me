@@ -7,6 +7,8 @@ image: /assets/img/liberia-mt-nimba-mining-lake.jpg
 image_alt: green hils enclosing a small lake with people walking a ways away
 image_caption: Blue Lake on Mt. Nimba, Liberia -- former mining site
 todo: fix thumbnail image
+syndication:
+  - https://medium.com/@aciccarello/an-overview-of-our-trip-2e3a801d3916
 ---
 
 For those of you who had checked our blog while we were in Liberia, I'd like

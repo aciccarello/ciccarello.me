@@ -5,6 +5,8 @@ tags: [travel, birding]
 image: /assets/img/peru-ballestas-islands-rock-face.jpg
 image_alt: Rock face with thousands of birds on the Ballestas Islands
 image_caption: Rock face with thousands of birds on the Ballestas Islands
+syndication:
+  - https://medium.com/@aciccarello/birding-in-peru-a91b51b1e03b
 ---
 
 When my wife and I arrived in Peru, I didn't know that I would eventually
