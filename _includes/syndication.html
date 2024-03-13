@@ -4,14 +4,14 @@
 	{%- if foreloop.index0 > 0 %}, {% endif -%}
 	<a rel="syndication" class="u-syndication" href="{{url}}">
 		{%- assign segments = url | split: '/' %}
-		{%- for segment in segments -%}
-			{%- assign dotSplit = segment | split: '.' -%}
+		{%- for segment in segments %}
+			{%- assign dotSplit = segment | split: '.' %}
 			{%- if dotSplit.size > 1 -%}
 				{{segment}}
-				{% break %}
-			{%- endif -%}
+				{%- break %}
+			{%- endif %}
 		{%- endfor -%}
-	</a>
+	</a>&nbsp;
 	{%- endfor -%}
 </small></p>
 {%- endif %}
