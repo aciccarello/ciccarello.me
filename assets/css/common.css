@@ -736,21 +736,6 @@ a.disable-link-styles {
 	margin: 0;
 }
 
-.post-thumbnail--wrapper {
-	padding-top: 56.25%;
-	position: relative;
-}
-
-.post-thumbnail--wrapper > img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	max-width: 100%;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
 figure.post-img--float,
 figure.post-img--float-right {
 	width: 50%;

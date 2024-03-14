@@ -1,15 +1,13 @@
 {% if image %}
 	<figure class="card__media post-thumbnail">
-		<div class="post-thumbnail--wrapper">
-			{%- assign filetype = image | split: "." | last %}
-			{%- if filetype == 'mp4' %}
-				<video autoplay loop class="{% if layout == 'photo' %}u-video {% endif %}" aria-label="{{ image_alt | escape }}">
-					<source type="video/mp4" src="{{ image }}">
-				</video>
-			{%- else %}
-				<img src="{{ image }}" alt="{{ image_alt | escape }}" class="{% if layout == 'photo' or layout == 'recipe' %}u-photo photo {% endif %}u-featured"/>
-			{%- endif %}
-		</div>
+		{%- assign filetype = image | split: "." | last %}
+		{%- if filetype == 'mp4' %}
+			<video autoplay loop class="{% if layout == 'photo' %}u-video {% endif %}" aria-label="{{ image_alt | escape }}">
+				<source type="video/mp4" src="{{ image }}">
+			</video>
+		{%- else %}
+			<img src="{{ image }}" alt="{{ image_alt | escape }}" class="{% if layout == 'photo' or layout == 'recipe' %}u-photo photo {% endif %}u-featured"/>
+		{%- endif %}
 		{%- if image_caption %}
 			<figcaption>
 				{{ image_caption | markdownify }}
