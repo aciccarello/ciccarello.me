@@ -8,6 +8,7 @@ tags:
  - birding
 syndication:
  - https://www.instagram.com/p/B8DT5udFxgK/
+ - https://twitter.com/ajciccarello/status/1223834655146704896
 ---
 
 Saw one of these Yellow-rumped Warblers today (yes the do really have yellow backsides). I love the variations in coloring they have. They look different depending on where in North America they are.

@@ -8,6 +8,7 @@ tags:
  - Mexico
 syndication:
  - https://www.instagram.com/p/BvqdNekhoPM/
+ - https://twitter.com/ajciccarello/status/1112247280642342915
 ---
 
-Stages of Talavera
+Stages of Talavera pottery 

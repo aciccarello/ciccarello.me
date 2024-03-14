@@ -9,6 +9,7 @@ image: /assets/img/instagram_52039527_1200758096750632_6751985262596073425_n_180
 image_alt: "Narrow path of market stalls selling postcards, bags, plates, and touristy souvenirs"
 syndication:
  - https://www.instagram.com/p/BuANL76h0dS/
+ - https://twitter.com/ajciccarello/status/1097297848935211008
 ---
 
 This weekend we were able to enjoy walking around the beautiful downtown of [@pueblatravel](https://www.instagram.com/pueblatravel/). It was fun playing the tourist and checking out this artist market as well as visiting some of the bigger cathedrals.

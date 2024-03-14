@@ -9,6 +9,7 @@ tags:
  - ruins
 syndication:
  - https://www.instagram.com/p/B2ekq6QAfJf/
+ - https://twitter.com/ajciccarello/status/1173626509598298119
 ---
 
 I took some time to [write about Peru](/blog/2019/06/18/birding-in-peru/) this weekend. It has been fun to think about all the cool places we were able to see. Hoping to share some stories soon.

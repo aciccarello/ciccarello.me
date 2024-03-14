@@ -10,6 +10,7 @@ tags:
  - animation
 syndication:
  - https://www.instagram.com/p/Bw5F5D_AHVs/
+ - https://twitter.com/ajciccarello/status/1123353594042966016
 ---
 
 This [@team_ebird](https://www.instagram.com/team_ebird/) animation of Sandhill Crane migrations illustrates the dramatic movements of populations over the course of the year.

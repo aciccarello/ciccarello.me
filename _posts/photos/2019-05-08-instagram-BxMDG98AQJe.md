@@ -8,6 +8,7 @@ tags:
  - travel
 syndication:
  - https://www.instagram.com/p/BxMDG98AQJe/
+ - https://twitter.com/ajciccarello/status/1125984176786870272
 ---
 
 One of the best parts of our trip has been meeting up with friends and getting to see their corner of the world.

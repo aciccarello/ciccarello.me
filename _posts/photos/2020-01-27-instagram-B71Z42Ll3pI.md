@@ -7,6 +7,7 @@ tags:
  - birds
 syndication:
  - https://www.instagram.com/p/B71Z42Ll3pI/
+ - https://twitter.com/ajciccarello/status/1221897702939615232
 ---
 
 I had fun messing around with our camera this weekend and snapped this pic of a female hummingbird in flight. 😁🐥🌹

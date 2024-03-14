@@ -9,6 +9,7 @@ tags:
  - ruins
 syndication:
  - https://www.instagram.com/p/B8XLfhsgAHr/
+ - https://twitter.com/ajciccarello/status/1226650501686497280
 ---
 
 Four months ago [@bekahbugs](https://www.instagram.com/bekahbugs/) and I visited Rome and made a whirlwind tour of the biggest sights. The art and architecture were breathtaking. There is a mix of modern and historic across the city making it a fun place to travel through.

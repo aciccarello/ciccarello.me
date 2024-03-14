@@ -9,6 +9,7 @@ tags:
  - architecture
 syndication:
  - https://www.instagram.com/p/B0Z99zJgYR-/
+ - https://twitter.com/ajciccarello/status/1154963952742178816
 ---
 
 The Catholic churches in Antigua were all beautifully decorated and with yellow and white like this. They often were near more open spaces where people would spill out after mass and where vendors would be selling street food.

@@ -10,6 +10,7 @@ tags:
  - nature
 syndication:
  - https://www.instagram.com/p/BvSGTtBhT5C/
+ - https://twitter.com/ajciccarello/status/1108903351565975552
 ---
 
 This is a cool plant sometimes referred to as a "sensitive plant". It folds up when touched perhaps has a way to avoid being eaten. I remember seeing some back in Liberia. Apparently they are native in tropical parts of the Americas.

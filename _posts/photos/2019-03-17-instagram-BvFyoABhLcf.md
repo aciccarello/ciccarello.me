@@ -9,6 +9,7 @@ tags:
   - Mexico
 syndication:
  - https://www.instagram.com/p/BvFyoABhLcf/
+ - https://twitter.com/ajciccarello/status/1107088512233267200
 ---
 
 Mexico's plant game is strong 🌵🌵🌵

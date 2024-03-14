@@ -9,6 +9,7 @@ image: /assets/img/instagram_66680520_402399000392525_7987801155309981354_n_1808
 image_alt: "Looking up at tropical trees around a patch of blue sky."
 syndication:
  - https://www.instagram.com/p/BzlnZ7Bgrol/
+ - https://twitter.com/ajciccarello/status/1147595686906494977
 ---
 
 Hello [#costarica](/posts/tags/costarica)🇨🇷

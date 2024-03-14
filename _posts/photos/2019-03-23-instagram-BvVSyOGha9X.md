@@ -8,6 +8,7 @@ tags:
  - Mexico
 syndication:
  - https://www.instagram.com/p/BvVSyOGha9X/
+ - https://twitter.com/ajciccarello/status/1109269198050607104
 ---
 
 Avenida Independencia in Atlixco on Benito Juarez Day

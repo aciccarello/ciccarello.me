@@ -10,6 +10,7 @@ tags:
  - ruins
 syndication:
  - https://www.instagram.com/p/Bxk0qBPjMcp/
+ - https://twitter.com/ajciccarello/status/1129472922056384513
 ---
 
 Stonework

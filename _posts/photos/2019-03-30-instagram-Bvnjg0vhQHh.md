@@ -9,6 +9,7 @@ tags:
  - inspiration
 syndication:
  - https://www.instagram.com/p/Bvnjg0vhQHh/
+ - https://twitter.com/ajciccarello/status/1111803208555331584
 ---
 
 It's comforting to know that God won't disown us for having weak faith. If we remain in him he will continue to support us.

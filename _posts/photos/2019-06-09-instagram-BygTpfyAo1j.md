@@ -9,6 +9,7 @@ tags:
  - architecture
 syndication:
  - https://www.instagram.com/p/BygTpfyAo1j/
+ - https://twitter.com/ajciccarello/status/1137840755383394304
 ---
 
 México city seems so close yet so far.

@@ -7,6 +7,7 @@ tags:
  - dog
 syndication:
  - https://www.instagram.com/p/B66gqiKlKHG/
+ - https://twitter.com/ajciccarello/status/1213591184842600453
 ---
 
 My parent's dog may be hyper, but he looks at home out in the snow. 🐾

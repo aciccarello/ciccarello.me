@@ -9,6 +9,7 @@ image: /assets/img/instagram_66988524_2187068374749591_7485428715997724946_n_178
 image_alt: "Ferns and grass at the base of a wall that vines are climbing."
 syndication:
  - https://www.instagram.com/p/B0Cd0DFA5wq/
+ - https://twitter.com/ajciccarello/status/1151656785842987010
 ---
 
 My plant loving soul really enjoys traveling around the tropics.

@@ -9,6 +9,7 @@ tags:
  - ruins
 syndication:
  - https://www.instagram.com/p/ByfJ0zfAL7i/
+ - https://twitter.com/ajciccarello/status/1137678555842830337
 ---
 
 Visiting Peru has been a wonderful mix of family, friends, culture, history, language, and nature. We were able to travel to several different parts of the country though there is much more to see. I'd love to come again. Thanks to my cousin [@wdevenney55](https://www.instagram.com/wdevenney55/) and his wife [@mayra_devenney](https://www.instagram.com/mayra_devenney/) for all their help!
