@@ -1,7 +1,9 @@
 ---
 title: 'Updating the Decorators Proposal for the Holidays'
 date: 2019-01-03
-tags: technology
+tags:
+  - technology
+  - TC39
 canonical_url: https://www.sitepen.com/blog/2019/01/03/updating-the-decorators-proposal-for-the-holidays/
 image: /assets/img/decorators-package-thumbnail.png
 image_alt: wrapped christmas gift

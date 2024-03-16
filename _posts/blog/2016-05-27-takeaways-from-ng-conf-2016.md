@@ -1,7 +1,9 @@
 ---
 title: 'Takeaways from ng-conf 2016'
 date: 2016-05-27
-tags: technology
+tags:
+  - technology
+  - ngconf
 image: /assets/img/ngconf-2016-attendees.jpg
 image_alt: crowd of people in a courtyard, arrow and label on picture saying 'that's me'
 todo: fix embeds
