@@ -16,12 +16,21 @@
 		<link rel="stylesheet" media="(not (prefers-color-scheme: dark))" href="{{ '/assets/css/highlight.css' | url }}">
 		<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="{{ '/assets/css/highlight-dark.css' | url }}">
 	{%- endif %}
+	{%- if page.url == "/foster/" %}
+	<link
+		type="application/atom+xml"
+		rel="alternate"
+		href="{{ '/posts/tags/foster%20care/feed.xml' | addBaseUrl }}"
+		title="Anthony Ciccarello Foster Care"
+	/>
+	{%- else %}
 	<link
 		type="application/atom+xml"
 		rel="alternate"
 		href="{{ '/feed.xml' | addBaseUrl }}"
 		title="Anthony Ciccarello"
 	/>
+	{%- endif %}
 	<link rel="webmention" href="https://webmention.io/www.ciccarello.me/webmention"/>
 	<link rel="pingback" href="https://webmention.io/www.ciccarello.me/xmlrpc"/>
 	{% if page.url == "/" %}
