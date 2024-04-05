@@ -367,7 +367,7 @@ pre {
 
 code {
 	font-family: var(--code-font, monospace);
-	font-size: .875rem;
+	font-size: 0.875rem;
 	padding: 1px 0.2em;
 }
 
@@ -813,7 +813,7 @@ blockquote {
 .post-header,
 .post-content,
 .post-footer {
-	margin: 0 2rem;
+	margin: 0 2rem 1.5rem;
 }
 
 .post-syndication,
