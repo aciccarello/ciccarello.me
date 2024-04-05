@@ -9,7 +9,6 @@ tags:
 image: /assets/img/pecan-tassies.jpg
 image_alt: Closeup of mini cupcake shaped pecan tatties
 excludeFromSitemap: true
-  
 ---
 
 Hoesterey family recipe from Betty Moran (friend of Bekah's Noonie)
@@ -45,7 +44,7 @@ Hoesterey family recipe from Betty Moran (friend of Bekah's Noonie)
 
 ## Filling Directions
 
-1. Preheat oven to 325°F (165°C)
+1. Preheat oven to {% recipe-temp 325 %}
 1. Beat eggs, sugar, butter, vanilla, & salt
 1. Device pecans into pastry cups
 1. Add egg mixture & top with remaining pecans

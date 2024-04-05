@@ -32,7 +32,7 @@ You can also adjust this for grilling by starting with a really hot grill before
 
 ## Directions
 
-1. Preheat the oven to 425 °F (220 °C).
+1. Preheat the oven to {% recipe-temp 425 %}.
 1. Prepare the meat by patting it dry and seasoning generously with salt and pepper (should have a noticeable layer).
 1. Add oil to a large oven-safe pan and heat on the stove on high.
 1. When the oil is hot, place the tri-tip in the pan and cook about 5 minutes per side (fatty side first). The oil should be sizzling and so you may want a splatter guard.

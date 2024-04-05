@@ -35,7 +35,7 @@ We've increased the proportions on the topper by 50% because who doesn't want mo
 
 {% recipe-directions %}
 
-1. Preheat oven to 375 °F (190 °C)
+1. Preheat oven to {% recipe-temp 375 %}
 1. Combine flour, oatmeal, brown sugar, cinnamon, ginger, and salt in a mixing bowl.
 1. Cut in butter and mix until the mixture forms large crumbs.
 1. In a separate bowl, combine apples, cinnamon, lemon juice, and granulated sugar and mix well.

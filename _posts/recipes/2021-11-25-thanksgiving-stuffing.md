@@ -37,7 +37,7 @@ A Ciccarello family thanksgiving favorite, this starts with a pre-made stuffing 
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1. Preheat oven to 350°F (175°C)
+1. Preheat oven to {% recipe-temp 350 %}
 1. Heat butter in a 4-quart saucepan over medium-high heat
 1. Add onion, apples, and celery and cook until tender but still crisp
 1. While the fruit and veggies cook, brown the sausage in a skillet

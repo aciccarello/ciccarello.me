@@ -23,7 +23,7 @@ My family loves to eat these Christmas eve. It's a simple recipe but the key is 
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1. Cook bacon until edges start to brown but is still under done. 10 minutes at 400 °F (205 °C) if done in oven.
+1. Cook bacon until edges start to brown but is still under done. 10 minutes at {% recipe-temp 400 %} if done in oven.
 1. Cut bacon strips in half and wrap around scallops securing with a toothpick
 1. Place on a pan and broil for 8 minutes or until scallops turn opaque
 {% endrecipe-directions %}

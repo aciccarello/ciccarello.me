@@ -34,7 +34,7 @@ We had fun with this pizza recipe from the [Half Baked Harvest Super Simple Cook
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1.  Preheat the oven to 450°F. Grease a baking sheet.
+1.  Preheat the oven to {% recipe-temp 450 %}. Grease a baking sheet.
 1.  Heat the 1 tablespoon of olive oil in a medium skillet over high heat. When the oil shimmers, add the shallots and cook until fragrant, 2 to 3 minutes. Remove the skillet from the heat.
 1.  On a lightly floured work surface, roll out the dough to a ¼-inch thickness.
 1.  Carefully transfer the dough to the prepared baking sheet.

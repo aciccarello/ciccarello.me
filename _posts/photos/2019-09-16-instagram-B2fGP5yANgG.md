@@ -7,4 +7,4 @@ syndication:
  - https://www.instagram.com/p/B2fGP5yANgG/
 ---
 
-I'm enjoying the raspberries we picked up in Oak Glenn for lunch today along with fresh cider. I'm pretending it's fall even though we still are topping 100 °F.
+I'm enjoying the raspberries we picked up in Oak Glenn for lunch today along with fresh cider. I'm pretending it's fall even though we still are topping {% recipe-temp 100 %}.

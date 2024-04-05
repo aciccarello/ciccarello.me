@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
 		let render = md.render('## Ingredients\n' + content);
 		render = render.replaceAll(
 			'<li>',
-			'<li class="p-ingredient ingredient">'
+			'<li class="p-ingredient ingredient">',
 		);
 		return render;
 	});
@@ -28,6 +28,16 @@ module.exports = function (eleventyConfig) {
 			.replace('<ol>', '<ol class="e-instructions instructions">')
 			.replaceAll('<li>', '<li class="p-instruction instruction">');
 		return render;
+	});
+	eleventyConfig.addShortcode('recipe-temp', (temp, accuracy = 5) => {
+		const tempF = Number(temp);
+		if (Number.isNaN(tempF)) {
+			throw new Error(`Recipe temp "${content}" not a number`);
+		}
+		let tempC = ((tempF - 32) * 5) / 9;
+		tempC = accuracy * Math.round(tempC / accuracy);
+
+		return `${tempF}°F (${tempC}°C)`;
 	});
 	eleventyConfig.addPairedShortcode('recipe-cooklang', (content) => {
 		let render = cooklangMd.render(`## Ingredients

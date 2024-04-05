@@ -37,7 +37,7 @@ This is a Hoesterey family recipe from Bekah's Nana. Bekah has made this the pas
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1. Preheat oven to 375°F (190°C)
+1. Preheat oven to {% recipe-temp 375 %}
 1. Melt butter & sugar; Add coca & set aside
 1. In a separate bowl, beat eggs before stirring in karo and salt
 1. Add to butter/sugar (if hot stir to avoid cooking the eggs)

@@ -12,10 +12,11 @@ syndication:
  - https://www.instagram.com/p/B9YeWurFGoh/
 ---
 
-We went camping in February!?! We stayed at Lake Skinner last weekend with some friends from church. Had lots of sun on Saturday, but we had our coldest day of the month when the weather shifted to cloudy, windy, and 50°F (10°C) on Sunday 😁
+We went camping in February!?! We stayed at Lake Skinner last weekend with some friends from church. Had lots of sun on Saturday, but we had our coldest day of the month when the weather shifted to cloudy, windy, and {% recipe-temp 50 %} on Sunday 😁
 Even though we stayed in a tent, we didn't suffer much with water and electricity at our site. We also ate real well cooking on the fire and the grill. I really appreciated the time outdoors.
 
 Birds pictured:
+
 - Allen's Hummingbird
 - Red-winged blackbird
 - Northern Harrier
