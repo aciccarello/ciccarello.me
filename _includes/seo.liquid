@@ -1,7 +1,7 @@
 {%- assign fullUrl = page.url | addBaseUrl -%}
 {%- assign finalTitle = title | default: responseData.plaintextSummary | default: defaultTitle | default : site.title -%}
 {%- if page.inputPath contains ".md" and collectionData -%}
-    {%- assign pageContent = collectionData.templateContent | joinLines | strip_html | truncate: 150 | escape -%}
+    {%- assign pageContent = collectionData.templateContent | joinLines | strip_html | truncate: 150 | escape | replace: '\\', '&bsol;' -%}
 {%- else -%}
     {%- assign pageContent = site.description | markdownify | joinLines | strip_html -%}
 {%- endif -%}
