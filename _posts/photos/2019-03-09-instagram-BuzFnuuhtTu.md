@@ -10,6 +10,7 @@ tags:
  - Spanish
 syndication:
  - https://www.instagram.com/p/BuzFnuuhtTu/
+ - https://twitter.com/ajciccarello/status/1104449249012412416
 ---
 
 I've picked up my pace on Duolingo the past few months and have now completed the second level of the Spanish tree. Having had regular exposure to simple sentences has definitely made it easier to learn the language now that we are in Mexico.
