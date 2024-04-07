@@ -8,7 +8,7 @@ layout: default
 			<figure class="card__media post-thumbnail">
 				{% assign filetype = image | split: "." | last -%}
 				{% if filetype == 'mp4' -%}
-					<video autoplay loop class="u-video post-img--wide" aria-label="{{ image_alt | escape }}">
+					<video autoplay muted controls loop class="u-video post-img--wide" aria-label="{{ image_alt | escape }}">
 						<source type="video/mp4" src="{{ image }}">
 					</video>
 				{% else -%}
