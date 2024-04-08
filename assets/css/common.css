@@ -729,7 +729,6 @@ a.disable-link-styles {
 .post img,
 .post video {
 	width: 100%;
-	max-width: 40rem;
 }
 
 .post-thumbnail {
