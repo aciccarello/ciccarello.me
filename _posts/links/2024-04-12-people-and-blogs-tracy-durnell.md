@@ -1,6 +1,6 @@
 ---
 date: 2024-04-12T19:20:42.132Z
-title: People and Blogs: Tracy Durnell
+title: "People and Blogs: Tracy Durnell"
 slug: people-and-blogs-tracy-durnell
 bookmark-of: https://manuelmoreale.com/pb-tracy-durnell
 tags:
