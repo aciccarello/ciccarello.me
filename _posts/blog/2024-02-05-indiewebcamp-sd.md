@@ -7,7 +7,7 @@ tags:
 image: /assets/img/2023-indiewebcamp-button.jpg
 image_alt: A closeup of a IndieWebCamp button resting on a computer keyboard.
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/www.ciccarello.me/blog/2024/02/05/indiewebcamp-san-diego-2023/
 ---
 
 I've been part of the IndieWeb community for a while, mostly via online meetups and a community chat group but I was excited to finally meet people in person when San Diego was chosen as a location for an IndieWebCamp at the end of 2023.
