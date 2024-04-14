@@ -797,22 +797,12 @@ blockquote {
 .post-header,
 .post-content,
 .post-footer {
-	margin: 0 2rem 1.5rem;
+	margin: 0 1rem 1.5rem;
 }
 
 .post-syndication,
 .post-updates {
 	margin: 1rem 2rem;
-}
-
-@media screen and (max-width: 45em) {
-	.post-header,
-	.post-content,
-	.post-syndication,
-	.post-updates {
-		margin-inline-start: 1rem;
-		margin-inline-end: 1rem;
-	}
 }
 
 .post-suggestions {
@@ -923,42 +913,43 @@ blockquote {
 	background-color: var(--color-base-muted);
 }
 
-.author-card {
+.author-description {
 	padding: 0;
+	margin: 5rem auto;
 }
 
-.author-card__primary-action {
+.author-description__primary-action {
 	display: flex;
 	flex-direction: row;
 	margin: 1rem;
 }
 
-.author-card__media {
+.author-description__media {
 	height: 3rem;
 	width: 3rem;
 	margin-right: 1rem;
 }
 
-.author-card__media::before {
+.author-description__media::before {
 	/* hide material :before style which takes up space */
 	display: none;
 }
 
-.author-card__media img {
+.author-description__media img {
 	width: 100%;
 	border-radius: 50%;
 }
 
-.author-card__title {
+.author-description__title {
 	margin: 0;
 }
 
-.author-card__subtitle {
+.author-description__subtitle {
 	margin: 0;
 	color: var(--color-text-secondary-on-background);
 }
 
-.author-card__content {
+.author-description__content {
 	margin: 0 1rem;
 }
 
@@ -1047,7 +1038,7 @@ blockquote {
 
 	/* Specificity fix to avoid the above padding changes */
 	.post.container,
-	.post.author-card {
+	.post.author-description {
 		padding: 0;
 	}
 
