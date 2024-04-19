@@ -35,6 +35,7 @@ module.exports = function (eleventyConfig) {
 		notes: '_posts/notes/*.md',
 		photos: '_posts/photos/*.md',
 		links: '_posts/{links,replies}/*.md',
+		reviews: '_posts/reviews/*.md',
 		posts: '_posts/**/*.md',
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>

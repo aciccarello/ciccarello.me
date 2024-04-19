@@ -779,6 +779,11 @@ figcaption {
 	margin: auto;
 }
 
+.review-context {
+	margin: 1rem;
+	padding: 1rem;
+}
+
 .reply-context {
 	margin: 0 2rem 1rem;
 	font-style: italic;

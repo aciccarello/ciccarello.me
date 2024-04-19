@@ -1,0 +1,6 @@
+{
+  "layout": "article",
+  "type": "review",
+  "dateFormat": "day",
+  "excludeFromMainFeed": true
+}
