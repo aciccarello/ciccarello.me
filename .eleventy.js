@@ -108,6 +108,9 @@ module.exports = function (eleventyConfig) {
 			// See https://github.com/remy/wm/issues/62
 			.replace(/u-url/gm, ''),
 	);
+	eleventyConfig.addFilter('extractDomain', (content) =>
+		content.split('/').find((segment) => segment.includes('.')),
+	);
 
 	eleventyConfig.addPlugin(require('./_build/date'));
 	eleventyConfig.addPlugin(require('./_build/markdown'));
