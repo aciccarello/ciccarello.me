@@ -1,5 +1,5 @@
 ---
-date: 2024-04-23T19:28:00 UTC
+date: 2024-04-23T19:28:00Z
 tags:
   - jam
 slug: jam-hey-ocean
