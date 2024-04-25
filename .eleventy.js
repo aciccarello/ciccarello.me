@@ -90,7 +90,7 @@ module.exports = function (eleventyConfig) {
 		if (value.startsWith('http')) {
 			return value;
 		}
-		return 'https://www.ciccarello.me' + value;
+		return 'https://dev.ciccarello.me' + value;
 	});
 	eleventyConfig.addFilter('joinLines', (value) =>
 		value.replace(/\n/gm, ' '),
