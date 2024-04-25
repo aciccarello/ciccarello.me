@@ -1,0 +1,26 @@
+---
+title: Reviews
+layout: default
+back_button: "/posts"
+---
+
+
+<div class="container h-feed">
+	<h1 class="post-list-heading p-name">
+		{{ page.list_title | default: "Reviews" }}
+	</h1>
+	<p>
+		My personal collection of reviews and recommendations.
+	</p>
+	<p>
+        This page is a WIP. See <a href="./san-diego/">San Diego Recommendations</a> for an existing list.
+	</p>
+	<ol class="post-list">
+		{%- for post in collections.reviews -%}
+		<li>
+			{% include "post-card.html" post: post %}
+		</li>
+		{%- endfor -%}
+	</ol>
+
+</div>

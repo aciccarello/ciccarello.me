@@ -5,30 +5,23 @@
 		<p id="webmentionsPlaceholder">&nbsp;</p>
 	</div>
 	<details>
-		<summary>See how responses are collected...</summary>
-		<h3>Respond from another site</h3>
-		<p>
-			Responses are collected from posts on other sites. Have you posted
-			somewhere that links to this page? If so, share the link!
-		</p>
-		<form
-			id="manual-webmention"
-			action="https://webmention.io/dev.ciccarello.me/webmention"
-			method="post"
-		>
-			<input type="url" name="source" placeholder="https://www.example.com/post-name" aria-label="URL"/>
-			<input type="hidden" name="target" value="{{fullUrl}}"/>
-			<input type="submit" name="submit" value="Share link"/>
-		</form>
+		<summary>See how to respond...</summary>
 		<div class="details-wrapper">
 			<section class="comment-details">
-				<h3>Comment using Comment Parade</h3>
+				<h3>Respond from another site</h3>
 				<p>
-					You can also use
-					<a href="https://commentpara.de/">Comment Parade</a> to
-					create a guest post via
-					<a href="https://quill.p3k.io/">Quill</a>.
+					Responses are collected from posts on other sites. Have you posted
+					somewhere that links to this page? If so, share the link!
 				</p>
+				<form
+					id="manual-webmention"
+					action="https://webmention.io/www.ciccarello.me/webmention"
+					method="post"
+				>
+					<input type="url" name="source" placeholder="https://www.example.com/post-name" aria-label="URL"/>
+					<input type="hidden" name="target" value="{{fullUrl}}"/>
+					<input type="submit" name="submit" value="Share link"/>
+				</form>
 			</section>
 			<section class="comment-details">
 				<h3>Respond via email</h3>
@@ -37,28 +30,21 @@
 					you'd also like your message to be visible on the site I can
 					add it as a comment.
 				</p>
+				{%- assign replySubjectPageTitle = title | default : defaultTitle |
+				default: "A page on your site" %}
+				{%- assign replySubject = "RE: " |
+				concat: replySubjectPageTitle | concat: " on ciccarello.me" | url_encode
+				%}
+				{%- assign replyBody = "In response to: " | concat: fullUrl |
+				url_encode %}
+				<a
+					href="mailto:anthony@ciccarello.me?subject={{replySubject}}&body={{replyBody}}"
+					class="btn-link mention-action"
+					>Reply via Email</a
+				>
 			</section>
 		</div>
 	</details>
-	<div class="form form-inline">
-		<a
-			class="btn-link mention-action"
-			href="https://quill.p3k.io/?dontask=1&me=https://commentpara.de/&reply={{fullUrl}}"
-			>Comment</a
-		>
-		{%- assign replySubjectPageTitle = title | default : defaultTitle |
-		default: "A page on your site" %}
-		{%- assign replySubject = "RE: " |
-		concat: replySubjectPageTitle | concat: " on ciccarello.me" | url_encode
-		%}
-		{%- assign replyBody = "In response to: " | concat: fullUrl |
-		url_encode %}
-		<a
-			href="mailto:anthony@ciccarello.me?subject={{replySubject}}&body={{replyBody}}"
-			class="btn-link mention-action"
-			>Reply via Email</a
-		>
-	</div>
 	<link rel="stylesheet" href="/assets/css/webmention.css"/>
 	<script
 		src="/assets/js/webmention.js"

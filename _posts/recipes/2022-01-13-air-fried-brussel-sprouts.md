@@ -28,8 +28,8 @@ We got an air fryer for christmas and this was one of the first meals we made. I
 
 {% recipe-directions %}
 
-1. Halve about 2 cups of  Brussels sprouts
+1. Halve about 2 cups of Brussels sprouts
 2. Toss in a bowl with oil salt and pepper to coat
-3. Air fry for 15 minutes at 350 °F (175 °C) stirring every 5 minutes
+3. Air fry for 15 minutes at {% recipe-temp 350 %} stirring every 5 minutes
 4. Serve and top with balsamic vinegar glaze
    {% endrecipe-directions %}

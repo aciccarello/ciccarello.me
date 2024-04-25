@@ -35,6 +35,7 @@ module.exports = function (eleventyConfig) {
 		notes: '_posts/notes/*.md',
 		photos: '_posts/photos/*.md',
 		links: '_posts/{links,replies}/*.md',
+		reviews: '_posts/reviews/*.md',
 		posts: '_posts/**/*.md',
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>
@@ -107,6 +108,9 @@ module.exports = function (eleventyConfig) {
 			// Would also strip from text from feed but should be rare
 			// See https://github.com/remy/wm/issues/62
 			.replace(/u-url/gm, ''),
+	);
+	eleventyConfig.addFilter('extractDomain', (content) =>
+		content.split('/').find((segment) => segment.includes('.')),
 	);
 
 	eleventyConfig.addPlugin(require('./_build/date'));

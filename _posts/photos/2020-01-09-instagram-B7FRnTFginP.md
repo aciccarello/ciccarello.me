@@ -7,6 +7,7 @@ tags:
  - ocean
 syndication:
  - https://www.instagram.com/p/B7FRnTFginP/
+ - https://twitter.com/ajciccarello/status/1215101208848781312
 ---
 
 I really enjoyed being back in Connecticut with my family this Christmas. So many memories old and new.

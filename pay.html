@@ -48,22 +48,13 @@ excludeFromSitemap: true
 		Paypal (<a href="https://paypal.me/ajciccarello">@ajciccarello</a>)
   </li>
 	<li>
-		<a href="https://gpay.app.goo.gl/pay-moUq8zPwoVf" tabindex="-1" aria-hidden="true">
-			<img src="/assets/img/icon-google-pay.svg" alt="" class="provider-icon"/>
-		</a>
-	Google Pay (<a href="https://gpay.app.goo.gl/pay-moUq8zPwoVf">anthony@ciccarello.me</a>)
-	<p>
-	  Mobile Only.
-	  <a href="https://pay.google.com/about/">Learn More</a>
-		</p>
-	</li>
-	<li>
 		<a href="https://wise.com/invite/spu/anthonyjosephc6" tabindex="-1" aria-hidden="true">
 			<img src="/assets/img/icon-wise.png" alt="" class="provider-icon"/>
 		</a>
 	Wise (<a href="https://wise.com/invite/spu/anthonyjosephc6">anthony@ciccarello.me</a>)
 	<p>
 	  International payments
+	  <a href="https://wise.com/invite/dic/anthonyjosephc6">Referral code</a>
 	</p>
 	</li>
 </ol>
@@ -81,9 +72,5 @@ excludeFromSitemap: true
 		document
 			.querySelectorAll('a[href*="paypal.me"]')
 			.forEach((paypalLink) => paypalLink.href = paypalLink.href + `/${amount}`);
-		// Honestly don't think this works ¯\_(ツ)_/¯
-		document
-			.querySelectorAll('a[href*="gpay.app.goo.gl"]')
-			.forEach((gpayLink) => gpayLink.href = gpayLink.href + `?am=${amount}`);
 	}
 </script>

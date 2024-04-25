@@ -1,10 +1,14 @@
 ---
 title: 'Takeaways from ng-conf 2016'
 date: 2016-05-27
-tags: technology
+tags:
+  - technology
+  - ngconf
 image: /assets/img/ngconf-2016-attendees.jpg
 image_alt: crowd of people in a courtyard, arrow and label on picture saying 'that's me'
 todo: fix embeds
+syndication:
+  - https://medium.com/@aciccarello/takeaways-from-ng-conf-2016-61a2225b286f
 ---
 
 I know it has already been three weeks since [ng-conf](https://www.ng-conf.org/#/) but I wanted to highlight my takeaways from the conference. This

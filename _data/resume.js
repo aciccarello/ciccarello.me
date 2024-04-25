@@ -23,7 +23,11 @@ const experience = [
 		location: 'Remote',
 		startDate: new Date('2023-05-08'),
 		summary: 'Full-stack development of ICD Portal investment platform.',
-		achievements: [],
+		achievements: [
+			'Helped team revamp Agile processes and consulted on setup of Jira project management.',
+			'Led migration of existing codebase to TypeScript.',
+			'Created web app to view automation testing result logs.',
+		],
 		skills: [
 			'React',
 			'JavaScript',
@@ -32,7 +36,9 @@ const experience = [
 			'Agile',
 			'Scrum',
 			'Java',
+			'Groovy',
 			'Spring',
+			'Oracle SQL',
 			'Automated Testing',
 		],
 	},

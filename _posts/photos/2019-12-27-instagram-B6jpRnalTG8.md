@@ -7,6 +7,7 @@ tags:
  - infographic
 syndication:
  - https://www.instagram.com/p/B6jpRnalTG8/
+ - https://twitter.com/ajciccarello/status/1210367020677685248
 ---
 
 In case you are wondering how to describe extended family relations, here's a diagram:

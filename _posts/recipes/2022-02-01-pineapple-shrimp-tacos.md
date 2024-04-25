@@ -38,7 +38,7 @@ A tasty recipe modified from the [Half Baked Harvest](https://www.halfbakedharve
 
 {% recipe-directions %}
 
-1. Preheat the oven to 425 °F (220 °C). 
+1. Preheat the oven to {% recipe-temp 425 %}.
 2. On a baking sheet, toss together the shrimp, pinapple, shallot, olive oil, garlic, chili powder, soy sauce, sriracha, and a pinch each of salt and pepper. Toss with 1 tablespoon olive oil. Transfer to the oven and roast 8-10 minutes or until the shrimp is cooked. Turn the oven to broil and broil for 1-2 minutes, until the pineapple has charred.
 3. Remove from the oven and toss the shrimp and pineapple together. Set aside.
 4. Toss together 3/4 cup cilantro, the corn, juice of 1 lime, and pinch of salt.

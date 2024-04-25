@@ -29,7 +29,7 @@ This recipe is great combined with [Pepper Seared Salmon](/recipes/2021/02/01/pe
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1. Preheat oven to 375 °F (190 °C)
+1. Preheat oven to {% recipe-temp 375 %}
 1. Butter the ramekins and set aside
 1. Cook the broccoli in a pot of boiling water till cooked (about 5 minutes)
 1. Drain and puree in a food processor until it forms a paste

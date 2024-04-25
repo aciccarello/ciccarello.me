@@ -9,6 +9,7 @@ tags:
   - Mexico
 syndication:
  - https://www.instagram.com/p/Bukv7y0Bfql/
+ - https://twitter.com/ajciccarello/status/1102437820080173056
 ---
 
 Gracias a nuestros nuevos amigos de Puebla por un día muy divertido.

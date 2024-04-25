@@ -28,11 +28,11 @@ This recipe is in metric because it was [inspired by one in "Nadia Bakes"](https
 - 1–2 tsp chilli flakes (optional, or adjust to your taste)
 - 5 boneless chicken thighs
 - 225g instant vermicelli noodles (5 nests)
-- a small handful of 	coriander, chopped
+- a small handful of coriander, chopped
 - 3 spring onions, thinly sliced
 - 1/2 cup shredded carrots
 - 1 large red chilli or other pepper, sliced
-- sesame seeds, black and white 
+- sesame seeds, black and white
 
 {% endrecipe-ingredients %}
 
@@ -41,7 +41,7 @@ This recipe is in metric because it was [inspired by one in "Nadia Bakes"](https
 1. Make the marinade by mixing the hot water and brown sugar in a medium roasting dish, stirring to allow the sugar to melt.
 1. Add the soy, ginger, garlic and chilli and mix well.
 1. Add the chicken and ideally leave to marinate for 30 minutes to a day.
-1. Preheat the oven to 425 °F (220 °C).
+1. Preheat the oven to {% recipe-temp 425 %}.
 1. Bake the chicken for 25 minutes, until cooked through.
 1. Remove the chicken pieces from roasting dish, leaving the marinade behind.
 1. Add the 5 nests of noodles, flipping them to coat in the liquid. If necessary, add up to another 300ml of hot water.

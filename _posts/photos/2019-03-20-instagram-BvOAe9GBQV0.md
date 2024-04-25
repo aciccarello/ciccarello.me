@@ -10,6 +10,7 @@ image: /assets/img/instagram_54211812_2038423299545283_6415855677684190468_n_179
 image_alt: "Greenhouse with colorful flowers."
 syndication:
  - https://www.instagram.com/p/BvOAe9GBQV0/
+ - https://twitter.com/ajciccarello/status/1108241933271355393
 ---
 
 Yesterday was a colorful day: meeting friends on the highway, exploring Atlixco, losing our keys, volcanic eruptions. I feel like we are doing a good job of keeping life from getting boring.

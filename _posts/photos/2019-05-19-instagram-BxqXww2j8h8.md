@@ -7,6 +7,7 @@ tags:
  - architecture
 syndication:
  - https://www.instagram.com/p/BxqXww2j8h8/
+ - https://twitter.com/ajciccarello/status/1130251038030794753
 ---
 
 Missing all my friends back in New England. Wish I could be there to celebrate with you all. [@sarahjoan20](https://www.instagram.com/sarahjoan20/) [@rachelmonahan_](https://www.instagram.com/rachelmonahan_/)

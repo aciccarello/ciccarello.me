@@ -16,13 +16,16 @@ However, I do intend to post these when they are ready.
 - [Birding in 2023](./birding-in-2023)
 - [Tag Moderation](./tag-moderation)
 - [Instagram Import](./instagram-import)
+- [Twitter Import](/blog/2024/04/07/twitter-import/)
 - [City vs Country](./city-vs-country)
 - [Web Framework Wishlist](./web-framework-wishlist)
 - [Planning Commission Meeting](./planning-commission)
 
 ### Recipes
 
-- [Rotisserie Chicken Bone Broth](/recipes/2021/10/19/rotisserie-chicken-bone-broth/)
-- [Bean dip](./bean-dip/)
+- [Tri-tip](./tri-tip/)
+- [Cauliflower and Leek Soup](/recipes/2022/12/17/cauliflower-and-leek-soup/)
+- [Greek Tomato Cucumber Salad](/recipes/2022/05/27/greek-tomato-cucumber-salad/)
+- [Coconut Curry Meatballs](/recipes/2021/05/21/coconut-curry-meatballs/)
 - [Breakfast Bake](./breakfast-bake/)
-- [Ramen Noodles](./ramen-noodles/)
+- [Chocolate Pecan Banana Bread](/recipes/2022/05/06/chocolate-pecan-banana-bread/)

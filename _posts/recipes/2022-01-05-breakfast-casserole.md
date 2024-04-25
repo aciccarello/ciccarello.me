@@ -32,5 +32,5 @@ This is the Hoesterey family breakfast bake. It's extra eggy and the green chili
 1. Alternate bread, cheese mixed, chilies, sausage, egg, and milk mixture in a 3-quart Glass Baking Dish (or 2 8"x8" dishes)
 1. ending with a topping of cheeses
 1. Let set 4 hours or overnight
-1. Bake at 325 °F (160 °C) for 55 minutes
+1. Bake at {% recipe-temp 325 %} for 55 minutes
 {% endrecipe-directions %}

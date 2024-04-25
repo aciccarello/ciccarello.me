@@ -12,11 +12,19 @@
 	display: block;
 }
 
-.christmas-enabled {
-	--color-background: #b5ecff;
-	--color-accent: #048a27; /* The theme secondary color. */
-	--color-accent-light: #36A152; /* The theme secondary color (light variant). */
-	--color-accent-dark: #02601B; /* The theme secondary color (dark variant). */
+:root:has(.christmas-enabled) {
+	--color-background: oklch(96% 0.025 221);
+	--color-accent:       oklch(45% 0.17 145);
+	--color-accent-light: oklch(63% 0.15 145);
+	--color-accent-dark:  oklch(35% 0.12 145);
+	--color-alternate-base: var(--color-accent);
+	--color-alternate-dark: var(--color-accent-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+	.christmas-enabled {
+		--color-background: oklch(19.6% 0.0359 221);
+	}
 }
 
 .christmas-enabled #snow-container {

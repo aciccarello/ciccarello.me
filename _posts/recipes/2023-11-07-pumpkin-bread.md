@@ -18,33 +18,15 @@ We added chocolate chips which does increase the volume so watch how much you fi
 - Cook Time: 65 minutes
 - Servings: 8
 
-{% recipe-ingredients %}
-
-- 1 cup of canned pumpkin
-- 1 1/2 cups sugar
-- 1/2 cup water
-- 1/2 cup vegetable oil
-- 2 eggs
-- 1 2/3 cups all-purpose flour
-- 1 teaspoon baking soda
-- 1 teaspoon cinnamon
-- 1/2 teaspoon salt
-- 1/2 teaspoon baking powder
-- 1/4 teaspoon nutmeg
-- 1/4 teaspoon ground cloves
-- 1 cup chocolate chips
-- Whipped cream cheese (for serving)
-{% endrecipe-ingredients %}
-
-{% recipe-directions %}
+{% recipe-cooklang %}
 
 1. Preheat the oven to 350° F (175° C).
-1. In a large mixing bowl, combine pumpkin, sugar, water, vegetable oil, and eggs. Beat until well mixed.
-1. In a separate bowl, combine the flour, baking soda, cinnamon, salt, baking powder, nutmeg, and cloves.
+1. In a #large mixing bowl{}, combine @canned pumpkin{1*cup}, @sugar{1 1/2*cups}, @water{1/2%cup}, @vegetable oil{1/2%cup}, and @eggs{2}. Beat until well mixed.
+1. In a separate bowl, combine @all-purpose flour{1 2/3%cups}, @baking soda{1%teaspoon}, @cinnamon{1%teaspoon}, @salt{1/2%teaspoon}, @baking powder{1/2%teaspoon}, @nutmeg{1/4%teaspoon}, and @cloves{1/4%teaspoon}.
 1. Slowly add the dry ingredients into the pumpkin mixture, beating until smooth.
-1. Fold in the chocolate chips.
-1. Grease a 9 by 5 inch loaf pan and dust with flour before filling.
-1. Bake for 60 to 70 minutes until a toothpick comes out of the center clean.
-1. Cool for 10-15 minutes before remove from the pan.
-1. Slice and serve with cream cheese
-{% endrecipe-directions %}
+1. Fold in @chocolate chips{1%cup}.
+1. Grease a #9 by 5 inch loaf pan{} and dust with flour before filling.
+1. Bake for ~{65%minutes} until a toothpick comes out of the center clean.
+1. Cool for ~{15%minutes} before remove from the pan.
+1. Slice and serve with @whipped cream cheese{}
+{% endrecipe-cooklang %}

@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="h-entry">
-	<section class="container post card">
+	<section class="container post">
 		{% include "featured-media.html" %}
 		<header class="post-header">
 			{%- if subtitle -%}
@@ -29,6 +29,7 @@ layout: default
 			</p>
 			{% include "tags.html" %}
 		</header>
+		{% include "review-context.html" %}
 
 		<div class="post-content e-content">
 			{{ content }}

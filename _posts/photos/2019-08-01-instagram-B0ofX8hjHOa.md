@@ -10,6 +10,7 @@ image: /assets/img/instagram_66223025_578368899234135_6602847089340466864_n_1808
 image_alt: "Knotty tree trunk with two different plants growing in front."
 syndication:
  - https://www.instagram.com/p/B0ofX8hjHOa/
+ - https://twitter.com/ajciccarello/status/1157007279876501504
 ---
 
 I love this little collection of plants against this tree trunk.

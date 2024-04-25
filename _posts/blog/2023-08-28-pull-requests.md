@@ -6,9 +6,9 @@ tags:
 image: /assets/img/code-github-pr-article-header.jpg
 image_alt: A figurine of an oktokat in the center, in the background a laptop with the main page of the GitHub open.
 image_caption: Photo by <a href="https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roman Synkevych</a> on <a href="https://unsplash.com/photos/wX2L8L-fGeA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+syndication:
+  - https://medium.com/@aciccarello/pull-requests-are-a-communication-tool-not-just-an-approval-process-933d3a29f21d
 ---
-
-
 
 Reviewing pull requests on GitHub can be awkward.
 When a software developer is finally ready to share their code they have to wait for the dreaded review comments.
@@ -77,7 +77,7 @@ If none of the questions raised require action from the PR author, it can still 
 If there is a critical question that the team should answer, a "Changes requested" status doesn't have to be considered a failure, just a clear call for action.
 There is also the option to fall back to comments if you have feedback but are feeling non-confrontational.
 
-## Communicating as author
+## Communicating as the author
 
 The author of a pull request also can improve the communication process.
 Well-written code itself should be self-explanatory as much as possible when read in the codebase and in the PR.

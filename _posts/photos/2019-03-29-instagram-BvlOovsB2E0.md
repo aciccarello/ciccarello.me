@@ -9,6 +9,7 @@ tags:
  - ruins
 syndication:
  - https://www.instagram.com/p/BvlOovsB2E0/
+ - https://twitter.com/ajciccarello/status/1111511720923521024
 ---
 
 Despite the shifting ground the pyramids of Yohualichan still stand, though some of them have been restored. Built around the year 1200 AD, these were some of the earliest pyramids of the Totonac people who later moved on to create larger settlements, with their distinct architectural style of square "windows" in the rock face.

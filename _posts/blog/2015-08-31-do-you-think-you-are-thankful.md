@@ -6,6 +6,8 @@ date: 2015-08-31
 tags: [culture, Liberia]
 image: /assets/img/liberia-cloth-against-wall.jpg
 image_alt: outside of a plaster wall with colorful cloth hanging and a pair of rain boots
+syndication:
+  - https://medium.com/@aciccarello/do-you-think-you-are-thankful-74bebbfc995d
 ---
 
 One of the most striking cultural differences I noticed during our time in

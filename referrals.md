@@ -32,41 +32,28 @@ A couple apps I use daily have a free premium bonus (for me) if someone else joi
 
 [Sign Up](https://www.netflix.com/us/n/c14f14cb-b381-4b24-abe6-c5d0a82960f7) _(For personal contacts per [Terms](https://help.netflix.com/legal/referralterms))_
 
-### Todoist
-
-**You get:** A great task management app (nothing extra)
-
-**I get:** 2 months of premium access (if you pay for a pro plan)
-
-[Sign Up](https://todoist.com/r/anthony_askdxh)
-
 ## Financial services
 
 These financial accounts have cash incentives for joining under my referral link.
 
-### Venmo
+### Wise
 
-**You get:** $5 for signing up and making a payment of at least $5 within 14 days
+**You get:** A fee-free transfer up to $600 when they sign up with your link.
 
-**I get:** $5
+**I get:** $115 when 3 friends sed over $300 in one go. (Same currency transactions don’t apply.)
 
-[Sign Up](https://payp.al/ref) _(For family, friends, and acquaintances only per [terms](https://help.venmo.com/hc/en-us/articles/360062742273))_
-
-### PayPal
-
-**You get:** $10 when you join and spend $5
-
-**I get:** $10
-
-[Sign Up](https://py.pl/5dR54IcM71) _(For family, friends, and acquaintances only per terms)_
-
-### Google pay
-
-Check out Google Pay, a simple and secure payments app by Google.
-
-[Sign Up](https://g.co/payinvite/mn0q55y) (mobile only)
+[Sign Up](https://wise.com/invite/dic/anthonyjosephc6)
 
 ## Transportation and Delivery Apps
+
+### Bark Box
+
+Our puppy regularly chews through new toys so this subscription service is a nice way to keep things fresh.
+It also includes dog treats so we have something for training too.
+
+**You Get**: 2X the free goodies - Double Deluxe with your first order
+
+**I get**: A $20 Barkshop credit when you make a purchase.
 
 ### Uber eats
 
@@ -82,14 +69,14 @@ Check out Google Pay, a simple and secure payments app by Google.
 
 **I get**: $10 off a $25+ order
 
-[Sign Up](https://ubereats.com/feed?promoCode=eats-anthonyc64557ui)
+[Sign Up](https://www.grubhub.com/referral/20e20f60-6c9e-11ea-8c19-b59a8badc50a?utm_source=grubhub.com&utm_medium=content_owned&utm_campaign=growth_refer-a-friend_share-link&utm_content=promo_)
 [Terms](https://www.grubhub.com/legal/referral-terms)
 
 ## Other services
 
 Okay, this is getting a little ridiculous people. But why not?
 
-## Eufy
+### Eufy
 
 We recently got one of their products for our home. This company has a range of products from Robot vacuums to filtered cat water bowls to security systems. I'm excited about our purchase and like the range of products available. This company is also associated with Anker, which is a brand I like, but be aware that there recently have been some scandals about their video security standards (see news results).
 

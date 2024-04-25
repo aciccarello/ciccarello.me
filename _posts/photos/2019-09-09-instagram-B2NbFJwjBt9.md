@@ -11,6 +11,7 @@ image: /assets/img/instagram_69488773_156582178769014_7625586125938693736_n_1809
 image_alt: "Dark shore bird walking on a sandy beach"
 syndication:
  - https://www.instagram.com/p/B2NbFJwjBt9/
+ - https://twitter.com/ajciccarello/status/1171211858084151298
 ---
 
 [@bekahbugs](https://www.instagram.com/bekahbugs/) and I really enjoyed walking down the beach and getting Shake Shack shakes at Crystal Cove state park near Laguna Beach. Saw quite a few new birds like this Black-bellied Plover down by the seashore. Totally worth getting sunburned 😎😬

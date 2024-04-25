@@ -5,6 +5,8 @@ tags: [personal, marriage]
 image: /assets/img/wedding-dance-bw.jpg
 image_alt: Our wedding reception (photo credit to Scot Huck Photography)
 image_caption: Our wedding reception (photo credit to Scot Huck Photography)
+syndication:
+  - https://medium.com/@aciccarello/the-first-year-99e0ec6ca35e
 ---
 
 In October of 2014, I married the love of my life and I am so glad I did. I

@@ -36,6 +36,15 @@ Changes: 2020.08.23 v2.0 - Updated to catch alternate stylesheets & added ignore
 			}
 		}
 
+		// Required styles to make site readable
+		var nakedStyles = document.createElement('style');
+		nakedStyles.innerHTML = `
+img {
+	max-width: 100%;
+}
+`;
+		document.head.appendChild(nakedStyles);
+
 		// Inject a message at the top of the document. Optional - just remove this section if you don't want it.
 		var message = document.createElement('div');
 		var body = document.getElementsByTagName('body')[0];

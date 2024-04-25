@@ -4,6 +4,8 @@ date: 2016-08-12
 tags: [personal]
 image: /assets/img/crosspurpose-live-different.jpg
 image_alt: a logo, the words "crosspurpose" and "live different" on top of an image of a person using carpentry hand tools
+syndication:
+  - https://medium.com/@aciccarello/moving-forward-635572bf530d
 ---
 
 The past two years of ministry in Springfield, Ohio have been filled with ups

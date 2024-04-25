@@ -39,7 +39,7 @@ This could also be made in a dutch oven, reducing the need for an additional pan
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
-1. Preheat oven to 350°F (175°C)
+1. Preheat oven to {% recipe-temp 350 %}
 1. Start cooking spanish rice per packet instructions
 1. Saute onion in a large skillet with oil, adding garlic a couple minutes later
 1. Add the bell peppers and cook for 2 minutes

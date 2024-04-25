@@ -1,0 +1,9 @@
+{%- if review-of %}
+<section class="review-context h-card card">
+	<data class="p-rating rating-stars" value="5">
+		{%- for i in (1..5) %}{% if i <= rating %}★️{% else %}☆{%endif %}{% endfor -%}
+	</data>
+	<p class="p-name">{{review-of.name}}</p>
+	<a href="{{review-of.url}}" class="u-url">{{review-of.url | extractDomain}}</a>
+</section>
+{%- endif %}

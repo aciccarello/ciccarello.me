@@ -1,6 +1,5 @@
 ---
 date: 2023-11-18T06:31:00.000Z
-title: "Whole Nother: Wrong or Right? | Merriam-Webster"
 slug: whole-nother-wrong-or-right
 bookmark-of: https://www.merriam-webster.com/grammar/whole-nother
 tags:
@@ -14,5 +13,4 @@ indiekit_post-type: bookmark
 
 ---
 
-TIL that "nother" is a word.
-
+TIL that "nother" is a word with a long history, even if informal.

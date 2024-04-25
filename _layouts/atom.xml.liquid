@@ -34,8 +34,9 @@ eleventyExcludeFromCollections: true
       {%- include "featured-media.html", image: post.data.image, image_alt: post.data.image_alt, image_caption: post.data.image_caption %}
       {%- include "reply-context.html", responseData: post.data.responseData %}
       {%- if forloop.index <= 10 %}
-      {{ post.templateContent }}
+        {{ post.templateContent }}
         {{ bridgyFed }}
+		    {% include "syndication.html", syndication: post.data.syndication %}
       {%- else %}
       <p>{{ post.templateContent | strip_html | truncate: 500 }}</p>
       <a href="{{ absolutePostUrl }}">Read More</a>

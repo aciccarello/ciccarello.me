@@ -10,6 +10,7 @@ tags:
  - mountains
 syndication:
  - https://www.instagram.com/p/BxgtuQqj58p/
+ - https://twitter.com/ajciccarello/status/1129009542224842752
 ---
 
 I've been missing the mountains and I can't think of a more dramatic place to enjoy them. I'm so grateful we were able to go on this trip.

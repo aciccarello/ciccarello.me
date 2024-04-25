@@ -2,7 +2,7 @@
 title: Multi-engine site search
 date: 2023-07-04T08:06:21.540Z
 tags:
-  - site updates
+  - site changes
   - technology
 image: /assets/img/search-engine-feature-photo.jpg
 image_alt: Woman looking up at trees through binoculars.

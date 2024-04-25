@@ -9,6 +9,7 @@ tags:
  - ruins
 syndication:
  - https://www.instagram.com/p/B0ATzFIgs2f/
+ - https://twitter.com/ajciccarello/status/1151485109222039553
 ---
 
 Guatemala in many ways is a country fighting against the forces of mother nature. The Convent of the order of the Recollects was built at the beginning of the 18th century but was repeatedly damaged by earthquakes. Within 75 years, much of the complex was heavily damage. Today it stands as a national monument.

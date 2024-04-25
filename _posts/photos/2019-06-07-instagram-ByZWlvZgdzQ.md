@@ -9,6 +9,7 @@ tags:
  - ruins
 syndication:
  - https://www.instagram.com/p/ByZWlvZgdzQ/
+ - https://twitter.com/ajciccarello/status/1130251038030794753
 ---
 
 Huaca Pucllana is an adobe pyramid dating as early as 400 A.D. however until the 1980s it was just a dirt mound located in the Miraflores neighborhood of Lima.

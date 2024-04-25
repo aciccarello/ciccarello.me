@@ -9,6 +9,7 @@ image: /assets/img/instagram_82888917_516953918948168_6152948908583549964_n_1791
 image_alt: "Grid of four photos, each with a different bird. A hawk on a branch in the forest. A red cardinal flying into evergreen tree. A crows against a gray sky. A woodpecker in a thicket of branches."
 syndication:
  - https://www.instagram.com/p/B69Ryuili0q/
+ - https://twitter.com/ajciccarello/status/1213976164542353408
 ---
 
 Happy [#NationalBirdDay](/posts/tags/NationalBirdDay) which highlights the threats that the illegal caged-bird trade and habitat destruction pose to wild birds. 

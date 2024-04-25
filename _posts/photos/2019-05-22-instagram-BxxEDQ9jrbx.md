@@ -10,6 +10,7 @@ tags:
  - Spanish
 syndication:
  - https://www.instagram.com/p/BxxEDQ9jrbx/
+ - https://twitter.com/ajciccarello/status/1131191920821248000
 ---
 
 [@duolingo](https://www.instagram.com/duolingo/) has a bunch of new lessons in their Spanish course. Glad to see them expanding the content and teaching lessons like "what is that phrase everyone keeps saying in restaurants?".

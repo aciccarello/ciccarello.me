@@ -93,7 +93,7 @@ const fields = generateFieldMap([
 		name: asConst('date'),
 		widget: 'datetime',
 		date_format: 'YYYY-MM-DD',
-		time_format: 'HH:mm:ss [UTC]',
+		time_format: 'HH:mm:ss[Z]',
 		picker_utc: true,
 	},
 	{
@@ -180,7 +180,7 @@ const fields = generateFieldMap([
 				widget: 'datetime',
 				required: true,
 				date_format: 'YYYY-MM-DD',
-				time_format: 'HH:mm:ss [UTC]',
+				time_format: 'HH:mm:ss[Z]',
 				picker_utc: true,
 			},
 			{ name: 'description', widget: 'string', required: true },
@@ -207,7 +207,7 @@ const fields = generateFieldMap([
 				required: false,
 				default: '', // Default and format are required to allow empty input
 				date_format: 'YYYY-MM-DD',
-				time_format: 'HH:mm:ss [UTC]',
+				time_format: 'HH:mm:ss[Z]',
 				picker_utc: true,
 			},
 			{ name: 'post-type', widget: 'string', required: false },
@@ -264,13 +264,13 @@ function addDefaultsToCollection(collection) {
 	const titleDependentProps = hasField('title')
 		? {
 				preview_path: 'posts/{{year}}/{{month}}/{{day}}/{{title}}',
-		  }
+			}
 		: {
 				identifier_field: 'slug',
 				preview_path:
 					'posts/{{year}}/{{month}}/{{day}}/{{fields.slug}}',
 				summary: '{{body}}',
-		  };
+			};
 	const view_filters = hasField('eleventyExcludeFromCollections')
 		? [
 				...(collection.view_filters || []),
@@ -279,7 +279,7 @@ function addDefaultsToCollection(collection) {
 					field: 'eleventyExcludeFromCollections',
 					pattern: 'draft',
 				},
-		  ]
+			]
 		: collection.view_filters;
 	/** @type {Collection} */
 	const defaultedCollection = {
@@ -342,8 +342,8 @@ class CmsConfig {
 				branch === 'main'
 					? 'https://www.ciccarello.me'
 					: branch === 'dev'
-					? 'https://dev.ciccarello.me'
-					: 'http://localhost:8080',
+						? 'https://dev.ciccarello.me'
+						: 'http://localhost:8080',
 			media_folder: 'assets/img',
 			public_folder: '/assets/img',
 			local_backend: true,

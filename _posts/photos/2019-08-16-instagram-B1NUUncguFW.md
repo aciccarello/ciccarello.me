@@ -10,6 +10,7 @@ image: /assets/img/instagram_66679805_2125838857710140_1539935854804671216_n_178
 image_alt: "Three small posts with scrawny plants next to a bright green kalenchoe with pink flowers."
 syndication:
  - https://www.instagram.com/p/B1NUUncguFW/
+ - https://twitter.com/ajciccarello/status/1162228270164615168
 ---
 
 Brought in some of my plants that weren't doing so well in the 115° F (46° C) heat today. Also bought another kalanchoe plant. I need to figure out how the nurseries keep them from sprawling out.

@@ -5,26 +5,26 @@ This relies on the author object with the following properties
 - description: defaults to site.description,
 - type: defaults to "author" but canbe changed for different creator categories (e.g. photographer)
 {% endcomment %}
-<section aria-labelledby="author-section-title" class="h-card u-author vcard author container card author-card">
-	<div class="author-card__primary-action" tabindex="0">
-		<div class="card__media card__media--square author-card__media">
+<section aria-labelledby="author-section-title" class="h-card u-author vcard author container author-description" data-nosnippet>
+	<div class="author-description__primary-action" tabindex="0">
+		<div class="card__media card__media--square author-description__media">
 			<img alt="" class="u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512" width="48"/>
 		</div>
-		<hgroup class="author-card__primary">
-			<h2 class="author-card__title">
+		<hgroup class="author-description__primary">
+			<h2 class="author-description__title">
 				<a class="p-name u-url url fn disable-link-styles" href="{{ author.url | default: "/" }}">
 					{{ author.name }}
 				</a>
 			</h2>
-			<p id="author-section-title" class="author-card__subtitle">
+			<p id="author-section-title" class="author-description__subtitle">
 				About the {{ author.type | default: "author" }}
 			</p>
 		</hgroup>
 	</div>
-	<p class="p-summary author-card__content">
+	<p class="p-summary author-description__content">
 		{{ author.description | default: site.description }}
 	</p>
-	<div class="author-card__primary-action btn-group">
+	<div class="author-description__primary-action btn-group">
 		<a href="/#connect" class="btn-link">
 			Connect
 		</a>
