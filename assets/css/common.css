@@ -799,6 +799,7 @@ blockquote {
 	margin-bottom: 0;
 }
 
+.post .rating-stars,
 .post-header,
 .post-content,
 .post-footer {

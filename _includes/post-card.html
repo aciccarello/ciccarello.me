@@ -45,6 +45,11 @@ h-entry
 						{{ post.templateContent | joinLines | strip_html | truncatewords: 50 }}
 					{%- endif -%}
 				</p>
+				{%- if post.data.rating -%}
+				<data class="p-rating rating-stars" value="5">
+					{%- for i in (1..5) %}{% if i <= post.data.rating %}★️{% else %}☆{%endif %}{% endfor -%}
+				</data>
+				{%- endif -%}
 				{%- assign tags = post.data.tags -%}
 				{%- if tags.size > 0 or showKind %}
 					<ul class="chip-set" title="Tags">

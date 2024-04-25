@@ -1,6 +1,7 @@
 ---
 date: 2024-04-19T06:31:49.198Z
-title: 'Pier View Coffee: Great Vibes Downtown'
+title: 'Pier View Coffee'
+subtitle: 'Great Vibes Downtown'
 slug: 'pier-view-coffee'
 tags:
   - BestOfOceanside

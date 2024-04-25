@@ -1,6 +1,7 @@
 {
   "layout": "article",
   "type": "review",
+  "back_button": "/reviews/",
   "dateFormat": "day",
   "excludeFromMainFeed": true
 }
