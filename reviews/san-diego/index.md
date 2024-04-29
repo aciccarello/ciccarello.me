@@ -1,6 +1,7 @@
 ---
 title: 'San Diego Recommendations'
 layout: page
+back_button: ..
 ---
 
 ## San Diego
@@ -132,3 +133,17 @@ They used to have breakfast tacos but those were taken off the menu.
 ### Colima's Mexican restaurant
 
 Large, delicious burritos tucked in a central location on Pier View Way.
+
+## Sports
+
+San Diego's biggest sports team is definitely the Padres baseball team.
+However there are lots of other major and minor league teams of various sports in the area.
+
+[View more San Diego sports teams](./sports/)
+
+{% removeindents %}
+<ol class="post-list">
+  {%- assign posts = collections["sports teams"] %}
+  <li>{% include "post-card.html" post: posts[0] %}</li>
+</ol>
+{% endremoveindents %}
