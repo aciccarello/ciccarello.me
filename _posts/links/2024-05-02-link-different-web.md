@@ -16,5 +16,8 @@ references:
       old days back — or something even better — and if anything, it would be
       easier now than it ever was.
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/www.citationneeded.news/we-can-have-a-different-web/
 ---
+
+Molly White has done a lot for the open web, even in the relatively short time I've been following her.
+This article mixes history, metaphor, and call-to-action in a way that's really poetic.
