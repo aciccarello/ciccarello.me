@@ -764,9 +764,14 @@ video.post-img--float-right {
 	max-width: 100%;
 }
 
-img.post-img--wide,
-video.post-img--wide {
-	max-width: 100%;
+.post-content figure img,
+.post-content figure video {
+	width: 600px;
+}
+
+figure.post-img--wide img,
+figure.post-img--wide video {
+	width: 100%;
 }
 
 figcaption {
