@@ -804,6 +804,10 @@ blockquote {
 	margin-bottom: 0;
 }
 
+.rating-stars {
+	font-size: 2em;
+}
+
 .post .rating-stars,
 .post-header,
 .post-content,
