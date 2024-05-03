@@ -78,6 +78,12 @@ module.exports = function (eleventyConfig) {
 			})
 			.map(([key]) => key);
 	});
+	eleventyConfig.addCollection('pageByUrl', (collection) => {
+		return collection.getAll().reduce((containerMap, page) => {
+			containerMap[page.url] = page;
+			return containerMap;
+		});
+	});
 	eleventyConfig.addPairedShortcode('json', (content) => {
 		try {
 			const contentMinusTabs = content.replace(/\t/g, '');

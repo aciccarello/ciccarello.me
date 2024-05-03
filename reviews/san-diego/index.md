@@ -167,6 +167,8 @@ https://missionpacifichotel.com/historic-top-gun-house/
 Local coffee shop a short walk from the pier.
 Good place to work on a laptop for a few hours or just grab a specialty latte.
 
+{% include "post-card.html" post: collections.pageByUrl['/posts/2024/04/19/pier-view-coffee/'] %}
+
 ### Parlor Donuts
 
 Croissant donut shop.
