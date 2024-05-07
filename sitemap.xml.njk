@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
   {%- for item in collections.all %}
     {%- if not item.data.excludeFromSitemap %}
     <url>
-      <loc>{{ item.url | addBaseUrl }}</loc>
+      <loc>{{ item.url | addBaseUrl | safe }}</loc>
       <lastmod>{{ (item.data.lastUpdated | default(item.date)).toISOString() }}</lastmod>
     </url>
     {%- endif %}

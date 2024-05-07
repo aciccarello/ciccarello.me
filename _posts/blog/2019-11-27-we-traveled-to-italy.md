@@ -85,7 +85,7 @@ As we traveled, I made a point to write down a little about each day. From that 
 
 - [Amalfi Coast](/blog/2019/11/28/anniversary-on-the-amalfi-coast/)
 - [Rome](/blog/2020/02/06/rome-is-a-work-of-art/)
-- [Orvieto](/blog/2020/03/15/relaxing-in-the-orvieto-countryside/)
+- [Orvieto](/blog/2020/01/15/relaxing-in-the-orvieto-countryside/)
 - [Venice](/blog/2020/04/09/a-weekend-in-venice/)
 
 ![Silhouette of an island with the sun shining through a cloud.](
