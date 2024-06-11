@@ -17,6 +17,7 @@
 					id="manual-webmention"
 					action="https://webmention.io/www.ciccarello.me/webmention"
 					method="post"
+					target="_blank"
 				>
 					<input type="url" name="source" placeholder="https://www.example.com/post-name" aria-label="URL"/>
 					<input type="hidden" name="target" value="{{fullUrl}}"/>
@@ -42,6 +43,15 @@
 					class="btn-link mention-action"
 					>Reply via Email</a
 				>
+				<form
+					id="manual-webmention"
+					action="https://webmention.io/www.ciccarello.me/webmention"
+					method="post"
+					target="_blank"
+				>
+					<input type="hidden" name="target" value="/like-of?destination={{fullUrl}}"/>
+					<input type="submit" name="submit" value="Like Post"/>
+				</form>
 			</section>
 		</div>
 	</details>
