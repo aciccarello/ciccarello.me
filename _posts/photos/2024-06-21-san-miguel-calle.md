@@ -2,6 +2,7 @@
 slug: san-miguel-calle
 date: 2024-06-21T13:24:00Z
 tags:
+  - travel
   - Mexico
   - Guanajuato
   - architecture

@@ -2,6 +2,7 @@
 slug: templo-guanajuato
 date: 2024-06-20T20:37:00Z
 tags:
+  - travel
   - Mexico
   - Guanajuato
   - architecture
