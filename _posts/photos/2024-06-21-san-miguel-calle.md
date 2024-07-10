@@ -10,4 +10,4 @@ image: /assets/img/2024-mexico-san-miguel-flags.jpg
 image_alt: Cobblestone street with yellow buildings and colorful paper flags
   hanging above on a sunny day.
 ---
-Una calle en San Miguel de Allende
+<p lang="es">Una calle en San Miguel de Allende</p>

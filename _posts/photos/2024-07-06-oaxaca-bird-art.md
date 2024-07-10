@@ -10,7 +10,7 @@ image: /assets/img/2024-mexico-bird-flock.jpg
 image_alt: Glass hallway filled with a flock of wooden bird carvings hanging from string.
 ---
 
-The birder in me loved this exhibit titled "[Aviarium Cuarto Suspiro](https://fahho.mx/aviarium-cuarto-suspiro/)" in La Biblioteca de Investigación Juan de Córdova in Oaxaca.
+The birder in me loved this exhibit titled "<a href="https://fahho.mx/aviarium-cuarto-suspiro/" lang="es">Aviarium Cuarto Suspiro</a>" in <span lang="es">La Biblioteca de Investigación Juan de Córdova</span> in Oaxaca.
 The exhibit used ceramics to flip the symbolism of the avian and human worlds to create fascinating shapes.
 
 ![A series of circular paintings, each depicting a different iconic bird like vultures, owls, blackbirds, and orioles.](/assets/img/2024-mexico-bird-circles.jpg){.post-img--wide}

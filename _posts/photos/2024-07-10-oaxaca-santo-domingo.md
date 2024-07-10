@@ -9,6 +9,6 @@ image: /assets/img/2024-mexico-oaxaca-santo-domingo-night.jpg
 image_alt: Large tan stone church against a deep blue night sky with agave planted in front.
 ---
 
-Templo de Santo Domingo de Guzmán, night & day.
+<span lang="es">Templo de Santo Domingo de Guzmán</span>, night & day.
 
 ![Wider angle view of a large tan stone church in bright light against a blue sky with white clouds.](/assets/img/2024-mexico-oaxaca-santo-domingo-day.jpg)
