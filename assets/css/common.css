@@ -729,6 +729,9 @@ a.disable-link-styles {
 .post img,
 .post video {
 	width: 100%;
+	/* Shrink height to keep whole image in view */
+	max-height: 90vh;
+	object-fit: contain;
 }
 
 .post-thumbnail {
