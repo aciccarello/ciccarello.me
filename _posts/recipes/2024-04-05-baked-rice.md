@@ -4,6 +4,7 @@ slug: baked-rice
 date: 2024-04-05T01:44:03.677Z
 tags:
   - family recipe
+  - dinner
   - casserole
   - rice
   - beef

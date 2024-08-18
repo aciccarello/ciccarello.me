@@ -1,6 +1,9 @@
 ---
 title: Layered Bean Dip
 date: 2024-02-12T05:11:27.960Z
+tags:
+  - side dish
+  - holiday
 image: /assets/img/recipe-layered-bean-dip.jpg
 image_alt: Casserole dish with dip topped with lettuce and tomatoes.
 ---

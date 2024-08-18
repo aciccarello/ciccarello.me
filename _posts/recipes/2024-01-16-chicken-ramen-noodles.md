@@ -4,6 +4,8 @@ date: 2024-01-16T08:14:50.388Z
 tags:
   - pasta
   - soup
+  - lunch
+  - dinner
 image: /assets/img/recipe-ramen-noodles.jpg
 image_alt: "Bowl of noodles, spinach, carrots, chicken, and egg."
 ---
