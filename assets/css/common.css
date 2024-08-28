@@ -738,15 +738,15 @@ a.disable-link-styles {
 	margin: 0;
 }
 
-figure.post-img--float,
-figure.post-img--float-right {
+figure:has(> .post-img--float),
+figure:has(> .post-img--float-right) {
 	width: 50%;
 	max-width: 350px;
 	margin: 0 1rem 0.5rem 0;
 	float: left;
 }
 
-figure.post-img--float-right {
+figure:has(> .post-img--float-right) {
 	float: right;
 	margin: 0 0 0.5rem 1rem;
 }
@@ -773,9 +773,12 @@ video.post-img--float-right {
 	width: 600px;
 }
 
-figure.post-img--wide img,
-figure.post-img--wide video {
+figure img.post-img--wide,
+figure video.post-img--wide {
 	width: 100%;
+}
+figure:has(> .post-img--width) {
+	max-width: 100%;
 }
 
 figcaption {

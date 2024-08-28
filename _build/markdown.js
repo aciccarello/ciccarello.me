@@ -14,7 +14,6 @@ function initializeMarkdown() {
 		})
 		.use(require('markdown-it-image-figures'), {
 			figcaption: true,
-			copyAttrs: 'class',
 		})
 		.use(require('markdown-it-html5-media').html5Media)
 		.use(require('markdown-it-anchor'), {
@@ -40,7 +39,7 @@ const md = initializeMarkdown();
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setLibrary('md', md);
 	eleventyConfig.addFilter('markdownify', (value) =>
-		md.renderInline(value || '')
+		md.renderInline(value || ''),
 	);
 	eleventyConfig.addPairedShortcode('markdownify', (content) => {
 		return md.render(content || '');
