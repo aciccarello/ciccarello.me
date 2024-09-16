@@ -320,19 +320,6 @@ exports[`microformats should have a(n) article 1`] = `
     "html": "<p>The past two days have destroyed my sense of time. Between changing time zones
 twice, flying through the night, flying for more than 6 hours at a time,
 having periodic naps, and standing in lines for long stretches, I have stopped
-keeping a close eye on time. I guess that is a fitting entrance to Africa.<br>
-On Tuesday I was counting every minute making sure I worked enough hours for
-the week and rushing through getting out the door to make our plane on time.
-This afternoon we didn’t have to manage ant firm times for events to happen.
-Our plan was to fly directly from Brussels to Monrovia, Liberia. God
-apparently had other plans. After about four hours into our “last flight” to
-Liberia the pilots decided it was necessary to divert the flight to Senegal,
-several countries up the west coast of Africa.We would fid out later that some
-unexpected bad weather had caused a crack in the windshield of the airplane
-and the Dakar airport was better prepared to make the repairs.</p>
-<p>The past two days have destroyed my sense of time. Between changing time zones
-twice, flying through the night, flying for more than 6 hours at a time,
-having periodic naps, and standing in lines for long stretches, I have stopped
 keeping a close eye on time. I guess that is a fitting entrance to Africa. On
 Tuesday I was counting every minute making sure I worked enough hours for the
 week and rushing through getting out the door to make our plane on time. This
@@ -340,10 +327,10 @@ afternoon we didn’t have to manage ant firm times for events to happen. Our
 plan was to fly directly from Brussels to Monrovia, Liberia. God apparently
 had other plans. After about four hours into our “last flight” to Liberia the
 pilots decided it was necessary to divert the flight to Senegal, several
-countries up the west coast of Africa.We would fid out later that some
+countries up the west coast of Africa. We would find out later that some
 unexpected bad weather had caused a crack in the windshield of the airplane
 and the Dakar airport was better prepared to make the repairs.</p>
-<figure class="post-img--float"><img src="https://www.ciccarello.me/assets/img/senegal-leaving-airport.jpg" alt="Crowd of people in a parking lot with lots of luggage with a white bus" class="post-img--float"><figcaption>Waiting outside the airport for a bus to the&nbsp;hotel</figcaption></figure>
+<figure><img src="https://www.ciccarello.me/assets/img/senegal-leaving-airport.jpg" alt="Crowd of people in a parking lot with lots of luggage with a white bus" class="post-img--float"><figcaption>Waiting outside the airport for a bus to the&nbsp;hotel</figcaption></figure>
 <p>We followed the mass of other displaced travelers out of the airport to where
 bus after bus came to shuttle people and their luggage to our hotel. But this
 long wait provided us with an opportunity to connect with the other people on
@@ -374,19 +361,6 @@ Sunday meaning we will be in Senegal another day.</p>
     "text": "The past two days have destroyed my sense of time. Between changing time zones
 twice, flying through the night, flying for more than 6 hours at a time,
 having periodic naps, and standing in lines for long stretches, I have stopped
-keeping a close eye on time. I guess that is a fitting entrance to Africa.
-On Tuesday I was counting every minute making sure I worked enough hours for
-the week and rushing through getting out the door to make our plane on time.
-This afternoon we didn’t have to manage ant firm times for events to happen.
-Our plan was to fly directly from Brussels to Monrovia, Liberia. God
-apparently had other plans. After about four hours into our “last flight” to
-Liberia the pilots decided it was necessary to divert the flight to Senegal,
-several countries up the west coast of Africa.We would fid out later that some
-unexpected bad weather had caused a crack in the windshield of the airplane
-and the Dakar airport was better prepared to make the repairs.
-The past two days have destroyed my sense of time. Between changing time zones
-twice, flying through the night, flying for more than 6 hours at a time,
-having periodic naps, and standing in lines for long stretches, I have stopped
 keeping a close eye on time. I guess that is a fitting entrance to Africa. On
 Tuesday I was counting every minute making sure I worked enough hours for the
 week and rushing through getting out the door to make our plane on time. This
@@ -394,7 +368,7 @@ afternoon we didn’t have to manage ant firm times for events to happen. Our
 plan was to fly directly from Brussels to Monrovia, Liberia. God apparently
 had other plans. After about four hours into our “last flight” to Liberia the
 pilots decided it was necessary to divert the flight to Senegal, several
-countries up the west coast of Africa.We would fid out later that some
+countries up the west coast of Africa. We would find out later that some
 unexpected bad weather had caused a crack in the windshield of the airplane
 and the Dakar airport was better prepared to make the repairs.
  Crowd of people in a parking lot with lots of luggage with a white bus Waiting outside the airport for a bus to the hotel
@@ -435,7 +409,10 @@ Originally published at liveloveliberia.blogspot.com on July 24, 2015.",
   "name": "Getting An Introduction to Africa",
   "published": "2015-07-24",
   "summary": "Detour to Senegal",
-  "syndication": "https://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html",
+  "syndication": [
+    "https://liveloveliberia.blogspot.com/2015/07/getting-introduction-to-africa.html",
+    "https://medium.com/@aciccarello/getting-an-introduction-to-africa-91d11e5914e7",
+  ],
   "type": "entry",
   "url": "https://www.ciccarello.me/blog/2015/07/24/getting-an-introduction-to-africa/",
 }

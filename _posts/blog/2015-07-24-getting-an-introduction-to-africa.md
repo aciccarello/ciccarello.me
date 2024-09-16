@@ -14,20 +14,6 @@ syndication:
 The past two days have destroyed my sense of time. Between changing time zones
 twice, flying through the night, flying for more than 6 hours at a time,
 having periodic naps, and standing in lines for long stretches, I have stopped
-keeping a close eye on time. I guess that is a fitting entrance to Africa.  
-On Tuesday I was counting every minute making sure I worked enough hours for
-the week and rushing through getting out the door to make our plane on time.
-This afternoon we didn't have to manage ant firm times for events to happen.
-Our plan was to fly directly from Brussels to Monrovia, Liberia. God
-apparently had other plans. After about four hours into our "last flight" to
-Liberia the pilots decided it was necessary to divert the flight to Senegal,
-several countries up the west coast of Africa.We would fid out later that some
-unexpected bad weather had caused a crack in the windshield of the airplane
-and the Dakar airport was better prepared to make the repairs.
-
-The past two days have destroyed my sense of time. Between changing time zones
-twice, flying through the night, flying for more than 6 hours at a time,
-having periodic naps, and standing in lines for long stretches, I have stopped
 keeping a close eye on time. I guess that is a fitting entrance to Africa. On
 Tuesday I was counting every minute making sure I worked enough hours for the
 week and rushing through getting out the door to make our plane on time. This
@@ -35,7 +21,7 @@ afternoon we didn't have to manage ant firm times for events to happen. Our
 plan was to fly directly from Brussels to Monrovia, Liberia. God apparently
 had other plans. After about four hours into our "last flight" to Liberia the
 pilots decided it was necessary to divert the flight to Senegal, several
-countries up the west coast of Africa.We would fid out later that some
+countries up the west coast of Africa. We would find out later that some
 unexpected bad weather had caused a crack in the windshield of the airplane
 and the Dakar airport was better prepared to make the repairs.
 
