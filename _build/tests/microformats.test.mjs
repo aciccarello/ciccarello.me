@@ -16,6 +16,7 @@ describe('microformats', () => {
   const testPostNames = [
     'article',
     'recipe',
+    'recipeCooklang',
     'note',
     'photo',
     'like',

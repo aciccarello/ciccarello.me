@@ -658,6 +658,146 @@ Sprinkle cinnamon on top",
 }
 `;
 
+exports[`microformats should have a(n) recipeCooklang 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "summary": "I'm a software engineer who enjoys collecting recipes I've made and preserving family favorites. My cooking style is laid back and flexible so some recipes may not be exact.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "category": "breakfast",
+  "content": {
+    "html": "<p>We were looking for a higher protein breakfast that didn’t just taste like eggs and found this recipe from <a href="https://www.bbcgoodfood.com/recipes/easy-protein-pancakes" class="u-remix-of">bbcgoodfood.com</a>.</p>
+<p>We would like to try adding another scoop of protein powder to increase the protein content more but might need to adjust for consistency.
+Some other recipes we’ve looked at also added greek yogurt which would be interesting to try.</p>
+<h2 id="summary" tabindex="-1">Summary</h2>
+<ul>
+<li>Prep Time: 15 minutes</li>
+<li>Cook Time: 15 minutes</li>
+<li>Total Time: <time class="duration dt-duration" datetime="30M"><span class="value-title" title="PT30M"> </span>30 minutes</time></li>
+<li>Servings: <span class="p-yield">2</span> (about 8 4-inch pancakes)</li>
+</ul>
+<h2 id="ingredients" tabindex="-1">Ingredients</h2>
+<ul class="cooklang-ingredients"><li class="p-ingredient ingredient"><span class="amount-and-unit"><span class="amount p-value value">75</span> <span class="amount p-type type">g</span></span> <span class="ingredient">old fashion/rolled oats</span></li><li class="p-ingredient ingredient"><span class="amount-and-unit"><span class="amount p-value value">1</span></span> <span class="ingredient">banana</span></li><li class="p-ingredient ingredient"><span class="amount-and-unit"><span class="amount p-value value">3</span></span> <span class="ingredient">eggs</span></li><li class="p-ingredient ingredient"><span class="amount-and-unit"><span class="amount p-value value">2</span> <span class="amount p-type type">tbsp</span></span> <span class="ingredient">milk (dairy or alternative)</span></li><li class="p-ingredient ingredient"><span class="amount-and-unit"><span class="amount p-value value">1</span> <span class="amount p-type type">tbsp</span></span> <span class="ingredient">baking powder</span></li><li class="p-ingredient ingredient"><span class="amount-and-unit"><span class="amount p-value value">3</span> <span class="amount p-type type">tbsp</span></span> <span class="ingredient">protein powder</span></li><li class="p-ingredient ingredient"><span class="amount-and-unit"><span class="amount p-value value">1</span> <span class="amount p-type type">pinch</span></span> <span class="ingredient">cinnamon</span></li><li class="p-ingredient ingredient"><span class="ingredient">blueberries or chocolate chips (optional add-ins)</span></li><li class="p-ingredient ingredient"><span class="ingredient">maple syrup</span></li><li class="p-ingredient ingredient"><span class="ingredient">any desired toppings like butter, peanut butter, whipped cream, and cut fruit</span></li></ul>
+<h2 id="directions" tabindex="-1">Directions</h2>
+<ol class="e-instructions instructions">
+<li class="p-instruction instruction">Chop up <span id="ingredient-1" class="cooklang-ingredient" cooklang-amount="75" cooklang-unit="g">old fashion/rolled oats: 75 g</span> in a <span id="cookware-1" class="cooklang-cookware">blender</span> until broken down</li>
+<li class="p-instruction instruction">Add <span id="ingredient-2" class="cooklang-ingredient" cooklang-amount="1">banana: 1</span>, <span id="ingredient-3" class="cooklang-ingredient" cooklang-amount="3">eggs: 3</span>, <span id="ingredient-4" class="cooklang-ingredient" cooklang-amount="2" cooklang-unit="tbsp">milk (dairy or alternative): 2 tbsp</span>, <span id="ingredient-5" class="cooklang-ingredient" cooklang-amount="1" cooklang-unit="tbsp">baking powder: 1 tbsp</span>, <span id="ingredient-6" class="cooklang-ingredient" cooklang-amount="3" cooklang-unit="tbsp">protein powder: 3 tbsp</span>, and <span id="ingredient-7" class="cooklang-ingredient" cooklang-amount="1" cooklang-unit="pinch">cinnamon: 1 pinch</span> and blend for about <span id="timer-1" class="cooklang-timer" cooklang-amount="1" cooklang-unit="minute">1 minute</span> till smooth.</li>
+<li class="p-instruction instruction">Heat a drizzle of oil in a <span id="cookware-2" class="cooklang-cookware">pan</span> on medium heat</li>
+<li class="p-instruction instruction">Pour pancakes in the pan in batches, should be about 4 inches in diameter after spreading.</li>
+<li class="p-instruction instruction">Cook for about <span id="timer-2" class="cooklang-timer" cooklang-amount="2" cooklang-unit="minutes">2 minutes</span>, until the batter bubbles and the underside is golden</li>
+<li class="p-instruction instruction">Can add <span id="ingredient-8" class="cooklang-ingredient">blueberries or chocolate chips (optional add-ins)</span> immediately after the first pour for different flavors.</li>
+<li class="p-instruction instruction">Flip and cook for <span id="timer-3" class="cooklang-timer" cooklang-amount="1" cooklang-unit="minute">1 minute</span> more till cooked through.</li>
+<li class="p-instruction instruction">Transfer pancakes to a plate before starting the next batch.</li>
+<li class="p-instruction instruction">Serve with <span id="ingredient-9" class="cooklang-ingredient">maple syrup</span> and <span id="ingredient-10" class="cooklang-ingredient">any desired toppings like butter, peanut butter, whipped cream, and cut fruit</span></li>
+</ol>",
+    "text": "We were looking for a higher protein breakfast that didn’t just taste like eggs and found this recipe from bbcgoodfood.com.
+We would like to try adding another scoop of protein powder to increase the protein content more but might need to adjust for consistency.
+Some other recipes we’ve looked at also added greek yogurt which would be interesting to try.
+Summary
+
+Prep Time: 15 minutes
+Cook Time: 15 minutes
+Total Time:  30 minutes
+Servings: 2 (about 8 4-inch pancakes)
+
+Ingredients
+75 g old fashion/rolled oats1 banana3 eggs2 tbsp milk (dairy or alternative)1 tbsp baking powder3 tbsp protein powder1 pinch cinnamonblueberries or chocolate chips (optional add-ins)maple syrupany desired toppings like butter, peanut butter, whipped cream, and cut fruit
+Directions
+
+Chop up old fashion/rolled oats: 75 g in a blender until broken down
+Add banana: 1, eggs: 3, milk (dairy or alternative): 2 tbsp, baking powder: 1 tbsp, protein powder: 3 tbsp, and cinnamon: 1 pinch and blend for about 1 minute till smooth.
+Heat a drizzle of oil in a pan on medium heat
+Pour pancakes in the pan in batches, should be about 4 inches in diameter after spreading.
+Cook for about 2 minutes, until the batter bubbles and the underside is golden
+Can add blueberries or chocolate chips (optional add-ins) immediately after the first pour for different flavors.
+Flip and cook for 1 minute more till cooked through.
+Transfer pancakes to a plate before starting the next batch.
+Serve with maple syrup and any desired toppings like butter, peanut butter, whipped cream, and cut fruit",
+  },
+  "duration": "PT30M",
+  "featured": [
+    {
+      "alt": "Plate of pancakes with peanut butter and syrup",
+      "url": "https://www.ciccarello.me/assets/img/recipe-protein-oat-pancakes.jpg",
+    },
+  ],
+  "ingredient": [
+    "75",
+    "1",
+    "3",
+    "2",
+    "1",
+    "3",
+    "1",
+    "blueberries or chocolate chips (optional add-ins)",
+    "maple syrup",
+    "any desired toppings like butter, peanut butter, whipped cream, and cut fruit",
+  ],
+  "instruction": [
+    "Chop up old fashion/rolled oats: 75 g in a blender until broken down",
+    "Add banana: 1, eggs: 3, milk (dairy or alternative): 2 tbsp, baking powder: 1 tbsp, protein powder: 3 tbsp, and cinnamon: 1 pinch and blend for about 1 minute till smooth.",
+    "Heat a drizzle of oil in a pan on medium heat",
+    "Pour pancakes in the pan in batches, should be about 4 inches in diameter after spreading.",
+    "Cook for about 2 minutes, until the batter bubbles and the underside is golden",
+    "Can add blueberries or chocolate chips (optional add-ins) immediately after the first pour for different flavors.",
+    "Flip and cook for 1 minute more till cooked through.",
+    "Transfer pancakes to a plate before starting the next batch.",
+    "Serve with maple syrup and any desired toppings like butter, peanut butter, whipped cream, and cut fruit",
+  ],
+  "instructions": {
+    "html": "<li class="p-instruction instruction">Chop up <span id="ingredient-1" class="cooklang-ingredient" cooklang-amount="75" cooklang-unit="g">old fashion/rolled oats: 75 g</span> in a <span id="cookware-1" class="cooklang-cookware">blender</span> until broken down</li>
+<li class="p-instruction instruction">Add <span id="ingredient-2" class="cooklang-ingredient" cooklang-amount="1">banana: 1</span>, <span id="ingredient-3" class="cooklang-ingredient" cooklang-amount="3">eggs: 3</span>, <span id="ingredient-4" class="cooklang-ingredient" cooklang-amount="2" cooklang-unit="tbsp">milk (dairy or alternative): 2 tbsp</span>, <span id="ingredient-5" class="cooklang-ingredient" cooklang-amount="1" cooklang-unit="tbsp">baking powder: 1 tbsp</span>, <span id="ingredient-6" class="cooklang-ingredient" cooklang-amount="3" cooklang-unit="tbsp">protein powder: 3 tbsp</span>, and <span id="ingredient-7" class="cooklang-ingredient" cooklang-amount="1" cooklang-unit="pinch">cinnamon: 1 pinch</span> and blend for about <span id="timer-1" class="cooklang-timer" cooklang-amount="1" cooklang-unit="minute">1 minute</span> till smooth.</li>
+<li class="p-instruction instruction">Heat a drizzle of oil in a <span id="cookware-2" class="cooklang-cookware">pan</span> on medium heat</li>
+<li class="p-instruction instruction">Pour pancakes in the pan in batches, should be about 4 inches in diameter after spreading.</li>
+<li class="p-instruction instruction">Cook for about <span id="timer-2" class="cooklang-timer" cooklang-amount="2" cooklang-unit="minutes">2 minutes</span>, until the batter bubbles and the underside is golden</li>
+<li class="p-instruction instruction">Can add <span id="ingredient-8" class="cooklang-ingredient">blueberries or chocolate chips (optional add-ins)</span> immediately after the first pour for different flavors.</li>
+<li class="p-instruction instruction">Flip and cook for <span id="timer-3" class="cooklang-timer" cooklang-amount="1" cooklang-unit="minute">1 minute</span> more till cooked through.</li>
+<li class="p-instruction instruction">Transfer pancakes to a plate before starting the next batch.</li>
+<li class="p-instruction instruction">Serve with <span id="ingredient-9" class="cooklang-ingredient">maple syrup</span> and <span id="ingredient-10" class="cooklang-ingredient">any desired toppings like butter, peanut butter, whipped cream, and cut fruit</span></li>",
+    "text": "Chop up old fashion/rolled oats: 75 g in a blender until broken down
+Add banana: 1, eggs: 3, milk (dairy or alternative): 2 tbsp, baking powder: 1 tbsp, protein powder: 3 tbsp, and cinnamon: 1 pinch and blend for about 1 minute till smooth.
+Heat a drizzle of oil in a pan on medium heat
+Pour pancakes in the pan in batches, should be about 4 inches in diameter after spreading.
+Cook for about 2 minutes, until the batter bubbles and the underside is golden
+Can add blueberries or chocolate chips (optional add-ins) immediately after the first pour for different flavors.
+Flip and cook for 1 minute more till cooked through.
+Transfer pancakes to a plate before starting the next batch.
+Serve with maple syrup and any desired toppings like butter, peanut butter, whipped cream, and cut fruit",
+  },
+  "name": "Protein Oat Pancakes",
+  "photo": [
+    {
+      "alt": "Plate of pancakes with peanut butter and syrup",
+      "url": "https://www.ciccarello.me/assets/img/recipe-protein-oat-pancakes.jpg",
+    },
+  ],
+  "published": "2024-01-15T23:40:57Z",
+  "remix-of": "https://www.bbcgoodfood.com/recipes/easy-protein-pancakes",
+  "type": [
+    "g",
+    "tbsp",
+    "tbsp",
+    "tbsp",
+    "pinch",
+  ],
+  "updated": "2024-03-04T07:42:39Z",
+  "url": "https://www.ciccarello.me/recipes/2024/01/15/protein-oat-pancakes/",
+  "value": [
+    "75",
+    "1",
+    "3",
+    "2",
+    "1",
+    "3",
+    "1",
+  ],
+  "yield": "2",
+}
+`;
+
 exports[`microformats should have a(n) reply 1`] = `
 {
   "author": {
@@ -828,6 +968,15 @@ exports[`microformats should have h-entries on the posts page 1`] = `
 							“Summer sunshine.”",
       "type": "entry",
       "url": "https://www.ciccarello.me/posts/2023/07/30/summer-sunshine-like/",
+    },
+    {
+      "author": "https://www.ciccarello.me/",
+      "category": "breakfast",
+      "name": "Protein Oat Pancakes",
+      "published": "2024-01-15T23:40:57Z",
+      "summary": "We were looking for a higher protein breakfast that didn’t just taste like eggs and found this recipe from bbcgoodfood.com. We would like to try adding another scoop of protein powder to increase the protein content more but might need to adjust for consistency. Some other recipes we’ve looked at...",
+      "type": "recipe",
+      "url": "https://www.ciccarello.me/recipes/2024/01/15/protein-oat-pancakes/",
     },
   ],
   "name": "Test post list",
