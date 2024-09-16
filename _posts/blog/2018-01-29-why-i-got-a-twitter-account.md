@@ -12,7 +12,7 @@ updates:
     description: Added link to Rethinking social media post.
 ---
 
-<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
+<aside>
     Since writing this post, I've moved away from Twitter. To see why, read <a href="/blog/2023/10/23/rethinking-social-media/">Rethinking my approach to social media</a>.
 </aside>
 

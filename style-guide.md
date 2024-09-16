@@ -374,21 +374,28 @@ These are inspired by Medium's approach to linking to external content. It shows
 
 ## Aside
 
-These need to be formalized but they are usefull for calling out the context of an article. So far I've added inline styles since I want them to appear in RSS readers.
+These are useful for calling out the context of an article.
+They previously used inline styles but now use an element selector.
 
-<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
+<aside>
     This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 
 ```html
-<aside
-  style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;"
->
+<aside>
   This post is part of a series describing our trip to Italy. To read an
   overview of our trip and why we went, check out this
   <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 ```
+
+There is also an aside used for post status information that looks like the following:
+
+
+<aside class="unlisted-warning">
+  <strong>Draft Content</strong>
+  <p>This page including the URL and contents is subject to change.</p>
+</aside>
 
 ## Forms
 

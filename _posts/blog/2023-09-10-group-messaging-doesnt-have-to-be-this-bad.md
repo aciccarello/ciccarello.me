@@ -12,7 +12,7 @@ updates:
     description: Added note about RCS support announcement from Apple
 ---
 
-<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
+<aside>
     Update: On November 16th, 2023 after years of industry pressure, <a href="https://9to5mac.com/2023/11/16/apple-rcs-coming-to-iphone/">Apple announced</a> <q cite="https://9to5mac.com/2023/11/16/apple-rcs-coming-to-iphone/">Later next year, we will be adding support for RCS Universal Profile</q>. Here's to hoping this post is mostly moot in 2024!
 </aside>
 

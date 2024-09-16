@@ -9,7 +9,7 @@ image_alt: ''
 
 Software projects succeed or fail based on the quality of the teams behind them. Expert developers can be hard to find. So how do you get junior developers to level up? It’s not enough to teach how to use a framework or tech stack. Good developers can follow a pattern. Great developers know why patterns are established and how to improve the project as it grows.
 
-<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
+<aside>
     This post is an excerpt. To you can read the full post on the <a href="https://www.sitepen.com/blog/leveling-up-your-dev-team">SitePen blog</a>.
 </aside>
 

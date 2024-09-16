@@ -11,7 +11,7 @@ As a boy, I remember my grandmother telling stories of her and my grandfather's 
 
 Since then the city has always been a place of wonder for me. What would it be like to live in a city navigated by boats? The island is located in a lagoon on the north-west coast of Italy and has been a major port for many years. The island's isolated position helped protect it from attack until they became their own military power. As the population grew they learned how to build up multi-story houses right against the water, using every available piece of land. It is a truly unique place and one I was very glad we were able to visit.
 
-<aside style="padding: 1rem 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 2rem;font-style: italic;">
+<aside>
     This post is part of a series describing our trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/we-traveled-to-italy/">introductory post</a>.
 </aside>
 

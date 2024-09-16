@@ -371,6 +371,21 @@ code {
 	padding: 1px 0.2em;
 }
 
+aside {
+	padding: 1rem 2rem;
+	font-size: 1.1em;
+	border-top: medium double #333;
+	border-bottom: medium double #333;
+	margin: 2rem 0;
+	font-style: italic;
+}
+
+.unlisted-warning {
+	border: none;
+	background-color: var(--color-base-muted);
+	color: var(--text-on-light-background);
+}
+
 input,
 button,
 .btn-link {
@@ -928,11 +943,6 @@ blockquote {
 .twitter-tweet {
 	/* TODO: Look into this for instagram embeds */
 	margin: 2rem auto !important;
-}
-
-.unlisted-warning {
-	padding: 1rem 2rem;
-	background-color: var(--color-base-muted);
 }
 
 .author-description {
