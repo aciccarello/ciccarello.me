@@ -383,7 +383,7 @@ aside {
 .unlisted-warning {
 	border: none;
 	background-color: var(--color-base-muted);
-	color: var(--text-on-light-background);
+	color: var(--text-on-background);
 }
 
 input,
