@@ -11,6 +11,7 @@ updates:
     description: Added seasoning measurement & pressure cooker modifications
 ---
 This is a really easy slow cooker meal that requires very little prep. The initial ingredients can all go directly in the slow cooker.
+For a similar recipe, see [Creamy White Chicken Chili](/recipes/2024/10/02/creamy-white-chicken-chili/).
 
 ![Raw ingredients in a slow cooker.](/assets/img/cream-cheese-chicken-combined.jpg){.post-img--float .post-img--float-right}
 
