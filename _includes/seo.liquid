@@ -1,12 +1,14 @@
 {%- assign fullUrl = page.url | addBaseUrl -%}
-{%- assign finalTitle = title | default: responseData.plaintextSummary | default: defaultTitle | default : site.title -%}
+{%- assign defaultedTitle = title | default: responseData.plaintextSummary | default: defaultTitle | default : site.title -%}
 {%- if page.inputPath contains ".md" and collectionData -%}
     {%- assign pageContent = collectionData.templateContent | joinLines | strip_html | truncate: 150 | escape | replace: '\\', '&bsol;' -%}
 {%- else -%}
     {%- assign pageContent = site.description | markdownify | joinLines | strip_html -%}
 {%- endif -%}
-{%- if title or defaultTitle %}
-<title>{{title | default : defaultTitle}} | {{ site.title }}</title>
+{%- if defaultedTitle == title %}
+<title>{{defaultedTitle}} | {{ site.title }}</title>
+{%- elsif defaultedTitle != site.title %}
+<title>{{defaultedTitle}}{% if pageContent %}: {{ pageContent | truncate: 50 }} {% endif %} | {{ site.title }}</title>
 {%- else %}
 <title>{{ site.title }} | {{ site.description | markdownify }}</title>
 {%- endif %}
@@ -14,7 +16,7 @@
 {%- if excludeFromSitemap or eleventyExcludeFromCollections %}
 <meta name="robots" content="noindex,follow">
 {%- endif %}
-<meta property="og:title" content="{{finalTitle}}" />
+<meta property="og:title" content="{{defaultedTitle}}" />
 {%- if author.name %}
 <meta name="author" content="{{ author.name }}" />
 {%- endif %}
@@ -47,7 +49,7 @@
         "url": "https://www.ciccarello.me"
     },
     {%- endif -%}
-    "headline":"{{finalTitle}}",
+    "headline":"{{defaultedTitle}}",
     {% if date %}
     {% comment %}check for date frontmatter but use parsed page.date {% endcomment %}
     "datePublished": "{{ page.date | formatMachineDate }}",
@@ -57,7 +59,7 @@
     "@type":"WebSite",
     {% elsif page.inputPath contains "_posts/recipe" %}
     "@type": "Recipe",
-    "name":"{{finalTitle}}",
+    "name":"{{defaultedTitle}}",
     {% elsif page.inputPath contains "_posts" %}
     "mainEntityOfPage":{"@type":"WebPage", "@id": "{{ collectionData.data.canonical_url | default : fullUrl }}"},
     "@type":"BlogPosting",
