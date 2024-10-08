@@ -1,14 +1,13 @@
 ---
 title: Pan Seared Tri-tip
-permalink: /drafts/tri-tip/
-date: 2024-03-28T00:22:59.621Z
+slug: tri-tip
+date: 2024-10-08T06:25:42.168Z
 tags:
   - beef
   - stove
   - oven
-image:
-image_alt:
-eleventyExcludeFromCollections: draft
+image: /assets/img/recipe-tri-tip.jpg
+image_alt: Cut steak on a plate with potatoes and carrots.
 ---
 
 Tri-tip is a popular cut of meat in California and a treat for our family.
