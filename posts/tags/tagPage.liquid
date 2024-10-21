@@ -23,7 +23,7 @@ eleventyComputed:
 	<ol class="post-list">
         {%- for post in collections[tag] reversed %}
         <li>
-			{% include "post-card.html" post: post %}
+			{% include "post-card.html" post: post, showKind: true  %}
         </li>
         {%- endfor %}
     </ol>
