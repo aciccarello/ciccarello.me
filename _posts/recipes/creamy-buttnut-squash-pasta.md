@@ -1,7 +1,7 @@
 ---
 title: Creamy Butternut Squash Pasta
 date: 2024-09-30T06:58:43.416Z
-permalink: /drafts/squash-pasta
+permalink: /drafts/squash-pasta/
 canonical_url: https://www.halfbakedharvest.com/creamy-roasted-garlic-butternut-squash-pasta/
 tags:
   - dinner

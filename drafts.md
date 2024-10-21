@@ -28,3 +28,4 @@ However, I do intend to post these when they are ready.
 - [Coconut Curry Meatballs](/recipes/2021/05/21/coconut-curry-meatballs/)
 - [Breakfast Bake](./breakfast-bake/)
 - [Chocolate Pecan Banana Bread](/recipes/2022/05/06/chocolate-pecan-banana-bread/)
+- [Creamy Butternut Squash Pasta](/drafts/squash-pasta/)
