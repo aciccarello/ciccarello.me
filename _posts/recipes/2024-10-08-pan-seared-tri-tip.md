@@ -18,7 +18,7 @@ You can also adjust this for grilling by starting with a really hot grill before
 
 ## Summary
 
-- Prep Time: 10 minutes (plus any time if you want the steak closer to room temperature)
+- Prep Time: 10 minutes (plus optional time to bring the steak closer to room temperature)
 - Cook Time: 40 minutes
 - Servings: 6
 
