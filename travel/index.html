@@ -1,0 +1,24 @@
+---
+layout: default
+back_button: "/posts"
+---
+
+<div class="container h-feed">
+	<h1 class="post-list-heading p-name">
+		Travel
+	</h1>
+	<p>
+		A collection of memorable trips I've taken
+	</p>
+	<p>
+		Also check out the <a href="/posts/tags/travel">travel tag</a> for more posts.
+	</p>
+	<ol class="post-list">
+		{%- for post in collections.trips reversed -%}
+			<li>
+				{% include "post-card.html" post: post %}
+			</li>
+		{%- endfor -%}
+	</ol>
+
+</div>

@@ -1056,6 +1056,19 @@ blockquote {
 	font-style: italic;
 }
 
+#dynamicMap {
+	height: 500px;
+}
+.leaflet-container {
+	filter: var(--map-tiles-filter, none);
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--map-tiles-filter: brightness(0.6) invert(1) contrast(3)
+			hue-rotate(200deg) saturate(0.3) brightness(0.7);
+	}
+}
+
 @media screen and (max-width: 28em) {
 	.extra-icon {
 		display: none;

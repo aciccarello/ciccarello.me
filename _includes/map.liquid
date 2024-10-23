@@ -1,0 +1,9 @@
+{% if locations -%}
+<link rel="stylesheet" href="/assets/js/leaflet/leaflet.css">
+<div id="dynamicMap"></div>
+<script>
+{%- comment %}Global object to define points on the map used by map.js{% endcomment %}
+globalThis.ciccarelloMapPoints = JSON.parse(`{{locations | jsonifyLocations}}`);
+</script>
+<script type="module" src="/assets/js/map.js" defer></script>
+{%- endif %}

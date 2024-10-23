@@ -33,6 +33,7 @@ eleventyExcludeFromCollections: true
     {%- capture content %}
       {%- include "featured-media.html", image: post.data.image, image_alt: post.data.image_alt, image_caption: post.data.image_caption %}
       {%- include "reply-context.html", responseData: post.data.responseData %}
+			{%- include "trip-link" %}
       {%- if forloop.index <= 10 %}
         {{ post.templateContent }}
         {{ bridgyFed }}

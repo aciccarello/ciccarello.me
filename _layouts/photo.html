@@ -37,6 +37,8 @@ layout: default
 		</div>
 		{% include "syndication.html" %}
 		{% include "updates.html" %}
+		{%- include "trip-link" %}
+		{% include "map" %}
 		<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>
 		<link rel="alternate" type="application/activity+json" href="https://fed.brid.gy/r/{{page.url | addBaseUrl}}">
 	</article>

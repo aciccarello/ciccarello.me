@@ -71,6 +71,7 @@
   },
   "dependencies": {
     "decap-cms": "^3.3.2",
+    "leaflet": "^1.9.4",
     "webmention.js": "^0.5.5"
   },
   "overrides": {

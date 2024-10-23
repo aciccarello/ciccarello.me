@@ -15,16 +15,17 @@ module.exports = function (eleventyConfig) {
 		'pinterest-60576.html',
 		'mywotc6b2477c57f015eaa645.html',
 		'BingSiteAuth.xml',
-	];
-	eleventyConfig.addPassthroughCopy({
-		[require.resolve('webmention.js/static/webmention')]:
-			'assets/js/webmention.js',
-		[require.resolve('decap-cms')]: 'assets/js/decap-cms.js',
-		...staticFiles.reduce((collection, path) => {
-			collection[path] = path;
-			return collection;
-		}, {}),
-	});
+	].map((path) => [path, path]);
+	const npmPackages = [
+		['webmention.js/static/webmention', 'assets/js/webmention.js'],
+		['decap-cms', 'assets/js/decap-cms.js'],
+	].map(([packagePath, dest]) => [require.resolve(packagePath), dest]);
+
+	// addPassthroughCopy takes object mapping source -> dest
+	eleventyConfig.addPassthroughCopy(
+		Object.fromEntries([...staticFiles, ...npmPackages]),
+	);
+
 	/**
 	 * Map of collection names to glob patterns
 	 * @type {Record<string, string>}
@@ -37,6 +38,7 @@ module.exports = function (eleventyConfig) {
 		links: '_posts/{links,replies}/*.md',
 		reviews: '_posts/reviews/*.md',
 		posts: '_posts/**/*.md',
+		// Trips are added separately so they can include child data
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>
 		eleventyConfig.addCollection(collectionName, (collection) =>
@@ -122,6 +124,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(require('./_build/date'));
 	eleventyConfig.addPlugin(require('./_build/markdown'));
 	eleventyConfig.addPlugin(require('./_build/recipe'));
+	eleventyConfig.addPlugin(require('./_build/trips'));
 	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
 	eleventyConfig.addPlugin(
 		require('@11tyrocks/eleventy-plugin-lightningcss'),

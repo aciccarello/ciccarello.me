@@ -1,0 +1,8 @@
+{
+  "layout": "trip",
+  "type": "trip",
+  "back_button": "/travel/",
+  "permalink": "/travel/{{ page.date | date: '%Y' }}/{{ slug | default : title | slugify}}/",
+  "dateFormat": "month",
+  "tags": ["travel"]
+}

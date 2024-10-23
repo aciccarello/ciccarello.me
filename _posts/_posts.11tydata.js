@@ -8,6 +8,9 @@ module.exports = {
 	back_button: '../../../..',
 	layout: 'note',
 	eleventyComputed: {
+		type: ({ type, layout }) => type || layout,
+		// Post kind data should override this if it's not this simple
+		typePlural: ({ type, typePlural }) => typePlural || type + 's',
 		lastUpdated:
 			/** @type {(data: {date: Date, updates?: {date: string}[]}) => Date} */ (
 				(data) =>
