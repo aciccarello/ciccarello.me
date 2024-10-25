@@ -2,19 +2,21 @@
 title: Sitemap
 layout: page
 permalink: /sitemap/
+additionalPages:
+ - url: /style-guide/
 ---
 
 Looking to explore the site? Here are some pages you might want to check out.
 
 <ul class="h-feed">
-  {%- assign items = collections.all | sort: "url" %}
+  {%- assign items = collections.all | concat: additionalPages | sort: "url" %}
   {%- for item in items %}
     {%- assign segmentCount = item.url | split: '/' | size | minus: 1 %}
-    {%- if segmentCount == 1 and not item.data.excludeFromSitemap %}
+    {%- if segmentCount <= 1 and not item.data.excludeFromSitemap %}
     {%- assign currentItemUrlFirstSegment = item.url | remove_first: '/' | split: '/' | first %}
     {%- assign nextItemUrlFirstSegment = items[forloop.index].url | remove_first: '/' | split: '/' | first %}
     <li class="h-entry">
-      <a href="{{ item.url }}">{{ item.url }}</a>
+      <a href="{{ item.url }}">{{ item.url | remove_last: '/' | default: '/' }}</a>
     {%- if nextItemUrlFirstSegment == currentItemUrlFirstSegment %} <span title="This page contains more sub-pages">📁</span>{% endif %}
     </li>
     {%- endif %}
