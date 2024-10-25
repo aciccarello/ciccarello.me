@@ -537,6 +537,11 @@ button,
 	gap: 0.5rem;
 }
 
+.no-wrap {
+	white-space: nowrap;
+	overflow-x: auto;
+}
+
 .sr-only {
 	border: 0;
 	clip: rect(0 0 0 0);

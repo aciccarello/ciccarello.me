@@ -184,6 +184,15 @@ would go back to the widow and be respectable. So I went back.
 
 Text can be **strengthened**, _emphasized_, or even made <small>smaller</small>. In markdown quotes in "quoted text" are stylized to highlight the begining vs the end.
 
+### Text Wrapping
+
+Use the `.no-wrap` class to avoid wrapping text.
+As you can see this line of text keeps going without a page break.
+However, you should only use this on strings that you don't want to wrap or you can screw up your page formatting. {.no-wrap}
+
+If you don't want to have the text scroll like the above line, a shorter string would only keep the important text together.
+E.g. _something like this_{.no-wrap} which will be kept together but other text will wrap.
+
 ### Links
 
 [Links in paragraph](.) are styled to increase readability and make it clear they are links. This includes different colored text and underlining, though bold text has been considered. Links should ideally contain [multiple word](.) for increased readability.
