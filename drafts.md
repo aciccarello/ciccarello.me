@@ -1,6 +1,7 @@
 ---
 title: Drafts
 layout: page
+excludeFromSitemap: true
 eleventyExcludeFromCollections: draft
 ---
 

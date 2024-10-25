@@ -1,0 +1,30 @@
+Sitemap: https://www.ciccarello.me/sitemap.xml
+
+# Start: AI Block List
+# https://platform.openai.com/docs/bots
+User-agent: GPTBot
+Disallow: /
+
+# https://darkvisitors.com/agents/bytespider
+User-agent: Bytespider
+Disallow: /
+
+# https://developers.facebook.com/docs/sharing/bot/
+User-agent: FacebookBot
+Disallow: /
+
+# https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers#google-extended
+User-agent: Google-Extended
+Disallow: /
+
+# https://darkvisitors.com/operators/webz-io
+User-agent: omgili
+Disallow: /
+User-agent: Webzio-Extended
+Disallow: /
+
+# https://kangaroollm.com.au/kangaroo-bot/
+User-agent: Kangaroo Bot
+Disallow: /
+
+# End: AI Block List

@@ -1,7 +1,7 @@
 ---
 title: Referrals
 layout: page
-excludeFromSitemap: true
+noindex: true
 ---
 
 <style>

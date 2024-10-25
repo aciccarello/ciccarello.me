@@ -16,6 +16,7 @@ DEBUG=Eleventy* npm start
 
 # Page Properties
 
+- noindex: mark as `noindex` to robots
 - excludeFromSitemap: Don't show in sitemap.xml and mark as `noindex` to robots
 - excludeFromMainFeed: Appears in all feeds except the main feed. Used for less important activities like replies and likes.
 - eleventyExcludeFromCollections: same as excludeFromSitemap plus don't show in feeds.

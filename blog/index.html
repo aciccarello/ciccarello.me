@@ -3,7 +3,7 @@ layout: default
 back_button: "/posts"
 permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
 redirect_from: /blog/page/1
-excludeFromSitemap: true
+noindex: true
 pagination:
   data: collections.articles
   size: 15

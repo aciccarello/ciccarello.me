@@ -1,7 +1,6 @@
 ---
 title: 'Search'
 layout: page
-excludeFromSitemap: true
 ---
 
 <style type="text/css">
