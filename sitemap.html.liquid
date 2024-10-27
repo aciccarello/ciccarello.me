@@ -13,11 +13,10 @@ Looking to explore the site? Here are some pages you might want to check out.
   {%- for item in items %}
     {%- assign segmentCount = item.url | split: '/' | size | minus: 1 %}
     {%- if segmentCount <= 1 and not item.data.excludeFromSitemap %}
-    {%- assign currentItemUrlFirstSegment = item.url | remove_first: '/' | split: '/' | first %}
-    {%- assign nextItemUrlFirstSegment = items[forloop.index].url | remove_first: '/' | split: '/' | first %}
+    {%- assign nextPageStartsWithSomethingElse = items[forloop.index].url | split:  item.url | first %}
     <li class="h-entry">
       <a href="{{ item.url }}">{{ item.url | remove_last: '/' | default: '/' }}</a>
-    {%- if nextItemUrlFirstSegment == currentItemUrlFirstSegment %} <span title="This page contains more sub-pages">📁</span>{% endif %}
+    {%- if nextPageStartsWithSomethingElse == blank %} <span title="This page contains more sub-pages">📁</span>{% endif %}
     </li>
     {%- endif %}
   {%- endfor %}
