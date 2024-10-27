@@ -1,0 +1,23 @@
+---
+layout: default
+back_button: "/es/"
+permalink: "/es/publicaciones/"
+title: "Publicaciones"
+noindex: true
+---
+
+<div class="container h-feed">
+	<h1 class="post-list-heading p-name">
+		{{ page.list_title | default: "Posts" }}
+	</h1>
+	<ol class="post-list">
+		{%- for post in collections.publicaciones -%}
+			<li>
+			{% include "post-card.html" post: post, showKind: true %}
+			</li>
+		{%- endfor -%}
+	</ol>
+
+{% include "pagination.html" %}
+
+</div>

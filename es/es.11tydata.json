@@ -1,0 +1,6 @@
+{
+  "site": {
+    "description": "Soy un ingeniero de software que vive en el sur de California construyendo cosas geniales usando JavaScript y otras tecnologías web. Disfruto viajar a otros países y pasar tiempo en la naturaleza.",
+    "header_pages": ["publicaciones/index.html"]
+  }
+}

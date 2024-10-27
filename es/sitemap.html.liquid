@@ -1,0 +1,22 @@
+---
+title: Mapa del sitio
+layout: page
+permalink: /es/sitemap/
+---
+
+Buscando explorar el sitio? Aquí hay algunas páginas que podrías querer revisar.
+
+<ul class="h-feed">
+  {%- assign items = collections.all | concat: additionalPages | sort: "url" %}
+  {%- for item in items %}
+    {%- assign segmentCount = item.url | split: '/' | size | minus: 1 %}
+    {%- assign isNotSpanishPage = item.url | split: '/es/' | first %}
+    {%- if isNotSpanishPage == blank and segmentCount <= 2 and not item.data.excludeFromSitemap %}
+    {%- assign nextPageStartsWithSomethingElse = items[forloop.index].url | split:  item.url | first %}
+    <li class="h-entry">
+      <a href="{{ item.url }}">{{ item.url | remove_last: '/' | default: '/' }}</a>
+    {%- if nextPageStartsWithSomethingElse == blank %} <span title="Esta pagina tiene mas subpáginas">📁</span>{% endif %}
+    </li>
+    {%- endif %}
+  {%- endfor %}
+<ul>

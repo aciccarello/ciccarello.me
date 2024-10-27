@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import rssPlugin from '@11ty/eleventy-plugin-rss';
 import eleventySyntaxhighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight';
 import eleventyLightningCssPlugin from '@11tyrocks/eleventy-plugin-lightningcss';
+import { EleventyI18nPlugin } from '@11ty/eleventy';
 import datePlugin from './_build/date.js';
 import markdownPlugin from './_build/markdown.js';
 import recipePlugin from './_build/recipe.js';
@@ -49,6 +50,7 @@ export default async function (eleventyConfig) {
 		links: '_posts/{links,replies}/*.md',
 		reviews: '_posts/reviews/*.md',
 		posts: '_posts/**/*.md',
+		publicaciones: 'es/publicaciones/*/*.md',
 		// Trips are added separately so they can include child data
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>
@@ -141,6 +143,7 @@ export default async function (eleventyConfig) {
 		minify: false, // TODO: Enable based on env flags
 		sourceMap: true,
 	});
+	eleventyConfig.addPlugin(EleventyI18nPlugin, { defaultLanguage: 'en' });
 	eleventyConfig.addPlugin(datePlugin);
 	eleventyConfig.addPlugin(markdownPlugin);
 	eleventyConfig.addPlugin(recipePlugin);
