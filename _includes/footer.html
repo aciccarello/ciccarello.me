@@ -10,8 +10,8 @@
 	<section>
 		<h2 id="footer-meta-links">Meta</h2>
 		<nav aria-labelledby="footer-meta-links">
-			<a href="/subscribe/">Subscribe</a>
-			<a href="/sitemap/">Sitemap</a>
+			<a href="{{ '/subscribe/' | locale_url }}">Subscribe</a>
+			<a href="{{ '/sitemap/' | locale_url }}">Sitemap</a>
 			{%- if eleventyExcludeFromCollectionsReason != "deleted" -%}
 				<a href="https://github.com/aciccarello/ciccarello.me/blob/main/{{ page.inputPath }}" rel="noopener">
 				Page source

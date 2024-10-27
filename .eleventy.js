@@ -143,7 +143,10 @@ export default async function (eleventyConfig) {
 		minify: false, // TODO: Enable based on env flags
 		sourceMap: true,
 	});
-	eleventyConfig.addPlugin(EleventyI18nPlugin, { defaultLanguage: 'en' });
+	eleventyConfig.addPlugin(EleventyI18nPlugin, {
+		defaultLanguage: 'en',
+		errorMode: 'allow-fallback',
+	});
 	eleventyConfig.addPlugin(datePlugin);
 	eleventyConfig.addPlugin(markdownPlugin);
 	eleventyConfig.addPlugin(recipePlugin);

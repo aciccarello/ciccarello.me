@@ -25,6 +25,15 @@
 			</aside>
 		{%- endcase -%}
 
+		{% assign links = page.url | locale_links %}
+		{%- for link in links %}
+		{%- if forloop.first %}
+		This page is also available in:
+		{% endif %}
+		{%- unless forloop.first %},{% endunless %}
+		<a href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.label}}</a>
+		{%- endfor -%}
+
 		{%- if eleventyExcludeFromCollectionsReason != "deleted" -%}
             {{ content }}
 		{%- endif -%}

@@ -12,13 +12,13 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 		<div class="introduction-text">
 			<h1>Hola, soy
                 <a href="https://www.ciccarello.me/ " class="p-name u-url disable-link-styles" rel="me">Anthony Ciccarello</a>!
-				<button id="pronounce-name-button" aria-label="Pronounce name" title="Pronounce 'Anthony Ciccarello'" style="display: none;">🔈</button>
+				<button id="pronounce-name-button" aria-label="Pronunciar el nombre" title="Pronuncia 'Anthony Ciccarello'" style="display: none;">🔈</button>
             </h1>
 			<p class="p-note">
 				{{ site.description}}
 			</p>
 			<div class="btn-group">
-				<a class="btn-link" href="#contacto">
+				<a class="btn-link" href="#connect">
 					Conectar conmigo
 				</a>
 				<a rel="feed" class="btn-link btn-alternate" href="/es/publicaciones/">
@@ -30,7 +30,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 
 	<section class="profiles container">
 		<h2 class="profiles__title">Around the Web</h2>
-	{%- for group in links.homepage %}
+	{%- for group in links.homepage_es %}
 	<div class="card profile-card">
 		<div class="profile-card__title">
 			<h3 id="{{group.name | slugify }}-links">
@@ -60,38 +60,37 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 	</section>
 
 	<section class="container">
-		<h3>Career</h3>
+		<h3>Carrera</h3>
 		{%- assign currentPosition = resume.experience[0] %}
 		<p>
-            I currently work remotely as a {{currentPosition.position}} for
-            <a class="p-org h-card" href="{{currentPosition.companyUrl}}" title="{{currentPosition.companyName}} home page">{{currentPosition.companyName}}</a>
-            doing full-stack development.
-			Previously I've worked for {{resume.experience[1].companyName}}, {{resume.experience[2].companyName}}, and {{resume.experience[3].companyName}}.
+            Actualmente trabajo de forma remota como {{currentPosition.position}} para
+            <a class="p-org h-card" href="{{currentPosition.companyUrl}}" title="{{currentPosition.companyName}} inicio">{{currentPosition.companyName}}</a>.
+			Anteriormente trabajé para {{resume.experience[1].companyName}}, {{resume.experience[2].companyName}}, y {{resume.experience[3].companyName}}.
 			I've primarily worked on creating JavaScript front-end applications and Java back-end APIs
 			but have a wide range of experience across various projects.
-			See my <a href="/resume">resume</a> for my full career history.
+			Consulta mi <a href="/resume">currículum</a> para conocer mi trayectoria profesional completa.
         </p>
 		<h3>
             Personal
         </h3>
 		<p>
-			My personal life is primarially focused on raising kids who are in <a href="/foster/">foster care</a>.
-            I enjoy outdoor activities such as hiking,
-            <a href="https://ebird.org/profile/OTUwMDI4" rel="me" title="eBird profile">bird watching</a>, and
-                                                                                			playing
-            <a href="https://en.wikipedia.org/wiki/Ultimate_(sport)" title="Ultimate frisbee wikipedia article">
-                ultimate frisbee</a>. I like working on small wood working projects and caring for my
-				indoor and outdoor plants. Additionally, I contribute to Open Source
-				software in my free time and was a maintainer of
-            <a href="https://typedoc.org/">TypeDoc</a>
-            project.
+			Mi vida personal se centra principalmente en crianza de niños que están en <a href="/foster/">hogares de acogida</a>.
+			Disfruto de actividades al aire libre como el senderismo,
+			<a href="https://ebird.org/profile/OTUwMDI4" rel="me" title="perfil de eBird">la observación de aves</a>, y
+			jugar
+			<a href="https://es.wikipedia.org/wiki/Ultimate_(deporte)" title="artículo de wikipedia sobre ultimate frisbee">
+				al ultimate frisbee</a>.
+			Me gusta trabajar en pequeños proyectos de carpintería y cuidar de mis
+			plantas de interior y exterior.
+			Además, contribuyo al software de código abierto en mi tiempo libre y fui mantenedor del proyecto
+			<a href="https://typedoc.org/">TypeDoc</a>.
         </p>
 	</section>
 	<section class="h-feed">
 		{% removeindents %}
 		<div class="container">
 		<h2 class="post-list-heading p-name">Últimas publicaciones</h2>
-		También tengo <a href="/posts/">más publicaciones en ingles</a>.
+		<p>También tengo <a href="/posts/">más publicaciones en ingles</a>.</p>
 		<ol class="post-list">
 		{%- assign posts = collections["publicaciones"] %}
 			<li>
@@ -115,7 +114,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 		</div>
 		{% endremoveindents %}
 	</section>
-	<section class="" id="contacto">
+	<section class="" id="connect">
 		<h2>Conectar</h2>
 		<p>Conéctate conmigo usando uno de mis canales preferido</p>
 		<div class="connect-icons">
@@ -124,7 +123,7 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 					{% include "icons/email.svg" %}
 				</span>
 			</a>
-			<a aria-label="LinkedIn profile" class="icon-button btn-link" href="https://www.linkedin.com/in/anthonyciccarello/" rel="me">
+			<a aria-label="perfil de LinkedIn" class="icon-button btn-link" href="https://www.linkedin.com/in/anthonyciccarello/" rel="me">
 				<span class="svg-icon">
 					{% include "icons/linkedin.svg" %}
 				</span>

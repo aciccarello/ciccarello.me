@@ -8,7 +8,7 @@ noindex: true
 
 <div class="container h-feed">
 	<h1 class="post-list-heading p-name">
-		{{ page.list_title | default: "Posts" }}
+		{{ title }}
 	</h1>
 	<ol class="post-list">
 		{%- for post in collections.publicaciones -%}
