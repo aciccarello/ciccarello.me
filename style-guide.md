@@ -1,8 +1,6 @@
 ---
 title: Style Guide
 layout: page
-eleventyExcludeFromCollections: true
-eleventyExcludeFromCollectionsReason: Need to avoid circular reference in list of pages with custom styles
 examplePagination:
   href:
     prev: null
@@ -599,10 +597,12 @@ Review the following pages for issues as they have their own unique styles.
 
 <ul>
   {%- for page in collections.all %}
+  {%- if page.url != "/style-guide/"%}
   {%- if page.templateContent contains "<style" or post.templateContent contains ".css" %}
     <li>
       <a href="{{page.url}}">{{page.data.title | default: page.url}}</a>
     </li>
+  {%- endif %}
   {%- endif %}
   {%- endfor %}
 </ul>
