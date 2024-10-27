@@ -4,7 +4,8 @@ date: 2022-12-17T07:14:40.208Z
 tags:
   - cauliflower
   - soup
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 This recipe was initially based on Bethany Kramer's [Vegan Creamy Cauliflower Soup](https://asimplepalate.com/blog/creamy-cauliflower-soup-vegan/) recipe from  "A Simple Palate". However we've added a few non-vegan ingredients. Consider doubling if you have a lot of cauliflower. The result should be a creamy, slightly thick soup.
 

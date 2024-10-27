@@ -3,14 +3,14 @@
 	<meta charset="utf-8"/>
 	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 	<meta content="width=device-width, initial-scale=1" name="viewport"/>
-	{%- if eleventyExcludeFromCollections == "deleted" %}
+	{%- if eleventyExcludeFromCollectionsReason == "deleted" %}
 		<meta http-equiv="Status" content="410 Gone"/>
 	{%- endif %}
 	{%- include "seo" -%}
 	<link rel="stylesheet" href="/assets/css/common.css"/>
 	{%- if not collectionData or collectionData.templateContent contains "</pre>" %}
 	 	{%- comment %}
-			Future proof them selection by requiring on of two options using "not"
+			Future proof the selection by requiring on of two options using "not"
 			See https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme for details
 		{% endcomment %}
 		<link rel="stylesheet" media="(not (prefers-color-scheme: dark))" href="{{ '/assets/css/highlight.css' | url }}">

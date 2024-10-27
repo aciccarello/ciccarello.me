@@ -4,7 +4,8 @@ permalink: "/drafts/tag-moderation/"
 date: 2022-12-19
 tags:
  - IndieWeb
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 One interesting aspect to watch as Mastodon communities have grown is how different instances have developed their own standards for what content is allowed. Some sites are fairly restrictive, while others more hands off. But since Mastodon is a federated system, differing rules require moderators to not only moderate their own community, but also communities the site interacts with. This leads to situations where people are blocked because they don't follow specific policies like when to use content warnings that their server doesn't require.

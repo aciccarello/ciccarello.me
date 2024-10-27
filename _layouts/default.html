@@ -7,25 +7,27 @@
         {%- include "header.html" -%}
 
         <main aria-label="Content" class="page-content">
-			{%- if eleventyExcludeFromCollections == "draft" -%}
+		{%- case eleventyExcludeFromCollectionsReason %}
+			{%- when "draft" -%}
 			<aside class="unlisted-warning">
 				<strong>Draft Content</strong>
 				<p>This page including the URL and contents is subject to change.</p>
 			</aside>
-			{%- elsif eleventyExcludeFromCollections == "testing" -%}
+			{%- when "testing" -%}
 			<aside class="unlisted-warning">
 				<strong>Testing page</strong>
 				<p>This page including the URL and contents is subject to change.</p>
 			</aside>
-			{%- endif -%}
-			{%- if eleventyExcludeFromCollections == "deleted" -%}
+			{%- when "deleted" -%}
 			<aside class="unlisted-warning">
 				<strong>Content Deleted</strong>
 				<p>This page was removed and is no longer available.</p>
 			</aside>
-			{%- else -%}
+		{%- endcase -%}
+
+		{%- if eleventyExcludeFromCollectionsReason != "deleted" -%}
             {{ content }}
-			{%- endif -%}
+		{%- endif -%}
         </main>
 
         {%- include "footer.html" -%}

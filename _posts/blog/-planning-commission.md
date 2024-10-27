@@ -5,7 +5,8 @@ date: 2022-11-12
 tags:
   - local
   - Oceanside
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 Following the [environmental impact report meeting last year](https://www.ciccarello.me/blog/2022/11/23/attending-a-local-environment-impact-meeting/), the local housing development plan has moved forward and was discussed by our city's planning commission.

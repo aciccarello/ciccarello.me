@@ -4,7 +4,8 @@ permalink: '/drafts/license/'
 date: 2022-11-30
 tags:
   - foster care
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 We have not gone through the foster parent licensing process twice.

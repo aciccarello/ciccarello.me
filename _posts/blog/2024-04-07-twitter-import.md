@@ -10,7 +10,8 @@ image: /assets/img/blue-tit-featured.jpg
 image_alt: Small, round, blue and yellow songbird on a platform with a messy arrangement of birdseed.
 image_caption: Blue tit. Photo by <a href="https://unsplash.com/@ameefairbankbrown?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Amee Fairbank-Brown</a> on <a href="https://unsplash.com/photos/yellow-white-and-blue-bird-on-brown-wooden-table-s98hEljDHNk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 A while back, I [stopped using Twitter](/blog/2023/10/23/rethinking-social-media/).

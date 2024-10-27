@@ -1,7 +1,8 @@
 ---
 title: Coconut Curry Meatballs
 date: 2021-05-21T03:39:33.653Z
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 A recipe from Half Baked Harvest Super Simple (pg. 216)
 

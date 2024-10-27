@@ -9,7 +9,8 @@ tags:
   - butternut squash
 image: 
 image_alt: 
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 Still on our to-try list, but looks good enough to save

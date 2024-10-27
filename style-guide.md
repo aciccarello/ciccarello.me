@@ -2,7 +2,7 @@
 title: Style Guide
 layout: page
 eleventyExcludeFromCollections: true
-eleventyExcludeFromCollectionsExplanation: Need to avoid circular reference in list of pages with custom styles
+eleventyExcludeFromCollectionsReason: Need to avoid circular reference in list of pages with custom styles
 examplePagination:
   href:
     prev: null

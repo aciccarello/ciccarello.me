@@ -2,7 +2,8 @@
 title: My own struggle with housing density
 date: 2023-01-25T09:13:54.401Z
 permalink: /drafts/city-vs-country/
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 I like the idea of denser cities. I like being able to walk places. 
 

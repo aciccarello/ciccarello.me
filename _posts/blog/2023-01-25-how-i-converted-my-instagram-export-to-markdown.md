@@ -7,7 +7,8 @@ tags:
   - site changes
   - IndieWeb
   - technology
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 After I started posting photos to my site, I wanted to import all of the photos I had previously posted to Instagram.

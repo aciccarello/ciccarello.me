@@ -4,7 +4,8 @@ date: 2022-05-27T06:47:18.514Z
 canonical_url: https://thegreekfoodie.com/greek-tomato-salad-horiatiki-salata/
 tags:
   - salad
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 Modified from [thegreekfoodie.com](https://thegreekfoodie.com/greek-tomato-salad-horiatiki-salata/)
 

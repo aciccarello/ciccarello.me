@@ -1,7 +1,8 @@
 ---
 title: Chocolate Pecan Banana Bread
 date: 2022-05-06T05:18:05.174Z
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 Bekah's grandmother had the ingredients but used [these instructions](https://www.allrecipes.com/recipe/20144/banana-banana-bread/)
 

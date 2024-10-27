@@ -5,7 +5,8 @@ permalink: /drafts/web-framework-wishlist/
 tags:
   - technology
   - JavaScript
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 After listening to [Full Stack Radio episode with Rich Harris](https://fullstackradio.com/143) I started thinking about what I'd love to see from a web framework.

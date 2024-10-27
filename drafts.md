@@ -2,7 +2,8 @@
 title: Drafts
 layout: page
 excludeFromSitemap: true
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 ## Here lie my half baked ideas

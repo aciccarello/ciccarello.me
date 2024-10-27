@@ -2,7 +2,8 @@
 date: 2023-10-23T05:46:06.484Z
 tags: []
 slug: updates-test
-eleventyExcludeFromCollections: testing
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: testing
 updates:
   - date: 2023-10-23T05:48:26.586Z
     description: Earliest update

@@ -5,7 +5,8 @@ permalink: /drafts/breakfast-bake/
 tags:
   - breakfast
   - family recipe
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 This is a family classic breakfast recipe, great for holidays and birthdays. Typically we make it the night before.
 
