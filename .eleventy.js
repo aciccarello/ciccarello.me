@@ -50,7 +50,7 @@ export default async function (eleventyConfig) {
 		links: '_posts/{links,replies}/*.md',
 		reviews: '_posts/reviews/*.md',
 		posts: '_posts/**/*.md',
-		publicaciones: 'es/publicaciones/*/*.md',
+		publicaciones: 'es/posts/*/*.md',
 		// Trips are added separately so they can include child data
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>
