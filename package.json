@@ -16,7 +16,7 @@
     "now": "node -e 'console.log(new Date().toISOString())'",
     "compress:embed": "npx @squoosh/cli --resize '{\"enabled\":true,\"width\":341,\"height\":256,\"method\":\"lanczos3\",\"fitMethod\":\"stretch\",\"premultiply\":true,\"linearRGB\":true}' --mozjpeg '{\"quality\":75,\"baseline\":false,\"arithmetic\":false,\"progressive\":true,\"optimize_coding\":true,\"smoothing\":0,\"color_space\":3,\"quant_table\":3,\"trellis_multipass\":false,\"trellis_opt_zero\":false,\"trellis_opt_table\":false,\"trellis_loops\":1,\"auto_subsample\":true,\"chroma_subsample\":2,\"separate_chroma_quality\":false,\"chroma_quality\":75}' --output-dir ./assets/img",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "test:a11y": "npx pa11y-ci -c _build/tests/pa11y.js",
+    "test:a11y": "NODE_OPTIONS='--experimental-require-module' pa11y-ci -c _build/tests/pa11y.js",
     "webmention": "webmention https://www.ciccarello.me/feed.xml --send --debug --limit=1"
   },
   "repository": {
@@ -67,6 +67,7 @@
     "slugify": "^1.6.6"
   },
   "optionalDependencies": {
+    "pa11y-ci": "^3.1.0",
     "sharp": "^0.33.5"
   },
   "overrides": {
