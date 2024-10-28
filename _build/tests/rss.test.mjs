@@ -1,5 +1,6 @@
+import { describe, it, expect } from '@jest/globals';
 import Parser from 'rss-parser';
-import fs from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 
 const isoDateRegex =
   /\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d\.\d+([+-][0-2]\d:[0-5]\d|Z)/;
@@ -8,14 +9,14 @@ describe('RSS', () => {
   let parser = new Parser();
 
   it('should have a main feed', async () => {
-    const feedFile = await fs.readFile(`_site/feed.xml`, 'utf-8');
+    const feedFile = await readFile(`_site/feed.xml`, 'utf-8');
     const parsedFeed = await parser.parseString(feedFile);
 
     expect(parsedFeed.feedUrl).toEqual('https://www.ciccarello.me/feed.xml');
     expect(parsedFeed.title).toEqual('Anthony Ciccarello');
     expect(parsedFeed.link).toEqual('https://www.ciccarello.me/');
     expect(new Date(parsedFeed.lastBuildDate).valueOf()).toBeGreaterThan(
-      new Date('2023-01-01').valueOf()
+      new Date('2023-01-01').valueOf(),
     );
     expect(parsedFeed.items.length).toEqual(31);
 
@@ -34,16 +35,16 @@ describe('RSS', () => {
   });
 
   it('should have a feed of all posts', async () => {
-    const feedFile = await fs.readFile(`_site/feed-all.xml`, 'utf-8');
+    const feedFile = await readFile(`_site/feed-all.xml`, 'utf-8');
     const parsedFeed = await parser.parseString(feedFile);
 
     expect(parsedFeed.feedUrl).toEqual(
-      'https://www.ciccarello.me/feed-all.xml'
+      'https://www.ciccarello.me/feed-all.xml',
     );
     expect(parsedFeed.title).toEqual('All Posts');
     expect(parsedFeed.link).toEqual('https://www.ciccarello.me/posts/all/');
     expect(new Date(parsedFeed.lastBuildDate).valueOf()).toBeGreaterThan(
-      new Date('2023-01-01').valueOf()
+      new Date('2023-01-01').valueOf(),
     );
     expect(parsedFeed.items.length).toBeGreaterThan(5);
 
@@ -55,26 +56,26 @@ describe('RSS', () => {
     expect(latestItem.title).toBeDefined();
     expect(latestItem.content).toBeDefined();
     expect(latestItem.content).toContain(
-      '<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>'
+      '<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>',
     );
   });
 
   it('should have a foster care feed feed', async () => {
-    const feedFile = await fs.readFile(
+    const feedFile = await readFile(
       `_site/posts/tags/foster care/feed.xml`,
-      'utf-8'
+      'utf-8',
     );
     const parsedFeed = await parser.parseString(feedFile);
 
     expect(parsedFeed.feedUrl).toEqual(
-      'https://www.ciccarello.me/posts/tags/foster%20care/feed.xml'
+      'https://www.ciccarello.me/posts/tags/foster%20care/feed.xml',
     );
     expect(parsedFeed.title).toEqual('Posts tagged "foster care"');
     expect(parsedFeed.link).toEqual(
-      'https://www.ciccarello.me/posts/tags/foster%20care/'
+      'https://www.ciccarello.me/posts/tags/foster%20care/',
     );
     expect(new Date(parsedFeed.lastBuildDate).valueOf()).toBeGreaterThan(
-      new Date('2022-01-01').valueOf()
+      new Date('2022-01-01').valueOf(),
     );
     expect(parsedFeed.items.length).toBeGreaterThan(5);
 

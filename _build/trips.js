@@ -1,11 +1,14 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+
 /**
  * Custom plugin configuration for recipe template helpers
  *
- * @param   {object}  eleventyConfig  Eleventy config object
+ * @param   {import("@11ty/eleventy").UserConfig}  eleventyConfig  Eleventy config object
  *
  * @return  {void}
  */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		[require.resolve('leaflet').replace(/\/dist\/.*/, '/dist/')]:
 			'assets/js/leaflet/',
@@ -58,4 +61,4 @@ module.exports = function (eleventyConfig) {
 			})),
 		),
 	);
-};
+}

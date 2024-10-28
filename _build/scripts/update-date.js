@@ -1,4 +1,4 @@
-const { readFile, writeFile } = require('fs/promises');
+import { readFile, writeFile } from 'node:fs/promises';
 
 /**
  * Script for updating the date in a file
@@ -10,14 +10,14 @@ const { readFile, writeFile } = require('fs/promises');
  */
 async function main() {
 	const scriptArg = process.argv.findIndex((arg) =>
-		arg.includes('update-date.js')
+		arg.includes('update-date.js'),
 	);
 	const [path] = process.argv.slice(scriptArg + 1);
 
 	const fileContents = await readFile(path, 'utf8');
 	const updatedFileContents = fileContents.replace(
 		/^date:\s*(\d\S*)/m,
-		`date: ${new Date().toISOString()}`
+		`date: ${new Date().toISOString()}`,
 	);
 	await writeFile(path, updatedFileContents, 'utf8');
 	console.log('Updated', path);

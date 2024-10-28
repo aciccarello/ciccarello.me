@@ -1,5 +1,5 @@
 // @ts-check
-require('dotenv').config();
+import 'dotenv/config';
 // This doesn't have to be a logged in session
 // Any session will work to avoid a redirect chain on ebird.org
 // Should have "_ga" and other cookies
@@ -20,7 +20,7 @@ async function main() {
 	const { default: slugify } = await import('slugify');
 
 	const scriptArg = process.argv.findIndex((arg) =>
-		arg.includes('generate-embed-link.js')
+		arg.includes('generate-embed-link.js'),
 	);
 	const [url, chosenTitle] = process.argv.slice(scriptArg + 1);
 
@@ -60,7 +60,7 @@ async function main() {
 		imageUrl,
 		placeholderAltText,
 		description,
-		newFileName
+		newFileName,
 	);
 
 	downloadImage(imageUrl, newFileName);
@@ -79,10 +79,10 @@ async function main() {
 }
 
 async function downloadImage(imageUrl, fileName) {
-	const sharp = require('sharp');
-	const path = require('path');
+	const { default: sharp } = await import('sharp');
+	const { default: path } = await import('path');
 	const fileLocation = path.normalize(
-		`${__dirname}/../../assets/img/${fileName}`
+		`${__dirname}/../../assets/img/${fileName}`,
 	);
 
 	try {

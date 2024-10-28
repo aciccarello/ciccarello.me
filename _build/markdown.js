@@ -1,25 +1,31 @@
+import MarkdownIt from 'markdown-it';
+import MarkdownItAttrs from 'markdown-it-attrs';
+import { html5Media } from 'markdown-it-html5-media';
+import MarkdownItAnchor from 'markdown-it-anchor';
+import MarkdownItImageFigures from 'markdown-it-image-figures';
+import slugify from 'slugify';
 /**
  * Allows setting up a separate markdown configuration (see recipe plugin).
  *
- * @return  {import('markdown-it')} markdown config instance
+ * @return  {MarkdownIt} markdown config instance
  */
-function initializeMarkdown() {
-	return require('markdown-it')({
+export function initializeMarkdown() {
+	return MarkdownIt({
 		linkify: true,
 		html: true,
 		typographer: true,
 	})
-		.use(require('markdown-it-attrs'), {
+		.use(MarkdownItAttrs, {
 			allowedAttributes: ['id', 'class'],
 		})
-		.use(require('markdown-it-image-figures'), {
+		.use(MarkdownItImageFigures, {
 			figcaption: true,
 		})
-		.use(require('markdown-it-html5-media').html5Media)
-		.use(require('markdown-it-anchor'), {
+		.use(html5Media)
+		.use(MarkdownItAnchor, {
 			// This only applies to anchors
 			slugify: (s) =>
-				require('slugify')(s, {
+				slugify(s, {
 					remove: /[*+~,.()'"’!\?:@]/g,
 					lower: true,
 				}),
@@ -27,16 +33,16 @@ function initializeMarkdown() {
 }
 
 /** Main markdownIt instance */
-const md = initializeMarkdown();
+export const md = initializeMarkdown();
 
 /**
  * Custom plugin configuration for setting up markdown config
  *
- * @param   {object}  eleventyConfig  Eleventy config object
+ * @param   {import("@11ty/eleventy").UserConfig}  eleventyConfig  Eleventy config object
  *
  * @return  {void}
  */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.setLibrary('md', md);
 	eleventyConfig.addFilter('markdownify', (value) =>
 		md.renderInline(value || ''),
@@ -49,6 +55,4 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPairedShortcode('removeindents', (content) => {
 		return content.replace(/^\s+/gm, '');
 	});
-};
-module.exports.initializeMarkdown = initializeMarkdown;
-module.exports.md = md;
+}

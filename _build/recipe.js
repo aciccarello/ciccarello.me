@@ -1,6 +1,7 @@
-const { initializeMarkdown, md } = require('./markdown');
+import markdownItCooklang from 'markdown-it-cooklang';
+import { initializeMarkdown, md } from './markdown.js';
 
-const cooklangMd = initializeMarkdown().use(require('markdown-it-cooklang'), {
+const cooklangMd = initializeMarkdown().use(markdownItCooklang, {
 	ingredients: {
 		inlineDisplayAmount: true,
 	},
@@ -9,11 +10,11 @@ const cooklangMd = initializeMarkdown().use(require('markdown-it-cooklang'), {
 /**
  * Custom plugin configuration for recipe template helpers
  *
- * @param   {object}  eleventyConfig  Eleventy config object
+ * @param   {import("@11ty/eleventy").UserConfig}  eleventyConfig  Eleventy config object
  *
  * @return  {void}
  */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.addPairedShortcode('recipe-ingredients', (content) => {
 		let render = md.render('## Ingredients\n' + content);
 		render = render.replaceAll(
@@ -61,4 +62,4 @@ ${content}`);
 			.replaceAll('class="unit"', 'class="amount p-type type"');
 		return render;
 	});
-};
+}

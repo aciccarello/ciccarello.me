@@ -34,6 +34,12 @@
     "url": "https://github.com/aciccarello/ciccarello.me/issues"
   },
   "homepage": "https://www.ciccarello.me",
+  "type": "module",
+  "dependencies": {
+    "decap-cms": "^3.3.3",
+    "leaflet": "^1.9.4",
+    "webmention.js": "^0.5.5"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
@@ -60,19 +66,8 @@
     "rss-parser": "^3.13.0",
     "slugify": "^1.6.6"
   },
-  "lint-staged": {
-    "*.js": "prettier --write"
-  },
-  "prettier": {
-    "singleQuote": true
-  },
   "optionalDependencies": {
     "sharp": "^0.33.5"
-  },
-  "dependencies": {
-    "decap-cms": "^3.3.3",
-    "leaflet": "^1.9.4",
-    "webmention.js": "^0.5.5"
   },
   "overrides": {
     "netlify-plugin-minify-html": {
@@ -81,5 +76,20 @@
     "@aciccarello/netlify-plugin-webmentions": {
       "minimist": "^0.2.4"
     }
+  },
+  "jest": {
+    "coverageProvider": "v8",
+    "resetMocks": true,
+    "rootDir": "_build/tests",
+    "testMatch": [
+      "**/__tests__/**/*.(m)[jt]s?(x)",
+      "**/?(*.)+(spec|test).(m)[tj]s?(x)"
+    ]
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

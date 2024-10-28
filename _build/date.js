@@ -1,4 +1,4 @@
-const pluginRss = require('@11ty/eleventy-plugin-rss');
+import { dateToRfc3339 } from '@11ty/eleventy-plugin-rss';
 
 function yearsSince(date, endInput) {
 	let includeMonths = false;
@@ -46,11 +46,11 @@ const dateTimeFormat = new Intl.DateTimeFormat([], {
 /**
  * Custom plugin configuration for handling dates
  *
- * @param   {object}  eleventyConfig  Eleventy config object
+ * @param   {import("@11ty/eleventy").UserConfig}  eleventyConfig  Eleventy config object
  *
  * @return  {void}
  */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.addGlobalData('buildTime', () => new Date());
 	eleventyConfig.addFilter('yearsSince', yearsSince);
 	eleventyConfig.addFilter('formatHumanDate', (dateInput, accuracy) => {
@@ -67,7 +67,7 @@ module.exports = function (eleventyConfig) {
 		return dateTimeFormat.format(date) + ' UTC';
 	});
 	eleventyConfig.addFilter('formatMachineDate', (date, accuracy) => {
-		const stringDate = pluginRss.dateToRfc3339(new Date(date));
+		const stringDate = dateToRfc3339(new Date(date));
 		const [datePart, timePart] = stringDate.split('T');
 		if (accuracy === 'month') {
 			return datePart.substring(0, 7);
@@ -77,4 +77,4 @@ module.exports = function (eleventyConfig) {
 		}
 		return stringDate;
 	});
-};
+}

@@ -1,4 +1,15 @@
-const rssPlugin = require('@11ty/eleventy-plugin-rss');
+import { createRequire } from 'node:module';
+import { readFile } from 'node:fs/promises';
+import rssPlugin from '@11ty/eleventy-plugin-rss';
+import eleventySyntaxhighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight';
+import eleventyLightningCssPlugin from '@11tyrocks/eleventy-plugin-lightningcss';
+import datePlugin from './_build/date.js';
+import markdownPlugin from './_build/markdown.js';
+import recipePlugin from './_build/recipe.js';
+import tripsPlugin from './_build/trips.js';
+
+const require = createRequire(import.meta.url);
+
 /**
  * Primary Eleventy configration function
  *
@@ -6,7 +17,7 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
  *
  * @return  {object}                  Eleventy config object for site
  */
-module.exports = function (eleventyConfig) {
+export default async function (eleventyConfig) {
 	const staticFiles = [
 		'admin/index.html',
 		'assets/img',
@@ -50,8 +61,12 @@ module.exports = function (eleventyConfig) {
 			.getFilteredByGlob(collections.posts)
 			.filter((page) => !page.data.excludeFromMainFeed),
 	);
-	eleventyConfig.addCollection('testPosts', (collection) => {
-		const { posts } = require('./_data/test.json');
+	eleventyConfig.addCollection('testPosts', async (collection) => {
+		let posts = JSON.parse(
+			(
+				await readFile(new URL('./_data/test.json', import.meta.url))
+			).toString(),
+		).posts;
 		const postUrls = Object.values(posts);
 
 		return collection
@@ -121,18 +136,15 @@ module.exports = function (eleventyConfig) {
 		content.split('/').find((segment) => segment.includes('.')),
 	);
 
-	eleventyConfig.addPlugin(require('./_build/date'));
-	eleventyConfig.addPlugin(require('./_build/markdown'));
-	eleventyConfig.addPlugin(require('./_build/recipe'));
-	eleventyConfig.addPlugin(require('./_build/trips'));
-	eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
-	eleventyConfig.addPlugin(
-		require('@11tyrocks/eleventy-plugin-lightningcss'),
-		{
-			minify: false, // TODO: Enable based on env flags
-			sourceMap: true,
-		},
-	);
+	eleventyConfig.addPlugin(eleventySyntaxhighlightPlugin);
+	eleventyConfig.addPlugin(eleventyLightningCssPlugin, {
+		minify: false, // TODO: Enable based on env flags
+		sourceMap: true,
+	});
+	eleventyConfig.addPlugin(datePlugin);
+	eleventyConfig.addPlugin(markdownPlugin);
+	eleventyConfig.addPlugin(recipePlugin);
+	eleventyConfig.addPlugin(tripsPlugin);
 
 	// Add RSS filters to liquid
 	// See https://www.11ty.dev/docs/plugins/rss/#use-with-other-template-languages
@@ -152,6 +164,7 @@ module.exports = function (eleventyConfig) {
 	});
 	eleventyConfig.setWatchThrottleWaitTime(100); // in milliseconds
 	eleventyConfig.setServerPassthroughCopyBehavior('passthrough');
+
 	return {
 		dir: {
 			input: './', // Equivalent to Jekyll's source property
@@ -162,4 +175,4 @@ module.exports = function (eleventyConfig) {
 			layouts: '_layouts',
 		},
 	};
-};
+}

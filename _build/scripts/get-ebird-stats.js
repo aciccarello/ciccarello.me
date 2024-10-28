@@ -1,5 +1,5 @@
 // @ts-check
-require('dotenv').config();
+import 'dotenv/config';
 // This doesn't have to be a logged in session
 // Any session will work to avoid a redirect chain on ebird.org
 // Should have "_ga" and other cookies
@@ -35,7 +35,7 @@ const SPECIES_URL = 'https://ebird.org/lifelist/';
  */
 async function main() {
 	const scriptArg = process.argv.findIndex((arg) =>
-		arg.includes('get-ebird-stats.js')
+		arg.includes('get-ebird-stats.js'),
 	);
 	const defaultYear = String(new Date().getFullYear() - 1);
 	const [year = defaultYear, region = ''] = process.argv.slice(scriptArg + 1);
@@ -92,21 +92,21 @@ async function countSpecies({ year, previousYear, region }) {
 		region ||
 		'World';
 	const dates = speciesListDocument.querySelectorAll(
-		'#nativeNatProv .Observation-meta-date a'
+		'#nativeNatProv .Observation-meta-date a',
 	);
 
 	// Find first element that matches the year
 	const matchingSpeciesElementIndex = dates.findIndex((element) =>
-		element.innerText.includes(year)
+		element.innerText.includes(year),
 	);
 
 	// Numbers use CSS counter so get by position in array instead
 	const totalSpecies = dates.length - matchingSpeciesElementIndex;
 	const newSpecies = dates.filter((element) =>
-		element.innerHTML.includes(year)
+		element.innerHTML.includes(year),
 	).length;
 	const previousYearNewSpecies = dates.filter((element) =>
-		element.innerHTML.includes(previousYear)
+		element.innerHTML.includes(previousYear),
 	).length;
 
 	const yearSpeciesUrl = SPECIES_URL + region + `?year=${year}&time=year`;
@@ -114,7 +114,7 @@ async function countSpecies({ year, previousYear, region }) {
 	const yearSpeciesTotal = await fetchHtml(yearSpeciesUrl).then(getTotal);
 	// Get total for previous year
 	const previousYearSpeciesTotal = await fetchHtml(
-		yearSpeciesUrl.replace(year, previousYear)
+		yearSpeciesUrl.replace(year, previousYear),
 	).then(getTotal);
 
 	// Get new lifers
@@ -126,7 +126,7 @@ async function countSpecies({ year, previousYear, region }) {
 		element
 			.closest('li')
 			.querySelector('.Observation-meta-location a:last-of-type')
-			?.innerText.includes(region)
+			?.innerText.includes(region),
 	).length;
 
 	return {
@@ -153,11 +153,11 @@ async function countChecklists({ year, previousYear, region }) {
 	const allChecklistsDocument = await fetchHtml(CHECKLISTS_URL + region);
 	// Find first element that matches the year
 	const dates = allChecklistsDocument.querySelectorAll(
-		'#place-species-observed-results .ResultsStats-title'
+		'#place-species-observed-results .ResultsStats-title',
 	);
 
 	const matchingChecklistElement = dates.find((element) =>
-		element.innerText.includes(year)
+		element.innerText.includes(year),
 	);
 	// Sibling to title should contain the number followed by a period
 	const totalChecklistsText =
@@ -167,7 +167,7 @@ async function countChecklists({ year, previousYear, region }) {
 	const yearChecklistsUrl = CHECKLISTS_URL + region + `?year=${year}`;
 	const yearChecklists = await fetchHtml(yearChecklistsUrl).then(getTotal);
 	const previousYearChecklists = await fetchHtml(
-		yearChecklistsUrl.replace(year, previousYear)
+		yearChecklistsUrl.replace(year, previousYear),
 	).then(getTotal);
 
 	return {

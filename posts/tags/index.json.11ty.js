@@ -1,7 +1,7 @@
 /**
  * File can be used by the micropub api to know what categories have been used
  */
-class TagsList {
+export default class TagsList {
 	data() {
 		return {
 			permalink: 'posts/tags/index.json',
@@ -13,5 +13,3 @@ class TagsList {
 		return JSON.stringify(collections.tagList);
 	}
 }
-
-module.exports = TagsList;

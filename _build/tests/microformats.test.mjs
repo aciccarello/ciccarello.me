@@ -1,12 +1,14 @@
+import { describe, expect, it } from '@jest/globals';
 import { mf2tojf2 } from '@paulrobertlloyd/mf2tojf2';
 import fs from 'node:fs/promises';
 import { mf2 } from 'microformats-parser';
+import testData from '../../_data/test.json' with { type: 'json' };
 
 /** @typedef {import('../../_data/test.json')} testData */
 
 describe('microformats', () => {
   /** @type {testData['posts']} */
-  let posts;
+  const posts = testData.posts;
   /**
    * Test posts to test.
    *
@@ -25,11 +27,6 @@ describe('microformats', () => {
     'replyToCheckin',
     'multipleUpdates',
   ];
-
-  beforeAll(async () => {
-    const testData = JSON.parse(await fs.readFile('_data/test.json', 'utf8'));
-    posts = testData.posts;
-  });
 
   it('should have an h-card on the homepage', async () => {
     const homepage = await getPage('/');

@@ -1,3 +1,5 @@
+import { readFile } from 'node:fs/promises';
+
 // @ts-check
 /**
  * This file generates the Netlify CMS config file
@@ -310,7 +312,7 @@ function addDefaultsToCollection(collection) {
 /**
  * Decap CMS Admin Config
  */
-class CmsConfig {
+export default class CmsConfig {
 	/**
 	 * 11ty page metadata
 	 *
@@ -328,8 +330,14 @@ class CmsConfig {
 	 *
 	 * @return  {string}  file contents
 	 */
-	render() {
-		const featuredTags = require('../posts/tags/tags.json').featured;
+	async render() {
+		let featuredTags = JSON.parse(
+			(
+				await readFile(
+					new URL('../posts/tags/tags.json', import.meta.url),
+				)
+			).toString(),
+		).featured;
 		/**
 		 * Netlify Build variable
 		 * @see https://docs.netlify.com/configure-builds/environment-variables/#git-metadata
@@ -653,5 +661,3 @@ class CmsConfig {
 		return JSON.stringify(config, null, '\t');
 	}
 }
-
-module.exports = CmsConfig;

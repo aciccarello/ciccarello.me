@@ -185,7 +185,7 @@ const experience = [
 	},
 ];
 
-module.exports = {
+export default {
 	summary: `
 		Software Engineer experienced in modern JavaScript front-end frameworks and back-end REST APIs.
 		Knowledgeable in development best practices, automated testing, and agile methodologies.
