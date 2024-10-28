@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	permalink:
 		"/es/publicaciones/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default : title | slugify}}/",
 	author: {
