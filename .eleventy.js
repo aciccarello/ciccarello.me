@@ -3,11 +3,11 @@ import { readFile } from 'node:fs/promises';
 import rssPlugin from '@11ty/eleventy-plugin-rss';
 import eleventySyntaxhighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight';
 import eleventyLightningCssPlugin from '@11tyrocks/eleventy-plugin-lightningcss';
-import { EleventyI18nPlugin } from '@11ty/eleventy';
 import datePlugin from './_build/date.js';
 import markdownPlugin from './_build/markdown.js';
 import recipePlugin from './_build/recipe.js';
 import tripsPlugin from './_build/trips.js';
+import i18nPlugin from './_build/i18n.js';
 
 const require = createRequire(import.meta.url);
 
@@ -143,7 +143,7 @@ export default async function (eleventyConfig) {
 		minify: false, // TODO: Enable based on env flags
 		sourceMap: true,
 	});
-	eleventyConfig.addPlugin(EleventyI18nPlugin, {
+	eleventyConfig.addPlugin(i18nPlugin, {
 		defaultLanguage: 'en',
 		errorMode: 'allow-fallback',
 	});

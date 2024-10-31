@@ -1,6 +1,7 @@
 {
   "site": {
     "description": "Soy un ingeniero de software que vive en el sur de California construyendo cosas geniales usando JavaScript y otras tecnologías web. Disfruto viajar a otros países y pasar tiempo en la naturaleza.",
+    "lang": "es",
     "header_pages": ["publicaciones/index.html"]
   },
   "links": {
@@ -80,5 +81,39 @@
         ]
       }
     ]
+  },
+  "text": {
+    "links": {
+      "backLabel": "Atrás",
+      "linkedInProfile": "Perfil LinkedIn",
+      "email": "Correo",
+      "search": "Buscar",
+      "home": "Inicio",
+      "posts": "Publicaciones",
+      "resume": "Resume",
+      "subscribe": "Suscribete",
+      "contact": "Conectar",
+      "sitemap": "Mapa del sitio",
+      "pageSource": "Page source",
+      "previousWebring": "Sitio Anterior",
+      "indiewebWebring": "Webring de IndieWeb",
+      "nextWebring": "Sitio Próximo"
+    },
+    "translations": "Also published in",
+    "syndicatedTo": "También publicado a",
+    "author": {
+      "aboutPrefix": "Sobre"
+    },
+    "suggestions": {
+      "next": "Próximo",
+      "previous": "Anterior",
+      "viewMore": "Ver mas"
+    },
+    "footer": {
+      "featured": "Destacado",
+      "meta": "Meta",
+      "elsewhere": "En otros sitios",
+      "lastUpdated": "Última actualización del sitio"
+    }
   }
 }

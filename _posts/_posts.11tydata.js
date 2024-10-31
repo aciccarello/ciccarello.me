@@ -3,6 +3,8 @@ export default {
 		"/posts/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default : title | slugify}}/",
 	author: {
 		name: 'Anthony Ciccarello',
+		typeArticle: 'the',
+		type: 'author',
 	},
 	lang: 'en',
 	defaultTitle: '',

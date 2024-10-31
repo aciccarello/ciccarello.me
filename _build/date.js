@@ -33,15 +33,24 @@ function yearsSince(date, endInput) {
 	return String(months > 9 ? years : years + 1);
 }
 
-const dateFormat = new Intl.DateTimeFormat([], { dateStyle: 'medium' });
-const monthFormat = new Intl.DateTimeFormat([], {
-	year: 'numeric',
-	month: 'long',
-});
-const dateTimeFormat = new Intl.DateTimeFormat([], {
-	dateStyle: 'medium',
-	timeStyle: 'short',
-});
+function generateFormats(locale) {
+	return {
+		dateFormat: new Intl.DateTimeFormat([locale], { dateStyle: 'medium' }),
+		monthFormat: new Intl.DateTimeFormat([locale], {
+			year: 'numeric',
+			month: 'long',
+		}),
+		dateTimeFormat: new Intl.DateTimeFormat([locale], {
+			dateStyle: 'medium',
+			timeStyle: 'short',
+		}),
+	};
+}
+
+const formatters = {
+	en: generateFormats('en-US'),
+	es: generateFormats('es'),
+};
 
 /**
  * Custom plugin configuration for handling dates
@@ -53,7 +62,9 @@ const dateTimeFormat = new Intl.DateTimeFormat([], {
 export default function (eleventyConfig) {
 	eleventyConfig.addGlobalData('buildTime', () => new Date());
 	eleventyConfig.addFilter('yearsSince', yearsSince);
-	eleventyConfig.addFilter('formatHumanDate', (dateInput, accuracy) => {
+	eleventyConfig.addFilter('formatHumanDate', function (dateInput, accuracy) {
+		const locale = this.page.lang || 'en';
+		const { dateFormat, monthFormat, dateTimeFormat } = formatters[locale];
 		const date = new Date(dateInput);
 		if (accuracy === 'month') {
 			return monthFormat.format(date);

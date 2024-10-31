@@ -1,5 +1,5 @@
 {%- if syndication and syndication.size > 0 %}
-<p class="post-syndication"><small>Also posted to:&nbsp;
+<p class="post-syndication"><small>{{text.syndicatedTo}}:&nbsp;
 	{%- for url in syndication -%}
 	{%- if foreloop.index0 > 0 %}, {% endif -%}
 	<a rel="syndication" class="u-syndication" href="{{url}}">{{url | extractDomain}}</a>&nbsp;

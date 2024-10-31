@@ -5,7 +5,7 @@
 			<a
 				href="{{ back_button }}"
 				class="icon-button"
-				aria-label="Back button"
+				aria-label="{{text.links.backLabel}}"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@
 				href="https://www.linkedin.com/in/anthonyciccarello/"
 				class="icon-button {% if back_button %} extra-icon{% endif %}"
 				rel="me"
-				aria-label="LinkedIn profile"
+				aria-label="{{text.links.linkedInProfile}}"
 			>
 				<span class="svg-icon">
 					{% include "icons/linkedin.svg" %}
@@ -40,7 +40,7 @@
 				href="mailto:anthony@ciccarello.me"
 				rel="me"
 				class="icon-button {% if back_button %} extra-icon{% endif %}"
-				aria-label="Email"
+				aria-label="{{text.links.email}}"
 			>
 				<span class="svg-icon">
 					{% include "icons/email.svg" %}
@@ -50,7 +50,7 @@
 				href="/search/"
 				rel="search"
 				class="icon-button"
-				aria-label="Search"
+				aria-label="{{text.links.search}}"
 			>
 				<span class="svg-icon">
 					{% include "icons/search.svg" %}

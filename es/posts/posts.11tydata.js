@@ -3,6 +3,8 @@ export default {
 		"/es/publicaciones/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default : title | slugify}}/",
 	author: {
 		name: 'Anthony Ciccarello',
+		typeArticle: 'el',
+		type: 'autor',
 	},
 	lang: 'es',
 	defaultTitle: '',

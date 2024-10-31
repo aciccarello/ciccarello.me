@@ -1,41 +1,51 @@
 <footer>
 	<section>
-		<h2 id="footer-featured-links">Featured</h2>
+		<h2 id="footer-featured-links">{{text.footer.featured}}</h2>
 		<nav aria-labelledby="footer-featured-links">
-			<a href="/">Home</a>
-			<a href="/posts/">Posts</a>
-			<a href="/resume/">Resume</a>
+			<a href="{{ '/' | locale_url }}">{{text.links.home}}</a>
+			<a href="{{ '/posts/' | locale_url }}">{{text.links.posts}}</a>
+			<a href="{{ '/resume/' | locale_url }}">{{text.links.resume}}</a>
 		</nav>
 	</section>
 	<section>
-		<h2 id="footer-meta-links">Meta</h2>
+		<h2 id="footer-meta-links">{{text.footer.meta}}</h2>
 		<nav aria-labelledby="footer-meta-links">
-			<a href="{{ '/subscribe/' | locale_url }}">Subscribe</a>
-			<a href="{{ '/sitemap/' | locale_url }}">Sitemap</a>
+			<a href="{{ '/subscribe/' | locale_url }}">{{text.links.subscribe}}</a>
+			<a href="{{ '/sitemap/' | locale_url }}">{{text.links.sitemap}}</a>
 			{%- if eleventyExcludeFromCollectionsReason != "deleted" -%}
 				<a href="https://github.com/aciccarello/ciccarello.me/blob/main/{{ page.inputPath }}" rel="noopener">
-				Page source
+				{{text.links.pageSource}}
 			</a>
 			{% endif %}
 		</nav>
 	</section>
 	<section>
-		<h2 id="footer-other-links">Elsewhere</h2>
+		<h2 id="footer-other-links">{{text.footer.elsewhere}}</h2>
 		<nav aria-labelledby="footer-other-links">
 			<a href="https://www.linkedin.com/in/anthonyciccarello/" rel="noopener"
 				>LinkedIn</a>
 			<section class="indiewebring">
-				<a title="Previous Site" href="https://xn--sr8hvo.ws/previous">←</a>
-				<a title="IndieWeb Webring" href="https://xn--sr8hvo.ws">🕸💍</a>
-				<a title="Next site" href="https://xn--sr8hvo.ws/next">→</a>
+				<a title="{{text.links.previousWebring}}" href="https://xn--sr8hvo.ws/previous">←</a>
+				<a title="{{text.links.indiewebWebring}}" href="https://xn--sr8hvo.ws">🕸💍</a>
+				<a title="{{text.links.nextWebring}}" href="https://xn--sr8hvo.ws/next">→</a>
 			</section>
 		</nav>
 	</section>
+	<div class="page-metadata">
+	{%- assign links = page.url | locale_links %}
+	{%- for link in links %}
+	{%- if forloop.first %}
+	{{text.translations}}
+	{%- endif %}
+	{%- unless forloop.first %},{% endunless %}
+	<a href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.label}}</a>
+	{%- endfor -%}
 	{%- if page.url == "/" %}
-		<div class="site-updated"> Site Last Updated:
+		<div class="site-updated"> {{text.footer.lastUpdated}}:
 		<time datetime="{{ buildTime | formatMachineDate }}">
 				{{- buildTime | formatHumanDate: true -}}
 			</time>
 		</div>
-	{% endif %}
+	{%- endif %}
+	</div>
 </footer>

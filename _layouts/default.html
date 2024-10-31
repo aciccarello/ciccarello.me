@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en-us" }}">
+<html lang="{{ page.lang | default: site.lang }}">
 
     {%- include "head.html" -%}
 
@@ -28,10 +28,14 @@
 		{% assign links = page.url | locale_links %}
 		{%- for link in links %}
 		{%- if forloop.first %}
+		<section class="translation-alert">
 		This page is also available in:
 		{% endif %}
 		{%- unless forloop.first %},{% endunless %}
 		<a href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.label}}</a>
+		{%- if forloop.last %}
+		</section>
+		{% endif %}
 		{%- endfor -%}
 
 		{%- if eleventyExcludeFromCollectionsReason != "deleted" -%}

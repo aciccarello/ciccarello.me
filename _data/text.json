@@ -1,0 +1,34 @@
+{
+  "links": {
+    "backLabel": "Back button",
+    "linkedInProfile": "LinkedIn profile",
+    "email": "Email",
+    "search": "Search",
+    "home": "Home",
+    "posts": "Posts",
+    "resume": "Resume",
+    "subscribe": "Subscribe",
+    "contact": "Connect",
+    "sitemap": "Sitemap",
+    "pageSource": "Page source",
+    "previousWebring": "Previous Site",
+    "indiewebWebring": "IndieWeb Webring",
+    "nextWebring": "Next Site"
+  },
+  "translations": "También publicado en",
+  "syndicatedTo": "Also posted to",
+  "author": {
+    "aboutPrefix": "About"
+  },
+  "suggestions": {
+    "next": "Next",
+    "previous": "Previous",
+    "viewMore": "View more"
+  },
+  "footer": {
+    "featured": "Featured",
+    "meta": "Meta",
+    "elsewhere": "Elsewhere",
+    "lastUpdated": "Site Last Updated"
+  }
+}

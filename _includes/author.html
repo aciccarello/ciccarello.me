@@ -17,7 +17,7 @@ This relies on the author object with the following properties
 				</a>
 			</h2>
 			<p id="author-section-title" class="author-description__subtitle">
-				About the {{ author.type | default: "author" }}
+				{{text.author.aboutPrefix}} {{author.typeArticle}} {{ author.type }}
 			</p>
 		</hgroup>
 	</div>
@@ -26,10 +26,10 @@ This relies on the author object with the following properties
 	</p>
 	<div class="author-description__primary-action btn-group">
 		<a href="/#connect" class="btn-link">
-			Connect
+			{{ text.links.contact }}
 		</a>
 		<a href="/subscribe" class="btn-link btn-alternate">
-			Subscribe
+			{{ text.links.subscribe }}
 		</a>
 	</div>
 </section>

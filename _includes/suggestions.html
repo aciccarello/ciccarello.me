@@ -4,12 +4,12 @@
 	{%- assign previousPost = collection | getPreviousCollectionItem: page %}
 	{%- assign nextPost = collection | getNextCollectionItem: page %}
 	<h2 class="h3">
-		View more {{collectionName}}
+		{{text.suggestions.viewMore}} {{collectionName}}
 	</h2>
 	{% if previousPost %}
 		<div class="post-suggestions__area post-suggestions__previous">
 			<h3 class="h4">
-				Previous
+				{{text.suggestions.previous}}
 			</h3>
 			{% include "post-card.html" post: previousPost %}
 		</div>
@@ -17,7 +17,7 @@
 	{% if nextPost %}
 		<div class="post-suggestions__area post-suggestions__next">
 			<h3 class="h4">
-				Next
+				{{text.suggestions.next}}
 			</h3>
 			{% include "post-card.html" post: nextPost %}
 		</div>
