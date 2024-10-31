@@ -1,0 +1,149 @@
+---
+layout: default
+title: Inicio
+image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=256"
+---
+
+<link rel="stylesheet" href="/assets/css/homepage.css"/>
+
+<span class="h-card">
+	<section class="introduction">
+		<img alt="" class="profile-pic u-photo" src="https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512" height="256" width="256" crossorigin="anonymous"/>
+		<div class="introduction-text">
+			<h1>Hola, soy
+                <a href="https://www.ciccarello.me/ " class="p-name u-url disable-link-styles" rel="me">Anthony Ciccarello</a>!
+				<button id="pronounce-name-button" aria-label="Pronunciar el nombre" title="Pronuncia 'Anthony Ciccarello'" style="display: none;">🔈</button>
+            </h1>
+			<p class="p-note">
+				{{ site.description}}
+			</p>
+			<div class="btn-group">
+				<a class="btn-link" href="#connect">
+					Conectar conmigo
+				</a>
+				<a rel="feed" class="btn-link btn-alternate" href="/es/publicaciones/">
+					Ver publicaciones
+				</a>
+			<div>
+		</div>
+	</section>
+
+	<section class="profiles container">
+		<h2 class="profiles__title">Around the Web</h2>
+	{%- for group in links.homepage_es %}
+	<div class="card profile-card">
+		<div class="profile-card__title">
+			<h3 id="{{group.name | slugify }}-links">
+				{{group.name}}
+			</h3>
+		</div>
+		<nav aria-labelledby="{{group.name | slugify }}-links">
+			{%- for account in group.links %}
+			<a class="account-link" href="{{account.url}}" rel="me">
+				<span class="account-link__graphic" role="presentation">
+					<span class="svg-icon">
+						{% include account.icon %}
+					</span>
+				</span>
+				<span class="account-link__text">
+					{{account.title}}
+					<span class="account-link__secondary-text">{{account.description}}</span>
+				</span>
+			</a>
+			{%- if account.description == "@anthony@ciccarello.me" %}
+			<a class="u-url" href="acct:anthony@ciccarello.me"></a>
+			{%- endif %}
+			{%- endfor %}
+		</nav>
+	</div>
+	{%- endfor %}
+	</section>
+
+	<section class="container">
+		<h3>Carrera</h3>
+		{%- assign currentPosition = resume.experience[0] %}
+		<p>
+            Actualmente trabajo de forma remota como {{currentPosition.position}} para
+            <a class="p-org h-card" href="{{currentPosition.companyUrl}}" title="{{currentPosition.companyName}} inicio">{{currentPosition.companyName}}</a>.
+			Anteriormente trabajé para {{resume.experience[1].companyName}}, {{resume.experience[2].companyName}}, y {{resume.experience[3].companyName}}.
+			I've primarily worked on creating JavaScript front-end applications and Java back-end APIs
+			but have a wide range of experience across various projects.
+			Consulta mi <a href="/resume">currículum</a> para conocer mi trayectoria profesional completa.
+        </p>
+		<h3>
+            Personal
+        </h3>
+		<p>
+			Mi vida personal se centra principalmente en crianza de niños que están en <a href="/foster/">hogares de acogida</a>.
+			Disfruto de actividades al aire libre como el senderismo,
+			<a href="https://ebird.org/profile/OTUwMDI4" rel="me" title="perfil de eBird">la observación de aves</a>, y
+			jugar
+			<a href="https://es.wikipedia.org/wiki/Ultimate_(deporte)" title="artículo de wikipedia sobre ultimate frisbee">
+				al ultimate frisbee</a>.
+			Me gusta trabajar en pequeños proyectos de carpintería y cuidar de mis
+			plantas de interior y exterior.
+			Además, contribuyo al software de código abierto en mi tiempo libre y fui mantenedor del proyecto
+			<a href="https://typedoc.org/">TypeDoc</a>.
+        </p>
+	</section>
+	<section class="h-feed">
+		{% removeindents %}
+		<div class="container">
+		<h2 class="post-list-heading p-name">Últimas publicaciones</h2>
+		<p>También tengo <a href="/posts/">más publicaciones en ingles</a>.</p>
+		<ol class="post-list">
+		{%- assign posts = collections["publicaciones"] %}
+			<li>
+			{% include "post-card.html" post: posts[-1] %}
+			</li>
+			{% comment %}
+			<li>
+			{% include "post-card.html" post: posts[-2] %}
+			</li>
+			<li>
+			{% include "post-card.html" post: posts[-3] %}
+			</li>
+			<li>
+			{% include "post-card.html" post: posts[-4] %}
+			</li>
+			<li>
+			{% include "post-card.html" post: posts[-5] %}
+			</li>
+			{% endcomment %}
+		</ol>
+		</div>
+		{% endremoveindents %}
+	</section>
+	<section class="" id="connect">
+		<h2>Conectar</h2>
+		<p>Conéctate conmigo usando uno de mis canales preferido</p>
+		<div class="connect-icons">
+			<a aria-label="Email" class="icon-button btn-link u-email" href="mailto:anthony@ciccarello.me" rel="me">
+				<span class="svg-icon">
+					{% include "icons/email.svg" %}
+				</span>
+			</a>
+			<a aria-label="perfil de LinkedIn" class="icon-button btn-link" href="https://www.linkedin.com/in/anthonyciccarello/" rel="me">
+				<span class="svg-icon">
+					{% include "icons/linkedin.svg" %}
+				</span>
+			</a>
+		</div>
+	</section>
+</span>
+
+<script>
+if (window.SpeechSynthesisUtterance) {
+	const speakButton = document.getElementById('pronounce-name-button');
+	speakButton.addEventListener('click', speakName);
+	speakButton.style.display = 'inline-block';
+}
+
+function speakName() {
+	var utterance = new SpeechSynthesisUtterance();
+	utterance.text = 'Anthony Chicka-rello';
+	utterance.lang = 'en-US';
+	utterance.rate = 0.75;
+	speechSynthesis.speak(utterance)
+}
+</script>

@@ -1,4 +1,4 @@
-{%- assign collectionData = collections.all | getCollectionItem: page -%}
+{%- assign pageData = pageByUrl[page.url] -%}
 <head>
 	<meta charset="utf-8"/>
 	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
@@ -8,7 +8,7 @@
 	{%- endif %}
 	{%- include "seo" -%}
 	<link rel="stylesheet" href="/assets/css/common.css"/>
-	{%- if not collectionData or collectionData.templateContent contains "</pre>" %}
+	{%- if not pageData or pageData.templateContent contains "</pre>" %}
 	 	{%- comment %}
 			Future proof the selection by requiring on of two options using "not"
 			See https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme for details

@@ -1,17 +1,17 @@
 export default {
 	permalink:
-		"/posts/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default : title | slugify}}/",
+		"/es/publicaciones/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default : title | slugify}}/",
 	author: {
 		name: 'Anthony Ciccarello',
-		typeArticle: 'the',
-		type: 'author',
+		typeArticle: 'el',
+		type: 'autor',
 	},
-	lang: 'en',
+	lang: 'es',
 	defaultTitle: '',
 	back_button: '../../../..',
 	layout: 'note',
+	collectionName: 'publicaciones',
 	eleventyComputed: {
-		type: ({ type, layout }) => type || layout,
 		// Post kind data should override this if it's not this simple
 		typePlural: ({ type, typePlural }) => typePlural || type + 's',
 		lastUpdated:
@@ -39,25 +39,25 @@ export default {
 				let className = 'h-cite';
 				let actionDescription;
 				if (like) {
-					actionDescription = 'Liked';
+					actionDescription = 'Me gustó';
 					className += ' u-like-of';
 				}
 				if (bookmark) {
-					actionDescription = 'Bookmarked';
+					actionDescription = 'Marcado como favorito';
 					className += ' u-bookmark-of';
 				}
 				// Not using else if because reactji could also use like-of
 				// TODO: handle Reactji better https://indieweb.org/reacji
 				// ! Logic would be wrong if reply and like are different URLs
 				if (reply) {
-					actionDescription = 'Replying to';
+					actionDescription = 'Respondiendo a';
 					className += ' u-in-reply-to';
 				}
 				let nameTrimmed =
 					referenceData.name?.length > 100
 						? referenceData.name.slice(0, 100) + '…'
 						: referenceData.name;
-				let postDescription = 'a post';
+				let postDescription = 'una publicación';
 				const referencePostType = referenceData['post-type'];
 				if (nameTrimmed) {
 					postDescription = `“<cite>${nameTrimmed}</cite>”`;
@@ -65,9 +65,9 @@ export default {
 					// Post type is currently manually set
 					// Would like to see it added by micropub server
 					// ! Not 100% grammatically correct as "an" goes after vowel sounds
-					const prefix = /^[aeiou]/.test(referencePostType)
-						? 'an '
-						: 'a ';
+					const prefix = [].includes(referencePostType)
+						? 'un '
+						: 'una ';
 					postDescription = prefix + referencePostType;
 				}
 
@@ -79,7 +79,7 @@ export default {
 					'',
 				)} ${
 					referenceData.author?.name
-						? `by ${referenceData.author.name}`
+						? `de ${referenceData.author.name}`
 						: ''
 				}`;
 

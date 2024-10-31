@@ -1,0 +1,119 @@
+{
+  "site": {
+    "description": "Soy un ingeniero de software que vive en el sur de California construyendo cosas geniales usando JavaScript y otras tecnologías web. Disfruto viajar a otros países y pasar tiempo en la naturaleza.",
+    "lang": "es",
+    "header_pages": ["publicaciones/index.html"]
+  },
+  "links": {
+    "homepage_es": [
+      {
+        "name": "Social",
+        "links": [
+          {
+            "url": "/subscribe/#follow-on-mastodon-or-other-fediverse-networks",
+            "title": "Mastodon/Fediverso",
+            "description": "@anthony@ciccarello.me",
+            "icon": "icons/mastodon.svg"
+          },
+          {
+            "url": "https://www.npmjs.com/~aciccarello",
+            "title": "LinkedIn",
+            "description": "Profesional",
+            "icon": "icons/linkedin.svg"
+          }
+        ]
+      },
+      {
+        "name": "Naturaleza",
+        "links": [
+          {
+            "url": "https://ebird.org/profile/OTUwMDI4",
+            "title": "eBird",
+            "description": "Avistamientos de aves",
+            "icon": "icons/ebird.svg"
+          },
+          {
+            "url": "https://www.inaturalist.org/people/aciccarello",
+            "title": "iNaturalist",
+            "description": "Avistamientos de la naturaleza",
+            "icon": "icons/inaturalist.svg"
+          }
+        ]
+      },
+      {
+        "name": "Juegos",
+        "links": [
+          {
+            "url": "https://www.duolingo.com/profile/a3chic9",
+            "title": "Duolingo",
+            "description": "Aprendizaje de idiomas",
+            "icon": "icons/duolingo.svg"
+          },
+          {
+            "url": "https://www.chess.com/member/a3chic9",
+            "title": "Chess.com",
+            "description": "Ajedrez en línea",
+            "icon": "icons/chess.svg"
+          }
+        ]
+      },
+      {
+        "name": "Software",
+        "links": [
+          {
+            "url": "https://github.com/aciccarello",
+            "title": "GitHub",
+            "description": "Repositorio de código",
+            "icon": "icons/github.svg"
+          },
+          {
+            "url": "https://stackoverflow.com/users/4252741/chic",
+            "title": "Stack Overflow",
+            "description": "Preguntas de programación",
+            "icon": "icons/stack-overflow.svg"
+          },
+          {
+            "url": "https://www.npmjs.com/~aciccarello",
+            "title": "npm",
+            "description": "Gestor de paquetes",
+            "icon": "icons/npm.svg"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "links": {
+      "backLabel": "Atrás",
+      "linkedInProfile": "Perfil LinkedIn",
+      "email": "Correo",
+      "search": "Buscar",
+      "home": "Inicio",
+      "posts": "Publicaciones",
+      "resume": "Resume",
+      "subscribe": "Suscribete",
+      "contact": "Conectar",
+      "sitemap": "Mapa del sitio",
+      "pageSource": "Page source",
+      "previousWebring": "Sitio Anterior",
+      "indiewebWebring": "Webring de IndieWeb",
+      "nextWebring": "Sitio Próximo"
+    },
+    "translations": "Also published in",
+    "syndicatedTo": "También publicado a",
+    "author": {
+      "aboutPrefix": "Sobre"
+    },
+    "suggestions": {
+      "next": "Próximo",
+      "previous": "Anterior",
+      "viewMore": "Ver mas"
+    },
+    "footer": {
+      "featured": "Destacado",
+      "meta": "Meta",
+      "elsewhere": "En otros sitios",
+      "lastUpdated": "Última actualización del sitio"
+    }
+  }
+}

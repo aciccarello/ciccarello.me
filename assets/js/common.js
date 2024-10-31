@@ -1,7 +1,8 @@
 /** Don't trust the times before this date */
 const timeMattersSince = new Date('2021-10-10');
-const dateFormat = new Intl.DateTimeFormat([], { dateStyle: 'medium' });
-const dateTimeFormat = new Intl.DateTimeFormat([], {
+const locale = globalThis.document.querySelector('html').lang;
+const dateFormat = new Intl.DateTimeFormat([locale], { dateStyle: 'medium' });
+const dateTimeFormat = new Intl.DateTimeFormat([locale], {
 	dateStyle: 'medium',
 	timeStyle: 'short',
 });
@@ -23,6 +24,14 @@ const dateTimeFormat = new Intl.DateTimeFormat([], {
 				element.innerHTML = newText;
 			}
 		});
+})();
+
+(function showTranslations() {
+	debugger;
+	if (navigator.languages?.some((lang) => lang.startsWith('en'))) {
+		globalThis.document.querySelector('.translation-alert')?.style =
+			'display: block';
+	}
 })();
 
 /**

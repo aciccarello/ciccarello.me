@@ -332,19 +332,25 @@ footer {
 	}
 
 	& a {
-		display: block;
-		margin: 0.25rem;
 		/* Darker color needed for contrast against gray background */
 		color: var(--color-alternate-distinct);
+	}
+
+	& section a {
+		display: block;
+		margin: 0.25rem;
 	}
 
 	& .indiewebring a {
 		display: inline-block;
 	}
 
-	& .site-updated {
-		text-align: right;
+	& .page-metadata {
 		grid-column: 1 / 4;
+	}
+
+	& .site-updated {
+		float: right;
 	}
 }
 
@@ -399,6 +405,11 @@ aside {
 	border-bottom: medium double #333;
 	margin: 2rem 0;
 	font-style: italic;
+}
+
+.translation-alert {
+	display: none;
+	margin: 2rem;
 }
 
 .unlisted-warning {

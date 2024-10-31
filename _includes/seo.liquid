@@ -22,6 +22,11 @@
 {%- endif %}
 <meta name="description" property="og:description" content="{{ pageContent }}" />
 <link rel="canonical" property="og:url" href="{{ collectionData.data.canonical_url | default : fullUrl}}" />
+{%- assign links = page.url | locale_links %}
+{%- for link in links %}
+<link rel="alternate" href="{{link.url | addBaseUrl}}" hreflang="{{link.lang}}">
+{%- endfor -%}
+<link rel="alternate" href="{{page.url | locale_url: 'en' | addBaseUrl}}" hreflang="x-default" />
 <meta property="og:site_name" content="{{ site.title }}" />
 {%- if page.inputPath contains "_posts" %}
 <meta property="og:type" content="article" />

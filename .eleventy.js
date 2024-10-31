@@ -7,6 +7,7 @@ import datePlugin from './_build/date.js';
 import markdownPlugin from './_build/markdown.js';
 import recipePlugin from './_build/recipe.js';
 import tripsPlugin from './_build/trips.js';
+import i18nPlugin from './_build/i18n.js';
 
 const require = createRequire(import.meta.url);
 
@@ -49,6 +50,7 @@ export default async function (eleventyConfig) {
 		links: '_posts/{links,replies}/*.md',
 		reviews: '_posts/reviews/*.md',
 		posts: '_posts/**/*.md',
+		publicaciones: 'es/posts/*/*.md',
 		// Trips are added separately so they can include child data
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>
@@ -140,6 +142,10 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyLightningCssPlugin, {
 		minify: false, // TODO: Enable based on env flags
 		sourceMap: true,
+	});
+	eleventyConfig.addPlugin(i18nPlugin, {
+		defaultLanguage: 'en',
+		errorMode: 'allow-fallback',
 	});
 	eleventyConfig.addPlugin(datePlugin);
 	eleventyConfig.addPlugin(markdownPlugin);
