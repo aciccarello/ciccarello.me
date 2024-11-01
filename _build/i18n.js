@@ -92,7 +92,10 @@ function getLocaleUrlsMap(urlToInputPath, extensionMap, options = {}) {
 			let url = entry.url;
 			if (!urlMap[url]) {
 				urlMap[url] = filemap[filepath].filter((entry) => {
-					if (entry.url.includes('/page/')) {
+					if (
+						entry.url.includes('/page/') ||
+						entry.url.includes('/tags/')
+					) {
 						return false;
 					}
 					if (entry.lang) {
