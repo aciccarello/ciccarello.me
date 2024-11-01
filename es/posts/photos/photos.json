@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "Photo Post",
+  "layout": "photo",
+  "type": "fotografía",
+  "typePlural": "fotografías",
+  "author": {
+    "type": "fotógrafo"
+  }
+}

@@ -10,10 +10,10 @@ export default {
 	defaultTitle: '',
 	back_button: '../../../..',
 	layout: 'note',
+	type: 'publicación',
+	typePlural: 'publicaciones',
 	collectionName: 'publicaciones',
 	eleventyComputed: {
-		// Post kind data should override this if it's not this simple
-		typePlural: ({ type, typePlural }) => typePlural || type + 's',
 		lastUpdated:
 			/** @type {(data: {date: Date, updates?: {date: string}[]}) => Date} */ (
 				(data) =>

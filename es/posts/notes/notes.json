@@ -1,5 +1,6 @@
 {
   "defaultTitle": "Nota corta",
   "layout": "note",
-  "type": "nota"
+  "type": "nota",
+  "typePlural": "notas"
 }

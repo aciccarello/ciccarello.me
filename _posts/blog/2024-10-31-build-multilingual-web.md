@@ -6,11 +6,14 @@ date: 2024-10-31T17:08:47.877Z
 tags:
   - IndieWeb
   - carnival
+  - site changes
   - Spanish
 image: /assets/img/2024-multilingual-web-library.jpg
 image_alt: Photo window in an old library with reduced colors.
-image_caption: The library in the [Santo Domingo Cultural Center](https://www.visit-mexico.mx/oaxaca/santo-domingo-cultural-center/) housing hundreds of historical books and newspapers.
+image_caption: The library in the [Santo Domingo Cultural Center](https://www.visit-mexico.mx/oaxaca/santo-domingo-cultural-center/) in Oaxaca Mexico housing hundreds of historical books and newspapers.
 ---
+
+_This post is [also available in Spanish](/es/publicaciones/2024/10/31/crear-web-multilingue/)._
 
 I grew up in the US and have the privilege of knowing English.
 When I travel internationally, I usually can communicate with an employee in my native language.
@@ -67,8 +70,8 @@ While [traveling Latin America in 2019](https://www.ciccarello.me/travel/2019/la
 When we [visited Mexico with friends this summer](/travel/2024/mexico/), I intentionally chose to use Spanish where I could even though my friends spoke better English than I could Spanish.
 I complete lessons with [Duolingo daily](https://www.duolingo.com/profile/a3chic9).
 However, each of those types of learning was focused on specific use cases.
-So while I'm comfortable ordering in Spanish at a restaurant.
-Speaking Spanish with my neighbors is still intimidating as I fumble over words for things around the house or our upcoming plans.
+So while I'm comfortable ordering in Spanish at a restaurant,
+speaking Spanish with my neighbors is still intimidating as I fumble over words for things around the house or our upcoming plans.
 I'm less comfortable using technical jargon in Spanish which is unfortunate for someone who works on computers for their day job.
 
 But the act of translating is great practice.
