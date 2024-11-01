@@ -11,7 +11,6 @@ export default {
 	back_button: '../../../..',
 	layout: 'note',
 	type: 'publicación',
-	typePlural: 'publicaciones',
 	collectionName: 'publicaciones',
 	eleventyComputed: {
 		lastUpdated:
