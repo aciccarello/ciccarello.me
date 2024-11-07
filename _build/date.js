@@ -51,6 +51,7 @@ const formatters = {
 	en: generateFormats('en-US'),
 	es: generateFormats('es'),
 };
+formatters['en-US'] = formatters.en;
 
 /**
  * Custom plugin configuration for handling dates
@@ -63,7 +64,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addGlobalData('buildTime', () => new Date());
 	eleventyConfig.addFilter('yearsSince', yearsSince);
 	eleventyConfig.addFilter('formatHumanDate', function (dateInput, accuracy) {
-		const locale = this.page.lang || 'en';
+		const locale = this.page.lang || 'en-US';
 		const { dateFormat, monthFormat, dateTimeFormat } = formatters[locale];
 		const date = new Date(dateInput);
 		if (accuracy === 'month') {

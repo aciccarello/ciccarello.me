@@ -6,7 +6,7 @@ export default {
 		typeArticle: 'the',
 		type: 'author',
 	},
-	lang: 'en',
+	lang: 'en-US',
 	defaultTitle: '',
 	back_button: '../../../..',
 	layout: 'note',

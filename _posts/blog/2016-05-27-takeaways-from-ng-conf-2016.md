@@ -18,7 +18,7 @@ YouTube videos of talks from [ng-conf 2015](https://www.youtube.com/playlist?lis
 [AngularConnect](https://www.youtube.com/channel/UCzrskTiT_ObAk3xBkVxMz5g/feed)
 but attending in person was entirely different.
 
-<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/ngconf?src=hash&amp;ref_src=twsrc%5Etfw">#ngconf</a> 2016 <a href="https://t.co/mTs6frxVlj">pic.twitter.com/mTs6frxVlj</a></p>&mdash; ng-conf (@ngconf) <a href="https://twitter.com/ngconf/status/730225043750322176?ref_src=twsrc%5Etfw">May 11, 2016</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/ngconf?src=hash&amp;ref_src=twsrc%5Etfw">#ngconf</a> 2016 <a href="https://t.co/mTs6frxVlj">pic.twitter.com/mTs6frxVlj</a></p>&mdash; ng-conf (@ngconf) <a href="https://twitter.com/ngconf/status/730225043750322176?ref_src=twsrc%5Etfw">May 11, 2016</a></blockquote>
 
 The three day conference included
 [keynote](https://www.youtube.com/watch?v=gdlpE9vPQFs)

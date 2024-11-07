@@ -6,11 +6,11 @@
 
 class LangUtils {
 	static getLanguageCodeFromInputPath(filepath) {
-		return (filepath || '').includes('/es/') ? 'es' : 'en';
+		return (filepath || '').includes('/es/') ? 'es' : 'en-US';
 	}
 
 	static getLanguageCodeFromUrl(url) {
-		return (url || '').includes('/es/') ? 'es' : 'en';
+		return (url || '').includes('/es/') ? 'es' : 'en-US';
 	}
 
 	static swapLanguageCodeNoCheck(str, langCode) {

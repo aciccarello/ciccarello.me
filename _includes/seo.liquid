@@ -26,7 +26,7 @@
 {%- for link in links %}
 <link rel="alternate" href="{{link.url | addBaseUrl}}" hreflang="{{link.lang}}">
 {%- endfor -%}
-<link rel="alternate" href="{{page.url | locale_url: 'en' | addBaseUrl}}" hreflang="x-default" />
+<link rel="alternate" href="{{page.url | locale_url: 'en-US' | addBaseUrl}}" hreflang="x-default" />
 <meta property="og:site_name" content="{{ site.title }}" />
 {%- if page.inputPath contains "_posts" %}
 <meta property="og:type" content="article" />

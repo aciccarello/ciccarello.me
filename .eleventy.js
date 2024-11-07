@@ -144,7 +144,7 @@ export default async function (eleventyConfig) {
 		sourceMap: true,
 	});
 	eleventyConfig.addPlugin(i18nPlugin, {
-		defaultLanguage: 'en',
+		defaultLanguage: 'en-US',
 		errorMode: 'allow-fallback',
 	});
 	eleventyConfig.addPlugin(datePlugin);
