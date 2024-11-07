@@ -11,7 +11,7 @@ noindex: true
 		{{ title }}
 	</h1>
 	<ol class="post-list">
-		{%- for post in collections.publicaciones -%}
+		{%- for post in collections.publicaciones reversed -%}
 			<li>
 			{% include "post-card.html" post: post, showKind: true %}
 			</li>

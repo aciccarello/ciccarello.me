@@ -157,22 +157,12 @@ image: "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=25
 			</a>
 		</nav>
 		<ol class="post-list">
-		{%- assign posts = collections["mainPosts"] %}
+		{%- assign posts = collections.mainPosts | reverse %}
+		{%- for post in posts limit: 5 -%}
 			<li>
-			{% include "post-card.html" post: posts[-1] %}
+			{% include "post-card.html" %}
 			</li>
-			<li>
-			{% include "post-card.html" post: posts[-2] %}
-			</li>
-			<li>
-			{% include "post-card.html" post: posts[-3] %}
-			</li>
-			<li>
-			{% include "post-card.html" post: posts[-4] %}
-			</li>
-			<li>
-			{% include "post-card.html" post: posts[-5] %}
-			</li>
+		{%- endfor -%}
 		</ol>
 		</div>
 		{% endremoveindents %}

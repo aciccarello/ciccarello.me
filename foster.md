@@ -127,16 +127,12 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
     </a>
  </h2>
  <ol class="post-list">
-  {%- assign posts = collections["foster care"] %}
+    {%- assign posts = collections["foster care"] | reverse %}
+		{%- for post in posts limit: 3 -%}
     <li>
-    {% include "post-card.html" post: posts[-1] %}
+    {% include "post-card.html" post: post, showKind: true %}
     </li>
-    <li>
-    {% include "post-card.html" post: posts[-2] %}
-    </li>
-    <li>
-    {% include "post-card.html" post: posts[-3] %}
-    </li>
+		{%- endfor -%}
   </ol>
 </div>
 {% endremoveindents %}
