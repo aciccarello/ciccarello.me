@@ -22,13 +22,22 @@ noindex: true
 		height: 200px;
 		width: 200px;
 		margin: 0.5rem auto;
+		border-radius: 0.5rem;
+	}
+
+	.inactive-payment {
+		opacity: 0.5;
+		text-decoration: line-through;
 	}
 </style>
 
 <p>Accepted services ordered by preference. See <a href="/referrals">referrals page</a> for sign up deals.</p>
+<label><input type="checkbox" id="show-qr-codes"> Show QR codes</label>
+
 <ol class="providers-list">
 	<li>
-		<img src="/assets/img/icon-zele.png" alt="" class="provider-icon"/>
+		<img src="/assets/img/icon-zele.png" alt="" class="provider-icon"
+					data-qr-code="https://enroll.zellepay.com/qr-codes?data=eyJuYW1lIjoiQW50aG9ueSIsInRva2VuIjoiYW50aG9ueUBjaWNjYXJlbG"/>
 	Zelle (anthony@ciccarello.me)
 	<p>
 	  Bank-to-bank.
@@ -37,25 +46,27 @@ noindex: true
 	</li>
 	<li>
 		<a href="https://venmo.com/u/ajciccarello" tabindex="-1" aria-hidden="true">
-			<img src="/assets/img/icon-venmo.svg" alt="" class="provider-icon"/>
+			<img src="/assets/img/icon-venmo.svg" alt="" class="provider-icon"
+					data-qr-code="https://venmo.com/code?user_id=3454410042639796876&created=1731055849"/>
 		</a>
 	  Venmo (<a href="https://venmo.com/u/ajciccarello">@ajciccarello</a>)
-  </li>
+	</li>
 	<li>
 		<a href="https://paypal.me/ajciccarello" tabindex="-1" aria-hidden="true">
-			<img src="/assets/img/icon-paypal.png" alt="" class="provider-icon"/>
+			<img src="/assets/img/icon-paypal.png" alt="" class="provider-icon"
+					data-qr-code="https://www.paypal.com/qrcodes/p2pqrc/WBY7MRW7N9RGE"/>
 		</a>
 		Paypal (<a href="https://paypal.me/ajciccarello">@ajciccarello</a>)
-  </li>
-	<li>
+	</li>
+	<li class="inactive-payment">
 		<a href="https://wise.com/invite/spu/anthonyjosephc6" tabindex="-1" aria-hidden="true">
 			<img src="/assets/img/icon-wise.png" alt="" class="provider-icon"/>
 		</a>
-	Wise (<a href="https://wise.com/invite/spu/anthonyjosephc6">anthony@ciccarello.me</a>)
-	<p>
-	  International payments
-	  <a href="https://wise.com/invite/dic/anthonyjosephc6">Referral code</a>
-	</p>
+		Wise (<a href="https://wise.com/invite/spu/anthonyjosephc6">anthony@ciccarello.me</a>)
+		<p>
+		International payments (currently disabled)
+		<a href="https://wise.com/invite/dic/anthonyjosephc6">Referral code</a>
+		</p>
 	</li>
 </ol>
 
@@ -73,4 +84,23 @@ noindex: true
 			.querySelectorAll('a[href*="paypal.me"]')
 			.forEach((paypalLink) => paypalLink.href = paypalLink.href + `/${amount}`);
 	}
+
+	document.getElementById('show-qr-codes').addEventListener('change', async (event) => {
+		const showQrCodes = event.target.checked;
+		// Using skypack version since the npm version wasn't bundled
+		const QRCode = await import('https://cdn.skypack.dev/qrcode@1');
+		document
+			.querySelectorAll('img[data-qr-code]')
+			.forEach(async (element) => {
+				if (!element.hasAttribute('src-original')) {
+					element.setAttribute('src-original', element.src);
+				}
+				if (showQrCodes) {
+					const qrCodeUrl = element.getAttribute('data-qr-code');
+					element.src = await QRCode.toDataURL(qrCodeUrl, { width: 200 })
+				} else {
+					element.src = element.getAttribute('src-original');
+				}
+			});
+	});
 </script>
