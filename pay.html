@@ -29,6 +29,23 @@ noindex: true
 		opacity: 0.5;
 		text-decoration: line-through;
 	}
+
+	:has(#show-qr-codes:checked) article:after {
+		--box-width: 400px;
+		--overlay-color: rgba(0,0,0,0.75);
+		--blur-radius: 50px;
+		content: "";
+		display: block;
+		pointer-events: none;
+		position: fixed;
+		top: 50vh;
+		left: 50vw;
+		width: var(--box-width);
+		height: var(--box-width);
+		transform: translate(calc(var(--box-width) / -2), calc(var(--box-width) / -2));
+		box-shadow: 0 0 0 100vmax var(--overlay-color),
+			inset 0 0 calc(var(--blur-radius) - 10px) var(--blur-radius) var(--overlay-color);
+	}
 </style>
 
 <p>Accepted services ordered by preference. See <a href="/referrals">referrals page</a> for sign up deals.</p>
