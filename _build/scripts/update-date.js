@@ -5,7 +5,7 @@ import { readFile, writeFile } from 'node:fs/promises';
  *
  * Run by passing in file path
  * ```bash
- * node _build/scripts/update-date.js _posts/blog/2023-01-25-birding-in-2023.md
+ * node _build/scripts/update-date.js posts/blog/2023-01-25-birding-in-2023.md
  * ```
  */
 async function main() {

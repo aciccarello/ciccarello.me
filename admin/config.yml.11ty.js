@@ -295,7 +295,7 @@ function addDefaultsToCollection(collection) {
 		// Default values
 		label,
 		label_singular: label.replace(/ies$/, 'y').replace(/s$/, ''),
-		folder: `_posts/${collection.name}`,
+		folder: `posts/${collection.name}`,
 		create: true,
 		slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
 		...titleDependentProps,

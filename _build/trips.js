@@ -19,7 +19,7 @@ export default function (eleventyConfig) {
 		// Implemented as a custom collection rather than computed data
 		// because we need to get the related post data as well
 		return collectionApi
-			.getFilteredByGlob('_posts/trips/*.md')
+			.getFilteredByGlob('posts/trips/*.md')
 			.map((trip) => {
 				const { tags, date } = trip.data;
 				// Defaults to only looking at that year's content

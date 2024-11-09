@@ -25,9 +25,6 @@ class LangUtils {
  * @returns
  */
 function normalizeInputPath(inputPath, extensionMap) {
-	// Spanish files will be a little more organized
-	// TODO: Remove this when file structure normalized
-	inputPath = inputPath.replace('_posts', 'posts');
 	if (extensionMap) {
 		return extensionMap.removeTemplateExtension(inputPath);
 	}

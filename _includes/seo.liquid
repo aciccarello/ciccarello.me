@@ -28,7 +28,7 @@
 {%- endfor -%}
 <link rel="alternate" href="{{page.url | locale_url: 'en-US' | addBaseUrl}}" hreflang="x-default" />
 <meta property="og:site_name" content="{{ site.title }}" />
-{%- if page.inputPath contains "_posts" %}
+{%- if page.inputPath contains "posts" and page.inputPath contains ".md" %}
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="{{ page.date | formatMachineDate }}" />
 {%- endif %}
@@ -62,10 +62,10 @@
     "description":"{{ pageContent }}",
     {% if page.url == "/" %}
     "@type":"WebSite",
-    {% elsif page.inputPath contains "_posts/recipe" %}
+    {% elsif page.inputPath contains "posts/recipe" and page.inputPath contains ".md" %}
     "@type": "Recipe",
     "name":"{{defaultedTitle}}",
-    {% elsif page.inputPath contains "_posts" %}
+    {% elsif page.inputPath contains "posts" and page.inputPath contains ".md" %}
     "mainEntityOfPage":{"@type":"WebPage", "@id": "{{ collectionData.data.canonical_url | default : fullUrl }}"},
     "@type":"BlogPosting",
     {% else %}

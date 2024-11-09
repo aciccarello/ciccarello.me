@@ -43,13 +43,13 @@ export default async function (eleventyConfig) {
 	 * @type {Record<string, string>}
 	 */
 	const collections = {
-		articles: '_posts/blog/*.md',
-		recipes: '_posts/recipes/*.md',
-		notes: '_posts/notes/*.md',
-		photos: '_posts/photos/*.md',
-		links: '_posts/{links,replies}/*.md',
-		reviews: '_posts/reviews/*.md',
-		posts: '_posts/**/*.md',
+		articles: 'posts/blog/*.md',
+		recipes: 'posts/recipes/*.md',
+		notes: 'posts/notes/*.md',
+		photos: 'posts/photos/*.md',
+		links: 'posts/{links,replies}/*.md',
+		reviews: 'posts/reviews/*.md',
+		posts: 'posts/**/*.md',
 		publicaciones: 'es/posts/*/*.md',
 		// Trips are added separately so they can include child data
 	};
