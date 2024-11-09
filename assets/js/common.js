@@ -27,10 +27,16 @@ const dateTimeFormat = new Intl.DateTimeFormat([locale], {
 })();
 
 (function showTranslations() {
-	debugger;
-	if (navigator.languages?.some((lang) => lang.startsWith('en'))) {
-		globalThis.document.querySelector('.translation-alert')?.style =
-			'display: block';
+	const translationAlert =
+		globalThis.document.querySelector('.translation-alert');
+	if (translationAlert) {
+		const altLang = translationAlert
+			.querySelector('[lang]')
+			?.getAttribute('lang')
+			.split('-')[0];
+		if (navigator.languages?.some((lang) => lang.startsWith(altLang))) {
+			translationAlert.style = 'display: block';
+		}
 	}
 })();
 

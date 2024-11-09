@@ -29,7 +29,7 @@
 		{%- for link in links %}
 		{%- if forloop.first %}
 		<section class="translation-alert">
-		This page is also available in:
+		🌐 {{text.translations}}
 		{% endif %}
 		{%- unless forloop.first %},{% endunless %}
 		<a href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.label}}</a>

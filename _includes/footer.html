@@ -35,7 +35,7 @@
 	{%- assign links = page.url | locale_links %}
 	{%- for link in links %}
 	{%- if forloop.first %}
-	{{text.translations}}
+	🌐 {{text.translations}}
 	{%- endif %}
 	{%- unless forloop.first %},{% endunless %}
 	<a href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.label}}</a>
