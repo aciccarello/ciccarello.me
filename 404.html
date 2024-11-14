@@ -19,9 +19,13 @@ excludeFromSitemap: true
 		letter-spacing: -1px;
 	}
 
-	picture {
+	.missing-page-graphic {
 		display: block;
 		margin: 1rem;
+
+		img {
+			border-radius: var(--border-radius);
+		}
 	}
 
 	#archive-link {
@@ -36,7 +40,7 @@ excludeFromSitemap: true
 	<p>
 		<strong>Page not found :(</strong>
 	</p>
-	<picture>
+	<picture class="missing-page-graphic">
 		<source srcset="/assets/img/owl-looking.webp" type="image/webp"/>
 		<img alt="" src="/assets/img/owl-looking.gif"/>
 	</picture>
