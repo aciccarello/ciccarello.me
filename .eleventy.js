@@ -1,18 +1,19 @@
-import 'dotenv/config';
-import { createRequire } from 'node:module';
+import "dotenv/config";
+import { createRequire } from "node:module";
 import rssPlugin, {
 	convertHtmlToAbsoluteUrls,
 	getNewestCollectionItemDate,
 	dateToRfc3339,
-} from '@11ty/eleventy-plugin-rss';
-import eleventySyntaxhighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight';
-import eleventyLightningCssPlugin from '@11tyrocks/eleventy-plugin-lightningcss';
-import datePlugin from './_build/date.js';
-import markdownPlugin from './_build/markdown.js';
-import recipePlugin from './_build/recipe.js';
-import tripsPlugin from './_build/trips.js';
-import i18nPlugin from './_build/i18n.js';
-import productionPlugin, { isProductionBuild } from './_build/prod.js';
+} from "@11ty/eleventy-plugin-rss";
+import eleventySyntaxhighlightPlugin from "@11ty/eleventy-plugin-syntaxhighlight";
+import eleventyLightningCssPlugin from "@11tyrocks/eleventy-plugin-lightningcss";
+import datePlugin from "./_build/date.js";
+import markdownPlugin from "./_build/markdown.js";
+import recipePlugin from "./_build/recipe.js";
+import tripsPlugin from "./_build/trips.js";
+import slidesPlugin from "./_build/slides.js";
+import i18nPlugin from "./_build/i18n.js";
+import productionPlugin, { isProductionBuild } from "./_build/prod.js";
 
 const require = createRequire(import.meta.url);
 /**
@@ -28,22 +29,22 @@ const require = createRequire(import.meta.url);
  */
 export default async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
-		'admin/index.html': 'admin/index.html',
-		'assets/img': 'assets/img',
-		'assets/js': 'assets/js',
-		'assets/feed.xsl': 'assets/feed.xsl',
-		'assets/octothorpe-harmonizer.json':
-			'assets/octothorpe-harmonizer.json',
-		'favicon.ico': 'favicon.ico',
-		'robots.txt': 'robots.txt',
-		'pinterest-60576.html': 'pinterest-60576.html',
-		'mywotc6b2477c57f015eaa645.html': 'mywotc6b2477c57f015eaa645.html',
-		'BingSiteAuth.xml': 'BingSiteAuth.xml',
-		sites: 'sites',
-		[require.resolve('webmention.js/static/webmention')]:
-			'assets/js/webmention.js',
-		[require.resolve('@sveltia/cms')]: 'assets/js/cms.js',
-		[require.resolve('7.css/dist/7.css')]: 'assets/css/7.css',
+		"admin/index.html": "admin/index.html",
+		"assets/img": "assets/img",
+		"assets/js": "assets/js",
+		"assets/feed.xsl": "assets/feed.xsl",
+		"assets/octothorpe-harmonizer.json":
+			"assets/octothorpe-harmonizer.json",
+		"favicon.ico": "favicon.ico",
+		"robots.txt": "robots.txt",
+		"pinterest-60576.html": "pinterest-60576.html",
+		"mywotc6b2477c57f015eaa645.html": "mywotc6b2477c57f015eaa645.html",
+		"BingSiteAuth.xml": "BingSiteAuth.xml",
+		sites: "sites",
+		[require.resolve("webmention.js/static/webmention")]:
+			"assets/js/webmention.js",
+		[require.resolve("@sveltia/cms")]: "assets/js/cms.js",
+		[require.resolve("7.css/dist/7.css")]: "assets/css/7.css",
 	});
 
 	/**
@@ -51,15 +52,15 @@ export default async function (eleventyConfig) {
 	 * @type {Record<string, string>}
 	 */
 	const collections = {
-		articles: 'posts/blog/*.md',
+		articles: "posts/blog/*.md",
 		// recipes added in _build/recipe.js
-		notes: 'posts/{notes,listens}/*.md',
-		photos: 'posts/photos/*.md',
-		links: 'posts/{links,replies}/*.md',
-		reviews: 'posts/reviews/*.md',
-		activities: 'posts/{eats}/*.md',
-		posts: 'posts/**/*.md',
-		publicaciones: 'es/posts/*/*.md',
+		notes: "posts/{notes,listens}/*.md",
+		photos: "posts/photos/*.md",
+		links: "posts/{links,replies}/*.md",
+		reviews: "posts/reviews/*.md",
+		activities: "posts/{eats}/*.md",
+		posts: "posts/**/*.md",
+		publicaciones: "es/posts/*/*.md",
 		// trips added in _build/trips.js
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>
@@ -67,12 +68,12 @@ export default async function (eleventyConfig) {
 			collection.getFilteredByGlob(glob),
 		),
 	);
-	eleventyConfig.addCollection('mainPosts', (collection) =>
+	eleventyConfig.addCollection("mainPosts", (collection) =>
 		collection
 			.getFilteredByGlob(collections.posts)
 			.filter((page) => !page.data.excludeFromMainFeed),
 	);
-	eleventyConfig.addCollection('testPosts', (collection) => {
+	eleventyConfig.addCollection("testPosts", (collection) => {
 		const postUrls = Object.values(
 			collection.getAll()[0]?.data.test?.posts ?? {},
 		);
@@ -81,12 +82,12 @@ export default async function (eleventyConfig) {
 			.getAllSorted()
 			.filter((page) => postUrls.includes(page.data.page.url));
 	});
-	eleventyConfig.addCollection('tagList', (collection) => {
+	eleventyConfig.addCollection("tagList", (collection) => {
 		const tagCountMap = new Map();
 		collection.getAll().forEach((page) => {
 			if (page.data.tags) {
 				page.data.tags
-					.filter((tag) => !['post', 'all'].includes(tag))
+					.filter((tag) => !["post", "all"].includes(tag))
 					.forEach((tag) => {
 						const currentCount = tagCountMap.get(tag) ?? 0;
 						tagCountMap.set(tag, currentCount + 1);
@@ -103,45 +104,45 @@ export default async function (eleventyConfig) {
 			})
 			.map(([key]) => key);
 	});
-	eleventyConfig.addCollection('pageByUrl', (collection) => {
+	eleventyConfig.addCollection("pageByUrl", (collection) => {
 		return collection.getAll().reduce((containerMap, page) => {
 			containerMap[page.url] = page;
 			return containerMap;
 		});
 	});
-	eleventyConfig.addPairedShortcode('json', (content) => {
+	eleventyConfig.addPairedShortcode("json", (content) => {
 		try {
-			const contentMinusTabs = content.replace(/\t/g, '');
+			const contentMinusTabs = content.replace(/\t/g, "");
 			return JSON.stringify(JSON.parse(contentMinusTabs));
 		} catch (error) {
-			console.warn('Unable to parse json', content);
+			console.warn("Unable to parse json", content);
 			throw error;
 		}
 	});
-	eleventyConfig.addFilter('addBaseUrl', (value) => {
-		if (!value || value.startsWith('http')) {
+	eleventyConfig.addFilter("addBaseUrl", (value) => {
+		if (!value || value.startsWith("http")) {
 			return value;
 		}
-		return 'https://www.ciccarello.me' + value;
+		return "https://www.ciccarello.me" + value;
 	});
-	eleventyConfig.addFilter('joinLines', (value) =>
-		value.replace(/\n/gm, ' '),
+	eleventyConfig.addFilter("joinLines", (value) =>
+		value.replace(/\n/gm, " "),
 	);
-	eleventyConfig.addFilter('keys', (value) => {
+	eleventyConfig.addFilter("keys", (value) => {
 		if (value) {
 			return Object.keys(value);
 		}
 	}); // Helpful for debugging objects
-	eleventyConfig.addFilter('sanitizeFeedContent', (content) =>
+	eleventyConfig.addFilter("sanitizeFeedContent", (content) =>
 		content
-			.replace(/object-position: \d+% \w+/gm, '')
+			.replace(/object-position: \d+% \w+/gm, "")
 			// WM sender gets confused by u-url on nested h-cite
 			// Would also strip from text from feed but should be rare
 			// See https://github.com/remy/wm/issues/62
-			.replace(/u-url/gm, ''),
+			.replace(/u-url/gm, ""),
 	);
-	eleventyConfig.addFilter('extractDomain', (content) =>
-		content.split('/').find((segment) => segment.includes('.')),
+	eleventyConfig.addFilter("extractDomain", (content) =>
+		content.split("/").find((segment) => segment.includes(".")),
 	);
 
 	eleventyConfig.addPlugin(eleventySyntaxhighlightPlugin);
@@ -150,47 +151,48 @@ export default async function (eleventyConfig) {
 		sourceMap: true,
 	});
 	eleventyConfig.addPlugin(i18nPlugin, {
-		defaultLanguage: 'en-US',
-		errorMode: 'allow-fallback',
+		defaultLanguage: "en-US",
+		errorMode: "allow-fallback",
 	});
 	eleventyConfig.addPlugin(datePlugin);
 	eleventyConfig.addPlugin(markdownPlugin);
 	eleventyConfig.addPlugin(recipePlugin);
 	eleventyConfig.addPlugin(tripsPlugin);
 	eleventyConfig.addPlugin(productionPlugin);
+	eleventyConfig.addPlugin(slidesPlugin);
 
 	// Add RSS filters to liquid
 	// See https://www.11ty.dev/docs/plugins/rss/#use-with-other-template-languages
 	eleventyConfig.addPlugin(rssPlugin);
 	eleventyConfig.addLiquidFilter(
-		'htmlToAbsoluteUrls',
+		"htmlToAbsoluteUrls",
 		convertHtmlToAbsoluteUrls,
 	);
 	eleventyConfig.addLiquidFilter(
-		'getNewestCollectionItemDate',
+		"getNewestCollectionItemDate",
 		getNewestCollectionItemDate,
 	);
-	eleventyConfig.addLiquidFilter('dateToRfc3339', dateToRfc3339);
+	eleventyConfig.addLiquidFilter("dateToRfc3339", dateToRfc3339);
 
 	eleventyConfig.setLiquidOptions({
 		timezoneOffset: 0, // Fix liquid date filter to match server
 	});
 	eleventyConfig.setWatchThrottleWaitTime(100); // in milliseconds
-	eleventyConfig.setServerPassthroughCopyBehavior('passthrough');
+	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
 	// Avoid CORS errors locally
 	eleventyConfig.setServerOptions({
-		headers: { 'Access-Control-Allow-Origin': '*' },
+		headers: { "Access-Control-Allow-Origin": "*" },
 	});
 
 	return {
 		dir: {
-			input: './', // Equivalent to Jekyll's source property
-			output: './_site', // Equivalent to Jekyll's destination property
+			input: "./", // Equivalent to Jekyll's source property
+			output: "./_site", // Equivalent to Jekyll's destination property
 
 			// ⚠️ These values are both relative to your input directory.
-			includes: '_includes',
-			layouts: '_layouts',
+			includes: "_includes",
+			layouts: "_layouts",
 		},
 	};
 }

@@ -39,6 +39,7 @@
     "@sveltia/cms": "^0.167.3",
     "7.css": "^0.21.1",
     "leaflet": "^1.9.4",
+    "reveal.js": "^5.1.0",
     "webmention.js": "^0.5.6"
   },
   "devDependencies": {

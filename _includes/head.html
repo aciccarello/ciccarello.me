@@ -8,7 +8,7 @@
 	{%- endif %}
 	{%- include "seo" -%}
 	<link rel="stylesheet" href="/assets/css/common.css"/>
-	{%- if not collectionData or collectionData.templateContent contains "</pre>" %}
+	{%- if not collectionData or collectionData.templateContent contains "</pre>" or collectionData.templateContent contains "endslides" %}
 	 	{%- comment %}
 			Future proof the selection by requiring on of two options using "not"
 			See https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme for details

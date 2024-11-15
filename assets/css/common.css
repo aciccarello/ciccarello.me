@@ -1170,6 +1170,26 @@ iframe[src*='macaulaylibrary.org'] {
 	color: var(--color-accent);
 }
 
+.reveal {
+	all: unset;
+	display: block;
+	aspect-ratio: 16 / 9;
+
+	/*
+	 * Unset some of our own styles.
+	 * `* { all: unset; }` impacted some reveal styles
+	 */
+	p,
+	h1,
+	h2,
+	h3,
+	aside,
+	button,
+	code {
+		all: unset;
+	}
+}
+
 #dynamicMap {
 	height: 500px;
 }
