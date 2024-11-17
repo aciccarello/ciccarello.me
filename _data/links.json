@@ -11,6 +11,12 @@
           "icon": "icons/mastodon.svg"
         },
         {
+          "url": "https://bsky.app/profile/ciccarello.me.web.brid.gy",
+          "title": "Bluesky",
+          "description": "@ciccarello.me",
+          "icon": "icons/bluesky.svg"
+        },
+        {
           "url": "https://www.npmjs.com/~aciccarello",
           "title": "LinkedIn",
           "description": "Professional",

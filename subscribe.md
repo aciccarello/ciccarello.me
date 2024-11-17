@@ -3,12 +3,13 @@ title: 'Subscribe'
 layout: page
 ---
 
-Get sent updates on the latest posts!
-If you'd prefer to only subscribe to posts about foster care, use the form on the [foster care](/foster/#subscribe) page.
+Get sent updates on the latest posts using your method of choice!
+My content is available via RSS, Microformats, email, Bluesky, and the Fediverse.
+If you'd prefer to only subscribe to posts about foster care via RSS or email, see the [foster care](/foster/#subscribe) page.
 
-## Subscribe Using a Feed Reader
+## Subscribe with a Feed Reader
 
-This blog also supports subscribing via RSS (technically Atom). Using an feed reader you can subscribe to the [feed URL]({{ "/feed.xml" | url }}). Learn more about RSS on aboutfeeds.com.
+This blog supports subscribing via RSS (technically Atom). Using an feed reader you can subscribe to the [feed URL]({{ "/feed.xml" | url }}). Learn more about RSS on aboutfeeds.com.
 
 <input type="button" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this)" value="Subscribe via feed reader">
 
@@ -69,6 +70,11 @@ The easiest way to subscribe is via email. Emails are sent out no more often tha
     </form>
   </div>
 </div>
+
+## Follow on Bluesky
+
+If you use [Bluesky](https://bsky.app/) you can follow me [@ciccarello.me](https://bsky.app/search?q=ciccarello.me).
+All posts from this site will be federated to the network via Brid.gy so it will appear in the official handle.
 
 ## Follow on Mastodon or other fediverse networks
 
