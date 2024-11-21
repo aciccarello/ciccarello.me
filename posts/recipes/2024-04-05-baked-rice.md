@@ -12,11 +12,16 @@ tags:
   - oven
 image: /assets/img/recipe-baked-rice.jpg
 image_alt: Casserole dish with some food removed showing layers of rice and ground beef topped with breadcrumbs.
+updates:
+  - date: 2024-11-21T05:03:32.161Z
+    description: Adjusted ingredient amounts
 ---
 
 This is a recipe I distinctly remember my grandmother making for us when I was a kid.
 I have fond memories of consuming this comfort food and haven't encountered it outside our family.
 I've made a few adjustments to my grandmother's recipe, including halving the portions, but I included the original below.
+When picking a dish, I'd recommend a deeper dish rather than shallow so you can get the layers in.
+I sometimes use our small dutch oven rather than a true casserole dish.
 I'll highlight that this is not a quick meal but it's worth it if you have the time.
 It can also be prepared a day ahead of time.
 
@@ -30,8 +35,8 @@ It can also be prepared a day ahead of time.
 
 - 2 lbs chopped meat
 - 2 cups of a long-grain rice like Jasmine (Nani preferred Carolina)
-- 1/2 large onion diced
-- 14 oz tomato puree or crushed (1/2 28 oz can)
+- 1 small onion diced
+- 1 28 oz can crushed tomato or puree
 - 2 Tbsp butter (1/4 stick)
 - 3 eggs
 - olive oil
@@ -39,7 +44,7 @@ It can also be prepared a day ahead of time.
 - parsley flakes
 - garlic powder
 - 8 oz mozzarella (grated or thinly sliced)
-- grated parmesan cheese
+- grated Parmesan cheese
 - Bread crumbs
 
 {% endrecipe-ingredients %}
@@ -48,11 +53,11 @@ It can also be prepared a day ahead of time.
 
 1. Boil water and cook the rice according to it's directions.
 1. After the rice is cooked, add butter and let it cool slightly.
-1. While the rice cooks, chop 1/2 an onion and brown it with some olive oil in a large pan on medium heat.
+1. While the rice cooks, chop the onion and brown it with some olive oil in a large pan on medium heat.
 1. When onions are browned, set them aside.
-1. Brown chopped meat, while cooking add approximately 1/2 teaspoon salt and 1/8 teaspoon pepper, about 1/4 teaspoon garlic powder and 1 teaspoon parsley.
+1. Brown chopped meat, while cooking add approximately 1 teaspoon salt and 1/8 teaspoon pepper, about 1/2 teaspoon garlic powder and 1 teaspoon parsley.
 1. If there is too much liquid and fat in the meat, scoop it out of the pan an set aside.
-1. As meat is browning, add 1/2 can of tomato puree or crushed and the browned onions and let cook approximately 1/2 hour.
+1. As meat is browning, add can of tomato and the browned onions and let simmer approximately 1/2 hour.
 1. Preheat the oven to {% recipe-temp 375 %}.
 1. After the rice has cooled, add 3 eggs and approximately 1 heaping tablespoon grated Italian cheese and mix thoroughly.
 1. In a deep, greased casserole dish, make layers as follows
