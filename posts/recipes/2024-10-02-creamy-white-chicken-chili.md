@@ -22,13 +22,13 @@ For a similar recipe, see [Cream Cheese Slow Cooker Chicken](/recipes/2021/04/30
 - Cook Time: 45 minutes (pressure cooker) to 8 hours (slow cooker on low)
 
 {% recipe-cooklang %}
-1. Dice @yellow onion{1}, mince @garlic{2 cloves}, and trim excess fat from @boneless skinless chicken breasts{1 lb}
+1. Dice @yellow onion{1}, mince @garlic{2%cloves}, and trim excess fat from @boneless skinless chicken breasts{1%lb}
 1. Open, drain, and rinse @15oz cans great northern beans{2}. Open and drain @15oz can of whole kernel corn{1}.
-1. Add the chicken to bottom of slow cooker or pressure cooker and top with onion, garlic, @salt{1 tsp}, @black pepper{1/2 tsp}, @cumin{1 tsp}, @oregano{3/4 tsp}, @chili powder{1/2 tsp}, @cayenne pepper{1/4 tsp}, great northern beans, corn, @4oz cans diced medium green chilies{2}.
+1. Add the chicken to bottom of slow cooker or pressure cooker and top with onion, garlic, @salt{1%tsp}, @black pepper{1/2%tsp}, @cumin{1%tsp}, @oregano{3/4%tsp}, @chili powder{1/2%tsp}, @cayenne pepper{1/4%tsp}, great northern beans, corn, @4oz cans diced medium green chilies{2}.
 Top with diced onion, minced garlic, great Northern beans, green chiles, corn, chicken broth and cilantro.  Stir.
 1. Stir before covering and cooking in a slow cooker on LOW for 8 hours, on HIGH for 3-4 hours, or in a pressure cooker on HIGH for 20 minutes.
 1. Remove chicken to shred before returning to slow/pressure cooker.
-1. Add @cubed cream cheese{8oz} and @half and half{1/4 cup}, stir, then cover and cook on HIGH for 15 minutes (not under pressure), or until chili is creamy and slightly thickened.
+1. Add @cubed cream cheese{8%oz} and @half and half{1/4%cup}, stir, then cover and cook on HIGH for 15 minutes (not under pressure), or until chili is creamy and slightly thickened.
 1.  Stir well and serve with @avocados{}, @sour cream{}, @tortilla strips{}, @shredded Monterey jack or Mexican cheese{}
 {% endrecipe-cooklang %}
 

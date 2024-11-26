@@ -19,7 +19,7 @@ We served it with a salad and bread for dipping in olive oil and balsamic vinega
 {% recipe-cooklang %}
 1. Finely dice @shallots{1-2} (or 1/4 an onion) and saute the shallots in a generous amount of @olive oil{}.
 1. Add @minced garlic{} and @haved cherry tomatoes{} and cook till the tomatoes soften.
-1. Add @cream{1 1/4 cups (or 300 ml)}, @Parmesan cheese{160g}, salt, and pepper; stirring regularly.
-1. While the sauce thickens, cook @gnocci{200g} in boiling water. When it rises (usually in about 2 minutes), transfer to the sauce.
+1. Add @cream{1 1/4%cups (or 300 ml)}, @Parmesan cheese{160%g}, salt, and pepper; stirring regularly.
+1. While the sauce thickens, cook @gnocci{200%g} in boiling water. When it rises (usually in about 2 minutes), transfer to the sauce.
 1. Plate dish and optionally serve with @Buffalo burrata{}, topped with @olive oil{}, and @fresh basil{}.
 {% endrecipe-cooklang %}
