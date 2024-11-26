@@ -2,9 +2,9 @@
 title: Veronica's Spanish Rice
 date: 2022-12-06T02:18:11.668Z
 tags:
-  - sides
+  - side dish
   - Spanish
-  - stovetop
+  - stove
   - rice
   - dinner
 image: /assets/img/spanish-rice.jpg

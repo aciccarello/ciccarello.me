@@ -4,7 +4,7 @@ date: 2021-03-24T01:33:37.925Z
 canonical_url: https://71toes.com/2012/11/quick-weeknight-asian-turkey-lettuce/
 tags:
   - dinner
-  - stovetop
+  - stove
 image: /assets/img/asian-turkey-lettuce-wrap.jpg
 image_alt: lettuce leaf filled with cooked mixture
 ---

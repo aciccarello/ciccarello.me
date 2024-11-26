@@ -5,7 +5,7 @@ tags:
   - air fryer
   - dinner
   - vegetable
-  - sides
+  - side dish
 image: /assets/img/air-fryer-brussels-sprouts.jpg
 image_alt: brussel sprouts in an air fryer.
 ---
