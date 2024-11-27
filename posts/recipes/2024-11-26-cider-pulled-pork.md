@@ -15,7 +15,7 @@ canonical_url: https://www.caileeeats.com/recipes/apple-cider-pulled-pork-bowls-
 This is a recipe from [Cailee Eats](https://www.caileeeats.com/recipes/apple-cider-pulled-pork-bowls-with-mashed-sweet-potatoes-maple-veggies) which we've modified for the pressure cooker.
 
 I've also separated out the [mashed potato recipe](/recipes/2024/11/26/mashed-sweet-potatoes/) since it is great on its own in addition to being a side for this meal.
-We also made some mac and cheese with this recipe to be a little extra.
+We also made some [mac and cheese](/recipes/2024/11/27/cap-mac/) with this recipe to be a little extra.
 
 Don't try to rush this recipe. It's already shorter than doing it in a dutch oven and you want the pork nice and tender. If your meat isn't completely thawed you may need to add more time.
 
