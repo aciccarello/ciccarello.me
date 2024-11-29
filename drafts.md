@@ -31,4 +31,3 @@ However, I do intend to post these when they are ready.
 - [Breakfast Bake](./breakfast-bake/)
 - [Chocolate Pecan Banana Bread](/recipes/2022/05/06/chocolate-pecan-banana-bread/)
 - [Creamy Butternut Squash Pasta](/drafts/squash-pasta/)
-- [Strawberry Nut Jello Salad](./jello-salad/)
