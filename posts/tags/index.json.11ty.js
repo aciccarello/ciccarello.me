@@ -4,6 +4,7 @@
 export default class TagsList {
 	data() {
 		return {
+			layout: undefined,
 			permalink: 'posts/tags/index.json',
 			eleventyExcludeFromCollections: true,
 		};
