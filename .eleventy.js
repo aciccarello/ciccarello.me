@@ -23,6 +23,7 @@ export default async function (eleventyConfig) {
 		'admin/index.html',
 		'assets/img',
 		'assets/js',
+		'assets/feed.xsl',
 		'favicon.ico',
 		'pinterest-60576.html',
 		'mywotc6b2477c57f015eaa645.html',
