@@ -28,7 +28,7 @@ This is worth a try.
 {% recipe-cooklang %}
 1. Whisk together @strawberry Jello{6%oz} and @boiling water{1%cup} in an extra-large measuring cup or mixing bowl until the gelatin is dissolved.
 1. Add @crushed pineapple, drained{20%oz can}, @mashed bananas{3}, @frozen sliced strawberries{20%oz} and @chopped pecans{1/2%cup} and mix well.
-1. Pour 1/2 of the mixture into a #glass dish{} and put in refrigerator to set for ~{20-30%minutes}. Set aside the rest of gelatin, but do not chill.
+1. Pour 1/2 of the mixture into a #glass dish{} and put in refrigerator to set for ~{20-30%minutes}. Set aside the rest of gelatin, but do not chill. If you are using frozen strawberries, it may set more quickly.
 1. When the first layer sets, top with @sour cream{16%oz} all the way to the edge of the dish.
 1. Add the remaining mixture, and chill in the refrigerator for at least 2 hours to finish setting.
 {% endrecipe-cooklang %}
