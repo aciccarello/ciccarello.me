@@ -12,7 +12,7 @@ sportsTeams:
     url: https://sandiegofc.com/
     image: https://upload.wikimedia.org/wikipedia/en/6/6f/San_Diego_FC_logo.svg
     image_alt: Team shield of San Diego FC depicting a soccer ball.
-    summary: MLS Men's Soccer team coming 2025
+    summary: MLS Men's Soccer team that started in 2025
   - name: Sockers Soccer
     url: http://sdsockers.com/
     image: https://upload.wikimedia.org/wikipedia/en/5/5f/San_Diego_Sockers_16_logo.png
@@ -30,7 +30,7 @@ sportsTeams:
     summary: WUL Women's Ultimate Team playing at Kearny High School
   - name: Seals Lacrosse
     url: https://sealslax.com/
-    image: https://upload.wikimedia.org/wikipedia/en/3/38/SD_Seals.PNG
+    image: https://upload.wikimedia.org/wikipedia/en/2/21/San_Diego_Seals_primary_logo.png
     image_alt: Seals team logo of an aggressive seal face with a crown.
     summary: NLL Box lacrosse (indoor) team playing at Pechanga Arena
   - name: California Redwoods Lacrosse
@@ -52,7 +52,7 @@ sportsTeams:
     url: https://ontario.gleague.nba.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Ontario_Clippers_logo.svg/1920px-Ontario_Clippers_logo.svg.png
     image_alt: Round logo of Clippers basketball.
-    summary: G League basketball team playing at Fontwave Arena affiliated with the LA Clippers. Moved from Ontario in 2024.
+    summary: G League basketball team playing at Frontwave Arena in Oceanside. Affiliated with the LA Clippers of the NBA. Moved from Ontario in 2024.
   - name: Strike Football
     url: http://sdstrikeforce.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/8/88/San_Diego_Strike_Force_Logo.svg/1920px-San_Diego_Strike_Force_Logo.svg.png

@@ -181,6 +181,9 @@ https://www.parlordoughnuts.com/oceanside-ca
 
 Large, delicious burritos tucked in a central location on Pier View Way.
 
+
+{% include "post-card.html" post: collections.pageByUrl['/posts/2024/09/23/colimas/'] %}
+
 ## Sports
 
 San Diego's biggest sports team is definitely the Padres baseball team.
