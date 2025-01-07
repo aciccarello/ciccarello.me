@@ -25,7 +25,6 @@ However, I do intend to post these when they are ready.
 
 ### Recipes
 
-- [Cauliflower and Leek Soup](/recipes/2022/12/17/cauliflower-and-leek-soup/)
 - [Greek Tomato Cucumber Salad](/recipes/2022/05/27/greek-tomato-cucumber-salad/)
 - [Coconut Curry Meatballs](/recipes/2021/05/21/coconut-curry-meatballs/)
 - [Breakfast Bake](./breakfast-bake/)
