@@ -7,7 +7,7 @@ tags:
   - stove
   - pasta
   - chicken
-  - lemon
+  - citrus
 image: /assets/img/recipe-greek-meatballs-and-orzo.jpg
 image_alt: Glazed meatballs and orzo pasta next to greens and a white spread with balsamic tomato dressing
 ---
