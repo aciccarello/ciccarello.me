@@ -31,6 +31,8 @@ However, I do intend to post these when they are ready.
 - [Chocolate Pecan Banana Bread](/recipes/2022/05/06/chocolate-pecan-banana-bread/)
 - [Creamy Butternut Squash Pasta](/drafts/squash-pasta/)
 - [Ricotta Cake](./ricotta-cake/)
+- [Cream Cheese Cookies](./cream-cheese-cookies/)
+- [Classic Chocolate Chip Cookies](./classic-chocolate-chip/)
 
 ### Reviews
 
