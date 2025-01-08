@@ -16,7 +16,7 @@ back_button: "/posts"
         This page is a WIP. See <a href="./san-diego/">San Diego Recommendations</a> for an existing list.
 	</p>
 	<ol class="post-list">
-		{%- for post in collections.reviews -%}
+		{%- for post in collections.reviews reversed -%}
 		<li>
 			{% include "post-card.html" post: post %}
 		</li>

@@ -4,6 +4,12 @@ layout: page
 back_button: ..
 ---
 
+<style>
+  .card {
+    max-width: 32rem;
+  }
+</style>
+
 ## San Diego
 
 ### SD Harbor walk
@@ -183,6 +189,12 @@ Large, delicious burritos tucked in a central location on Pier View Way.
 
 
 {% include "post-card.html" post: collections.pageByUrl['/posts/2024/09/23/colimas/'] %}
+
+### Crackheads
+
+Food hall with multiple options in both Oceanside and Carlsbad.
+
+{% include "post-card.html" post: collections.pageByUrl['/posts/2025/01/08/crackheads-oside/'] %}
 
 ## Sports
 
