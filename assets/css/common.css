@@ -800,6 +800,11 @@ figure:has(> .post-img--float-right) {
 	max-width: 350px;
 	margin: 0 1rem 0.5rem 0;
 	float: left;
+
+	/* align top with heading */
+	&:has(+ h1, + .h1, + h2, + .h2, + h3, + .h3, + h4, + .h4, + h5, + .h5) {
+		margin-block-start: 3em;
+	}
 }
 
 figure:has(> .post-img--float-right) {
