@@ -33,6 +33,7 @@ However, I do intend to post these when they are ready.
 - [Ricotta Cake](./ricotta-cake/)
 - [Cream Cheese Cookies](./cream-cheese-cookies/)
 - [Classic Chocolate Chip Cookies](./classic-chocolate-chip/)
+- [Aunt Pett's Rolls](./petts-rolls/)
 
 ### Reviews
 
