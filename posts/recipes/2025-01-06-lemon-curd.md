@@ -3,7 +3,7 @@ title: Lemon Curd
 date: 2025-01-06T21:16:12.452Z
 canonical_url: https://www.foodnetwork.com/recipes/ina-garten/lemon-curd-recipe-1941910
 tags:
-  - dinner
+  - dessert
   - citrus
 image: /assets/img/recipe-lemon-curd.jpg
 image_alt: A countertop of lemons and small jars of lemon and lime curd with egs in the background.
