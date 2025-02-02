@@ -117,6 +117,8 @@ I can recommend the 4-scoop flight if you're sharing with others.
 
 https://handelsicecream.com/
 
+{% include "post-card.html" post: collections.pageByUrl['/posts/2025/02/02/handels-ice-cream/'] %}
+
 ### Azúcar Cuban Bakery
 
 Ocean beach eatery with delicious baked goods.
