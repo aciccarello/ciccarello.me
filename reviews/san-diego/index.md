@@ -143,6 +143,8 @@ The best beach in town. Long and wide sand beach with plenty of restaurants and 
 
 https://visitoceanside.org/things-to-do/beaches/harbor-beach/
 
+{% include "post-card.html" post: collections.pageByUrl['/posts/2025/02/02/harbor-fish-and-chips/'] %}
+
 ### Oceanside Pier
 
 A must-see stop if spending any time in Oceanside.
