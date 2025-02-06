@@ -6,7 +6,7 @@ tags:
   - technology
   - Omnibear
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/www.ciccarello.me/posts/2025/02/06/first-omnibear-post/
 updates:
   - date: 2025-02-06T17:00:16.376Z
     description: Added syndication to IndieNews
