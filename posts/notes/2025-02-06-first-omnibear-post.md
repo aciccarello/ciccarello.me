@@ -7,8 +7,8 @@ tags:
   - Omnibear
 syndication:
   - https://news.indieweb.org/en
-updates
-  - date: 2025-02-06T16:51:27.959Z
+updates:
+  - date: 2025-02-06T17:00:16.376Z
     description: Added syndication to IndieNews
 ---
 
