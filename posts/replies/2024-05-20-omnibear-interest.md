@@ -5,6 +5,7 @@ in-reply-to: https://notes.keithjgrant.com/notes/2024/05/the-end-of-omnibear/
 tags:
   - IndieWeb
   - technology
+  - Omnibear
 references:
   - referenceIdUrl: https://notes.keithjgrant.com/notes/2024/05/the-end-of-omnibear/
     url: https://notes.keithjgrant.com/notes/2024/05/the-end-of-omnibear/
@@ -34,4 +35,3 @@ references:
 ---
 
 Maintaining projects is hard. I'd love to see the great work Keith had done continue but know I could use help getting things working again. I'm hoping to dig into the code base soon to get a better idea of where things are at. If others want to reach out I'm available via IndieWeb chat, webmention, fediverse, and email.
-
