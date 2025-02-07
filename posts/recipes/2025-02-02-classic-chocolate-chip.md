@@ -2,7 +2,6 @@
 title: Classic Chocolate Chip Cookies
 date: 2025-02-02T06:43:16.157Z
 slug: classic-chocolate-chip
-canonical_url: https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/
 tags:
   - dessert
   - cookies

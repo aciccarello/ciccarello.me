@@ -3,6 +3,7 @@ title: Chili Fiesta
 date: 2025-02-07T08:43:29.683Z
 tags:
   - dinner
+  - soup
   - family recipe
 image: /assets/img/recipe-fiesta.jpg
 image_alt: Shallow bowl of chili and rice topped with a colorful array of chips, cheese, tomatoes, and lettuce.
@@ -13,8 +14,10 @@ Bekah family used to make this thick chili recipe.
 It was passed on from her maternal grandmother.
 But the trick is it has a bunch of toppings to make it more fun.
 The units I've written down are half of the original which apparently made 30 servings and adjusted for current canned good sizes.
+
 If you're looking for some variations, check out [Tara Waites's variation on Just A Pinch](https://www.justapinch.com/recipes/main-course/main-course-beef/fiesta-salad.html) which was apparently inspired by a favorite in the Texas public school cafeteria menu.
 Bekah's grandmother was involved in school meals in Dallas so I wonder if Tara got it from her.
+A similar (but different) recipe is, see [Cream Cheese Slow Cooker Chicken](/recipes/2021/04/30/cream-cheese-slow-cooker-chicken/) or the [soup tag](/posts/tags/soup/).
 
 ## Summary
 
