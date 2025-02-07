@@ -21,6 +21,29 @@ This page lays out the site-wide styles and how to use them. It's a form of visu
 
 See the source of [common.css](/assets/css/common.css) for the complete styles. Custom shortcodes and other build customizations are defined in [.eleventy.js](https://github.com/aciccarello/ciccarello.me/blob/main/.eleventy.js) and the imported files. Includes are defined in the [/\_includes](https://github.com/aciccarello/ciccarello.me/blob/main/_includes) directory.
 
+## Content Style
+
+I'm pretty loose on content but have some loose guidelines in my head.
+
+### Articles
+
+I usually have some kind of featured image when writing articles.
+Articles may also have subtitles, though I try to avoid over-using them.
+I'm not completely settled on a heading capitalization but usually try to follow something like [APA style](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case) where most words are capitalized, but small, minor words after the start are lowercase.
+
+### Recipes
+
+My recipe pages are primarily to track how _we_ make different recipes, so many of them are still very close to the original.
+I don't intend or need to pull from other website's SEO, so when posting a recipe I try to use the following conventions:
+
+1. Clearly identify the source in the first paragraph (if not first sentence) of the recipe with a link (or link to the book with page numbers).
+1. For recipes I've used as inspiration but don't follow, I still try to list them somewhere in the description.
+1. Give some indication of how heavily the recipe was modified so people know if the source might be worth looking at.
+1. Write the instructions in my own words so that they match what I do and don't just duplicate content.
+1. Never use another site's copyrighted photos for recipes. Even if it's ugly, I'll still use my own.
+1. I will mark recipes as "noindex" upon request if the source (e.g. family) does not want it in google results.
+1. I'm still trying to figure out what best way to help but not hurt other site's rankings. I could noindex but that wouldn't provide backlinks. Also Google does not always like canonical URL relations, particularly cross domain and if any content has been changed. Canonical URLs also affect how pages get shared.
+
 ## Testing Steps
 
 The following steps should be completed to check site-wide style changes.
