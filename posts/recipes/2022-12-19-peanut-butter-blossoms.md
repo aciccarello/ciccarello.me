@@ -11,7 +11,9 @@ updates:
   - date: 2024-11-05T21:16:50.710Z
     description: Reduced yield size and updated cook times
 ---
-Bekah's mom made these this holiday. The [original recipe](https://cooking.nytimes.com/recipes/1012939-peanut-butter-blossoms) from the New York Times is for Hershey's Kisses, but they can also be done with peanut butter cups. The peanut butter cups be baked in a mini cupcake tin for a deeper shape.
+Bekah's mom made these this holiday.
+The [original recipe](https://cooking.nytimes.com/recipes/1012939-peanut-butter-blossoms){rel=noreferrer} from the New York Times is for Hershey's Kisses, but they can also be done with peanut butter cups.
+The peanut butter cups be baked in a mini cupcake tin for a deeper shape.
 
 ## Summary
 

@@ -2,7 +2,6 @@
 title: Teriyaki Chicken Noodles
 subtitle: Inspired by Nadiya Hussain
 date: 2022-02-04T02:32:39.140Z
-canonical_url: https://thehappyfoodie.co.uk/recipes/nadiya-hussains-teriyaki-chicken-noodles/
 tags:
   - dinner
   - chicken
@@ -11,7 +10,7 @@ image: /assets/img/teriyaki-chicken-noodles.jpg
 image_alt: plate with noodles, colorful peppers, green onions, and a piece of
   roasted chicken.
 ---
-This recipe is in metric because it was [inspired by one in "Nadia Bakes"](https://thehappyfoodie.co.uk/recipes/nadiya-hussains-teriyaki-chicken-noodles/) from 2015 winner of The Great British Bake Off, Nadiya Hussain. I've added a bit more water and toned down the spice.
+This recipe is in metric because it was [inspired by one in "Nadia Bakes"](https://thehappyfoodie.co.uk/recipes/nadiya-hussains-teriyaki-chicken-noodles/){rel="noreferrer} from 2015 winner of The Great British Bake Off, Nadiya Hussain. I've added a bit more water and toned down the spice.
 
 ## Summary
 - Prep Time: 20 minutes (plus marinade time)

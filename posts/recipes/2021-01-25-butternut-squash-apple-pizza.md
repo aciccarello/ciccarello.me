@@ -7,7 +7,7 @@ image: /assets/img/butternut-squash-apple-pizza.jpg
 image_alt: Pizza topped with prosciutto and butternut squash shavings
 ---
 
-We had fun with this pizza recipe from the [Half Baked Harvest Super Simple Cookbook](https://www.halfbakedharvest.com/cookbook/half-baked-harvest-super-simple/). The advertized prep time was 15 minutes but it took me much longer to get everything sliced. However we ended up with extra toppings so we made another pizza the next day for lunch.
+We had fun with this pizza recipe from the [Half Baked Harvest Super Simple Cookbook](https://www.halfbakedharvest.com/cookbook/half-baked-harvest-super-simple/){rel="noreferrer}. The advertized prep time was 15 minutes but it took me much longer to get everything sliced. However we ended up with extra toppings so we made another pizza the next day for lunch.
 
 ## Overview
 

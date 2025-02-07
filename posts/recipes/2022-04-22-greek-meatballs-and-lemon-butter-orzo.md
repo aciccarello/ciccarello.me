@@ -12,7 +12,7 @@ image: /assets/img/recipe-greek-meatballs-and-orzo.jpg
 image_alt: Glazed meatballs and orzo pasta next to greens and a white spread with balsamic tomato dressing
 ---
 
-We have really liked this recipe from [Half Baked Harvest](https://www.halfbakedharvest.com/one-skillet-greek-meatballs-and-lemon-butter-orzo/) but wanted some more meat so we've adjusted the proportions.
+We have really liked this recipe from [Half Baked Harvest](https://www.halfbakedharvest.com/one-skillet-greek-meatballs-and-lemon-butter-orzo/){rel="noreferrer} but wanted some more meat so we've adjusted the proportions.
 
 Ingredients Note: If using fresh oregano, double the amount. Also, the ingredients list is auto-generated and doesn't merge ingredients that are used multiple times so read the whole list.
 

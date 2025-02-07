@@ -1,7 +1,6 @@
 ---
 title: Chicken Couscous Chili
 date: 2021-04-10T01:22:34.535Z
-canonical_url: ""
 tags:
   - soup
   - dinner

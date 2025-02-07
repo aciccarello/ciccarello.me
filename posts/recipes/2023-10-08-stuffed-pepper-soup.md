@@ -1,6 +1,5 @@
 ---
 title: Stuffed Pepper Soup
-canonical_url: https://www.recipesthatcrock.com/slow-cooker-stuffed-pepper-soup/
 date: 2023-10-12T07:09:43.848Z
 tags:
   - dinner

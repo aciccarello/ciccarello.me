@@ -1,7 +1,6 @@
 ---
 title: Simple Rosemary Focaccia Bread
 date: 2022-12-19T05:31:40.540Z
-canonical_url: https://alexandracooks.com/2018/03/02/overnight-refrigerator-focaccia-best-focaccia/
 tags:
   - bread
   - side dish

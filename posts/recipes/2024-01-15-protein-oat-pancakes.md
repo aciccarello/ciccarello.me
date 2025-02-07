@@ -1,7 +1,6 @@
 ---
 title: Protein Oat Pancakes
 date: 2024-01-15T23:40:57.164Z
-canonical_url: https://www.bbcgoodfood.com/recipes/easy-protein-pancakes
 tags:
   - breakfast
 image: /assets/img/recipe-protein-oat-pancakes.jpg

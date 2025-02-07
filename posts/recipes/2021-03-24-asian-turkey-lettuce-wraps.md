@@ -1,14 +1,13 @@
 ---
 title: Asian Turkey Lettuce Wraps
 date: 2021-03-24T01:33:37.925Z
-canonical_url: https://71toes.com/2012/11/quick-weeknight-asian-turkey-lettuce/
 tags:
   - dinner
   - stove
 image: /assets/img/asian-turkey-lettuce-wrap.jpg
 image_alt: lettuce leaf filled with cooked mixture
 ---
-Found this on pinterest from [71toes.com](https://71toes.com/2012/11/quick-weeknight-asian-turkey-lettuce/) and it's a refreshing meal. Make sure you have a pan big enough to mix everything.
+Found this on pinterest from [71toes.com](https://71toes.com/2012/11/quick-weeknight-asian-turkey-lettuce/) who apparently got it from [Picky Palate](https://picky-palate.com/quick-weeknight-asian-turkey-lettuce/) and it's a refreshing meal. Make sure you have a pan big enough to mix everything.
 
 ## Summary
 * Prep Time: 10 min

@@ -1,7 +1,6 @@
 ---
 title: "Overnight Mac and Cheese"
 date: 2022-12-17T05:33:17.476Z
-canonical_url: https://barefootcontessa.com/recipes/overnight-mac-cheese
 tags:
   - pasta
   - dinner
@@ -10,7 +9,7 @@ image: /assets/img/overnight-mac-and-cheese.jpg
 image_alt: Casserole dish with baked macaroni and cheese topped with breadcrumbs.
 ---
 
-Bekah's mom made this recipe [from barefoot contessa](https://barefootcontessa.com/recipes/overnight-mac-cheese) for thanksgiving in 2021. The unique feature is that the mac and cheese sits overnight so the pasta absorbs more of the cheese flavors.
+Bekah's mom made this recipe [from barefoot contessa](https://barefootcontessa.com/recipes/overnight-mac-cheese){rel=noreferrer} for thanksgiving in 2021. The unique feature is that the mac and cheese sits overnight so the pasta absorbs more of the cheese flavors.
 
 {% recipe-ingredients %}
 

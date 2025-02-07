@@ -1,7 +1,6 @@
 ---
 title: Creamy White Chicken Chili
 date: 2024-10-02T06:18:11.017Z
-canonical_url: https://www.thechunkychef.com/slow-cooker-creamy-white-chicken-chili/
 tags:
   - dinner
   - chicken

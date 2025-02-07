@@ -1,7 +1,6 @@
 ---
 title: Wrapping up our first fostering experience
 date: 2021-12-31T08:00:00.000Z
-canonical_url: ""
 permalink: /blog/2022/01/30/wrapping-up-our-first-fostering-experience/
 tags:
   - personal

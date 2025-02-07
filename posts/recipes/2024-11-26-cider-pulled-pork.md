@@ -9,7 +9,6 @@ tags:
   - pressure cooker
 image: /assets/img/recipe-cider-pulled-pork.jpg
 image_alt: A fork about to dive into a plate full of pulled pork, colorful roasted veggies, mashed sweet potatoes, and mac and cheese in warm lighting.
-canonical_url: https://www.caileeeats.com/recipes/apple-cider-pulled-pork-bowls-with-mashed-sweet-potatoes-maple-veggies
 ---
 
 This is a recipe from [Cailee Eats](https://www.caileeeats.com/recipes/apple-cider-pulled-pork-bowls-with-mashed-sweet-potatoes-maple-veggies) which we've modified for the pressure cooker.
