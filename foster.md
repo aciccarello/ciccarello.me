@@ -1,7 +1,7 @@
 ---
 title: Foster Care
 layout: page
-last_modified_date: 2022-04-29
+last_modified_date: 2024-02-11
 image: /assets/img/foster-care-header.jpg
 image_alt: Child playing with train set.
 image_caption: Photo by Bekah Ciccarello
@@ -17,15 +17,15 @@ image_caption: Photo by Bekah Ciccarello
   }
 </style>
 
-## What we're doing now
+## What We're Doing now
 
-We are currently working on transferring our license to a different foster care agency we feel better aligns with our values and we can trust to provide solid support. If you have any questions you can always [reach out to me directly](/#connect).
+In 2024 we transferred our license to a different foster care agency we feel better aligns with our values and we can trust to provide solid support. We are currently waiting for placement. If you have any questions you can always [reach out to me directly](/#connect).
 
 ## Our Foster Care Journey
 
-We initially started the process to become licensed resource parent license in the middle of 2020. After a series of delays, we [finally were licensed](/blog/2021/07/26/we're-becoming-foster-parents/) in San Diego California on July 20th, 2021. We had our [first foster care placement](/blog/2021/10/03/we've-started-our-first-placement/) mid September 2021 of a five-year-old boy and a one-year-old girl and they [returned](/blog/2022/01/30/wrapping-up-our-first-fostering-experience/) to live with family members 6 weeks later. For more information, check out our [foster care posts](/posts/tags/foster%20care).
+We initially started the process to become licensed resource parent license in the middle of 2020. After a series of delays, we [finally were licensed](/blog/2021/07/26/we're-becoming-foster-parents/) in San Diego California on July 20th, 2021. We had our [first foster care placement](/blog/2021/10/03/we've-started-our-first-placement/) mid September 2021 of a five-year-old boy and a one-year-old girl and they [returned](/blog/2022/01/30/wrapping-up-our-first-fostering-experience/) to live with family members 6 weeks later. In 2024 we transferred our license to a different foster care agency we feel better aligns with our values and we can trust to provide solid support. For more information, check out our [foster care posts](/posts/tags/foster%20care).
 
-## How you can help us
+## How You Can Help Us
 
 - Pray that we can use this transitional time to best prepare ourselves and our home for future foster kids
 - Pray for wisdom as we adjust to parenthood and make decisions about who we will foster
@@ -34,7 +34,7 @@ We initially started the process to become licensed resource parent license in t
 - If you live nearby, let us know if you're able to come over to baby sit or even just play with our future foster kids
 - Be patient with us and our children when we deal with hard days or are unable to attend social engagements
 
-## How you can help foster kids
+## How You Can Help Foster Kids
 
 - Learn more about foster care and dignifying ways to acknowledge kid's experiences
 - Learn about trauma informed care and how experiences impact kids' brains
@@ -43,9 +43,19 @@ We initially started the process to become licensed resource parent license in t
 - Become a [Court Appointed Special Advocate (CASA)](https://www.speakupnow.org/) to support a child through the legal process
 - Become a foster parent yourself
 
+## Organizations Accepting Donations
+
+- [Straight From the Heart](https://www.straightfromtheheartinc.org/ways-to-donate.html): Local store started by foster moms that provides lots of items for free or low cost to foster families
+- [San Diego Youth Services](https://sdyouthservices.org/donate/): Provide a wide range of health, educational, and financial services to disadvantaged youth and their families
+- [San Diego Diaper Bank](https://www.sandiegofoodbank.org/programs/diaper-bank-program/): Provides diapers to families in poverty
+- [Promises2Kids](https://promises2kids.org/programs/): Camp, mentoring, and other therapeutic services for foster kids.
+- [YMCA San Diego](https://www.ymcasd.org/about-y/news-center/events/program-spotlight-foster-care-bridge/): Provides child care funding to foster parents as part of the bridge program.
+- [Urban Surf 4 Kids](https://fundraise.urbansurf4kids.org/campaign/we-all-need-somebody-to-lean-on/c571801): Surf therapy for kids who've experienced trauma
+- [National Alliance on Mental Illness](https://www.nami.org/family-member-caregivers/raising-children-with-mental-illness/): Counseling and support groups for people of all ages with mental health struggles
+
 <div id="subscribe"></div>
 
-## Subscribe for updates
+## Subscribe for Updates
 
 To find out when I've made new posts you can subscribe by email below (or by [RSS](/posts/tags/foster%20care/feed.xml)).
 
@@ -93,7 +103,7 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
   </div>
 </div>
 
-## Learn more about Foster Care
+## Learn More About Foster Care
 
 - People to Follow
   - Jaymi ([@familyandcoffee](https://www.instagram.com/familyandcoffee/)) - Social worker, foster parent, and former foster youth
@@ -111,9 +121,12 @@ To find out when I've made new posts you can subscribe by email below (or by [RS
 - Information
   - [Talking To Kids About Foster Care](https://kidsmatterinc.org/get-help/for-families/talking-to-kids-about-foster-care/) - Article from Kids Matter Inc.
   - [Trust Based Relation Intervention](https://child.tcu.edu/about-us/tbri/) (TBRI) - Information on how kids from hard places build attachment relationships
+  - [Attachment Theory in Action](https://www.attachmenttheoryinaction.com/) - Podcast on healing through attachment
 - Books
   - [Three Little Words](http://rhodes-courter.com/three-little-words/)
   - [The Connected Child](https://showhope.org/product/the-connected-child/)
+  - [What My Bones Know](https://www.penguinrandomhouse.com/books/658389/what-my-bones-know-by-stephanie-foo/) "A Memoir of Healing from Complex Trauma"
+  - [The Body Keeps The Score](https://www.besselvanderkolk.com/resources/the-body-keeps-the-score) - Affect of trauma on the body
   - [recommendations from Kids Matter Inc.](https://kidsmatterinc.org/get-help/for-families/talking-to-kids-about-foster-care/) (bottom of page)
   - [recommendations from Show Hope](https://showhope.org/recommended-resources/)
 
