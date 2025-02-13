@@ -1,16 +1,26 @@
 Sitemap: https://www.ciccarello.me/sitemap.xml
 
-# Start: AI Block List
+# See https://darkvisitors.com/insights for most common agents
+
+### Start: AI Block List ###
+# AI Scrapers are blocked but agents and assistants are allowed
+
 # https://platform.openai.com/docs/bots
 User-agent: GPTBot
+Disallow: /
+
+# https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+User-agent: ClaudeBot
 Disallow: /
 
 # https://darkvisitors.com/agents/bytespider
 User-agent: Bytespider
 Disallow: /
 
-# https://developers.facebook.com/docs/sharing/bot/
+# https://developers.facebook.com/docs/sharing/webmasters/web-crawlers
 User-agent: FacebookBot
+Disallow: /
+User-agent: meta-externalagent
 Disallow: /
 
 # https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers#google-extended
@@ -27,4 +37,30 @@ Disallow: /
 User-agent: Kangaroo Bot
 Disallow: /
 
-# End: AI Block List
+### End: AI Block List ###
+
+### Start: SEO bots ###
+# SEO bots are mostly for marketing and not really helpful to me
+# They aren't completely blocked but set crawl delay to slow them down
+
+# https://ahrefs.com/robot/
+# mostly SEO but also have a search engine called yep.com
+User-agent: AhrefsBot
+Crawl-Delay: 20
+# https://www.babbar.tech/crawler
+User-agent: barkrowler
+Crawl-Delay: 120
+# https://www.semrush.com/bot/
+User-agent: SemrushBot
+Crawl-Delay: 120
+# https://mj12bot.com/
+User-Agent: MJ12bot
+Crawl-Delay: 20
+#https://moz.com/help/moz-procedures/crawlers/dotbot
+User-agent: dotbot
+Crawl-delay: 120
+# https://dataforseo.com/dataforseo-bot
+User-agent: DataForSeoBot
+Crawl-delay: 120
+
+### End: SEO bots ###
