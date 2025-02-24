@@ -5,7 +5,8 @@ tags:
   - IndieWeb
   - blogging
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/www.ciccarello.me/posts/2025/02/24/develop-a-blogging-habit/
+  - https://indiewebforum.eu/d/27-developing-a-blogging-habit
 ---
 
 I just got inspired to write some blog posts but I'm discouraged by the long list of previous ideas I haven't written yet. Plus I usually end up distracted by ideas for improving my site. Anyone have tips on developing a writing habit?
