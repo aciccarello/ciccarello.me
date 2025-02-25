@@ -40,7 +40,7 @@ These financial accounts have cash incentives for joining under my referral link
 
 **You get:** A fee-free transfer up to $600 when they sign up with your link.
 
-**I get:** $115 when 3 friends sed over $300 in one go. (Same currency transactions don’t apply.)
+**I get:** $115 when 3 friends send over $300 in one go. (Same currency transactions don’t apply.)
 
 [Sign Up](https://wise.com/invite/dic/anthonyjosephc6)
 
