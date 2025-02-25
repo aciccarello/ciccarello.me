@@ -11,17 +11,30 @@ eleventyExcludeFromCollectionsReason: draft
 These are work in progress posts.
 Their content and URLs will likely change (and links break) but you can check out what's been written so far.
 I was partially inspired to share these drafts in the spirit of 🌱[digital gardens](https://maggieappleton.com/garden-history)🪴.
-However, I do intend to post these when they are ready.
+However, I do intend to post these to an actual URL when they are ready.
+In addition to post ideas, I also have lots of website ideas in my [GitHub issues](https://github.com/aciccarello/ciccarello.me/issues).
 
 ### Blog Posts
 
 - [Birding in 2023](./birding-in-2023)
+- Birding in 2024 (combine with 2023??)
 - [Tag Moderation](./tag-moderation)
 - [Instagram Import](./instagram-import)
 - [Twitter Import](/blog/2024/04/07/twitter-import/)
 - [City vs Country](./city-vs-country)
 - [Web Framework Wishlist](./web-framework-wishlist)
 - [Planning Commission Meeting](./planning-commission)
+- Finance Stories: - _Not financial advice. My experience & learning that hopefully inspires others to save money. US centric topic._
+    - PMI Appraisal 
+    - Cash flow tool
+    - Personal Escrow account 
+    - Internet modem
+    - Credit card rewards (including some offers I looked at to explain why not)
+    - Robo investing
+    - Retirement accounts 
+    - Home budget
+    - Solar/car charging/TOU rates (not sure how to divide, this could get really long & complicated)
+    - ~~Health insurance~~ (as if I didn't find out every 3 months that I don't understand how this works lol)
 
 ### Recipes
 
@@ -33,6 +46,8 @@ However, I do intend to post these when they are ready.
 - [Ricotta Cake](./ricotta-cake/)
 - [Cream Cheese Cookies](./cream-cheese-cookies/)
 - [Aunt Pett's Rolls](./petts-rolls/)
+- Shepherd's Pie - from Magnolia Table cookbook pg 246
+- Spicy Potato Shakshuka - from Half Baked Harvest Super Simple Cookbook pg 156
 
 ### Reviews
 
