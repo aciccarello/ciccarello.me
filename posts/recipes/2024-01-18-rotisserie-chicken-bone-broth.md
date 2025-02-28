@@ -5,7 +5,10 @@ image: /assets/img/recipe-chicken-broth.jpg
 image_alt: "A collection of bowls, pots, and jars separating chicken broth, bones, meat, and vegetables."
 image_caption: The final stage of separation does dirty a few dishes.
 ---
-We often buy a whole rotisserie chicken from the grocery store, especially at Costco. For a while we'd just toss the bones afterward but it's fairly easy to make chicken broth with the leftover carcass. Throwing it in a slow cooker with water overnight help loosen up some of the hard to reach meat. It's also a great base for chicken noodle soup if you're patient enough to pick out and save the vegetables and remaining meat.
+We often buy a whole rotisserie chicken from the grocery store, especially at Costco. For a while we'd just toss the bones afterward but it's fairly easy to make chicken broth with the leftover carcass. Throwing it in a slow cooker with water overnight help loosen up some of the hard to reach meat.
+
+This is a great base for chicken noodle soup if you're patient enough to pick out and save the vegetables and remaining meat.
+You can also use it in [Chicken Pot Pie](/recipes/2025/02/28/chicken-pot-pie/).
 
 ## Summary
 
@@ -20,6 +23,7 @@ We often buy a whole rotisserie chicken from the grocery store, especially at Co
 - Parsley
 - Carrots roughly chopped
 - Onion roughly chopped
+- Garlic, minced or chopped
 - Salt
 - Pepper
 - Bay leaves
