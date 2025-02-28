@@ -36,7 +36,7 @@
 	--text-on-background: var(--text-on-light-background);
 	--text-on-distinct: var(--text-on-dark-background);
 	--text-short-line-height: 1.25;
-	--text-tall-line-height: 1.5;
+	--text-tall-line-height: 2;
 
 	--text-on-primary: oklch(98% 0 0);
 	--container-width: 64rem;
@@ -96,6 +96,7 @@ nav ol,
 nav ul {
 	list-style: none;
 	padding: 0;
+	line-height: var(--text-short-line-height);
 }
 
 svg:not([fill]) {
@@ -203,6 +204,11 @@ ol {
 		/* Don't want margin on nested lists */
 		margin: 0;
 	}
+}
+
+li {
+	/* Give lists some extra space between rows to make them easier to read */
+	/* line-height: 1.75; */
 }
 
 time {
