@@ -79,14 +79,21 @@ export default function (eleventyConfig) {
 		return dateTimeFormat.format(date) + ' UTC';
 	});
 	eleventyConfig.addFilter('formatMachineDate', (date, accuracy) => {
-		const stringDate = dateToRfc3339(new Date(date));
-		const [datePart, timePart] = stringDate.split('T');
-		if (accuracy === 'month') {
-			return datePart.substring(0, 7);
+		try {
+			const stringDate = dateToRfc3339(new Date(date));
+			const [datePart, timePart] = stringDate.split('T');
+			if (accuracy === 'month') {
+				return datePart.substring(0, 7);
+			}
+			if (accuracy === 'day' || timePart === '00:00:00Z') {
+				return datePart;
+			}
+			return stringDate;
+		} catch (error) {
+			throw new Error(
+				`Unable to format date: "${date}" with accuracy: "${accuracy}"`,
+				{ cause: error },
+			);
 		}
-		if (accuracy === 'day' || timePart === '00:00:00Z') {
-			return datePart;
-		}
-		return stringDate;
 	});
 }
