@@ -5,7 +5,7 @@ permalink: /drafts/petts-rolls/
 tags:
   - family recipe
   - bread
-  - sides
+  - side dish
 image: 
 image_alt: 
 eleventyExcludeFromCollections: true

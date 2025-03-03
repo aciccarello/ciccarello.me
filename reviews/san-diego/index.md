@@ -4,12 +4,6 @@ layout: page
 back_button: ..
 ---
 
-<style>
-  .card {
-    max-width: 32rem;
-  }
-</style>
-
 ## San Diego
 
 ### SD Harbor walk
@@ -117,7 +111,9 @@ I can recommend the 4-scoop flight if you're sharing with others.
 
 https://handelsicecream.com/
 
+<div class="featured-post-list">
 {% include "post-card.html" post: collections.pageByUrl['/posts/2025/02/02/handels-ice-cream/'] %}
+</div>
 
 ### Azúcar Cuban Bakery
 
@@ -145,7 +141,9 @@ The best beach in town. Long and wide sand beach with plenty of restaurants and 
 
 https://visitoceanside.org/things-to-do/beaches/harbor-beach/
 
+<div class="featured-post-list">
 {% include "post-card.html" post: collections.pageByUrl['/posts/2025/02/02/harbor-fish-and-chips/'] %}
+</div>
 
 ### Oceanside Pier
 
@@ -177,7 +175,9 @@ https://missionpacifichotel.com/historic-top-gun-house/
 Local coffee shop a short walk from the pier.
 Good place to work on a laptop for a few hours or just grab a specialty latte.
 
+<div class="featured-post-list">
 {% include "post-card.html" post: collections.pageByUrl['/posts/2024/04/19/pier-view-coffee/'] %}
+</div>
 
 ### Parlor Donuts
 
@@ -192,13 +192,17 @@ https://www.parlordoughnuts.com/oceanside-ca
 Large, delicious burritos tucked in a central location on Pier View Way.
 
 
+<div class="featured-post-list">
 {% include "post-card.html" post: collections.pageByUrl['/posts/2024/09/23/colimas/'] %}
+</div>
 
 ### Crackheads
 
 Food hall with multiple options in both Oceanside and Carlsbad.
 
+<div class="featured-post-list">
 {% include "post-card.html" post: collections.pageByUrl['/posts/2025/01/08/crackheads-oside/'] %}
+</div>
 
 ## Sports
 
@@ -208,8 +212,8 @@ However there are lots of other major and minor league teams of various sports i
 [View more San Diego sports teams](./sports/)
 
 {% removeindents %}
-<ol class="post-list">
+<div class="featured-post-list">
   {%- assign posts = collections["sports teams"] %}
-  <li>{% include "post-card.html" post: posts[0] %}</li>
-</ol>
+  {% include "post-card.html" post: posts[0] %}
+</div>
 {% endremoveindents %}

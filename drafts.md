@@ -46,8 +46,6 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [Ricotta Cake](./ricotta-cake/)
 - [Cream Cheese Cookies](./cream-cheese-cookies/)
 - [Aunt Pett's Rolls](./petts-rolls/)
-- Shepherd's Pie - from Magnolia Table cookbook pg 246
-- Spicy Potato Shakshuka - from Half Baked Harvest Super Simple Cookbook pg 156
 
 ### Reviews
 

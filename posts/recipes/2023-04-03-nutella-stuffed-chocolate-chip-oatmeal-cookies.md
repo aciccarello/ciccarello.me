@@ -9,7 +9,7 @@ tags:
 image: /assets/img/nutella-chocolate-chip-oatmeal-cookies.jpg
 imageAlt: Chocolate chip oatmeal cookies stacked in a dish.
 ---
-We made this delicious recipe [from Half-Baked Harvest](https://www.halfbakedharvest.com/chocolate-chip-nutella-oatmeal-cookies/) and loved it. The cookies are large so only a couple is enough to be satisfied.
+We made this delicious recipe [from Half Baked Harvest](https://www.halfbakedharvest.com/chocolate-chip-nutella-oatmeal-cookies/) and loved it. The cookies are large so only a couple is enough to be satisfied.
 
 The first time we made these, we had to run to the store to get the right kind of oats but it was worth it. Next time we are planning on adding pecans to the mix and trying making adjustments to get more of the Nutella flavor to come through.
 

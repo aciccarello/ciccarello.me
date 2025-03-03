@@ -929,6 +929,18 @@ blockquote {
 	text-align: right;
 }
 
+.featured-post-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+	gap: 1rem;
+	clear: both;
+
+	.card {
+		/** On narrow screens I still want the cards relatively small */
+		max-width: 32rem;
+	}
+}
+
 .embed-card {
 	margin: 2rem auto;
 	max-width: 50rem;
