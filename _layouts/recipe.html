@@ -26,6 +26,7 @@ layout: default
 						{{- page.date | formatHumanDate: dateFormat -}}
 					</time>
 				</a>
+				<screen-lock />
 			</p>
 			{% include "tags.html" %}
 		</header>
@@ -42,3 +43,4 @@ layout: default
 </article>
 {% include "mentions.html" %}
 {% include "suggestions.html" %}
+<script src="/assets/js/screen-lock.js" defer></script>
