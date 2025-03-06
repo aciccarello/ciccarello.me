@@ -935,7 +935,7 @@ blockquote {
 	gap: 1rem;
 	clear: both;
 
-	.card {
+	& .card {
 		/** On narrow screens I still want the cards relatively small */
 		max-width: 32rem;
 	}
