@@ -2,7 +2,8 @@
 <section class="post-updates">
 	<h2 class="h3">Updates:</h2>
 	<ol>
-	{%- assign latestMachineDate = lastUpdated | formatMachineDate %}
+	{%- comment %}Posts automatically set lastUpdated but fallback to the last item of the list{% endcomment %}
+	{%- assign latestMachineDate = lastUpdated | default: updates.last.date | formatMachineDate %}
 	{%- for update in updates | sort: 'date' -%}
 	<li>
 		{%- assign machineDate = update.date | formatMachineDate %}

@@ -12,6 +12,7 @@
 		<nav aria-labelledby="footer-meta-links">
 			<a href="{{ '/subscribe/' | locale_url }}">{{text.links.subscribe}}</a>
 			<a href="{{ '/sitemap/' | locale_url }}">{{text.links.sitemap}}</a>
+			<a href="{{ '/privacy/' | locale_url }}" rel="privacy-policy">{{text.links.privacy}}</a>
 			{%- if eleventyExcludeFromCollectionsReason != "deleted" -%}
 				<a href="https://github.com/aciccarello/ciccarello.me/blob/main/{{ page.inputPath }}" rel="noopener">
 				{{text.links.pageSource}}
