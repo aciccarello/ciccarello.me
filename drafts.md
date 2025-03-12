@@ -46,6 +46,7 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [Ricotta Cake](./ricotta-cake/)
 - [Cream Cheese Cookies](./cream-cheese-cookies/)
 - [Aunt Pett's Rolls](./petts-rolls/)
+- [Maple Bacon Brussels Sprouts](./bacon-brussels-sprouts/)
 
 ### Reviews
 
