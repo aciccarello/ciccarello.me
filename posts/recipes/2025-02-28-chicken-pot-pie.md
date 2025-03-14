@@ -31,7 +31,7 @@ For the crust, make sure the dough is completely thawed and hasn't dried out or 
 1. Stir in @chopped carrots{5} and @broccoli{1%cup} and leave on heat for ~{1%minute} to keep the temperature up.
 1. Remove from heat and add @shredded rotisserie chicken{1-2%cups} and @fresh chopped parsley{1/4%cup}.
 1. Taste the sauce for flavor and add more salt/pepper if needed.
-1. Unfold @thawed puff pastry on a lightly floured surface and roll it out till it is larger than the skillet.
+1. Unfold @thawed puff pastry{} on a lightly floured surface and roll it out till it is larger than the skillet.
 1. Place the pastry over the skillet, folding the sides under the top where too big.
 1. Brush the top with @beaten egg{1} and make 3 slits to vent the pastry.
 1. Bake about ~{45%minutes} or until the pastry is golden brown.
