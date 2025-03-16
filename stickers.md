@@ -50,6 +50,31 @@ I got a lot of these stickers from NG Conf, JS Conf, and from IndieWebCamp.
 
 ![Sticker of a pigeon on a green 'New York' sign with a heart](/assets/img/sticker-ny-pigeon.webp)
 
+![Sticker of a black grackle staring at the viewer](/assets/img/sticker-weaver-grackle.webp "By [Carly Weaver](https://www.carlyweaver.com/) in Austin, TX")
+
+### Washington
+
+I also picked up some stickers (and a magnet) at the Wings Over Water birding festival.
+
+My favorites were from [Laurel Mundy](https://www.laurelmundy.com/)
+Her artwork is so vivid and beautiful.
+I highly recommend checking out her [online store](https://www.etsy.com/shop/TinyHouseBigWoods).
+
+![Circular sticker of a California condor flying over a rugged ocean coastline with California poppies on the border](/assets/img/sticker-mundy-ca-condor.webp "[store link](https://www.etsy.com/listing/1678309749/california-condor-3-medium-vinyl-sticker)")
+
+![Sticker of a barn owl holding a 'Birding is for everyone ❤️❤️❤️' sign in it's talons](/assets/img/sticker-mundy-owl.webp  "[store link](https://www.etsy.com/listing/862140381/birding-is-for-everyone-barn-owl-3)")
+
+![Sticker of a plover wearing the digital 'Deal with it' style glasses and with the text 'Plover it'](/assets/img/sticker-mundy-plover.webp  "[store link](https://www.etsy.com/listing/1425157334/plover-it-3-medium-vinyl-bird-sticker)")
+
+The Washington Department of Fish and Wildlife was also there.
+In a small world moment, the biologist there actually knew another biologist friend.
+
+![Rectangular sticker from the Washington Department of Fish and Wildlife that says 'Life Outdoors' in blocky text with a tree for the letter I](/assets/img/sticker-wdfw-life-outdoors.webp  "[WDFW Life Outdoors Report](http://wdfw.wa.gov/life-outdoors)")
+
+![Circular sticker from the Washington Department of Fish and Wildlife that says 'Watchable Wildlife' that has animals like orca, seals, starfish, jellyfish, great blue herons, pigeon guillemot, and osprey](/assets/img/sticker-wdfw-orca.webp  "[Learn about wildlife viewing](http://wdfw.wa.gov/species-habitats/wildlife-viewing)")
+
+![Circular sticker from the Washington Department of Fish and Wildlife that says 'Watchable Wildlife' that has animals like fox, bighorn sheep, bald eagle, chickadees, bats, butteflies, fogs, and snakes in front of a mountain](/assets/img/sticker-wdfw-fox.webp  "[Learn about wildlife viewing](http://wdfw.wa.gov/species-habitats/wildlife-viewing)")
+
 ## Food and Drink
 
 ![In-n-out restaurant sticker with text 'No delay'](/assets/img/sticker-in-n-out.webp)
