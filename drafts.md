@@ -25,6 +25,7 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [City vs Country](./city-vs-country)
 - [Web Framework Wishlist](./web-framework-wishlist)
 - [Planning Commission Meeting](./planning-commission)
+- [Web Monetization](./web-monetization/)
 - Finance Stories: - _Not financial advice. My experience & learning that hopefully inspires others to save money. US centric topic._
     - PMI Appraisal 
     - Cash flow tool
