@@ -6,6 +6,7 @@ tags:
   - travel
   - Oaxaca
   - birds
+  - art
 image: /assets/img/2024-mexico-bird-flock.jpg
 image_alt: Glass hallway filled with a flock of wooden bird carvings hanging from string.
 ---
