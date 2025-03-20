@@ -82,7 +82,7 @@ async function downloadImage(imageUrl, fileName) {
 	const { default: sharp } = await import('sharp');
 	const { default: path } = await import('path');
 	const fileLocation = path.normalize(
-		`${__dirname}/../../assets/img/${fileName}`,
+		`${import.meta.dirname}/../../assets/img/${fileName}`,
 	);
 
 	try {
