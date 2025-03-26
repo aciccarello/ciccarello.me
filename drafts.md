@@ -48,7 +48,6 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [Ricotta Cake](./ricotta-cake/)
 - [Cream Cheese Cookies](./cream-cheese-cookies/)
 - [Aunt Pett's Rolls](./petts-rolls/)
-- [Curried Cauliflower](./curried-cauliflower/)
 
 We have more recipes saved here that I may want to write down.
 
