@@ -48,8 +48,11 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [Ricotta Cake](./ricotta-cake/)
 - [Cream Cheese Cookies](./cream-cheese-cookies/)
 - [Aunt Pett's Rolls](./petts-rolls/)
-- [Maple Bacon Brussels Sprouts](./bacon-brussels-sprouts/)
 - [Curried Cauliflower](./curried-cauliflower/)
+
+We have more recipes saved here that I may want to write down.
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRBHbp4VLAH-jFzoCOgkPYV2dgVcsg48q5H5dbKodsxaQmgzpv1qB3WlMLINoLnZddGmdLNKG6scCV2/pubhtml?widget=true&amp;headers=false"></iframe>
 
 ### Reviews
 

@@ -1,15 +1,13 @@
 ---
-title: Maple Bacon Brussels Sprouts Recipe
-date: 2025-03-13T07:00:50.203Z
-permalink: /drafts/bacon-brussels-sprouts/
+title: Maple Bacon Brussels Sprouts
+date: 2025-03-26T05:31:47.889Z
+slug: bacon-brussels-sprouts
 tags:
   - dinner
   - vegetable
   - side dish
-image: /assets/img/recipe-x.jpg
-image_alt: TODO - header image missing
-eleventyExcludeFromCollections: true
-eleventyExcludeFromCollectionsReason: draft
+image: /assets/img/recipe-bacon-brussels-sprouts.jpg
+image_alt: Pan of halved Brussels sprouts with bacon in a thick syrup
 ---
 
 We were looking for a different way to prepare Brussels sprouts than [roasted](/recipes/2022/01/13/air-fried-brussels-sprouts/) and found [this one from The Pioneer Woman](https://www.thepioneerwoman.com/food-cooking/recipes/a37242804/maple-bacon-brussels-sprouts-recipe/).
