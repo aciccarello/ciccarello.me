@@ -16,7 +16,7 @@ export function initializeMarkdown() {
 		typographer: true,
 	})
 		.use(MarkdownItAttrs, {
-			allowedAttributes: ['id', 'class'],
+			allowedAttributes: ['id', 'class', 'rel'],
 		})
 		.use(MarkdownItImageFigures, {
 			figcaption: true,
