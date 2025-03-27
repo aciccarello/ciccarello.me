@@ -75,6 +75,18 @@ In a small world moment, the biologist there actually knew another biologist fri
 
 ![Circular sticker from the Washington Department of Fish and Wildlife that says 'Watchable Wildlife' that has animals like fox, bighorn sheep, bald eagle, chickadees, bats, butteflies, fogs, and snakes in front of a mountain](/assets/img/sticker-wdfw-fox.webp  "[Learn about wildlife viewing](http://wdfw.wa.gov/species-habitats/wildlife-viewing)")
 
+## Sports
+
+Stickers promoting our local sports teams!
+
+![Circular logo of the San Diego Super Bloom ultimate team with a poppy flower](/assets/img/sticker-sd-super-bloom.webp  "[San Diego Super Bloom Ultimate](https://sandiegosuperbloom.com/)")
+
+![Badge logo of the San Diego Sockers soccer team with stars and a city skyline at night](/assets/img/sticker-sd-sockers.webp  "[San Diego Sockers Soccer](http://sdsockers.com/)")
+
+![Circular logo of the San Diego Clippers basketball team](/assets/img/sticker-sd-clippers.webp  "[San Diego Clippers](https://sandiego.gleague.nba.com/)")
+
+![Rectangular, black and white logo of frontwave arena](/assets/img/sticker-frontwave-arena.webp  "[Frontwave Arena](https://www.frontwavearena.com/)")
+
 ## Food and Drink
 
 ![In-n-out restaurant sticker with text 'No delay'](/assets/img/sticker-in-n-out.webp)
