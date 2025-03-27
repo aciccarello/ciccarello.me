@@ -23,11 +23,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/c/cc/San_Diego_Growlers_%28ultimate_team%29_logo.png
     image_alt: Logo of a wolf
     summary: UFA Ultimate Frisbee team playing at Mission Bay High School
-  - name: Super Bloom Ultimate
-    url: https://sandiegosuperbloom.com/
-    image: https://images.squarespace-cdn.com/content/v1/5c9d318b755be24741183f25/1578871371679-O3P4C9KRFTCJ4LJ7XFSF/superbloom-09.png?format=750w
-    image_alt: San Diego Super Bloom logo depicting California Poppies.
-    summary: WUL Women's Ultimate Team playing at Kearny High School
   - name: Seals Lacrosse
     url: https://sealslax.com/
     image: https://upload.wikimedia.org/wikipedia/en/2/21/San_Diego_Seals_primary_logo.png
@@ -49,15 +44,15 @@ sportsTeams:
     image_alt: Logo of a gull holding a hockey stick.
     summary: AHL minor league ice hockey playing at Peganga Arena. Affiliate for the Anaheim Ducks.
   - name: Clippers Baskeball
-    url: https://ontario.gleague.nba.com/
-    image: https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Ontario_Clippers_logo.svg/1920px-Ontario_Clippers_logo.svg.png
+    url: https://sandiego.gleague.nba.com/
+    image: https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/San_Diego_Clippers_%28NBA_G_League%29_Logo.svg/1920px-San_Diego_Clippers_%28NBA_G_League%29_Logo.svg.png
     image_alt: Round logo of Clippers basketball.
     summary: G League basketball team playing at Frontwave Arena in Oceanside. Affiliated with the LA Clippers of the NBA. Moved from Ontario in 2024.
   - name: Strike Football
     url: http://sdstrikeforce.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/8/88/San_Diego_Strike_Force_Logo.svg/1920px-San_Diego_Strike_Force_Logo.svg.png
     image_alt: Team logo of San Diego strike depicting a bomb-shaped football dropping from the sky.
-    summary: IFL Indoor Football team playing at Pechanga Arena
+    summary: IFL Indoor Football team playing at Frontwave Arena
   - name: Mojo Volleyball
     url: http://sandiegomojovb.com/
     image: https://upload.wikimedia.org/wikipedia/en/0/07/SanDiegoMojo.png
@@ -65,7 +60,7 @@ sportsTeams:
     summary: PVF Women's Volleyball playing at Viejas Arena
   - name: Wild Volleyball
     url: http://sandiegowild.com/
-    image: https://upload.wikimedia.org/wikipedia/en/5/54/San_Diego_Wild_logo.png
+    image: https://images.squarespace-cdn.com/content/v1/63fe6a9f4386440220ae7ea2/f72d93ee-28a6-45e9-ab60-63f32d847729/SD+Wild+Logo_Official_Cropped.png
     image_alt: Team logo of San Diego Wild depicting an aggressive bear.
     summary: NVA Men's volleyball team
   - name: Lions Football
