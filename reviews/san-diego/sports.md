@@ -18,6 +18,11 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/5/5f/San_Diego_Sockers_16_logo.png
     image_alt: Team shield of Sockers.
     summary: MASL Indoor soccer playing at Frontwave Arena in Oceanside
+  - name: Gulls Hockey
+    url: http://www.sandiegogulls.com/
+    image: https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/San_Diego_Gulls_logo.svg/1920px-San_Diego_Gulls_logo.svg.png
+    image_alt: Logo of a gull holding a hockey stick.
+    summary: AHL minor league ice hockey playing at Peganga Arena. Affiliate for the Anaheim Ducks.
   - name: Growlers Ultimate
     url: http://watchufa.com/growlers
     image: https://upload.wikimedia.org/wikipedia/en/c/cc/San_Diego_Growlers_%28ultimate_team%29_logo.png
@@ -37,12 +42,12 @@ sportsTeams:
     url: https://www.sdlegion.com/
     image: https://upload.wikimedia.org/wikipedia/commons/7/7e/San_diego_legion_logo.png
     image_alt: San Diego Legion team seal.
-    summary: MLR Rugby team playing at Snapdragon Stadium
-  - name: Gulls Hockey
-    url: http://www.sandiegogulls.com/
-    image: https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/San_Diego_Gulls_logo.svg/1920px-San_Diego_Gulls_logo.svg.png
-    image_alt: Logo of a gull holding a hockey stick.
-    summary: AHL minor league ice hockey playing at Peganga Arena. Affiliate for the Anaheim Ducks.
+    summary: MLR Rugby team playing at Torero Stadium
+  - name: Surfers Rugby
+    url: https://www.sdsurfersrugby.com
+    image: https://upload.wikimedia.org/wikipedia/en/8/8a/San_Diego_Surfers_logo.png
+    image_alt: San Diego Surfers ruby team seal
+    summary: Non-profit women's rugby club operating since 1975
   - name: Clippers Baskeball
     url: https://sandiego.gleague.nba.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/San_Diego_Clippers_%28NBA_G_League%29_Logo.svg/1920px-San_Diego_Clippers_%28NBA_G_League%29_Logo.svg.png
@@ -68,11 +73,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/9/9d/San_Diego_Lions_AFL_logo.png
     image_alt: Logo for Lions depicting a lion hiking a football.
     summary: USAFL Australian football team
-  - name: Yacht Club
-    url: http://www.sdyc.org/
-    image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Burgee_of_San_Diego_Yacht_Club.svg/2560px-Burgee_of_San_Diego_Yacht_Club.svg.png
-    image_alt: Pennant flag with a red star.
-    summary: Sailing team in America's cup
   - name: Surf Riders Cricket
     url: https://sandiegosurfriders.com/
     image: https://upload.wikimedia.org/wikipedia/en/5/52/San_Diego_Surf_Riders_original_logo.png
@@ -83,6 +83,11 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/2/22/Albionscproslogo.png
     image_alt: Team shield of Albion with three stars.
     summary: NISA 3rd tier soccer team
+  - name: Yacht Club
+    url: http://www.sdyc.org/
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Burgee_of_San_Diego_Yacht_Club.svg/2560px-Burgee_of_San_Diego_Yacht_Club.svg.png
+    image_alt: Pennant flag with a red star.
+    summary: Sailing team in America's cup
 ---
 
 <style>
@@ -137,3 +142,13 @@ My favorite sport of Ultimate frisbee has both men's and women's teams.
         </li>
     {%- endfor -%}
 </ol>
+
+## College Sports
+
+- [SDSU Aztecs](https://goaztecs.com)
+- [UC San Diego Tritons](https://ucsdtritons.com)
+- [USD Toreros](https://usdtoreros.com)
+- [San Diego City College Knights](https://sdcityknights.com/landing/index)
+- [Cal State San Marcos Cougars](https://csusmcougars.com)
+- [Point Loma Nazarene University Sea Lions](https://plnusealions.com/)
+- [MiraCosta College Spartans](https://mccspartans.com/)

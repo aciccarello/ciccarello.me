@@ -215,5 +215,6 @@ However there are lots of other major and minor league teams of various sports i
 <div class="featured-post-list">
   {%- assign posts = collections["sports teams"] %}
   {% include "post-card.html" post: posts[0] %}
+  {% include "post-card.html" post: posts[1] %}
 </div>
 {% endremoveindents %}
