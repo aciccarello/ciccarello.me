@@ -38,16 +38,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/d/db/California_Redwoods_lacrosse.jpg
     image_alt: California Redwoods logo depicting a bear head on a seal.
     summary: PLL Field lacrosse (outdoor)
-  - name: Legion Rugby
-    url: https://www.sdlegion.com/
-    image: https://upload.wikimedia.org/wikipedia/commons/7/7e/San_diego_legion_logo.png
-    image_alt: San Diego Legion team seal.
-    summary: MLR Rugby team playing at Torero Stadium
-  - name: Surfers Rugby
-    url: https://www.sdsurfersrugby.com
-    image: https://upload.wikimedia.org/wikipedia/en/8/8a/San_Diego_Surfers_logo.png
-    image_alt: San Diego Surfers ruby team seal
-    summary: Non-profit women's rugby club operating since 1975
   - name: Clippers Baskeball
     url: https://sandiego.gleague.nba.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/San_Diego_Clippers_%28NBA_G_League%29_Logo.svg/1920px-San_Diego_Clippers_%28NBA_G_League%29_Logo.svg.png
@@ -73,6 +63,11 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/9/9d/San_Diego_Lions_AFL_logo.png
     image_alt: Logo for Lions depicting a lion hiking a football.
     summary: USAFL Australian football team
+  - name: Surfers Rugby
+    url: https://www.sdsurfersrugby.com
+    image: https://upload.wikimedia.org/wikipedia/en/8/8a/San_Diego_Surfers_logo.png
+    image_alt: San Diego Surfers ruby team seal
+    summary: Non-profit women's rugby club operating since 1975
   - name: Surf Riders Cricket
     url: https://sandiegosurfriders.com/
     image: https://upload.wikimedia.org/wikipedia/en/5/52/San_Diego_Surf_Riders_original_logo.png
