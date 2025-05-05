@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="h-entry">
-	<article class="container post">
+	<article class="container post" data-pagefind-body>
 		{% if image %}
 			<figure class="card__media post-thumbnail">
 				{% assign filetype = image | split: "." | last -%}
@@ -12,7 +12,7 @@ layout: default
 						<source type="video/mp4" src="{{ image }}">
 					</video>
 				{% else -%}
-					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo u-featured post-img--wide"/>
+					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo u-featured post-img--wide" data-pagefind-meta="image[src], image_alt[alt]">
 				{% endif %}
 				{% if image_caption %}
 					<figcaption>

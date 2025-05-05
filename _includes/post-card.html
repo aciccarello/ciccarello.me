@@ -7,7 +7,7 @@ h-entry
 {%- endif -%}
 " {% if post.excludeFromSitemap -%}
     data-nosnippet
-{%- endif %}>
+{%- endif %}  data-pagefind-ignore>
 	<a class="u-url card disable-link-styles" href="{{ post.url | url }}">
 		{%- if post.data.image -%}
 			{% assign filetype = post.data.image | split: "." | last -%}

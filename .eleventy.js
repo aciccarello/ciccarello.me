@@ -32,6 +32,7 @@ export default async function (eleventyConfig) {
 	const npmPackages = [
 		['webmention.js/static/webmention', 'assets/js/webmention.js'],
 		['decap-cms', 'assets/js/decap-cms.js'],
+		['@zachleat/pagefind-search', 'assets/js/pagefind-search.js'],
 	].map(([packagePath, dest]) => [require.resolve(packagePath), dest]);
 
 	// addPassthroughCopy takes object mapping source -> dest

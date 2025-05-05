@@ -6,7 +6,7 @@
 				<source type="video/mp4" src="{{ image }}">
 			</video>
 		{%- else %}
-			<img src="{{ image }}" alt="{{ image_alt | escape }}" class="{% if layout == 'photo' or layout == 'recipe' %}u-photo photo {% endif %}u-featured"/>
+			<img src="{{ image }}" alt="{{ image_alt | escape }}" class="{% if layout == 'photo' or layout == 'recipe' %}u-photo photo {% endif %}u-featured" data-pagefind-meta="image[src], image_alt[alt]"/>
 		{%- endif %}
 		{%- if image_caption %}
 			<figcaption>
