@@ -48,7 +48,6 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [Ricotta Cake](./ricotta-cake/)
 - [Cream Cheese Cookies](./cream-cheese-cookies/)
 - [Aunt Pett's Rolls](./petts-rolls/)
-- [Honey-Soy Slow Cooker Chicken](./honey-soy-chicken/)
 - [Tomato Sauce](./marinara-sauce/)
 - [Meatballs](./meatballs/)
 
