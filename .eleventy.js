@@ -47,7 +47,7 @@ export default async function (eleventyConfig) {
 	const collections = {
 		articles: 'posts/blog/*.md',
 		recipes: 'posts/recipes/*.md',
-		notes: 'posts/notes/*.md',
+		notes: 'posts/{notes,listens}/*.md',
 		photos: 'posts/photos/*.md',
 		links: 'posts/{links,replies}/*.md',
 		reviews: 'posts/reviews/*.md',
