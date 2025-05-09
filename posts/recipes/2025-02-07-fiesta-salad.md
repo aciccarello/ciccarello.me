@@ -5,6 +5,7 @@ tags:
   - dinner
   - soup
   - family recipe
+  - beef
 image: /assets/img/recipe-fiesta.jpg
 image_alt: Shallow bowl of chili and rice topped with a colorful array of chips, cheese, tomatoes, and lettuce.
 excludeFromSitemap: true

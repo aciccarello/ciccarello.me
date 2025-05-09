@@ -1,6 +1,8 @@
 ---
 title: Rotisserie Chicken Bone Broth
 date: 2024-01-18T00:38:52.768Z
+tags:
+  - chicken
 image: /assets/img/recipe-chicken-broth.jpg
 image_alt: "A collection of bowls, pots, and jars separating chicken broth, bones, meat, and vegetables."
 image_caption: The final stage of separation does dirty a few dishes.

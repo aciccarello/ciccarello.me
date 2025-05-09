@@ -4,6 +4,7 @@ date: 2014-12-16
 tags:
   - dinner
   - pasta
+  - cheese
 image: /assets/img/jesse-mac-and-cheese.jpg
 image_alt: Bowl of cheesy pasta
 updates:

@@ -4,7 +4,7 @@ date: 2025-01-28T01:57:07.645Z
 permalink: /drafts/meatballs/
 tags:
   - dinner
-  - ground beef
+  - beef
 image:
 image_alt:
 eleventyExcludeFromCollections: true

@@ -5,6 +5,7 @@ tags:
   - dinner
   - soup
   - slow cooker
+  - beef
 image: /assets/img/lori-chile.jpeg
 image_alt: Slow cooker with chile
 updates:

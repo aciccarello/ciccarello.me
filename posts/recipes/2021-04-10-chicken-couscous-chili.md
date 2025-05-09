@@ -4,6 +4,7 @@ date: 2021-04-10T01:22:34.535Z
 tags:
   - soup
   - dinner
+  - chicken
 image: /assets/img/chicken-couscous-chili.jpg
 ---
 Inspired by [Kim's Cravings' Best Vegetarian Chili](https://www.kimscravings.com/best-ever-vegan-quinoa-chili/#wprm-recipe-container-29888) which also has instant pot and slow cooker versions. Bekah came up with the idea of adding chicken and using couscous instead of quinoa. It's great with a side of corn bread.
