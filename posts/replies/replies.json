@@ -2,7 +2,6 @@
   "defaultTitle": "Comment",
   "layout": "note",
   "type": "reply",
-  "typePlural": "replies",
   "collectionName": "links",
   "excludeFromMainFeed": true
 }

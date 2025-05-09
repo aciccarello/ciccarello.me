@@ -13,7 +13,7 @@ export default {
 	eleventyComputed: {
 		type: ({ type, layout }) => type || layout,
 		// Post kind data should override this if it's not this simple
-		typePlural: ({ type, typePlural }) => typePlural || type + 's',
+		typePlural: ({ type, typePlural }) => typePlural || pluralize(type),
 		lastUpdated:
 			/** @type {(data: {date: Date, updates?: {date: string}[]}) => Date} */ (
 				(data) =>
@@ -96,3 +96,14 @@ export default {
 		},
 	},
 };
+
+/** @param {string} word */
+function pluralize(word) {
+	if (!word) {
+		return '';
+	}
+	if (word.endsWith('y')) {
+		return word.slice(0, -1) + 'ies';
+	}
+	return word + 's';
+}
