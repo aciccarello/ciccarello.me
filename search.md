@@ -6,6 +6,7 @@ layout: page
 <script type="module" src="/assets/js/pagefind-search.js"></script>
 <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
 <style type="text/css">
+{% removeindents %}
 pagefind-search {
     --pagefind-ui-scale: 1;
     --pagefind-ui-primary: var(--color-alternate);
@@ -43,6 +44,7 @@ button.pagefind-ui__search-clear {
         background-color: unset;
     }
 }
+{% endremoveindents %}
 </style>
 
 Search the site using one of the suggested search engines.
