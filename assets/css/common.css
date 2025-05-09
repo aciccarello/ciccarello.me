@@ -46,8 +46,9 @@
 
 	/* Fonts from https://github.com/system-fonts/modern-font-stacks */
 	--body-font: system-ui, sans-serif;
-	--code-font: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
-		Consolas, 'DejaVu Sans Mono', monospace;
+	--code-font:
+		ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+		'DejaVu Sans Mono', monospace;
 	--accent-font: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 
 	--box-shadow-standard: 0 0.5rem 1rem var(--color-border);
@@ -572,6 +573,7 @@ button,
 
 .btn-group {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 0.5rem;
 }
 
