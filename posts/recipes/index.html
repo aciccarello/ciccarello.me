@@ -8,7 +8,6 @@ noindex: true
 pagination:
   data: collections.recipes
   size: 15
-  reverse: true
   alias: recipes
 eleventyComputed:
   title: "Recipes - Page {{pagination.pageNumber | plus: 1}} of {{pagination.pages.length}}"
@@ -20,6 +19,7 @@ eleventyComputed:
 	</h1>
 	<p>
 		My own personal recipe book saving recipes we've made over the years. Not all recipes have exact instructions. Cook at your own risk.
+		Recipes are sorted roughly by the last time it was made.
 	</p>
 	<nav class="category-menu" aria-labelledby="post-grouping-title">
 		<h3 id="post-grouping-title">See items tagged by meal</h3>

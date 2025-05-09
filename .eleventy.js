@@ -46,14 +46,15 @@ export default async function (eleventyConfig) {
 	 */
 	const collections = {
 		articles: 'posts/blog/*.md',
-		recipes: 'posts/recipes/*.md',
+		// recipes added in _build/recipe.js
 		notes: 'posts/{notes,listens}/*.md',
 		photos: 'posts/photos/*.md',
 		links: 'posts/{links,replies}/*.md',
-		reviews: 'posts/reviews/*.md',
+		reviews: 'posts/reviews/*.mdx',
+		activities: 'posts/{eats}/*.md',
 		posts: 'posts/**/*.md',
 		publicaciones: 'es/posts/*/*.md',
-		// Trips are added separately so they can include child data
+		// trips added in _build/trips.js
 	};
 	Object.entries(collections).forEach(([collectionName, glob]) =>
 		eleventyConfig.addCollection(collectionName, (collection) =>
@@ -115,7 +116,7 @@ export default async function (eleventyConfig) {
 		}
 	});
 	eleventyConfig.addFilter('addBaseUrl', (value) => {
-		if (value.startsWith('http')) {
+		if (!value || value.startsWith('http')) {
 			return value;
 		}
 		return 'https://www.ciccarello.me' + value;

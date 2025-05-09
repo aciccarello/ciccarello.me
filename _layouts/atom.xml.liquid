@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: true
 {% comment %}
   Outputs an Atom feed
   Key properties
-  - collectioName: string
+  - collectionName: string
   - title: defaults to site.title
   - description: defaults to site.description
   - url: path of HTML file that this feed represents defaults to root
@@ -29,6 +29,7 @@ eleventyExcludeFromCollections: true
     <email>{{ site.email }}</email>
   </author>
   {%- for post in feedCollection limit: 31 %}
+  {%- if not post.data.excludeFromSitemap %}
     {%- assign absolutePostUrl = post.url | url | addBaseUrl %}
     {%- capture content %}
       {%- include "featured-media.html", image: post.data.image, image_alt: post.data.image_alt, image_caption: post.data.image_caption %}
@@ -62,5 +63,6 @@ eleventyExcludeFromCollections: true
         </summary>
       {%- endif %}
     </entry>
+  {%- endif %}
   {%- endfor %}
 </feed>

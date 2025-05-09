@@ -1,11 +1,7 @@
 export default {
 	permalink:
 		"/posts/{{ page.date | date: '%Y/%m/%d' }}/{{ slug | default : title | slugify}}/",
-	author: {
-		name: 'Anthony Ciccarello',
-		typeArticle: 'the',
-		type: 'author',
-	},
+	author: { name: 'Anthony Ciccarello', typeArticle: 'the', type: 'author' },
 	lang: 'en-US',
 	defaultTitle: '',
 	back_button: '../../../..',
@@ -29,7 +25,8 @@ export default {
 			const like = data['like-of'];
 			const bookmark = data['bookmark-of'];
 			const reply = data['in-reply-to'];
-			const url = reply || like || bookmark;
+			const eat = data['eat-of'];
+			const url = reply || like || bookmark || eat;
 			if (url) {
 				const original = data.references?.find(
 					({ referenceIdUrl, url: entryUrl }) =>
@@ -38,6 +35,9 @@ export default {
 				const referenceData = { ...original };
 				let className = 'h-cite';
 				let actionDescription;
+				if (eat) {
+					actionDescription = 'Ate';
+				}
 				if (like) {
 					actionDescription = 'Liked';
 					className += ' u-like-of';

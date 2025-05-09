@@ -37,6 +37,8 @@ h-entry
 					{%- assign hasContent = post.templateContent | strip | default: "_false_" %}
 					{%- if post.data.subtitle -%}
 						{{ post.data.subtitle | joinLines | strip_html }}
+					{%- elsif post.data.type == "activity" and hasContent == "_false_" %}
+						{{ post.data.responseData.plaintextSummary }}
 					{%- elsif post.data.type == "link" and hasContent == "_false_" %}
 						{{ post.data.responseData.plaintextSummary }}
 						{%- if post.data.responseData.content and not post.data.responseData.name %}:

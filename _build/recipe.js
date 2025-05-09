@@ -2,9 +2,7 @@ import markdownItCooklang from 'markdown-it-cooklang';
 import { initializeMarkdown, md } from './markdown.js';
 
 const cooklangMd = initializeMarkdown().use(markdownItCooklang, {
-	ingredients: {
-		inlineDisplayAmount: true,
-	},
+	ingredients: { inlineDisplayAmount: true },
 });
 
 /**
@@ -61,5 +59,53 @@ ${content}`);
 			.replaceAll('class="amount"', 'class="amount p-value value"')
 			.replaceAll('class="unit"', 'class="amount p-type type"');
 		return render;
+	});
+	// Get review posts but add the eat posts as well
+	eleventyConfig.addCollection('recipes', (collectionApi) => {
+		/**
+		 * Map of recipe URLs to eat posts
+		 * @type {Record<string, object[]>}
+		 */
+		const eatsByUrl = collectionApi
+			.getFilteredByGlob('posts/eats/*.md')
+			.reverse()
+			.reduce((eatMap, post) => {
+				const recipeUrl = post.data['eat-of'];
+				if (recipeUrl?.startsWith('https://www.ciccarello.me')) {
+					const rootRelativeUrl = recipeUrl.replace(
+						'https://www.ciccarello.me',
+						'',
+					);
+					eatMap[rootRelativeUrl] ??= [];
+					eatMap[rootRelativeUrl].push(post);
+				}
+				return eatMap;
+			}, {});
+
+		// Create collection with custom sort and eat posts
+		return collectionApi
+			.getFilteredByGlob('posts/recipes/*.md')
+			.map((recipe) => {
+				const recipeEats = Array.from(eatsByUrl[recipe.url] ?? []);
+
+				recipe.data.eats = recipeEats;
+				recipe.data.lastUsedDate = new Date(
+					Math.max(
+						...recipeEats
+							.slice(0, 1)
+							.map(({ date }) => date)
+							.concat(new Date(recipe.data.lastUpdated))
+							.map((date) => date.getTime()),
+					),
+				);
+				return recipe;
+			})
+			.sort((a, b) => {
+				// Sort newest first
+				return (
+					new Date(b.data.lastUsedDate) -
+					new Date(a.data.lastUsedDate)
+				);
+			});
 	});
 }
