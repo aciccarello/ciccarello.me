@@ -30,6 +30,29 @@
         ]
       },
       {
+        "name": "Software",
+        "links": [
+          {
+            "url": "https://github.com/aciccarello",
+            "title": "GitHub",
+            "description": "Repositorio de código",
+            "icon": "icons/github.svg"
+          },
+          {
+            "url": "https://stackoverflow.com/users/4252741/chic",
+            "title": "Stack Overflow",
+            "description": "Preguntas de programación",
+            "icon": "icons/stack-overflow.svg"
+          },
+          {
+            "url": "https://www.npmjs.com/~aciccarello",
+            "title": "npm",
+            "description": "Gestor de paquetes",
+            "icon": "icons/npm.svg"
+          }
+        ]
+      },
+      {
         "name": "Naturaleza",
         "links": [
           {
@@ -62,29 +85,6 @@
             "icon": "icons/chess.svg"
           }
         ]
-      },
-      {
-        "name": "Software",
-        "links": [
-          {
-            "url": "https://github.com/aciccarello",
-            "title": "GitHub",
-            "description": "Repositorio de código",
-            "icon": "icons/github.svg"
-          },
-          {
-            "url": "https://stackoverflow.com/users/4252741/chic",
-            "title": "Stack Overflow",
-            "description": "Preguntas de programación",
-            "icon": "icons/stack-overflow.svg"
-          },
-          {
-            "url": "https://www.npmjs.com/~aciccarello",
-            "title": "npm",
-            "description": "Gestor de paquetes",
-            "icon": "icons/npm.svg"
-          }
-        ]
       }
     ]
   },
@@ -108,9 +108,7 @@
     },
     "translations": "Also published in",
     "syndicatedTo": "También publicado a",
-    "author": {
-      "aboutPrefix": "Sobre"
-    },
+    "author": { "aboutPrefix": "Sobre" },
     "suggestions": {
       "next": "Próximo",
       "previous": "Anterior",
