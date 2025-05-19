@@ -9,12 +9,22 @@ back_button: "/posts"
 	<h1 class="post-list-heading p-name">
 		{{ page.list_title | default: "Reviews" }}
 	</h1>
-	<p>
-		My personal collection of reviews and recommendations.
-	</p>
-	<p>
-        This page is a WIP. See <a href="./san-diego/">San Diego Recommendations</a> for an existing list.
-	</p>
+
+{% markdownify %}
+My personal collection of reviews and recommendations.
+
+## Topical Guides
+
+- [San Diego Recommendations](./san-diego/)
+- [San Diego Beaches and Coastal Views](./san-diego/beaches/)
+- [San Diego Sports Teams](./san-diego/sports/)
+- [Oceanside Recommendations](./san-diego/oceanside/)
+- [Oceanside Sunset Market](./san-diego/oceanside/sunset-market/)
+- [My Birding Spots](./san-diego/birding/)
+
+## Individual Reviews
+{% endmarkdownify %}
+
 	<ol class="post-list">
 		{%- for post in collections.reviews reversed -%}
 		<li>

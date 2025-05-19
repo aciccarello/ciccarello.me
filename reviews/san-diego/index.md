@@ -135,74 +135,7 @@ https://www.scoopslajolla.com/
 
 ## Oceanside
 
-### Oceanside Harbor Beach
-
-The best beach in town. Long and wide sand beach with plenty of restaurants and shops nearby. Parking can be expensive but there's a free lot on the other side of the railroad tracks if you're willing to walk a ways. This is where I play beach ultimate Tuesday afternoons in the summer.
-
-https://visitoceanside.org/things-to-do/beaches/harbor-beach/
-
-<div class="featured-post-list">
-{% include "post-card.html" post: collections.pageByUrl['/posts/2025/02/02/harbor-fish-and-chips/'] %}
-</div>
-
-### Oceanside Pier
-
-A must-see stop if spending any time in Oceanside.
-Even if you only walk out halfway, it's a nice place to watch the surfers and see the coastline.
-You might even see a fisherman reel in something.
-The diner at the end of the pier [burned down in 2024](https://www.ci.oceanside.ca.us/Home/Components/News/News/433/14) but 90% of the pier was unharmed.
-
-https://visitoceanside.org/things-to-do/outdoors/oceanside-pier/
-
-### San Luis Ray Mission
-
-Historic Catholic mission created as part of the early Spanish expansion in the area.
-Still conducting mass and has a large cemetery.
-It's an iconic part of Oceanside's history and includes a small museum that dives into the complicated history between the church and the local Luseño people.
-Also has a copy of an act signed by President Abraham Lincoln to fund the mission as it stated to fall into disrepair. Out front are some ruins from an old part of the complex. Worth a short visit if you want a little insight into local history. 
-
-https://www.sanluisrey.org/
-
-### The "Top Gun" house
-
-One of the last buildings of its era in Oceanside, this house was featured in the original Top Gun as the hike of the female lead.
-It has since been restored by the Mission Pacific Resort and moved to the center of its property. They now sell mini, portable pies.
-
-https://missionpacifichotel.com/historic-top-gun-house/
-
-### Pier View Coffee
-
-Local coffee shop a short walk from the pier.
-Good place to work on a laptop for a few hours or just grab a specialty latte.
-
-<div class="featured-post-list">
-{% include "post-card.html" post: collections.pageByUrl['/posts/2024/04/19/pier-view-coffee/'] %}
-</div>
-
-### Parlor Donuts
-
-Croissant donut shop.
-Best if you can get them fresh in the morning.
-They used to have breakfast tacos but those were taken off the menu. 
-
-https://www.parlordoughnuts.com/oceanside-ca
-
-### Colima's Mexican restaurant
-
-Large, delicious burritos tucked in a central location on Pier View Way.
-
-
-<div class="featured-post-list">
-{% include "post-card.html" post: collections.pageByUrl['/posts/2024/09/23/colimas/'] %}
-</div>
-
-### Crackheads
-
-Food hall with multiple options in both Oceanside and Carlsbad.
-
-<div class="featured-post-list">
-{% include "post-card.html" post: collections.pageByUrl['/posts/2025/01/08/crackheads-oside/'] %}
-</div>
+I've got so many [Oceanside recommendations](./oceanside/), there's a separate page for it!
 
 ## Sports
 

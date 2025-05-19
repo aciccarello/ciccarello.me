@@ -50,7 +50,7 @@ export default async function (eleventyConfig) {
 		notes: 'posts/{notes,listens}/*.md',
 		photos: 'posts/photos/*.md',
 		links: 'posts/{links,replies}/*.md',
-		reviews: 'posts/reviews/*.mdx',
+		reviews: 'posts/reviews/*.md',
 		activities: 'posts/{eats}/*.md',
 		posts: 'posts/**/*.md',
 		publicaciones: 'es/posts/*/*.md',
