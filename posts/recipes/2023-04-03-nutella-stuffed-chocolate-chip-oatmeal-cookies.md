@@ -8,10 +8,15 @@ tags:
   - chocolate
 image: /assets/img/nutella-chocolate-chip-oatmeal-cookies.jpg
 imageAlt: Chocolate chip oatmeal cookies stacked in a dish.
+updates:
+  - date: 2025-05-13T01:49:06.572Z
+    description: Added amount for nuts and peanut option
 ---
 We made this delicious recipe [from Half Baked Harvest](https://www.halfbakedharvest.com/chocolate-chip-nutella-oatmeal-cookies/) and loved it. The cookies are large so only a couple is enough to be satisfied.
 
-The first time we made these, we had to run to the store to get the right kind of oats but it was worth it. Next time we are planning on adding pecans to the mix and trying making adjustments to get more of the Nutella flavor to come through.
+The first time we made these, we had to run to the store to get the right kind of oats but it was worth it.
+Since then we've made them with peanuts and want to try adding pecans to the mix.
+We've found you don't want to skimp on the Nutella or else the hazelnut flavor it won't come through.
 
 ## Summary
 
@@ -32,7 +37,7 @@ The first time we made these, we had to run to the store to get the right kind o
 * 1/2 teaspoon kosher salt
 * 1 rounded cup chocolate chips
 * 1/3 cup Nutella
-* ?? Chopped Pecans
+* 3/4 Chopped Pecans or Peanuts
 {% endrecipe-ingredients %}
 
 {% recipe-directions %}
@@ -42,7 +47,7 @@ The first time we made these, we had to run to the store to get the right kind o
 1. Add the butter to a skillet set over medium heat. Cook until the butter begins to brown, about 3-4 minutes, stirring to avoid burning.
 1. Remove from the heat and transfer to a heatproof bowl. Let cool 5 minutes or so.
 1. To the brown butter, mix in the brown sugar, granulated sugar, eggs, and vanilla, mixing until smooth.
-1. Add the flour, oats, baking soda, and salt. Gently fold in the chocolate chips and pecans.
+1. Add the flour, oats, baking soda, and salt. Gently fold in the chocolate chips and nuts.
 1. Roll the dough into 1/4 cup balls and place 2 inches apart on the prepared baking sheet.
 1. Split each dough ball in half, then flatten the halves to make room for the Nutella. Add 1 rounded teaspoon to the center of each cookie, then cover with the top cookie half, enclosing the Nutella. Gently flatten each dough ball down.
 1. Bake 8 minutes.
