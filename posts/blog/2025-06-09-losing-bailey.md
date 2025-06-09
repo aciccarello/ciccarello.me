@@ -8,6 +8,9 @@ tags:
   - Denver
 image: /assets/img/2025-bailey-header.jpg
 image_alt: Woman kneeling next to a white golden retriever on a beach and looking longingly.
+updates:
+  - date: 2025-06-09T21:26:52.739Z
+    description: Added more photos
 ---
 
 Just over a week ago, we lost the sweetest dog.
@@ -32,6 +35,8 @@ Her fur was so thin and soft.
 Anyone we'd meet in public would be impressed with how soft she was.
 Because of how thin it was, it would float all over the house leaving wavy white hairs high and low.
 The fur behind her ears was particularly wavy to the point that people often asked if we crimped it ourselves.
+
+![A man with a dog on top of a red, rocky bluff with hills and more red-rock spires behind.](/assets/img/2025-bailey-garden-of-the-gods.jpg "Hiking the Garden of the gods")
 
 Bailey had puppy energy for the longest time.
 She couldn't wait to greet anyone who came through the door, usually after barking because she assumed there was an intruder at the door.
@@ -67,11 +72,21 @@ No matter how we were doing, Bailey's sweetness was always there; she was always
 It's crazy to me that someone gave her away nearly 10 years ago.
 I couldn't have asked for a nicer dog, only to have gotten more time with her.
 
+![A dog on a cliff-lined beach looking at the camera while a man holds the leash and looks out towards the water.](/assets/img/2025-bailey-oc-beach.jpg)
+
 ![A dog smiling at a park in front of people taking a break in athletic clothes.](/assets/img/2025-bailey-ultimate.jpg "Bailey loved coming to the park when I'd play ultimate frisbee.")
+
+![A man sitting on a brick wall with a dog in front and sailboat spires behind.](/assets/img/2025-bailey-harbor.jpg "The two of us hanging out at the harbor")
+
+![A man hiking with a dog on a dry mountainside. The dog's tongue is hanging low.](/assets/img/2025-bailey-desert-hike.jpg "Bailey's time as a desert dog")
 
 ![Dog looking up at a man next to a door mat that says 'Home Sweet Home'.](/assets/img/2025-bailey-cone.jpg "As if she wasn't clumsy enough, her cone was always bumping into things when she had injuries.")
 
+![A dog launches wildly from a surprised man kneeling between trees at a christmas tree stand for a photo.](/assets/img/2025-bailey-christmas-tree.jpg)
+
 ![Three golden retriever dogs, including one small puppy standing together in a kitchen looking up in the same direction.](/assets/img/2025-bailey-ellie-and-puppy-denver.jpg "Bailey with Denver and my in-law's dog Ellie")
+
+![A man kneels down next to a dog in front of a dutch-style town with a windmill](/assets/img/2025-bailey-solvang.jpg "Walking around Solvang")
 
 ![A blurry photo of a dog in front of camp chairs looking goofy with dirt on her nose.](/assets/img/2025-bailey-dirt-nose.jpg "The time she got dirt on her nose at our nephew's soccer game. 😂")
 
