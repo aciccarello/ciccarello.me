@@ -3,9 +3,11 @@ title: 'Return to italy'
 date: 2022-10-10
 tags: [travel, Italy]
 permalink: /drafts/return-to-italy/
-image: /assets/img/2019-italy-amalfi-coast-boat-flag.jpg
+image: /assets/img/2022-italy-manarola-coast.jpg
 image_alt: 
 image_caption:
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 

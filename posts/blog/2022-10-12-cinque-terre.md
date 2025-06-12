@@ -3,14 +3,16 @@ title: 'Cinque Terre: Land of Two Suns'
 date: 2022-10-12
 tags: [travel, Italy]
 permalink: /drafts/cinque-terre/
-image: /assets/img/2019-italy-amalfi-coast-boat-flag.jpg
-image_alt: 
+image: /assets/img/2022-italy-manarola-coast.jpg
+image_alt: An Italian town built on a steep Mediterranean costal hillside with colorful houses and a rocky bay.
 image_caption:
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 ---
 
 When we got off the train platform in the town of Riomaggiore in Cinque Terre National Park, we were greeted by tall cliffs that opened out to the ocean. It wasn't untill we passed through a tunnel that we could truely see the stacked building the tight communities in the area are known for. From the narrow streets rise tall structures, often only on room wide but 5 stories tall. We dragged our suitcases down an alley and found our host's door open. Inside was an old winery storeroom that had been converted into a cluttered office.
 
-<aside style="padding: 16px 0;font-size: 1.1em;border-top: medium double #333;border-bottom: medium double #333;margin: 32px;font-style: italic;">
+<aside>
     This post is part of a series describing our 2022 trip to Italy. To read an overview of our trip and why we went, check out this <a href="/blog/2019/11/27/TODO/">introductory post</a>.
 </aside>
 
