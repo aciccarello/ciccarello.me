@@ -258,9 +258,10 @@ Links can also be styled to look similar to buttons but are underlined on hover 
 
 ![image displayed as wide as the text](
     /assets/img/2019-italy-trevi-fountain-night.jpg
+    "1024px wide minus some padding"
 ){.post-img--wide}
 
-![image displayed to the left of text](/assets/img/2022-rose-yellow.jpg){.post-img--float}
+![image displayed to the left of text](/assets/img/2022-rose-yellow.jpg "Shown a max of 350px wide"){.post-img--float}
 
 There are several ways to display images. Above is shown the wide orientation which goes as wide as the text is allowed.
 
@@ -288,7 +289,7 @@ Captions support markdown syntax but be careful with quotes in alt text. You can
 ){.post-img--float .post-img--float-right}
 ```
 
-![image displayed not full-width on desktop](/assets/img/2018-yellowstone-grand-prismatic.jpg "The Grand Prismatic pool in Yellowstone")
+![image displayed not full-width on desktop](/assets/img/2018-yellowstone-grand-prismatic.jpg "A photo displayed 600px wide")
 
 ## Lists
 
