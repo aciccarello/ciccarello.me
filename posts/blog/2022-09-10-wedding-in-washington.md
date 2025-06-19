@@ -2,10 +2,92 @@
 title: 'Wedding in Washington'
 subtitle: 'And other PNW adventures'
 date: 2022-09-10T01:52:41.775Z
-tags: [travel, personal]
+tags: [travel, personal, Washington]
 image: /assets/img/2022-washington-lake-crescent-paddle-boarding.jpg
 image_alt: 
 image_caption: Taking in the views from a paddle board on Lake Crescent 😎
+locations:
+  - lat: 33.942153
+    long: -118.4036052
+    title: 'SAN Airport'
+    date: 2022-08-25
+    type: start
+    zoom: ignore
+  - lat: 47.4439429
+    long: -122.322399
+    title: 'SEA Airport'
+    date: 2022-08-25
+    type: arrival
+  - lat: 47.6794631
+    long: -122.3878416
+    title: 'Ballard'
+    date: 2022-08-25
+    type: lodging
+  - lat: 47.6233999
+    long: -122.5142529
+    title: 'Bainbridge Island'
+    date: 2022-08-26
+    type: attraction
+  - lat: 47.9240662
+    long: -122.1089637
+    title: 'Snohomish'
+    date: 2022-08-27
+    type: event
+  - lat: 47.5815295
+    long: -122.1949768
+    title: 'Bellevue'
+    date: 2022-08-28
+    type: event
+  - lat: 48.0925172
+    long: -123.6422552
+    title: 'Port Angeles'
+    date: 2022-08-28
+    type: lodging
+  - lat: 47.9513578
+    long: -123.8199181
+    title: 'Sol Duc Falls'
+    date: 2022-08-29
+  - lat: 48.0628956
+    long: -123.7998452
+    title: 'Lake Crescent'
+    date: 2022-08-29
+  - lat: 48.0498549
+    long: -123.8298257
+    title: 'Marymere Falls'
+    date: 2022-08-29
+    type: attraction
+  - lat: 47.9696714
+    long: -123.4983709
+    title: 'Hurricane Ridge'
+    date: 2022-08-30
+    type: attraction
+  - lat: 47.795482
+    long: -122.4974845
+    title: 'Kingston Ferry Terminal'
+    date: 2022-08-30
+    type: ferry
+  - lat: 47.8104515
+    long: -122.3932381
+    title: 'Edmonds Ferry Terminal'
+    date: 2022-08-30
+    type: ferry
+  - lat: 47.6963811
+    long: -122.3718403
+    title: "Dick's Drive-In"
+    date: 2022-08-31
+    type: food
+  - lat: 47.4439429
+    long: -122.322399
+    title: 'SEA Airport'
+    date: 2022-09-01
+    type: departure
+    zoom: ignore
+  - lat: 33.942153
+    long: -118.4036052
+    title: 'SAN Airport'
+    date: 2022-09-01
+    type: end
+    zoom: ignore
 ---
 
 One of our new favorite places to visit in the USA is the Emerald State of Washington. We've now visited 3 times in the past 3 years. This time our excuse was a family wedding. The bride and groom organized several events for people to gather outside of the actual wedding so Bekah and I had lots of time hanging out with her cousins, aunts, and uncles. The actual ceremony was at a beautiful venue outside of Snohomish. They exchanged vows in a cozy grove of pine trees and the grounds around the reception were full of flowers in bloom. The next day, the extended relatives got together again for brunch before people went their separate ways. We even got a boat tour around the Bellevue coastline of Lake Washington. All that time with family was really refreshing, especially after a tough couple years during the height of the pandemic.
