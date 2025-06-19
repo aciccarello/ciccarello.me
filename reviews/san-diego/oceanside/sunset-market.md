@@ -33,6 +33,11 @@ Japanese food. Like their Chicken Karaage Bowl.
 
 On Instagram @[onigirihousesd](https://www.instagram.com/onigirihousesd/)
 
+### House of Bao
+
+They have steamed buns and dumplings that are really satisfying.
+Since most of them are already cooked and in the steamer, you should be able to get your food pretty quickly.
+
 ### Options to Try
 
 These are places I've had my eye on but haven't tried yet.
