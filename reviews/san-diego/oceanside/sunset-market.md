@@ -33,17 +33,51 @@ Japanese food. Like their Chicken Karaage Bowl.
 
 On Instagram @[onigirihousesd](https://www.instagram.com/onigirihousesd/)
 
+### Turkish Grill
+
+I got a loaded wrap and was really satisfied to the point that I needed to save dessert for later.
+
 ### House of Bao
 
 They have steamed buns and dumplings that are really satisfying.
 Since most of them are already cooked and in the steamer, you should be able to get your food pretty quickly.
 
+### Happicanes
+
+![Cup with red liquid](/assets/img/street-food-happicanes.jpg){.post-img--float-right}
+
+Tasty juice and boba. I liked their watermelon cane.
+
+On Instagram @[happicanes](https://www.instagram.com/happicanes/)
+
+<div style="clear:both;"></div>
+
+### Belgian Fries
+
+![A cone of thick french fries](/assets/img/street-food-belgian-fries.jpg){.post-img--float-right}
+
+Thick cut fries that come hot out of the fryer.
+Usually in the northeast corner of Pier View Way and Tremont St.
+
+<div style="clear:both;"></div>
+
+### Chimi Chimi - Argentine Street Food
+
+![A meaty quessadilla with chees spilling out.](/assets/img/street-food-argentine-quesadilla.jpg){.post-img--float-right}
+
+A few different variations on grilled meats.
+My steak quesadilla was tasty but honestly too greasy.
+
+On Instagram @[chimi_chimi_chimichurri](https://www.instagram.com/chimi_chimi_chimichurri/)
+
+<div style="clear:both;"></div>
+
 ### Options to Try
 
 These are places I've had my eye on but haven't tried yet.
 
-- Argentine Street Food
 - Shrimpholic
+- Yakisoba Japanese Street Noodle
 
 ## Desserts
 
@@ -68,3 +102,14 @@ https://ogcookie.com/
 This is a refreshing ice cream treat.
 They essentially blend some fresh fruit into soft serve ice cream.
 It was tasty and somewhat unique but I'd prefer some of the other options.
+
+## Parking
+
+After 6, parking becomes more limited but there are a few options.
+
+- Free parking structure on Seagaze Drive
+- Free parking structure behind the library off of Civic Center Drive
+- Free street parking on the side streets near Sportfisher Drive
+- Paid parking lots off of Myers St
+- Paid parking structure at Cleveland St and Pier View Way
+- Do NOT use the transit center parking (other than the parking structure)
