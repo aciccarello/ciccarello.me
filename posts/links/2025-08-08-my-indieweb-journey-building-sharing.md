@@ -2,6 +2,7 @@
 date: 2025-08-08T18:30:00.000Z
 title: "My IndieWeb Journey: Building, Sharing, and Owning Your Online Presence."
 slug: my-indieweb-journey-building-sharing
+excludeFromMainFeed: false
 bookmark-of: https://ohhelloana.blog/my-indieweb-journey/
 tags:
   - IndieWeb
@@ -30,5 +31,6 @@ Ana does a great job of capturing the IndieWeb spirit in this post. I think her 
 
 I've found a lot of joy in cultivating my own space on the web and connected with some great people in the process. I can't say I've figured out how to succinctly _and_ adequately describe the IndieWeb community to people because the experiences are all so unique. But Ana's is a fantastic example. 
 
-Syndicated to https://news.indieweb.org/en
-
+<a href="https://news.indieweb.org/en" class="u-syndication">
+  Also posted on IndieNews
+</a>
