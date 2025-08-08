@@ -34,9 +34,9 @@
 	<link rel="webmention" href="https://webmention.io/www.ciccarello.me/webmention"/>
 	<link rel="pingback" href="https://webmention.io/www.ciccarello.me/xmlrpc"/>
 	{% if page.url == "/" %}
-		<link rel="micropub" href="https://indiekit.ciccarello.me/micropub">
-		<link rel="authorization_endpoint" href="https://indiekit.ciccarello.me/auth">
-		<link rel="token_endpoint" href="https://indiekit.ciccarello.me/auth/token">
+		<link rel="micropub" href="http://localhost:3001/micropub">
+		<link rel="authorization_endpoint" href="http://localhost:3001/auth">
+		<link rel="token_endpoint" href="http://localhost:3001/auth/token">
 		<link rel="microsub" href="https://aperture.p3k.io/microsub/581"/>
 		<link rel="me" href="https://fed.brid.gy/r/https://www.ciccarello.me/"/>
 		<script type="application/ld+json">
@@ -69,4 +69,4 @@
 	{% endif %}
 	<link rel="stylesheet" href="/assets/css/print.css" media="print"/>
 	<script type="module" src="/assets/js/common.js"></script>
-	</head>
+</head>

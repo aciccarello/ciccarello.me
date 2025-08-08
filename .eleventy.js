@@ -174,6 +174,11 @@ export default async function (eleventyConfig) {
 	eleventyConfig.setWatchThrottleWaitTime(100); // in milliseconds
 	eleventyConfig.setServerPassthroughCopyBehavior('passthrough');
 
+	// Avoid CORS errors locally
+	eleventyConfig.setServerOptions({
+		headers: { 'Access-Control-Allow-Origin': '*' },
+	});
+
 	return {
 		dir: {
 			input: './', // Equivalent to Jekyll's source property
