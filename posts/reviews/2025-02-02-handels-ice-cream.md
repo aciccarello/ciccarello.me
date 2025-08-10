@@ -37,6 +37,8 @@ Be sure to look up the current flavors while you're in line as they vary seasona
 As we try more flavors, we're trying to keep track of our thoughts.
 Ordered roughly by how much I like the flavors.
 
+### Recommended
+
 - **Graham Central Station**: Great unique combo of ice cream flavor with mixins
 - **Midnight Madness**: A rich dark chocolate ice cream with subtle mixins
 - **Chocolate Chip Cookie Dough**: Usually one of my favorite ice cream flavors and this delivers
@@ -47,16 +49,28 @@ Ordered roughly by how much I like the flavors.
 - **Salty Carmel Truffle**: Bekah really likes.
 - **Mint chocolate Chip**: Solid classic
 - **Mint with Oreo**: A combo of mint + cookies-n-cream
+- **Mud Pie**: Can be really rich with mixins if you get a good scoop
+- **Sticky Fingers**: Caramel sweetness with a few solid mixins
+
+### Consider based on your taste
+
 - **Blueberry Cobbler**: I liked the pie flavors but Bekah did not
 - **Birthday Cake**: One of Bekah's favorites but it is _very_ sweet
 - **Coffee with Heath**: Good coffee flavor, Heath was too subtle
 - **Strawberry Cheasecake Chunk**: Bekah likes even if the strawberry chunks can be cold
 - **Butter Pecan**: Bekah liked it but wants more pecan
-- **Praline Pecan**: TBD. Bekah wants to try
-- **Mocha Almond Fudge Ripple**: Heard it's good
-- **Cinnamon Roll**: Not very complex but Bekah liked it
-- **Buckeye**: Left wanting more peanut butter and chocolate
 - **Banana Cream Pie**: Bekah liked but I did not. Simple flavor
 - **Lemon Shortbread**: Bekah liked but simple flavor
 - **Key lime pie**: Bekah liked but simple flavor
+
+### Disappointing
+
+- **Cinnamon Roll**: Not very complex but Bekah liked it
+- **Buckeye**: Left wanting more peanut butter and chocolate
 - **Cotton Candy**: Did not like the chocolate covered candies
+
+### Want to try
+
+- **Praline Pecan**: TBD. Bekah wants to try
+- **Mocha Almond Fudge Ripple**: Heard it's good
+- **Knot Your Average Dough**: Was sold out when we went to try
