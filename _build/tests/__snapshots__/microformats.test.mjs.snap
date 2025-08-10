@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`microformats should be parsable on the resume 1`] = `
 {
@@ -26,24 +26,35 @@ exports[`microformats should be parsable on the resume 1`] = `
             "Remote",
           ],
         },
-        "name": "Senior Software Engineer",
+        "name": "Vice President, Software Engineering",
         "skill": [
           "React",
           "JavaScript",
           "Node.js",
+          "Java",
           "Git",
           "Agile",
           "Scrum",
-          "Java",
+          "Microservices",
+          "REST",
+          "AWS EventBridge",
+          "RDS Aurora",
           "Groovy",
+          "Python",
+          "Pulumi",
           "Spring",
           "Oracle SQL",
+          "PostgreSQL",
           "Automated Testing",
         ],
         "start": "2023-05",
         "summary": "Full-stack development of ICD Portal investment platform.
 
 						
+							
+								
+									Led technical design and development of new financial product architecture.
+								
 							
 								
 									Helped team revamp Agile processes and consulted on setup of Jira project management.
@@ -305,8 +316,8 @@ exports[`microformats should have a(n) article 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -422,8 +433,8 @@ exports[`microformats should have a(n) like 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -451,8 +462,8 @@ exports[`microformats should have a(n) multipleUpdates 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -485,8 +496,8 @@ exports[`microformats should have a(n) note 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -509,8 +520,8 @@ exports[`microformats should have a(n) photo 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -546,8 +557,8 @@ exports[`microformats should have a(n) photoLike 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -581,7 +592,7 @@ exports[`microformats should have a(n) recipe 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
     "summary": "I'm a software engineer who enjoys collecting recipes I've made and preserving family favorites. My cooking style is laid back and flexible so some recipes may not be exact.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
@@ -662,7 +673,7 @@ exports[`microformats should have a(n) recipeCooklang 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
     "summary": "I'm a software engineer who enjoys collecting recipes I've made and preserving family favorites. My cooking style is laid back and flexible so some recipes may not be exact.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
@@ -802,8 +813,8 @@ exports[`microformats should have a(n) reply 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -833,8 +844,8 @@ exports[`microformats should have a(n) replyToCheckin 1`] = `
 {
   "author": {
     "name": "Anthony Ciccarello",
-    "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
-    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
     "type": "card",
     "url": "https://www.ciccarello.me/",
   },
@@ -872,13 +883,13 @@ exports[`microformats should have an h-card on the homepage 1`] = `
   ],
   "email": "mailto:anthony@ciccarello.me",
   "name": "Anthony Ciccarello",
-  "note": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy traveling to other countries and spending time in nature.",
+  "note": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
   "org": {
     "name": "ICD",
     "type": "card",
     "url": "https://icdportal.com/",
   },
-  "photo": "https://secure.gravatar.com/avatar/17d306899b5f20953440eca1d65d34e0?s=512",
+  "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
   "type": "card",
   "url": [
     "https://www.ciccarello.me/",
@@ -965,7 +976,7 @@ exports[`microformats should have h-entries on the posts page 1`] = `
       "author": "https://www.ciccarello.me/",
       "published": "2023-07-30T20:07:10Z",
       "summary": "Liked a photo by Paul Robert Lloyd:
-							“Summer sunshine.”",
+“Summer sunshine.”",
       "type": "entry",
       "url": "https://www.ciccarello.me/posts/2023/07/30/summer-sunshine-like/",
     },
