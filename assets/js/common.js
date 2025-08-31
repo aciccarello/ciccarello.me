@@ -57,3 +57,20 @@ export function formatDateString(date) {
 export function formatDateTimeString(date) {
 	return dateTimeFormat.format(date);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+	initializeLightbox();
+});
+
+function initializeLightbox() {
+	const images = Array.from(
+		document.querySelectorAll('img:not(a img):not([src*="gravatar.com"])'),
+	);
+
+	if (images.length > 1) {
+		import('./lightbox.js').then((module) => {
+			const lightbox = module.createLightbox();
+			module.addEventListeners(lightbox, images);
+		});
+	}
+}
