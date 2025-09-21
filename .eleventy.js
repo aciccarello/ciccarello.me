@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { createRequire } from 'node:module';
 import { readFile } from 'node:fs/promises';
 import rssPlugin from '@11ty/eleventy-plugin-rss';
@@ -178,6 +179,12 @@ export default async function (eleventyConfig) {
 	eleventyConfig.setServerOptions({
 		headers: { 'Access-Control-Allow-Origin': '*' },
 	});
+
+	// Some pages referencing templates seem to choke on local live reload
+	eleventyConfig.addGlobalData(
+		'devLoopProtection',
+		process.env.DEV_LOOP_PROTECTION,
+	);
 
 	return {
 		dir: {

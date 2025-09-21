@@ -615,6 +615,7 @@ Different post types appear differently
 </div>
 {% endremoveindents %}
 
+{%- if not devLoopProtection %}
 ## Pages with custom styles
 
 Review the following pages for issues as they have their own unique styles.
@@ -630,6 +631,7 @@ Review the following pages for issues as they have their own unique styles.
   {%- endif %}
   {%- endfor %}
 </ul>
+{%- endif %}
 
 ## Pagination
 
