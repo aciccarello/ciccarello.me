@@ -1,10 +1,12 @@
 ---
-title: Creamy Torellini Soup
+title: Creamy Tortellini Soup
+slug: Creamy Torellini Soup
 date: 2021-12-13T19:24:25.462Z
 canonical_url: https://damndelicious.net/2019/01/30/creamy-tortellini-soup/
 tags:
   - dinner
   - soup
+  - pasta
 image: /assets/img/creamy-torellini-soup.jpg
 image_alt: bowl of creamy red soup topped with cheese
 ---

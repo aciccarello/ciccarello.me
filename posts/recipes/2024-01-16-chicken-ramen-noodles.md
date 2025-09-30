@@ -6,6 +6,7 @@ tags:
   - soup
   - lunch
   - dinner
+  - chicken
 image: /assets/img/recipe-ramen-noodles.jpg
 image_alt: "Bowl of noodles, spinach, carrots, chicken, and egg."
 ---

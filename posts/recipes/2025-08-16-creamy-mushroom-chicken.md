@@ -22,7 +22,7 @@ We had it with bowtie pasta but it would also work with rice.
 {% recipe-cooklang %}
 
 1. Heat @extra-virgin olive oil{1 ½%teaspoons} in a #large sauté pan{} over medium heat.
-1. Add @chopped onions{1%medium} and @halved or sliced button mushrooms{8%oz} and sauté, stirring occasionally, until they are tender (~{7-8%minutes}).
+1. Add @chopped onions{1%medium} and @halved or sliced button mushrooms{8%oz} and sauté, stirring occasionally, until they are tender, ~{7-8%minutes}.
 1. Add @garlic{2%cloves} and sauté for another ~{30%seconds}.
 1. Season @chicken breasts{2%lbs} with @salt{3/4%teaspoon} and @black pepper{1/2%teaspoon} and add them to the slow cooker insert.
 1. Place the chicken in the bottom of the slow cooker, surrounded by the sautéed onions and mushrooms and top with the @cream cheese{6%oz}`.
