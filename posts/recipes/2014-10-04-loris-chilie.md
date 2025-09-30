@@ -1,5 +1,6 @@
 ---
-title: Lori's Chile
+title: Lori's Chili
+slug: Lori's Chile
 date: 2014-10-04
 tags:
   - dinner
@@ -7,13 +8,13 @@ tags:
   - slow cooker
   - beef
 image: /assets/img/lori-chile.jpeg
-image_alt: Slow cooker with chile
+image_alt: Slow cooker with chili
 updates:
   - date: 2024-01-17T20:01:01.815Z
     description: Added amounts and ingredients like corn and paprika
 ---
 
-This is a simplified slow cooker chile recipe from an advisor and former-professor of Bekah's. We've made many variations of this but it provides a great base to work from.
+This is a simplified slow cooker chili recipe from an advisor and former-professor of Bekah's. We've made many variations of this but it provides a great base to work from.
 
 {% recipe-ingredients %}
 - 1-2 lbs ground beef (browned)
@@ -23,7 +24,7 @@ This is a simplified slow cooker chile recipe from an advisor and former-profess
 - 1 15 oz can red kidney beans (drained and washed)
 - 1 15 oz can northern white beans (drained and washed)
 - 1 15 oz can corn (drained)
-- 1 tbsp chile powder
+- 1 tbsp chili powder
 - 1 tsp paprika
 - 1 tsp oregano
 - 1 4 oz can green peppers (can substitute fresh bell pepper)
