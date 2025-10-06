@@ -7,14 +7,18 @@ tags:
   - soup
   - slow cooker
   - beef
-image: /assets/img/lori-chile.jpeg
-image_alt: Slow cooker with chili
+image: /assets/img/recipe-lori-chili-bowl.jpg
+image_alt: A bowl with a red chili and a spoon raised showing the beans and corn.
 updates:
   - date: 2024-01-17T20:01:01.815Z
     description: Added amounts and ingredients like corn and paprika
+  - date: 2025-10-06T07:52:19.808Z
+    description: Updated photo and description
 ---
 
-This is a simplified slow cooker chili recipe from an advisor and former-professor of Bekah's. We've made many variations of this but it provides a great base to work from.
+This is a simplified slow cooker chili recipe from an advisor and former-professor of Bekah's.
+We've made many variations of this but it provides a great base to work from.
+Great with cornbread.
 
 {% recipe-ingredients %}
 - 1-2 lbs ground beef (browned)
@@ -38,3 +42,5 @@ This is a simplified slow cooker chili recipe from an advisor and former-profess
 1. Cook for 3 hours on high or 6 hours on low
 1. Serve topped with sour cream and shredded cheese
 {% endrecipe-directions %}
+
+![Slow cooker with red chili](/assets/img/lori-chile.jpeg "Throwback photo from one of the first times we made this")
