@@ -17,4 +17,4 @@ I particularly loved seeing all the Oaxacan inspired art!
 
 ![A young woman, an older woman with a walker, and a dog on a path along a grassy yard with copper roofed gazebos.](/assets/img/2025-dallas-arbor-lawn.jpg)
 
-![A closeup of a plant with long green leaves and bunches of small purple berries.](/assets/img/2025-dallas-arbor-berry.jpg "American Beautyberry lives up to it's name)
+![A closeup of a plant with long green leaves and bunches of small purple berries.](/assets/img/2025-dallas-arbor-berry.jpg "American Beautyberry lives up to it's name")
