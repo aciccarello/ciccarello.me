@@ -1,6 +1,6 @@
 ---
-date: 2025-10-03T21:52:26.514Z
-slug: first-octothorpe
+date: 2025-10-10T04:35:32.116Z
+permalink: /posts/2025/10/03/first-octothorpe/
 tags:
   - site changes
   - IndieWeb
