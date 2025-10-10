@@ -38,6 +38,9 @@ eleventyExcludeFromCollections: true
       {%- if forloop.index <= 10 %}
         {{ post.templateContent }}
         {{ bridgyFed }}
+        {% if page.url == "/feed-all.xml" -%}
+          <a href="https://octothorp.es/?uri={{ absolutePostUrl }}&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json" class="u-octothorpe" aria-hidden="true" tabindex="-1"></a>
+        {% endif -%}
 		    {% include "syndication.html", syndication: post.data.syndication %}
       {%- else %}
       <p>{{ post.templateContent | strip_html | truncate: 500 }}</p>

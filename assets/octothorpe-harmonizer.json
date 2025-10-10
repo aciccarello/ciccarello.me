@@ -1,0 +1,106 @@
+{
+  "@context": "https://octothorp.es/context.json",
+  "@id": "https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
+  "@type": "harmonizer",
+  "title": "Ciccarello Microformats Harmonizer",
+  "mode": "html",
+  "schema": {
+    "subject": {
+      "s": "source",
+      "title": [
+        {
+          "selector": ".h-entry article .p-name:not(:where(.h-cite, .h-card, .h-entry .h-entry) .p-name)",
+          "attribute": "textContent",
+          "postProcess": {
+            "method": "regex",
+            "params": "^\\s*(.*)\\s*$"
+          }
+        }
+      ],
+      "description": [
+        {
+          "selector": "meta[name='description']",
+          "attribute": "content"
+        }
+      ],
+      "image": [
+        {
+          "selector": ".u-featured:not(:where(.h-cite, .h-card, .h-entry .h-entry) .u-featured)",
+          "attribute": "src"
+        },
+        {
+          "selector": ".u-photo:not(:where(.h-cite, .h-card, .h-entry .h-entry) .u-photo)",
+          "attribute": "src"
+        }
+      ]
+    },
+    "documentRecord": {
+      "s": {
+        "selector": "link[rel='canonical']",
+        "attribute": "href",
+        "postProcess": {
+          "method": "regex",
+          "params": "https?://([^/]+)"
+        }
+      },
+      "o": [
+        {
+          "selector": ".h-entry .u-author.h-card .p-name",
+          "attribute": "textContent",
+          "key": "author.name"
+        },
+        {
+          "selector": ".h-entry .u-author.h-card .u-photo",
+          "attribute": "src",
+          "key": "author.photo"
+        },
+        {
+          "selector": ".h-entry .u-author.h-card .u-url",
+          "attribute": "href",
+          "key": "author.url"
+        },
+        {
+          "selector": ".h-entry .e-content",
+          "attribute": "innerHtml",
+          "key": "content.html"
+        },
+        {
+          "selector": ".h-entry .e-content",
+          "attribute": "textContent",
+          "key": "content.text"
+        }
+      ]
+    },
+    "hashtag": {
+      "s": "source",
+      "o": [
+        {
+          "selector": ".h-entry article .p-category:not(:where(.h-cite, .h-card, .h-entry .h-entry) .p-category)",
+          "attribute": "textContent",
+          "postProcess": {
+            "method": "regex",
+            "params": "^\\s*(.*)\\s*$"
+          }
+        }
+      ]
+    },
+    "bookmark": {
+      "s": "source",
+      "o": [
+        {
+          "selector": ".h-entry article .h-cite.u-bookmark-of a.u-url",
+          "attribute": "href"
+        }
+      ]
+    },
+    "mention": {
+      "s": "source",
+      "o": [
+        {
+          "selector": ".h-entry article .h-cite.u-in-reply-to",
+          "attribute": "textContent"
+        }
+      ]
+    }
+  }
+}

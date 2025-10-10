@@ -5,7 +5,7 @@ layout: page
 
 <style>
     /*double selector for specificity*/
-    .badge.badge { height: calc(15rem/16); width: auto; }
+    .badge.badge { height: 1.25rem; width: auto; }
 </style>
 
 ## About this Site
@@ -31,6 +31,7 @@ See <a href="/posts/tags/site changes/" class="tag chip-item">site changes</a> f
 <a href="/feed.xml"><img src="https://web.badges.world/badges/feeds/atom.png" alt="Atom" class="badge"></a>
 <a href="https://archiveready.com/check?url=https://www.ciccarello.me/"><img src="https://archiveready.com/img/archiveready-badge.png" alt="Website Archivability Testing" class="badge"></a>
 <a href="https://app.netlify.com/sites/mystifying-brahmagupta-67e639/deploys"><img src="https://api.netlify.com/api/v1/badges/af8cd9bd-b0a4-417f-bfa1-d11e6d8ed0f7/deploy-status" alt="Netlify Status" class="badge"></a>
+<a href="https://octothorp.es"><img src="https://octothorp.es/badge.png" alt="Badge for the Octothorpes main ring" class="badge" /></a>
 
 The code for this website is on [GitHub](https://github.com/aciccarello/ciccarello.me) and deployed to [Netlify](https://www.netlify.com/).
 Posts are saved as markdown files and created manually, using [Decap CMS](https://decapcms.org/), or via an [Indiekit](https://getindiekit.com/) micropub server.
@@ -47,6 +48,7 @@ Other icons (like logos) are made by [Pixel perfect](https://icon54.com/) from [
 Webmention receiving is handled by [webmention.io](https://webmention.io/) while rendering responses is done client-side with code modified from [webmention.js](https://github.com/PlaidWeb/webmention.js).
 Webmentions are automatically sent via a fork of [webmention.app](https://webmention.app/) triggered during the static site build by [netlify-plugin-webmentions](https://github.com/CodeFoodPixels/netlify-plugin-webmentions).
 Interactions with the fediverse are translated to and from ActivityPub via [Bridgy Fed](https://fed.brid.gy/).
+Webmentions are also used to syndicate posts to <a href="https://octothorp.es">Octothorp.es</a>.
 
 This site currently uses CloudFlare analytics due to its better privacy policy and limited performance impact. Previously I've used GoatCounter.
 
