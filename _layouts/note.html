@@ -43,7 +43,7 @@ layout: default
 		<div class="post-content e-content">
 			{{ content }}
 		</div>
-		<a href="https://octothorp.es/?uri={{ absolutePostUrl }}&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json" class="u-octothorpe" aria-hidden="true" tabindex="-1"></a>
+		<a href="https://octothorp.es/?uri={{ page.url | addBaseUrl }}&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json" class="u-octothorpe" aria-hidden="true" tabindex="-1"></a>
 		<a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>
 		<link rel="alternate" type="application/activity+json" href="https://fed.brid.gy/r/{{page.url | addBaseUrl}}">
 		{% include "syndication.html" %}
