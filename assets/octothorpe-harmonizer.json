@@ -12,8 +12,7 @@
           "selector": ".h-entry article .p-name:not(:where(.h-cite, .h-card, .h-entry .h-entry) .p-name)",
           "attribute": "textContent",
           "postProcess": {
-            "method": "regex",
-            "params": "^\\s*(.*)\\s*$"
+            "method": "trim"
           }
         }
       ],
@@ -47,7 +46,10 @@
         {
           "selector": ".h-entry .u-author.h-card .p-name",
           "attribute": "textContent",
-          "key": "author.name"
+          "key": "author.name",
+          "postProcess": {
+            "method": "trim"
+          }
         },
         {
           "selector": ".h-entry .u-author.h-card .u-photo",
@@ -67,7 +69,10 @@
         {
           "selector": ".h-entry .e-content",
           "attribute": "textContent",
-          "key": "content.text"
+          "key": "content.text",
+          "postProcess": {
+            "method": "trim"
+          }
         }
       ]
     },
@@ -78,8 +83,7 @@
           "selector": ".h-entry article .p-category:not(:where(.h-cite, .h-card, .h-entry .h-entry) .p-category)",
           "attribute": "textContent",
           "postProcess": {
-            "method": "regex",
-            "params": "^\\s*(.*)\\s*$"
+            "method": "trim"
           }
         }
       ]
@@ -98,7 +102,10 @@
       "o": [
         {
           "selector": ".h-entry article .h-cite.u-in-reply-to",
-          "attribute": "textContent"
+          "attribute": "textContent",
+          "postProcess": {
+            "method": "trim"
+          }
         }
       ]
     }
