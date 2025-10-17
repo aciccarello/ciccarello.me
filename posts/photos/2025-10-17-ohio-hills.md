@@ -5,6 +5,7 @@ tags:
   - Ohio
   - nature
   - travel
+  - personal
 image: /assets/img/2025-ohio-bridges.jpg
 image_alt: Light filtering through trees down to a small canyon with a stream and an artistic cement bridge on pillars as a longer bridge stretches above.
 ---
