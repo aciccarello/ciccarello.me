@@ -2,7 +2,7 @@ import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 
 /**
- * Custom plugin configuration for recipe template helpers
+ * Custom plugin configuration for trip template helpers
  *
  * @param   {import("@11ty/eleventy").UserConfig}  eleventyConfig  Eleventy config object
  *
