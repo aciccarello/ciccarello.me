@@ -5,8 +5,8 @@ title: 'Anniversary in Italy'
 slug: 'italy'
 tags:
   - Italy
-image: /assets/img/2019-italy-amalfi-coast-boat-flag.jpg
-image_alt: Italian flag waving on the end of a boat with coastline in background.
+image: /assets/img/2019-italy-positano-view-from-road.jpg
+image_alt: Buildings built into a coastal hillside with a large, tiled church dome below 
 locations: 
   - lat: 33.942153
     long: -118.4036052

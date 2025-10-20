@@ -4,8 +4,8 @@ title: 'Mexico Double Friends Trips'
 slug: 'mexico'
 tags:
   - Mexico
-image: /assets/img/2024-mexico-guanajuato-temple.jpg
-image_alt: Looking up at an ornate church made of redish stone and a clear sky.
+image: /assets/img/2024-mexico-oaxaca-santo-domingo-day.jpg
+image_alt: A large tan stone church in bright light against a blue sky with white clouds.
 locations: 
   - lat: 32.5408452
     long: -116.9716281
