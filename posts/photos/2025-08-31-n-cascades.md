@@ -8,6 +8,12 @@ tags:
   - landscape
 image: /assets/img/2025-wa-cascades-lake.jpg
 image_alt: Looking down on a light blue lake surrounded on all sides by evergreen-covered slopes with a mountain peak visible in the distance.
+locations:
+  - lat: 48.710
+    long: -121.097
+    title: 'North Cascades National Park'
+    date: 2025-08-30T12:00:00
+    type: attraction
 ---
 
 We made the trek to North Cascades National Park this weekend.

@@ -6,6 +6,12 @@ tags:
   - nature
 image: /assets/img/2025-wa-aqua-jellies.jpg
 image_alt: Jellyfish floating in a dark, blue aquarium.
+locations:
+  - lat: 47.608
+    long: -122.343
+    title: 'Seattle Aquarium'
+    date: 2025-09-05T15:00:00
+    type: attraction
 ---
 
 We went to the Seattle Aquarium for the first time last week.

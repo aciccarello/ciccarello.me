@@ -36,7 +36,7 @@ export default function (eleventyConfig) {
 						.map((t) => collectionApi.getFilteredByTag(t))
 						.flat(),
 				).filter(
-					(post) => post.date > startDate && post.date < endDate,
+					(post) => post.date >= startDate && post.date <= endDate,
 				);
 				// Combine the top level trip locations with child posts
 				const combinedLocations = relatedPosts
