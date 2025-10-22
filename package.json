@@ -38,6 +38,7 @@
   "type": "module",
   "dependencies": {
     "@zachleat/pagefind-search": "^1.0.3",
+    "7.css": "^0.21.1",
     "decap-cms": "^3.8.4",
     "leaflet": "^1.9.4",
     "webmention.js": "^0.5.5"

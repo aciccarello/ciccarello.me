@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.has-space {
+	padding: var(--w7-w-space);
+}
+
+.background {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	position: absolute;
+
+	/* Emulate Windows 7 wallpaper with gradient */
+	/* Use a radial gradient to simulate the central light source */
+	background: radial-gradient(
+		circle at 30% 70%,
+		/* 1. Center Light (Very light, airy cyan/blue) */ #e1f5fe 0%,
+		/* 2. Mid-Tone (Bright Sky Blue/Cyan) */ #64b5f6 40%,
+		/* 3. Outer Edge (Deep Navy Blue/Indigo) */ #003366 85%,
+		/* 4. Farthest Edge (Very dark navy) */ #001a33 100%
+	);
+
+	/* You can add a subtle filter for a more 'glowy' or 'digital' look */
+	filter: brightness(1.1) contrast(1.1);
+}
+
+.window {
+	margin: var(--w7-w-space);
+	box-sizing: border-box;
+	resize: both;
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+
+	&.fullscreen {
+		margin: 0;
+		height: 100vh;
+		resize: none;
+	}
+
+	& > .window-body {
+		flex-grow: 1;
+		overflow: auto;
+	}
+}

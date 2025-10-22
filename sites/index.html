@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Mini Sites - Anthony Ciccarello</title>
+		<link rel="stylesheet" href="/assets/css/7.css"/>
+		<link rel="stylesheet" href="./directory/index.css"/>
+		<script src="./directory/index.js"></script>
+	</head>
+	<body>
+		<div class="background">
+			<div class="window glass active" style="max-width: 100%">
+				<header class="title-bar">
+					<div class="title-bar-text">Mini Sites</div>
+					<div class="title-bar-controls">
+						<button aria-label="Minimize"></button>
+						<button aria-label="Restore"></button>
+						<button aria-label="Maximize"></button>
+						<button aria-label="Close"></button>
+					</div>
+				</header>
+				<div class="window-body">
+					<ul role="menubar" class="can-hover">
+						<li role="menuitem" tabindex="0" aria-haspopup="true">
+    File
+    <ul role="menu">
+								<li role="menuitem">
+									<a href="#menubar">
+          Open <span>Ctrl+O</span>
+									</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">
+          Save <span>Ctrl+S</span>
+									</a>
+								</li>
+								<li role="menuitem" class="has-divider">
+									<a href="#menubar">
+          Save As... <span>Ctrl+Shift+S</span>
+									</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">Exit</a>
+								</li>
+							</ul>
+						</li>
+						<li role="menuitem" tabindex="0" aria-haspopup="true">
+    Edit
+    <ul role="menu">
+								<li role="menuitem">
+									<a href="#menubar">Undo</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">Copy</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">Cut</a>
+								</li>
+								<li role="menuitem" class="has-divider">
+									<a href="#menubar">Paste</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">Delete</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">Find...</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">Replace...</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">Go to...</a>
+								</li>
+							</ul>
+						</li>
+						<li role="menuitem" tabindex="0" aria-haspopup="true">
+    View
+    <ul role="menu">
+								<li role="menuitem" tabindex="0" aria-haspopup="true">
+        Zoom
+        <ul role="menu">
+										<li role="menuitem" class="zoom-in">
+											<button>Zoom In <span>Ctrl+-</span></button>
+										</li>
+										<li role="menuitem" class="zoom-out">
+											<button>Zoom Out <span>Ctrl++</span></button>
+										</li>
+										<li role="menuitem" class="zoom-reset">
+											<button>Reset Zoom <span>Ctrl+0</span></button>
+										</li>
+									</ul>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">Status Bar</a>
+								</li>
+							</ul>
+						</li>
+						<li role="menuitem" tabindex="0" aria-haspopup="true">
+    Help
+    <ul role="menu">
+								<li role="menuitem">
+									<a href="#menubar">View Help</a>
+								</li>
+								<li role="menuitem">
+									<a href="#menubar">About</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<main class="window-contents has-space">
+						<p>This is a space for fun one-off pages on my site that don't conform to the main layout.</p>
+						<h2>Pages</h2>
+						<ul class="tree-view has-collapse-button has-connector has-container">
+							<li>
+								<details open>
+									<summary>External Sites</summary>
+									<ul>
+										<li>
+											<a href="https://denver.ciccarello.me/" target="_blank">Denver's Website</a>
+										</li>
+										<li>
+											<a href="https://bekah.ciccarello.me/" target="_blank">Bekah's Website</a>
+										</li>
+										<li>
+											<a href="https://start.ciccarello.me/" target="_blank">Browser Start Page</a>
+										</li>
+									</ul>
+								</details>
+							</li>
+							<li>
+								<details>
+									<summary>Internal Sites</summary>
+									<ul>
+										<li>
+											TODO: Make my first <a href="https://sundaysites.cafe/" target="_blank">Sunday Site</a>
+										</li>
+									</ul>
+								</details>
+							</li>
+						</ul>
+					</main>
+				</div>
+
+				<footer class="status-bar">
+					<p class="status-bar-field">Page theme by <a href="https://khang-nd.github.io/7.css/">win7.css</a>
+					</p>
+					<p class="status-bar-field">Window width: <span id="width-output">0</span>px</p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
