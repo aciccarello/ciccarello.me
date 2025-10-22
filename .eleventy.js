@@ -30,11 +30,13 @@ export default async function (eleventyConfig) {
 		'pinterest-60576.html',
 		'mywotc6b2477c57f015eaa645.html',
 		'BingSiteAuth.xml',
+		'sites',
 	].map((path) => [path, path]);
 	const npmPackages = [
 		['webmention.js/static/webmention', 'assets/js/webmention.js'],
 		['decap-cms', 'assets/js/decap-cms.js'],
 		['@zachleat/pagefind-search', 'assets/js/pagefind-search.js'],
+		['7.css/dist/7.css', 'assets/css/7.css'],
 	].map(([packagePath, dest]) => [require.resolve(packagePath), dest]);
 
 	// addPassthroughCopy takes object mapping source -> dest
