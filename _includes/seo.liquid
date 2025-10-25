@@ -35,6 +35,11 @@
 {%- if image %}
 <meta property="og:image" content="{{ image | addBaseUrl }}" />
 {%- endif %}
+{%- if collectionData.data.tags %}
+    {%- for tag in collectionData.data.tags -%}
+        <link rel="octo:octothorpes" href="{{ tag | downcase }}" >
+    {%- endfor %}
+{%- endif %}
 <script type="application/ld+json">
 {% json %}
 {
