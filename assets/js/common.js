@@ -64,7 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initializeLightbox() {
 	const images = Array.from(
-		document.querySelectorAll('img:not(a img):not([src*="gravatar.com"])'),
+		// Only select images from the /assets/img/ directory of my site
+		// Exclude images in links since those usually point to a post
+		document.querySelectorAll(`img[src^="/assets/img/"]:not(a img)`),
 	);
 
 	if (images.length > 1) {
