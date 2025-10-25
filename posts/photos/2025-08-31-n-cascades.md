@@ -9,11 +9,26 @@ tags:
 image: /assets/img/2025-wa-cascades-lake.jpg
 image_alt: Looking down on a light blue lake surrounded on all sides by evergreen-covered slopes with a mountain peak visible in the distance.
 locations:
-  - lat: 48.710
-    long: -121.097
+  - lat: 48.592
+    long: -121.375
     title: 'North Cascades National Park'
     date: 2025-08-30T12:00:00
     type: attraction
+  - lat: 48.676
+    long: -121.239
+    title: 'Ladder Creek Falls'
+    date: 2025-08-30T12:00:00
+    type: photo
+  - lat: 48.710
+    long: -121.097
+    title: 'Diablo Lake'
+    date: 2025-08-30T13:00:00
+    type: photo
+  - lat: 48.518
+    long: -120.646
+    title: 'Washington Pass'
+    date: 2025-08-30T14:00:00
+    type: photo
 ---
 
 We made the trek to North Cascades National Park this weekend.
