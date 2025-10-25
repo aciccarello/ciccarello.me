@@ -17,14 +17,19 @@ image_caption: Photo by Bekah Ciccarello
   }
 </style>
 
-## What We're Doing now
-
-In 2024 we transferred our license to a different foster care agency we feel better aligns with our values and we can trust to provide solid support. We are currently waiting for placement. If you have any questions you can always [reach out to me directly](/#connect).
-
 ## Our Foster Care Journey
 
-We initially started the process to become licensed resource parent license in the middle of 2020. After a series of delays, we [finally were licensed](/blog/2021/07/26/we're-becoming-foster-parents/) in San Diego California on July 20th, 2021. We had our [first foster care placement](/blog/2021/10/03/we've-started-our-first-placement/) mid September 2021 of a five-year-old boy and a one-year-old girl and they [returned](/blog/2022/01/30/wrapping-up-our-first-fostering-experience/) to live with family members 6 weeks later. In 2024 we transferred our license to a different foster care agency we feel better aligns with our values and we can trust to provide solid support. For more information, check out our [foster care posts](/posts/tags/foster%20care).
+We initially started the process to become licensed resource parent license in the middle of 2020.
+After a series of delays, we [finally were licensed](/blog/2021/07/26/we're-becoming-foster-parents/) in San Diego California on July 20th, 2021.
+We had our [first foster care placement](/blog/2021/10/03/we've-started-our-first-placement/) mid September 2021 of a five-year-old boy and a one-year-old girl and they [returned](/blog/2022/01/30/wrapping-up-our-first-fostering-experience/) to live with family members 6 weeks later.
+In 2024 we transferred our license to a different foster care agency we feel better aligns with our values and we can trust to provide solid support.
+We encountered several delays but eventually were approved.
+Due to a combination of concerns, we eventually decided to suspend our license in 2025.
+We still encourage anyone interested to get involved as a foster parent, court appointed special advocate (CASA), or other programs helping families in need.
+For more information, check out our [foster care posts](/posts/tags/foster%20care).
+If you have any questions you can always [reach out to me directly](/#connect).
 
+<!--
 ## How You Can Help Us
 
 - Pray that we can use this transitional time to best prepare ourselves and our home for future foster kids
@@ -33,6 +38,7 @@ We initially started the process to become licensed resource parent license in t
 - Help us make our home more kid friendly with items from our [registry](https://www.babylist.com/ciccarello-foster-care)
 - If you live nearby, let us know if you're able to come over to baby sit or even just play with our future foster kids
 - Be patient with us and our children when we deal with hard days or are unable to attend social engagements
+-->
 
 ## How You Can Help Foster Kids
 
