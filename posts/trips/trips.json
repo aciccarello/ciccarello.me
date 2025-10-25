@@ -4,5 +4,6 @@
   "back_button": "/travel/",
   "permalink": "/travel/{{ page.date | date: '%Y' }}/{{ slug | default : title | slugify}}/",
   "dateFormat": "month",
+  "excludeFromMainFeed": true,
   "tags": ["travel"]
 }
