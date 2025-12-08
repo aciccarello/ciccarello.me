@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Bookmarklet Formatter</title>
+		<link rel="stylesheet" href="https://unpkg.com/bamboo.css">
+		<style>
+			#code-input {
+				font-family: var(--b-font-mono, monospace);
+			}
+			#bookmarklet-link {
+				display: block;
+				margin: 1em 0;
+				word-break: break-all;
+			}
+			.saved-link {
+				word-break: break-all;
+			}
+			.bookmarklet-title {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Anthony's Bookmarklet Tool</h1>
+		<h2>Saved Bookmarklets</h2>
+		<ul id="saved-bookmarklets">
+			<li>
+				<strong class="bookmarklet-title">Speed up videos</strong>:
+			<a class="saved-link" href="javascript:(function setPlaybackRateInAllFrames(win){try{const mediaElements=win.document.querySelectorAll('video,audio');mediaElements.forEach(el=>{el.playbackRate=2;});}catch(e){console.warn('Could not access frame:',e);}for(const frame of Array.from(win.frames)){try{setPlaybackRateInAllFrames(frame);}catch(e){console.warn('Error accessing nested frame:',e);}}})(window);">Faster Videos</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">Bookmark via Indiekit</strong>:
+			<a class="saved-link" href="javascript:(function() {var title = document.getElementsByTagName('title')[0].innerHTML;name = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection && document.selection.type != 'Control') {selection = document.selection.createRange().text;}content = encodeURIComponent(selection);new_window=window.open('https://indiekit.ciccarello.me/share/bookmarklet?name='+name+'&content='+content+'&url='+encodeURIComponent(document.location.href),'Sharer','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=578,height=720,location=0');})();">Bookmark via Indiekit</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">Find on Internet Archive</strong>:
+			<a class="saved-link" href="javascript:location.href='https://web.archive.org/web/*/'+document.location.href.replace(/\/$/, '');">Find on Internet Archive</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">Save to Internet Archive</strong>:
+			<a class="saved-link" href="javascript:void(window.open('https://web.archive.org/save/'+location.href));">Save to Internet Archive</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">Parse Microformats (node)</strong>:
+			<a class="saved-link" href="javascript:(function()%7Bdocument.location.href%20%3D%20'https%3A%2F%2Fnode.microformats.io%2F%3Furl%3D'%20%2B%20encodeURIComponent(document.location.href)%3B%7D)()%3B">Parse mf2 (js)</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">Parse Microformats (python)</strong>:
+			<a class="saved-link" href="javascript:(function()%7Bdocument.location.href%20%3D%20'https%3A%2F%2Fpython.microformats.io%2F%3Fparser%3Dhtml5lib%26url%3D'%20%2B%20encodeURIComponent(document.location.href)%3B%7D)()%3B">Parse mf2 (py)</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">Supports Webmentions</strong>:
+			<a class="saved-link" href="javascript:(async%20function()%7B%0A%20%20const%20support%20=%20%22Page%20supports%20webmentions!%22;%0A%20%20const%20noSupport%20=%20%22Page%20does%20not%20support%20webmentions%20:(%22;%0A%0A%20%20%0A%20%20let%20d%20=%20document.createElement('dialog');%0A%20%20document.getElementsByTagName('body')%5B0%5D.appendChild(d);%0A%0A%20%20%0A%20%20d.addEventListener('close',%20()%20=%3E%20%7B%0A%20%20%20%20d.remove();%0A%20%20%7D);%0A%0A%20%20%0A%20%20let%20content%20=%20document.createElement('p');%0A%20%20let%20close%20=%20document.createElement('form');%0A%20%20close.method%20=%20'dialog';%0A%20%20close.innerHTML%20=%20%22%3Cbutton%3EClose%3C/button%3E%22;%0A%0A%20%20%0A%20%20d.appendChild(content);%0A%20%20d.appendChild(close);%0A%20%20%0A%20%20%0A%20%20content.innerHTML%20=%20%22Checking%20page%20source%20for%20%3Ccode%3Elink%5Brel~=webmention%5D%3C/code%3E%20or%20%3Ccode%3Ea%5Brel~=webmention%5D%3C/code%3E%E2%80%A6%22;%0A%20%20d.showModal();%0A%0A%20%20%0A%20%20%0A%20%20%0A%20%20%0A%0A%20%20%0A%20%20let%20els%20=%20document.querySelectorAll('link%5Brel~=webmention%5D,%20a%5Brel~=webmention%5D');%0A%0A%20%20%0A%20%20if%20(els.length%20%3E%200)%20%7B%0A%20%20%20%20content.innerHTML%20+=%20'%3Cbr/%3EPage%20source%20contains%20%3Ccode%3Elink%5Brel~=webmention%5D%3C/code%3E%20or%20%3Ccode%3Ea%5Brel~=webmention%5D%3C/code%3E!%3Cbr/%3E%3Cbr/%3E'%20+%20support;%0A%20%20%20%20return;%0A%20%20%7D%0A%0A%20%20%0A%20%20content.innerHTML%20+=%20'%3Cbr/%3EPage%20source%20does%20not%20contain%20%3Ccode%3Elink%5Brel~=webmention%5D%3C/code%3E%20or%20%3Ccode%3Ea%5Brel~=webmention%5D%3C/code%3E.%3Cbr/%3E%3Cbr/%3EChecking%20page%20for%20Link%20HTTP%20header%E2%80%A6';%0A%0A%20%20%0A%20%20let%20location%20=%20window.location;%0A%0A%20%20fetch(location).then((response)%20=%3E%20%7B%0A%20%20%20%20%0A%20%20%20%20if%20(!response.headers.has(%22Link%22))%20%7B%0A%20%20%20%20%20%20content.innerHTML%20+=%20'%3Cbr/%3EPage%20does%20not%20have%20a%20Link%20HTTP%20header.%3Cbr/%3E%3Cbr/%3E'%20+%20noSupport;%0A%20%20%20%20%20%20return;%0A%20%20%20%20%7D%0A%0A%20%20%20%20%0A%20%20%20%20let%20links%20=%20response.headers.get(%22Link%22).split(%22,%22);%0A%0A%20%20%20%20%0A%20%20%20%20if%20(links.length%20%3C=%200)%20%7B%0A%20%20%20%20%20%20content.innerHTML%20+=%20'%3Cbr/%3ELink%20HTTP%20header%20is%20empty.%3Cbr/%3E%3Cbr/%3E'%20+%20noSupport;%0A%20%20%20%20%20%20return;%0A%20%20%20%20%7D%0A%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20for%20(let%20link%20of%20links)%20%7B%0A%20%20%20%20%20%20if(/;%5Cs*rel=%5B%22'%5D?webmention%5B%22'%5D?/.test(link))%20%7B%0A%20%20%20%20%20%20%20%20content.innerHTML%20+=%20'%3Cbr/%3EPage%20has%20a%20Link%20HTTP%20header%20with%20%60rel=%22webmention%22%60.%3Cbr/%3E%3Cbr/%3E'%20+%20support;%0A%20%20%20%20%20%20%20%20return;%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20%0A%20%20%20%20content.innerHTML%20+=%20'%3Cbr/%3EPage%20does%20not%20have%20a%20Link%20HTTP%20header%20with%20%60rel=%22webmention%22%60.%3Cbr/%3E%3Cbr/%3E'%20+%20noSupport;%0A%20%20%7D).catch(e%20=%3E%20%7B%0A%20%20%20%20%0A%20%20%20%20content.innerHTML%20+=%20%22%3Cbr/%3E%3Cbr/%3EError%20checking%20for%20Link%20header:%20%22%20+%20e;%0A%20%20%7D);%7D)()">Supports Webmentions?</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">google search selected text</strong>:
+			<a class="saved-link" href="javascript:(function(){var s=window.getselection().tostring();if(s){window.open('https://www.google.com/search?q='+encodeuricomponent(s));}else{alert('no text selected!');}})();">google search</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">Toggle Page Colors</strong>:
+			<a class="saved-link" href="javascript:(function(){document.body.style.filter=document.body.style.filter?'':'invert(1)';})();">Toggle Colors</a>
+			</li>
+			<li>
+				<strong class="bookmarklet-title">Show All Passwords</strong>:
+			<a class="saved-link" href="javascript:(function(){Array.from(document.querySelectorAll('input[type=password]')).forEach(i=>i.type='text');})();">Show Passwords</a>
+			</li>
+		</ul>
+		<p>
+			<a href="https://github.com/aciccarello/ciccarello.me/blob/main/sites/bookmarklets/index.html" target="_blank" rel="noopener">
+				Edit this file on GitHub
+			</a>
+		</p>
+		<h2>Bookmarklet Editor</h2>
+		<label for="code-input">Paste your JavaScript code:</label>
+		<textarea id="code-input" rows="20" placeholder="Enter JavaScript code here..."></textarea>
+		<br>
+		<button id="format-btn">Format as Bookmarklet</button>
+		<button id="pretty-format-btn">Pretty Format Code</button>
+		<a id="bookmarklet-link" href="#" style="display:none;" draggable="true">Drag this link to your bookmarks bar</a>
+
+		<script type="module">
+			import * as prettier from "https://unpkg.com/prettier@3.7.3/standalone.mjs";
+			import * as prettierPluginBabel from "https://unpkg.com/prettier@3.7.3/plugins/babel.mjs";
+			import * as prettierPluginEstree from "https://unpkg.com/prettier@3.7.3/plugins/estree.mjs";
+
+			document.addEventListener('DOMContentLoaded', () => {
+				addBookmarkTitleLinks();
+			});
+
+			function addBookmarkTitleLinks() {
+				document
+					.querySelectorAll('.bookmarklet-title')
+					.forEach((strongEl) => strongEl.addEventListener('click', () => {
+						var link = strongEl
+							.parentElement
+							.querySelector('.saved-link');
+						if (link && link.href.startsWith('javascript:')) {
+							// Extract JS code from href
+							var jsCode = decodeURIComponent(link.href.replace('javascript:', ''));
+							// Run the code
+							document
+								.getElementById('code-input')
+								.value = jsCode;
+						}
+					}));
+			}
+
+			function toBookmarklet(code) {
+				// Remove newlines, trim, and wrap in IIFE if not already
+				code = code.trim();
+				if (!code.startsWith('(function') && !code.startsWith('(()=>')) {
+					code = `(function(){${code}})();`;
+				}
+				// Minify: remove line breaks and extra spaces
+				code = code
+					.replace(/\s*([\{\};,])\s*/g, '$1')
+					.replace(/\n/g, '')
+					.replace(/\s{2,}/g, ' ');
+				return 'javascript:' + encodeURIComponent(code);
+			}
+
+			document
+				.getElementById('format-btn')
+				.onclick = function () {
+					const code = document
+						.getElementById('code-input')
+						.value;
+					const bookmarklet = toBookmarklet(code);
+					document
+						.getElementById('bookmarklet-link')
+						.style
+						.display = 'block';
+					document
+						.getElementById('bookmarklet-link')
+						.href = bookmarklet;
+					document
+						.getElementById('bookmarklet-link')
+						.textContent = 'Drag this link to your bookmarks bar';
+				};
+
+			document
+				.getElementById('pretty-format-btn')
+				.onclick = async function () {
+					const code = document
+						.getElementById('code-input')
+						.value;
+					try {
+						const formatted = await prettier.format(code, {
+							parser: "babel",
+							plugins: [
+								prettierPluginBabel, prettierPluginEstree
+							],
+							singleQuote: true,
+							semi: true
+						});
+						document
+							.getElementById('code-input')
+							.value = formatted;
+					} catch (e) {
+						alert('Could not format code: ' + e.message);
+					}
+				};
+		</script>
+	</body>
+</html>
