@@ -39,7 +39,7 @@
   "dependencies": {
     "@zachleat/pagefind-search": "^1.0.3",
     "7.css": "^0.21.1",
-    "decap-cms": "^3.8.4",
+    "decap-cms": "^3.9.0",
     "leaflet": "^1.9.4",
     "webmention.js": "^0.5.5"
   },
@@ -49,30 +49,30 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0",
     "@aciccarello/netlify-plugin-webmentions": "^1.1.1",
-    "@netlify/plugin-lighthouse": "^6.0.1",
+    "@netlify/plugin-lighthouse": "^6.0.4",
     "@paulrobertlloyd/mf2tojf2": "^2.4.0",
-    "decap-server": "^3.3.1",
+    "decap-server": "^3.4.0",
     "dotenv": "^17.2.3",
     "jest": "^30.2.0",
-    "lint-staged": "^16.2.5",
+    "lint-staged": "^16.2.7",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.3.1",
     "markdown-it-cooklang": "^0.4.0",
     "markdown-it-html5-media": "^0.8.0",
     "markdown-it-image-figures": "^2.1.1",
     "microformats-parser": "^2.0.4",
-    "netlify-cli": "^23.9.2",
+    "netlify-cli": "^23.12.2",
     "netlify-plugin-minify-html": "^0.3.1",
     "node-fetch": "^3.3.2",
     "node-html-parser": "^7.0.1",
     "pagefind": "^1.4.0",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.3",
     "rss-parser": "^3.13.0",
     "slugify": "^1.6.6"
   },
   "optionalDependencies": {
     "pa11y-ci": "^4.0.1",
-    "sharp": "^0.34.4"
+    "sharp": "^0.34.5"
   },
   "overrides": {
     "netlify-plugin-minify-html": {
