@@ -26,6 +26,7 @@ describe('microformats', () => {
     'reply',
     'replyToCheckin',
     'multipleUpdates',
+    'rsvp',
   ];
 
   it('should have an h-card on the homepage', async () => {

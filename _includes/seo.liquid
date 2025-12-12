@@ -35,11 +35,6 @@
 {%- if image %}
 <meta property="og:image" content="{{ image | addBaseUrl }}" />
 {%- endif %}
-{%- if collectionData.data.tags %}
-    {%- for tag in collectionData.data.tags -%}
-        <link rel="octo:octothorpes" href="{{ tag | downcase }}" >
-    {%- endfor %}
-{%- endif %}
 <script type="application/ld+json">
 {% json %}
 {
@@ -59,7 +54,7 @@
         "url": "https://www.ciccarello.me"
     },
     {%- endif -%}
-    "headline":"{{defaultedTitle}}",
+    "headline":"{{defaultedTitle | strip_html }}",
     {% if date %}
     {% comment %}check for date frontmatter but use parsed page.date {% endcomment %}
     "datePublished": "{{ page.date | formatMachineDate }}",

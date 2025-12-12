@@ -1,25 +1,27 @@
 {%- if responseData %}
-<section class="{{ responseData.class }} reply-context">
+<section class="reply-context">
 	{{responseData.actionDescription}}
-	<a href="{{responseData.url}}" class="u-url">{{responseData.postDescription}}</a>
-	{%- if responseData.author %} by <span class="p-author h-card">
-			{%- if responseData.author.url %}
-				<a href="{{responseData.author.url}}" class="u-url p-name">{{ responseData.author.name }}</a>
-			{%- else -%}
-				{{ responseData.author.name }}
-			{%- endif -%}
-		</span>
-	{%- endif %}
-	{%- if responseData.content or responseData.photo%}: <blockquote>
-		{%- if responseData.photo %}
-		{%- assign photo = responseData.photo | first | default: responseData.photo  %}
-		{%- assign photoUrl = photo.value | default: photo %}
-		<img class="u-photo" src="{{photoUrl}}" {% if photo.alt %}alt="{{photo.alt}}"{% endif %} >
+	<span class="{{ responseData.class }}">
+		<a href="{{responseData.url}}" class="u-url">{{responseData.postDescription}}</a>
+		{%- if responseData.author %} by <span class="p-author h-card">
+				{%- if responseData.author.url %}
+					<a href="{{responseData.author.url}}" class="u-url p-name">{{ responseData.author.name }}</a>
+				{%- else -%}
+					{{ responseData.author.name }}
+				{%- endif -%}
+			</span>
 		{%- endif %}
-		{%- if responseData.content %}
-		<p class="p-content">{{ responseData.content | newline_to_br }}</p>
+		{%- if responseData.content or responseData.photo%}: <blockquote>
+			{%- if responseData.photo %}
+			{%- assign photo = responseData.photo | first | default: responseData.photo  %}
+			{%- assign photoUrl = photo.value | default: photo %}
+			<img class="u-photo" src="{{photoUrl}}" {% if photo.alt %}alt="{{photo.alt}}"{% endif %} >
+			{%- endif %}
+			{%- if responseData.content %}
+			<p class="p-content">{{ responseData.content | newline_to_br }}</p>
+			{%- endif %}
+		</blockquote>
 		{%- endif %}
-	</blockquote>
-	{%- endif %}
+	</span>
 </section>
 {%- endif %}
