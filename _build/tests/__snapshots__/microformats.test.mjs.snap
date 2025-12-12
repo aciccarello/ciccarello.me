@@ -418,6 +418,7 @@ Originally published at liveloveliberia.blogspot.com on July 24, 2015.",
     },
   ],
   "name": "Getting An Introduction to Africa",
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/blog/2015/07/24/getting-an-introduction-to-africa/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
   "published": "2015-07-24",
   "summary": "Detour to Senegal",
   "syndication": [
@@ -452,6 +453,7 @@ exports[`microformats should have a(n) like 1`] = `
     "type": "cite",
     "url": "https://jamesg.blog/2023/01/03/coding-mental-health/",
   },
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/posts/2023/01/27/jamesg-blog-like/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
   "published": "2023-01-27T07:38:26Z",
   "type": "entry",
   "url": "https://www.ciccarello.me/posts/2023/01/27/jamesg-blog-like/",
@@ -485,6 +487,7 @@ So we want to check for the date matching the calculated lastUpdated value.
 The most recent update will get the microformats dt-updated class.
 The lastUpdated value is: 2023-10-23T06:43:26Z",
   },
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/posts/2023/10/23/updates-test/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
   "published": "2023-10-23T05:46:06Z",
   "type": "entry",
   "updated": "2023-10-23T06:43:26Z",
@@ -510,6 +513,7 @@ exports[`microformats should have a(n) note 1`] = `
     "html": "<p>I’ve added a new type of post to my site. This should open a whole world of possibilities integrating with <a href="http://indieweb.org">indieweb.org</a> standards!</p>",
     "text": "I’ve added a new type of post to my site. This should open a whole world of possibilities integrating with indieweb.org standards!",
   },
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/posts/2022/03/30/first-note/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
   "published": "2022-03-30T05:16:18Z",
   "type": "entry",
   "url": "https://www.ciccarello.me/posts/2022/03/30/first-note/",
@@ -541,6 +545,7 @@ exports[`microformats should have a(n) photo 1`] = `
       "url": "https://www.ciccarello.me/assets/img/2021-nor-cal-coast.jpg",
     },
   ],
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/photos/2021/06/21/initial-photo/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
   "photo": [
     {
       "alt": "Flowering bush in front of ocean coast.",
@@ -582,6 +587,7 @@ exports[`microformats should have a(n) photoLike 1`] = `
     "type": "cite",
     "url": "https://paulrobertlloyd.com/2023/157/p1/",
   },
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/posts/2023/07/30/summer-sunshine-like/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
   "published": "2023-07-30T20:07:10Z",
   "type": "entry",
   "url": "https://www.ciccarello.me/posts/2023/07/30/summer-sunshine-like/",
@@ -834,6 +840,7 @@ exports[`microformats should have a(n) reply 1`] = `
     "type": "cite",
     "url": "https://types.pl/@abnv/109360439631118847",
   },
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/posts/2022/11/17/bridgy-fed-instructions/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
   "published": "2022-11-17T18:41:14Z",
   "type": "entry",
   "url": "https://www.ciccarello.me/posts/2022/11/17/bridgy-fed-instructions/",
@@ -864,9 +871,62 @@ exports[`microformats should have a(n) replyToCheckin 1`] = `
     "type": "cite",
     "url": "https://david.shanske.com/2022/11/12/5771/",
   },
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/posts/2023/01/26/a-webmention-for-david/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
   "published": "2023-01-26T06:04:30Z",
   "type": "entry",
   "url": "https://www.ciccarello.me/posts/2023/01/26/a-webmention-for-david/",
+}
+`;
+
+exports[`microformats should have a(n) rsvp 1`] = `
+{
+  "author": {
+    "name": "Anthony Ciccarello",
+    "photo": "https://gravatar.com/avatar/ec965a0e16969d009a7d9807822ee81f?size=512?s=512",
+    "summary": "I'm a software engineer living in Southern California building cool things using JavaScript and other web technologies. I enjoy travel, disc sports, and spending time in nature.",
+    "type": "card",
+    "url": "https://www.ciccarello.me/",
+  },
+  "bridgy-fed": "https://fed.brid.gy/",
+  "category": "IndieWeb",
+  "content": {
+    "html": "<p>I’m really excited to be attending IWC SD for the third year in a row.
+It’s a fun time to discuss what you can do with personal websites.
+While there are lots of technical problems discussed, I have found that solving the online social/communal problems are just as important.
+Plus I think its a great group of people who attend.
+Looking forward to seeing you all!</p>",
+    "text": "I’m really excited to be attending IWC SD for the third year in a row.
+It’s a fun time to discuss what you can do with personal websites.
+While there are lots of technical problems discussed, I have found that solving the online social/communal problems are just as important.
+Plus I think its a great group of people who attend.
+Looking forward to seeing you all!",
+  },
+  "in-reply-to": {
+    "content": "The third ever IndieWebCamp San Diego with two days of independent open distributed web talks, breakouts, and hack sessions. Bring your website or setup a new domain on the spot.",
+    "type": "cite",
+    "url": "https://events.indieweb.org/2025/12/indiewebcamp-san-diego-2025-jhCO6w8CyVHg",
+  },
+  "octothorpe": "https://octothorp.es/?uri=https://www.ciccarello.me/posts/2025/12/12/rsvp-iwc-sd/&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json",
+  "published": "2025-12-12T07:23:56Z",
+  "rsvp": [
+    "yes",
+    {
+      "properties": {
+        "content": [
+          "The third ever IndieWebCamp San Diego with two days of independent open distributed web talks, breakouts, and hack sessions. Bring your website or setup a new domain on the spot.",
+        ],
+        "url": [
+          "https://events.indieweb.org/2025/12/indiewebcamp-san-diego-2025-jhCO6w8CyVHg",
+        ],
+      },
+      "type": [
+        "h-cite",
+      ],
+      "url": "https://events.indieweb.org/2025/12/indiewebcamp-san-diego-2025-jhCO6w8CyVHg",
+    },
+  ],
+  "type": "entry",
+  "url": "https://www.ciccarello.me/posts/2025/12/12/rsvp-iwc-sd/",
 }
 `;
 
@@ -988,6 +1048,14 @@ exports[`microformats should have h-entries on the posts page 1`] = `
       "summary": "We were looking for a higher protein breakfast that didn’t just taste like eggs and found this recipe from bbcgoodfood.com. We would like to try adding another scoop of protein powder to increase the protein content more but might need to adjust for consistency. Some other recipes we’ve looked at...",
       "type": "recipe",
       "url": "https://www.ciccarello.me/recipes/2024/01/15/protein-oat-pancakes/",
+    },
+    {
+      "author": "https://www.ciccarello.me/",
+      "category": "IndieWeb",
+      "published": "2025-12-12T07:23:56Z",
+      "summary": "I’m really excited to be attending IWC SD for the third year in a row. It’s a fun time to discuss what you can do with personal websites. While there are lots of technical problems discussed, I have found that solving the online social/communal problems are just as important. Plus...",
+      "type": "entry",
+      "url": "https://www.ciccarello.me/posts/2025/12/12/rsvp-iwc-sd/",
     },
   ],
   "name": "Test post list",

@@ -26,6 +26,7 @@ export default {
 			const bookmark = data['bookmark-of'];
 			const reply = data['in-reply-to'];
 			const eat = data['eat-of'];
+			const rsvp = data['rsvp'];
 			const url = reply || like || bookmark || eat;
 			if (url) {
 				const original = data.references?.find(
@@ -52,6 +53,11 @@ export default {
 				if (reply) {
 					actionDescription = 'Replying to';
 					className += ' u-in-reply-to';
+				}
+				// Not using else if because RSVP should also use in-reply-to
+				if (rsvp) {
+					actionDescription = `RSVP'd <span class="p-rsvp">${rsvp}</span> to`;
+					className += ' u-rsvp';
 				}
 				let nameTrimmed =
 					referenceData.name?.length > 100
