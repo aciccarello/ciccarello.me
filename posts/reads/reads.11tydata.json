@@ -1,3 +1,10 @@
 {
-  "layout": "note"
+  "permalink": "/reads/{{ slug | slugify }}/",
+  "layout": "article",
+  "type": "read",
+  "collectionName": "notes",
+  "back_button": "/reads/",
+  "dateFormat": "day",
+  "excludeFromMainFeed": false,
+  "eleventyExcludeFromCollectionsReason": "draft"
 }

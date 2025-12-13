@@ -6,6 +6,7 @@ import eleventySyntaxhighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight
 import eleventyLightningCssPlugin from '@11tyrocks/eleventy-plugin-lightningcss';
 import datePlugin from './_build/date.js';
 import markdownPlugin from './_build/markdown.js';
+import readsPlugin from './_build/reads.js';
 import recipePlugin from './_build/recipe.js';
 import tripsPlugin from './_build/trips.js';
 import i18nPlugin from './_build/i18n.js';
@@ -50,10 +51,11 @@ export default async function (eleventyConfig) {
 	 */
 	const collections = {
 		articles: 'posts/blog/*.md',
-		// recipes added in _build/recipe.js
 		notes: 'posts/{notes,listens}/*.md',
 		photos: 'posts/photos/*.md',
 		links: 'posts/{links,replies}/*.md',
+		// recipes added in _build/recipe.js
+		// reads added in _build/reads.js
 		reviews: 'posts/reviews/*.md',
 		activities: 'posts/{eats}/*.md',
 		posts: 'posts/**/*.md',
@@ -156,6 +158,7 @@ export default async function (eleventyConfig) {
 	});
 	eleventyConfig.addPlugin(datePlugin);
 	eleventyConfig.addPlugin(markdownPlugin);
+	eleventyConfig.addPlugin(readsPlugin);
 	eleventyConfig.addPlugin(recipePlugin);
 	eleventyConfig.addPlugin(tripsPlugin);
 

@@ -1,0 +1,50 @@
+---
+layout: default
+back_button: "/posts"
+permalink: "/reads/"
+title: "Reads"
+noindex: true
+eleventyExcludeFromCollectionsReason: "draft"
+---
+
+<div class="container h-feed">
+	<h1 class="post-list-heading p-name">
+		Reads
+	</h1>
+	{%- if collections.reads.started == empty -%}
+	<h2>Books I'm Reading</h2>
+	<ol class="read-list">
+		{%- for post in collections.reads.started -%}
+			<li>
+				{% include "post-card.html" post: post %}
+			</li>
+		{%- endfor -%}
+	</ol>
+	{%- endif -%}
+	<h2>Books I've Read</h2>
+	<ol class="read-list">
+		{%- for post in collections.reads.finished -%}
+			<li>
+				<a href="./{{post.slug}}">
+				<img src="{{post['read-of'].photo}}">
+				<p>{{post['read-of'].name}}</p>
+				<p>by {{post['read-of'].author}}</p>
+				<time class="dt-published" datetime="{{ post.date | formatMachineDate }}">
+					{{- post.date | formatHumanDate: post.data.dateFormat -}}
+				</time>
+			</a>
+			</li>
+		{%- endfor -%}
+	</ol>
+	{%- if collections.reads.wishlist == empty -%}
+	<h2>Books I'd Like to Read</h2>
+	<ol class="read-list">
+		{%- for post in collections.reads.wishlist -%}
+			<li>
+				{% include "post-card.html" post: post %}
+			</li>
+		{%- endfor -%}
+	</ol>
+	{%- endif -%}
+
+</div>

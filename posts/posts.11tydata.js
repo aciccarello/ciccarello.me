@@ -11,7 +11,7 @@ export default {
 		// Post kind data should override this if it's not this simple
 		typePlural: ({ type, typePlural }) => typePlural || pluralize(type),
 		lastUpdated:
-			/** @type {(data: {date: Date, updates?: {date: string}[]}) => Date} */ (
+			/** @type {(data: import("../_build/types").PostObjectData) => Date} */ (
 				(data) =>
 					!data.updates
 						? data.date

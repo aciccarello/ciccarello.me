@@ -1,9 +1,7 @@
 ---
-date: 2025-03-31T00:00:00.000Z
-eleventyExcludeFromCollections: true
-eleventyExcludeFromCollectionsReason: draft
-title: Finished Reading What My Bones Know by Stephanie Foo - ★★★★★
-slug: read-what-my-bones-know
+date: 2025-12-05T23:11:49.939Z
+title: Reviewig What My Bones Know by Stephanie Foo
+slug: review-what-my-bones-know
 read-of:
   type: cite
   name: What My Bones Know
