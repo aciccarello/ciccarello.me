@@ -5,6 +5,8 @@ in-reply-to: https://events.indieweb.org/2025/12/indiewebcamp-san-diego-2025-jhC
 rsvp: yes
 # TODO: Probably want to move these to a different folder
 type: rsvp
+# Hack to avoid needing a new collection for now
+typePlural: notes
 tags:
   - IndieWeb
 references:
