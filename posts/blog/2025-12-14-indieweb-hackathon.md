@@ -8,7 +8,7 @@ tags:
 image: /assets/img/2025-indiewebcamp-phone-book.jpg
 image_alt: An IndieWeb button prominently placed on a loose pile of internet and web books like the Internet Phone Book and a Pragmatic Programmers book covered in a pile of IndieWeb community stickers.
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/www.ciccarello.me/blog/2025/12/14/indieweb-hackathon/
 ---
 
 Following the [IndieWebCamp San Diego Open Source development session](https://indieweb.org/2025/SD/opensource), I'm proposing the start of a new monthly event tentatively called the IndieWeb Hackathon.
