@@ -8,7 +8,7 @@ tags:
 image: /assets/img/2026-01-hackathon-header.jpg
 image_alt: 'A sapling evergreen covered in snow with an overlay of hex code text and the title IWC January 2026 Hackathon: Omnibear'
 syndication:
-  - https://news.indieweb.org/en/
+  - https://news.indieweb.org/en
 ---
 
 As [previously announced](/blog/2025/12/14/indieweb-hackathon/), this coming month I'm hosting the IndieWeb Hackathon.
