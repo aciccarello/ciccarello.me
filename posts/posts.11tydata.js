@@ -80,14 +80,12 @@ export default {
 				if (typeof referenceData.author === 'string') {
 					referenceData.author = { name: referenceData.author };
 				}
-				const plaintextSummary = `${actionDescription} ${postDescription.replace(
-					/<\/*cite>/g,
-					'',
-				)} ${
-					referenceData.author?.name
-						? `by ${referenceData.author.name}`
-						: ''
-				}`;
+				const plaintextSummary =
+					`${actionDescription} ${postDescription} ${
+						referenceData.author?.name
+							? `by ${referenceData.author.name}`
+							: ''
+					}`.replaceAll(/<[^>]*>/g, '');
 
 				return {
 					url,
