@@ -179,7 +179,7 @@ Because we did more sight-seeing and spent more time in cities I didn't see as m
 
 {% include "embed-link.html"
     title: "Rose-ringed Parakeet"
-    url: "https://ebird.org/species/rorpar/IT"
+    url: "https://ebird.org/species/rorpar"
     description: "Vibrantly bright green parakeet, frequently found in woodland, parks, gardens, where feeds mainly in trees. Nests in cavities, including holes…"
     img: "/assets/img/embed-thumbnail-rose-ringed-parakeet.jpg"
     alt: "Green parakeet with long tail and red beak"
