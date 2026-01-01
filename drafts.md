@@ -26,6 +26,7 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [Planning Commission Meeting](./planning-commission)
 - [Web Monetization](./web-monetization/)
 - [Octothorpe](./octothorpe/)
+- [Omnibear IndieWeb Hackathon Roundup](./omnibear-roundup/)
 - Italy 2022
   - [Back to Italy](./return-to-italy/)
   - [Florence](./florence/)
