@@ -615,24 +615,6 @@ Different post types appear differently
 </div>
 {% endremoveindents %}
 
-{%- if not devLoopProtection %}
-## Pages with custom styles
-
-Review the following pages for issues as they have their own unique styles.
-
-<ul>
-  {%- for page in collections.all %}
-  {%- if page.url != "/style-guide/"%}
-  {%- if page.templateContent contains "<style" or post.templateContent contains ".css" %}
-    <li>
-      <a href="{{page.url}}">{{page.data.title | default: page.url}}</a>
-    </li>
-  {%- endif %}
-  {%- endif %}
-  {%- endfor %}
-</ul>
-{%- endif %}
-
 ## Pagination
 
 For paginated pages, you can show pagination links at the bottom.

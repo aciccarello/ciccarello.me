@@ -183,12 +183,6 @@ export default async function (eleventyConfig) {
 		headers: { 'Access-Control-Allow-Origin': '*' },
 	});
 
-	// Some pages referencing templates seem to choke on local live reload
-	eleventyConfig.addGlobalData(
-		'devLoopProtection',
-		process.env.DEV_LOOP_PROTECTION,
-	);
-
 	return {
 		dir: {
 			input: './', // Equivalent to Jekyll's source property
