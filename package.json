@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Anthony Ciccarello's personal website",
   "scripts": {
-    "start": "TZ=utc DEV_LOOP_PROTECTION=true eleventy --serve",
+    "start": "TZ=utc eleventy --serve",
     "start:cms": "decap-server",
     "start:netlify": "netlify serve",
     "clean": "rm -rf _site temp",
