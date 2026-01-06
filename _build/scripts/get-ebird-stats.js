@@ -56,7 +56,7 @@ async function main() {
 
 	console.log(`
 ### ${species.regionName} Stats
-- New Species: ${species.newSpecies} (${species.newRegionLifers} Lifers)
+- New Species: ${species.newSpecies} (${species.newRegionLifers} Lifer${species.newRegionLifers !== 1 ? 's' : ''})
 - Year Species: ${species.yearSpeciesTotal}
 - Total Species: ${species.totalSpecies}
 - Year Checklists: ${checklists.yearChecklists}
@@ -150,7 +150,9 @@ async function countSpecies({ year, previousYear, region }) {
  */
 async function countChecklists({ year, previousYear, region }) {
 	// Can't get total from #total element because there could be newer checklists
-	const allChecklistsDocument = await fetchHtml(CHECKLISTS_URL + region);
+	const allChecklistsDocument = await fetchHtml(
+		CHECKLISTS_URL + region + '?year=',
+	);
 	// Find first element that matches the year
 	const dates = allChecklistsDocument.querySelectorAll(
 		'#place-species-observed-results .ResultsStats-title',
