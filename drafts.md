@@ -16,7 +16,7 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 
 ### Blog Posts
 
-- Birding in 2024 (combine with 2023??)
+- [Birding in 2024](./birding-in-2024/)
 - [Birding in 2025](./birding-in-2025/)
 - [Tag Moderation](./tag-moderation)
 - [Instagram Import](./instagram-import)
