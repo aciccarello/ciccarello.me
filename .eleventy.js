@@ -27,6 +27,7 @@ export default async function (eleventyConfig) {
 		'assets/feed.xsl',
 		'assets/octothorpe-harmonizer.json',
 		'favicon.ico',
+		'robots.txt',
 		'pinterest-60576.html',
 		'mywotc6b2477c57f015eaa645.html',
 		'BingSiteAuth.xml',
