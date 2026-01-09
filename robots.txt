@@ -2,6 +2,11 @@ Sitemap: https://www.ciccarello.me/sitemap.xml
 
 # See https://darkvisitors.com/insights for most common agents
 
+user-agent: Googlebot
+allow: /
+user-agent: Googlebot-Image
+allow: /
+
 ### Start: AI Block List ###
 # AI Scrapers are blocked but agents and assistants are allowed
 
@@ -27,6 +32,10 @@ Disallow: /
 User-agent: Google-Extended
 Disallow: /
 
+# https://darkvisitors.com/agents/applebot-extended
+User-agent: Applebot-Extended
+Disallow: /
+
 # https://darkvisitors.com/operators/webz-io
 User-agent: omgili
 Disallow: /
@@ -35,6 +44,10 @@ Disallow: /
 
 # https://kangaroollm.com.au/kangaroo-bot/
 User-agent: Kangaroo Bot
+Disallow: /
+
+# https://darkvisitors.com/agents/petalbot
+User-agent: PetalBot
 Disallow: /
 
 ### End: AI Block List ###
@@ -62,5 +75,12 @@ Crawl-delay: 120
 # https://dataforseo.com/dataforseo-bot
 User-agent: DataForSeoBot
 Crawl-delay: 120
+# https://darkvisitors.com/agents/barkrowler
+User-agent: Barkrowler
+Crawl-delay: 120
+# https://darkvisitors.com/agents/googleother
+User-agent: GoogleOther
+Crawl-delay: 120
+
 
 ### End: SEO bots ###
