@@ -5,6 +5,7 @@ date: 2025-12-30T06:17:43.606Z
 tags:
   - technology
   - IndieWeb
+  - Omnibear
 image: /assets/img/2026-01-hackathon-header.jpg
 image_alt: 'A sapling evergreen covered in snow with an overlay of hex code text and the title IWC January 2026 Hackathon: Omnibear'
 syndication:
