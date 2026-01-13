@@ -1,6 +1,7 @@
 ---
 title: 'Search'
 layout: page
+redirect_from: /s
 ---
 
 <script type="module" src="/assets/js/pagefind-search.js"></script>

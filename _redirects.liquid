@@ -1,0 +1,11 @@
+---
+permalink: /_redirects
+---
+# Redirects for Netlify to process
+# See https://docs.netlify.com/manage/routing/redirects/overview/
+{%- for item in collections.all %}
+{%- assign normalizedRedirects = item.data.redirect_from | sort %}
+{%- for redirect in normalizedRedirects %}
+{{ redirect }} {{ item.url }}
+{%- endfor %}
+{%- endfor %}
