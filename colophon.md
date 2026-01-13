@@ -1,6 +1,7 @@
 ---
 title: 'Colophon'
 layout: page
+redirect_from: /col
 ---
 
 <style>
