@@ -114,6 +114,17 @@ August
 - Previous year checklists: 0
 - Lifer: [Sooty Grouse](https://ebird.org/species/soogro1/) on Mt Rainier
 
+## Canada
+
+Okay, this feels like cheating, but I did log a crow siting while in Peace Arch Park on the border with Canada.
+It's a special place where Americans and Canadians can meet without needing to go through normal customs as long as they stay in the park.
+But I really should plan a trip into British Columbia for some real birding.
+
+### Canada Stats
+
+- Total Species: 1
+- Total Checklists: 1
+
 ## Colorado
 
 ### Colorado Stats
@@ -132,21 +143,19 @@ August
 - Previous year checklists: 6
 - Lifer: [Cackling Goose](https://ebird.org/species/cacgoo1/) (might have seen one before according to some pictures I was recently looking at)
 
-## Canada
-
-August
-
-### Canada Stats
-
-- New Species: 1
-- Year Species: 1
-- Total Species: 1
-- Year Checklists: 1
-- Total Checklists: 1
-
 ## Connecticut
 
-May, November
+I visited my home state twice in 2024, once in the spring, and again in November.
+Unsurprisingly, I was much more successful in the spring as the birds were busy claiming territory and raising young.
+The two lifers were a [Wood Thrush](https://ebird.org/species/woothr) which I heard singing it's metallic call out in the woods.
+I was able to both see and hear a [Great Crested Flycatcher](https://ebird.org/species/grcfly/) while visiting a family member's house.
+Due to a steep hill, their house feels like it is up in the trees, so the flycatcher was at eye level.
+
+While the two lifers were more serendipitous observations, I did have some time to go out in more natural spaces.
+I saw 25 species at Rocky Neck State Park, which is a family favorite place to camp.
+My mother also introduced me to the [Roger Tory Peterson Estuary Center](https://ctaudubon.org/rtp-estuary-home/) in Old Lyme.
+The home was the former home of the conservationist, artist, and field guide writer.
+It's now managed by the CT Audubon Society, and is a beautiful place to walk around in the spring, even if it was threatening to rain on us.
 
 ### Connecticut Stats
 
@@ -156,7 +165,7 @@ May, November
 - Year Checklists: 18
 - Total Checklists: 88
 
-#### Reference Data
+<!-- #### Reference Data
 
 - [Species](https://ebird.org/lifelist/US-CT?year=2024&time=year)
 - [Checklists](https://ebird.org/mychecklists/US-CT?year=2024)
@@ -164,4 +173,4 @@ May, November
 - Previous year checklists: 11
 - Lifers:
   - [Great Crested Flycatcher](https://ebird.org/species/grcfly/)
-  - [Wood Thrush](https://ebird.org/species/woothr/)
+  - [Wood Thrush](https://ebird.org/species/woothr/) -->
