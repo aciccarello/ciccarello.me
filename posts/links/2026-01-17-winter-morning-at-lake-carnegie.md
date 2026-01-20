@@ -17,5 +17,5 @@ references:
       name: Khürt Williams
     content: |-
       There’s something stubborn about photographing wildlife in winter. The cold bites at my fingers whilst I adjust settings. My breath fogs the viewfinder. Every part of me wants to stay inside, yet something pulls me out the door anyway. That morning, I nearly didn’t go.
-      <img decoding="async" src="https://islandinthenet.com/wp-content/uploads/2026/01/Fujifilm_X-T3_20260111__DSF3050.jpg" alt="Ring-billed Gull descending to land on Lake Carnegie water surface.">…
+      <img decoding="async" src="https://islandinthenet.com/wp-content/uploads/2026/01/Fujifilm_X-T3_20260111__DSF3050.jpg" alt="Ring-billed Gull descending to land on Lake Carnegie water surface.">
 ---
