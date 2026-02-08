@@ -48,7 +48,6 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 
 - [Greek Tomato Cucumber Salad](/recipes/2022/05/27/greek-tomato-cucumber-salad/)
 - [Coconut Curry Meatballs](/recipes/2021/05/21/coconut-curry-meatballs/)
-- [Breakfast Bake](./breakfast-bake/)
 - [Chocolate Pecan Banana Bread](/recipes/2022/05/06/chocolate-pecan-banana-bread/)
 - [Creamy Butternut Squash Pasta](/drafts/squash-pasta/)
 - [Ricotta Cake](./ricotta-cake/)
