@@ -42,11 +42,6 @@ locations:
     title: 'Friday Harbor'
     date: 2025-09-01
     type: attraction
-  - lat: 48.537
-    long: -123.017
-    title: 'Friday Harbor'
-    date: 2025-09-03
-    type: attraction
   - lat: 47.5815295
     long: -122.1949768
     title: 'Bellevue'
