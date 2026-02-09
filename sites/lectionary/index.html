@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<div id="lectionary-display">
+			<p>Loading today's readings...</p>
+			<a href="https://lectserve.com/html/sunday" target="_blank">Powered by LectServe.com</a>
+		</div>
+		<style>
+			#lectionary-display {
+				font-size: 1.25rem;
+				line-height: 1.5;
+
+				h3 {
+					margin-bottom: 0;
+				}
+				p {
+					margin: 0.25rem 0;
+				}
+				a {
+					text-decoration: underline;
+				}
+			}
+		</style>
+
+		<script type="module">
+			function anchor(url, text) {
+			return `<a href="${url}" target="_blank">${text}</a>`;
+		}
+		function bibleGatewayLink(passages) {
+			return `http://www.biblegateway.com/passage/?search=${passages.join(';')}&version=NIV`
+		}
+		async function loadSundayService() {
+			const container = document.getElementById('lectionary-display');
+
+			try {
+				// 1. Calculate the current or previous Sunday
+				const now = new Date();
+				const dayOfWeek = now.getDay(); // 0 is Sunday, 1 is Monday...
+				const diff = now.getDate() - dayOfWeek;
+				const sundayDate = new Date(now.setDate(diff));
+
+				// Format to YYYY-MM-DD
+				const sundayDateUtc = new Date(Date.UTC(sundayDate.getFullYear(), sundayDate.getMonth(), sundayDate.getDate(), 0, 0, 0));
+				const dateStr = sundayDateUtc
+					.toISOString()
+					.split('T')[0];
+				const url = `https://lectserve.com/date/${dateStr}`;
+
+				// 2. Call the API
+				const response = await fetch(url);
+				if (!response.ok) {
+					throw new Error('Network response was not ok');
+				}
+
+				const data = await response.json();
+				const sunday = data.sunday;
+				const service = sunday.services[0];
+
+				// 3. Render the service object
+				if (service) {
+					container.innerHTML = renderLectionary(service.name, sundayDate, service.readings, dateStr);
+				} else {
+					container.innerHTML = renderError('No service data found for this date.');
+;
+				}
+			} catch (error) {
+				console.error('Error fetching lectionary:', error);
+				container.innerHTML = renderError('Unable to load readings at this time.');
+			}
+		}
+	function renderLectionary(serviceName, sundayDate, readings, dateStr) {
+		const humanDateStr = sundayDate.toLocaleDateString(undefined, {dateStyle: 'full'});
+		const renderPassage = (text) => `<li><strong>${text}</strong></li>`;
+
+		return `
+<h3>${serviceName}</h3>
+<p><strong>Date:</strong> ${humanDateStr}</p>
+<ul>
+	${readings
+			.map(renderPassage)
+			.join('')}
+</ul>
+<p>
+	${anchor(bibleGatewayLink(readings), 'Read all on Bible Gateway')}
+	<br>
+	${anchor(`https://lectserve.com/html/sunday/${dateStr}`, 'Powered by LectServe.com')}
+</p>
+      `;
+		}
+		function renderError(text) {
+			`<p>Unable to load readings at this time.</p>
+			</br>
+				<p>See <a href="https://lectserve.com/html/sunday" target="_blank">LectServe.com</a> for next Sunday's passages.</p>`;
+		}
+
+		// Run the function
+		loadSundayService();
+	</script>
+	</body>
+</html>
