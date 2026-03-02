@@ -77,6 +77,7 @@ export default {
 					postDescription = prefix + referencePostType;
 				}
 
+				normalizeToFirstIfArray(referenceData.author, 'url');
 				if (typeof referenceData.author === 'string') {
 					referenceData.author = { name: referenceData.author };
 				}
@@ -110,4 +111,16 @@ function pluralize(word) {
 		return word.slice(0, -1) + 'ies';
 	}
 	return word + 's';
+}
+
+/**
+ * Since jf2 allows for single values or arrays for some properties, this normalizes to the first value if it's an array
+ *
+ * @param {unknown} object Object with a property that could be an array or one value
+ * @param {string} key key of the object to check
+ */
+function normalizeToFirstIfArray(object, key) {
+	if (object && Array.isArray(object[key])) {
+		return (object[key] = object[key][0]);
+	}
 }
