@@ -2,29 +2,33 @@
 <html>
 	<head></head>
 	<body>
-		<div id="lectionary-display">
-			<p>Loading today's readings...</p>
-			<a href="https://lectserve.com/html/sunday" target="_blank">Powered by LectServe.com</a>
-		</div>
-		<style>
-			#lectionary-display {
-				font-size: 1.25rem;
-				line-height: 1.5;
+		<h1>Lectionary Readings</h1>
+		<section>
+			<h2>Sunday Reading</h2>
 
-				h3 {
-					margin-bottom: 0;
-				}
-				p {
-					margin: 0.25rem 0;
-				}
-				a {
-					text-decoration: underline;
-				}
-			}
-		</style>
+			<div id="lectionary-display">
+				<p>Loading this week's readings...</p>
+				<small><a href="https://lectserve.com/html/sunday" target="_blank">From LectServe.com</a></small>
+			</div>
+			<style>
+				#lectionary-display {
+					font-size: 1.25rem;
+					line-height: 1.5;
 
-		<script type="module">
-			function anchor(url, text) {
+					h3 {
+						margin-bottom: 0;
+					}
+					p {
+						margin: 0.25rem 0;
+					}
+					a {
+						text-decoration: underline;
+					}
+				}
+			</style>
+
+			<script type="module">
+				function anchor(url, text) {
 			return `<a href="${url}" target="_blank">${text}</a>`;
 		}
 		function bibleGatewayLink(passages) {
@@ -97,5 +101,43 @@
 		// Run the function
 		loadSundayService();
 	</script>
+	</section>
+	<section>
+		<h2>Daily Prayer</h2>
+		<p class="spaced-lines">Help me pay attention today.
+I want to be so acutely aware of Your presence in every space.
+Help me notice beauty that doesn't beg for applause, conversations that carry Your kindness, and the still, small ways You're working beneath the surface.
+Let my feet be rooted, not rushed.
+Let my heart be soft, not guarded.
+And let my soul remember that You waste nothing—not even times of slowing down.
+		</p>
+	</section>
+	<section>
+		<h2>Daily Lectionary</h2>
+		<ul>
+			<li><a href="https://www.dailylectio.net/">DailyLectio</a></li>
+		</ul>
+	</section>
+	<section>
+		<h2>Grace and Peace Links</h2>
+		<ul>
+			<li><a href="https://www.graceandpeacechurch.org/bulletin">Bulletin</a></li>
+			<li><a href="https://www.graceandpeacechurch.org/bible-study-guide">Bible Study Guide</a></li>
+		</ul>
+	</section>
+	<style>
+		body {
+			margin: 2rem;
+		}
+		section {
+			margin-bottom: 3rem;
+		}
+		.spaced-lines {
+			font-size: 1.25rem;
+			line-height: 1.75;
+			white-space: break-spaces;
+			text-indent: 3em hanging each-line;
+		}
+	</style>
 	</body>
 </html>
