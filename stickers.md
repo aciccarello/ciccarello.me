@@ -4,9 +4,29 @@ layout: page
 ---
 
 <style type="text/css">
-	article.container {
-		max-width: 32rem;
-	}
+  .post-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+  }
+
+  /* Everything that isn't an image should be full width */
+  .post-content > :not(figure) {
+    grid-column: 1 / -1;
+  }
+
+  @media screen and (max-width: 50rem) {
+    .post-content {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 30rem) {
+    .post-content {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 Here's my collection of stickers.
@@ -75,6 +95,20 @@ In a small world moment, the biologist there actually knew another biologist fri
 
 ![Circular sticker from the Washington Department of Fish and Wildlife that says 'Watchable Wildlife' that has animals like fox, bighorn sheep, bald eagle, chickadees, bats, butteflies, fogs, and snakes in front of a mountain](/assets/img/sticker-wdfw-fox.webp  "[Learn about wildlife viewing](http://wdfw.wa.gov/species-habitats/wildlife-viewing)")
 
+### SD Bird Festival
+
+Got these at the San Diego Bird Festival
+
+![Sticker of a quail among flowers](/assets/img/sticker-sdbf-quail.webp)
+
+![Sticker of a colorful parrot](/assets/img/sticker-sdbf-parrot.webp "[Free Flight Exotic Bird Sanctuary](https://www.freeflightbirds.org/) of Del Mar, CA")
+
+![Circular sticker of a waterbird called a rail with the text 'I heart wetlands'](/assets/img/sticker-sdbf-rail.webp "Protect the wetland habitat of the Ridgeway Rail")
+
+![Circular sticker with the text 'State of the State Parks Podcast'](/assets/img/sticker-sdbf-state-parks-pod.webp "[Stateofthestateparks](https://stateofthestateparks.com/)")
+
+![Sticker with the text 'Ibis Coffee'](/assets/img/sticker-sdbf-ibis-coffee.webp "[Ibis Coffee](https://caffeibis.com)")
+
 ## Sports
 
 Stickers promoting our local sports teams!
@@ -105,7 +139,7 @@ Stickers promoting our local sports teams!
 
 ## Milestone Mayhem
 
-You can play at [milestonemayhem.com](https://milestonemayhem.com/) or download the app!
+I still have a set of the [playing cards of this game](https://boardgamegeek.com/boardgame/244581/milestone-mayhem) somewhere...
 
 ![Sticker of a skeleton in an army helmet called 'General death march' and the text 'Milestone mayhem'](/assets/img/sticker-mm-death-march.webp)
 
