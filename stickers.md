@@ -10,23 +10,23 @@ layout: page
     gap: 1rem;
     align-items: start;
 
+    & > :not(figure) {
+      grid-column: 1 / -1;
+    }
+
     img {
       aspect-ratio: 1;
     }
   }
 
   /* Everything that isn't an image should be full width */
-  .post-content > :not(figure) {
-    grid-column: 1 / -1;
-  }
-
   @media screen and (max-width: 50rem) {
     .post-content {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
-  @media screen and (max-width: 30rem) {
+  @media screen and (max-width: 35rem) {
     .post-content {
       grid-template-columns: 1fr;
     }
