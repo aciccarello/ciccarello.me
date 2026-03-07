@@ -9,6 +9,10 @@ layout: page
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     align-items: start;
+
+    img {
+      aspect-ratio: 1;
+    }
   }
 
   /* Everything that isn't an image should be full width */
@@ -42,6 +46,8 @@ I got a lot of these stickers from NG Conf, JS Conf, and from IndieWebCamp.
 
 ![IndieWebCamp sticker with IWC logo](/assets/img/sticker-iwc.webp "[IndieWebCamp](https://indieweb.org/)")
 
+![Microformats logo sticker](/assets/img/sticker-microformats.webp "[Microformats](https://microformats.org/)")
+
 ![Sticker of yellow square with J5 like the Javascript logo referencing the Johnny Five project](/assets/img/sticker-j5.webp "[Johnny Five](https://johnny-five.io/)")
 
 ![Sticker of yellow square like the Javascript logo but with a robot](/assets/img/sticker-js-robot.webp)
@@ -54,11 +60,11 @@ I got a lot of these stickers from NG Conf, JS Conf, and from IndieWebCamp.
 
 ![Sticker of a rainbow narwal and the Nrwl company logo](/assets/img/sticker-nrwl-rainbow.webp)
 
-![Sticker of a rooster and the text 'bocoup.com'](/assets/img/sticker-rooster.webp "[Bocoup](https://www.bocoup.com/)")
-
 ![Circular sticker with text 'TS Conf World Tour 2020'](/assets/img/sticker-tsconf-circle.webp "[TS Conf 2020](https://archive.tsconf.io/2020/)")
 
 ![Sticker showing the Seattle skyline and text 'TSConf'](/assets/img/sticker-tsconf-seattle.webp "[TS Conf 2021](https://archive.tsconf.io/2021/)")
+
+![Sticker of a rooster and the text 'bocoup.com'](/assets/img/sticker-rooster.webp "[Bocoup](https://www.bocoup.com/)")
 
 ## Birds
 
@@ -75,6 +81,8 @@ I got a lot of these stickers from NG Conf, JS Conf, and from IndieWebCamp.
 ### Washington
 
 I also picked up some stickers (and a magnet) at the Wings Over Water birding festival.
+
+![Sticker of black and white loon and the text 'Blane, WA'](/assets/img/sticker-blane-loon.webp)
 
 My favorites were from [Laurel Mundy](https://www.laurelmundy.com/)
 Her artwork is so vivid and beautiful.
@@ -129,6 +137,10 @@ Stickers promoting our local sports teams!
 
 ![Triangular sticker with the text 'May the fork be with you Goldbelly' skewed like the Star Wars opening.](/assets/img/sticker-may-the-fork.webp "[Goldbelly](https://www.goldbelly.com/)")
 
+![Black and white sticker saying 'Clean Water Coffee Co' and a water logo](/assets/img/sticker-clean-water-coffee.webp "[Clean Water Coffee Co](https://www.instagram.com/cleanwater.coffee.co/)")
+
+![Black and white sticker saying 'Communal Coffee' and some floral line work](/assets/img/sticker-communal.webp)
+
 ## Other
 
 ![Sticker of a woman in a bikini holding up a cartoon sun on her back like atlas](/assets/img/sticker-atlas-sun.webp "Found this at [Burn all books](https://www.babandfriends.com/) in San Diego")
@@ -136,6 +148,20 @@ Stickers promoting our local sports teams!
 ![Sticker of a cone with a pink cat head in the shape of cotton candy](/assets/img/sticker-cotton-cat.webp "Got this in a shipment from [Zoom Hit Skins](https://zoomhitskins.com/)")
 
 ![Colorful cultural mask sticker with text 'XOXO Bali X Curative'](/assets/img/sticker-xoxo-bali.webp)
+
+![Sticker in 70s art style of a colorful sunset and the text 'San Diego California'](/assets/img/sticker-sd-sunset.webp)
+
+![Sticker of a hen wearing a knit hat and boots](/assets/img/sticker-hen.webp "[store link](https://www.marygoldtales.com/shop-S4X0D/p/buttermilk-the-hen-sticker))
+
+![Sticker of a florescent wave with the text 'San Diego Cali' and 'hola'](/assets/img/sticker-sd-hola-wave.webp)
+
+![Sticker art of a bee with flowers growing from it](/assets/img/sticker-bee-plant.webp)
+
+![Sticker art of a shark swimming out of reflective water](/assets/img/sticker-shark.webp)
+
+![Sticker of a happy llama next to a cactus and the text 'No Prob-llama' and the logo for Legami](/assets/img/sticker-no-probllama.webp)
+
+![Black and white sticker of a G.P. logo and the instagram handle '@graceandpeacechurch'](/assets/img/sticker-gp.webp "[Grace and Peace Church](https://www.graceandpeacechurch.org/)")
 
 ## Milestone Mayhem
 
