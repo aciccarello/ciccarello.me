@@ -23,15 +23,6 @@
   # Installs the Lighthouse Build Plugin for all deploy contexts
   package = "@netlify/plugin-lighthouse"
 [[plugins]]
-  package = "netlify-plugin-minify-html"
-  [plugins.inputs]
-    # https://docs.netlify.com/site-deploys/overview/#deploy-contexts
-    contexts = [
-      'production',
-      'branch-deploy',
-      'deploy-preview'
-    ]
-[[plugins]]
   package = "@aciccarello/netlify-plugin-webmentions"
 
 	[plugins.inputs]
