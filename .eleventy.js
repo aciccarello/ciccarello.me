@@ -9,15 +9,19 @@ import markdownPlugin from './_build/markdown.js';
 import recipePlugin from './_build/recipe.js';
 import tripsPlugin from './_build/trips.js';
 import i18nPlugin from './_build/i18n.js';
+import productionPlugin from './_build/prod.js';
 
 const require = createRequire(import.meta.url);
+/**
+ * @typedef {import('@11ty/eleventy/UserConfig').default} UserConfig
+ */
 
 /**
- * Primary Eleventy configration function
+ * Primary Eleventy configuration function
  *
- * @param   {import('@11ty/eleventy').UserConfig}  eleventyConfig  Eleventy config API
+ * @param   {UserConfig}  eleventyConfig  Eleventy config API
  *
- * @return  {object}                  Eleventy config object for site
+ * @return  {import('@11ty/eleventy').default}                  Eleventy config object for site
  */
 export default async function (eleventyConfig) {
 	const staticFiles = [
@@ -159,6 +163,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(markdownPlugin);
 	eleventyConfig.addPlugin(recipePlugin);
 	eleventyConfig.addPlugin(tripsPlugin);
+	eleventyConfig.addPlugin(productionPlugin);
 
 	// Add RSS filters to liquid
 	// See https://www.11ty.dev/docs/plugins/rss/#use-with-other-template-languages
