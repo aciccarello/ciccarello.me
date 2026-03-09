@@ -48,6 +48,11 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/thumb/8/88/San_Diego_Strike_Force_Logo.svg/1920px-San_Diego_Strike_Force_Logo.svg.png
     image_alt: Team logo of San Diego strike depicting a bomb-shaped football dropping from the sky.
     summary: IFL Indoor Football team playing at Frontwave Arena
+  - name: Oceanside Bombers
+    url: https://www.oceansidebombers.com/
+    image: https://upload.wikimedia.org/wikipedia/en/2/2c/Oceanside_Bombers.png?_=20251114000344
+    image_alt: Team logo of Oceanside Bombers a stealth bomber with a blue football.
+    summary: Arena Football team playing at Frontwave Arena
   - name: Mojo Volleyball
     url: http://sandiegomojovb.com/
     image: https://upload.wikimedia.org/wikipedia/en/0/07/SanDiegoMojo.png
@@ -73,14 +78,9 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/5/52/San_Diego_Surf_Riders_original_logo.png
     image_alt: Logo of a cricket player.
     summary: MiLC Cricket team
-  - name: Albion Soccer
-    url: https://albionsandiego.com/
-    image: https://upload.wikimedia.org/wikipedia/en/2/22/Albionscproslogo.png
-    image_alt: Team shield of Albion with three stars.
-    summary: NISA 3rd tier soccer team
   - name: Yacht Club
     url: http://www.sdyc.org/
-    image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Burgee_of_San_Diego_Yacht_Club.svg/2560px-Burgee_of_San_Diego_Yacht_Club.svg.png
+    image: https://upload.wikimedia.org/wikipedia/commons/4/45/Burgee_of_San_Diego_Yacht_Club.svg
     image_alt: Pennant flag with a red star.
     summary: Sailing team in America's cup
 ---
