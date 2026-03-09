@@ -113,9 +113,13 @@ Got these at the San Diego Bird Festival
 
 ![Circular sticker of a waterbird called a rail with the text 'I heart wetlands'](/assets/img/sticker-sdbf-rail.webp "Protect the wetland habitat of the Ridgeway Rail")
 
+![Circular sticker of two flying shorebirds with the text 'Godwit days .org Arcata, California'](/assets/img/sticker-godwit-days.webp "[Godwit Days Festival](https://godwitdays.org)")
+
 ![Circular sticker with the text 'State of the State Parks Podcast'](/assets/img/sticker-sdbf-state-parks-pod.webp "[Stateofthestateparks](https://stateofthestateparks.com/)")
 
 ![Sticker with the text 'Ibis Coffee'](/assets/img/sticker-sdbf-ibis-coffee.webp "[Ibis Coffee](https://caffeibis.com)")
+
+![Sticker with the outline of a hummingbird and text 'Tayutic Mountain Reserve Costa Rica, Protect, Preserve, Prosper and telephone number +508 8736 6221'](/assets/img/sticker-tayutic.webp "[Tayutic Mountain Resort](https://tayuticmountainreserve.com)")
 
 ## Sports
 
