@@ -15,6 +15,9 @@ review-of:
   image: https://images.squarespace-cdn.com/content/v1/5c9d318b755be24741183f25/1578871371679-O3P4C9KRFTCJ4LJ7XFSF/superbloom-09.png
   image_alt: San Diego Super Bloom logo depicting California Poppies.
   summary: WUL Women's Ultimate Team playing at Mission Bay High School
+updates:
+  - date: 2026-03-15T16:59:26.608Z
+    description: Updates for 2026 season
 ---
 
 <style>
@@ -26,9 +29,9 @@ Consider doing this for all reviews or moving the logo to the h-card */
 }
 </style>
 
-The San Diego Super Bloom are a professional women's ultimate team founded in 2020 that took 3rd place in the 2024 season of the [Western Ultimate League](https://westernultimateleague.com/).
+The San Diego Super Bloom are a women's ultimate team founded in 2020 that took 3rd place in the 2024 season of the [Western Ultimate League](https://westernultimateleague.com/).
 The team operates as a volunteer run non-profit.
-I attended the first home game of the 2025 season vs the Arizona Sidewinders.
+I first attended their 2025 season home opener vs the Arizona Sidewinders.
 
 ![ultimate players on a football field with ](/assets/img/review-sd-super-bloom-play.jpg){.post-img--wide}
 
@@ -63,3 +66,9 @@ Unfortunately their season is short, just 6 games so there are only 3 home games
 I definitely want to keep up with their progress as it's great to see more high quality teams playing my favorite sport.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7cF0em5ri6c?si=IHnLnGyuIZHfjulV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Related Posts
+
+<div class="featured-post-list"">
+{% include "post-card.html" post: collections.pageByUrl['/posts/2026/03/15/super-bloom/'] %}
+</div>

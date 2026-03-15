@@ -3,7 +3,6 @@ date: 2025-05-04T05:42:37.974Z
 title: 'SD Legion Rugby'
 tags:
   - sports teams
-  - ultimate
 rating: 4
 image: https://upload.wikimedia.org/wikipedia/commons/7/7e/San_diego_legion_logo.png
 image_alt: San Diego Legion team seal.
