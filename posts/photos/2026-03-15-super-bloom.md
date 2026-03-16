@@ -11,9 +11,14 @@ image_alt: A woman in athletic gear throwing around a defender to a teammate run
 
 I had a great time at the [Super Bloom Ultimate](https://sandiegosuperbloom.com/) game yesterday.
 I love how supportive the fans are, it's a fun atmosphere and half the fans have jerseys.
+I ended up getting one of their hats.
+
+
 Coincidentally, their game was at the same high school I was at for [#SDBF2026](/posts/tags/sdbf2026/) looking at a rare pipet who strayed from Asia.
 It looks like their games are split between Claremont High School and Mission Bay High School this season.
 I actually used my new binoculars to get some zoomed digi-scope shots of the game.
+
+![Flat brim baseball cap with the text 'Super Bloom San Diego' and a flower in 70s style on a man at a sports field.](/assets/img/hat-sd-super-bloom.jpg)
 
 ![Ultimate players jumping up to reach for a flying disc](/assets/img/2026-super-bloom-score.jpg)
 
