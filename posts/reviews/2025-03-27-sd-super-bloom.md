@@ -1,7 +1,7 @@
 ---
 date: 2025-03-27T06:45:46.300Z
 title: 'SD Super Bloom Ultimate'
-subtitle: Pro Women's Ultimate Disc
+subtitle: Women's Ultimate Disc Team
 slug: 'sd-super-bloom'
 tags:
   - sports teams
