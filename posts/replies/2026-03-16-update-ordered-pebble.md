@@ -2,6 +2,7 @@
 date: 2026-03-16T03:49:24.051Z
 slug: update-ordered-pebble
 in-reply-to: https://www.ciccarello.me/posts/2026/02/25/pre-order-pebble/
+excludeFromMainFeed: false
 tags:
   - technology
 references:
@@ -23,4 +24,3 @@ references:
 ---
 
 Update: I've ordered a silver 20mm pebble round 2! Will have to wait til July for it to ship but I'm excited
-
