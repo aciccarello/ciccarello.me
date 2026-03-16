@@ -28,11 +28,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/c/cc/San_Diego_Growlers_%28ultimate_team%29_logo.png
     image_alt: Logo of a wolf
     summary: UFA Ultimate Frisbee team playing at Mission Bay High School
-  - name: Seals Lacrosse
-    url: https://sealslax.com/
-    image: https://upload.wikimedia.org/wikipedia/en/2/21/San_Diego_Seals_primary_logo.png
-    image_alt: Seals team logo of an aggressive seal face with a crown.
-    summary: NLL Box lacrosse (indoor) team playing at Pechanga Arena
   - name: California Redwoods Lacrosse
     url: https://www.premierlacrosseleague.com/redwoods
     image: https://upload.wikimedia.org/wikipedia/en/d/db/California_Redwoods_lacrosse.jpg
