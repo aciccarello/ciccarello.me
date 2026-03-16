@@ -33,11 +33,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/d/db/California_Redwoods_lacrosse.jpg
     image_alt: California Redwoods logo depicting a bear head on a seal.
     summary: PLL Field lacrosse (outdoor)
-  - name: Clippers Baskeball
-    url: https://sandiego.gleague.nba.com/
-    image: https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/San_Diego_Clippers_%28NBA_G_League%29_Logo.svg/1920px-San_Diego_Clippers_%28NBA_G_League%29_Logo.svg.png
-    image_alt: Round logo of Clippers basketball.
-    summary: G League basketball team playing at Frontwave Arena in Oceanside. Affiliated with the LA Clippers of the NBA. Moved from Ontario in 2024.
   - name: Strike Football
     url: http://sdstrikeforce.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/8/88/San_Diego_Strike_Force_Logo.svg/1920px-San_Diego_Strike_Force_Logo.svg.png
