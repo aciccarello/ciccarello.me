@@ -20,6 +20,11 @@ export default function (eleventyConfig) {
 		console.info('Production optimizations enabled');
 	} else {
 		eleventyConfig.setQuietMode(true);
+		// The auth redirect won't work anyway so always point to local indiekit
+		eleventyConfig.addGlobalData(
+			'site.indiekitUrl',
+			'http://localhost:3000',
+		);
 		console.info(
 			'Production optimizations disabled. Set NETLIFY or NODE_ENV=production environment variable to enable.',
 		);
