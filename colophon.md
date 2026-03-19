@@ -35,7 +35,7 @@ See <a href="/posts/tags/site changes/" class="tag chip-item">site changes</a> f
 <a href="https://octothorp.es"><img src="https://octothorp.es/badge.png" alt="Badge for the Octothorpes main ring" class="badge" /></a>
 
 The code for this website is on [GitHub](https://github.com/aciccarello/ciccarello.me) and deployed to [Netlify](https://www.netlify.com/).
-Posts are saved as markdown files and created manually, using [Decap CMS](https://decapcms.org/), or via an [Indiekit](https://getindiekit.com/) micropub server.
+Posts are saved as markdown files and created manually, using [Sveltia CMS](https://sveltiacms.app/), or via an [Indiekit](https://getindiekit.com/) micropub server.
 The build is processed using [Eleventy](11ty.dev), a static site generator for node.
 This site was originally hosted on GitHub pages with a Jekyll build when it was launched at the end of 2017.
 

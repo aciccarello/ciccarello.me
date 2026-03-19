@@ -2,12 +2,12 @@ import { readFile } from 'node:fs/promises';
 
 // @ts-check
 /**
- * This file generates the Netlify CMS config file
+ * This file generates the Sveltia CMS config file
  * See the class below for the core configuration.
  */
 
 /**
- * @typedef {Object} Field - A field definition for netlify cms
+ * @typedef {Object} Field - A field definition for Sveltia CMS
  * @property {string} name - identifier for the field
  * @property {string} label - a number property of SpecialType
  * @property {string} widget - a number property of SpecialType
@@ -16,13 +16,12 @@ import { readFile } from 'node:fs/promises';
  * @property {string} [time_format] - moment format for displayed time only, for datetime widgets
  * @property {boolean} [picker_utc] - whether to use UTC for dates, for datetime widgets
  * @property {boolean} [required] - whether the field is required or not
- * @property {boolean} [allow_multiple] - ??
  * @property {boolean} [multiple] - ??
  * @property {boolean} [allow_add] - wether to allow adding values, for widgets with multiple=true
  */
 
 /**
- * @typedef {Object} Collection - A collection definition for netlify cms
+ * @typedef {Object} Collection - A collection definition for Sveltia CMS
  * @property {string} name - identifier for the collection
  * @property {string} label - Text label for the collection
  * @property {string} [label_singular] - Text label for an individual element of the collection
@@ -100,8 +99,8 @@ const fields = generateFieldMap([
 	},
 	{
 		name: asConst('slug'),
-		widget: 'id',
-		hint: 'This is used to create the url',
+		widget: 'string',
+		hint: 'This is used to create the URL slug.',
 	},
 	{
 		label: 'Canonical URL',
@@ -124,7 +123,6 @@ const fields = generateFieldMap([
 		name: asConst('image'),
 		widget: 'image',
 		required: false,
-		allow_multiple: false,
 	},
 	{
 		label: 'Alt Text',
@@ -167,7 +165,7 @@ const fields = generateFieldMap([
 	},
 	{
 		name: asConst('eleventyExcludeFromCollections'),
-		label: 'Hidd from collections',
+		label: 'Hide from collections',
 		widget: 'boolean',
 		required: false,
 		default: undefined,
@@ -268,7 +266,7 @@ function addDefaultsToCollection(collection) {
 	const hasField = (nameToFind) =>
 		Boolean(
 			collection.fields &&
-				collection.fields.find(({ name }) => name === nameToFind),
+			collection.fields.find(({ name }) => name === nameToFind),
 		);
 	const titleDependentProps = hasField('title')
 		? {
@@ -310,7 +308,7 @@ function addDefaultsToCollection(collection) {
 }
 
 /**
- * Decap CMS Admin Config
+ * Sveltia CMS Admin Config
  */
 export default class CmsConfig {
 	/**
@@ -361,7 +359,6 @@ export default class CmsConfig {
 						: 'http://localhost:8080',
 			media_folder: 'assets/img',
 			public_folder: '/assets/img',
-			local_backend: true,
 			slug: {
 				encoding: 'unicode',
 				clean_accents: true,
@@ -621,9 +618,10 @@ export default class CmsConfig {
 									name: 'descriptions',
 									widget: 'object',
 									fields: featuredTags.map((name) => ({
-										name,
+										name: name.replace(/\s+/g, '_'),
 										label: toTitleCase(name),
 										widget: 'string',
+										required: false,
 									})),
 								},
 							],

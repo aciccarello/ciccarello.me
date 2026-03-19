@@ -8,44 +8,14 @@ excludeFromSitemap: true
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="robots" content="noindex">
 		<meta name="generator" content="{{ eleventy.generator }}">
+		<link rel="cms-config-url" type="application/json" href="/admin/config.yml" />
 		<title>Content Manager</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hithismani/responsive-decap@main/dist/responsive.css">
 	</head>
 	<body>
-		<!-- Include the script that builds the page and powers Decap CMS -->
-		<script src="/assets/js/decap-cms.js"></script>
-		<script>
-			CMS.registerWidget(
-				'id',
-				createClass({
-					componentDidMount() {
-						const { value, onChange } = this.props;
-						if (!value) {
-							const now = new Date();
-							const utcTimeValue = now.valueOf() - new Date(now.toISOString().split('T')[0]);
-							onChange(utcTimeValue);
-						}
-					},
-					handleChange(e) {
-						this.props.onChange(e.target.value.trim());
-					},
-					render() {
-						const {
-							forID,
-							classNameWrapper,
-							value,
-						} = this.props
-						return h('input',{
-								type:'text',
-								className: classNameWrapper,
-								value,
-								id: forID,
-								onChange: this.handleChange,
-							}
-						);
-					}
-				})
-			)
+		<script type="module">
+			import {init} from '/assets/js/cms.js';
+
+			init();
 		</script>
 	</body>
 </html>
