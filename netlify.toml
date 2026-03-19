@@ -20,9 +20,6 @@
   TZ="utc"
 
 [[plugins]]
-  # Installs the Lighthouse Build Plugin for all deploy contexts
-  package = "@netlify/plugin-lighthouse"
-[[plugins]]
   package = "@aciccarello/netlify-plugin-webmentions"
 
 	[plugins.inputs]

@@ -4,7 +4,7 @@
   "description": "Anthony Ciccarello's personal website",
   "scripts": {
     "start": "TZ=utc eleventy --serve",
-    "start:cms": "decap-server",
+    "start:cms": "echo 'CSM command removed, run npm start and open /admin/ page in a Chromium-based browser to use Sveltia CMS local workflow.'",
     "start:netlify": "netlify serve",
     "clean": "rm -rf _site temp",
     "build": "npm run clean && TZ=utc eleventy && npm run build:search",
@@ -37,9 +37,9 @@
   "homepage": "https://www.ciccarello.me",
   "type": "module",
   "dependencies": {
+    "@sveltia/cms": "^0.146.10",
     "@zachleat/pagefind-search": "^1.0.3",
     "7.css": "^0.21.1",
-    "decap-cms": "^3.9.0",
     "leaflet": "^1.9.4",
     "webmention.js": "^0.5.5"
   },
@@ -49,9 +49,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0",
     "@aciccarello/netlify-plugin-webmentions": "^1.1.1",
-    "@netlify/plugin-lighthouse": "^6.0.4",
     "@paulrobertlloyd/mf2tojf2": "^3.0.0",
-    "decap-server": "^3.5.0",
     "dotenv": "^17.2.4",
     "html-minifier-terser": "^7.2.0",
     "jest": "^30.2.0",
@@ -70,7 +68,6 @@
     "slugify": "^1.6.6"
   },
   "optionalDependencies": {
-    "decap-server": "^3.5.2",
     "netlify-cli": "^24.2.0",
     "pa11y-ci": "^4.0.1",
     "sharp": "^0.34.5"

@@ -40,7 +40,7 @@ export default async function (eleventyConfig) {
 	].map((path) => [path, path]);
 	const npmPackages = [
 		['webmention.js/static/webmention', 'assets/js/webmention.js'],
-		['decap-cms', 'assets/js/decap-cms.js'],
+		['@sveltia/cms', 'assets/js/cms.js'],
 		['@zachleat/pagefind-search', 'assets/js/pagefind-search.js'],
 		['7.css/dist/7.css', 'assets/css/7.css'],
 	].map(([packagePath, dest]) => [require.resolve(packagePath), dest]);

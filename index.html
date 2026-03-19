@@ -157,7 +157,7 @@ title: Home
 		</nav>
 		<ol class="post-list">
 		{%- assign posts = collections.mainPosts | reverse %}
-		{%- for post in posts limit: 5 -%}
+		{%- for post in posts limit: 0 -%}
 			<li>
 			{% include "post-card.html" %}
 			</li>
