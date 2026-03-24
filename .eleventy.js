@@ -24,30 +24,26 @@ const require = createRequire(import.meta.url);
  * @return  {import('@11ty/eleventy').default}                  Eleventy config object for site
  */
 export default async function (eleventyConfig) {
-	const staticFiles = [
-		'admin/index.html',
-		'assets/img',
-		'assets/js',
-		'assets/feed.xsl',
-		'assets/octothorpe-harmonizer.json',
-		'favicon.ico',
-		'robots.txt',
-		'pinterest-60576.html',
-		'mywotc6b2477c57f015eaa645.html',
-		'BingSiteAuth.xml',
-		'sites',
-	].map((path) => [path, path]);
-	const npmPackages = [
-		['webmention.js/static/webmention', 'assets/js/webmention.js'],
-		['@sveltia/cms', 'assets/js/cms.js'],
-		['@zachleat/pagefind-search', 'assets/js/pagefind-search.js'],
-		['7.css/dist/7.css', 'assets/css/7.css'],
-	].map(([packagePath, dest]) => [require.resolve(packagePath), dest]);
-
-	// addPassthroughCopy takes object mapping source -> dest
-	eleventyConfig.addPassthroughCopy(
-		Object.fromEntries([...staticFiles, ...npmPackages]),
-	);
+	eleventyConfig.addPassthroughCopy({
+		'admin/index.html': 'admin/index.html',
+		'assets/img': 'assets/img',
+		'assets/js': 'assets/js',
+		'assets/feed.xsl': 'assets/feed.xsl',
+		'assets/octothorpe-harmonizer.json':
+			'assets/octothorpe-harmonizer.json',
+		'favicon.ico': 'favicon.ico',
+		'robots.txt': 'robots.txt',
+		'pinterest-60576.html': 'pinterest-60576.html',
+		'mywotc6b2477c57f015eaa645.html': 'mywotc6b2477c57f015eaa645.html',
+		'BingSiteAuth.xml': 'BingSiteAuth.xml',
+		sites: 'sites',
+		[require.resolve('webmention.js/static/webmention')]:
+			'assets/js/webmention.js',
+		[require.resolve('@sveltia/cms')]: 'assets/js/cms.js',
+		[require.resolve('@zachleat/pagefind-search')]:
+			'assets/js/pagefind-search.js',
+		[require.resolve('7.css/dist/7.css')]: 'assets/css/7.css',
+	});
 
 	/**
 	 * Map of collection names to glob patterns
