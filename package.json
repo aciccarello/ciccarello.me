@@ -4,7 +4,6 @@
   "description": "Anthony Ciccarello's personal website",
   "scripts": {
     "start": "TZ=utc eleventy --serve",
-    "start:cms": "echo 'CSM command removed, run npm start and open /admin/ page in a Chromium-based browser to use Sveltia CMS local workflow.'",
     "start:netlify": "netlify serve",
     "clean": "rm -rf _site temp",
     "build": "npm run clean && TZ=utc eleventy && npm run build:search",
