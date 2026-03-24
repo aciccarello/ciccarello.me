@@ -1,6 +1,5 @@
 import 'dotenv/config';
 import { createRequire } from 'node:module';
-import { readFile } from 'node:fs/promises';
 import rssPlugin from '@11ty/eleventy-plugin-rss';
 import eleventySyntaxhighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight';
 import eleventyLightningCssPlugin from '@11tyrocks/eleventy-plugin-lightningcss';
@@ -75,13 +74,10 @@ export default async function (eleventyConfig) {
 			.getFilteredByGlob(collections.posts)
 			.filter((page) => !page.data.excludeFromMainFeed),
 	);
-	eleventyConfig.addCollection('testPosts', async (collection) => {
-		let posts = JSON.parse(
-			(
-				await readFile(new URL('./_data/test.json', import.meta.url))
-			).toString(),
-		).posts;
-		const postUrls = Object.values(posts);
+	eleventyConfig.addCollection('testPosts', (collection) => {
+		const postUrls = Object.values(
+			collection.getAll()[0]?.data.test?.posts ?? {},
+		);
 
 		return collection
 			.getAllSorted()
