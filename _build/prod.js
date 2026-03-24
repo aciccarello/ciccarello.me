@@ -1,7 +1,11 @@
 import htmlmin from 'html-minifier-terser';
 
+export function isProductionBuild() {
+	return Boolean(process.env.NETLIFY || process.env.NODE_ENV === 'production');
+}
+
 export default function (eleventyConfig) {
-	if (process.env.NETLIFY || process.env.NODE_ENV === 'production') {
+	if (isProductionBuild()) {
 		eleventyConfig.addTransform('htmlmin', function (content) {
 			// String conversion to handle `permalink: false`
 			if ((this.page.outputPath || '').endsWith('.html')) {
