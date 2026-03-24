@@ -8,7 +8,7 @@ import markdownPlugin from './_build/markdown.js';
 import recipePlugin from './_build/recipe.js';
 import tripsPlugin from './_build/trips.js';
 import i18nPlugin from './_build/i18n.js';
-import productionPlugin from './_build/prod.js';
+import productionPlugin, { isProductionBuild } from './_build/prod.js';
 
 const require = createRequire(import.meta.url);
 /**
@@ -144,7 +144,7 @@ export default async function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(eleventySyntaxhighlightPlugin);
 	eleventyConfig.addPlugin(eleventyLightningCssPlugin, {
-		minify: false, // TODO: Enable based on env flags
+		minify: isProductionBuild(),
 		sourceMap: true,
 	});
 	eleventyConfig.addPlugin(i18nPlugin, {
