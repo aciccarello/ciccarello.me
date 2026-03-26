@@ -2,6 +2,7 @@
 title: 'San Diego Sports Teams'
 layout: page
 back_button: ..
+redirect_from: /sd-sports
 sportsTeams:
   - name: Padres Baseball
     url: https://www.mlb.com/padres
@@ -48,11 +49,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/2/2c/Oceanside_Bombers.png?_=20251114000344
     image_alt: Team logo of Oceanside Bombers a stealth bomber with a blue football.
     summary: Arena Football team playing at Frontwave Arena
-  - name: Mojo Volleyball
-    url: http://sandiegomojovb.com/
-    image: https://upload.wikimedia.org/wikipedia/en/0/07/SanDiegoMojo.png
-    image_alt: Team logo of San Diego Mojo depicting an eagle head.
-    summary: PVF Women's Volleyball playing at Viejas Arena
   - name: Wild Volleyball
     url: http://sandiegowild.com/
     image: https://images.squarespace-cdn.com/content/v1/63fe6a9f4386440220ae7ea2/f72d93ee-28a6-45e9-ab60-63f32d847729/SD+Wild+Logo_Official_Cropped.png
