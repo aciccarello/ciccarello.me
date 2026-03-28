@@ -5,6 +5,7 @@ permalink: /drafts/birding-in-2025/
 tags:
   - birds
   - birding
+  - BirdingYearInReview
 eleventyExcludeFromCollections: true
 eleventyExcludeFromCollectionsReason: draft
 ---
