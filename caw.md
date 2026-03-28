@@ -60,7 +60,7 @@ While crows and ravens are widespread in the United States, there are fewer rave
 Raven can tend to cover more ground or live in more remote areas than American Crows, though both are known to take advantage of various human handouts.
 Location is also key for the two other crows/ravens you might encounter in the United States.
 
-## What sound is it making
+## What sound is it making?
 
 Birds won't always identify themselves, but making sound is the closest thing to it for corvids.
 Crows are known for their "caw".
@@ -71,7 +71,7 @@ But crows tend to be noticeably higher pitched than crows.
 - [American Crow Caw](https://www.allaboutbirds.org/guide/American_Crow/sounds)
 - [Common Raven Call](https://www.allaboutbirds.org/guide/Common_Raven/sounds)
 
-## American Crow or Fish Crow
+## American Crow or Fish Crow?
 
 In the Eastern United States, there's another tricky identification challenge.
 This time it's still a crow!
@@ -84,7 +84,7 @@ An American Crow will sound more like a full-throated "caw".
 
 [All About Birds: Fish Crow vs American Crow](https://www.allaboutbirds.org/guide/Fish_Crow/species-compare/59858041)
 
-## Common Raven or Chihuahuan Raven
+## Common Raven or Chihuahuan Raven?
 
 In parts of southern Arizon, south or eastern New Mexico, western Texas, and even parts of southeastern Colorado, another raven, the Chihuahuan Raven can be found.
 It's typically found in lower elevations around dry, open land.
@@ -142,4 +142,4 @@ In fact New World Orioles are also member of the New World Blackbirds family kno
     objectPosition: "50% center"
 %}
 
-\_This page was inspired by [FractalKitty](https://banjomagpi.com/caw/) and [others](https://indieweb.org/caw)
+_This page was inspired by [FractalKitty](https://banjomagpi.com/caw/) and [others](https://indieweb.org/caw)_
