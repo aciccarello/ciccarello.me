@@ -4,34 +4,990 @@ slug: caw
 layout: page
 back_button: /birds/
 image:
+quizData:
+  - id: color
+    prompt: What color was it?
+    options:
+      - id: black
+        title: All black
+        hint: No other colors seen
+        reason: Mature crows and ravens are normally all black.
+        score:
+          crow: 2
+          raven: 2
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/387481431/embed
+      - id: other-color
+        title: Has some white or other color
+        hint: Look at the bill and features like the head, belly, or tail
+        reason: If the bill, legs, or feathers aren't black, it's probably not a crow.
+        score:
+          crow: 0
+          raven: 0
+          neither: 3
+        media:
+          src: https://macaulaylibrary.org/asset/341809521/embed
+  - id: size
+    prompt: How big is it?
+    options:
+      - id: small
+        title: "Small"
+        hint: Robin sized or smaller
+        reason: Starling, blackbirds, and grackle are all much smaller than crows and ravens.
+        score:
+          crow: 0
+          raven: 0
+          neither: 3
+        media:
+          src: https://macaulaylibrary.org/asset/576149141/embed
+          caption: Can it perch on a bird feeder?
+      - id: medium
+        title: "Medium"
+        hint: Larger than a robin but less than a medium-hawk sized
+        reason: Overall size looked right for American Crow.
+        score:
+          crow: 2
+          raven: 0
+          neither: 1
+        media:
+          src: https://macaulaylibrary.org/asset/55659461/embed
+          caption: Compare to a red-tailed hawk
+      - id: large
+        title: "Large"
+        hint: Hawk sized, very bulky
+        reason: Ravens are as big as a large hawk.
+        score:
+          crow: 0
+          raven: 3
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/627977316/embed
+          caption: Canada Geese are no lightweights
+      - id: xlarge
+        title: "Extra-Large"
+        hint: Larger than a hawk, large wings
+        reason: Turkey Vultures and even the smaller Black Vulture are larger than ravens, but usually distinguishable by their extra-large wings with white or gray patches
+        score:
+          crow: 0
+          raven: 0
+          neither: 2
+        media:
+          src: https://macaulaylibrary.org/asset/216584601/embed
+  - id: tail
+    prompt: What tail shape did you notice in flight?
+    options:
+      - id: crow-tail
+        title: Squared or even fan tail
+        hint: Outer and inner tail feathers look closer in length.
+        reason: A crow's tail feathers are usually about the same length.
+        score:
+          crow: 1
+          raven: 0
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/613817287/embed
+      - id: raven-tail
+        title: Wedge or diamond-like tail
+        hint: Center feathers appear longer.
+        reason: A raven's tail has longer feathers in the middle
+        score:
+          crow: 0
+          raven: 2
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/142607851/embed
+  - id: bill
+    prompt: What does the bill look like?
+    options:
+      - id: raven-bill
+        title: Heavy bill with a deep, chunky base
+        hint: Looks more powerful even at distance.
+        reason: Common Raven have a thick bill, even as it get towards the end.
+        score:
+          crow: 0
+          raven: 3
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/617460175/embed
+      - id: crow-bill
+        title: Thick bill but tapers clearly to a point
+        hint: Black bill is still prominent but doesn't look heavy
+        reason: Bill shape leaned crow.
+        score:
+          crow: 3
+          raven: 1
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/286868001/embed
+      - id: neither-bill
+        title: Thin, sharp, or brightly colored bill
+        hint: 
+        reason: Both crows and ravens have bills that are thicker than most.
+        score:
+          crow: 0
+          raven: 0
+          neither: 3
+        media:
+          src: https://macaulaylibrary.org/asset/57760971/embed
+  - id: bristles
+    prompt: Does it have a mustache?
+    options:
+      - id: raven-stash
+        title: Yes, with long bristles (as much as 2/3 the way down the bill)
+        hint: Does it look like long feathers are flush against the bill?
+        reason: The bristles on a raven are longer and often more noticeable
+        score:
+          crow: 1
+          raven: 3
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/383039781/embed
+          caption: 
+      - id: crow-stash
+        title: Yes, with short bristles (stops 1/2 way down the bill)
+        hint: Look at the top of the bill for some extra feathers
+        reason: Crows do have feathers on their bill, but they never more than 1/2 way
+        score:
+          crow: 3
+          raven: 1
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/27327221/embed
+          caption: American Crow bill shape reference.
+      - id: clean-shave
+        title: No bristles above the bill
+        hint: Clean bill...of feathers?
+        reason: Both crows and ravens have some bristles
+        score:
+          crow: 0
+          raven: 3
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/530154711/embed
+          caption: Common Raven heavy bill and bristles.
+  - id: eyes
+    prompt: What color are the eyes?
+    options:
+      - id: eyes-black
+        title: Completely black
+        hint: Iris is extremely hard to see
+        reason: Crows and ravens all have black eyes except when very young (when they will be blue)
+        score:
+          crow: 2
+          raven: 2
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/635611806/embed
+      - id: eyes-color
+        title: White or colored
+        hint: Iris will usually stand out against light colored eyes
+        reason: Blackbirds often have notable eye colors or white eyes
+        score:
+          crow: 0
+          raven: 0
+          neither: 3
+        media:
+          src: https://macaulaylibrary.org/asset/107295441/embed
+  - id: beard
+    prompt: Does it have a beard?
+    options:
+      - id: raven-beard
+        title: Yes!
+        hint: More visible when calling
+        reason: Ravens have some scruff
+        score:
+          crow: 0
+          raven: 3
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/392903841/embed
+          caption:
+      - id: no-beard
+        title: No!
+        hint: No individual feathers visible
+        reason: Most birds have relatively smooth throats
+        score:
+          crow: 1
+          raven: 0
+          neither: 1
+        media:
+          src: https://macaulaylibrary.org/asset/72167041/embed
+          caption:
+      - id: long-neck
+        title: Where do I look? The neck is long?
+        hint: Does a thin neck clearly separate the body and head?
+        reason: Cormorants are longer than corvids
+        score:
+          crow: 0
+          raven: 0
+          neither: 5
+        media:
+          src: https://macaulaylibrary.org/asset/109443061/embed
+          caption:
+  - id: voice
+    prompt: What did it sound like?
+    options:
+      - id: raven-voice
+        title: Deeper croak or rough grumble
+        hint: Lower and and throaty
+        reason: Ravens are known for their croak
+        score:
+          crow: 0
+          raven: 3
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/453042221/embed
+          caption: Click to play video
+      - id: crow-voice
+        title: Higher, classic caw
+        hint: Sharp and familiar crow calls.
+        reason: Vocalization leaned American Crow.
+        score:
+          crow: 3
+          raven: 0
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/472843/embed
+          caption: Click to play video
+      - id: neither-voice
+        title: Clicks
+        hint: 
+        reason: Both crows and ravens can make a wide variety of noises and frequently make clicking sounds.
+        score:
+          crow: 1
+          raven: 1
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/626606942/embed
+          caption: Click to play video
+      - id: neither-voice
+        title: Squeaky, melodic, metallic, or mixed mimic sounds
+        hint: 
+        reason: More common for starlings, blackbirds, or other species, but corvids do have a range of sounds.
+        score:
+          crow: 0
+          raven: 0
+          neither: 1
+        media:
+          src: https://macaulaylibrary.org/asset/482897/embed
+          caption: Click to play video
+  - id: flight
+    prompt: How did it move in the air?
+    options:
+      - id: neither-flight
+        title: Rapid and/or shallow wingbeats
+        hint: Does the bird look like it's in a hurry?
+        reason: Both blackbirds and cormorants will flap more rapidly than a crow or raven.
+        score:
+          crow: 0
+          raven: 0
+          neither: 1
+        media:
+          src: https://macaulaylibrary.org/asset/358397021/embed
+      - id: crow-flight
+        title: Steady flapping, direct travel
+        hint: Frequent wingbeats, occasional glides.
+        reason: Crows are efficient fliers and less worried about predation
+        score:
+          crow: 1
+          raven: 0
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/407693/embed
+      - id: raven-flight
+        title: Soaring, gliding, playful aerobatics
+        hint: Uses thermals more like a raptor.
+        reason: Ravens, like vultures, use thermals (rising hot air) so they can fly without flapping
+        score:
+          crow: 0
+          raven: 1
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/312273601/embed
+          caption: Bird riding thermals
+  - id: group
+    prompt: How many birds did you observe?
+    options:
+      - id: raven-group
+        title: Single bird or pair
+        hint: Was this bird all alone or only with a partner?
+        reason: Ravens don't usually congregate unless there is lots of food
+        score:
+          crow: 0
+          raven: 1
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/646005119/embed
+      - id: crow-group
+        title: Small group
+        hint: Was there a small flock or group of 3-30 birds?
+        reason: Crows and blackbirds tend to be more social than ravens
+        score:
+          crow: 1
+          raven: 0
+          neither: 1
+        media:
+          src: https://macaulaylibrary.org/asset/629064538/embed
+      - id: neither-group
+        title: Large flock
+        hint: Are there more than 30 individuals?
+        reason: Crows often form large flocks in the winter. Members of the blackbird family are also known for large flocks.
+        score:
+          crow: 3
+          raven: 0
+          neither: 3
+        media:
+          src: https://macaulaylibrary.org/asset/646943447/embed
+  - id: group
+    prompt: Did you notice any of these behaviors?
+    options:
+      - id: crow-mobbing
+        title: Multiple birds mobbing a large bird like a hawk
+        hint: Birds ganging up on a potential threat
+        reason: This is a classic crow behavior, though some blackbirds will also mob aggressively
+        score:
+          crow: 3
+          raven: 0
+          neither: 1
+        media:
+          src: https://macaulaylibrary.org/asset/515052421/embed
+          caption: Birds pursuing a red-tailed hawk
+      - id: neither-group
+        title: Swimming?
+        hint: Was the bird fully in the water?
+        reason: Cormorants spend hours each day in the water fishing.
+        score:
+          crow: 0
+          raven: 0
+          neither: 5
+        media:
+          src: https://macaulaylibrary.org/asset/612751428/embed
+  - id: feathers
+    prompt: 'Expert: How many "finger feathers" does it have (excluding the "thumb")'
+    options:
+      - id: raven-feathers
+        title: Four
+        hint: Might need a photo to count them
+        reason:
+        score:
+          crow: 0
+          raven: 1
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/295772111/embed
+      - id: crow-feathers
+        title: Five
+        hint: Might need a photo to count them
+        reason:
+        score:
+          crow: 1
+          raven: 0
+          neither: 0
+        media:
+          src: https://macaulaylibrary.org/asset/613817287/embed
 ---
 
 <style type="text/css">
   :root {
     --color-base-hue: 540;
+    --caw-quiz-crow: #2b6cb0;
+    --caw-quiz-raven: #5a3fa3;
+    --caw-quiz-neither: #2f855a;
+    --caw-quiz-accent: var(--color-base, green);
+    --caw-quiz-border: color-mix(in srgb, var(--color-border) 78%, #000000);
+  }
+
+  .caw-quiz {
+    margin: 2rem 0;
+  }
+
+  .caw-quiz__status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .caw-quiz__chips,
+  .caw-quiz__point-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .caw-quiz__chips > li,
+  .caw-quiz__point-badges > li {
+    list-style: none;
+  }
+
+  .caw-quiz__chip,
+  .caw-quiz__point-badge {
+    border-radius: 999px;
+    display: inline-flex;
+    gap: 0.35rem;
+    border: 0.0625rem solid transparent;
+    background: color-mix(in srgb, #ffffff 84%, var(--color-secondary-bg));
+  }
+
+  .caw-quiz__chip {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.65rem;
+    border-width: 0.125rem;
+  }
+
+  .caw-quiz__point-badge {
+    padding: 0.2rem 0.5rem;
+    font-weight: 600;
+  }
+
+  .caw-quiz__chip[data-team="crow"],
+  .caw-quiz__point-badge[data-team="crow"],
+  .caw-quiz__result[data-team="crow"] {
+    border-color: color-mix(in srgb, var(--caw-quiz-crow) 55%, #ffffff);
+  }
+
+  .caw-quiz__chip[data-team="raven"],
+  .caw-quiz__point-badge[data-team="raven"],
+  .caw-quiz__result[data-team="raven"] {
+    border-color: color-mix(in srgb, var(--caw-quiz-raven) 55%, #ffffff);
+  }
+
+  .caw-quiz__chip[data-team="neither"],
+  .caw-quiz__point-badge[data-team="neither"],
+  .caw-quiz__result[data-team="neither"] {
+    border-color: color-mix(in srgb, var(--caw-quiz-neither) 55%, #ffffff);
+  }
+
+  .caw-quiz__question {
+    border: 0.0625rem solid color-mix(in srgb, var(--color-border) 75%, #ffffff);
+    border-radius: var(--border-radius);
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: color-mix(in srgb, #ffffff 95%, var(--color-secondary-bg));
+  }
+
+  .caw-quiz__question legend {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0 0.25rem;
+  }
+
+  .caw-quiz__options {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    margin-top: 0.65rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+  }
+
+  .caw-quiz__option {
+    flex: 0 0 clamp(16rem, 42vw, 22rem);
+    scroll-snap-align: start;
+    border: 0.125rem solid transparent;
+    border-radius: calc(var(--border-radius) * 1.25);
+    padding: 0.75rem;
+    min-height: 30rem;
+    color: black;
+    background:
+      linear-gradient(#ffffff, #fbfbfb) padding-box,
+      linear-gradient(155deg, #d9d9d9, #f4f4f4 45%, #cfcfcf) border-box;
+    box-shadow:
+      inset 0 0 0 0.0625rem color-mix(in srgb, var(--caw-quiz-border) 40%, #ffffff),
+      0 0.25rem 0.75rem color-mix(in srgb, #000000 8%, transparent);
+    position: relative;
+    transition: opacity 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .caw-quiz__option label {
+    display: grid;
+    gap: 0.5rem;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  .caw-quiz__option-header {
+    display: grid;
+    gap: 0.4rem;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+
+  .caw-quiz__option input {
+    margin-top: 0.18rem;
+    accent-color: var(--caw-quiz-accent);
+  }
+
+  .caw-quiz__unclear-graphic {
+    align-items: center;
+    display: flex;
+    font-size: clamp(3rem, 8vw, 5rem);
+    justify-content: center;
+    flex: 1 1 auto;
+    line-height: 1;
+    margin: 0.5rem 0;
+    min-height: 6rem;
+  }
+
+  .caw-quiz__option--unclear label {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+  }
+
+  .caw-quiz__option--unclear .caw-quiz__option-header {
+    align-items: center;
+  }
+
+  .caw-quiz__option label strong {
+    display: block;
+    margin-bottom: 0.15rem;
+    font-size: 1.75rem;
+    font-weight: normal;
+  }
+
+  .caw-quiz__hint {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.92;
+  }
+
+  .caw-quiz__option:has(input:checked) {
+    border-color: var(--caw-quiz-accent);
+    border-width: 0.1875rem;
+    background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(155deg, var(--caw-quiz-accent), color-mix(in srgb, var(--caw-quiz-accent) 20%, #ffffff)) border-box;
+    color: #000000;
+    box-shadow:
+      inset 0 0 0 0.0625rem color-mix(in srgb, var(--caw-quiz-accent) 25%, #ffffff),
+      0 0 0 0.125rem color-mix(in srgb, var(--caw-quiz-accent) 22%, #ffffff),
+      var(--box-shadow-standard);
+    transform: translateY(-0.1rem);
+  }
+
+  .caw-quiz__option:has(input:checked) strong,
+  .caw-quiz__option:has(input:checked) .caw-quiz__hint,
+  .caw-quiz__option:has(input:checked) .caw-quiz__reason,
+  .caw-quiz__option:has(input:checked) .caw-quiz__media figcaption,
+  .caw-quiz__option:has(input:checked) .caw-quiz__point-badge {
+    color: #000000;
+  }
+
+  .caw-quiz__question:has(input:checked) .caw-quiz__option {
+    opacity: 0.75;
+    filter: saturate(0.6);
+  }
+
+  .caw-quiz__question:has(input:checked) .caw-quiz__option:has(input:checked) {
+    opacity: 1;
+    filter: none;
+  }
+
+  .caw-quiz__option:has(input:focus-visible) {
+    outline: 0.2rem solid color-mix(in srgb, var(--caw-quiz-accent) 30%, #ffffff);
+    outline-offset: 0.08rem;
+  }
+
+  .caw-quiz__media {
+    padding-top: 0.5rem;
+  }
+
+  .caw-quiz__media-frame {
+    width: 100%;
+    max-width: 32rem;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: calc(var(--border-radius) * 0.75);
+    background: #fff;
+  }
+
+  iframe {
+    background: #fff;
+  }
+
+  .caw-quiz__media iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  .caw-quiz__media figcaption {
+    font-size: 0.86rem;
+    margin-top: 0.4rem;
+  }
+
+  .caw-quiz__reason {
+    display: none;
+  }
+
+  .caw-quiz__points {
+    display: none;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 0.0625rem dashed color-mix(in srgb, var(--caw-quiz-border) 65%, #ffffff);
+    font-size: 0.82rem;
+  }
+
+  .caw-quiz__result {
+    border: 0.125rem solid var(--caw-quiz-border);
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+    padding: 0.9rem;
+    background: color-mix(in srgb, #ffffff 85%, var(--color-secondary-bg));
+  }
+
+  .caw-quiz__result[data-team="tie"] {
+    border-color: color-mix(in srgb, var(--caw-quiz-accent) 35%, #ffffff);
+  }
+
+  .caw-quiz__result h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: 2rem;
+  }
+
+  .caw-quiz__question:has(input:checked) .caw-quiz__media-frame {
+    aspect-ratio: auto;
+    height: min(25rem, 72vh);
+    overflow: auto;
+  }
+
+  .caw-quiz__question:has(input:checked) .caw-quiz__reason {
+    display: block;
+  }
+
+  .caw-quiz__question:has(input:checked) .caw-quiz__option:has(input:checked) .caw-quiz__points {
+    display: block;
+  }
+
+  .caw-quiz__footer {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 32em) {
+    .caw-quiz__option {
+      flex-basis: min(86vw, 20rem);
+    }
   }
 </style>
 
 Whenever I see a large, all-black bird, it's time for a classic birding game: Crow or No?
-Here I'll give some tips to help you figure out if it is a crow or one of it's relatives.
-One feature may not be clear enough so it's helpful to combine multiple distinguishing features to help you determine the difference.
+I first saw [Kaeli Swift, Ph.D.](https://corvidresearch.blog/) (aka @corvidresearch) hosting this game online and giving great tips on how to ID different black birds.
+Identifying these birds is a surprisingly hard challenge.
+Early on in my birding journey I was corrected by an ebird reviewer on a [photo I thought was a crow](https://macaulaylibrary.org/asset/198269661) but was actually a raven.
 
-## How big is it?
+With time it becomes easier to distinguish these birds.
+Here I'll give some tips to help you figure out if it is a crow or one of it's relatives.
+I'm focusing on birds in the United States, so these tips may not work for species in other regions.
+Some identifiers, like body proportions, can be hard to describe but you'll learn with repetition.
+One go-to feature may not be clear enough especially because age, molting patterns, and genetic mutation can cause some surprising variation.
+So it's helpful to combine multiple distinguishing features to help you determine the difference.
+
+## Crow or No? Identify your local black bird
+
+{% removeindents %}
+<section class="caw-quiz" data-caw-quiz>
+  <p>Pick one card for each question and this page will score how likely your bird is a crow, raven, or neither. You can turn on reference media to compare your bird with Macaulay Library examples while you play.</p>
+
+  <form data-caw-form>
+      <div data-caw-questions>
+        {% for question in quizData %}
+          <fieldset class="caw-quiz__question" data-question-id="{{ question.id }}">
+            <legend>{{ forloop.index }}. {{ question.prompt }}</legend>
+            <div class="caw-quiz__options">
+              {% for option in question.options %}
+                <article class="caw-quiz__option">
+                  <label>
+                    <span class="caw-quiz__option-header">
+                      <input
+                        type="radio"
+                        name="{{ question.id }}"
+                        value="{{ option.id }}"
+                        data-score-crow="{{ option.score.crow }}"
+                        data-score-raven="{{ option.score.raven }}"
+                        data-score-neither="{{ option.score.neither }}"
+                        data-reason="{{ option.reason | escape }}"
+                        required
+                      >
+                      <span>
+                        <strong>{{ option.title }}</strong>
+                        <p class="caw-quiz__hint">{{ option.hint }}</p>
+                      </span>
+                    </span>
+                    {% if option.media %}
+                      <figure class="caw-quiz__media" data-media-panel>
+                        <div class="caw-quiz__media-frame">
+                          <iframe
+                            src="{{ option.media.src }}"
+                            loading="lazy"
+                            referrerpolicy="no-referrer"
+                            scrolling="no"
+                            allowfullscreen
+                            title="{{ option.title | escape }} reference"
+                          ></iframe>
+                        </div>
+                        {% if option.media.caption %}
+                          <figcaption>{{ option.media.caption }}</figcaption>
+                        {% endif %}
+                      </figure>
+                    {% endif %}
+                    <p class="caw-quiz__reason">{{ option.reason }}</p>
+                    <div class="caw-quiz__points" aria-live="polite">
+                      <ul class="caw-quiz__point-badges" aria-label="Points added by this choice">
+                        {% if option.score.crow > 0 %}
+                          <li><span class="caw-quiz__point-badge" data-team="crow">Crow +{{ option.score.crow }}</span></li>
+                        {% endif %}
+                        {% if option.score.raven > 0 %}
+                          <li><span class="caw-quiz__point-badge" data-team="raven">Raven +{{ option.score.raven }}</span></li>
+                        {% endif %}
+                        {% if option.score.neither > 0 %}
+                          <li><span class="caw-quiz__point-badge" data-team="neither">Neither +{{ option.score.neither }}</span></li>
+                        {% endif %}
+                        {% if option.score.crow == 0 and option.score.raven == 0 and option.score.neither == 0 %}
+                          <li><span class="caw-quiz__point-badge">No points added</span></li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                  </label>
+                </article>
+              {% endfor %}
+                <article class="caw-quiz__option caw-quiz__option--unclear">
+                  <label>
+                    <span class="caw-quiz__option-header">
+                      <input
+                        type="radio"
+                        name="{{ question.id }}"
+                        value="unknown"
+                        data-score-crow="0"
+                        data-score-raven="0"
+                        data-score-neither="0"
+                        data-reason=""
+                        required
+                      >
+                      <span>
+                        <strong>Unclear</strong>
+                        <p class="caw-quiz__hint">Sometimes you just don't know</p>
+                      </span>
+                    </span>
+                  <div class="caw-quiz__unclear-graphic" aria-hidden="true">🤷</div>
+                    <div class="caw-quiz__points" aria-live="polite">
+                      <ul class="caw-quiz__point-badges" aria-label="Points added by this choice">
+                        <li><span class="caw-quiz__point-badge">No points added</span></li>
+                      </ul>
+                    </div>
+                  </label>
+                </article>
+            </div>
+          </fieldset>
+        {% endfor %}
+      </div>
+
+    <div class="caw-quiz__status">
+      <strong data-caw-progress>0 / {{quizData | size}} questions answered</strong>
+      <ul class="caw-quiz__chips" aria-label="Current quiz scores">
+        <li><span class="caw-quiz__chip" data-team="crow">Crow: <span data-score="crow">0</span></span></li>
+        <li><span class="caw-quiz__chip" data-team="raven">Raven: <span data-score="raven">0</span></span></li>
+        <li><span class="caw-quiz__chip" data-team="neither">Neither: <span data-score="neither">0</span></span></li>
+      </ul>
+    </div>
+      <section class="caw-quiz__result" data-caw-result aria-live="polite">
+        <h3 data-caw-result-title></h3>
+        <p data-caw-result-body></p>
+        <ul data-caw-result-reasons></ul>
+        <p><em>This is a learning game, not a formal checklist ID. Use a local guide and range info for final confirmation.</em></p>
+      </section>
+
+      <div class="caw-quiz__footer">
+        <button type="reset">Reset quiz</button>
+      </div>
+  </form>
+  <noscript>
+    <p><strong>Scoring is unavailable without JavaScript.</strong> You can still use all questions and media references as a manual checklist.</p>
+  </noscript>
+</section>
+
+<script type="module">
+  const quizRoot = document.querySelector('[data-caw-quiz]');
+  if (!quizRoot) {
+    throw new Error('Caw quiz root not found');
+  }
+
+  const form = quizRoot.querySelector('[data-caw-form]');
+  const questionFields = Array.from(
+    quizRoot.querySelectorAll('[data-question-id]'),
+  );
+  const progressEl = quizRoot.querySelector('[data-caw-progress]');
+  const resultEl = quizRoot.querySelector('[data-caw-result]');
+  const resultTitleEl = quizRoot.querySelector('[data-caw-result-title]');
+  const resultBodyEl = quizRoot.querySelector('[data-caw-result-body]');
+  const resultReasonsEl = quizRoot.querySelector('[data-caw-result-reasons]');
+
+  const scoreEls = {
+    crow: quizRoot.querySelector('[data-score="crow"]'),
+    raven: quizRoot.querySelector('[data-score="raven"]'),
+    neither: quizRoot.querySelector('[data-score="neither"]')
+  };
+
+  const selectedOptionByQuestion = () =>
+    questionFields
+      .map((field) => field.querySelector('input[type="radio"]:checked'))
+      .filter(Boolean);
+
+  const summarizeResult = (totals) => {
+    const difference = Math.abs(totals.crow - totals.raven);
+
+    if (totals.neither >= totals.crow + 2 && totals.neither >= totals.raven + 2) {
+      return {
+        team: 'neither',
+        title: 'Most Likely: Neither Crow Nor Raven',
+        body: 'Your answers point more strongly to another black bird group such as blackbirds, starlings, vultures, or cormorants.'
+      };
+    }
+
+    if (difference <= 2) {
+      return {
+        team: 'tie',
+        title: 'Too Close To Call',
+        body: 'Crow and raven are both plausible based on your picks. Try to confirm with tail shape in flight and vocalizations.'
+      };
+    }
+
+    if (totals.crow > totals.raven) {
+      return {
+        team: 'crow',
+        title: 'Most Likely: American Crow',
+        body: 'Your selected traits align more with crow size, voice, and behavior.'
+      };
+    }
+
+    return {
+      team: 'raven',
+      title: 'Most Likely: Common Raven',
+      body: 'Your selected traits align more with raven bulk, shape, and flight style.'
+    };
+  };
+
+  const teamScoreKey = { crow: 'scoreCrow', raven: 'scoreRaven', neither: 'scoreNeither' };
+
+  const buildReasons = (selectedOptions, winnerTeam) => {
+    const key = teamScoreKey[winnerTeam];
+    const reasonCandidates = selectedOptions
+      .map((optionEl) => ({
+        text: optionEl.dataset.reason,
+        weight: key
+          ? Number(optionEl.dataset[key])
+          : Math.max(Number(optionEl.dataset.scoreCrow), Number(optionEl.dataset.scoreRaven), Number(optionEl.dataset.scoreNeither)),
+      }))
+      .filter((entry) => entry.text && entry.weight > 0)
+      .toSorted((a, b) => b.weight - a.weight)
+      .slice(0, 3);
+
+    if (!reasonCandidates.length) {
+      return ['No single clue was dominant, so compare multiple traits together.'];
+    }
+
+    return reasonCandidates.map((entry) => entry.text);
+  };
+
+  const updateQuizState = () => {
+    const selectedOptions = selectedOptionByQuestion();
+    const totalQuestions = questionFields.length;
+    const answeredQuestions = selectedOptions.length;
+
+    progressEl.textContent = `${answeredQuestions} / ${totalQuestions} questions answered`;
+
+    const totals = selectedOptions.reduce(
+      (acc, optionEl) => ({
+        crow: acc.crow + Number(optionEl.dataset.scoreCrow),
+        raven: acc.raven + Number(optionEl.dataset.scoreRaven),
+        neither: acc.neither + Number(optionEl.dataset.scoreNeither),
+      }),
+      { crow: 0, raven: 0, neither: 0 },
+    );
+
+    scoreEls.crow.textContent = String(totals.crow);
+    scoreEls.raven.textContent = String(totals.raven);
+    scoreEls.neither.textContent = String(totals.neither);
+
+    if (answeredQuestions === 0) {
+      resultEl.dataset.team = 'tie';
+      resultTitleEl.textContent = 'Pick Any Card To Start';
+      resultBodyEl.textContent = 'Your live best guess will appear as soon as you choose one option. You do not need to answer every question.';
+      resultReasonsEl.replaceChildren();
+      const li = document.createElement('li');
+      li.textContent = 'Scores and explanations will appear here.';
+      resultReasonsEl.append(li);
+      return;
+    }
+
+    const summary = summarizeResult(totals);
+    const reasons = buildReasons(selectedOptions, summary.team);
+    const prefix = answeredQuestions < totalQuestions
+      ? `Current best guess from ${answeredQuestions} of ${totalQuestions} answered questions.`
+      : 'Final result from all answered questions.';
+
+    resultEl.dataset.team = summary.team;
+    resultTitleEl.textContent = summary.title;
+    resultBodyEl.textContent = `${prefix} ${summary.body}`;
+    resultReasonsEl.replaceChildren();
+    reasons.forEach((reason) => {
+      const li = document.createElement('li');
+      li.textContent = reason;
+      resultReasonsEl.append(li);
+    });
+  };
+
+  updateQuizState();
+
+  form.addEventListener('change', updateQuizState);
+  form.addEventListener('reset', () => {
+    setTimeout(() => {
+      updateQuizState();
+    }, 0);
+  });
+</script>
+{% endremoveindents %}
+
+## Some More Tips
+
+To expand on the quiz, here are some more details about what I look at to identify birds.
+
+### How big is it?
 
 An American crow is larger than most song birds like a robin.
 But it is smaller than most hawks.
 By contrast, a Common Raven can be as big as a large hawk.
-This can be hard to distinguish if they are far away, but side-by-side or relative to a physical object the two are usually distinguishable.
+This can be hard to distinguish without a reference point, but side-by-side or relative to a physical object the two are usually distinguishable.
 This size difference is also more significant in the Western United States, where the crows tend to be smaller.
 
-## How big is the bill?
+<figure>
+<iframe src="https://macaulaylibrary.org/asset/431540671/embed" height="519" width="640" frameborder="0" allowfullscreen></iframe>
+<figcaption>Here an American Crow is chasing off a Common Raven showing a significant size difference</figcaption>
+</figure>
+
+### How big is the bill?
 
 An American Crow's bill is relatively thick for a bird, but eventually tapers down to a point.
 The Common Raven's bill is thicker, even relative to it's body, often has more feathers covering it, and doesn't taper till closer till the end.
+At first, this looks really subtle, but eventually, you'll start to notice.
 
-![A black bird with a rounded wedge shaped bill and a little pink in the corner of the mouth perched on a roof.](/assets/img/caw-jv-crow.jpg 'This is an American Crow based on the taper of the bill. The pink is likely because he is a juvenile.')
+![A black bird with a rounded wedge shaped bill and a little pink in the corner of the mouth perched on a roof.](/assets/img/caw-jv-crow.jpg 'This is an American Crow based on the taper of the bill. The pink is because he is a juvenile.')
 
-## What shape is the tail?
+### What shape is the tail?
 
 If the bird is flying, try to look for the tail shape.
 American Crows' tail feathers are more even in length which gives their tail a more square look when closed or an even fan look when spread out.
@@ -39,39 +995,53 @@ By contrast, a Common Raven has longer feathers near the center of the tail.
 This can make their tail look almost diamond shaped.
 It still fans out when spread wide, but the middle should be notably longer than the sides.
 
-## How is it flying?
+A word of caution, this is easy to mess up and different tail positions can be misleading.
+If a raven's tail is completely spread out, it can be hard to notice the diamond shape.
+Sometimes the edges of a crows tail can make it look diamond shape.
+This is why it's best to combine a few marks to make an identification.
 
-Both ravens and crows can perform most of the same flight movements, but there are a few tendencies you may notice.
-If the bird is flapping pretty consistently, it might be a crow.
-If it is soaring on a thermal without flapping like a hawk, that is more common of ravens.
-Speaking of hawks, if a lot of birds are all chasing after a hawk, they may be crows.
-Both species can be very playful and creative in their movements, but ravens have been known to do loops or even fly upside down.
+### Are they ganging up on a larger bird?
 
-## How many are there?
+If a lot of black birds are all chasing after a hawk, they may be crows.
+Many species of birds like mockingbirds or even small sparrows do this, especially during breeding season to protect their young.
+Some smaller blackbirds, like Red-winged Blackbirds are also very protective of their territory, particularly when nesting.
+But crows are well known for grouping up to chase off a hawk in a behavior called "mobbing".
+Crows will also mob ravens so if there is a size difference between the two black birds, you might have both.
+
+### How many are there?
 
 This is a weak clue, since crows and ravens can both be in large or small groups.
 But ravens tend to either be alone or in pairs.
-By contrast, crows commonly form large flocks.
-Again, this isn't always consistent and I've seen large flocks of ravens, but it can help inform an ID.
+By contrast, crows frequently form large flocks.
+Again, this isn't always consistent.
+Crows spent lots of time on their own and I've seen flocks of ravens with as many as 30 individuals, but it can help inform an ID.
 
-## Where are you?
+### Where are you?
 
 While crows and ravens are widespread in the United States, there are fewer ravens in the central US states.
 Raven can tend to cover more ground or live in more remote areas than American Crows, though both are known to take advantage of various human handouts.
 Location is also key for the two other crows/ravens you might encounter in the United States.
 
-## What sound is it making?
+### What sound is it making?
 
 Birds won't always identify themselves, but making sound is the closest thing to it for corvids.
+This is one of the easiest ways to ID a bird because it works from a distance even if you don't have a view in your binoculars.
 Crows are known for their "caw".
 Raven calls tend to be much lower and grovelly.
-Not that both species can make a variety of sounds like pops or a low frequency grumble.
-But crows tend to be noticeably higher pitched than crows.
+Note that both species can make a variety of sounds like pops or a low frequency grumble.
+They have also been known to imitate other sounds, though not as frequently as parrots or mockingbirds do.
+Crows tend to be noticeably higher pitched than crows, but still low pitched to sound more like a cough than a song.
 
 - [American Crow Caw](https://www.allaboutbirds.org/guide/American_Crow/sounds)
 - [Common Raven Call](https://www.allaboutbirds.org/guide/Common_Raven/sounds)
 
-## American Crow or Fish Crow?
+## Bonus Round
+
+Okay, so you're pretty sure it is either a crow or raven.
+Now let's make things more complicated!
+Are you sure what kind of crow/raven?
+
+### American Crow or Fish Crow?
 
 In the Eastern United States, there's another tricky identification challenge.
 This time it's still a crow!
@@ -82,14 +1052,28 @@ But the easiest way to distinguish them, just like with ravens, is by their "caw
 Fish crows sound more nasally, almost like a squeaker dog toy.
 An American Crow will sound more like a full-throated "caw".
 
+<figure>
+<iframe src="https://macaulaylibrary.org/asset/456444101/embed" height="511" width="640" frameborder="0" allowfullscreen></iframe>
+</figure>
+
 [All About Birds: Fish Crow vs American Crow](https://www.allaboutbirds.org/guide/Fish_Crow/species-compare/59858041)
 
-## Common Raven or Chihuahuan Raven?
+### Common Raven or Chihuahuan Raven?
 
 In parts of southern Arizon, south or eastern New Mexico, western Texas, and even parts of southeastern Colorado, another raven, the Chihuahuan Raven can be found.
 It's typically found in lower elevations around dry, open land.
 They are slightly smaller than Common Ravens and the base of their feathers is white rather than gray.
 Their nasal bristles are typically longer compared to the Common Raven, and their voice higher but still lower than a crow.
+
+<figure>
+<iframe src="https://macaulaylibrary.org/asset/560951321/embed" height="510" width="320" frameborder="0" allowfullscreen></iframe>
+<figcaption>Here the wind is exposing the lighter base feather color</figcaption>
+</figure>
+
+<figure>
+<iframe src="https://macaulaylibrary.org/asset/158189771/embed" height="510" width="320" frameborder="0" allowfullscreen></iframe>
+<figcaption>Listen to the Chihuahuan call here</figcaption>
+</figure>
 
 [All About Birds: Chihauhaun Raven vs Common Raven](https://www.allaboutbirds.org/guide/Chihuahuan_Raven/species-compare/63739541)
 
@@ -142,4 +1126,40 @@ In fact New World Orioles are also member of the New World Blackbirds family kno
     objectPosition: "50% center"
 %}
 
+### Vultures
+
+Vultures are most often seen in flight and can at a glance look like ravens.
+However vultures have much larger wings and their head looks proportionally tiny.
+Plus their wings usually have some lighter sections.
+For Turkey Vultures, the trailing side of the wing often looks almost gray.
+For Black Vultures, the "finger" features on the ends of the wings will usually show some white.
+
+<figure>
+<iframe src="https://macaulaylibrary.org/asset/559796571/embed" height="510" width="640" frameborder="0" allowfullscreen></iframe>
+<figcaption>A black vulture with a raven</figcaption>
+</figure>
+
+### Starlings
+
+The European Starling was introduced from Europe and is now well established across North America.
+They are much smaller than crows and their feathers can have spots and an iridescent, almost rainbow hue in the right light.
+Outside of breeding season, their plumage becomes duller and their spots more noticeable.
+But sometimes they just look like black birds.
+They have color on their bill and legs which corvids like crows and ravens normally do not have.
+Their wings are short and quickly come to a point so in flight their wings look like little triangles.
+They are better imitators than the corvids and make a variety of sounds including some metalic noises.
+
+<figure>
+<iframe src="https://macaulaylibrary.org/asset/374391841/embed" height="519" width="640" frameborder="0" allowfullscreen></iframe>
+<figcaption>Crows and starlings together</figcaption>
+</figure>
+
+---
+
+To learn more about identifying crows and ravens, check out these resources:
+
+- [Are you playing #CrowOrNo yet? | Corvid Research](https://corvidresearch.blog/2016/12/21/are-you-playing-croworno-yet/) A post by Kaeli Swift, Ph.D. who is an Ornithologist and a partial inspiration for this game.
+- [How to Tell Crows and Ravens Apart by Sight and Sound | All About Birds](https://www.allaboutbirds.org/news/similar-species-crows-and-ravens/)
+
+_Many thanks to the Macaulay Library and those who have contributed for the embedded media_
 _This page was inspired by [FractalKitty](https://banjomagpi.com/caw/) and [others](https://indieweb.org/caw)_
