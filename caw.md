@@ -510,10 +510,7 @@ quizData:
     row-gap: 0.5rem;
     margin-top: 0.65rem;
     overflow-x: auto;
-    overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    touch-action: pan-x;
-    -webkit-overflow-scrolling: touch;
     padding-bottom: 0.5rem;
   }
 
