@@ -378,8 +378,8 @@ quizData:
         reason: Ravens are both playful and very aerobatic
         score:
           crow: 0
-          raven: 0
-          neither: 5
+          raven: 3
+          neither: 0
         media:
           src: https://macaulaylibrary.org/asset/220946301/embed
   - id: feathers
