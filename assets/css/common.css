@@ -691,12 +691,12 @@ button,
 			grid-template-columns: 1fr 1fr;
 		}
 
-		& > li:first-child {
+		:not(.post-list--even) > li:first-child {
 			grid-column-start: 1;
 			grid-column-end: span 2;
 		}
 
-		& > li:first-child .card__media--16-9 {
+		:not(.post-list--even) > li:first-child .card__media--16-9 {
 			aspect-ratio: 32/9;
 		}
 	}

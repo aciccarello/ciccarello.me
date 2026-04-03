@@ -112,7 +112,7 @@ My favorite sport of Ultimate frisbee has both men's and women's teams.
 
 <!-- TODO: limit to SD sports reviews (not Firebirds, not other post types) -->
 {% removeindents %}
-<ol class="post-list">
+<ol class="post-list post-list--even">
     {%- for post in collections["sports teams"] reversed -%}
     {%- if post.data.type == "review" -%}
         <li>
@@ -126,7 +126,7 @@ My favorite sport of Ultimate frisbee has both men's and women's teams.
 ## Other Teams
 
 {% removeindents %}
-<ol class="post-list">
+<ol class="post-list post-list--even">
     {%- for team in sportsTeams -%}
         <li>
 <div class="h-entry">
