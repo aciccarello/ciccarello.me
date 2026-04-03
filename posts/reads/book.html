@@ -1,0 +1,43 @@
+---
+pagination:
+  data: collections.readBooks
+  size: 1
+  alias: book
+  addAllPagesToCollections: false
+permalink: "/reads/{{ pagination.items[0].slug }}/"
+layout: default
+back_button: "/reads/"
+---
+
+<article class="container post" data-pagefind-body>
+	<header class="post-header">
+		<h1 class="post-title">{{ book['read-of'].name | escape }}</h1>
+	</header>
+
+	<section class="book-detail">
+		<img class="book-cover" src="{{ book['read-of'].photo | default: '/assets/icons/book-96.svg' }}" alt="Cover of {{ book['read-of'].name | escape }}" loading="lazy" onerror="this.src='/assets/icons/book-96.svg'; this.onerror=null;">
+		<div class="book-meta">
+			<p>by {{ book['read-of'].author }}</p>
+			{%- if book.progress -%}
+			<p>Status: <strong>{{ book.progress | capitalize }}</strong></p>
+			{%- endif -%}
+			{%- if book.rating -%}
+			<data class="rating-stars" value="{{ book.rating }}">
+				{%- for i in (1..5) %}{% if i <= book.rating %}★️{% else %}☆{%endif %}{% endfor -%}
+			</data>
+			{%- endif -%}
+			<a href="{{ book['read-of'].url }}">View on Open Library</a>
+		</div>
+	</section>
+
+	{%- if book.posts.size > 1 -%}
+	<h2>Reading Updates</h2>
+	{%- endif -%}
+	<ol class="post-list post-list--even">
+		{%- for post in book.posts -%}
+		<li>
+			{% include "post-card.html" post: post %}
+		</li>
+		{%- endfor -%}
+	</ol>
+</article>

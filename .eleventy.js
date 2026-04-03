@@ -27,6 +27,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		'admin/index.html': 'admin/index.html',
 		'assets/img': 'assets/img',
+		'assets/icons': 'assets/icons',
 		'assets/js': 'assets/js',
 		'assets/feed.xsl': 'assets/feed.xsl',
 		'assets/octothorpe-harmonizer.json':
