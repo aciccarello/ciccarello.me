@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contacts</title>
+		<style>
+			html {
+				color-scheme: light dark;
+				background-color: light-dark(white, rgb(5, 31, 5));
+			}
+			main {
+				padding: 1rem;
+			}
+			footer {
+				border-top: 1px solid light-dark(black, rgb(155, 209, 163));
+				padding: 1rem;
+				text-align: center;
+				font-style: italic;
+				font-size: 0.9rem;
+			}
+			* {
+				/* https://github.com/system-fonts/modern-font-stacks#geometric-humanist */
+				font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+				font-weight: normal;
+				box-sizing: border-box;
+				color: light-dark(black, rgb(155, 209, 163));
+				line-height: 1.5;
+			}
+			button,
+			input,
+			label,
+			li,
+			p {
+				font-size: 1.2rem;
+			}
+			main {
+				max-width: 35rem;
+				margin: auto;
+			}
+			input:not([type="checkbox"]),
+			textarea {
+				width: 100%;
+				max-width: 100%;
+			}
+			input:disabled, button:disabled, label:has(input:disabled) {
+				opacity: 0.7;
+				cursor: not-allowed;
+			}
+			button[type="submit"] {
+				margin-top: 1rem;
+				cursor: pointer;
+				padding: 0.5rem;
+			}
+			li img {
+				max-width: 2rem;
+				min-width: 2rem;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.info,
+			ul li {
+				display: flex;
+				align-items: center;
+				gap: 2rem;
+				margin-bottom: 0.25rem;
+			}
+			.icons {
+				justify-content: right;
+				align-items: center;
+				text-align: center;
+				display: flex;
+				flex-direction: row;
+			}
+			details {
+				padding-top: 1rem;
+			}
+			#share {
+				position: fixed;
+				bottom: 1rem;
+				left: 0;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				z-index: -1;
+			}
+			summary {
+				cursor: pointer;
+			}
+			#share-button {
+				width: 35rem;
+				margin: auto;
+				z-index: -1;
+			}
+			h1,
+			h2 {
+				margin-bottom: 0.5rem;
+			}
+			svg {
+				fill: light-dark(black, rgb(155, 209, 163));
+			}
+			h1 {
+				margin-top: 0;
+			}
+			header {
+				padding-top: 1rem;
+				justify-content: space-between;
+				display: flex;
+				align-items: center;
+			}
+			h1 + *,
+			h2 + * {
+				margin-top: 0;
+			}
+			button {
+				margin-top: 1rem;
+				width: 100%;
+			}
+			dialog {
+				top: 0;
+				width: 35rem;
+				height: 100vh;
+				z-index: 2;
+			}
+			summary {
+				padding-bottom: 1rem;
+			}
+			ul li {
+				display: grid;
+				grid-template-columns: 3fr 1fr;
+				font-size: 1.3rem;
+				align-items: center;
+			}
+			button[type="submit"],
+			#close,
+			img {
+				background-color: light-dark(white, rgb(5, 31, 5));
+				border: 2px solid light-dark(black, rgb(155, 209, 163));
+			}
+			input[type="text"] {
+				border-radius: 0;
+				border: 2px solid lightgrey;
+				padding: 0.25rem;
+			}
+			svg {
+				align-content: center;
+				justify-content: center;
+				align-items: center;
+				display: flex;
+			}
+			#qr-code {
+				width: 100%;
+			}
+			button:focus,
+			input:focus {
+				outline: 2px solid yellow;
+				border-color: transparent;
+			}
+			.event-name {
+				&:before {
+					content: "Event: ";
+					font-weight: bold;
+				}
+
+				margin-top: 0;
+			}
+
+			.contact-link > a {
+				text-decoration: none;
+				color: inherit;
+				display: inline-flex;
+				gap: 0.5rem;
+			}
+
+			label:has(#show-phone) {
+				display: block;
+				margin-top:20px;
+				padding: 10px;
+			}
+
+			@media screen and (max-width: 700px) {
+				dialog,
+				dialog:modal {
+					padding: 0 1rem;
+					margin: 0;
+					max-width: 100vw;
+					max-height: 100vh;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>
+					<a href="/sites/contacts/?event=">Contact Catcher</a>
+				</h1>
+				<div>
+					<svg style="cursor: pointer;" onclick="document.getElementById('share-contact').showModal();" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+						<path d="M104,40H56A16,16,0,0,0,40,56v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,104,40Zm0,64H56V56h48v48Zm0,32H56a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,104,136Zm0,64H56V152h48v48ZM200,40H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,64H152V56h48v48Zm-64,72V144a8,8,0,0,1,16,0v32a8,8,0,0,1-16,0Zm80-16a8,8,0,0,1-8,8H184v40a8,8,0,0,1-8,8H144a8,8,0,0,1,0-16h24V144a8,8,0,0,1,16,0v8h24A8,8,0,0,1,216,160Zm0,32v16a8,8,0,0,1-16,0V192a8,8,0,0,1,16,0Z"></path>
+					</svg>
+				</div>
+			</header>
+			<p class="event-name"></p>
+			<form type="submit" onsubmit="event.preventDefault()" id="event-contact-form" style="display: none;">
+				<h2>Share your web handle</h2>
+				<p>
+					<label for="name">Enter your domain name, Mastodon, or Bluesky below.</label>
+				</p>
+				<input type="text" placeholder="First Last @example.com, example.com, @name@example.com" id="name" autocomplete="off" autocapitalize="none" autocorrect="off">
+				<button type="submit" value="Share" onclick="add()">Share</button>
+			</form>
+			<h2 id="heading">Contacts</h2>
+			<section id="contacts">
+				<p>Create an event to get started.</p>
+				<h2>Create an Event</h2>
+				<form>
+					<label>Event name <input placeholder="WebConf" autocomplete="off" autocapitalize="none" autocorrect="off" type="text" name="event" id="event"></label>
+					<button type="submit">Create</button>
+				</form>
+				<h2>How to Use</h2>
+				<ol>
+					<li>Create an event.</li>
+					<li>Type in a domain name, Mastodon handle, or
+Bluesky handle. You can also set a name by typing it before or after a
+handle, like "@jamesg.blog James".</li>
+					<li>Review your contacts after an event.</li>
+				</ol>
+				<p>Amie stores all data on your device.</p>
+			</section>
+			<dialog id="share-contact">
+				<h2 style="text-align: center; margin-bottom: 2rem;" id="domain-name">jamesg.blog</h2>
+				<img src="" id="qr-code">
+				<button id="qr-switcher" style="cursor: pointer;">Loading...</button>
+				<button onclick="document.getElementById('share-contact').close();" id="close" style="cursor: pointer;">Close</button>
+				<label>
+					<input type="checkbox" id="show-phone">
+					Include phone
+				</label>
+				<button id="set-phone" style="cursor: pointer;">Set Phone</button>
+			</dialog>
+		</main>
+		<footer>
+			<p>All data is stored on your device.</p>
+			<p><a href="https://amie.jamesg.blog/" target="_blank">Amie</a> was originally built by <a href="https://jamesg.blog" target="_blank">James G.</a></p>
+		</footer>
+		<script>
+			const YOUR_DOMAIN_NAME = "rello.me"; // no https://, etc. needed; this will be added automatically when appropriate
+			const QR_CODE_URL = "https://www.ciccarello.me/links";
+			const VCARD_PROPERTIES = {
+				KIND: "individual",
+				FN: "Anthony Ciccarello",
+				URL: "https://www.ciccarello.me",
+				"EMAIL;TYPE=home": "anthony@ciccarello.me"
+			};
+			const fallbackIconSrc = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABO0lEQVRIS+WSTUrEQBCFqwZE3AsuwktEDyHqUvQerlwIs/AioguZnecQdTt6ihnp6pUeQERISY/pMHTSnSATRPxWVa+66/VPMQ0M19FA/CMDY8ycmberm88A7FZxkl5PJCJaJ0sA6NzfuUBEXoioIKInAAdOM8Y8M/Oeqs7yPE/epI/B4vThaWN6SLLoiDWK6SHJokNE3ohok4imAA6dZq2dquo+Eb0C2PJr2+g0cAz6yZ6lz3bMAexUcZLeBj8laaCqayJyzcynRLReF775UNVbAGNm/qzVgFYDa+2Rqt7H6i1oWZbHRVE81kpFo4GIjInoyufMPFHVCwDvXnOIyIaqXjLzmddGo9F5lmU3Pne0GSwmpjrRg9dTGGNOmPnOxeFkRQ3ChV3E9jWaxGa+L79vsGoaT7Rq/r7BF6NQghndaKmWAAAAAElFTkSuQmCC";
+
+			const QRCodeImport = import ('https://cdn.skypack.dev/qrcode@1');
+
+			/* navigator
+				.serviceWorker
+				.register("/sw.js"); // */
+
+			document
+				.getElementById("domain-name")
+				.innerText = YOUR_DOMAIN_NAME;
+			const qrSwitcher = document.getElementById("qr-switcher");
+			qrSwitcher.addEventListener("click", switchQrCode);
+			switchQrCode();
+
+			const showPhone = document.getElementById("show-phone");
+			showPhone.checked = Boolean(localStorage.getItem("contacts:showPhone"));
+			showPhone.disabled = !localStorage.getItem("contacts:phone");
+			showPhone.addEventListener("change", async (event) => {
+				localStorage.setItem("contacts:showPhone", event.target.checked);
+
+				const vCardString = await generateVCard();
+				setQrCode(vCardString, "Show URL");
+			});
+			document
+				.getElementById("set-phone")
+				.addEventListener("click", async () => {
+					const phone = prompt("Enter your phone number (include country code, e.g. +1234567890):");
+					if (phone) {
+						localStorage.setItem("contacts:phone", phone);
+						localStorage.setItem("contacts:showPhone", true);
+						showPhone.disabled = false;
+						showPhone.checked = true;
+
+						const vCardString = await generateVCard();
+						setQrCode(vCardString, "Show URL");
+					}
+				});
+
+			try {
+				var events = JSON.parse(localStorage.getItem("contacts:data") || "{}");
+			} catch  {
+				var events = {};
+			}
+
+			var searchParams = new URLSearchParams(document.location.search);
+
+			async function switchQrCode() {
+				if (qrSwitcher.innerText == "Show contact card") {
+					const vCardString = await generateVCard();
+					setQrCode(vCardString, "Show URL");
+				} else {
+					setQrCode(QR_CODE_URL, "Show contact card");
+				}
+			}
+			async function generateVCard() {
+				const QRCode = await QRCodeImport;
+				const rawProperties = Object.entries(VCARD_PROPERTIES)
+
+				if (localStorage.getItem("contacts:showPhone")) {
+					rawProperties.push(["TEL;TYPE=cell", localStorage.getItem("contacts:phone")]);
+				}
+
+				const formattedProperties = rawProperties
+					.map(([key, value]) => `${key}:${value}`)
+					.join("\n");
+
+				return `BEGIN:VCARD
+VERSION:4.0
+${formattedProperties}
+END:VCARD`;
+			}
+			async function setQrCode(data, buttonText) {
+				try {
+					const QRCode = await QRCodeImport;
+					const url = await QRCode.toDataURL(data, {width: 200})
+					document
+						.getElementById("qr-code")
+						.src = url;
+					qrSwitcher.innerText = buttonText;
+				} catch (err) {
+					console.error("Error generating QR code:", err);
+				}
+			}
+
+			if (searchParams.get("event")) {
+				var activeEvent = decodeURIComponent(searchParams.get("event"));
+			} else {
+				var activeEvent = null;
+			}
+
+			for (var el of document.getElementsByClassName("event-name")) {
+				el.innerText = activeEvent;
+			}
+
+			function save() {
+				console.log("Saving data", events);
+				console.log("Overwriting data", localStorage.getItem("contacts:data"));
+				localStorage.setItem("contacts:data", JSON.stringify(events));
+			}
+
+			async function add() {
+				var textInput = document
+					.getElementById("name")
+					.value;
+				var name = "";
+				var handle = "";
+				var img = null;
+
+				for (var word of textInput.split(" ")) {
+					if (word.match(/^@(.*)@(.*)/)) {
+						var handleType = "mastodon";
+						handle = word;
+						img = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Mastodon_logotype_%28simple%29_new_hue.svg/120px-Mastodon_logotype_%28simple%29_new_hue.svg.png?_=20220715092751";
+					} else if (word.match(/^@(.*)/)) {
+						var handleType = "bsky";
+						handle = word;
+						img = "https://upload.wikimedia.org/wikipedia/donate/5/52/Bluesky-icon.png?_=20250219134156";
+					} else if (word.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+						var handleType = "email";
+						handle = word.trim().toLowerCase();
+						const hashHex = await sha256(handle);
+						img = `https://www.gravatar.com/avatar/${hashHex}`;
+					} else if (word.match(/^(.*)\.(.*)/)) {
+						var handleType = "domain";
+						handle = word;
+						const normalizedHandle = handle.startsWith("www.") ? handle : `https://www.${handle}`;
+						img = `https://v1.indieweb-avatar.11ty.dev/${encodeURIComponent(normalizedHandle)}`;
+					} else {
+						name += " " + word
+					}
+				}
+				if (!events[activeEvent]) {
+					events[activeEvent] = [];
+				}
+
+				// fetch(img, { mode: 'no-cors'}).then((e) => {
+				//     if (!e.ok) { img = null; }
+				//}).catch((e) => {
+				//    img = null;
+				//}).then((e) => {
+				events[activeEvent].push({
+					"name": name.trim(), "handle": handle, "handleType": handleType, "img": img, "uuid": self
+						.crypto
+						.randomUUID()
+				})
+				save();
+				load();
+				//});
+			}
+
+			function load() {
+				document
+					.getElementById("event-contact-form")
+					.style
+					.display = "block";
+
+				var added = false;
+				for (var [event_name, contactsSavedForEvent] of Object.entries(events)) {
+					if (event_name != activeEvent) {
+						continue;
+					}
+					var contacts = "";
+					contactsSavedForEvent = contactsSavedForEvent
+						.filter((item) => item !== null)
+						.reverse();
+
+					if (contactsSavedForEvent.length == 0) {
+						var contacts = "You have no contacts for this event";
+					}
+					var iter = 0;
+					for (var contact of contactsSavedForEvent) {
+						if (!contact) {
+							continue;
+						}
+						if (contact.handleType == "domain") {
+							var handleLink = "https://" + contact.handle;
+						} else if (contact.handleType == "email") {
+							var handleLink = "mailto:" + contact.handle;
+						} else if (contact.handleType == "mastodon") {
+							var handleLink = "https://" + contact.handle;
+						} else if (contact.handleType == "bluesky") {
+							var handleLink = "https://bsky.social/profile/" + contact.handle;
+						}
+						if (iter == 1) {
+							contacts += "<details><summary>Show more</summary>"
+						}
+						contacts += `
+                        <li id="${contact.uuid}" data-event="${event_name}" class="contact-link">
+							<a href="${handleLink}" target="_blank">
+								<img src="${contact.img ?? fallbackIconSrc}" />
+								<div class="info">${contact.name ?? contact.handle}</div>
+							</a>
+                            <div class="icons">
+                                <a href="#" onclick="deleteContact(this)">
+                                    <svg style='fill: light-dark(black, rgb(155, 209, 163));' xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg>
+                                </a>
+                            </div>
+                        </li>
+                    `;
+						iter++;
+					}
+					if (iter > 0) {
+						contacts += "</details>"
+					}
+
+					var contact_list = `
+                    <section>
+                        <ul id="${event_name}">
+                            ${contacts}
+                        </ul>
+                    </section>
+                `;
+					document
+						.getElementById("contacts")
+						.innerHTML = contact_list;
+					document.querySelectorAll('#contacts img').forEach((img) => {
+						img.onerror = () => {
+							img.src = fallbackIconSrc;
+						};
+					});
+					added = true;
+				}
+				if (!added) {
+					document
+						.getElementById("contacts")
+						.innerText = "You have no contacts yet";
+				}
+			}
+
+			function deleteEvent(item) {
+				if (!confirm("Are you sure you want to delete this event?")) {
+					return;
+				}
+				delete events[item.dataset.name];
+				start();
+				saveWithNoData();
+			}
+
+			function deleteContact(item) {
+				if (!confirm("Are you sure you want to delete this contact?")) {
+					return;
+				}
+				var parent = item.parentElement.parentElement;
+				for (let i = 0; i < events[parent.getAttribute("data-event")].length; i++) {
+					var it = events[parent.getAttribute("data-event")][i];
+
+					if (
+						it
+						?.uuid == parent.id) {
+						delete events[parent.getAttribute("data-event")][i];
+						for (var contact of document.getElementById(parent.getAttribute("data-event")).getElementsByTagName("li")) {
+							if (
+								contact.id == it
+								?.uuid) {
+								contact.remove();
+							}
+						}
+					}
+				}
+				save();
+				load();
+			}
+
+			async function sha256(message) {
+				const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
+				const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8); // hash the message
+				const hashArray = Array.from(new Uint8Array(hashBuffer)); // convert buffer to byte array
+				const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join(''); // convert bytes to hex string
+				return hashHex;
+			}
+
+			if (!localStorage.getItem("contacts:data")) {
+				save();
+			}
+
+			function start() {
+
+				if (!activeEvent) {
+					var eventHTML = "";
+					var handles = "";
+					for (var event of Object.keys(events)) {
+						if (!event || event == "null") {
+							continue;
+						}
+						eventHTML += `<li><a href="?event=${encodeURIComponent(event)}">${event}</a><div class="icons" onclick="deleteEvent(this)" data-name="${event}"><svg style='fill: light-dark(black, rgb(155, 209, 163));' xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg></div></li>`;
+						if (events[event]) {
+							events[event] = events[event].filter(
+								(item) => item
+								?.handle != null);
+							if (events[event].length > 0) {
+								handles += "## " + event + "\n" + events[event]
+									.map((item) => {
+										return item
+											?.handle + (
+												item
+												?.name
+													? " - " + item
+														?.name
+														: "") || ""
+									})
+									.join("\n") + "\n\n";
+							}
+						}
+					}
+
+					if (!eventHTML) {
+						document
+							.getElementById("contacts")
+							.innerHTML = "<p>Create an event to get started.</p>";
+					} else {
+						document
+							.getElementById("contacts")
+							.innerHTML = `<ul>${eventHTML}</ul>`;
+					}
+					document
+						.getElementById("heading")
+						.innerText = "Events";
+					document
+						.getElementById("event-contact-form")
+						.style
+						.display = "none";
+					document
+						.getElementById("contacts")
+						.innerHTML += `<h2>Create an Event</h2><form><label>Event name <input placeholder="WebConf" autocomplete="off" autocapitalize="off" autocorrect="off" type=text name=event id=event /></label><button type='submit'>Create</button></form>
+                    <h2>How to Use</h2>
+                    <ol>
+                        <li>Create an event.</li>
+                        <li>Type in a domain name, Mastodon handle, or Bluesky handle. You can also set a name by typing it before or after a handle, like "@jamesg.blog James".</li>
+                        <li>Review your contacts after an event.</li>
+                    </ol>
+					`;
+				} else {
+					load();
+				}
+			}
+
+			start();
+		</script>
+
+	</body>
+</html>
