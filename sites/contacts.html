@@ -137,9 +137,30 @@
 			}
 			button[type="submit"],
 			#close,
-			img {
+			#qr-code {
 				background-color: light-dark(white, rgb(5, 31, 5));
 				border: 2px solid light-dark(black, rgb(155, 209, 163));
+			}
+			.icon-button {
+				padding: 0;
+				border: none;
+				background: transparent;
+				margin: 0;
+				width: auto;
+				cursor: pointer;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				line-height: 0;
+			}
+			.icon-button img,
+			.icon-button svg {
+				max-width: 2rem;
+				min-width: 2rem;
+				width: 2rem;
+				height: 2rem;
+				border: none;
+				background: transparent;
 			}
 			input[type="text"] {
 				border-radius: 0;
@@ -164,6 +185,9 @@
 				&:before {
 					content: "Event: ";
 					font-weight: bold;
+				}
+				&:empty:before {
+					content: "";
 				}
 
 				margin-top: 0;
@@ -257,7 +281,7 @@ handle, like "@jamesg.blog James".</li>
 				URL: "https://www.ciccarello.me",
 				"EMAIL;TYPE=home": "anthony@ciccarello.me"
 			};
-			const fallbackIconSrc = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABO0lEQVRIS+WSTUrEQBCFqwZE3AsuwktEDyHqUvQerlwIs/AioguZnecQdTt6ihnp6pUeQERISY/pMHTSnSATRPxWVa+66/VPMQ0M19FA/CMDY8ycmberm88A7FZxkl5PJCJaJ0sA6NzfuUBEXoioIKInAAdOM8Y8M/Oeqs7yPE/epI/B4vThaWN6SLLoiDWK6SHJokNE3ohok4imAA6dZq2dquo+Eb0C2PJr2+g0cAz6yZ6lz3bMAexUcZLeBj8laaCqayJyzcynRLReF775UNVbAGNm/qzVgFYDa+2Rqt7H6i1oWZbHRVE81kpFo4GIjInoyufMPFHVCwDvXnOIyIaqXjLzmddGo9F5lmU3Pne0GSwmpjrRg9dTGGNOmPnOxeFkRQ3ChV3E9jWaxGa+L79vsGoaT7Rq/r7BF6NQghndaKmWAAAAAElFTkSuQmCC";
+			const personIconSrc = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABO0lEQVRIS+WSTUrEQBCFqwZE3AsuwktEDyHqUvQerlwIs/AioguZnecQdTt6ihnp6pUeQERISY/pMHTSnSATRPxWVa+66/VPMQ0M19FA/CMDY8ycmberm88A7FZxkl5PJCJaJ0sA6NzfuUBEXoioIKInAAdOM8Y8M/Oeqs7yPE/epI/B4vThaWN6SLLoiDWK6SHJokNE3ohok4imAA6dZq2dquo+Eb0C2PJr2+g0cAz6yZ6lz3bMAexUcZLeBj8laaCqayJyzcynRLReF775UNVbAGNm/qzVgFYDa+2Rqt7H6i1oWZbHRVE81kpFo4GIjInoyufMPFHVCwDvXnOIyIaqXjLzmddGo9F5lmU3Pne0GSwmpjrRg9dTGGNOmPnOxeFkRQ3ChV3E9jWaxGa+L79vsGoaT7Rq/r7BF6NQghndaKmWAAAAAElFTkSuQmCC";
 
 			const QRCodeImport = import ('https://cdn.skypack.dev/qrcode@1');
 
@@ -358,6 +382,99 @@ END:VCARD`;
 				localStorage.setItem("contacts:data", JSON.stringify(events));
 			}
 
+			function escapeVCardValue(value) {
+				return String(value || "")
+					.replace(/\\/g, "\\\\")
+					.replace(/\n/g, "\\n")
+					.replace(/,/g, "\\,")
+					.replace(/;/g, "\\;");
+			}
+
+			function getHandleUrl(contact) {
+				if (contact.handleType === "domain") {
+					return `https://${contact.handle}`;
+				}
+
+				if (contact.handleType === "mastodon") {
+					const matches = (contact.handle || "").match(/^@([^@]+)@(.+)$/);
+					if (matches) {
+						return `https://${matches[2]}/@${matches[1]}`;
+					}
+					return "";
+				}
+
+				if (contact.handleType === "bluesky" || contact.handleType === "bsky") {
+					const profile = (contact.handle || "").replace(/^@/, "");
+					return profile
+						? `https://bsky.social/profile/${profile}`
+						: "";
+				}
+
+				return "";
+			}
+
+			function createContactVCard(contact) {
+				const displayName = (contact.name || contact.handle || "Unknown").trim();
+				const lines = [
+					"BEGIN:VCARD",
+					"VERSION:4.0",
+					`FN:${escapeVCardValue(displayName)}`
+				];
+
+				if (contact.handleType === "email" && contact.handle) {
+					lines.push(`EMAIL:${escapeVCardValue(contact.handle)}`);
+				}
+
+				const url = getHandleUrl(contact);
+				if (url) {
+					lines.push(`URL:${escapeVCardValue(url)}`);
+				}
+
+				if (contact.handle) {
+					lines.push(`NOTE:${escapeVCardValue(contact.handleType + ": " + contact.handle)}`);
+				}
+
+				lines.push("END:VCARD");
+				return lines.join("\n");
+			}
+
+			function getContactById(eventName, contactId) {
+				const eventContacts = events[eventName] || [];
+				return eventContacts.find((item) => item && item.uuid === contactId) || null;
+			}
+
+			function sanitizeFilename(text) {
+				return String(text || "contact")
+					.toLowerCase()
+					.replace(/[^a-z0-9]+/g, "-")
+					.replace(/^-+|-+$/g, "") || "contact";
+			}
+
+			function downloadContact(button) {
+				const contactId = button.getAttribute("data-contact-id");
+				const eventName = button.getAttribute("data-event");
+				const contact = getContactById(eventName, contactId);
+
+				if (!contact) {
+					alert("Could not find that contact.");
+					return;
+				}
+
+				const vCard = createContactVCard(contact);
+				const blob = new Blob([vCard], {type: "text/vcard;charset=utf-8"});
+				const url = URL.createObjectURL(blob);
+				const link = document.createElement("a");
+				const fileLabel = sanitizeFilename(contact.name || contact.handle || "contact");
+
+				link.href = url;
+				link.download = `${fileLabel}.vcf`;
+				document.body.appendChild(link);
+				link.click();
+				link.remove();
+
+				setTimeout(() => URL.revokeObjectURL(url), 1000);
+			}
+
 			async function add() {
 				var textInput = document
 					.getElementById("name")
@@ -438,7 +555,7 @@ END:VCARD`;
 							var handleLink = "mailto:" + contact.handle;
 						} else if (contact.handleType == "mastodon") {
 							var handleLink = "https://" + contact.handle;
-						} else if (contact.handleType == "bluesky") {
+						} else if (contact.handleType == "bluesky" || contact.handleType == "bsky") {
 							var handleLink = "https://bsky.social/profile/" + contact.handle;
 						}
 						if (iter == 1) {
@@ -447,13 +564,16 @@ END:VCARD`;
 						contacts += `
                         <li id="${contact.uuid}" data-event="${event_name}" class="contact-link">
 							<a href="${handleLink}" target="_blank">
-								<img src="${contact.img ?? fallbackIconSrc}" />
+								<img src="${contact.img ?? personIconSrc}" />
 								<div class="info">${contact.name ?? contact.handle}</div>
 							</a>
                             <div class="icons">
-                                <a href="#" onclick="deleteContact(this)">
+								<button type="button" class="icon-button" onclick="downloadContact(this)" data-contact-id="${contact.uuid}" data-event="${event_name}" aria-label="Download vCard">
+									<img src="${personIconSrc}" alt="Download vCard" />
+								</button>
+								<button type="button" class="icon-button" onclick="deleteContact(this)" aria-label="Delete contact">
                                     <svg style='fill: light-dark(black, rgb(155, 209, 163));' xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg>
-                                </a>
+								</button>
                             </div>
                         </li>
                     `;
@@ -475,7 +595,7 @@ END:VCARD`;
 						.innerHTML = contact_list;
 					document.querySelectorAll('#contacts img').forEach((img) => {
 						img.onerror = () => {
-							img.src = fallbackIconSrc;
+							img.src = personIconSrc;
 						};
 					});
 					added = true;
@@ -492,8 +612,8 @@ END:VCARD`;
 					return;
 				}
 				delete events[item.dataset.name];
+				save();
 				start();
-				saveWithNoData();
 			}
 
 			function deleteContact(item) {
