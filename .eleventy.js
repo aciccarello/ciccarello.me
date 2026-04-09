@@ -1,6 +1,10 @@
 import 'dotenv/config';
 import { createRequire } from 'node:module';
-import rssPlugin from '@11ty/eleventy-plugin-rss';
+import rssPlugin, {
+	convertHtmlToAbsoluteUrls,
+	getNewestCollectionItemDate,
+	dateToRfc3339,
+} from '@11ty/eleventy-plugin-rss';
 import eleventySyntaxhighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight';
 import eleventyLightningCssPlugin from '@11tyrocks/eleventy-plugin-lightningcss';
 import datePlugin from './_build/date.js';
@@ -162,13 +166,13 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(rssPlugin);
 	eleventyConfig.addLiquidFilter(
 		'htmlToAbsoluteUrls',
-		rssPlugin.convertHtmlToAbsoluteUrls,
+		convertHtmlToAbsoluteUrls,
 	);
 	eleventyConfig.addLiquidFilter(
 		'getNewestCollectionItemDate',
-		rssPlugin.getNewestCollectionItemDate,
+		getNewestCollectionItemDate,
 	);
-	eleventyConfig.addLiquidFilter('dateToRfc3339', rssPlugin.dateToRfc3339);
+	eleventyConfig.addLiquidFilter('dateToRfc3339', dateToRfc3339);
 
 	eleventyConfig.setLiquidOptions({
 		timezoneOffset: 0, // Fix liquid date filter to match server
