@@ -3,6 +3,7 @@ date: 2026-04-02T04:15:55.170Z
 slug: another-sunset
 tags:
   - sunset
+  - beach
   - nature
 image: /assets/img/2026-092-sunset-pier.jpg
 image_alt: A long wooden pier after sunset as the sky turns from blue to pink.

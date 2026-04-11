@@ -3,6 +3,7 @@ date: 2026-03-27T08:12:59.222Z
 slug: bike-sunset
 tags:
   - sunset
+  - beach
   - ocean
 image: /assets/img/2026-03-bike-sunset.jpg
 image_alt: Two people sitting on the beach next to a bike with the moon visible above the last color of sunset on the horizon.
