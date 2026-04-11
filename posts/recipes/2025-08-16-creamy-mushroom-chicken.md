@@ -4,6 +4,7 @@ date: 2025-08-16T08:44:04.897Z
 tags:
   - dinner
   - chicken
+  - pasta
   - slow cooker
 image: /assets/img/recipe-creamy-mushroom-chicken.jpg
 image_alt: A plate with bowtie pasta. shredded chicken, mushrooms, and grape tomatoes.
