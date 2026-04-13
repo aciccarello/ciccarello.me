@@ -1011,6 +1011,12 @@ blockquote {
 	margin: 2rem auto !important;
 }
 
+iframe[src*='macaulaylibrary.org'] {
+	background-color: #fff;
+	padding: 0.5rem;
+	box-sizing: content-box;
+}
+
 .author-description {
 	padding: 0;
 	margin: 5rem auto;

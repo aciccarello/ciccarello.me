@@ -624,6 +624,7 @@ quizData:
   .caw-quiz__media iframe {
     height: 100%;
     pointer-events: none;
+    padding: 0;
   }
 
   .caw-quiz__media[data-media-video="true"] iframe,
