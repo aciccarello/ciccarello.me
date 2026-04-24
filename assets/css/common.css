@@ -1014,7 +1014,8 @@ blockquote {
 iframe[src*='macaulaylibrary.org'] {
 	background-color: #fff;
 	padding: 0.5rem;
-	box-sizing: content-box;
+	box-sizing: border-box;
+max-width: 100%;
 }
 
 .author-description {
