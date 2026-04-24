@@ -107,11 +107,15 @@ In a small world moment, the biologist there actually knew another biologist fri
 
 Got these at the San Diego Bird Festival
 
-![Sticker of a quail among flowers](/assets/img/sticker-sdbf-quail.webp)
+![Sticker of a quail among flowers](/assets/img/sticker-sdbf-quail.webp "California Quail")
+
+![Sticker of a small gray and black bird among flowers](/assets/img/sticker-sdbf-gnatcatcher.webp "California Gnatcatcher")
 
 ![Sticker of a colorful parrot](/assets/img/sticker-sdbf-parrot.webp "[Free Flight Exotic Bird Sanctuary](https://www.freeflightbirds.org/) of Del Mar, CA")
 
 ![Circular sticker of a waterbird called a rail with the text 'I heart wetlands'](/assets/img/sticker-sdbf-rail.webp "Protect the wetland habitat of the Ridgeway Rail")
+
+![Sticker of a woodpeck with the text 'San Diego Birdathon 2026 San Diego Bird Alliance'](/assets/img/sticker-sdbf-2026-birdathon.webp "Promoting the 2025 Birdathon")
 
 ![Circular sticker of two flying shorebirds with the text 'Godwit days .org Arcata, California'](/assets/img/sticker-godwit-days.webp "[Godwit Days Festival](https://godwitdays.org)")
 
