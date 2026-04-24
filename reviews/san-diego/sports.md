@@ -138,7 +138,7 @@ My favorite sport of Ultimate frisbee has both men's and women's teams.
 		{%- endif -%}
 		<div class="card__primary">
 			<div class="post-heading">
-                <h3 class="h2 p-name">{{ team.name | escape }}</h3>
+                <h3 class="p-name">{{ team.name | escape }}</h3>
 			</div>
 			<div class="post-body">
 				<p class="post-text p-summary">{{ team.summary }}</p>

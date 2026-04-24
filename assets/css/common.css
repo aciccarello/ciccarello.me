@@ -128,7 +128,7 @@ h4,
 h5,
 .h5 {
 	/* Any styles in the individual header sections should be defined here so that class styles override */
-	margin: 3em 0 0.5em;
+	margin: 2em 0 0.5em;
 	font-weight: bolder;
 	font-style: normal;
 	text-transform: none;
@@ -153,28 +153,28 @@ h4,
 	& + .h4,
 	& + h5,
 	& + .h5 {
-		margin-block-start: 1.25em;
+		margin-block-start: 1.125em;
 	}
 }
 
 h1,
 .h1 {
-	margin-block-start: 1.5em;
-	font-size: 2rem;
-	font-weight: normal;
+	margin-block-start: 1.25em;
+	font-size: 2.5rem;
+	font-weight: 300;
+	letter-spacing: -0.375px;
 }
 
 h2,
 .h2 {
-	font-size: 1.25rem;
+	font-family: var(--accent-font);
+	font-size: 1.5rem;
 }
 
 h3,
 .h3 {
-	font-family: var(--accent-font);
-	font-size: 1.125rem;
-	font-style: italic;
-	font-weight: normal;
+	font-size: 1.25rem;
+	font-weight: 500;
 }
 
 h4,
