@@ -10,11 +10,12 @@ h-entry
 {%- endif %}  data-pagefind-ignore>
 	<a class="u-url card disable-link-styles" href="{{ post.url | url }}">
 		{%- if post.data.image -%}
-			{% assign filetype = post.data.image | split: "." | last -%}
 			<div class="card__media card__media--16-9"
-            {% if post.data.layout == "photo" %}aria-label="{{ post.data.image_alt | escape }}" role="img"{% endif %}
-            {% if filetype != 'mp4' -%}style="background-image: url('{{ post.data.image }}');"{% endif %}>
-				{% if filetype == 'mp4' -%}
+				{% if post.data.layout == "photo" %}aria-label="{{ post.data.image_alt | escape }}"{% endif %}>
+				{% unless post.data.image | isVideoSource -%}
+					<img src="{{ post.data.image }}" alt="{{ post.data.image_alt | default: '' | escape }}" class="card__media-image {% if post.data.layout == 'photo' %}u-photo{% endif %}">
+				{%- endunless %}
+				{% if post.data.image | isVideoSource -%}
 					<video preload="metadata" aria-label="{{ post.data.image_alt | escape }}">
 						<source type="video/mp4" src="{{ post.data.image }}">
 					</video>

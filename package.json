@@ -5,9 +5,9 @@
   "scripts": {
     "start": "TZ=utc eleventy --serve",
     "start:netlify": "netlify serve",
-    "clean": "rm -rf _site temp",
-    "build": "npm run clean && TZ=utc eleventy && npm run build:search",
-    "build:as-previous": "rm -rf _site_previous && npm run build && mv _site _site_previous",
+    "clean": "rm -rf _site temp .cache",
+    "build": "TZ=utc eleventy && npm run build:search",
+    "build:as-previous": "rm -rf _site_previous && npm run clean && npm run build && mv _site _site_previous",
     "build:netlify": "netlify build",
     "build:search": "pagefind --site _site",
     "diff": "git diff --no-index --ignore-all-space --ignore-blank-lines _site_previous/ _site/",
@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0",
@@ -59,6 +60,7 @@
     "markdown-it-html5-media": "^0.8.0",
     "markdown-it-image-figures": "^2.1.1",
     "microformats-parser": "^2.0.4",
+    "netlify-plugin-cache": "^1.0.3",
     "node-fetch": "^3.3.2",
     "node-html-parser": "^7.0.2",
     "pagefind": "^1.5.0",

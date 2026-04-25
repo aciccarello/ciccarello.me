@@ -90,7 +90,9 @@ sportsTeams:
 /* Logos don't fit the 16/9 aspect ratio */
 .card__media--16-9 {
     aspect-ratio: 1 / 1;
-    background-size: contain;
+    & > picture > img {
+      object-fit: contain;
+    }
 }
 
 :is(.post-list, .post-suggestions) > li:first-child {
@@ -130,21 +132,21 @@ My favorite sport of Ultimate frisbee has both men's and women's teams.
     {%- for team in sportsTeams -%}
         <li>
 <div class="h-entry">
-	<a class="u-url card disable-link-styles" href="{{ team.url | url }}">
-		{%- if team.image -%}
-        <div class="card__media card__media--16-9"
-            style="background-image: url('{{ team.image }}');">
-        </div>
-		{%- endif -%}
-		<div class="card__primary">
-			<div class="post-heading">
+  <a class="u-url card disable-link-styles" href="{{ team.url | url }}">
+    {%- if team.image -%}
+    <div class="card__media card__media--16-9">
+      <img src="{{ team.image }}" alt="{{ team.image_alt | default: '' | escape }}" class="card__media-image">
+    </div>
+    {%- endif -%}
+    <div class="card__primary">
+      <div class="post-heading">
                 <h3 class="p-name">{{ team.name | escape }}</h3>
-			</div>
-			<div class="post-body">
-				<p class="post-text p-summary">{{ team.summary }}</p>
-			</div>
-		</div>
-	</a>
+      </div>
+      <div class="post-body">
+        <p class="post-text p-summary">{{ team.summary }}</p>
+      </div>
+    </div>
+  </a>
 </div>
         </li>
     {%- endfor -%}

@@ -8,6 +8,7 @@ import rssPlugin, {
 import eleventySyntaxhighlightPlugin from '@11ty/eleventy-plugin-syntaxhighlight';
 import eleventyLightningCssPlugin from '@11tyrocks/eleventy-plugin-lightningcss';
 import datePlugin from './_build/date.js';
+import imagePlugin from './_build/image.js';
 import markdownPlugin from './_build/markdown.js';
 import recipePlugin from './_build/recipe.js';
 import tripsPlugin from './_build/trips.js';
@@ -156,6 +157,7 @@ export default async function (eleventyConfig) {
 		errorMode: 'allow-fallback',
 	});
 	eleventyConfig.addPlugin(datePlugin);
+	eleventyConfig.addPlugin(imagePlugin);
 	eleventyConfig.addPlugin(markdownPlugin);
 	eleventyConfig.addPlugin(recipePlugin);
 	eleventyConfig.addPlugin(tripsPlugin);

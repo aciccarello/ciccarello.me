@@ -20,11 +20,17 @@
   TZ="utc"
 
 [[plugins]]
+  package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+    paths = ["_cache", ".cache", "_site/assets/img/optimized"]
+
+[[plugins]]
   package = "@aciccarello/netlify-plugin-webmentions"
 
-	[plugins.inputs]
-	  # Maximum number of feed entries to check for mentions (optional, default: 1)
-	  limit = 1
+  [plugins.inputs]
+    # Maximum number of feed entries to check for mentions (optional, default: 1)
+    limit = 1
     feedPath = "/feed-all.xml"
 
 # Production context: all deploys from the Production branch

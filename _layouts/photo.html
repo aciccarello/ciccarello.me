@@ -6,13 +6,12 @@ layout: default
 	<article class="container post" data-pagefind-body>
 		{% if image %}
 			<figure class="card__media post-thumbnail">
-				{% assign filetype = image | split: "." | last -%}
-				{% if filetype == 'mp4' -%}
+				{% if image | isVideoSource -%}
 					<video autoplay muted controls loop class="u-video post-img--wide" aria-label="{{ image_alt | escape }}">
 						<source type="video/mp4" src="{{ image }}">
 					</video>
 				{% else -%}
-					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo u-featured post-img--wide" data-pagefind-meta="image[src], image_alt[alt]">
+					<img src="{{ image }}" alt="{{ image_alt | escape }}" class="u-photo u-featured post-img--wide" loading="eager" fetchpriority="high" data-pagefind-meta="image[src], image_alt[alt]">
 				{% endif %}
 				{% if image_caption %}
 					<figcaption>

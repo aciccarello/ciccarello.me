@@ -1,9 +1,19 @@
+# Build folders
 _site
 _site_previous
 node_modules
 .env
+_cache
+.cache
 .sass-cache
+
+# IDE and OS files
 .vscode
 .DS_Store
+
+# Netlify CLI folders
 .netlify
-_cache
+deno.lock
+
+# This is on one of my local dev machines, eventually should remove
+assets/img/tweet-media
