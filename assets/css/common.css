@@ -104,6 +104,44 @@ svg:not([fill]) {
 	fill: currentColor;
 }
 
+picture {
+	display: inline-block;
+	max-width: 100%;
+	width: 100%;
+	vertical-align: top;
+}
+
+picture > img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+picture.lqip-picture {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+picture.lqip-picture::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: var(--lqip);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(14px);
+	transform: scale(1.06);
+	opacity: 0.9;
+	z-index: 0;
+}
+
+picture.lqip-picture > img {
+	position: relative;
+	z-index: 1;
+}
+
 a {
 	color: var(--color-alternate);
 }
@@ -793,7 +831,7 @@ a.disable-link-styles {
 	padding: 0;
 }
 
-.post img,
+.post picture,
 .post video {
 	width: 100%;
 	/* Shrink height to keep whole image in view */
@@ -805,8 +843,8 @@ a.disable-link-styles {
 	margin: 0;
 }
 
-figure:has(> .post-img--float),
-figure:has(> .post-img--float-right) {
+figure:has(> picture > .post-img--float),
+figure:has(> picture > .post-img--float-right) {
 	width: 50%;
 	max-width: 350px;
 	margin: 0 1rem 0.5rem 0;
@@ -818,12 +856,12 @@ figure:has(> .post-img--float-right) {
 	}
 }
 
-figure:has(> .post-img--float-right) {
+figure:has(> picture > .post-img--float-right) {
 	float: right;
 	margin: 0 0 0.5rem 1rem;
 }
 
-figure img {
+figure picture {
 	margin: 0 auto;
 	display: block;
 	max-width: 100%;
@@ -840,12 +878,12 @@ video.post-img--float-right {
 	max-width: 100%;
 }
 
-.post-content figure img,
+.post-content figure picture,
 .post-content figure video {
 	width: 600px;
 }
 
-figure img.post-img--wide,
+figure picture:has(img.post-img--wide),
 figure video.post-img--wide {
 	width: 100%;
 }
@@ -952,13 +990,10 @@ blockquote {
 
 	& > blockquote {
 		all: unset;
-		--embed-card-max-height: 9rem;
 		box-sizing: content-box;
-		/* border: none;
-		margin: 0;
-		padding: 0; */
 		display: grid;
-		grid-template-columns: minmax(100px, 4fr) 1fr 25%;
+		height: 128px;
+		grid-template-columns: minmax(100px, 4fr) 1fr auto;
 		grid-template-rows: auto;
 		grid-template-areas: 'header domain img' 'text text img' 'spacer spacer img';
 
@@ -974,7 +1009,8 @@ blockquote {
 			object-fit: cover;
 			/* safari fix to prevent 100% page height */
 			height: 100%;
-			max-height: var(--embed-card-max-height);
+			max-height: 170.5px;
+			width: clamp(20%, 128px)
 		}
 
 		& p {
@@ -982,7 +1018,7 @@ blockquote {
 			margin: 0 1rem 1rem;
 			font-size: 0.875rem;
 
-			-webkit-line-clamp: 3;
+			-webkit-line-clamp: 2;
 			overflow: hidden;
 			display: -webkit-box;
 			-webkit-box-orient: vertical;
@@ -1040,7 +1076,7 @@ max-width: 100%;
 
 .author-description__media picture {
 	width: 100%;
-height: 100%;
+	height: 100%;
 	border-radius: 50%;
 }
 

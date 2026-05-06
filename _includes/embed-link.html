@@ -8,6 +8,9 @@
 			<cite>{{ domain }}</cite>
 			<p class="p-content">{{ description }}</p>
 			<img
+				eleventy:ignore
+				decoding="async"
+				loading="lazy"
 				src="{{ img }}"
 				alt="{{ alt }}"
 				{%- if objectPosition %}
