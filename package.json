@@ -67,7 +67,7 @@
     "slugify": "^1.6.9"
   },
   "optionalDependencies": {
-    "netlify-cli": "^24.10.0",
+    "netlify-cli": "^26.0.0",
     "pa11y-ci": "^4.0.1",
     "sharp": "^0.34.5"
   },
