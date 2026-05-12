@@ -5,6 +5,7 @@ slug: birding-birthday
 tags:
   - birds
   - birding
+  - birdathon
   - personal
 image: /assets/img/2026-birding-wlake.jpg
 image_alt: A group of people with binoculars walking around a forested lake.
