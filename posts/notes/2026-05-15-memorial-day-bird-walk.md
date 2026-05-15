@@ -1,17 +1,10 @@
 ---
 date: 2026-05-15 04:00:00Z
 tags:
-  - birds, birding, personal
+  - birds
+  - birding
+  - personal
 slug: memorial-day-bird-walk
-image: ''
-image_alt: ''
-image_caption: ''
-syndication: []
-canonical_url: ''
-permalink: ''
-eleventyExcludeFromCollections: false
-eleventyExcludeFromCollectionsReason: draft
-updates: []
 ---
 
 Okay, I've set the times for my open birthday bird walk. If you are in the San Diego area and want to come birding with me, you're welcome to join!
