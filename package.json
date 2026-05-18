@@ -36,7 +36,7 @@
   "homepage": "https://www.ciccarello.me",
   "type": "module",
   "dependencies": {
-    "@sveltia/cms": "^0.152.4",
+    "@sveltia/cms": "^0.160.0",
     "@zachleat/pagefind-search": "^1.0.3",
     "7.css": "^0.21.1",
     "leaflet": "^1.9.4",
@@ -68,7 +68,7 @@
   },
   "optionalDependencies": {
     "netlify-cli": "^26.0.1",
-    "pa11y-ci": "^4.0.1",
+    "pa11y-ci": "^4.1.1",
     "sharp": "^0.34.5"
   },
   "overrides": {
