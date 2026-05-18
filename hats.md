@@ -34,6 +34,14 @@ The branding is so great I wear it often to represent San Diego.
 
 ![Black and white baseball cap with the San Diego Wave logo and colors on a man on the beach.](/assets/img/hat-sd-wave.jpg)
 
+## Hartford Yard Goats
+
+I picked up this cap at Dunkin' Field at a game in Hartford.
+Even if it's AA, I'm glad to see more pro sports in Connecticut, especially downtown.
+Leaning into the goofy mascot is fun and the new stadium is small enough that there's no bad seats.
+
+![Blue baseball cap with a spunky goat logo on a man in the outfield stands of a small baseball stadium.](/assets/img/hat-yard-goats.jpg)
+
 ## Brixton Corduroy
 
 This is a hat I picked up in Oceanside at a local clothing shop, but the photo is at my brother's place in Massachusetts with his jacket feeling very New England.
