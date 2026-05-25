@@ -1,6 +1,6 @@
+// @ts-check
 import { readFile } from 'node:fs/promises';
 
-// @ts-check
 /**
  * This file generates the Sveltia CMS config file
  * See the class below for the core configuration.
@@ -96,6 +96,7 @@ const fields = generateFieldMap([
 		date_format: 'YYYY-MM-DD',
 		time_format: 'HH:mm:ss[Z]',
 		picker_utc: true,
+		default: '{{now}}',
 	},
 	{
 		name: asConst('slug'),
@@ -115,8 +116,12 @@ const fields = generateFieldMap([
 		widget: 'list',
 		name: asConst('tags'),
 		multiple: true,
-		allow_add: true,
 		required: false,
+		field: {
+			name: 'tag',
+			label: 'Tag',
+			widget: 'string',
+		},
 	},
 	{
 		label: 'Main image',
@@ -161,14 +166,12 @@ const fields = generateFieldMap([
 		label: 'Exclude from main feed',
 		widget: 'boolean',
 		required: false,
-		default: undefined,
 	},
 	{
 		name: asConst('eleventyExcludeFromCollections'),
 		label: 'Hide from collections',
 		widget: 'boolean',
 		required: false,
-		default: undefined,
 	},
 	{
 		name: asConst('eleventyExcludeFromCollectionsReason'),
@@ -263,6 +266,7 @@ function toTitleCase(input) {
  */
 function addDefaultsToCollection(collection) {
 	const label = collection.label ?? toTitleCase(collection.name);
+	/** @type {(nameToFind: string) => boolean} */
 	const hasField = (nameToFind) =>
 		Boolean(
 			collection.fields &&
@@ -329,6 +333,7 @@ export default class CmsConfig {
 	 * @return  {string}  file contents
 	 */
 	async render() {
+		/** @type {string[]} */
 		let featuredTags = JSON.parse(
 			(
 				await readFile(
@@ -344,6 +349,7 @@ export default class CmsConfig {
 		 */
 		const branch = process.env.BRANCH || 'localhost';
 
+		/** @type {import('@sveltia/cms').CmsConfig} */
 		const config = {
 			backend: {
 				branch,
@@ -362,6 +368,9 @@ export default class CmsConfig {
 			slug: {
 				encoding: 'unicode',
 				clean_accents: true,
+			},
+			output: {
+				omit_empty_optional_fields: true,
 			},
 			collections: [
 				addDefaultsToCollection({

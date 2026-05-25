@@ -1,9 +1,18 @@
+# Build files
 _site
 _site_previous
 node_modules
+
+# Local config files
 .env
-.sass-cache
 .vscode
-.DS_Store
 .netlify
+
+# Temporary files
 _cache
+.cache
+.sass-cache
+assets/img/tweet-media
+
+# System files
+.DS_Store
