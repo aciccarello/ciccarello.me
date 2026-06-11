@@ -1,15 +1,28 @@
 ---
 title: How I converted my Instagram export to Markdown
 slug: instagram-import
-date: 2023-01-25T08:38:22.912Z
-permalink: /drafts/instagram-import/
+date: 2026-06-11T03:02:16.314Z
 tags:
   - site changes
   - IndieWeb
   - technology
-eleventyExcludeFromCollections: true
-eleventyExcludeFromCollectionsReason: draft
+image: /assets/img/blog-instagram-export-header.png
+image_alt: A stylized screenshot of a section of javascript code for converting an Instagram export.
 ---
+
+## 2026 Preface
+
+Back in 2022 I imported my photos from Instagram to my site.
+I started with Instagram's official export file and converted to markdown files which is the format my site uses.
+While I worked on the import I started documenting my process.
+But my draft post lagged and sat unpublished for years.
+Tonight at [Homebrew Website Club](https://events.indieweb.org/2026/06/homebrew-website-club-pacific-wTOGkZGPmj5s), [Joe](https://artlung.com/) referenced working on importing Instagram posts to his site.
+There are a few projects similar projects (e.g. [memento-mori](https://github.com/greg-randall/memento-mori) and [Instaloader](https://instaloader.github.io/)) but they have specific goals and Instagram changes often breaks those.
+I don't think my script is any better, but I hope that sharing it can give others some ideas or call out potential issues in case they are attempting to write their own import process.
+
+**Warning:** This code is already years old and likely to be out of date with Instagram's export format and web view. Use at your own risk.
+
+## 2023 Backstory
 
 After I started posting photos to my site, I wanted to import all of the photos I had previously posted to Instagram.
 Instagram does have an export option, however I found the export data lacking.
@@ -28,13 +41,16 @@ There is also some content encoding which should help with things like emojis.
 
 It has been a while since [I completed my migration](/posts/2022/06/10/instagram-photos-import/), and I can't guarantee that this script will work for everyone.
 Even with this script, I still needed to do some manual adjustments and add alt-text to some of my posts.
+I had less than 100 photos which probably makes the HTML scraping and manual adjustments easier than for someone with hundreds.
+I also did not need/attempt migrating any Instagram stories.
 Later I used a modified version of the script for <denver.ciccarello.me>.
 Even with it's limitations, hopefully it provides a few hints or tips others can use.
+
+## Code
 
 {% raw -%}
 
 ```javascript
-// Code Snippet License: MIT
 /**
  * Utility to get instagram data
  * License: MIT
