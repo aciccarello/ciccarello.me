@@ -1,6 +1,7 @@
 ---
 title: 'Caw: Crow or No?'
 slug: caw
+permalink: /caw/
 layout: page
 back_button: /birds/
 image:

@@ -23,9 +23,10 @@ I'm a birder who has lived in North San Diego County for the last 5 year. Origin
 ### My Pages
 
 - [eBird Profile](https://ebird.org/profile/OTUwMDI4/) (username a3chic9)
+- [My Life List and other personal bird stats](./stats/)
 - [My San Diego Birding Recommendations](/reviews/san-diego/birding/)
-- [2026 Birdathon Fundraiser](https://charity.pledgeit.org/sandiegobirdathon2026/@aciccarello)
 - [Caw](/caw)
+- [2026 Birdathon Fundraiser](https://charity.pledgeit.org/sandiegobirdathon2026/@aciccarello)
 
 ### Birding Resources
 

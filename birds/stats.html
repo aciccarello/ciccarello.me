@@ -1,0 +1,416 @@
+---
+title: Personal Bird Stats
+layout: page
+permalink: /birds/stats/
+back_button: ..
+---
+<style>
+	:root {
+		--color-base-hue: 540;
+	}
+
+	.ebird-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 0.9rem;
+		margin-block: 1rem;
+	}
+
+	.ebird-table td,
+	.ebird-table th {
+		padding: 0.35rem 0.6rem;
+		text-align: left;
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.ebird-table th {
+		font-weight: 600;
+		background: var(--color-background-1);
+		color: var(--text-on-background);
+		white-space: nowrap;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	.ebird-table th::after {
+		content: " ↕";
+		opacity: 0.35;
+		font-size: 0.75em;
+	}
+
+	.ebird-table th[aria-sort="ascending"]::after {
+		content: " ▲";
+		opacity: 1;
+	}
+
+	.ebird-table th[aria-sort="descending"]::after {
+		content: " ▼";
+		opacity: 1;
+	}
+
+	.ebird-table td:is(:nth-child(3), :nth-child(4)) {
+		text-align: right;
+	}
+
+	.ebird-table .sci-name {
+		font-style: italic;
+		color: var(--color-text-secondary, #555);
+		font-size: 0.8rem;
+	}
+
+	.ebird-table .date-col {
+		min-width: 12ch;
+	}
+
+	.table-wrapper {
+		overflow-x: auto;
+	}
+
+	.region-section {
+		margin-block: 2rem;
+	}
+
+	.media-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		gap: 0.75rem;
+		margin: 1rem 0 2rem;
+	}
+
+	.media-card iframe {
+		display: block;
+		width: 100%;
+		height: 600px;
+		border: 0;
+		margin: 0;
+	}
+
+	.region-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+		gap: 1rem;
+		margin-block: 1rem;
+	}
+
+	.region-card {
+		border: 1px solid var(--color-border, #ddd);
+		border-radius: 0.5rem;
+		padding: 1rem;
+		position: relative;
+	}
+
+	.region-card h3 {
+		margin: 0 0 0.25rem;
+		font-size: 1rem;
+	}
+
+	.region-card .region-code {
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+
+		font-size: 0.75rem;
+		color: var(--color-text-secondary, #555);
+	}
+
+	.region-card .region-stats {
+		margin: 0.5rem 0 0;
+		font-size: 0.85rem;
+	}
+
+	.region-card details {
+		margin-top: 0.5rem;
+		font-size: 0.85rem;
+	}
+
+	.region-card details summary {
+		cursor: pointer;
+		color: var(--color-alternate);
+	}
+
+	.region-species-list {
+		margin: 0.5rem 0 0;
+		padding: 0;
+		list-style: none;
+		max-height: 16rem;
+		overflow-y: auto;
+	}
+
+	.region-species-list li {
+		padding: 0.15rem 0;
+		border-bottom: 1px solid var(--color-border, #eee);
+		font-size: 0.8rem;
+	}
+
+	.no-activity {
+		opacity: 0.4;
+	}
+</style>
+
+<p>
+  My birding observations exported from my <a href="https://ebird.org/profile/OTUwMDI4/">eBird account</a>.
+  Last processed <time>{{ ebird.processedAt | date: "%B %-d, %Y" }}</time>.
+</p>
+
+<h2>Life List</h2>
+<p>
+  I've identified <strong>{{ ebird.totalSpecies }}</strong> species in my life.
+  Here are the most recently added.
+</p>
+
+<table class="ebird-table">
+	<thead>
+		<tr>
+			<th>Species</th>
+			<th>Count</th>
+			<th class="date-col">First&nbsp;Seen</th>
+		</tr>
+	</thead>
+	<tbody>
+		{%- for species in ebird.lifeList limit:10 -%}
+			<tr>
+				<td>
+					<a href="https://www.allaboutbirds.org/news/search/?q={{ species.commonName | url_encode | replace: '%20', '+' }}" target="_blank" rel="noopener">{{ species.commonName }}</a><br>
+					<span class="sci-name">{{ species.scientificName }}</span>
+				</td>
+				<td>{{ species.totalCount }}</td>
+				<td>
+					<a href="https://ebird.org/checklist/{{ species.firstSighting.checklistId }}" target="_blank" rel="noopener">
+						<time>{{ species.firstSighting.date }}</time>
+					</a>
+					<br>
+					<span class="sci-name">{{ species.firstSighting.region }}</span>
+				</td>
+			</tr>
+		{%- endfor -%}
+	</tbody>
+</table>
+
+<details class="table-wrapper">
+	<summary>View all {{ ebird.totalSpecies }} species</summary>
+	<table class="ebird-table">
+		<thead>
+			<tr>
+				<th>Species</th>
+				<th>Lists</th>
+				<th>Count</th>
+				<th class="date-col">First&nbsp;Seen</th>
+				<th class="date-col">Last&nbsp;Seen</th>
+				<th>Media</th>
+			</tr>
+		</thead>
+		<tbody>
+			{%- for species in ebird.lifeList -%}
+				<tr>
+					<td>
+						<a href="https://www.allaboutbirds.org/news/search/?q={{ species.commonName | url_encode | replace: '%20', '+' }}" target="_blank" rel="noopener">{{ species.commonName }}</a><br>
+						<span class="sci-name">{{ species.scientificName }}</span>
+					</td>
+					<td>{{ species.observationCount }}</td>
+					<td>{{ species.totalCount }}</td>
+					<td>
+						<a href="https://ebird.org/checklist/{{ species.firstSighting.checklistId }}" target="_blank" rel="noopener">
+							<time>{{ species.firstSighting.date }}</time>
+						</a>
+						<br>
+						<span class="sci-name">{{ species.firstSighting.region }}</span>
+					</td>
+					<td>
+						<a href="https://ebird.org/checklist/{{ species.lastSighting.checklistId }}" target="_blank" rel="noopener">
+							<time>{{ species.lastSighting.date }}</time>
+						</a>
+						<br>
+						<span class="sci-name">{{ species.lastSighting.region }}</span>
+					</td>
+					<td>
+						{%- if species.mlCatalogNumber != "" -%}
+							<a href="https://macaulaylibrary.org/asset/{{ species.mlCatalogNumber }}" target="_blank" rel="noopener" aria-label="Media on Macaulay Library">📷</a>
+						{%- endif -%}
+					</td>
+				</tr>
+			{%- endfor -%}
+		</tbody>
+	</table>
+</details>
+
+<h2>Recent Media</h2>
+<p>
+	A collection of photos and recordings from my recent birding lists.
+	<a href="https://search.macaulaylibrary.org/catalog?searchField=user&userId=USER950028" rel="noopener">View more on Macaulay Library</a>.
+</p>
+<div class="media-grid">
+	{%- for media in ebird.recentMedia limit:6 -%}
+		<article class="media-card">
+			<iframe src="{{ media.embedUrl }}" height="600" width="360" frameborder="0" referrerpolicy="no-referrer" scrolling="no" loading="lazy" allowfullscreen></iframe>
+		</article>
+	{%- endfor -%}
+</div>
+
+<h2>Annual Totals</h2>
+
+<div class="table-wrapper">
+	<table class="ebird-table">
+		<thead>
+			<tr>
+				<th>Year</th>
+				<th>Species</th>
+				<th>Hours</th>
+				<th>Distance (km)</th>
+				<th class="date-col">Best Day</th>
+				<th>Best Day Species</th>
+			</tr>
+		</thead>
+		<tbody>
+			{%- for stat in ebird.yearlyStats -%}
+				<tr>
+					<td>{{ stat.year }}</td>
+					<td>{{ stat.speciesCount }}</td>
+					<td>{{ stat.durationMin | divided_by: 60 | round }}</td>
+					<td>{{ stat.distanceKm }}</td>
+					<td>
+						{%- if stat.bigDay -%}
+							<time>{{ stat.bigDay.date }}</time>
+						{%- endif -%}
+					</td>
+					<td>{{ stat.bigDay.speciesCount }}</td>
+				</tr>
+			{%- endfor -%}
+		</tbody>
+	</table>
+</div>
+
+<div class="region-section">
+	<h2>By Country</h2>
+	<div class="region-grid">
+		{%- for country in ebird.countries -%}
+			<div class="region-card">
+				<h3>{{ country.name }}</h3>
+				<span class="region-code">{{ country.code }}</span>
+				<p class="region-stats">
+					<strong>All time:</strong>
+					{{ country.allTimeCount }} species &middot;
+        {{ country.allTimeDurationMin | divided_by: 60 | round }}&thinsp;hrs &middot;
+        {{ country.allTimeDistanceKm }}&thinsp;km<br>
+					<span{% if country.currentYearCount == 0 %} class="no-activity"{% endif %}>
+						<strong>This year:</strong>
+						{{ country.currentYearCount }} species &middot;
+        {{ country.currentYearDurationMin | divided_by: 60 | round }}&thinsp;hrs &middot;
+        {{ country.currentYearDistanceKm }}&thinsp;km</span>
+				</p>
+				<details>
+					<summary>Species list</summary>
+					<ul class="region-species-list">
+						{%- for sp in country.species -%}
+							<li>
+								<a href="https://www.allaboutbirds.org/news/search/?q={{ sp.commonName | url_encode | replace: '%20', '+' }}" target="_blank" rel="noopener">{{ sp.commonName }}</a>
+							</li>
+						{%- endfor -%}
+					</ul>
+				</details>
+			</div>
+		{%- endfor -%}
+	</div>
+</div>
+
+<div class="region-section">
+	<h2>US States</h2>
+	<div class="region-grid">
+		{%- for state in ebird.usStates -%}
+			<div class="region-card">
+				<h3>{{ state.name }}</h3>
+				<span class="region-code">{{ state.code }}</span>
+				<p class="region-stats">
+					<strong>All time:</strong>
+					{{ state.allTimeCount }} species &middot;
+        {{ state.allTimeDurationMin | divided_by: 60 | round }}&thinsp;hrs &middot;
+        {{ state.allTimeDistanceKm }}&thinsp;km<br>
+					<span{% if state.currentYearCount == 0 %} class="no-activity"{% endif %}>
+						<strong>This year:</strong>
+						{{ state.currentYearCount }} species &middot;
+        {{ state.currentYearDurationMin | divided_by: 60 | round }}&thinsp;hrs &middot;
+        {{ state.currentYearDistanceKm }}&thinsp;km</span>
+				</p>
+				<details>
+					<summary>Species list</summary>
+					<ul class="region-species-list">
+						{%- for sp in state.species -%}
+							<li>
+								<a href="https://www.allaboutbirds.org/news/search/?q={{ sp.commonName | url_encode | replace: '%20', '+' }}" target="_blank" rel="noopener">{{ sp.commonName }}</a>
+							</li>
+						{%- endfor -%}
+					</ul>
+				</details>
+			</div>
+		{%- endfor -%}
+	</div>
+</div>
+
+<h2 class="h4">Footnotes</h2>
+<ul>
+	<li>Distances refer to ground covered while birding, not necessarily total distance traveled</li>
+	<li>Species counts may differ slightly from eBird depending on what Cornell considers an escapee or unique species</li>
+	<li>Only freely moving, wild bird species are counted.</li>
+	<li>Counts of a species add up totals of all outings</li>
+	<li>Some observations don't include time or distance</li>
+	<li>Undated observations use a date of 1900-01-01</li>
+</ul>
+
+<script>
+	(function () {
+		document
+			.querySelectorAll('.ebird-table')
+			.forEach(function (table) {
+				var headers = Array.from(table.querySelectorAll('thead th'));
+				headers.forEach(function (th, colIndex) {
+					th.setAttribute('role', 'button');
+					th.setAttribute('tabindex', '0');
+
+					function sort() {
+						var tbody = table.querySelector('tbody');
+						var rows = Array.from(tbody.querySelectorAll('tr'));
+						var asc = th.getAttribute('aria-sort') !== 'ascending';
+
+						headers.forEach(function (h) {
+							h.removeAttribute('aria-sort');
+						});
+						th.setAttribute(
+							'aria-sort', asc
+							? 'ascending'
+							: 'descending');
+
+						rows.sort(function (a, b) {
+							var aText = (
+								a.cells[colIndex]
+								? a.cells[colIndex].textContent
+								: '').trim();
+							var bText = (
+								b.cells[colIndex]
+								? b.cells[colIndex].textContent
+								: '').trim();
+							var aNum = parseFloat(aText.replace(/,/g, ''));
+							var bNum = parseFloat(bText.replace(/,/g, ''));
+							var isNum = !isNaN(aNum) && !isNaN(bNum);
+							var cmp = isNum
+								? aNum - bNum
+								: aText.localeCompare(bText);
+							return asc
+								? cmp
+								: -cmp;
+						});
+
+						rows.forEach(function (row) {
+							tbody.appendChild(row);
+						});
+					}
+
+					th.addEventListener('click', sort);
+					th.addEventListener('keydown', function (e) {
+						if (e.key === 'Enter' || e.key === ' ') {
+							e.preventDefault();
+							sort();
+						}
+					});
+				});
+			});
+	}());
+</script>
