@@ -2,6 +2,7 @@
 date: 2026-06-13T06:36:41.607Z
 tags:
   - site changes
+  - birds
 slug: bird-stats
 ---
 
