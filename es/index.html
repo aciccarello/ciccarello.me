@@ -50,7 +50,9 @@ title: Inicio
 				</span>
 			</a>
 			{%- if account.description == "@anthony@ciccarello.me" %}
-			<a class="u-url" href="acct:anthony@ciccarello.me"></a>
+			<a class="u-url" href="acct:anthony@ciccarello.me">
+				<span class="sr-only">Identificador de cuenta de Mastodon</span>
+			</a>
 			{%- endif %}
 			{%- endfor %}
 		</nav>

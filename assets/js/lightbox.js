@@ -29,6 +29,7 @@ export function createLightbox() {
 
 	const img = document.createElement('img');
 	img.className = 'lightbox-img';
+	img.alt = '';
 
 	const caption = document.createElement('p');
 	caption.className = 'lightbox-caption';
@@ -81,6 +82,7 @@ export function openLightbox(lightbox, images, startIndex) {
 
 	function updateImage() {
 		lightbox.img.src = images[currentIndex].src;
+		lightbox.img.alt = images[currentIndex].alt || '';
 
 		// Update the caption text based on the associated figcaption
 		const figure = images[currentIndex].closest('figure');
