@@ -43,8 +43,6 @@ export default async function (eleventyConfig) {
 		[require.resolve('webmention.js/static/webmention')]:
 			'assets/js/webmention.js',
 		[require.resolve('@sveltia/cms')]: 'assets/js/cms.js',
-		[require.resolve('@zachleat/pagefind-search')]:
-			'assets/js/pagefind-search.js',
 		[require.resolve('7.css/dist/7.css')]: 'assets/css/7.css',
 	});
 

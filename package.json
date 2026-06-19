@@ -37,7 +37,6 @@
   "type": "module",
   "dependencies": {
     "@sveltia/cms": "^0.161.1",
-    "@zachleat/pagefind-search": "^1.0.3",
     "7.css": "^0.21.1",
     "leaflet": "^1.9.4",
     "webmention.js": "^0.5.5"
@@ -61,7 +60,7 @@
     "microformats-parser": "^2.0.4",
     "node-fetch": "^3.3.2",
     "node-html-parser": "^7.0.2",
-    "pagefind": "^1.5.0",
+    "pagefind": "^1.5.2",
     "prettier": "^3.8.1",
     "rss-parser": "^3.13.0",
     "slugify": "^1.6.9"
