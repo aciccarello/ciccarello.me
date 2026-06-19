@@ -6,11 +6,11 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {%- for item in collections.all %}
-    {%- if not item.data.excludeFromSitemap %}
+    {%- unless item.data.excludeFromSitemap %}
     <url>
-      <loc>{{ item.url | addBaseUrl | safe }}</loc>
-      <lastmod>{{ (item.data.lastUpdated | default(item.date)).toISOString() }}</lastmod>
+      <loc>{{ item.url | addBaseUrl }}</loc>
+      <lastmod>{{ item.data.lastUpdated | default: item.date | formatMachineDate }}</lastmod>
     </url>
-    {%- endif %}
+    {%- endunless %}
   {%- endfor %}
 </urlset>

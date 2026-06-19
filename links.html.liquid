@@ -13,23 +13,23 @@ redirect_from: /lk
 <p>{{ links.description }}</p>
 <ul class="pinned-links">
 {% for link in links.featured %}
-        <li>
-            <a href="{{link.url}}" class="btn-link">{{link.title}}</a>
-    </li>
+	<li>
+		<a href="{{link.url}}" class="btn-link">{{link.title}}</a>
+	</li>
 {% endfor %}
 </ul>
 
 <h3>Recently Saved Links</h3>
 
 <ul class="recent-links">
-{%- for link in collections.links | reverse %}
-{%- if loop.index < 10 %}
-{%- set reference = link.data.responseData %}
-    <li>
-        <a href="{% if link.templateContent %}{{link.url}}{% else %}{{reference.url}}{% endif %}">
-            {{reference.plaintextSummary}}
-        </a>
-    </li>
-{%- endif %}
+{%- assign recentLinks = collections.links | reverse | slice: 0, 9 %}
+{%- for link in recentLinks %}
+{%- assign reference = link.data.responseData %}
+{%- assign hasContent = link.templateContent | strip | default: "_false_" %}
+	<li>
+		<a href="{% if hasContent == "_false_" %}{{reference.url}}{% else %}{{link.url}}{% endif %}">
+			{{reference.plaintextSummary}}
+		</a>
+	</li>
 {%- endfor %}
 </ul>
