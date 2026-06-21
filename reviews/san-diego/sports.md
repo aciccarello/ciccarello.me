@@ -84,6 +84,11 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/commons/4/45/Burgee_of_San_Diego_Yacht_Club.svg
     image_alt: Pennant flag with a red star.
     summary: Sailing team in America's cup
+  - name: Dynast Paintball
+    url: https://www.nxlpaintball.com/sandiegodynasty
+    image: https://static.wixstatic.com/media/39aac2_7d24024ce06048acae2d761215675533~mv2.jpg/v1/fill/w_1920,h_289,al_c,q_85,enc_avif,quality_auto/LogoBar_SanDiegoDynasty.jpg
+    image_alt: Dynasty Swoosh logo with Asian characters
+    summary: NXL Professional Paintball Team
 ---
 
 <style>
