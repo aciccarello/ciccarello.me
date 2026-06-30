@@ -15,14 +15,14 @@ layout: default
 				</a>
 			</h1>
 			{%- if subtitle -%}
-				<p role="doc-subtitle" class="post-title p-summary h2">
+				<p role="doc-subtitle" class="post-title p-summary h2" style="view-transition-name: {{page.url | slugify}}-text">
 					{{ subtitle | escape }}
 				</p>
 			</hgroup>
 			{%- endif -%}
 			<p class="post-meta">
 				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
-					<time class="dt-published" datetime="{{ page.date | formatMachineDate }}">
+					<time class="dt-published" datetime="{{ page.date | formatMachineDate }}" style="view-transition-name: {{page.url | slugify}}-date">
 						{{- page.date | formatHumanDate: dateFormat -}}
 					</time>
 				</a>
@@ -31,7 +31,7 @@ layout: default
 		</header>
 		{% include "review-context.html" %}
 
-		<div class="post-content e-content">
+		<div class="post-content e-content{% unless subtitle %} style="view-transition-name: {{page.url | slugify}}-text"{% endunless %}">
 			{{ content }}
 		</div>
 		{% include "syndication.html" %}

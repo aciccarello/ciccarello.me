@@ -37,12 +37,12 @@ h-entry
 						{{ post.data.title | escape }}
 					</h3>
 				{%- endif -%}
-				<time class="dt-published" datetime="{{ post.date | formatMachineDate }}">
+				<time class="dt-published" datetime="{{ post.date | formatMachineDate }}" {% if deferTransition %}data-vt="{{ vtName }}-date"{% else %}style="view-transition-name: {{ vtName }}-date"{% endif %}>
 					{{- post.date | formatHumanDate: post.data.dateFormat -}}
 				</time>
 			</div>
 			<div class="post-body">
-				<p class="post-text p-summary">
+				<p class="post-text p-summary"{% if deferTransition %}data-vt="{{ vtName }}-text"{% else %}style="view-transition-name: {{ vtName }}-text"{% endif %}>
 					{%- assign hasContent = post.templateContent | strip | default: "_false_" %}
 					{%- if post.data.subtitle -%}
 						{{ post.data.subtitle | joinLines | strip_html }}
@@ -64,7 +64,7 @@ h-entry
 				{%- endif -%}
 				{%- assign tags = post.data.tags -%}
 				{%- if tags.size > 0 or showKind %}
-					<ul class="chip-set" title="Tags">
+					<ul class="chip-set" title="Tags" {% if deferTransition %}data-vt="{{ vtName }}-tags"{% else %}style="view-transition-name: {{ vtName }}-tags"{% endif %}>
 						{%- if showKind %}
 							<li class="chip-item">
 								{{ post.data.type | default: post.data.layout }}
