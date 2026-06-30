@@ -127,7 +127,7 @@ I've also focused on items that are easier for newer contributors.
 If you're curious and want to hear more about what is going on or if you have questions to ask, consider joining one of the hackathon Zoom calls I'll be hosting this month. The first call will be on [January 1st](https://events.indieweb.org/2026/01/january-hackathon-kickoff-NCj8j08Gmkxx).
 I am also active in the [#indieweb-dev](https://indieweb.org/discuss#Read_Discussions) chat channel and am available for DMs on the Slack bridge.
 If you aren't active in the chat, you can reach out via GitHub issues or discussions.
-Lastly, I'm usually available via [email](/#connect), though I'm historically pretty slow to respond there.
+Lastly, I'm usually available via [email](/contact/), though I'm historically pretty slow to respond there.
 
 ---
 

@@ -120,4 +120,4 @@ In case you're thinking about hosting guests on Airbnb...
 
 **I get:** A %0-$1,000 gift card when your company signs up for an annual plan
 
-[Reach Out](/#connect)
+[Reach Out](/contact/)

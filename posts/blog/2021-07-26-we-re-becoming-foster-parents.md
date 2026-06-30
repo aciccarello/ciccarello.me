@@ -43,4 +43,4 @@ If you are unfamiliar with the foster care system, I encourage you to learn more
 
 ---
 
-I look forward to sharing more news and information soon. I recognize we still have much to learn about foster care but am happy to share what we have learned thus far. I’ve set up a [foster care page](/foster) where you can find the latest information on our journey, resources about foster care, our registry, and information on how to subscribe to updates. If you have questions, feel free to [reach out to me directly](/#connect).
+I look forward to sharing more news and information soon. I recognize we still have much to learn about foster care but am happy to share what we have learned thus far. I’ve set up a [foster care page](/foster) where you can find the latest information on our journey, resources about foster care, our registry, and information on how to subscribe to updates. If you have questions, feel free to [reach out to me directly](/contact/).

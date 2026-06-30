@@ -27,7 +27,7 @@ We encountered several delays but eventually were approved.
 Due to a combination of concerns, we eventually decided to suspend our license in 2025.
 We still encourage anyone interested to get involved as a foster parent, court appointed special advocate (CASA), or other programs helping families in need.
 For more information, check out our [foster care posts](/posts/tags/foster%20care).
-If you have any questions you can always [reach out to me directly](/#connect).
+If you have any questions you can always [reach out to me directly](/contact/).
 
 <!--
 ## How You Can Help Us
