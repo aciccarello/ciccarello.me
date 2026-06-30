@@ -47,6 +47,15 @@
 # For context-specific rules, use _headers or _redirects files,
 # which are PER-DEPLOY.
 
+# Override Netlify's default "Cache-Control: max-age=0, must-revalidate, public".
+# Serve responses as fresh for 5 minutes (max-age=300), then allow the cache to
+# serve the stale response while revalidating in the background for the next
+# 2 hours (stale-while-revalidate=7200).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, stale-while-revalidate=7200"
+
 [[redirects]]
   from = "/.well-known/host-meta*"
   to = "https://fed.brid.gy/.well-known/host-meta:splat"
