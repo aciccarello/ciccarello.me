@@ -1,5 +1,5 @@
 {%- if tags.size > 0 -%}
-<ul class="chip-set" title="Tags">
+<ul class="chip-set" title="Tags" style="view-transition-name: {{page.url | slugify}}-tags">
 	{% for tag in tags -%}
 	<li>
 		<a href="/posts/tags/{{tag}}/" rel="tag" class="p-category tag chip-item">
