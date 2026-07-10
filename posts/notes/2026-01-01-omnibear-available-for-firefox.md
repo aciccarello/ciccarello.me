@@ -5,7 +5,7 @@ tags:
   - IndieWeb
   - Omnibear
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/www.ciccarello.me/posts/2026/01/01/omnibear-available-for-firefox/
 updates:
   - date: 2026-01-01T14:46:00.828Z
     description: Added syndication to IndieNews
