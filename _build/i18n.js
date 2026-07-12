@@ -4,7 +4,7 @@
  * @see https://www.11ty.dev/docs/plugins/i18n/
  */
 
-class LangUtils {
+export class LangUtils {
 	static getLanguageCodeFromInputPath(filepath) {
 		return (filepath || '').includes('/es/') ? 'es' : 'en-US';
 	}
@@ -45,7 +45,7 @@ function normalizeInputPath(inputPath, extensionMap) {
  * @param urlToInputPath {Record<string, string>}
  * @returns {Record<string, {url: string}[]>}
  */
-function getLocaleUrlsMap(urlToInputPath, extensionMap, options = {}) {
+export function getLocaleUrlsMap(urlToInputPath, extensionMap, options = {}) {
 	let filemap = {};
 
 	for (let url in urlToInputPath) {
@@ -85,9 +85,10 @@ function getLocaleUrlsMap(urlToInputPath, extensionMap, options = {}) {
 	// map of input paths => array of localized urls
 	let urlMap = {};
 	for (let filepath in filemap) {
-		for (let entry of filemap[filepath]) {
-			let url = entry.url;
+		for (let localizedUrl of filemap[filepath]) {
+			let url = localizedUrl.url;
 			if (!urlMap[url]) {
+				let urlLang = LangUtils.getLanguageCodeFromUrl(url);
 				urlMap[url] = filemap[filepath].filter((entry) => {
 					if (
 						entry.url.includes('/page/') ||
@@ -95,10 +96,11 @@ function getLocaleUrlsMap(urlToInputPath, extensionMap, options = {}) {
 					) {
 						return false;
 					}
-					if (entry.lang) {
-						return true;
-					}
-					return entry.url !== url;
+					// Only a different-language version of the same page counts
+					// as a translation. This excludes the page itself and any
+					// same-language pages that merely share a paginated template
+					// (e.g. every book page generated from posts/reads/book.html).
+					return entry.lang !== urlLang;
 				});
 			}
 		}

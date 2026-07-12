@@ -1,0 +1,59 @@
+---
+layout: default
+back_button: "/posts"
+permalink: "/reads/"
+title: "Reads"
+---
+
+<div class="container h-feed">
+	<h1 class="post-list-heading p-name">
+		Reads
+	</h1>
+	{%- if collections.reads.started.size > 0 -%}
+	<h2>Books I'm Reading</h2>
+	<ol class="book-list">
+		{%- for book in collections.reads.started -%}
+			<li>
+				<a class="book-card" href="/reads/{{ book.slug }}/">
+					<img class="book-card__cover" src="{{ book['read-of'].photo | default: '/assets/icons/book-96.svg' }}" alt="Cover of {{ book['read-of'].name | escape }}" loading="lazy" onerror="this.src='/assets/icons/book-96.svg'; this.onerror=null;">
+					<p class="book-card__title">{{ book['read-of'].name }}</p>
+					<p class="book-card__author">{{ book['read-of'].author | join: ', ' }}</p>
+				</a>
+			</li>
+		{%- endfor -%}
+	</ol>
+	{%- endif -%}
+	{%- if collections.reads.finished.size > 0 -%}
+	<h2>Books I've Read</h2>
+	<ol class="book-list">
+		{%- for book in collections.reads.finished -%}
+			<li>
+				<a class="book-card" href="/reads/{{ book.slug }}/">
+					<img class="book-card__cover" src="{{ book['read-of'].photo | default: '/assets/icons/book-96.svg' }}" alt="Cover of {{ book['read-of'].name | escape }}" loading="lazy" onerror="this.src='/assets/icons/book-96.svg'">
+					<p class="book-card__title">{{ book['read-of'].name }}</p>
+					<p class="book-card__author">{{ book['read-of'].author | join: ', ' }}</p>
+					{%- if book.rating -%}
+					<data class="book-card__rating rating-stars" value="{{ book.rating }}">
+						{%- for i in (1..5) %}{% if i <= book.rating %}★️{% else %}☆{%endif %}{% endfor -%}
+					</data>
+					{%- endif -%}
+				</a>
+			</li>
+		{%- endfor -%}
+	</ol>
+	{%- endif -%}
+	{%- if collections.reads.want.size > 0 -%}
+	<h2>Books I'd Like to Read</h2>
+	<ol class="book-list">
+		{%- for book in collections.reads.want -%}
+			<li>
+				<a class="book-card" href="/reads/{{ book.slug }}/">
+					<img class="book-card__cover" src="{{ book['read-of'].photo | default: '/assets/icons/book-96.svg' }}" alt="Cover of {{ book['read-of'].name | escape }}" loading="lazy" onerror="this.src='/assets/icons/book-96.svg'">
+					<p class="book-card__title">{{ book['read-of'].name }}</p>
+					<p class="book-card__author">{{ book['read-of'].author | join: ', ' }}</p>
+				</a>
+			</li>
+		{%- endfor -%}
+	</ol>
+	{%- endif -%}
+</div>

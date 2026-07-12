@@ -110,7 +110,7 @@ See also: [Guide to San Diego sports teams](../sports/)
 
 {% removeindents %}
 
-<ol class="post-list sport-teams-list">
+<ol class="post-list post-list--even sport-teams-list">
     {%- for team in sportsTeams -%}
         <li>
 <div class="h-entry">
@@ -141,7 +141,7 @@ See also: [Guide to San Diego sports teams](../sports/)
 
 {% removeindents %}
 
-<ol class="post-list">
+<ol class="post-list post-list--even">
     {%- for post in collections.reviews reversed -%}
     <li>
         {% include "post-card.html" post: post %}
