@@ -3,6 +3,11 @@ title: Binoculars and Optics
 layout: page
 back_button: ..
 ---
+<style>
+:root {
+    --color-base-hue: 540;
+}
+</style>
 
 I've been asked a few times what binoculars I'd recommend.
 Honestly, the importance of good binoculars is often over-emphasized so for people getting into birding, I'd say start with the most accessible optics, either a pair you have or a cheap pair you find online.
