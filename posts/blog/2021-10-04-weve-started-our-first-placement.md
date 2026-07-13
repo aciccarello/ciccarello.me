@@ -6,6 +6,7 @@ tags:
   - personal
 image: /assets/img/2021-foster-placement-announcement.jpg
 image_alt: Two children, a boy and a girl playing on a sandy beach
+permalink: "/blog/2021/10/03/we've-started-our-first-placement/"
 ---
 A couple weeks ago, Bekah and I accepted our first foster placement of two young kiddos; a five-year-old boy and a one-year-old girl. They are beautiful kids who love to have fun. They also have been through a lot, both in life and now being separated from their family. We are happy to provide a safe place for them during this tough time but also heartbroken by the pain they feel.
 

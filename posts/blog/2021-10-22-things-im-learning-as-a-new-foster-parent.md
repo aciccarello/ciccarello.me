@@ -7,6 +7,7 @@ tags:
   - parenting
 image: /assets/img/2021-foster-parenting-lessons.jpg
 image_alt: young boy walking in a park with ducks.
+permalink: "/blog/2021/10/22/things-i'm-learning-as-a-new-foster-parent/"
 ---
 After several weeks, our crash course in parenting has continually thought me new things. There are a lot of parenting lessons I've seen played out in other's homes. But being now being the parent has really brought a lot of those into focus.
 

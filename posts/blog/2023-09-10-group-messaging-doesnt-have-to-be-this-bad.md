@@ -7,6 +7,7 @@ tags:
   - rant
 image: /assets/img/2023-apple-rcs-text.png
 image_alt: "Text thread where a message from 'People' says 'Can we have better messaging?'. Apple Inc responds with '👎 to Can we have better messaging?'. Bottom of messaging view says 'RSS Messaging is not available with Apple Inc right now'."
+permalink: "/blog/2023/09/10/group-messaging-doesn't-have-to-be-this-bad/"
 updates:
   - date: 2023-11-16T19:41:14.876Z
     description: Added note about RCS support announcement from Apple

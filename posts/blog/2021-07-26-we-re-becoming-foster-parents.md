@@ -6,6 +6,7 @@ tags:
   - foster care
 image: /assets/img/2021-foster-care-announcement.jpg
 image_alt: Couple sitting in flower field smiling at camera.
+permalink: "/blog/2021/07/26/we're-becoming-foster-parents/"
 ---
 I’m excited to announce that after 10 months of the certification process and years of discussion and planning Bekah and I have been licensed by the state of California to serve as foster parents. Since the earliest days of our marriage, we’ve discussed how we could care for children needing families. As we’ve worked through the certification process, we’ve learned so much about what foster care looks like in the United States and how important it is for children from hard places to have a loving, stable home as their cases work through the court system.
 

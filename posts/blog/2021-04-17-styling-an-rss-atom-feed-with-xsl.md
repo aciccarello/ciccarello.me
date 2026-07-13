@@ -6,6 +6,7 @@ tags:
   - site changes
 image: /assets/img/feed-xsl-view.jpg
 image_alt: View of feed page
+permalink: /blog/2021/04/17/styling-an-rssatom-feed-with-xsl/
 ---
 
 On my blog I link to my RSS/Atom feed for the convenience of people who use a feed reader. However, since this is an XML document, clicking on the link could be confusing for web visitors. I had previously looked into adding styles to the XML document to make it less scary, but the feed structure isn't very conductive to normal CSS styles.

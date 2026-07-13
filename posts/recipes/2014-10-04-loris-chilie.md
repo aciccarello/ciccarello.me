@@ -9,6 +9,7 @@ tags:
   - beef
 image: /assets/img/recipe-lori-chili-bowl.jpg
 image_alt: A bowl with a red chili and a spoon raised showing the beans and corn.
+permalink: "/recipes/2014/10/04/lori's-chile/"
 updates:
   - date: 2024-01-17T20:01:01.815Z
     description: Added amounts and ingredients like corn and paprika

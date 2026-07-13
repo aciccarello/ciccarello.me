@@ -9,6 +9,7 @@ tags:
   - dinner
 image: /assets/img/spanish-rice.jpg
 image_alt: pot with orange tinted rice
+permalink: "/recipes/2022/12/06/veronica's-spanish-rice/"
 ---
 Our friend Veronica taught us her family recipe with us. This flavorful rice is great with tamales! 🫔🍚
 

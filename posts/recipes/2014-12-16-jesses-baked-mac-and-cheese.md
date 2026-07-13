@@ -7,6 +7,7 @@ tags:
   - cheese
 image: /assets/img/jesse-mac-and-cheese.jpg
 image_alt: Bowl of cheesy pasta
+permalink: "/recipes/2014/12/16/jesse's-baked-mac-and-cheese/"
 updates:
   - date: 2023-11-23T21:00:42.380Z
     description: Added parmesan
