@@ -29,16 +29,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/c/cc/San_Diego_Growlers_%28ultimate_team%29_logo.png
     image_alt: Logo of a wolf
     summary: UFA Ultimate Frisbee team playing at Mission Bay High School
-  - name: California Redwoods Lacrosse
-    url: https://www.premierlacrosseleague.com/redwoods
-    image: https://upload.wikimedia.org/wikipedia/en/d/db/California_Redwoods_lacrosse.jpg
-    image_alt: California Redwoods logo depicting a bear head on a seal.
-    summary: PLL Men's Field lacrosse (outdoor)
-  - name: California Palms Lacrosse
-    url: https://thewll.com/teams/palms
-    image: https://img.premierlacrosseleague.com/Teams/2024/Logo/wll_california_palms_logo.png
-    image_alt: California Palms logo of a seal with crossed palm trees in front of a sunset.
-    summary: WLL Women's Field lacrosse (outdoor)
   - name: Strike Football
     url: http://sdstrikeforce.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/8/88/San_Diego_Strike_Force_Logo.svg/1920px-San_Diego_Strike_Force_Logo.svg.png
