@@ -31,7 +31,7 @@ layout: default
 		</header>
 		{% include "review-context.html" %}
 
-		<div class="post-content e-content{% unless subtitle %} style="view-transition-name: {{page.url | slugify}}-text"{% endunless %}">
+		<div class="post-content e-content"{% unless subtitle %} style="view-transition-name: {{page.url | slugify}}-text"{% endunless %}>
 			{{ content }}
 		</div>
 		{% include "syndication.html" %}
