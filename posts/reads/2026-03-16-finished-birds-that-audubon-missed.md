@@ -5,11 +5,10 @@ slug: finished-birds-that-audubon-missed
 excludeFromMainFeed: true
 read-of:
   type: cite
-  name: Birds That Audubon Missed
+  name: The Birds That Audubon Missed
   photo: https://covers.openlibrary.org/b/id/14801429-M.jpg
   author: Kenn Kaufman
   uid: olid:OL37827873W
   url: https://openlibrary.org/works/OL37827873W
 progress: finished
-rating: 4
 ---

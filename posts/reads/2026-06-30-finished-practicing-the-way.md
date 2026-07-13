@@ -12,4 +12,6 @@ read-of:
   url: https://openlibrary.org/works/OL34498135W
 progress: finished
 rating: 4
+tags:
+  - christianity
 ---

@@ -12,4 +12,6 @@ read-of:
   uid: olid:OL17710110W
   url: https://openlibrary.org/works/OL17710110W
 progress: finished
+tags:
+  - politics
 ---

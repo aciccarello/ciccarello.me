@@ -11,4 +11,6 @@ read-of:
   uid: olid:OL2395963W
   url: https://openlibrary.org/works/OL2395963W
 progress: started
+tags:
+  - birds
 ---

@@ -12,6 +12,8 @@ read-of:
   url: https://openlibrary.org/works/OL28486859W
 progress: finished
 rating: 3
+tags:
+  - christianity
 ---
 
 Written by a former Christian punk rock artist with all norm challenging that involves while also emphasizing . His own experiences growing up in a hypocritical conservative church that rejected him, traveling the world, and personal loss let to his own struggle with Christianity. The book is written with a good mix of personal story and cultural commentary. 

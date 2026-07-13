@@ -12,3 +12,6 @@ read-of:
   url: https://openlibrary.org/works/OL1822313W
 progress: finished
 ---
+
+A fascinating story of a dying man's perspective on life.
+It challenges a lot of our expectations about what is truly important.
