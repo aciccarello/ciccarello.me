@@ -17,16 +17,63 @@
 /** @type {Experience[]} */
 const experience = [
 	{
-		companyName: 'ICD',
+		companyName: 'Tradeweb (ICD)',
+		companyUrl: 'https://icdportal.com/',
+		position: 'Director, Software Engineering',
+		location: 'Remote',
+		startDate: new Date('2026-04-01'),
+		summary:
+			'(Promotion) Full-stack development of ICD Portal investment platform.',
+		achievements: [
+			'Owned delivery of new financial product trading on ICD platform.',
+			'Led cross-team working groups to improve software delivery coordination and minimize delays across 5 teams.',
+			'Represented a team of 5 engineers in executive meetings alongside my manager.',
+			'Migrated CI/CD pipelines of Docker images to GitHub Actions Workflows, AWS ECR, and ArgoCD.',
+			'Pioneered integration of AI tools into company development workflow to improve productivity and code quality.',
+		],
+		moreAchievements: [
+			'Improved automated testing coverage and spearheaded use of new testing frameworks.',
+			'Set up new Grafana dashboards and alerting for production monitoring.',
+		],
+		skills: [
+			'AWS EventBridge',
+			'RDS Aurora',
+			'Python',
+			'Pulumi',
+			'Infrastructure as Code',
+			'Java',
+			'Git',
+			'Agile',
+			'Scrum',
+			'Microservices',
+			'REST',
+			'Spring',
+			'PostgreSQL',
+			'Oracle SQL',
+			'Automated Testing',
+			'Playwright',
+			'Claude Code',
+			'Copilot',
+			'Groovy',
+			'Node.js',
+			'React',
+			'TypeScript',
+			'Jest',
+		],
+	},
+	{
+		companyName: 'Tradeweb (ICD)',
 		companyUrl: 'https://icdportal.com/',
 		position: 'Vice President, Software Engineering',
 		location: 'Remote',
 		startDate: new Date('2023-05-08'),
 		summary: 'Full-stack development of ICD Portal investment platform.',
 		achievements: [
-			'Led technical design and development of new financial product architecture.',
-			'Helped team revamp Agile processes and consulted on setup of Jira project management.',
+			'Led technical design and development of new financial product architecture integrating with 3 external systems.',
+			'Helped the team revamp Agile processes and consulted on setup of Jira project management.',
 			'Led migration of existing codebase to TypeScript.',
+		],
+		moreAchievements: [
 			'Created web app to view automation testing result logs.',
 		],
 		skills: [
@@ -61,12 +108,12 @@ const experience = [
 			'Full-stack software development and consulting work on cross-functional teams for multiple clients. Primarily focused on JavaScript/TypeScript development.',
 		achievements: [
 			'Acted as team lead on Angular application development for a financial services corporation.',
-			'Implemented main page redesign with team and developed interactive React components for service cross-selling in major online accounting application',
-			'Worked on and with AWS Lambda, DynamoDB, and Elastic Beanstalk back-ends using Express.js and Java Spring.',
-			'Lead test automation implementation and 6-month junior developer coaching program.',
+			'Implemented a main page redesign with the team and developed interactive React components for service cross-selling in a major online accounting application.',
+			'Built back-end services with AWS Lambda, DynamoDB, and Elastic Beanstalk using Express.js and Java Spring.',
+			'Led test automation implementation and 6-month junior developer coaching program.',
 		],
 		moreAchievements: [
-			'Helped deliver a business management platform using Dojo 2 and a Nest.js backend',
+			'Helped deliver a business management platform using Dojo 2 and a Nest.js backend.',
 		],
 		skills: [
 			'Angular',
@@ -88,6 +135,7 @@ const experience = [
 			'Nest.js',
 			'Team Leadership',
 			'Coaching',
+			'A/B Testing',
 			'CI/CD',
 			'Jenkins',
 			'Atlassian',
@@ -102,11 +150,11 @@ const experience = [
 		endDate: new Date('2018-08-15'),
 		summary: 'Contract position with central customer data API team.',
 		achievements: [
-			'Developed Java REST API microservices using Spring Boot in <abbr title="Extreme Programming">XP</abbr>/<abbr title="Test-Driven Development">TDD</abbr> environment',
-			'Helped inform API and architectural designs for development team',
+			'Developed Java REST API microservices using Spring Boot in an <abbr title="Extreme Programming">XP</abbr>/<abbr title="Test-Driven Development">TDD</abbr> environment.',
+			'Helped inform API and architectural designs for the development team.',
 		],
 		moreAchievements: [
-			'Started regular team discussion on how to improve team processes and designs',
+			'Started regular team discussions on how to improve team processes and designs.',
 		],
 		skills: [
 			'Java',
@@ -117,6 +165,7 @@ const experience = [
 			'Extreme Programming',
 			'Agile',
 			'Rally',
+			'Maven',
 		],
 	},
 	{
@@ -129,8 +178,8 @@ const experience = [
 		summary:
 			'Developed and maintained internal HR applications for 10,000 employee company. Applications I helped maintain included payroll, sales compensation, and benefits tools.',
 		achievements: [
-			'Designed and lead new AngularJS/ag-grid web application deployment/testing',
-			'Developed Java Spring and Oracle SQL database backend',
+			'Designed and led new AngularJS/ag-grid web application deployment/testing.',
+			'Developed Java Spring and Oracle SQL database backend.',
 		],
 		moreAchievements: ['Supported legacy JSP and Classic ASP pages'],
 		skills: [
@@ -152,14 +201,14 @@ const experience = [
 		startDate: new Date('2011-05-15'),
 		endDate: new Date('2021-01-15'),
 		summary:
-			'Range of technical work for Kitchen & Bath design firm. CAD Drafting in-person and web administration later as freelance.',
+			'Range of technical work for a kitchen and bath design firm. CAD drafting in person and web administration later as a freelancer.',
 		achievements: [
-			'Completed website revamp and performed G-Suite administration and SEO optimization',
+			'Completed a website revamp and performed G-Suite administration and SEO optimization.',
 		],
 		moreAchievements: [
-			'Produced 2D & 3D drawings in AutoCAD and SketchUp',
-			'Transferred email system to Google Apps',
-			'Provided website and technical support on a contract basis',
+			'Produced 2D & 3D drawings in AutoCAD and SketchUp.',
+			'Transferred the email system to Google Apps.',
+			'Provided website and technical support on a contract basis.',
 		],
 		skills: [
 			'Web design',
@@ -181,7 +230,7 @@ const experience = [
 		summary:
 			'Summer internship with the business intelligence team of a multinational company.',
 		achievements: [
-			'Automated manual data entry into SAP using VBScript, speeding up migration',
+			'Automated manual data entry into SAP using VBScript, speeding up migration.',
 		],
 		skills: [
 			'SAP',
@@ -195,31 +244,33 @@ const experience = [
 
 export default {
 	summary: `
-		Software Engineer experienced in modern JavaScript front-end frameworks and back-end REST APIs.
+		Lead Software Engineer with 10+ years of experience building modern full-stack development architectures in cloud and on-premises environments.
+		Proven track record leading cross-functional teams, owning architectural decisions, and mentoring junior developers.
 		Knowledgeable in development best practices, automated testing, and agile methodologies.
-		Seeking a remote front end or full stack engineer position building high-quality websites regardless of technology.
+		Seeking a remote full-stack engineering role where I can help build a culture of delivering high-quality web applications across technologies.
 	`,
 	topSkills: [
-		'JavaScript',
-		'TypeScript',
-		'Angular',
-		'React',
+		'Agile',
+		'Infrastructure as Code',
 		'Java',
-		'HTML5',
-		'CSS',
-		'Node.js',
+		'Spring',
 		'AWS',
-		'Maven',
-		'Git',
+		'TypeScript',
+		'React',
+		'Software Architecture',
 		'Automated Testing',
+		'Git',
 	],
 	allSkills: Array.from(new Set(experience.map(({ skills }) => skills))),
+	recentCompanies: Array.from(
+		new Set(experience.map(({ companyName }) => companyName)),
+	),
 	experience,
 	personal: [
-		'Passionate about accessibility and evolving web standards',
-		'Member of the <a href="https://indieweb.org">IndieWeb</a> community working on interoperable, personal websites.',
-		'Was a maintainer of the TypeDoc Open Source npm package',
+		'Passionate about accessibility and evolving web standards.',
+		'Member of the <a href="https://indieweb.org">IndieWeb</a> community working on interoperable, personal websites via shared standards.',
+		'Maintainer of the <a href="https://omnibear.com/">Omnibear</a> browser extension and previously a maintainer of the <a href="https://typedoc.org/">TypeDoc</a> open source npm package.',
 		'Spent 6 months traveling around Latin America learning Spanish.',
-		'Enjoys <a href="/posts/tags/birds/">birding</a>, gardening and playing disc sports',
+		'Enjoys <a href="/birds/">birding</a>, gardening, and playing disc sports.',
 	],
 };

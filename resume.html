@@ -53,6 +53,10 @@ layout: default
 		padding: 0.75rem 0;
 	}
 
+	.experience-org
+		padding-start: 0.5rem;
+	}
+
 	.experience-org a {
 		color: black;
 		text-decoration: none;
@@ -114,6 +118,11 @@ layout: default
 	}
 
 	@media print {
+		.experience-skills li {
+			padding: 0;
+			background: inherit;
+		}
+
 		.experience-skills li:after {
 			content: ', ';
 		}
@@ -177,7 +186,7 @@ layout: default
 			</li>
 			<li>
 				{% include "icons/link.svg" %}
-				<a href="{{page.url}}">www.ciccarello.me</a>
+				<a href="{{page.url | addBaseUrl}}">www.ciccarello.me</a>
 			</li>
 			<li>
 				{% include "icons/linkedin.svg" %}
