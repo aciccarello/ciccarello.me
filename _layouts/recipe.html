@@ -3,13 +3,13 @@ layout: default
 ---
 
 <article class="h-recipe hrecipe">
-	<section class="container post" data-pagefind-body style="view-transition-name: {{page.url | slugify}}">
+	<section class="container post" data-pagefind-body style="view-transition-name: {{viewTransitionName}}">
 		{% include "featured-media.html" %}
 		<header class="post-header">
 			{%- if subtitle -%}
 			<hgroup>
 			{%- endif -%}
-			<h1 class="post-title p-name fn" style="view-transition-name: {{page.url | slugify}}-title">
+			<h1 class="post-title p-name fn" style="view-transition-name: {{viewTransitionName}}-title">
 				<a class="disable-link-styles" href="{{ page.url | url }}">
 					{{ title | escape }}
 				</a>
@@ -22,7 +22,7 @@ layout: default
 			{%- endif -%}
 			<p class="post-meta">
 				<a class="u-url disable-link-styles" href="{{ page.url | url }}">
-					<time class="dt-published" datetime="{{ page.date | formatMachineDate }}" style="view-transition-name: {{page.url | slugify}}-date">
+					<time class="dt-published" datetime="{{ page.date | formatMachineDate }}" style="view-transition-name: {{viewTransitionName}}-date">
 						{{- page.date | formatHumanDate: dateFormat -}}
 					</time>
 				</a>

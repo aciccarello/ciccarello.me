@@ -5,7 +5,7 @@
 			<video autoplay muted controls loop
 				class="{% if layout == 'photo' %}u-video {% endif %}"
 				aria-label="{{ image_alt | escape }}"
-				style="view-transition-name: {{page.url | slugify}}-media">
+				style="view-transition-name: {{viewTransitionName}}-media">
 				<source type="video/mp4" src="{{ image }}">
 			</video>
 		{%- else %}
@@ -13,7 +13,7 @@
 				alt="{{ image_alt | escape }}"
 				class="{% if layout == 'photo' or layout == 'recipe' %}u-photo photo {% endif %}u-featured"
 				data-pagefind-meta="image[src], image_alt[alt]"
-				style="view-transition-name: {{page.url | slugify}}-media"/>
+				style="view-transition-name: {{viewTransitionName}}-media"/>
 		{%- endif %}
 		{%- if image_caption %}
 			<figcaption>

@@ -4,6 +4,11 @@ import { html5Media } from 'markdown-it-html5-media';
 import MarkdownItAnchor from 'markdown-it-anchor';
 import MarkdownItImageFigures from 'markdown-it-image-figures';
 import slugify from 'slugify';
+
+// Note: This is a global change
+// Added for better anchor tags and view transition names.
+slugify.extend({ '/': '-', '.': '-' });
+
 /**
  * Allows setting up a separate markdown configuration (see recipe plugin).
  *

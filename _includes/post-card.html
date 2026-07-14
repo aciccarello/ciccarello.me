@@ -6,7 +6,7 @@ is passed (from suggestions.html) they are emitted as inert `data-vt` attributes
 that JS promotes only on click, so a suggestion you didn't click can't reverse-morph
 the post you're leaving.
 {%- endcomment -%}
-{%- assign vtName = post.url | slugify -%}
+{%- assign vtName = post.data.viewTransitionName -%}
 <div class="
 {%- if post.data.layout == "recipe" -%}
 h-recipe
