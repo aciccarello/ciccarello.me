@@ -609,7 +609,7 @@ button,
 	overflow: hidden;
 	transition: box-shadow ease-out 0.2s;
 
-	&a:hover {
+	&a:hover:not([disabled]) {
 		box-shadow: var(--box-shadow-standard);
 	}
 }
@@ -730,7 +730,7 @@ button,
 		}
 	}
 
-	& .card:hover {
+	& .card:hover:not([disabled]) {
 		box-shadow: var(--box-shadow-standard);
 	}
 }
@@ -767,6 +767,11 @@ button,
 
 .category-menu li {
 	list-style: none;
+}
+
+a[disabled] {
+	pointer-events: none;
+	cursor: not-allowed;
 }
 
 a.disable-link-styles {

@@ -16,7 +16,7 @@ h-entry
 " {% if post.excludeFromSitemap -%}
     data-nosnippet
 {%- endif %}  data-pagefind-ignore>
-	<a class="u-url card disable-link-styles" href="{{ post.url | url }}" {% if deferTransition %}data-vt="{{ vtName }}"{% else %}style="view-transition-name: {{ vtName }}"{% endif %}>
+	<a class="u-url card disable-link-styles" {% if post.url %}href="{{ post.url | url }}"{% else %}disabled{% endif %} {% if deferTransition %}data-vt="{{ vtName }}"{% else %}style="view-transition-name: {{ vtName }}"{% endif %}>
 		{%- if post.data.image -%}
 			{% assign filetype = post.data.image | split: "." | last -%}
 			<div class="card__media card__media--16-9"
