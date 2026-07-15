@@ -11,7 +11,8 @@
 		{%- else %}
 			<img src="{{ image }}"
 				alt="{{ image_alt | escape }}"
-				class="{% if layout == 'photo' or layout == 'recipe' %}u-photo photo {% endif %}u-featured"
+				class="{% if layout == 'photo' or layout == 'recipe' %}u-photo photo {% endif %}u-featured
+				{%- if image_contained %} media--contained photo-height-capped{% endif %}"
 				data-pagefind-meta="image[src], image_alt[alt]"
 				style="view-transition-name: {{viewTransitionName}}-media"/>
 		{%- endif %}

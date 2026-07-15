@@ -14,15 +14,6 @@ review-of:
   summary: G League basketball team playing at Frontwave Arena in Oceanside. Affiliated with the LA Clippers of the NBA.
 ---
 
-<style>
-/* The logo looks too tall in this context.
-Consider doing this for all reviews or moving the logo to the h-card */
-.post-thumbnail img {
-  max-height: 50vh;
-  margin-block: 1rem;
-}
-</style>
-
 The San Diego Clippers are a G League Basketball team associated with the LA Clippers NBA team.
 They moved to Oceanside's Frontwave Arena from Ontario California in 2025.
 

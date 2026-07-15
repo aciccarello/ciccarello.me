@@ -665,6 +665,10 @@ button,
 	}
 }
 
+.media--contained {
+	background-size: contain;
+}
+
 .note-card .post-text {
 	font-size: 1.1em;
 	display: -webkit-box;
@@ -834,6 +838,13 @@ a.disable-link-styles {
 
 .post-thumbnail {
 	margin: 0;
+}
+
+/* The logo looks too tall in this context.
+Consider doing this for all reviews or moving the logo to the h-card */
+.post-thumbnail img.media--contained {
+  max-height: 50vh;
+  margin-block: 1rem;
 }
 
 figure:has(> .post-img--float),
@@ -1175,6 +1186,7 @@ iframe[src*='macaulaylibrary.org'] {
 .author-description {
 	padding: 0;
 	margin: 5rem auto;
+	clear: both;
 }
 
 .author-description__primary-action {

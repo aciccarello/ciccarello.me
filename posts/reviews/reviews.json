@@ -3,5 +3,6 @@
   "type": "review",
   "back_button": "/reviews/",
   "dateFormat": "day",
+  "image_contained": true,
   "excludeFromMainFeed": true
 }

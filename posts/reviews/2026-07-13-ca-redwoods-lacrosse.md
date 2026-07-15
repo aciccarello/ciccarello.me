@@ -14,15 +14,6 @@ review-of:
   summary: PLL Men's Field lacrosse (outdoor)
 ---
 
-<style>
-/* The logo looks too tall in this context.
-Consider doing this for all reviews or moving the logo to the h-card */
-.post-thumbnail img {
-  max-height: 50vh;
-  margin-block: 1rem;
-}
-</style>
-
 The [Premier Lacrosse League](https://premierlacrosseleague.com/) (PLL) operates with an interesting format.
 Instead of teams splitting their weekends to play either a home or away game, the league picks a different host for all the teams.
 So there was only one weekend where the California Redwoods men's lacrosse team hosted 2 home games at Torero Stadium.

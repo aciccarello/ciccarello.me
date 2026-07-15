@@ -14,15 +14,6 @@ review-of:
   summary: WLL Women's Field lacrosse (outdoor)
 ---
 
-<style>
-/* The logo looks too tall in this context.
-Consider doing this for all reviews or moving the logo to the h-card */
-.post-thumbnail img {
-  max-height: 50vh;
-  margin-block: 1rem;
-}
-</style>
-
 The California Palms are a professional women's lacrosse team based in San Diego playing for the [Women's Lacrosse League](https://thewll.com/) (WLL).
 The WLL is run by the men's PLL and often share the same spaces/broadcast equipment.
 While the announcers mentioned the Palm's inaugural season, the league has been around since 2025 and the Palms were the runner's up to the New York Charging in the Feb 2026 championship.

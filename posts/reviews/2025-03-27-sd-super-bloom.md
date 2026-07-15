@@ -20,20 +20,11 @@ updates:
     description: Updates for 2026 season
 ---
 
-<style>
-/* The logo looks too tall in this context.
-Consider doing this for all reviews or moving the logo to the h-card */
-.post-thumbnail img {
-  max-height: 50vh;
-  margin-block: 1rem;
-}
-</style>
-
 The San Diego Super Bloom are a women's ultimate team founded in 2020 that took 3rd place in the 2024 season of the [Western Ultimate League](https://westernultimateleague.com/).
 The team operates as a volunteer run non-profit.
 I first attended their 2025 season home opener vs the Arizona Sidewinders.
 
-![ultimate players on a football field with ](/assets/img/review-sd-super-bloom-play.jpg){.post-img--wide}
+![ultimate players on a high school football field with people watching from metal bleachers](/assets/img/review-sd-super-bloom-play.jpg){.post-img--wide}
 
 I had been to a few Growler's ultimate games before which were also held at Mission Bay High School, so the atmosphere felt really familiar.
 There was pizza, kid's face painting, and merch available.

@@ -14,15 +14,6 @@ review-of:
   summary: MLR Rugby team playing at Torero Stadium
 ---
 
-<style>
-/* The logo looks too tall in this context.
-Consider doing this for all reviews or moving the logo to the h-card */
-.post-thumbnail img {
-  max-height: 50vh;
-  margin-block: 1rem;
-}
-</style>
-
 The San Diego Legion are a Major League Rugby team.
 They currently use the University of San Diego's Torero Stadium.
 Legion games provide a high quality fan experience with an engaged fanbase, play-by-play announcers, branded signage, halftime entertainment, and great food and merch available for purchase.
