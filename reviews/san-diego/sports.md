@@ -4,11 +4,6 @@ layout: page
 back_button: ..
 redirect_from: /sd-sports
 sportsTeams:
-  - name: Padres Baseball
-    url: https://www.mlb.com/padres
-    image: https://upload.wikimedia.org/wikipedia/commons/5/5d/San_Diego_Padres_wordmark_logo_2020.svg
-    image_alt: Padres team logo
-    summary: MLB Baseball Team playing at Petco Park downtown. San Diego's biggest sports team.
   - name: San Diego FC
     url: https://sandiegofc.com/
     image: https://upload.wikimedia.org/wikipedia/en/6/6f/San_Diego_FC_logo.svg
