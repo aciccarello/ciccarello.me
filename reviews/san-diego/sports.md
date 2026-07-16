@@ -24,11 +24,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/San_Diego_Gulls_logo.svg/1920px-San_Diego_Gulls_logo.svg.png
     image_alt: Logo of a gull holding a hockey stick.
     summary: AHL minor league ice hockey playing at Peganga Arena. Affiliate for the Anaheim Ducks.
-  - name: Growlers Ultimate
-    url: http://watchufa.com/growlers
-    image: https://upload.wikimedia.org/wikipedia/en/c/cc/San_Diego_Growlers_%28ultimate_team%29_logo.png
-    image_alt: Logo of a wolf
-    summary: UFA Ultimate Frisbee team playing at Mission Bay High School
   - name: Strike Football
     url: http://sdstrikeforce.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/8/88/San_Diego_Strike_Force_Logo.svg/1920px-San_Diego_Strike_Force_Logo.svg.png
