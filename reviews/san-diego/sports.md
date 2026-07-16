@@ -9,11 +9,6 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/6/6f/San_Diego_FC_logo.svg
     image_alt: Team shield of San Diego FC depicting a soccer ball.
     summary: MLS Men's Soccer team that started in 2025
-  - name: Sockers Soccer
-    url: http://sdsockers.com/
-    image: https://upload.wikimedia.org/wikipedia/en/5/5f/San_Diego_Sockers_16_logo.png
-    image_alt: Team shield of Sockers.
-    summary: MASL Indoor soccer playing at Frontwave Arena in Oceanside
   - name: Gulls Hockey
     url: http://www.sandiegogulls.com/
     image: https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/San_Diego_Gulls_logo.svg/1920px-San_Diego_Gulls_logo.svg.png
