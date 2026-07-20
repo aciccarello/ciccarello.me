@@ -2,6 +2,7 @@
 /**
  * Script to process an eBird data export CSV and produce a JSON summary
  * for use in Liquid templates.
+ * Go to https://ebird.org/downloadMyData to request the data.
  *
  * Usage:
  *   node _build/scripts/process-ebird-csv.js <path-to-MyEBirdData.csv>
@@ -163,6 +164,24 @@ const US_STATE_NAMES = {
 };
 
 /**
+ * Region-specific species exclusions.
+ *
+ * Keys are eBird State/Province codes (e.g. "US-CA").
+ * Values are species scientific names (binomials) to exclude for that region.
+ *
+ * Use this for non-established exotics you do not want counted in local stats.
+ * Example: Graylag Goose and American Flamingo in California.
+ *
+ * @type {Record<string, Set<string>>}
+ */
+const IGNORED_SPECIES_BY_REGION = {
+	'US-CA': new Set([
+		'Anser anser', // Graylag Goose
+		'Phoenicopterus ruber', // American Flamingo
+	]),
+};
+
+/**
  * Given an eBird State/Province code (e.g. "US-CA", "MX-OAX", "CR-P"),
  * return the country code (e.g. "US", "MX", "CR").
  *
@@ -190,19 +209,46 @@ function regionCodesFor(stateProvince) {
 }
 
 /**
- * Keep only species-level taxa using scientific-name shape.
- * Excludes subspecies/forms/groups/hybrids/domestic types that inflate counts.
+ * Returns true when a species should be excluded for the observation region.
  *
- * @param {string} scientificName
+ * @param {string} stateProvince
+ * @param {string} speciesScientificName
  * @returns {boolean}
  */
-function isSpeciesLevelTaxon(scientificName) {
+function isIgnoredSpeciesInRegion(stateProvince, speciesScientificName) {
+	const ignored = IGNORED_SPECIES_BY_REGION[stateProvince];
+	return ignored ? ignored.has(speciesScientificName) : false;
+}
+
+/**
+ * Resolve a scientific name to a species-level binomial when possible.
+ * Allows subspecies/forms (3+ parts) to roll up to the parent species for
+ * all counts and first/last sighting tracking.
+ *
+ * @param {string} scientificName
+ * @returns {{ speciesScientificName: string, isSpeciesLevel: boolean } | null}
+ */
+function speciesTaxonFromScientificName(scientificName) {
 	const parts = scientificName.trim().split(/\s+/);
-	if (parts.length !== 2) return false;
+	if (parts.length < 2) return null;
 	const [genus, species] = parts;
-	if (!/^[A-Z][A-Za-z-]+$/.test(genus)) return false;
-	if (!/^[a-z-]+$/.test(species)) return false;
-	return true;
+	if (!/^[A-Z][A-Za-z-]+$/.test(genus)) return null;
+	if (!/^[a-z-]+$/.test(species)) return null;
+	return {
+		speciesScientificName: `${genus} ${species}`,
+		isSpeciesLevel: parts.length === 2,
+	};
+}
+
+/**
+ * Strip trailing parenthetical qualifiers from common names.
+ * Example: "Ridgway's Rail (Ridgway's)" -> "Ridgway's Rail"
+ *
+ * @param {string} commonName
+ * @returns {string}
+ */
+function normalizeCommonName(commonName) {
+	return commonName.replace(/\s*\([^)]*\)\s*$/, '').trim();
 }
 
 /**
@@ -315,7 +361,13 @@ function main() {
 
 		// Skip slash species (e.g. "Cackling/Canada Goose") and unidentified ("sp.")
 		if (commonName.includes('/') || commonName.includes('sp.')) continue;
-		if (!isSpeciesLevelTaxon(scientificName)) continue;
+		const speciesTaxon = speciesTaxonFromScientificName(scientificName);
+		if (!speciesTaxon) continue;
+		const { speciesScientificName, isSpeciesLevel } = speciesTaxon;
+		const normalizedCommonName = normalizeCommonName(commonName);
+		if (isIgnoredSpeciesInRegion(stateProvince, speciesScientificName)) {
+			continue;
+		}
 
 		// -- Capture media IDs for most recent embeds --
 		for (const id of parseMediaIds(mlCatalogNumbers)) {
@@ -324,8 +376,8 @@ function main() {
 				mediaMap.set(id, {
 					id,
 					date,
-					commonName,
-					scientificName,
+					commonName: normalizedCommonName,
+					scientificName: speciesScientificName,
 					region: stateProvince,
 				});
 			}
@@ -343,11 +395,11 @@ function main() {
 
 		// -- Life list --
 		const mlCatalogNumber = mlCatalogNumbers.split(' ')[0] || '';
-		const existing = lifeListMap.get(scientificName);
+		const existing = lifeListMap.get(speciesScientificName);
 		if (!existing) {
-			lifeListMap.set(scientificName, {
-				commonName,
-				scientificName,
+			lifeListMap.set(speciesScientificName, {
+				commonName: normalizedCommonName,
+				scientificName: speciesScientificName,
 				taxonomicOrder,
 				observationCount: 1,
 				totalCount: individualCount,
@@ -366,6 +418,13 @@ function main() {
 		} else {
 			existing.observationCount += 1;
 			existing.totalCount += individualCount;
+
+			// Prefer clean species-level naming when available in a later row.
+			if (isSpeciesLevel) {
+				existing.commonName = normalizedCommonName;
+				existing.taxonomicOrder =
+					taxonomicOrder || existing.taxonomicOrder;
+			}
 			if (!existing.mlCatalogNumber && mlCatalogNumber) {
 				existing.mlCatalogNumber = mlCatalogNumber;
 			}
@@ -389,13 +448,13 @@ function main() {
 		if (!yearlySpecies.has(year)) {
 			yearlySpecies.set(year, new Set());
 		}
-		yearlySpecies.get(year).add(scientificName);
+		yearlySpecies.get(year).add(speciesScientificName);
 
 		// -- Daily species counts --
 		if (!dailySpecies.has(date)) {
 			dailySpecies.set(date, new Set());
 		}
-		dailySpecies.get(date).add(scientificName);
+		dailySpecies.get(date).add(speciesScientificName);
 
 		// -- Region accumulation (species sets) --
 		for (const regionCode of regionCodesFor(stateProvince)) {
@@ -410,11 +469,11 @@ function main() {
 				});
 			}
 			const region = regionMap.get(regionCode);
-			region.allTimeSpecies.add(scientificName);
+			region.allTimeSpecies.add(speciesScientificName);
 			if (!region.byYear.has(year)) {
 				region.byYear.set(year, new Set());
 			}
-			region.byYear.get(year).add(scientificName);
+			region.byYear.get(year).add(speciesScientificName);
 		}
 	}
 

@@ -1,7 +1,25 @@
 {
-  "processedAt": "2026-06-13T06:31:15.314Z",
-  "totalSpecies": 580,
+  "processedAt": "2026-07-20T03:33:00.612Z",
+  "totalSpecies": 581,
   "lifeList": [
+    {
+      "commonName": "Black-and-white Warbler",
+      "scientificName": "Mniotilta varia",
+      "taxonomicOrder": 33962,
+      "observationCount": 1,
+      "totalCount": 1,
+      "mlCatalogNumber": "",
+      "firstSighting": {
+        "date": "2026-07-17",
+        "region": "US-VT",
+        "checklistId": "S373106936"
+      },
+      "lastSighting": {
+        "date": "2026-07-17",
+        "region": "US-VT",
+        "checklistId": "S373106936"
+      }
+    },
     {
       "commonName": "Yellow-throated Vireo",
       "scientificName": "Vireo flavifrons",
@@ -42,8 +60,8 @@
       "commonName": "Eastern Warbling Vireo",
       "scientificName": "Vireo gilvus",
       "taxonomicOrder": 19245,
-      "observationCount": 3,
-      "totalCount": 5,
+      "observationCount": 5,
+      "totalCount": 8,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2026-05-15",
@@ -51,9 +69,9 @@
         "checklistId": "S339420225"
       },
       "lastSighting": {
-        "date": "2026-05-16",
-        "region": "US-CT",
-        "checklistId": "S340169206"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
@@ -129,42 +147,6 @@
       }
     },
     {
-      "commonName": "Ridgway's Rail",
-      "scientificName": "Rallus obsoletus",
-      "taxonomicOrder": 5256,
-      "observationCount": 3,
-      "totalCount": 6,
-      "mlCatalogNumber": "",
-      "firstSighting": {
-        "date": "2026-05-09",
-        "region": "US-CA",
-        "checklistId": "S335985123"
-      },
-      "lastSighting": {
-        "date": "2026-05-23",
-        "region": "US-CA",
-        "checklistId": "S345082519"
-      }
-    },
-    {
-      "commonName": "Western Flycatcher",
-      "scientificName": "Empidonax difficilis",
-      "taxonomicOrder": 16975,
-      "observationCount": 4,
-      "totalCount": 5,
-      "mlCatalogNumber": "",
-      "firstSighting": {
-        "date": "2026-05-03",
-        "region": "US-CA",
-        "checklistId": "S332075326"
-      },
-      "lastSighting": {
-        "date": "2026-06-06",
-        "region": "US-CA",
-        "checklistId": "S353612174"
-      }
-    },
-    {
       "commonName": "Black-billed Cuckoo",
       "scientificName": "Coccyzus erythropthalmus",
       "taxonomicOrder": 3243,
@@ -219,6 +201,24 @@
       }
     },
     {
+      "commonName": "Ridgway's Rail",
+      "scientificName": "Rallus obsoletus",
+      "taxonomicOrder": 5256,
+      "observationCount": 4,
+      "totalCount": 7,
+      "mlCatalogNumber": "",
+      "firstSighting": {
+        "date": "2026-04-25",
+        "region": "US-CA",
+        "checklistId": "S327441286"
+      },
+      "lastSighting": {
+        "date": "2026-05-23",
+        "region": "US-CA",
+        "checklistId": "S345082519"
+      }
+    },
+    {
       "commonName": "Long-billed Dowitcher",
       "scientificName": "Limnodromus scolopaceus",
       "taxonomicOrder": 6061,
@@ -237,29 +237,11 @@
       }
     },
     {
-      "commonName": "Bell's Vireo",
-      "scientificName": "Vireo bellii",
-      "taxonomicOrder": 19197,
-      "observationCount": 2,
-      "totalCount": 4,
-      "mlCatalogNumber": "",
-      "firstSighting": {
-        "date": "2026-04-25",
-        "region": "US-CA",
-        "checklistId": "S327271890"
-      },
-      "lastSighting": {
-        "date": "2026-05-09",
-        "region": "US-CA",
-        "checklistId": "S335597468"
-      }
-    },
-    {
       "commonName": "Blue Grosbeak",
       "scientificName": "Passerina caerulea",
       "taxonomicOrder": 34598,
-      "observationCount": 2,
-      "totalCount": 3,
+      "observationCount": 3,
+      "totalCount": 5,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2026-04-25",
@@ -267,9 +249,9 @@
         "checklistId": "S327271890"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -597,24 +579,6 @@
       }
     },
     {
-      "commonName": "American Flamingo",
-      "scientificName": "Phoenicopterus ruber",
-      "taxonomicOrder": 6807,
-      "observationCount": 2,
-      "totalCount": 3,
-      "mlCatalogNumber": "645860770",
-      "firstSighting": {
-        "date": "2025-11-22",
-        "region": "US-CA",
-        "checklistId": "S286145579"
-      },
-      "lastSighting": {
-        "date": "2025-11-22",
-        "region": "US-CA",
-        "checklistId": "S286145579"
-      }
-    },
-    {
       "commonName": "Swamp Sparrow",
       "scientificName": "Melospiza georgiana",
       "taxonomicOrder": 33315,
@@ -666,6 +630,24 @@
         "date": "2026-05-02",
         "region": "US-NY",
         "checklistId": "S331495481"
+      }
+    },
+    {
+      "commonName": "Bell's Vireo",
+      "scientificName": "Vireo bellii",
+      "taxonomicOrder": 19197,
+      "observationCount": 7,
+      "totalCount": 39,
+      "mlCatalogNumber": "",
+      "firstSighting": {
+        "date": "2025-05-10",
+        "region": "US-CA",
+        "checklistId": "S235821353"
+      },
+      "lastSighting": {
+        "date": "2026-07-04",
+        "region": "US-CA",
+        "checklistId": "S367746482"
       }
     },
     {
@@ -1284,8 +1266,8 @@
       "commonName": "Wood Thrush",
       "scientificName": "Hylocichla mustelina",
       "taxonomicOrder": 28347,
-      "observationCount": 3,
-      "totalCount": 3,
+      "observationCount": 4,
+      "totalCount": 4,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2024-05-21",
@@ -1293,9 +1275,9 @@
         "checklistId": "S176267124"
       },
       "lastSighting": {
-        "date": "2026-05-16",
-        "region": "US-CT",
-        "checklistId": "S340169206"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
@@ -1356,8 +1338,8 @@
       "commonName": "Baltimore Oriole",
       "scientificName": "Icterus galbula",
       "taxonomicOrder": 33770,
-      "observationCount": 5,
-      "totalCount": 7,
+      "observationCount": 6,
+      "totalCount": 8,
       "mlCatalogNumber": "575469561",
       "firstSighting": {
         "date": "2023-05-21",
@@ -1365,9 +1347,9 @@
         "checklistId": "S138711267"
       },
       "lastSighting": {
-        "date": "2026-05-19",
-        "region": "US-MA",
-        "checklistId": "S342567814"
+        "date": "2026-07-17",
+        "region": "US-VT",
+        "checklistId": "S373106936"
       }
     },
     {
@@ -1410,8 +1392,8 @@
       "commonName": "Swinhoe's White-eye",
       "scientificName": "Zosterops simplex",
       "taxonomicOrder": 25619,
-      "observationCount": 10,
-      "totalCount": 22,
+      "observationCount": 11,
+      "totalCount": 26,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2023-01-22",
@@ -1419,17 +1401,17 @@
         "checklistId": "S126749139"
       },
       "lastSighting": {
-        "date": "2026-05-23",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S345082519"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "American Redstart",
       "scientificName": "Setophaga ruticilla",
       "taxonomicOrder": 34058,
-      "observationCount": 1,
-      "totalCount": 1,
+      "observationCount": 2,
+      "totalCount": 2,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2022-11-12",
@@ -1437,9 +1419,9 @@
         "checklistId": "S123029667"
       },
       "lastSighting": {
-        "date": "2022-11-12",
-        "region": "US-CA",
-        "checklistId": "S123029667"
+        "date": "2026-07-17",
+        "region": "US-VT",
+        "checklistId": "S373106936"
       }
     },
     {
@@ -1698,8 +1680,8 @@
       "commonName": "Least Tern",
       "scientificName": "Sternula antillarum",
       "taxonomicOrder": 6699,
-      "observationCount": 3,
-      "totalCount": 6,
+      "observationCount": 4,
+      "totalCount": 48,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2022-07-24",
@@ -1707,17 +1689,17 @@
         "checklistId": "S115682437"
       },
       "lastSighting": {
-        "date": "2025-06-28",
-        "region": "US-NY",
-        "checklistId": "S255013380"
+        "date": "2026-07-04",
+        "region": "US-CA",
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Eastern Kingbird",
       "scientificName": "Tyrannus tyrannus",
       "taxonomicOrder": 17472,
-      "observationCount": 2,
-      "totalCount": 2,
+      "observationCount": 3,
+      "totalCount": 4,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2022-06-13",
@@ -1725,9 +1707,9 @@
         "checklistId": "S112894835"
       },
       "lastSighting": {
-        "date": "2026-05-18",
-        "region": "US-CT",
-        "checklistId": "S341868132"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
@@ -1752,8 +1734,8 @@
       "commonName": "Indigo Bunting",
       "scientificName": "Passerina cyanea",
       "taxonomicOrder": 34607,
-      "observationCount": 3,
-      "totalCount": 10,
+      "observationCount": 4,
+      "totalCount": 13,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2022-06-11",
@@ -1761,17 +1743,17 @@
         "checklistId": "S112704811"
       },
       "lastSighting": {
-        "date": "2026-05-16",
+        "date": "2026-07-19",
         "region": "US-CT",
-        "checklistId": "S340169206"
+        "checklistId": "S374045371"
       }
     },
     {
       "commonName": "Red-eyed Vireo",
       "scientificName": "Vireo olivaceus",
       "taxonomicOrder": 19267,
-      "observationCount": 11,
-      "totalCount": 26,
+      "observationCount": 16,
+      "totalCount": 44,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2022-06-10",
@@ -1779,17 +1761,17 @@
         "checklistId": "S112607929"
       },
       "lastSighting": {
-        "date": "2026-05-18",
-        "region": "US-CT",
-        "checklistId": "S341868132"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
       "commonName": "Eastern Wood-Pewee",
       "scientificName": "Contopus virens",
       "taxonomicOrder": 16924,
-      "observationCount": 7,
-      "totalCount": 9,
+      "observationCount": 8,
+      "totalCount": 10,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2022-06-08",
@@ -1797,9 +1779,9 @@
         "checklistId": "S112435150"
       },
       "lastSighting": {
-        "date": "2026-05-18",
-        "region": "US-CT",
-        "checklistId": "S341868132"
+        "date": "2026-07-13",
+        "region": "US-NH",
+        "checklistId": "S371794708"
       }
     },
     {
@@ -1929,6 +1911,24 @@
       }
     },
     {
+      "commonName": "Western Flycatcher",
+      "scientificName": "Empidonax difficilis",
+      "taxonomicOrder": 16975,
+      "observationCount": 7,
+      "totalCount": 10,
+      "mlCatalogNumber": "",
+      "firstSighting": {
+        "date": "2022-05-14",
+        "region": "US-CA",
+        "checklistId": "S110132639"
+      },
+      "lastSighting": {
+        "date": "2026-07-04",
+        "region": "US-CA",
+        "checklistId": "S367746482"
+      }
+    },
+    {
       "commonName": "Clark's Grebe",
       "scientificName": "Aechmophorus clarkii",
       "taxonomicOrder": 6891,
@@ -1950,8 +1950,8 @@
       "commonName": "Ash-throated Flycatcher",
       "scientificName": "Myiarchus cinerascens",
       "taxonomicOrder": 17323,
-      "observationCount": 2,
-      "totalCount": 3,
+      "observationCount": 3,
+      "totalCount": 4,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2022-05-13",
@@ -1959,9 +1959,9 @@
         "checklistId": "S109933860"
       },
       "lastSighting": {
-        "date": "2025-05-10",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S235831211"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -1986,8 +1986,8 @@
       "commonName": "Yellow-breasted Chat",
       "scientificName": "Icteria virens",
       "taxonomicOrder": 33559,
-      "observationCount": 11,
-      "totalCount": 22,
+      "observationCount": 12,
+      "totalCount": 26,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2022-05-13",
@@ -1995,9 +1995,9 @@
         "checklistId": "S109933860"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -2652,8 +2652,8 @@
       "commonName": "Savannah Sparrow",
       "scientificName": "Passerculus sandwichensis",
       "taxonomicOrder": 33244,
-      "observationCount": 14,
-      "totalCount": 42,
+      "observationCount": 15,
+      "totalCount": 43,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2020-10-17",
@@ -2922,8 +2922,8 @@
       "commonName": "Brown Creeper",
       "scientificName": "Certhia americana",
       "taxonomicOrder": 27026,
-      "observationCount": 4,
-      "totalCount": 5,
+      "observationCount": 5,
+      "totalCount": 6,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2020-10-04",
@@ -2931,9 +2931,9 @@
         "checklistId": "S74469670"
       },
       "lastSighting": {
-        "date": "2025-08-31",
-        "region": "US-WA",
-        "checklistId": "S270771912"
+        "date": "2026-07-19",
+        "region": "US-CT",
+        "checklistId": "S374045371"
       }
     },
     {
@@ -3030,8 +3030,8 @@
       "commonName": "Belted Kingfisher",
       "scientificName": "Megaceryle alcyon",
       "taxonomicOrder": 10306,
-      "observationCount": 29,
-      "totalCount": 33,
+      "observationCount": 33,
+      "totalCount": 38,
       "mlCatalogNumber": "632242031",
       "firstSighting": {
         "date": "2020-09-03",
@@ -3039,9 +3039,9 @@
         "checklistId": "S73196074"
       },
       "lastSighting": {
-        "date": "2026-05-15",
-        "region": "US-CT",
-        "checklistId": "S339530765"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
@@ -3066,8 +3066,8 @@
       "commonName": "Gray Catbird",
       "scientificName": "Dumetella carolinensis",
       "taxonomicOrder": 28000,
-      "observationCount": 33,
-      "totalCount": 70,
+      "observationCount": 40,
+      "totalCount": 92,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2020-09-03",
@@ -3075,9 +3075,9 @@
         "checklistId": "S73136178"
       },
       "lastSighting": {
-        "date": "2026-05-19",
+        "date": "2026-07-19",
         "region": "US-CT",
-        "checklistId": "S342436528"
+        "checklistId": "S374045371"
       }
     },
     {
@@ -3120,8 +3120,8 @@
       "commonName": "Scaly-breasted Munia",
       "scientificName": "Lonchura punctulata",
       "taxonomicOrder": 31076,
-      "observationCount": 14,
-      "totalCount": 61,
+      "observationCount": 15,
+      "totalCount": 68,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2020-07-19",
@@ -3129,17 +3129,17 @@
         "checklistId": "S71667960"
       },
       "lastSighting": {
-        "date": "2026-05-30",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612190"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Northern House Wren",
       "scientificName": "Troglodytes aedon",
       "taxonomicOrder": 27191,
-      "observationCount": 36,
-      "totalCount": 66,
+      "observationCount": 38,
+      "totalCount": 90,
       "mlCatalogNumber": "658509203",
       "firstSighting": {
         "date": "2020-06-20",
@@ -3192,8 +3192,8 @@
       "commonName": "Nuttall's Woodpecker",
       "scientificName": "Dryobates nuttallii",
       "taxonomicOrder": 11410,
-      "observationCount": 50,
-      "totalCount": 81,
+      "observationCount": 51,
+      "totalCount": 86,
       "mlCatalogNumber": "340726741",
       "firstSighting": {
         "date": "2020-06-19",
@@ -3201,9 +3201,9 @@
         "checklistId": "S70606334"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -3462,8 +3462,8 @@
       "commonName": "Hooded Oriole",
       "scientificName": "Icterus cucullatus",
       "taxonomicOrder": 33682,
-      "observationCount": 63,
-      "totalCount": 131,
+      "observationCount": 64,
+      "totalCount": 138,
       "mlCatalogNumber": "239803351",
       "firstSighting": {
         "date": "2020-03-26",
@@ -3471,17 +3471,17 @@
         "checklistId": "S66251223"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Cedar Waxwing",
       "scientificName": "Bombycilla cedrorum",
       "taxonomicOrder": 29888,
-      "observationCount": 22,
-      "totalCount": 145,
+      "observationCount": 23,
+      "totalCount": 147,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2020-03-25",
@@ -3489,9 +3489,9 @@
         "checklistId": "S66221392"
       },
       "lastSighting": {
-        "date": "2026-05-16",
-        "region": "US-CT",
-        "checklistId": "S340169206"
+        "date": "2026-07-12",
+        "region": "US-NH",
+        "checklistId": "S371438094"
       }
     },
     {
@@ -3624,8 +3624,8 @@
       "commonName": "Red-shouldered Hawk",
       "scientificName": "Buteo lineatus",
       "taxonomicOrder": 8487,
-      "observationCount": 43,
-      "totalCount": 50,
+      "observationCount": 46,
+      "totalCount": 55,
       "mlCatalogNumber": "197499191",
       "firstSighting": {
         "date": "2020-01-05",
@@ -3633,9 +3633,9 @@
         "checklistId": "S63045117"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -3876,8 +3876,8 @@
       "commonName": "Ruddy Duck",
       "scientificName": "Oxyura jamaicensis",
       "taxonomicOrder": 778,
-      "observationCount": 40,
-      "totalCount": 659,
+      "observationCount": 41,
+      "totalCount": 675,
       "mlCatalogNumber": "200412791",
       "firstSighting": {
         "date": "2019-12-14",
@@ -3885,9 +3885,9 @@
         "checklistId": "S62295771"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -4287,24 +4287,6 @@
       }
     },
     {
-      "commonName": "White Wagtail",
-      "scientificName": "Motacilla alba",
-      "taxonomicOrder": 31720,
-      "observationCount": 3,
-      "totalCount": 4,
-      "mlCatalogNumber": "187780471",
-      "firstSighting": {
-        "date": "2019-10-19",
-        "region": "VA-",
-        "checklistId": "S60739354"
-      },
-      "lastSighting": {
-        "date": "2022-10-09",
-        "region": "IT-42",
-        "checklistId": "S120286228"
-      }
-    },
-    {
       "commonName": "Eurasian Kestrel",
       "scientificName": "Falco tinnunculus",
       "taxonomicOrder": 11993,
@@ -4449,6 +4431,24 @@
       }
     },
     {
+      "commonName": "White Wagtail",
+      "scientificName": "Motacilla alba",
+      "taxonomicOrder": 31720,
+      "observationCount": 4,
+      "totalCount": 5,
+      "mlCatalogNumber": "187780471",
+      "firstSighting": {
+        "date": "2019-10-16",
+        "region": "IT-72",
+        "checklistId": "S60672049"
+      },
+      "lastSighting": {
+        "date": "2022-10-09",
+        "region": "IT-42",
+        "checklistId": "S120286228"
+      }
+    },
+    {
       "commonName": "Eurasian Blue Tit",
       "scientificName": "Cyanistes caeruleus",
       "taxonomicOrder": 22114,
@@ -4503,24 +4503,6 @@
       }
     },
     {
-      "commonName": "Rock Pigeon",
-      "scientificName": "Columba livia",
-      "taxonomicOrder": 1853,
-      "observationCount": 11,
-      "totalCount": 182,
-      "mlCatalogNumber": "",
-      "firstSighting": {
-        "date": "2019-10-14",
-        "region": "IT-72",
-        "checklistId": "S60648291"
-      },
-      "lastSighting": {
-        "date": "2019-10-26",
-        "region": "IT-34",
-        "checklistId": "S60941984"
-      }
-    },
-    {
       "commonName": "Gray Wagtail",
       "scientificName": "Motacilla cinerea",
       "taxonomicOrder": 31678,
@@ -4542,8 +4524,8 @@
       "commonName": "White-crowned Sparrow",
       "scientificName": "Zonotrichia leucophrys",
       "taxonomicOrder": 33187,
-      "observationCount": 85,
-      "totalCount": 286,
+      "observationCount": 89,
+      "totalCount": 302,
       "mlCatalogNumber": "193433381",
       "firstSighting": {
         "date": "2019-10-06",
@@ -4614,8 +4596,8 @@
       "commonName": "Cassin's Kingbird",
       "scientificName": "Tyrannus vociferans",
       "taxonomicOrder": 17461,
-      "observationCount": 76,
-      "totalCount": 151,
+      "observationCount": 78,
+      "totalCount": 157,
       "mlCatalogNumber": "657170063",
       "firstSighting": {
         "date": "2019-10-05",
@@ -4623,9 +4605,9 @@
         "checklistId": "S60368250"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -4866,8 +4848,8 @@
       "commonName": "Wrentit",
       "scientificName": "Chamaea fasciata",
       "taxonomicOrder": 25431,
-      "observationCount": 37,
-      "totalCount": 85,
+      "observationCount": 38,
+      "totalCount": 86,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2019-09-07",
@@ -4875,9 +4857,9 @@
         "checklistId": "S59596705"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -4902,8 +4884,8 @@
       "commonName": "California Towhee",
       "scientificName": "Melozone crissalis",
       "taxonomicOrder": 33350,
-      "observationCount": 119,
-      "totalCount": 255,
+      "observationCount": 120,
+      "totalCount": 261,
       "mlCatalogNumber": "199127521",
       "firstSighting": {
         "date": "2019-09-07",
@@ -4911,9 +4893,9 @@
         "checklistId": "S59596697"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -4974,8 +4956,8 @@
       "commonName": "Eurasian Collared-Dove",
       "scientificName": "Streptopelia decaocto",
       "taxonomicOrder": 2031,
-      "observationCount": 123,
-      "totalCount": 338,
+      "observationCount": 125,
+      "totalCount": 340,
       "mlCatalogNumber": "236109331",
       "firstSighting": {
         "date": "2019-08-24",
@@ -4983,9 +4965,9 @@
         "checklistId": "S59225086"
       },
       "lastSighting": {
-        "date": "2026-06-01",
+        "date": "2026-06-27",
         "region": "US-CA",
-        "checklistId": "S350976893"
+        "checklistId": "S364429368"
       }
     },
     {
@@ -5082,8 +5064,8 @@
       "commonName": "Caspian Tern",
       "scientificName": "Hydroprogne caspia",
       "taxonomicOrder": 6718,
-      "observationCount": 20,
-      "totalCount": 98,
+      "observationCount": 21,
+      "totalCount": 101,
       "mlCatalogNumber": "439533761",
       "firstSighting": {
         "date": "2019-08-24",
@@ -5091,9 +5073,9 @@
         "checklistId": "S59220623"
       },
       "lastSighting": {
-        "date": "2026-05-09",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S335817167"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -5118,8 +5100,8 @@
       "commonName": "Forster's Tern",
       "scientificName": "Sterna forsteri",
       "taxonomicOrder": 6731,
-      "observationCount": 14,
-      "totalCount": 28,
+      "observationCount": 15,
+      "totalCount": 29,
       "mlCatalogNumber": "173932571",
       "firstSighting": {
         "date": "2019-08-24",
@@ -5127,17 +5109,17 @@
         "checklistId": "S59227220"
       },
       "lastSighting": {
-        "date": "2026-05-09",
+        "date": "2026-06-27",
         "region": "US-CA",
-        "checklistId": "S335870277"
+        "checklistId": "S364429368"
       }
     },
     {
       "commonName": "Pied-billed Grebe",
       "scientificName": "Podilymbus podiceps",
       "taxonomicOrder": 6855,
-      "observationCount": 48,
-      "totalCount": 112,
+      "observationCount": 50,
+      "totalCount": 118,
       "mlCatalogNumber": "268663391",
       "firstSighting": {
         "date": "2019-08-24",
@@ -5145,9 +5127,9 @@
         "checklistId": "S59227220"
       },
       "lastSighting": {
-        "date": "2026-05-30",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612190"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -5226,8 +5208,8 @@
       "commonName": "Cliff Swallow",
       "scientificName": "Petrochelidon pyrrhonota",
       "taxonomicOrder": 24281,
-      "observationCount": 29,
-      "totalCount": 409,
+      "observationCount": 31,
+      "totalCount": 454,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2019-08-24",
@@ -5235,9 +5217,9 @@
         "checklistId": "S59225086"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -5298,8 +5280,8 @@
       "commonName": "Northern Yellow Warbler",
       "scientificName": "Setophaga aestiva",
       "taxonomicOrder": 34087,
-      "observationCount": 41,
-      "totalCount": 106,
+      "observationCount": 43,
+      "totalCount": 115,
       "mlCatalogNumber": "239803411",
       "firstSighting": {
         "date": "2019-08-24",
@@ -5307,17 +5289,17 @@
         "checklistId": "S59225086"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Tree Swallow",
       "scientificName": "Tachycineta bicolor",
       "taxonomicOrder": 24064,
-      "observationCount": 36,
-      "totalCount": 177,
+      "observationCount": 38,
+      "totalCount": 194,
       "mlCatalogNumber": "656418657",
       "firstSighting": {
         "date": "2019-08-20",
@@ -5325,9 +5307,9 @@
         "checklistId": "S59137355"
       },
       "lastSighting": {
-        "date": "2026-05-16",
-        "region": "US-CT",
-        "checklistId": "S340169206"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
@@ -5424,8 +5406,8 @@
       "commonName": "California Scrub-Jay",
       "scientificName": "Aphelocoma californica",
       "taxonomicOrder": 21303,
-      "observationCount": 42,
-      "totalCount": 72,
+      "observationCount": 43,
+      "totalCount": 75,
       "mlCatalogNumber": "340727231",
       "firstSighting": {
         "date": "2019-08-13",
@@ -5433,17 +5415,17 @@
         "checklistId": "S58963741"
       },
       "lastSighting": {
-        "date": "2026-05-23",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S345082519"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Bushtit",
       "scientificName": "Psaltriparus minimus",
       "taxonomicOrder": 25253,
-      "observationCount": 87,
-      "totalCount": 616,
+      "observationCount": 88,
+      "totalCount": 632,
       "mlCatalogNumber": "337642671",
       "firstSighting": {
         "date": "2019-08-13",
@@ -5451,17 +5433,17 @@
         "checklistId": "S58963741"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Song Sparrow",
       "scientificName": "Melospiza melodia",
       "taxonomicOrder": 33277,
-      "observationCount": 196,
-      "totalCount": 527,
+      "observationCount": 204,
+      "totalCount": 550,
       "mlCatalogNumber": "658509214",
       "firstSighting": {
         "date": "2019-08-13",
@@ -5469,17 +5451,17 @@
         "checklistId": "S58963741"
       },
       "lastSighting": {
-        "date": "2026-06-06",
-        "region": "US-CA",
-        "checklistId": "S353612174"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
       "commonName": "Common Yellowthroat",
       "scientificName": "Geothlypis trichas",
       "taxonomicOrder": 34028,
-      "observationCount": 62,
-      "totalCount": 172,
+      "observationCount": 64,
+      "totalCount": 178,
       "mlCatalogNumber": "337063261",
       "firstSighting": {
         "date": "2019-08-13",
@@ -5487,17 +5469,17 @@
         "checklistId": "S58963741"
       },
       "lastSighting": {
-        "date": "2026-06-06",
-        "region": "US-CA",
-        "checklistId": "S353612174"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
       "commonName": "Anna's Hummingbird",
       "scientificName": "Calypte anna",
       "taxonomicOrder": 4814,
-      "observationCount": 153,
-      "totalCount": 252,
+      "observationCount": 154,
+      "totalCount": 255,
       "mlCatalogNumber": "199077601",
       "firstSighting": {
         "date": "2019-08-12",
@@ -5505,17 +5487,17 @@
         "checklistId": "S58938635"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Allen's Hummingbird",
       "scientificName": "Selasphorus sasin",
       "taxonomicOrder": 4831,
-      "observationCount": 87,
-      "totalCount": 156,
+      "observationCount": 88,
+      "totalCount": 164,
       "mlCatalogNumber": "634989764",
       "firstSighting": {
         "date": "2019-08-12",
@@ -5523,9 +5505,9 @@
         "checklistId": "S58938635"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -6162,8 +6144,8 @@
       "commonName": "Red-crowned Woodpecker",
       "scientificName": "Melanerpes rubricapillus",
       "taxonomicOrder": 11171,
-      "observationCount": 1,
-      "totalCount": 3,
+      "observationCount": 2,
+      "totalCount": 4,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2019-07-06",
@@ -7008,8 +6990,8 @@
       "commonName": "Lesser Goldfinch",
       "scientificName": "Spinus psaltria",
       "taxonomicOrder": 32609,
-      "observationCount": 76,
-      "totalCount": 239,
+      "observationCount": 77,
+      "totalCount": 246,
       "mlCatalogNumber": "214581181",
       "firstSighting": {
         "date": "2019-07-02",
@@ -7017,9 +6999,9 @@
         "checklistId": "S57876554"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -7656,8 +7638,8 @@
       "commonName": "Green Heron",
       "scientificName": "Butorides virescens",
       "taxonomicOrder": 7704,
-      "observationCount": 15,
-      "totalCount": 40,
+      "observationCount": 16,
+      "totalCount": 42,
       "mlCatalogNumber": "394650831",
       "firstSighting": {
         "date": "2019-06-20",
@@ -7665,9 +7647,9 @@
         "checklistId": "S57547125"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -7854,8 +7836,8 @@
       "commonName": "Golden-fronted Woodpecker",
       "scientificName": "Melanerpes aurifrons",
       "taxonomicOrder": 11183,
-      "observationCount": 13,
-      "totalCount": 18,
+      "observationCount": 14,
+      "totalCount": 19,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2019-06-11",
@@ -8214,8 +8196,8 @@
       "commonName": "Snowy Egret",
       "scientificName": "Egretta thula",
       "taxonomicOrder": 7645,
-      "observationCount": 88,
-      "totalCount": 246,
+      "observationCount": 91,
+      "totalCount": 254,
       "mlCatalogNumber": "199127901",
       "firstSighting": {
         "date": "2019-05-27",
@@ -8223,17 +8205,17 @@
         "checklistId": "S56806445"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Great Egret",
       "scientificName": "Ardea alba",
       "taxonomicOrder": 7729,
-      "observationCount": 79,
-      "totalCount": 208,
+      "observationCount": 83,
+      "totalCount": 218,
       "mlCatalogNumber": "193426931",
       "firstSighting": {
         "date": "2019-05-27",
@@ -8241,9 +8223,9 @@
         "checklistId": "S56811555"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -8304,8 +8286,8 @@
       "commonName": "Black-crowned Night Heron",
       "scientificName": "Nycticorax nycticorax",
       "taxonomicOrder": 7600,
-      "observationCount": 33,
-      "totalCount": 82,
+      "observationCount": 34,
+      "totalCount": 84,
       "mlCatalogNumber": "426046981",
       "firstSighting": {
         "date": "2019-05-18",
@@ -8313,9 +8295,9 @@
         "checklistId": "S56455106"
       },
       "lastSighting": {
-        "date": "2026-06-01",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S350976893"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -9114,8 +9096,8 @@
       "commonName": "Black-capped Chickadee",
       "scientificName": "Poecile atricapillus",
       "taxonomicOrder": 22065,
-      "observationCount": 52,
-      "totalCount": 131,
+      "observationCount": 55,
+      "totalCount": 139,
       "mlCatalogNumber": "195567131",
       "firstSighting": {
         "date": "2019-04-27",
@@ -9123,9 +9105,9 @@
         "checklistId": "S55485227"
       },
       "lastSighting": {
-        "date": "2026-05-19",
-        "region": "US-MA",
-        "checklistId": "S342567814"
+        "date": "2026-07-19",
+        "region": "US-CT",
+        "checklistId": "S374045371"
       }
     },
     {
@@ -9168,8 +9150,8 @@
       "commonName": "Mourning Dove",
       "scientificName": "Zenaida macroura",
       "taxonomicOrder": 2412,
-      "observationCount": 151,
-      "totalCount": 508,
+      "observationCount": 157,
+      "totalCount": 528,
       "mlCatalogNumber": "173932771",
       "firstSighting": {
         "date": "2019-04-25",
@@ -9177,17 +9159,17 @@
         "checklistId": "S55396693"
       },
       "lastSighting": {
-        "date": "2026-06-06",
-        "region": "US-CA",
-        "checklistId": "S353612174"
+        "date": "2026-07-17",
+        "region": "US-VT",
+        "checklistId": "S373106936"
       }
     },
     {
       "commonName": "White-breasted Nuthatch",
       "scientificName": "Sitta carolinensis",
       "taxonomicOrder": 26889,
-      "observationCount": 32,
-      "totalCount": 48,
+      "observationCount": 36,
+      "totalCount": 53,
       "mlCatalogNumber": "195461341",
       "firstSighting": {
         "date": "2019-04-25",
@@ -9195,17 +9177,17 @@
         "checklistId": "S55396693"
       },
       "lastSighting": {
-        "date": "2026-05-16",
-        "region": "US-CT",
-        "checklistId": "S340320287"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
       "commonName": "American Goldfinch",
       "scientificName": "Spinus tristis",
       "taxonomicOrder": 32617,
-      "observationCount": 31,
-      "totalCount": 89,
+      "observationCount": 37,
+      "totalCount": 103,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2019-04-25",
@@ -9213,9 +9195,9 @@
         "checklistId": "S55396693"
       },
       "lastSighting": {
-        "date": "2026-05-15",
-        "region": "US-CT",
-        "checklistId": "S339420225"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
@@ -9258,8 +9240,8 @@
       "commonName": "Eastern Phoebe",
       "scientificName": "Sayornis phoebe",
       "taxonomicOrder": 17007,
-      "observationCount": 19,
-      "totalCount": 27,
+      "observationCount": 22,
+      "totalCount": 32,
       "mlCatalogNumber": "195461911",
       "firstSighting": {
         "date": "2019-04-23",
@@ -9267,17 +9249,17 @@
         "checklistId": "S55304621"
       },
       "lastSighting": {
-        "date": "2026-05-16",
-        "region": "US-CT",
-        "checklistId": "S340320287"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
       "commonName": "Blue Jay",
       "scientificName": "Cyanocitta cristata",
       "taxonomicOrder": 21294,
-      "observationCount": 61,
-      "totalCount": 119,
+      "observationCount": 64,
+      "totalCount": 123,
       "mlCatalogNumber": "195462011",
       "firstSighting": {
         "date": "2019-04-23",
@@ -9285,17 +9267,17 @@
         "checklistId": "S55304621"
       },
       "lastSighting": {
-        "date": "2026-05-19",
-        "region": "US-CT",
-        "checklistId": "S342436528"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373156596"
       }
     },
     {
       "commonName": "Tufted Titmouse",
       "scientificName": "Baeolophus bicolor",
       "taxonomicOrder": 22160,
-      "observationCount": 29,
-      "totalCount": 59,
+      "observationCount": 33,
+      "totalCount": 66,
       "mlCatalogNumber": "197500331",
       "firstSighting": {
         "date": "2019-04-23",
@@ -9303,9 +9285,9 @@
         "checklistId": "S55304621"
       },
       "lastSighting": {
-        "date": "2026-05-19",
+        "date": "2026-07-19",
         "region": "US-CT",
-        "checklistId": "S342436528"
+        "checklistId": "S374045371"
       }
     },
     {
@@ -9330,8 +9312,8 @@
       "commonName": "Northern Mockingbird",
       "scientificName": "Mimus polyglottos",
       "taxonomicOrder": 28114,
-      "observationCount": 150,
-      "totalCount": 320,
+      "observationCount": 152,
+      "totalCount": 322,
       "mlCatalogNumber": "436006891",
       "firstSighting": {
         "date": "2019-04-16",
@@ -9339,9 +9321,9 @@
         "checklistId": "S55020108"
       },
       "lastSighting": {
-        "date": "2026-06-01",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S351061468"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -9366,8 +9348,8 @@
       "commonName": "House Finch",
       "scientificName": "Haemorhous mexicanus",
       "taxonomicOrder": 32310,
-      "observationCount": 244,
-      "totalCount": 1143,
+      "observationCount": 246,
+      "totalCount": 1176,
       "mlCatalogNumber": "239801391",
       "firstSighting": {
         "date": "2019-04-15",
@@ -9375,9 +9357,9 @@
         "checklistId": "S55025358"
       },
       "lastSighting": {
-        "date": "2026-06-06",
-        "region": "US-CA",
-        "checklistId": "S353612174"
+        "date": "2026-07-11",
+        "region": "US-CT",
+        "checklistId": "S371438185"
       }
     },
     {
@@ -9402,8 +9384,8 @@
       "commonName": "Black Phoebe",
       "scientificName": "Sayornis nigricans",
       "taxonomicOrder": 16998,
-      "observationCount": 198,
-      "totalCount": 335,
+      "observationCount": 200,
+      "totalCount": 349,
       "mlCatalogNumber": "193429641",
       "firstSighting": {
         "date": "2019-04-06",
@@ -9411,17 +9393,17 @@
         "checklistId": "S54647743"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "American Robin",
       "scientificName": "Turdus migratorius",
       "taxonomicOrder": 28633,
-      "observationCount": 101,
-      "totalCount": 492,
+      "observationCount": 109,
+      "totalCount": 512,
       "mlCatalogNumber": "324996321",
       "firstSighting": {
         "date": "2019-04-06",
@@ -9429,17 +9411,17 @@
         "checklistId": "S54647743"
       },
       "lastSighting": {
-        "date": "2026-05-19",
-        "region": "US-CT",
-        "checklistId": "S342436528"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     },
     {
       "commonName": "Chipping Sparrow",
       "scientificName": "Spizella passerina",
       "taxonomicOrder": 32990,
-      "observationCount": 28,
-      "totalCount": 75,
+      "observationCount": 32,
+      "totalCount": 81,
       "mlCatalogNumber": "203193601",
       "firstSighting": {
         "date": "2019-04-06",
@@ -9447,9 +9429,9 @@
         "checklistId": "S54647743"
       },
       "lastSighting": {
-        "date": "2026-05-27",
-        "region": "US-CA",
-        "checklistId": "S347788396"
+        "date": "2026-07-19",
+        "region": "US-CT",
+        "checklistId": "S374045371"
       }
     },
     {
@@ -9474,8 +9456,8 @@
       "commonName": "Yellow-rumped Warbler",
       "scientificName": "Setophaga coronata",
       "taxonomicOrder": 34159,
-      "observationCount": 119,
-      "totalCount": 354,
+      "observationCount": 127,
+      "totalCount": 385,
       "mlCatalogNumber": "203194641",
       "firstSighting": {
         "date": "2019-04-06",
@@ -9564,8 +9546,8 @@
       "commonName": "Northern Rough-winged Swallow",
       "scientificName": "Stelgidopteryx serripennis",
       "taxonomicOrder": 24106,
-      "observationCount": 29,
-      "totalCount": 117,
+      "observationCount": 30,
+      "totalCount": 120,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "2019-04-04",
@@ -9573,9 +9555,9 @@
         "checklistId": "S54548160"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
@@ -9684,6 +9666,24 @@
         "date": "2019-04-04",
         "region": "MX-ROO",
         "checklistId": "S54548160"
+      }
+    },
+    {
+      "commonName": "Cave Swallow",
+      "scientificName": "Petrochelidon fulva",
+      "taxonomicOrder": 24296,
+      "observationCount": 1,
+      "totalCount": 30,
+      "mlCatalogNumber": "",
+      "firstSighting": {
+        "date": "2019-04-02",
+        "region": "MX-ROO",
+        "checklistId": "S54504499"
+      },
+      "lastSighting": {
+        "date": "2019-04-02",
+        "region": "MX-ROO",
+        "checklistId": "S54504499"
       }
     },
     {
@@ -9798,8 +9798,8 @@
       "commonName": "Barn Swallow",
       "scientificName": "Hirundo rustica",
       "taxonomicOrder": 24187,
-      "observationCount": 47,
-      "totalCount": 162,
+      "observationCount": 48,
+      "totalCount": 164,
       "mlCatalogNumber": "154822331",
       "firstSighting": {
         "date": "2019-03-15",
@@ -9807,17 +9807,17 @@
         "checklistId": "S55577820"
       },
       "lastSighting": {
-        "date": "2026-05-19",
-        "region": "US-MA",
-        "checklistId": "S342567226"
+        "date": "2026-07-04",
+        "region": "US-CA",
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Vermilion Flycatcher",
       "scientificName": "Pyrocephalus rubinus",
       "taxonomicOrder": 17029,
-      "observationCount": 17,
-      "totalCount": 36,
+      "observationCount": 22,
+      "totalCount": 44,
       "mlCatalogNumber": "177774351",
       "firstSighting": {
         "date": "2019-02-25",
@@ -9834,8 +9834,8 @@
       "commonName": "American Coot",
       "scientificName": "Fulica americana",
       "taxonomicOrder": 5500,
-      "observationCount": 84,
-      "totalCount": 1658,
+      "observationCount": 85,
+      "totalCount": 1661,
       "mlCatalogNumber": "193431331",
       "firstSighting": {
         "date": "2018-12-12",
@@ -9843,17 +9843,17 @@
         "checklistId": "S59916259"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Western Gull",
       "scientificName": "Larus occidentalis",
       "taxonomicOrder": 6528,
-      "observationCount": 98,
-      "totalCount": 1111,
+      "observationCount": 100,
+      "totalCount": 1114,
       "mlCatalogNumber": "176336521",
       "firstSighting": {
         "date": "2018-10-06",
@@ -9861,17 +9861,17 @@
         "checklistId": "S55579071"
       },
       "lastSighting": {
-        "date": "2026-05-30",
+        "date": "2026-06-27",
         "region": "US-CA",
-        "checklistId": "S353612190"
+        "checklistId": "S364429368"
       }
     },
     {
       "commonName": "Double-crested Cormorant",
       "scientificName": "Nannopterum auritum",
       "taxonomicOrder": 7424,
-      "observationCount": 150,
-      "totalCount": 1114,
+      "observationCount": 153,
+      "totalCount": 1119,
       "mlCatalogNumber": "154906261",
       "firstSighting": {
         "date": "2018-10-06",
@@ -9879,17 +9879,17 @@
         "checklistId": "S55579071"
       },
       "lastSighting": {
-        "date": "2026-06-06",
-        "region": "US-CA",
-        "checklistId": "S353612174"
+        "date": "2026-07-13",
+        "region": "US-NH",
+        "checklistId": "S371794708"
       }
     },
     {
       "commonName": "Brown Pelican",
       "scientificName": "Pelecanus occidentalis",
       "taxonomicOrder": 7792,
-      "observationCount": 90,
-      "totalCount": 2431,
+      "observationCount": 91,
+      "totalCount": 2432,
       "mlCatalogNumber": "199077481",
       "firstSighting": {
         "date": "2018-10-06",
@@ -9897,9 +9897,9 @@
         "checklistId": "S55579071"
       },
       "lastSighting": {
-        "date": "2026-05-30",
+        "date": "2026-06-27",
         "region": "US-CA",
-        "checklistId": "S353612190"
+        "checklistId": "S364429368"
       }
     },
     {
@@ -9978,8 +9978,8 @@
       "commonName": "Osprey",
       "scientificName": "Pandion haliaetus",
       "taxonomicOrder": 7832,
-      "observationCount": 63,
-      "totalCount": 87,
+      "observationCount": 64,
+      "totalCount": 88,
       "mlCatalogNumber": "199078491",
       "firstSighting": {
         "date": "2017-07-03",
@@ -9987,17 +9987,17 @@
         "checklistId": "S58494838"
       },
       "lastSighting": {
-        "date": "2026-05-29",
-        "region": "US-CA",
-        "checklistId": "S348936336"
+        "date": "2026-07-19",
+        "region": "US-CT",
+        "checklistId": "S374045371"
       }
     },
     {
       "commonName": "Spotted Towhee",
       "scientificName": "Pipilo maculatus",
       "taxonomicOrder": 33386,
-      "observationCount": 62,
-      "totalCount": 129,
+      "observationCount": 63,
+      "totalCount": 136,
       "mlCatalogNumber": "154818351",
       "firstSighting": {
         "date": "2017-04-24",
@@ -10005,17 +10005,17 @@
         "checklistId": "S55577423"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "American Kestrel",
       "scientificName": "Falco sparverius",
       "taxonomicOrder": 12028,
-      "observationCount": 48,
-      "totalCount": 56,
+      "observationCount": 49,
+      "totalCount": 57,
       "mlCatalogNumber": "154660321",
       "firstSighting": {
         "date": "2016-12-30",
@@ -10023,17 +10023,17 @@
         "checklistId": "S55549468"
       },
       "lastSighting": {
-        "date": "2026-05-09",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S335409955"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Great-tailed Grackle",
       "scientificName": "Quiscalus mexicanus",
       "taxonomicOrder": 33864,
-      "observationCount": 118,
-      "totalCount": 1005,
+      "observationCount": 120,
+      "totalCount": 1015,
       "mlCatalogNumber": "170009331",
       "firstSighting": {
         "date": "2016-12-19",
@@ -10041,17 +10041,17 @@
         "checklistId": "S58495633"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Northern Cardinal",
       "scientificName": "Cardinalis cardinalis",
       "taxonomicOrder": 34515,
-      "observationCount": 49,
-      "totalCount": 66,
+      "observationCount": 56,
+      "totalCount": 77,
       "mlCatalogNumber": "170010151",
       "firstSighting": {
         "date": "2016-12-18",
@@ -10059,9 +10059,9 @@
         "checklistId": "S58495755"
       },
       "lastSighting": {
-        "date": "2026-05-18",
+        "date": "2026-07-19",
         "region": "US-CT",
-        "checklistId": "S341868132"
+        "checklistId": "S374045371"
       }
     },
     {
@@ -10101,11 +10101,29 @@
       }
     },
     {
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "taxonomicOrder": 1853,
+      "observationCount": 163,
+      "totalCount": 2309,
+      "mlCatalogNumber": "236108881",
+      "firstSighting": {
+        "date": "2014-05-10",
+        "region": "XK-",
+        "checklistId": "S58494285"
+      },
+      "lastSighting": {
+        "date": "2026-06-27",
+        "region": "US-CA",
+        "checklistId": "S364429368"
+      }
+    },
+    {
       "commonName": "Canada Goose",
       "scientificName": "Branta canadensis",
       "taxonomicOrder": 342,
-      "observationCount": 81,
-      "totalCount": 970,
+      "observationCount": 83,
+      "totalCount": 979,
       "mlCatalogNumber": "239801271",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10113,17 +10131,17 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-01",
-        "region": "US-CA",
-        "checklistId": "S351061468"
+        "date": "2026-07-17",
+        "region": "US-VT",
+        "checklistId": "S373106936"
       }
     },
     {
       "commonName": "Mallard",
       "scientificName": "Anas platyrhynchos",
       "taxonomicOrder": 545,
-      "observationCount": 176,
-      "totalCount": 2317,
+      "observationCount": 183,
+      "totalCount": 2369,
       "mlCatalogNumber": "170002781",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10131,17 +10149,17 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Ruby-throated Hummingbird",
       "scientificName": "Archilochus colubris",
       "taxonomicOrder": 4802,
-      "observationCount": 5,
-      "totalCount": 4,
+      "observationCount": 6,
+      "totalCount": 5,
       "mlCatalogNumber": "",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10149,17 +10167,17 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-05-15",
-        "region": "US-CT",
-        "checklistId": "S354150449"
+        "date": "2026-07-12",
+        "region": "US-NH",
+        "checklistId": "S371242817"
       }
     },
     {
       "commonName": "Common Loon",
       "scientificName": "Gavia immer",
       "taxonomicOrder": 6933,
-      "observationCount": 21,
-      "totalCount": 44,
+      "observationCount": 25,
+      "totalCount": 54,
       "mlCatalogNumber": "197091701",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10167,17 +10185,17 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-02-26",
-        "region": "US-CA",
-        "checklistId": "S304363044"
+        "date": "2026-07-16",
+        "region": "US-NH",
+        "checklistId": "S372727800"
       }
     },
     {
       "commonName": "Great Blue Heron",
       "scientificName": "Ardea herodias",
       "taxonomicOrder": 7753,
-      "observationCount": 76,
-      "totalCount": 131,
+      "observationCount": 85,
+      "totalCount": 142,
       "mlCatalogNumber": "436006461",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10185,17 +10203,17 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-06",
-        "region": "US-CA",
-        "checklistId": "S353612174"
+        "date": "2026-07-17",
+        "region": "US-VT",
+        "checklistId": "S373106936"
       }
     },
     {
       "commonName": "Turkey Vulture",
       "scientificName": "Cathartes aura",
       "taxonomicOrder": 7815,
-      "observationCount": 79,
-      "totalCount": 194,
+      "observationCount": 81,
+      "totalCount": 217,
       "mlCatalogNumber": "340724971",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10203,9 +10221,9 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-01",
-        "region": "US-CA",
-        "checklistId": "S351061468"
+        "date": "2026-07-17",
+        "region": "US-VT",
+        "checklistId": "S373106936"
       }
     },
     {
@@ -10230,8 +10248,8 @@
       "commonName": "Red-tailed Hawk",
       "scientificName": "Buteo jamaicensis",
       "taxonomicOrder": 8506,
-      "observationCount": 88,
-      "totalCount": 118,
+      "observationCount": 89,
+      "totalCount": 121,
       "mlCatalogNumber": "193193191",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10239,17 +10257,17 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-06",
+        "date": "2026-07-04",
         "region": "US-CA",
-        "checklistId": "S353612174"
+        "checklistId": "S367746482"
       }
     },
     {
       "commonName": "Downy Woodpecker",
       "scientificName": "Dryobates pubescens",
       "taxonomicOrder": 11400,
-      "observationCount": 24,
-      "totalCount": 32,
+      "observationCount": 27,
+      "totalCount": 36,
       "mlCatalogNumber": "195462251",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10257,17 +10275,17 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-06",
-        "region": "US-CA",
-        "checklistId": "S353612174"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373156596"
       }
     },
     {
       "commonName": "Northern Flicker",
       "scientificName": "Colaptes auratus",
       "taxonomicOrder": 11900,
-      "observationCount": 38,
-      "totalCount": 43,
+      "observationCount": 48,
+      "totalCount": 58,
       "mlCatalogNumber": "340724571",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10275,9 +10293,9 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-02-26",
+        "date": "2026-03-11",
         "region": "US-CA",
-        "checklistId": "S304122895"
+        "checklistId": "S308332194"
       }
     },
     {
@@ -10338,8 +10356,8 @@
       "commonName": "American Crow",
       "scientificName": "Corvus brachyrhynchos",
       "taxonomicOrder": 21557,
-      "observationCount": 305,
-      "totalCount": 1347,
+      "observationCount": 313,
+      "totalCount": 1368,
       "mlCatalogNumber": "198084081",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10347,17 +10365,17 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-01",
-        "region": "US-CA",
-        "checklistId": "S351061468"
+        "date": "2026-07-19",
+        "region": "US-CT",
+        "checklistId": "S374045371"
       }
     },
     {
       "commonName": "Common Raven",
       "scientificName": "Corvus corax",
       "taxonomicOrder": 21624,
-      "observationCount": 125,
-      "totalCount": 283,
+      "observationCount": 128,
+      "totalCount": 287,
       "mlCatalogNumber": "436006711",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10365,9 +10383,9 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-01",
-        "region": "US-CA",
-        "checklistId": "S351061468"
+        "date": "2026-07-19",
+        "region": "US-CT",
+        "checklistId": "S374045371"
       }
     },
     {
@@ -10410,8 +10428,8 @@
       "commonName": "Dark-eyed Junco",
       "scientificName": "Junco hyemalis",
       "taxonomicOrder": 33124,
-      "observationCount": 72,
-      "totalCount": 298,
+      "observationCount": 76,
+      "totalCount": 310,
       "mlCatalogNumber": "169932301",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10428,8 +10446,8 @@
       "commonName": "Red-winged Blackbird",
       "scientificName": "Agelaius phoeniceus",
       "taxonomicOrder": 33779,
-      "observationCount": 71,
-      "totalCount": 445,
+      "observationCount": 73,
+      "totalCount": 451,
       "mlCatalogNumber": "200412911",
       "firstSighting": {
         "date": "1900-01-01",
@@ -10437,9 +10455,9 @@
         "checklistId": "S54236305"
       },
       "lastSighting": {
-        "date": "2026-06-01",
-        "region": "US-CA",
-        "checklistId": "S351061468"
+        "date": "2026-07-17",
+        "region": "US-NH",
+        "checklistId": "S373139239"
       }
     }
   ],
@@ -11005,12 +11023,20 @@
       "embedUrl": "https://macaulaylibrary.org/asset/654641229/embed"
     },
     {
-      "id": "645860770",
-      "date": "2025-11-22",
-      "commonName": "American Flamingo",
-      "scientificName": "Phoenicopterus ruber",
+      "id": "647189052",
+      "date": "2025-12-19",
+      "commonName": "Red-shouldered Hawk",
+      "scientificName": "Buteo lineatus",
       "region": "US-CA",
-      "embedUrl": "https://macaulaylibrary.org/asset/645860770/embed"
+      "embedUrl": "https://macaulaylibrary.org/asset/647189052/embed"
+    },
+    {
+      "id": "647189049",
+      "date": "2025-12-19",
+      "commonName": "Red-shouldered Hawk",
+      "scientificName": "Buteo lineatus",
+      "region": "US-CA",
+      "embedUrl": "https://macaulaylibrary.org/asset/647189049/embed"
     },
     {
       "id": "640260262",
@@ -11139,6 +11165,14 @@
       "scientificName": "Haematopus bachmani",
       "region": "US-WA",
       "embedUrl": "https://macaulaylibrary.org/asset/632241968/embed"
+    },
+    {
+      "id": "632241957",
+      "date": "2025-03-16",
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "region": "US-WA",
+      "embedUrl": "https://macaulaylibrary.org/asset/632241957/embed"
     },
     {
       "id": "632241933",
@@ -11301,6 +11335,14 @@
       "embedUrl": "https://macaulaylibrary.org/asset/637448779/embed"
     },
     {
+      "id": "637448758",
+      "date": "2022-10-12",
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "region": "IT-25",
+      "embedUrl": "https://macaulaylibrary.org/asset/637448758/embed"
+    },
+    {
       "id": "637448738",
       "date": "2022-10-12",
       "commonName": "Great Crested Grebe",
@@ -11355,6 +11397,14 @@
       "scientificName": "Carduelis carduelis",
       "region": "IT-42",
       "embedUrl": "https://macaulaylibrary.org/asset/637449113/embed"
+    },
+    {
+      "id": "637449082",
+      "date": "2022-10-09",
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "region": "IT-42",
+      "embedUrl": "https://macaulaylibrary.org/asset/637449082/embed"
     },
     {
       "id": "637449069",
@@ -12837,6 +12887,14 @@
       "embedUrl": "https://macaulaylibrary.org/asset/239788711/embed"
     },
     {
+      "id": "239788691",
+      "date": "2020-05-23",
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "region": "US-CA",
+      "embedUrl": "https://macaulaylibrary.org/asset/239788691/embed"
+    },
+    {
       "id": "239788681",
       "date": "2020-05-23",
       "commonName": "Brandt's Cormorant",
@@ -13021,6 +13079,14 @@
       "embedUrl": "https://macaulaylibrary.org/asset/236112061/embed"
     },
     {
+      "id": "236111071",
+      "date": "2020-05-09",
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "region": "US-CA",
+      "embedUrl": "https://macaulaylibrary.org/asset/236111071/embed"
+    },
+    {
       "id": "236111021",
       "date": "2020-05-09",
       "commonName": "Eared Grebe",
@@ -13099,6 +13165,14 @@
       "scientificName": "Sayornis nigricans",
       "region": "US-CA",
       "embedUrl": "https://macaulaylibrary.org/asset/236108921/embed"
+    },
+    {
+      "id": "236108881",
+      "date": "2020-05-09",
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "region": "US-CA",
+      "embedUrl": "https://macaulaylibrary.org/asset/236108881/embed"
     },
     {
       "id": "236108851",
@@ -13909,6 +13983,14 @@
       "embedUrl": "https://macaulaylibrary.org/asset/197499281/embed"
     },
     {
+      "id": "197499271",
+      "date": "2020-01-05",
+      "commonName": "Northern Flicker",
+      "scientificName": "Colaptes auratus",
+      "region": "US-CT",
+      "embedUrl": "https://macaulaylibrary.org/asset/197499271/embed"
+    },
+    {
       "id": "197499261",
       "date": "2020-01-05",
       "commonName": "Red-shouldered Hawk",
@@ -14027,6 +14109,14 @@
       "scientificName": "Thryothorus ludovicianus",
       "region": "US-CT",
       "embedUrl": "https://macaulaylibrary.org/asset/196868411/embed"
+    },
+    {
+      "id": "195567171",
+      "date": "2019-12-28",
+      "commonName": "Dark-eyed Junco",
+      "scientificName": "Junco hyemalis",
+      "region": "US-CT",
+      "embedUrl": "https://macaulaylibrary.org/asset/195567171/embed"
     },
     {
       "id": "195567161",
@@ -14403,6 +14493,14 @@
       "scientificName": "Passer italiae",
       "region": "IT-34",
       "embedUrl": "https://macaulaylibrary.org/asset/187788471/embed"
+    },
+    {
+      "id": "187783171",
+      "date": "2019-10-25",
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "region": "IT-34",
+      "embedUrl": "https://macaulaylibrary.org/asset/187783171/embed"
     },
     {
       "id": "187783161",
@@ -14949,6 +15047,14 @@
       "embedUrl": "https://macaulaylibrary.org/asset/161037091/embed"
     },
     {
+      "id": "159623171",
+      "date": "2019-05-18",
+      "commonName": "Vermilion Flycatcher",
+      "scientificName": "Pyrocephalus rubinus",
+      "region": "PE-LIM",
+      "embedUrl": "https://macaulaylibrary.org/asset/159623171/embed"
+    },
+    {
       "id": "159618271",
       "date": "2019-05-18",
       "commonName": "Scrub Blackbird",
@@ -15184,57 +15290,57 @@
   "yearlyStats": [
     {
       "year": "2026",
-      "speciesCount": 211,
-      "durationMin": 6825,
-      "distanceKm": 185.5,
+      "speciesCount": 217,
+      "durationMin": 7420,
+      "distanceKm": 190.3,
       "bigDay": {
         "date": "2026-05-09",
-        "speciesCount": 81
+        "speciesCount": 82
       }
     },
     {
       "year": "2025",
-      "speciesCount": 202,
+      "speciesCount": 203,
       "durationMin": 2961,
       "distanceKm": 87.8,
       "bigDay": {
         "date": "2025-05-10",
-        "speciesCount": 49
+        "speciesCount": 50
       }
     },
     {
       "year": "2024",
-      "speciesCount": 194,
+      "speciesCount": 195,
       "durationMin": 2237,
       "distanceKm": 121.7,
       "bigDay": {
-        "date": "2024-05-11",
-        "speciesCount": 34
+        "date": "2024-06-24",
+        "speciesCount": 35
       }
     },
     {
       "year": "2023",
-      "speciesCount": 128,
+      "speciesCount": 130,
       "durationMin": 1414,
       "distanceKm": 43,
       "bigDay": {
         "date": "2023-02-26",
-        "speciesCount": 36
+        "speciesCount": 38
       }
     },
     {
       "year": "2022",
-      "speciesCount": 181,
+      "speciesCount": 183,
       "durationMin": 2370,
       "distanceKm": 114.6,
       "bigDay": {
         "date": "2022-05-14",
-        "speciesCount": 53
+        "speciesCount": 55
       }
     },
     {
       "year": "2021",
-      "speciesCount": 154,
+      "speciesCount": 155,
       "durationMin": 2159,
       "distanceKm": 156.9,
       "bigDay": {
@@ -15244,9 +15350,9 @@
     },
     {
       "year": "2020",
-      "speciesCount": 197,
-      "durationMin": 4658,
-      "distanceKm": 217.5,
+      "speciesCount": 198,
+      "durationMin": 4659,
+      "distanceKm": 218.3,
       "bigDay": {
         "date": "2020-03-28",
         "speciesCount": 39
@@ -15254,7 +15360,7 @@
     },
     {
       "year": "2019",
-      "speciesCount": 366,
+      "speciesCount": 367,
       "durationMin": 6885,
       "distanceKm": 175.1,
       "bigDay": {
@@ -15304,7 +15410,7 @@
     },
     {
       "year": "2014",
-      "speciesCount": 1,
+      "speciesCount": 2,
       "durationMin": 0,
       "distanceKm": 0,
       "bigDay": {
@@ -15317,44 +15423,44 @@
     {
       "code": "US",
       "name": "United States",
-      "allTimeCount": 329,
-      "allTimeDurationMin": 23884,
-      "allTimeDistanceKm": 967.9,
-      "currentYearCount": 211,
-      "currentYearDurationMin": 6825,
-      "currentYearDistanceKm": 185.5,
+      "allTimeCount": 330,
+      "allTimeDurationMin": 24480,
+      "allTimeDistanceKm": 973.5,
+      "currentYearCount": 217,
+      "currentYearDurationMin": 7420,
+      "currentYearDistanceKm": 190.3,
       "byYear": [
         {
           "year": "2026",
-          "count": 211
+          "count": 217
         },
         {
           "year": "2025",
-          "count": 202
+          "count": 203
         },
         {
           "year": "2024",
-          "count": 144
+          "count": 145
         },
         {
           "year": "2023",
-          "count": 119
+          "count": 121
         },
         {
           "year": "2022",
-          "count": 158
+          "count": 160
         },
         {
           "year": "2021",
-          "count": 139
+          "count": 140
         },
         {
           "year": "2020",
-          "count": 197
+          "count": 198
         },
         {
           "year": "2019",
-          "count": 136
+          "count": 137
         },
         {
           "year": "2018",
@@ -15581,6 +15687,11 @@
           "commonName": "Sooty Grouse",
           "scientificName": "Dendragapus fuliginosus",
           "taxonomicOrder": 1320
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Band-tailed Pigeon",
@@ -15931,11 +16042,6 @@
           "commonName": "Royal Tern",
           "scientificName": "Thalasseus maximus",
           "taxonomicOrder": 6789
-        },
-        {
-          "commonName": "American Flamingo",
-          "scientificName": "Phoenicopterus ruber",
-          "taxonomicOrder": 6807
         },
         {
           "commonName": "Pied-billed Grebe",
@@ -16928,6 +17034,11 @@
           "taxonomicOrder": 33957
         },
         {
+          "commonName": "Black-and-white Warbler",
+          "scientificName": "Mniotilta varia",
+          "taxonomicOrder": 33962
+        },
+        {
           "commonName": "Orange-crowned Warbler",
           "scientificName": "Leiothlypis celata",
           "taxonomicOrder": 33973
@@ -17032,7 +17143,7 @@
     {
       "code": "MX",
       "name": "Mexico",
-      "allTimeCount": 112,
+      "allTimeCount": 115,
       "allTimeDurationMin": 1656,
       "allTimeDistanceKm": 52.8,
       "currentYearCount": 0,
@@ -17041,19 +17152,19 @@
       "byYear": [
         {
           "year": "2024",
-          "count": 63
+          "count": 65
         },
         {
           "year": "2023",
-          "count": 2
+          "count": 3
         },
         {
           "year": "2021",
-          "count": 27
+          "count": 28
         },
         {
           "year": "2019",
-          "count": 61
+          "count": 63
         }
       ],
       "species": [
@@ -17071,6 +17182,11 @@
           "commonName": "West Mexican Chachalaca",
           "scientificName": "Ortalis poliocephala",
           "taxonomicOrder": 951
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Red-billed Pigeon",
@@ -17278,6 +17394,11 @@
           "taxonomicOrder": 7729
         },
         {
+          "commonName": "Great Blue Heron",
+          "scientificName": "Ardea herodias",
+          "taxonomicOrder": 7753
+        },
+        {
           "commonName": "Brown Pelican",
           "scientificName": "Pelecanus occidentalis",
           "taxonomicOrder": 7792
@@ -17421,6 +17542,11 @@
           "commonName": "Cliff Swallow",
           "scientificName": "Petrochelidon pyrrhonota",
           "taxonomicOrder": 24281
+        },
+        {
+          "commonName": "Cave Swallow",
+          "scientificName": "Petrochelidon fulva",
+          "taxonomicOrder": 24296
         },
         {
           "commonName": "Blue-gray Gnatcatcher",
@@ -18060,7 +18186,7 @@
     {
       "code": "PE",
       "name": "Peru",
-      "allTimeCount": 74,
+      "allTimeCount": 75,
       "allTimeDurationMin": 1439,
       "allTimeDistanceKm": 31.7,
       "currentYearCount": 0,
@@ -18069,7 +18195,7 @@
       "byYear": [
         {
           "year": "2019",
-          "count": 74
+          "count": 75
         }
       ],
       "species": [
@@ -18087,6 +18213,11 @@
           "commonName": "Andean Guan",
           "scientificName": "Penelope montagnii",
           "taxonomicOrder": 900
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Plumbeous Pigeon",
@@ -18448,7 +18579,7 @@
     {
       "code": "GT",
       "name": "Guatemala",
-      "allTimeCount": 67,
+      "allTimeCount": 68,
       "allTimeDurationMin": 917,
       "allTimeDistanceKm": 6.1,
       "currentYearCount": 0,
@@ -18457,7 +18588,7 @@
       "byYear": [
         {
           "year": "2019",
-          "count": 67
+          "count": 68
         }
       ],
       "species": [
@@ -18465,6 +18596,11 @@
           "commonName": "Crested Guan",
           "scientificName": "Penelope purpurascens",
           "taxonomicOrder": 884
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Band-tailed Pigeon",
@@ -18810,11 +18946,11 @@
       "byYear": [
         {
           "year": "2022",
-          "count": 25
+          "count": 26
         },
         {
           "year": "2019",
-          "count": 29
+          "count": 30
         }
       ],
       "species": [
@@ -19028,7 +19164,7 @@
     {
       "code": "FR",
       "name": "France",
-      "allTimeCount": 13,
+      "allTimeCount": 14,
       "allTimeDurationMin": 35,
       "allTimeDistanceKm": 2,
       "currentYearCount": 0,
@@ -19037,7 +19173,7 @@
       "byYear": [
         {
           "year": "2023",
-          "count": 13
+          "count": 14
         }
       ],
       "species": [
@@ -19050,6 +19186,11 @@
           "commonName": "Mallard",
           "scientificName": "Anas platyrhynchos",
           "taxonomicOrder": 545
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Common Wood-Pigeon",
@@ -19111,7 +19252,7 @@
     {
       "code": "VA",
       "name": "Vatican City",
-      "allTimeCount": 3,
+      "allTimeCount": 4,
       "allTimeDurationMin": 0,
       "allTimeDistanceKm": 0,
       "currentYearCount": 0,
@@ -19120,10 +19261,15 @@
       "byYear": [
         {
           "year": "2019",
-          "count": 3
+          "count": 4
         }
       ],
       "species": [
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
+        },
         {
           "commonName": "Yellow-legged Gull",
           "scientificName": "Larus michahellis",
@@ -19203,6 +19349,29 @@
       ]
     },
     {
+      "code": "XK",
+      "name": "Kosovo",
+      "allTimeCount": 1,
+      "allTimeDurationMin": 0,
+      "allTimeDistanceKm": 0,
+      "currentYearCount": 0,
+      "currentYearDurationMin": 0,
+      "currentYearDistanceKm": 0,
+      "byYear": [
+        {
+          "year": "2014",
+          "count": 1
+        }
+      ],
+      "species": [
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
+        }
+      ]
+    },
+    {
       "code": "CA",
       "name": "Canada",
       "allTimeCount": 1,
@@ -19254,43 +19423,43 @@
       "code": "US-CA",
       "name": "California",
       "allTimeCount": 229,
-      "allTimeDurationMin": 16004,
-      "allTimeDistanceKm": 669.1,
-      "currentYearCount": 166,
-      "currentYearDurationMin": 5961,
-      "currentYearDistanceKm": 165.2,
+      "allTimeDurationMin": 16266,
+      "allTimeDistanceKm": 673.1,
+      "currentYearCount": 169,
+      "currentYearDurationMin": 6222,
+      "currentYearDistanceKm": 168.5,
       "byYear": [
         {
           "year": "2026",
-          "count": 166
+          "count": 169
         },
         {
           "year": "2025",
-          "count": 121
+          "count": 122
         },
         {
           "year": "2024",
-          "count": 95
+          "count": 96
         },
         {
           "year": "2023",
-          "count": 102
+          "count": 104
         },
         {
           "year": "2022",
-          "count": 113
+          "count": 115
         },
         {
           "year": "2021",
-          "count": 106
+          "count": 107
         },
         {
           "year": "2020",
-          "count": 135
+          "count": 136
         },
         {
           "year": "2019",
-          "count": 109
+          "count": 110
         },
         {
           "year": "2018",
@@ -19431,6 +19600,11 @@
           "commonName": "Wild Turkey",
           "scientificName": "Meleagris gallopavo",
           "taxonomicOrder": 1274
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Band-tailed Pigeon",
@@ -19696,11 +19870,6 @@
           "commonName": "Royal Tern",
           "scientificName": "Thalasseus maximus",
           "taxonomicOrder": 6789
-        },
-        {
-          "commonName": "American Flamingo",
-          "scientificName": "Phoenicopterus ruber",
-          "taxonomicOrder": 6807
         },
         {
           "commonName": "Pied-billed Grebe",
@@ -20452,20 +20621,20 @@
     {
       "code": "US-CT",
       "name": "Connecticut",
-      "allTimeCount": 112,
-      "allTimeDurationMin": 2839,
-      "allTimeDistanceKm": 73.3,
-      "currentYearCount": 70,
-      "currentYearDurationMin": 635,
-      "currentYearDistanceKm": 14,
+      "allTimeCount": 114,
+      "allTimeDurationMin": 2911,
+      "allTimeDistanceKm": 73.7,
+      "currentYearCount": 72,
+      "currentYearDurationMin": 707,
+      "currentYearDistanceKm": 14.4,
       "byYear": [
         {
           "year": "2026",
-          "count": 70
+          "count": 72
         },
         {
           "year": "2025",
-          "count": 55
+          "count": 56
         },
         {
           "year": "2024",
@@ -20477,15 +20646,15 @@
         },
         {
           "year": "2022",
-          "count": 55
+          "count": 56
         },
         {
           "year": "2021",
-          "count": 20
+          "count": 21
         },
         {
           "year": "2020",
-          "count": 50
+          "count": 52
         },
         {
           "year": "2019",
@@ -20552,6 +20721,11 @@
           "commonName": "Wild Turkey",
           "scientificName": "Meleagris gallopavo",
           "taxonomicOrder": 1274
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Mourning Dove",
@@ -20859,6 +21033,11 @@
           "taxonomicOrder": 26889
         },
         {
+          "commonName": "Brown Creeper",
+          "scientificName": "Certhia americana",
+          "taxonomicOrder": 27026
+        },
+        {
           "commonName": "Blue-gray Gnatcatcher",
           "scientificName": "Polioptila caerulea",
           "taxonomicOrder": 27123
@@ -21058,7 +21237,7 @@
     {
       "code": "US-WA",
       "name": "Washington",
-      "allTimeCount": 97,
+      "allTimeCount": 99,
       "allTimeDurationMin": 2585,
       "allTimeDistanceKm": 125,
       "currentYearCount": 0,
@@ -21067,7 +21246,7 @@
       "byYear": [
         {
           "year": "2025",
-          "count": 65
+          "count": 67
         },
         {
           "year": "2024",
@@ -21075,7 +21254,7 @@
         },
         {
           "year": "2022",
-          "count": 21
+          "count": 22
         },
         {
           "year": "2021",
@@ -21083,7 +21262,7 @@
         },
         {
           "year": "2020",
-          "count": 53
+          "count": 54
         }
       ],
       "species": [
@@ -21198,6 +21377,11 @@
           "taxonomicOrder": 1320
         },
         {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
+        },
+        {
           "commonName": "Band-tailed Pigeon",
           "scientificName": "Patagioenas fasciata",
           "taxonomicOrder": 1966
@@ -21271,6 +21455,11 @@
           "commonName": "Ring-billed Gull",
           "scientificName": "Larus delawarensis",
           "taxonomicOrder": 6521
+        },
+        {
+          "commonName": "Western Gull",
+          "scientificName": "Larus occidentalis",
+          "taxonomicOrder": 6528
         },
         {
           "commonName": "Glaucous-winged Gull",
@@ -21577,7 +21766,7 @@
     {
       "code": "US-CO",
       "name": "Colorado",
-      "allTimeCount": 58,
+      "allTimeCount": 59,
       "allTimeDurationMin": 749,
       "allTimeDistanceKm": 36.5,
       "currentYearCount": 0,
@@ -21590,11 +21779,11 @@
         },
         {
           "year": "2024",
-          "count": 12
+          "count": 13
         },
         {
           "year": "2023",
-          "count": 29
+          "count": 30
         },
         {
           "year": "2019",
@@ -21660,6 +21849,11 @@
           "commonName": "Common Merganser",
           "scientificName": "Mergus merganser",
           "taxonomicOrder": 762
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Eurasian Collared-Dove",
@@ -21901,7 +22095,7 @@
     {
       "code": "US-OR",
       "name": "Oregon",
-      "allTimeCount": 52,
+      "allTimeCount": 53,
       "allTimeDurationMin": 181,
       "allTimeDistanceKm": 5.3,
       "currentYearCount": 0,
@@ -21914,7 +22108,7 @@
         },
         {
           "year": "2021",
-          "count": 25
+          "count": 26
         }
       ],
       "species": [
@@ -21942,6 +22136,11 @@
           "commonName": "California Quail",
           "scientificName": "Callipepla californica",
           "taxonomicOrder": 1094
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Eurasian Collared-Dove",
@@ -22183,24 +22382,24 @@
     {
       "code": "US-NY",
       "name": "New York",
-      "allTimeCount": 48,
+      "allTimeCount": 49,
       "allTimeDurationMin": 390,
       "allTimeDistanceKm": 10.9,
-      "currentYearCount": 30,
+      "currentYearCount": 31,
       "currentYearDurationMin": 113,
       "currentYearDistanceKm": 2.7,
       "byYear": [
         {
           "year": "2026",
-          "count": 30
+          "count": 31
         },
         {
           "year": "2025",
-          "count": 26
+          "count": 27
         },
         {
           "year": "2023",
-          "count": 4
+          "count": 5
         },
         {
           "year": "2022",
@@ -22212,7 +22411,7 @@
         },
         {
           "year": "2019",
-          "count": 9
+          "count": 10
         }
       ],
       "species": [
@@ -22255,6 +22454,11 @@
           "commonName": "Ruddy Duck",
           "scientificName": "Oxyura jamaicensis",
           "taxonomicOrder": 778
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Mourning Dove",
@@ -22727,6 +22931,174 @@
       ]
     },
     {
+      "code": "US-NH",
+      "name": "New Hampshire",
+      "allTimeCount": 30,
+      "allTimeDurationMin": 188,
+      "allTimeDistanceKm": 0.6,
+      "currentYearCount": 30,
+      "currentYearDurationMin": 188,
+      "currentYearDistanceKm": 0.6,
+      "byYear": [
+        {
+          "year": "2026",
+          "count": 30
+        }
+      ],
+      "species": [
+        {
+          "commonName": "Canada Goose",
+          "scientificName": "Branta canadensis",
+          "taxonomicOrder": 342
+        },
+        {
+          "commonName": "Mourning Dove",
+          "scientificName": "Zenaida macroura",
+          "taxonomicOrder": 2412
+        },
+        {
+          "commonName": "Ruby-throated Hummingbird",
+          "scientificName": "Archilochus colubris",
+          "taxonomicOrder": 4802
+        },
+        {
+          "commonName": "Common Loon",
+          "scientificName": "Gavia immer",
+          "taxonomicOrder": 6933
+        },
+        {
+          "commonName": "Double-crested Cormorant",
+          "scientificName": "Nannopterum auritum",
+          "taxonomicOrder": 7424
+        },
+        {
+          "commonName": "Great Blue Heron",
+          "scientificName": "Ardea herodias",
+          "taxonomicOrder": 7753
+        },
+        {
+          "commonName": "Belted Kingfisher",
+          "scientificName": "Megaceryle alcyon",
+          "taxonomicOrder": 10306
+        },
+        {
+          "commonName": "Downy Woodpecker",
+          "scientificName": "Dryobates pubescens",
+          "taxonomicOrder": 11400
+        },
+        {
+          "commonName": "Eastern Wood-Pewee",
+          "scientificName": "Contopus virens",
+          "taxonomicOrder": 16924
+        },
+        {
+          "commonName": "Eastern Phoebe",
+          "scientificName": "Sayornis phoebe",
+          "taxonomicOrder": 17007
+        },
+        {
+          "commonName": "Eastern Kingbird",
+          "scientificName": "Tyrannus tyrannus",
+          "taxonomicOrder": 17472
+        },
+        {
+          "commonName": "Eastern Warbling Vireo",
+          "scientificName": "Vireo gilvus",
+          "taxonomicOrder": 19245
+        },
+        {
+          "commonName": "Red-eyed Vireo",
+          "scientificName": "Vireo olivaceus",
+          "taxonomicOrder": 19267
+        },
+        {
+          "commonName": "Blue Jay",
+          "scientificName": "Cyanocitta cristata",
+          "taxonomicOrder": 21294
+        },
+        {
+          "commonName": "American Crow",
+          "scientificName": "Corvus brachyrhynchos",
+          "taxonomicOrder": 21557
+        },
+        {
+          "commonName": "Common Raven",
+          "scientificName": "Corvus corax",
+          "taxonomicOrder": 21624
+        },
+        {
+          "commonName": "Black-capped Chickadee",
+          "scientificName": "Poecile atricapillus",
+          "taxonomicOrder": 22065
+        },
+        {
+          "commonName": "Tufted Titmouse",
+          "scientificName": "Baeolophus bicolor",
+          "taxonomicOrder": 22160
+        },
+        {
+          "commonName": "Tree Swallow",
+          "scientificName": "Tachycineta bicolor",
+          "taxonomicOrder": 24064
+        },
+        {
+          "commonName": "White-breasted Nuthatch",
+          "scientificName": "Sitta carolinensis",
+          "taxonomicOrder": 26889
+        },
+        {
+          "commonName": "Gray Catbird",
+          "scientificName": "Dumetella carolinensis",
+          "taxonomicOrder": 28000
+        },
+        {
+          "commonName": "Wood Thrush",
+          "scientificName": "Hylocichla mustelina",
+          "taxonomicOrder": 28347
+        },
+        {
+          "commonName": "American Robin",
+          "scientificName": "Turdus migratorius",
+          "taxonomicOrder": 28633
+        },
+        {
+          "commonName": "Cedar Waxwing",
+          "scientificName": "Bombycilla cedrorum",
+          "taxonomicOrder": 29888
+        },
+        {
+          "commonName": "American Goldfinch",
+          "scientificName": "Spinus tristis",
+          "taxonomicOrder": 32617
+        },
+        {
+          "commonName": "Chipping Sparrow",
+          "scientificName": "Spizella passerina",
+          "taxonomicOrder": 32990
+        },
+        {
+          "commonName": "Song Sparrow",
+          "scientificName": "Melospiza melodia",
+          "taxonomicOrder": 33277
+        },
+        {
+          "commonName": "Red-winged Blackbird",
+          "scientificName": "Agelaius phoeniceus",
+          "taxonomicOrder": 33779
+        },
+        {
+          "commonName": "Common Yellowthroat",
+          "scientificName": "Geothlypis trichas",
+          "taxonomicOrder": 34028
+        },
+        {
+          "commonName": "Northern Cardinal",
+          "scientificName": "Cardinalis cardinalis",
+          "taxonomicOrder": 34515
+        }
+      ]
+    },
+    {
       "code": "US-FL",
       "name": "Florida",
       "allTimeCount": 25,
@@ -22872,7 +23244,7 @@
     {
       "code": "US-TX",
       "name": "Texas",
-      "allTimeCount": 23,
+      "allTimeCount": 24,
       "allTimeDurationMin": 153,
       "allTimeDistanceKm": 9.1,
       "currentYearCount": 0,
@@ -22881,7 +23253,7 @@
       "byYear": [
         {
           "year": "2025",
-          "count": 17
+          "count": 18
         },
         {
           "year": "2021",
@@ -22898,6 +23270,11 @@
           "commonName": "Mallard",
           "scientificName": "Anas platyrhynchos",
           "taxonomicOrder": 545
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "White-winged Dove",
@@ -23009,7 +23386,7 @@
     {
       "code": "US-RI",
       "name": "Rhode Island",
-      "allTimeCount": 20,
+      "allTimeCount": 21,
       "allTimeDurationMin": 101,
       "allTimeDistanceKm": 2.2,
       "currentYearCount": 1,
@@ -23022,7 +23399,7 @@
         },
         {
           "year": "2025",
-          "count": 19
+          "count": 20
         }
       ],
       "species": [
@@ -23035,6 +23412,11 @@
           "commonName": "Wild Turkey",
           "scientificName": "Meleagris gallopavo",
           "taxonomicOrder": 1274
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Laughing Gull",
@@ -23131,7 +23513,7 @@
     {
       "code": "US-OH",
       "name": "Ohio",
-      "allTimeCount": 19,
+      "allTimeCount": 20,
       "allTimeDurationMin": 10,
       "allTimeDistanceKm": 0,
       "currentYearCount": 0,
@@ -23140,7 +23522,7 @@
       "byYear": [
         {
           "year": "2025",
-          "count": 18
+          "count": 19
         },
         {
           "year": "2015",
@@ -23186,6 +23568,11 @@
           "commonName": "Downy Woodpecker",
           "scientificName": "Dryobates pubescens",
           "taxonomicOrder": 11400
+        },
+        {
+          "commonName": "Northern Flicker",
+          "scientificName": "Colaptes auratus",
+          "taxonomicOrder": 11900
         },
         {
           "commonName": "Eastern Wood-Pewee",
@@ -23358,22 +23745,130 @@
       ]
     },
     {
+      "code": "US-VT",
+      "name": "Vermont",
+      "allTimeCount": 18,
+      "allTimeDurationMin": 74,
+      "allTimeDistanceKm": 0.6,
+      "currentYearCount": 18,
+      "currentYearDurationMin": 74,
+      "currentYearDistanceKm": 0.6,
+      "byYear": [
+        {
+          "year": "2026",
+          "count": 18
+        }
+      ],
+      "species": [
+        {
+          "commonName": "Canada Goose",
+          "scientificName": "Branta canadensis",
+          "taxonomicOrder": 342
+        },
+        {
+          "commonName": "Mourning Dove",
+          "scientificName": "Zenaida macroura",
+          "taxonomicOrder": 2412
+        },
+        {
+          "commonName": "Great Blue Heron",
+          "scientificName": "Ardea herodias",
+          "taxonomicOrder": 7753
+        },
+        {
+          "commonName": "Turkey Vulture",
+          "scientificName": "Cathartes aura",
+          "taxonomicOrder": 7815
+        },
+        {
+          "commonName": "Belted Kingfisher",
+          "scientificName": "Megaceryle alcyon",
+          "taxonomicOrder": 10306
+        },
+        {
+          "commonName": "Downy Woodpecker",
+          "scientificName": "Dryobates pubescens",
+          "taxonomicOrder": 11400
+        },
+        {
+          "commonName": "Eastern Warbling Vireo",
+          "scientificName": "Vireo gilvus",
+          "taxonomicOrder": 19245
+        },
+        {
+          "commonName": "Blue Jay",
+          "scientificName": "Cyanocitta cristata",
+          "taxonomicOrder": 21294
+        },
+        {
+          "commonName": "American Crow",
+          "scientificName": "Corvus brachyrhynchos",
+          "taxonomicOrder": 21557
+        },
+        {
+          "commonName": "Gray Catbird",
+          "scientificName": "Dumetella carolinensis",
+          "taxonomicOrder": 28000
+        },
+        {
+          "commonName": "American Robin",
+          "scientificName": "Turdus migratorius",
+          "taxonomicOrder": 28633
+        },
+        {
+          "commonName": "American Goldfinch",
+          "scientificName": "Spinus tristis",
+          "taxonomicOrder": 32617
+        },
+        {
+          "commonName": "Song Sparrow",
+          "scientificName": "Melospiza melodia",
+          "taxonomicOrder": 33277
+        },
+        {
+          "commonName": "Baltimore Oriole",
+          "scientificName": "Icterus galbula",
+          "taxonomicOrder": 33770
+        },
+        {
+          "commonName": "Red-winged Blackbird",
+          "scientificName": "Agelaius phoeniceus",
+          "taxonomicOrder": 33779
+        },
+        {
+          "commonName": "Black-and-white Warbler",
+          "scientificName": "Mniotilta varia",
+          "taxonomicOrder": 33962
+        },
+        {
+          "commonName": "American Redstart",
+          "scientificName": "Setophaga ruticilla",
+          "taxonomicOrder": 34058
+        },
+        {
+          "commonName": "Northern Cardinal",
+          "scientificName": "Cardinalis cardinalis",
+          "taxonomicOrder": 34515
+        }
+      ]
+    },
+    {
       "code": "US-NJ",
       "name": "New Jersey",
-      "allTimeCount": 13,
+      "allTimeCount": 14,
       "allTimeDurationMin": 49,
       "allTimeDistanceKm": 1.8,
-      "currentYearCount": 11,
+      "currentYearCount": 12,
       "currentYearDurationMin": 23,
       "currentYearDistanceKm": 1,
       "byYear": [
         {
           "year": "2026",
-          "count": 11
+          "count": 12
         },
         {
           "year": "2025",
-          "count": 8
+          "count": 9
         }
       ],
       "species": [
@@ -23386,6 +23881,11 @@
           "commonName": "Mallard",
           "scientificName": "Anas platyrhynchos",
           "taxonomicOrder": 545
+        },
+        {
+          "commonName": "Rock Pigeon",
+          "scientificName": "Columba livia",
+          "taxonomicOrder": 1853
         },
         {
           "commonName": "Mourning Dove",
