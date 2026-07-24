@@ -10,7 +10,7 @@ image: /assets/img/recipe-hot-chocolate.jpg
 image_alt: Gray mug with artwork containing hot chocolate which is mostly covered by whip cream.
 ---
 
-This is a rich hot chocolate [recipe from TikTok](https://www.tiktok.com/@tinekeyounger/video/7444335128236625198) cook Tini Younger.
+This is a rich [hot chocolate recipe](https://rouxgirl.substack.com/p/hot-chocolate-with-peppermint-whipped) from [TikTok](https://www.tiktok.com/@tinekeyounger/video/7444335128236625198) cook Tini Younger.
 There's also an optional whipped cream recipe (that we haven't made).
 
 For another decadent recipe from Tini, check out her [Mac & Cheese](/recipes/2024/11/27/cap-mac/).
