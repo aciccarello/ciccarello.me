@@ -22,5 +22,3 @@ Came home with lots of pics.
 ![Large blueish pigeon with a large lace like crest on a rock](/assets/img/2026-safari-pigeon.jpg)
 
 ![A zoo tiger dragging a plastic enrichment toy out of a pool](/assets/img/2026-safari-tiger.jpg)
-
-<!-- ![A large silverback gorilla in a rocky zoo exhibit looking to the side](/assets/img/2026-safari-gorilla.jpg) -->
