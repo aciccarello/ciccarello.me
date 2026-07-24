@@ -1,4 +1,4 @@
-import { readFile, rename, writeFile } from 'node:fs/promises';
+import { readFile, rm, rename, writeFile } from 'node:fs/promises';
 import { basename, dirname, join } from 'node:path';
 
 /**
@@ -10,9 +10,9 @@ import { basename, dirname, join } from 'node:path';
  * ```
  */
 async function main() {
-	const path = process.argv[2];
+	const originalPath = process.argv[2];
 
-	if (!path) {
+	if (!originalPath) {
 		throw new Error('Missing file path argument.');
 	}
 
@@ -20,31 +20,29 @@ async function main() {
 	const isoTimestamp = now.toISOString();
 	const isoDatePrefix = isoTimestamp.slice(0, 10);
 
-	const fileContents = await readFile(path, 'utf8');
+	const fileContents = await readFile(originalPath, 'utf8');
 	const updatedFileContents = fileContents.replace(
 		/^date:\s*.*/m,
 		`date: ${isoTimestamp}`,
 	);
-	await writeFile(path, updatedFileContents, 'utf8');
-	console.log('Updated', path);
 
-	const filename = basename(path);
+	const filename = basename(originalPath);
 	const newFilename = filename.replace(
 		/^\d{4}-\d{2}-\d{2}(?=-)/,
 		isoDatePrefix,
 	);
 
-	if (newFilename === filename) {
-		return;
+	const newPath = join(dirname(originalPath), newFilename);
+	await writeFile(newPath, updatedFileContents, 'utf8');
+	console.log('Saved', newPath);
+
+	if (newFilename !== filename) {
+		await rm(originalPath).catch((error) => {
+			console.error(`Failed to remove ${originalPath}:`, error);
+			throw error;
+		});
+		console.log('Removed', originalPath);
 	}
-
-	const newPath = join(dirname(path), newFilename);
-
-	await rename(path, newPath).catch((error) => {
-		console.error(`Failed to rename ${path} -> ${newPath}:`, error);
-		throw error;
-	});
-	console.log('Updated and renamed', `${path} -> ${newPath}`);
 }
 
 main();
