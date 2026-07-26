@@ -86,7 +86,9 @@ export default {
 						referenceData.author?.name
 							? `by ${referenceData.author.name}`
 							: ''
-					}`.replaceAll(/<[^>]*>/g, '');
+					}`
+						.replaceAll(/<[^>]*>/g, '')
+						.replaceAll(/[\r\n]+/g, ' ');
 
 				return {
 					url,
