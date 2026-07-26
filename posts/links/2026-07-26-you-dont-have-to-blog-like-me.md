@@ -16,7 +16,12 @@ references:
       name: Dan Q
       url: https://danq.me/
 syndication:
-  - https://news.indieweb.org/en
+  - https://news.indieweb.org/en/danq.me/2026/07/02/you-dont-have-to-blog-like-me/
+excludeFromMainFeed: false
+updates:
+  - date: 2026-07-26T05:09:45.642Z
+    description: Updated syndication url and added to main feed
+
 ---
 
 This is your reminder that having a personal website entitles you to blog however you want. There are lots of patterns communities have developed but it's basically all optional. The internet is yours!
