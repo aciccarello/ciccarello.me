@@ -1,6 +1,6 @@
 {%- if updates and updates.size > 0 %}
 <section class="post-updates">
-	<h2 class="h3">Updates:</h2>
+	<h2 class="h4">Updates:</h2>
 	<ol>
 	{%- comment %}Posts automatically set lastUpdated but fallback to the last item of the list{% endcomment %}
 	{%- assign latestMachineDate = lastUpdated | default: updates.last.date | formatMachineDate %}

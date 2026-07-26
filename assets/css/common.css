@@ -50,6 +50,7 @@
 		ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
 		'DejaVu Sans Mono', monospace;
 	--accent-font: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+	--small-font-size: 80%;
 
 	--box-shadow-standard: 0 0.5rem 1rem var(--color-border);
 }
@@ -191,7 +192,7 @@ h5,
 }
 
 small {
-	font-size: 80%;
+	font-size: var(--small-font-size);
 }
 
 p,
@@ -199,6 +200,11 @@ ul,
 ol {
 	margin: 1rem 0;
 	line-height: var(--text-tall-line-height);
+}
+
+ul,
+ol {
+	padding: 0 0 0 2.5rem;
 
 	& ul,
 	& ol {
@@ -1052,13 +1058,18 @@ blockquote {
 .post .rating-stars,
 .post-header,
 .post-content,
-.post-footer {
+.post-footer,
+.post-syndication,
+.post-updates {
 	margin: 0 1rem 1.5rem;
 }
 
-.post-syndication,
 .post-updates {
-	margin: 1rem 2rem;
+	font-size: var(--small-font-size);
+
+	ol {
+		padding-left: 1rem;
+	}
 }
 
 .post-suggestions {
@@ -1144,14 +1155,10 @@ blockquote {
 			margin: 0 1rem 1rem;
 			font-size: 0.875rem;
 
-			-webkit-line-clamp: 3;
+			-webkit-line-clamp: 2;
 			overflow: hidden;
 			display: -webkit-box;
 			-webkit-box-orient: vertical;
-
-			@media screen and (max-width: 40em) {
-				-webkit-line-clamp: 2;
-			}
 		}
 
 		& cite {
