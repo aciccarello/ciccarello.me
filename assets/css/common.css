@@ -222,6 +222,15 @@ time {
 	font-size: 0.875rem;
 }
 
+ins {
+	text-decoration-color: green;
+}
+
+del {
+	text-decoration-color: red;
+	text-decoration-inset: -0.25ch;
+}
+
 /** Limit the width of an area */
 .container {
 	padding-right: 1rem;

@@ -204,6 +204,7 @@ would go back to the widow and be respectable. So I went back.
 ### Special Text
 
 Text can be **strengthened**, _emphasized_, or even made <small>smaller</small>. In markdown quotes in "quoted text" are stylized to highlight the begining vs the end.
+<del>Deleted text is shown like this</del> <ins>while inserted text is shown like this</ins>.
 
 ### Text Wrapping
 

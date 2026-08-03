@@ -56,6 +56,7 @@ In addition to post ideas, I also have lots of website ideas in my [GitHub issue
 - [Tomato Sauce](./marinara-sauce/)
 - [Meatballs](./meatballs/)
 - [Butterscotch Brownies](./butterscotch-brownies) - Hoesterey family recipe
+- [Pite with Spinach](./pite/) - Recipe from Kosovo
 
 We have more recipes saved here that I may want to write down.
 
