@@ -31,5 +31,9 @@ This relies on the author object with the following properties
 		<a href="/subscribe" class="btn-link btn-alternate">
 			{{ text.links.subscribe }}
 		</a>
+		<a href="https://shareopenly.org/share/?url={{ page.url | addBaseUrl }}&text=Check%20out%20{{ title |
+				default: "this page"  | uri_escape }}%20on%20Anthony's%20site" class="btn-link btn-alternate">
+			{{ text.links.share }}
+		</a>
 	</div>
 </section>
