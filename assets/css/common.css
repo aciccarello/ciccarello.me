@@ -49,7 +49,7 @@
 	--code-font:
 		ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
 		'DejaVu Sans Mono', monospace;
-	--accent-font: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+	--accent-font: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, 'New York', 'Iowan Old Style', 'Droid Serif', 'Noto Serif', Georgia, serif;
 	--small-font-size: 80%;
 
 	--box-shadow-standard: 0 0.5rem 1rem var(--color-border);
@@ -283,6 +283,7 @@ body > header {
 	justify-content: space-between;
 	width: 100%;
 	z-index: 4;
+	margin-block-end: 2rem;
 
 	& section {
 		display: flex;
