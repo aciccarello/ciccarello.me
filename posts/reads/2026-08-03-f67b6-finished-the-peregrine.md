@@ -1,5 +1,5 @@
 ---
-date: 2026-08-03T00:00:00.000Z
+date: 2026-08-03T03:00:00-07:00
 title: Finished Reading The peregrine by Baker, J. A. - ★★★
 slug: f67b6
 read-of:
@@ -10,6 +10,9 @@ read-of:
   uid: olid:OL2395963W
   url: https://openlibrary.org/works/OL2395963W
 rating: "3"
+progress: finished
+tags:
+  - birds
 ---
 
 This book had some fantastic passages. The detail that Baker captures about the life of a falcon is impressive and offers an interesting window into this bird of prey. But I struggle to see who I can recommend it to. I only see the most bird obsessed people making it to the end.
