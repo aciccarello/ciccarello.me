@@ -6,6 +6,213 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>HTML Day 2026 - Anthony Ciccarello</title>
 		<style>
+			:root {
+				--page-height: 400rem;
+				--header-height-dec: 0.05;
+				--sky-start-dec: 0.2;
+				--grass-start-dec: 0.6;
+				--ground-start-dec: 0.75;
+				--footer-start-dec: 0.95;
+				--header-height-abs: calc(var(--header-height-dec) * var(--page-height));
+				--sky-start-abs: calc(var(--sky-start-dec) * var(--page-height));
+				--grass-start-abs: calc(var(--grass-start-dec) * var(--page-height));
+				--ground-start-abs: calc(var(--ground-start-dec) * var(--page-height));
+				--footer-start-abs: calc(var(--footer-start-dec) * var(--page-height));
+				--header-height: calc(var(--header-height-dec) * 100%);
+				--sky-start: calc(var(--sky-start-dec) * 100%);
+				--grass-start: calc(var(--grass-start-dec) * 100%);
+				--ground-start: calc(var(--ground-start-dec) * 100%);
+				--footer-start: calc(var(--footer-start-dec) * 100%);
+			}
+
+			html {
+				height: var(--page-height, 600vh);
+			}
+			body {
+				height: 100%;
+				margin: 0;
+				background-color: rgba(0, 0, 0, 1);
+				background: linear-gradient(180deg,
+           rgba(0, 0, 0, 1) 0%,
+           rgba(0, 19, 35, 1) var(--header-height, 6%),
+           rgba(3, 65, 102, 1) var(--sky-start),
+           rgba(9, 117, 178, 1) calc(var(--sky-start) + 5%),
+           rgba(65, 148, 199, 1) calc(var(--grass-start) - 30%),
+           rgba(105, 180, 220, 1) calc(var(--grass-start) - 25%),
+           rgba(143, 212, 241, 1) calc(var(--grass-start) - 20%),
+           rgba(143, 212, 241, 1) calc(var(--grass-start) - 10%),
+           rgba(143, 212, 241, 1) calc(var(--grass-start) - 5%),
+           rgba(143, 212, 241, 1) calc(var(--grass-start) - 2%),
+           rgba(0, 255, 0, 1) var(--grass-start),
+           rgba(90, 197, 52, 1) calc(var(--grass-start) + 6%),
+           rgba(104, 142, 62, 1) calc(var(--ground-start) - 3%),
+           rgba(157, 101, 50, 1) calc(var(--ground-start)),
+           rgba(176, 97, 55, 1) calc(var(--ground-start) + 10%),
+           rgba(179, 138, 131, 1) calc(var(--footer-start) - 2%),
+           rgba(220, 107, 105, 1) var(--footer-start),
+           rgb(164 35 15) 100%);
+			}
+
+			header {
+				  margin: 2rem;
+				  position: absolute;
+				  background: yellow;
+				height: var(--header-height-abs);
+				  width: var(--header-height-abs);
+				  border-radius: 50%;
+				  text-align: center;
+				  display: flex;
+				  align-items: center;
+				  justify-items: center;
+				  align-content: center;
+				  justify-content: center;
+				h1 {
+					margin: 0;
+				};
+			}
+			header a {
+				color: green;
+			}
+
+			.space {
+				    display: block;
+				    position: absolute;
+				    width: 100%;
+				    top: var(--header-height-abs);
+				    bottom: calc(100vh - var(--sky-start-abs));
+
+					span {
+						position: relative;
+						left: calc(sibling-index() * 5%);
+						top: calc(mod(mod(sibling-index()*6,13) + 1,5)*13%);
+						font-size: calc(mod(sibling-index(),4)*1rem)
+					}
+
+					span.fall {
+						position: sticky;
+						top: 31%;
+						left: 75%;
+					}
+			}
+			.sky {
+				    display: block;
+				    position: absolute;
+				    width: 100%;
+				    top: var(--sky-start-abs);
+				    bottom: calc(100vh - var(--grass-start-abs));
+					padding-top: 30rem;
+					font-size: 1.5rem;
+					color: darkblue;
+
+					p {
+						text-align: center;
+						margin: 5rem 2rem;
+					}
+					p:first-child, p:nth-child(2) {
+						color: white;
+					}
+					p:nth-child(3) {
+						color: lightblue;
+					}
+
+
+					.vulture {
+						display: flex;
+						justify-content: right;
+						padding-top: 10rem;;
+						padding-right: 5vw;
+						p {
+							animation: glide 25s linear infinite;
+							color: black;
+
+							:first-child {
+								transform: skew(20deg, 20deg);
+								display: inline-block;
+							}
+							:last-child {
+								transform: skew(-20deg, -20deg);
+								display: inline-block;
+							}
+						}
+					}
+
+			}
+			@keyframes glide {
+				0%, 100% {
+					transform: translateX(0) rotate(0deg);
+					animation-timing-function: ease-out;
+				}
+				25% {
+					transform: translateX(-5vw) rotate(10deg);
+					animation-timing-function: ease-in-out;
+				}
+				75% {
+					transform: translateX(5vw) rotate(-10deg);
+					animation-timing-function: ease-in;
+				}
+
+			}
+			@media (prefers-reduced-motion: reduce) {
+			  * {
+				animation-duration: 0s !important;
+			  }
+			}
+			.grass {
+				    display: block;
+				    position: absolute;
+				    width: 100%;
+				    top: var(--grass-start-abs);
+				    bottom: calc(100vh - var(--ground-start-abs));
+					font-size: 1.5rem;
+					color: white;
+
+					.house {
+						font-size: 20vw;
+						position: relative;
+						left: 10vw;
+						bottom: 20vw;
+						text-decoration: none;
+					}
+			}
+
+			.ground {
+				    display: block;
+				    position: absolute;
+				    width: 100%;
+				    top: var(--ground-start-abs);
+				    bottom: calc(100vh - var(--footer-start-abs));
+					font-family: Georgia;
+					font-size: 2rem;
+
+					span {
+						color: rgba(0,0,0,0.15);
+					}
+					span:last-child {
+						color: brown;
+						color: saddlebrown;
+						font-weight: bold;
+					}
+
+			}
+
+			footer {
+				position: absolute;
+				top: var(--footer-start-abs);
+				bottom: calc(100vh - var(--page-height));
+				text-align: center;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				a {
+					color: yellow;
+					background: gray;
+					padding: 1.5rem;
+					border-radius: 0.75rem 2.5rem 1rem 1.5rem;
+				}
+
+			}
 		</style>
 	</head>
 	<body>
@@ -15,7 +222,47 @@
 					<a href="/sites/html-day-2026">HTML Day 2026</a>
 				</h1>
 			</header>
-			<p>Coming soon...</p>
+			<section class="space">
+				<span>✨</span>
+				<span>⭐️</span>
+				<span>⭐️</span>
+				<span>⭐️</span>
+				<span>⭐️</span>
+				<span>⭐️</span>
+				<span>⭐️</span>
+				<span>⭐️</span>
+				<span class="fall">☄️</span>
+				<span>⭐️</span>
+				<span>💫</span>
+			</section>
+			<section class="sky">
+				<p>Technology and nature often feel like opposites</p>
+				<p>Outlets and fiber internet...</p>
+				<p>vs fresh air and sunshine</p>
+				<p>But when letting go of productivity and connectivity it feels really nice to play around with what a browser can do.</p>
+				<p>It doesn't need to be impressive</p>
+				<p>It doesn't need to be new</p>
+				<p>I was happy to experiement, to learn, to try, to be confused, to fail, to finally understand, to do something kinda strange</p>
+				<p>HTML is a playground</p>
+				<p>And who doesn't love a playground in the park</p>
+				<div class="vulture"><p><span>turkey</span><span>vulture</span></p></div>
+			</section>
+			<section class="grass">
+				<a href="https://www.ciccarello.me/sites/" class="house">🏠</a>
+			</section>
+			<section class="ground">
+				<p class="gopher">
+					<span>hole</span>
+					<span>hole</span>
+					<span>hole</span>
+					<span>hole</span>
+					<span>hole</span>
+					<span>hole</span>
+					<span>hole</span>
+					<span>hole</span>
+					<span>gopher</span>
+				</p>
+			</section>
 		</main>
 		<footer>
 			<p><a href="https://htmlday.joespartydepot.com/" target="_blank">Created @ HTML Day San Diego 2026</a></p>
