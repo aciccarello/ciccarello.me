@@ -4,7 +4,8 @@ title: HTML Day San Diego 2026
 slug: tomorrow-is-html-day
 bookmark-of: https://htmlday.joespartydepot.com/
 tags:
-  - IndieWeb HTMLDay
+  - IndieWeb
+  - HTMLDay
 excludeFromMainFeed: false
 references:
   - referenceIdUrl: https://htmlday.joespartydepot.com/
