@@ -1,7 +1,7 @@
 ---
 date: 2026-08-11T21:39:25.537Z
 slug: strava-hamster
-in-reply-to: https://www.runnersworld.com/news/a73355106/hamster-wheel-strava-running/
+bookmark-of: https://www.runnersworld.com/news/a73355106/hamster-wheel-strava-running/
 tags:
   - humor
 references:
