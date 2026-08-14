@@ -24,16 +24,16 @@ sportsTeams:
     image: https://upload.wikimedia.org/wikipedia/en/2/2c/Oceanside_Bombers.png?_=20251114000344
     image_alt: Team logo of Oceanside Bombers a stealth bomber with a blue football.
     summary: Arena Football team playing at Frontwave Arena
-  - name: Wild Volleyball
-    url: http://sandiegowild.com/
-    image: https://images.squarespace-cdn.com/content/v1/63fe6a9f4386440220ae7ea2/f72d93ee-28a6-45e9-ab60-63f32d847729/SD+Wild+Logo_Official_Cropped.png
-    image_alt: Team logo of San Diego Wild depicting an aggressive bear.
-    summary: NVA Men's volleyball team
   - name: Lions Football
     url: http://www.sandiegolions.com/
     image: https://upload.wikimedia.org/wikipedia/en/9/9d/San_Diego_Lions_AFL_logo.png
     image_alt: Logo for Lions depicting a lion hiking a football.
     summary: USAFL Australian football team
+  - name: Na Fianna
+    url: https://www.nafianna.com/
+    image: https://scontent.fsan1-2.fna.fbcdn.net/v/t39.30808-6/485378998_966885588975771_52871650492651357_n.jpg?stp=dst-jpg_tt6&cstp=mx512x512&ctp=s512x512&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_IellmoJYasQ7kNvwHuPSVv&_nc_oc=AdpdH3LwrRvmiUk-6fcfKFUa2dszfxvBMJJWyjbYTHGsvbMnTh7zLEOB6Wrv7ukd_ie53WRXPP1HVZlb42Kd1NHk&_nc_zt=23&_nc_ht=scontent.fsan1-2.fna&_nc_gid=ToY0c9fshvcsdh7521xbSw&_nc_ss=7b2a8&oh=00_AQFR1mhIUCqRC3T_UBsEdOw7lole46MDo9L2is31aa-eaA&oe=6A84FDB7
+    image_alt: Team seal of Na Fianna LGAC Established 1997
+    summary: Ladies Gaelic Athletic Club playing Gaelic Football and Camogie
   - name: Surfers Rugby
     url: https://www.sdsurfersrugby.com
     image: https://upload.wikimedia.org/wikipedia/en/8/8a/San_Diego_Surfers_logo.png
