@@ -77,6 +77,7 @@ export default {
 					postDescription = prefix + referencePostType;
 				}
 
+				normalizeToFirstIfArray(referenceData, 'url');
 				normalizeToFirstIfArray(referenceData.author, 'url');
 				if (typeof referenceData.author === 'string') {
 					referenceData.author = { name: referenceData.author };
@@ -91,6 +92,7 @@ export default {
 						.replaceAll(/[\r\n]+/g, ' ');
 
 				return {
+					// Often overridden since reference data has what is considered the canonical URL for the post
 					url,
 					...referenceData,
 					actionDescription,

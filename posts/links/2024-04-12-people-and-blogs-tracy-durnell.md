@@ -7,7 +7,7 @@ tags:
   - IndieWeb
 references:
   - referenceIdUrl: https://manuelmoreale.com/pb-tracy-durnell
-    url: https://manuelmoreale.com/thoughts/pb-tracy-durnell
+    url: https://manuelmoreale.com/pb-tracy-durnell
     name: "P&B: Tracy Durnell"
     type: entry
     content: This is the 33rd edition of People and Blogs, the series where I ask
