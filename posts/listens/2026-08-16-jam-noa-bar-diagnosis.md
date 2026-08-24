@@ -18,3 +18,4 @@ indiekit_excerpt: Listened to Diagnosis by Noa Bar
 
 Been really enjoying Noa Bar's music after hearing the song Diagnosis on NPR. The vocals are funky and the strong bass gets me.
 
+<iframe src="https://embed.tidal.com/albums/470094650" width="500" height="600" allow="encrypted-media; fullscreen; clipboard-write https://embed.tidal.com; web-share" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" style="color-scheme: light dark" title="TIDAL Embed Player" />
