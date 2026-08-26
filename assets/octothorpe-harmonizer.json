@@ -31,6 +31,12 @@
           "selector": ".u-photo:not(:where(.h-cite, .h-card, .h-entry .h-entry) .u-photo)",
           "attribute": "src"
         }
+      ],
+      "postDate": [
+        {
+          "selector": ".h-entry article .dt-published",
+          "attribute": "datetime"
+        }
       ]
     },
     "documentRecord": {
