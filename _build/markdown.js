@@ -25,6 +25,8 @@ export function initializeMarkdown() {
 		})
 		.use(MarkdownItImageFigures, {
 			figcaption: true,
+			lazy: true,
+			async: true,
 		})
 		.use(html5Media)
 		.use(MarkdownItAnchor, {

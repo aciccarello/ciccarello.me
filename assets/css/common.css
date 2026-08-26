@@ -377,11 +377,6 @@ footer {
 	}
 }
 
-figure {
-	margin: 1rem 0;
-	text-align: center;
-}
-
 /** Courtesy of https://css-tricks.com/examples/hrs/ */
 hr::after {
 	content: '● ● ●';
@@ -863,34 +858,6 @@ Consider doing this for all reviews or moving the logo to the h-card */
   margin-block: 1rem;
 }
 
-figure:has(> .post-img--float),
-figure:has(> .post-img--float-right) {
-	width: 50%;
-	max-width: 350px;
-	margin: 0 1rem 0.5rem 0;
-	float: left;
-
-	/* align top with heading */
-	&:has(+ h1, + .h1, + h2, + .h2, + h3, + .h3, + h4, + .h4, + h5, + .h5) {
-		margin-block-start: 3em;
-	}
-}
-
-figure:has(> .post-img--float-right) {
-	float: right;
-	margin: 0 0 0.5rem 1rem;
-}
-
-figure img {
-	margin: 0 auto;
-	display: block;
-	max-width: 100%;
-}
-
-figcaption {
-	margin-top: 0.5rem;
-}
-
 img.post-img--float,
 video.post-img--float,
 img.post-img--float-right,
@@ -898,27 +865,62 @@ video.post-img--float-right {
 	max-width: 100%;
 }
 
+/* Default images to 600px wide in post content so it doesn't take up too much space */
 .post-content figure img,
-.post-content figure video {
+.post-content figure video,
+.post-content video.html5-video-player {
 	width: 600px;
-}
-
-figure img.post-img--wide,
-figure video.post-img--wide {
-	width: 100%;
-}
-figure:has(> .post-img--width) {
-	max-width: 100%;
-}
-
-figcaption {
-	font-size: 0.8rem;
-	line-height: 1.25rem;
 }
 
 .html5-video-player {
 	display: block;
-	margin: auto;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 1rem 0;
+	text-align: center;
+
+	img {
+		margin: 0 auto;
+		display: block;
+		max-width: 100%;
+	}
+
+	figcaption {
+		margin-top: 0.5rem;
+		font-size: 0.8rem;
+		line-height: 1.25rem;
+	}
+
+	&:has(> .post-img--float),
+	&:has(> .post-img--float-right) {
+		width: 50%;
+		max-width: 350px;
+		margin: 0 1rem 0.5rem 0;
+		float: left;
+
+		/* align top with heading */
+		&:has(+ h1, + .h1, + h2, + .h2, + h3, + .h3, + h4, + .h4, + h5, + .h5) {
+			margin-block-start: 3em;
+		}
+	}
+
+	&:has(> .post-img--float-right) {
+		float: right;
+		margin: 0 0 0.5rem 1rem;
+	}
+
+	/* Wide images are after to override the default width styles above */
+	&:has(> .post-img--width) {
+		max-width: 100%;
+	}
+	img.post-img--wide,
+	video.post-img--wide {
+		width: 100%;
+	}
+
 }
 
 .review-context {
