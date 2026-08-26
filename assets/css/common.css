@@ -882,7 +882,7 @@ figure {
 	margin: 1rem 0;
 	text-align: center;
 
-	img {
+	img, video {
 		margin: 0 auto;
 		display: block;
 		max-width: 100%;

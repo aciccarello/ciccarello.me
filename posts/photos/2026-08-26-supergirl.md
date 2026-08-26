@@ -22,10 +22,18 @@ At one point someone shoved a 6 pack of NA hops tea in my hands so I did end up 
 
 ![Looking towards a southern California beach from out over the water with a surfer appearing to stand on a wave](/assets/img/2026-supergirl-long-coast.jpg){.u-photo}
 
-![A girl moves back and forth along a long surfboard while riding a wave](/assets/img/2026-supergirl-long-ride.mp4){.u-photo}
+<figure>
+<video src="/assets/img/2026-supergirl-long-ride.mp4" controls class="u-video" aria-label="A girl moves back and forth along a long surfboard while riding a wave">
+If you can't see the video, you can <a href="/assets/img/2026-supergirl-long-ride.mp4" download="">download the file</a>.
+</video>
+</figure>
 
-![A girl whips a short surfboard across the face of a wave](/assets/img/2026-supergirl-short-ride.mp4){.u-photo}
+<figure>
+<video src="/assets/img/2026-supergirl-short-ride.mp4" controls class="u-video" aria-label="A girl whips a short surfboard across the face of a wave">
+If you can't see the video, you can <a href="/assets/img/2026-supergirl-short-ride.mp4" download="">download the file</a> instead.
+</video>
+</figure>
 
 ![Girl on a longboard riding a wave towards the camera](/assets/img/2026-supergirl-long-close.jpg){.u-photo}
 
-![A blue sky with a line of pelicans above a row fo palm trees on a beach with hotels and people out walking.](/assets/img/2026-supergirl-scene.jpg 'Thought this line of pelicans really captured the scene (even if blurry)'){.u-photo}
+![A blue sky with a line of pelicans above a row fo palm trees on a beach with hotels and people out walking.](/assets/img/2026-supergirl-scene.jpg 'Thought the line of pelicans in the sky really captured the scene (even if blurry)'){.u-photo}
