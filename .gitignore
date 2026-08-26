@@ -1,6 +1,7 @@
 # Build files
 _site
 _site_previous
+_build/scripts/raw-media
 node_modules
 
 # Local config files
