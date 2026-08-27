@@ -37,7 +37,7 @@
   "homepage": "https://www.ciccarello.me",
   "type": "module",
   "dependencies": {
-    "@sveltia/cms": "^0.200.0",
+    "@sveltia/cms": "^0.201.1",
     "7.css": "^0.21.1",
     "leaflet": "^1.9.4",
     "webmention.js": "^0.5.6"
@@ -47,7 +47,7 @@
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0",
-    "@aciccarello/netlify-plugin-webmentions": "^1.1.1",
+    "@aciccarello/netlify-plugin-webmentions": "^2.0.0",
     "@paulrobertlloyd/mf2tojf2": "^3.0.0",
     "dotenv": "^17.4.2",
     "html-minifier-terser": "^7.2.0",
