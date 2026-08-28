@@ -23,7 +23,8 @@
   package = "@aciccarello/netlify-plugin-webmentions"
 
 	[plugins.inputs]
-    feedPath = "/feed-all.xml"
+    feedPath = "/posts/all/"
+    feedLimit = 5
 
 # Production context: all deploys from the Production branch
 # set in your site’s Branches settings in the UI will inherit
