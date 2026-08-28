@@ -47,7 +47,7 @@
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@11tyrocks/eleventy-plugin-lightningcss": "^1.5.0",
-    "@aciccarello/netlify-plugin-webmentions": "^3.0.0-beta.0",
+    "@aciccarello/netlify-plugin-webmentions": "^3.0.0-beta.1",
     "@paulrobertlloyd/mf2tojf2": "^3.0.0",
     "dotenv": "^17.4.2",
     "html-minifier-terser": "^7.2.0",
