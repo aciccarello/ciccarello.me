@@ -5,6 +5,11 @@ date: 2026-08-31T11:58:00+07:00
 slug: i-love-reading-blogs
 tags:
   - IndieWeb
+image: /assets/img/2026-07-harbor-sunset-wide.jpg
+image_alt: Monochromatic picture of a sunset over a beach with people and a lifeguard tower capturing the depth of the scene but without a clear subject.
+updates:
+  - date: 2026-09-01T07:11:36.059Z
+    description: Added featured image and minor textual edits
 ---
 
 Today is BlogDay, a celebration of blogging and also the end to [Blaugust](https://indieweb.org/Blaugust), a challenge to write 31 posts in the month of August.
@@ -50,7 +55,7 @@ I've discovered some of my favorite blogs because someone else shared a link.
 
 ## My Ideal Post Format
 
-But I've also resisted adding "repost" as a kind of post on my site.
+I've resisted adding "repost" as a kind of post on my site.
 It's a format that Twitter and others made popular, but that feels cheap to me.
 I don't want to just parrot what others are posting.
 If I'm sharing it on my main feed, I want to have something to add; a summary, a personal anecdote.
@@ -58,7 +63,7 @@ Ben Werdmuller does a [fantastic job of this](https://werd.io/can-data-collectiv
 
 I haven't written my own weeknotes because I don't believe I can maintain a decent cadence.
 But I have a somewhat automated analog with my email newsletter.
-RSS feeds are the primary way I imagine people follow my posts, but I feed my week's posts into a weekly MailChimp newsletter.
+RSS feeds are the primary way I imagine people [follow my posts](/subscribe/), but I feed my week's posts into a weekly MailChimp newsletter.
 What's nice about this is it's automatically sent out if I have posts.
 If I have one post or five, they all get bundled up and email subscribers don't get spammed.
 If there's nothing, there's no email.
@@ -70,12 +75,14 @@ If you want to see his CSS Battle entries, those are grouped in a section.
 There's something about the structure that feels less overwhelming.
 It's not a mess of links; it's a tree and you can follow the branches you want.
 
+## Cutting Through the Noise
+
 I have posts on my site that don't hit the main feed.
 In my mind, most of my likes and replies aren't worthy of sharing with followers.
 Every once in a while I'll override that for a generally applicable comment.
 But I try to be more signal than noise.
 
-I hope that someday we have social readers that can better parse through feeds.
+I hope that someday we have [social readers](https://indieweb.org/social_reader) that can better parse through feeds for different types of content.
 There are probably some RSS readers that already do this, but turning down the noise from a very active feed would go a long way.
 In particular, I want thoughtful blog posts to be elevated over other forms of chatter, but I still want to follow it all.
 
