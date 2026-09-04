@@ -12,9 +12,6 @@ eleventyExcludeFromCollections: true
 {%- assign feedCollection = collections[collectionName] | reverse -%}
 {%- assign alternateUrl = url | default: "/" | replace: " ", "%20" | addBaseUrl -%}
 {%- comment %}add syndication for RSS based webmention sender{% endcomment -%}
-{%- capture bridgyFed %}{% if page.url == "/feed-all.xml" -%}
-  <a href="https://fed.brid.gy/" class="u-bridgy-fed" aria-hidden="true" tabindex="-1"></a>
-{%- endif %}{% endcapture -%}
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/assets/feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -37,10 +34,6 @@ eleventyExcludeFromCollections: true
 			{%- include "trip-link" %}
       {%- if forloop.index <= 10 %}
         {{ post.templateContent }}
-        {{ bridgyFed }}
-        {% if page.url == "/feed-all.xml" -%}
-          <a href="https://octothorp.es/?uri={{ absolutePostUrl }}&as=https://www.ciccarello.me/assets/octothorpe-harmonizer.json" class="u-octothorpe" aria-hidden="true" tabindex="-1"></a>
-        {% endif -%}
 		    {% include "syndication.html", syndication: post.data.syndication %}
       {%- else %}
       <p>{{ post.templateContent | strip_html | truncate: 500 }}</p>
