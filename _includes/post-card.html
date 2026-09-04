@@ -40,6 +40,9 @@ h-entry
 				<time class="dt-published" datetime="{{ post.date | formatMachineDate }}" {% if deferTransition %}data-vt="{{ vtName }}-date"{% else %}style="view-transition-name: {{ vtName }}-date"{% endif %}>
 					{{- post.date | formatHumanDate: post.data.dateFormat -}}
 				</time>
+				{%- if post.data.lastUpdated != post.date -%}
+				<time class="dt-updated" datetime="{{ post.data.lastUpdated | formatMachineDate }}" title="Updated {{ post.data.lastUpdated | formatHumanDate: post.data.dateFormat }}">*</time>
+				{%- endif -%}
 			</div>
 			<div class="post-body">
 				<p class="post-text p-summary"{% if deferTransition %}data-vt="{{ vtName }}-text"{% else %}style="view-transition-name: {{ vtName }}-text"{% endif %}>

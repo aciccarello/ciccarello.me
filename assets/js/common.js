@@ -12,10 +12,11 @@ const dateTimeFormat = new Intl.DateTimeFormat([locale], {
 	globalThis.document &&
 		document.querySelectorAll('time[datetime]').forEach((element) => {
 			const date = new Date(element.dateTime);
-			// Don't change old dates and dates with no UTC time
+			// Don't change old dates, dates with no UTC time, or updated indicators
 			if (
 				date > timeMattersSince &&
-				!date.toISOString().endsWith('T00:00:00.000Z')
+				!date.toISOString().endsWith('T00:00:00.000Z') &&
+				element.innerHTML !== '*'
 			) {
 				const isDateTime = element.innerHTML.includes(':');
 				const newText = isDateTime
