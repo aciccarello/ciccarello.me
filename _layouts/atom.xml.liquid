@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
 {%- comment %}add syndication for RSS based webmention sender{% endcomment -%}
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/assets/feed.xsl" type="text/xsl"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" {% if posse_party %} xmlns:posse="https://posseparty.com/2024/Feed"{% endif %}>
   <title>{{ title | default: site.title }}</title>
   <subtitle>{{ description | default: site.description | escape }}</subtitle>
   <link href="{{ page.url | replace: " ", "%20" | addBaseUrl }}" rel="self" type="application/atom+xml"/>
@@ -57,6 +57,16 @@ eleventyExcludeFromCollections: true
         <summary type="html">
           {{ content | sanitizeFeedContent | htmlToAbsoluteUrls: absolutePostUrl | escape }}
         </summary>
+      {%- endif %}
+      {%- if posse_party %}
+        <posse:post format="json"><![CDATA[
+      {
+        "append_url": false,
+        "append_url_if_truncated": false,
+        "content": "{{ post.templateContent | replace: "<p>", "\n\n<p>" | replace: "<br>", "\n\n" | stripVideoTagContent | strip_html | replace: "\"", "'" | smartWhitespaceCleanup }}",
+        "media": {{ post | mediaJsonFromPost | json }},
+      }
+    ]]></posse:post>
       {%- endif %}
     </entry>
   {%- endif %}

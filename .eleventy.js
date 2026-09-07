@@ -120,12 +120,7 @@ export default async function (eleventyConfig) {
 			throw error;
 		}
 	});
-	eleventyConfig.addFilter('addBaseUrl', (value) => {
-		if (!value || value.startsWith('http')) {
-			return value;
-		}
-		return 'https://www.ciccarello.me' + value;
-	});
+	eleventyConfig.addFilter('addBaseUrl', addBaseUrl);
 	eleventyConfig.addFilter('joinLines', (value) =>
 		value.replace(/\n/gm, ' '),
 	);
@@ -142,6 +137,35 @@ export default async function (eleventyConfig) {
 			// See https://github.com/remy/wm/issues/62
 			.replace(/u-url/gm, ''),
 	);
+	eleventyConfig.addFilter('mediaJsonFromPost', (post) => {
+		const mediaType = (url) => (url.endsWith('.mp4') ? 'video' : 'image');
+		const featuredImage = post.data.image;
+		const contentImagesAndVideos =
+			post.templateContent.match(
+				/<(img|video) [^>]*src="([^"]+)"[^>]*>/gm,
+			) ?? [];
+		const mediaUrls = [
+			...(featuredImage ? [featuredImage] : []),
+			...contentImagesAndVideos
+				.map((tag) => tag.match(/src="([^"]+)"/)[1])
+				.map(addBaseUrl),
+		];
+		return mediaUrls.map((url) => ({
+			url,
+			type: mediaType(url),
+		}));
+	});
+	eleventyConfig.addFilter('stripVideoTagContent', (content) =>
+		// Remove video tags since the text is not relevant when stripping media/html
+		content.replace(/<video [^>]*>[\s\S]*?<\/video>/gm, ''),
+	);
+	eleventyConfig.addFilter('smartWhitespaceCleanup', (content) => {
+		// Remove leading and trailing whitespace from each line
+		// Reduce multiple newlines to 2
+		// Allows taking stripped HTML and making it more readable in plaintext contexts (like POSSE party)
+		return content.replace(/^\s+|\s+$/g, '').replace(/\n{3,}/g, '\n\n');
+	});
+
 	eleventyConfig.addFilter('extractDomain', (content) =>
 		content.split('/').find((segment) => segment.includes('.')),
 	);
@@ -196,4 +220,11 @@ export default async function (eleventyConfig) {
 			layouts: '_layouts',
 		},
 	};
+}
+
+export function addBaseUrl(value) {
+	if (!value || value.startsWith('http')) {
+		return value;
+	}
+	return 'https://www.ciccarello.me' + value;
 }
