@@ -6,6 +6,11 @@ image_alt: Brown and tan hawk with white tail feathers landing on the outstretch
 tags:
   - nature
   - birds
+syndication:
+  - https://www.instagram.com/p/DdHFwyNm5I8/
+updates:
+  - date: 2026-09-10T15:09:34.910Z
+    description: Added link to Instagram post
 ---
 
 Raptors are so cool.

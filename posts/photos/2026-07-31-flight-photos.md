@@ -7,6 +7,11 @@ tags:
   - nature
   - landscape
   - travel
+syndication:
+  - https://www.instagram.com/p/DdHHogZmxKS/
+updates:
+  - date: 2026-09-10T15:09:34.910Z
+    description: Added link to Instagram post
 ---
 
 Another season of travel is wrapping up.
