@@ -64,7 +64,7 @@ eleventyExcludeFromCollections: true
         "append_url": false,
         "append_url_if_truncated": false,
         "content": "{{ post.templateContent | replace: "<p>", "\n\n<p>" | replace: "<br>", "\n\n" | stripVideoTagContent | strip_html | replace: "\"", "'" | smartWhitespaceCleanup | replace: "\n", "\\n" }}",
-        "media": {{ post | mediaJsonFromPost | json }},
+        "media": {{ post | mediaJsonFromPost | json }}
       }
     ]]></posse:post>
       {%- endif %}

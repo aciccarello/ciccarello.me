@@ -60,6 +60,28 @@ describe('RSS', () => {
     );
   });
 
+  it('should have valid POSSE Party metadata in the photos feed', async () => {
+    const feedFile = await readFile(`_site/photos/feed.xml`, 'utf-8');
+    const possePosts = [
+      ...feedFile.matchAll(
+        /<posse:post format="json"><!\[CDATA\[([\s\S]*?)\]\]><\/posse:post>/g,
+      ),
+    ].map((match) => JSON.parse(match[1]));
+
+    expect(possePosts).toHaveLength(31);
+    expect(possePosts[0].append_url).toBe(false);
+    expect(possePosts[0].content).not.toContain('<a');
+    expect(possePosts[0].media.length).toBeGreaterThan(0);
+    for (const post of possePosts) {
+      expect(post.content).not.toMatch(/(?<!\n)\n(?!\n)/);
+      for (const media of post.media) {
+        expect(media.url).toMatch(/^https:\/\//);
+        expect(media.type).toMatch(/^(image|video)$/);
+      }
+    }
+    expect(possePosts.some((post) => post.content.includes('\n\n'))).toBe(true);
+  });
+
   it('should have a foster care feed feed', async () => {
     const feedFile = await readFile(
       `_site/posts/tags/foster care/feed.xml`,

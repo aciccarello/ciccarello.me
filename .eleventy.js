@@ -145,7 +145,7 @@ export default async function (eleventyConfig) {
 				/<(img|video) [^>]*src="([^"]+)"[^>]*>/gm,
 			) ?? [];
 		const mediaUrls = [
-			...(featuredImage ? [featuredImage] : []),
+			...(featuredImage ? [addBaseUrl(featuredImage)] : []),
 			...contentImagesAndVideos
 				.map((tag) => tag.match(/src="([^"]+)"/)[1])
 				.map(addBaseUrl),
@@ -162,8 +162,12 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addFilter('smartWhitespaceCleanup', (content) => {
 		// Remove leading and trailing whitespace from each line
 		// Reduce multiple newlines to 2
+		// Join lines separated by only one newline but not more
 		// Allows taking stripped HTML and making it more readable in plaintext contexts (like POSSE party)
-		return content.replace(/^\s+|\s+$/g, '').replace(/\n{3,}/g, '\n\n');
+		return content
+			.replace(/^\s+|\s+$/g, '')
+			.replace(/\n{3,}/g, '\n\n')
+			.replace(/(?<!\n)\n(?!\n)/g, ' ');
 	});
 
 	eleventyConfig.addFilter('extractDomain', (content) =>
