@@ -49,6 +49,15 @@ Leaning into the goofy mascot is fun and the new stadium is small enough that th
 
 ![Blue baseball cap with a spunky goat logo on a man in the outfield stands of a small baseball stadium.](/assets/img/hat-yard-goats.jpg)
 
+### easily distracted by birds
+
+This was a gift from my sister and very accurate.
+My favorite reaction to me wearing this hat was was someone who read it and exclaimed "Me too!"
+My apologies to friends and family who have been interrupted by me trying to ID a bird flying or singing while you were talking.
+I swear I was trying hard to listen...to you both.
+
+![Man looking through binoculars in a tan baseball cap with the words "easily distracted by birds" and a white crane in a forested area behind.](/assets/img/hat-distracted-by-birds.jpg)
+
 ### Brixton Corduroy
 
 This is a hat I picked up in Oceanside at a local clothing shop, but the photo is at my brother's place in Massachusetts with his jacket feeling very New England.
