@@ -17,6 +17,12 @@ examplePagination:
     - { url: '/style-guide?page=4' }
 ---
 
+<style>
+#h-link-example a.heading-anchor {
+  opacity: 1;
+}
+</style>
+
 This page lays out the site-wide styles and how to use them. It's a form of visual documentation and a reference for how to display visual elements. It also allows easier testing of styles and cross-browser compatibility checks. This page was partially inspired by pages like [gRegor Morrill's style guide](https://gregorlove.com/style-guide/) and some CSS framework documentation sites.
 
 See the source of [common.css](/assets/css/common.css) for the complete styles. Custom shortcodes and other build customizations are defined in [.eleventy.js](https://github.com/aciccarello/ciccarello.me/blob/main/.eleventy.js) and the imported files. Includes are defined in the [/\_includes](https://github.com/aciccarello/ciccarello.me/blob/main/_includes) directory.
@@ -176,6 +182,12 @@ H4s are used under h3s but should be rarely used. H4 styling can be forced with 
 
 H5s are used under h4s but should be rarely used. H5 styling can be forced with the `.h5` class.
 
+#### Heading Links{#h-link-example}
+
+Headings in the main article should show a # link on hover or focus (should work on mobile).
+This heading has been modified to show all the time.
+See other headers for the hover effect.
+
 ### Body Text Example: Adventures of Huckleberry Finn
 
 You don't know about me without you have read a book by the name of The
@@ -292,25 +304,75 @@ Captions support markdown syntax but be careful with quotes in alt text. You can
 
 ![image displayed not full-width on desktop](/assets/img/2018-yellowstone-grand-prismatic.jpg "A photo displayed 600px wide")
 
+## Videos
+
+![A girl moves back and forth along a long surfboard while riding a wave](/assets/img/2026-supergirl-long-ride.mp4 "Title text is not treated the same as images"){.post-img--float .post-img--float-right}
+
+Videos can automatically be identified by .mp4 file extension.
+A markdown plugin will automatically create a video tag and a fallback text for render scenarios that don't support the video tag (like email and RSS readers).
+
+### Important Differences
+
+Note that it will not use the figure element wrapper like images.
+Adding text in the link section of the markdown link will set the `title` attribute instead of a figcaption.
+Videos will instead be wrapped by a paragraph element and any applied classes will be on the paragraph (not the video).
+But the default width, float, and wide classes should still work the same.
+
+<div style="clear:both;"></div>
+
+![Animated map of North America depicting how Ruby Throated Hummingbirds move north and south on the east coast over the course of a year](/assets/img/instagram_59229434_134922271002824_4163054829677612806_n_17849633716418761.mp4){.post-img--wide}
+
+<figure>
+<video src="/assets/img/2026-supergirl-short-ride.mp4" controls class="u-video" aria-label="A girl whips a short surfboard across the face of a wave">
+If you can't see the video, you can <a href="/assets/img/2026-supergirl-short-ride.mp4" download="">download the file</a> instead.
+</video>
+<figcaption>If you want a caption, use the raw HTML tags</figcaption>
+</figure>
+
 ## Lists
 
 ### Unordered
+
+Unordered lists can be nested
 
 - Item one
 - Item two
   - Subitem A
   - Subitem B
+    - Sub-subitem
+      - Fourth generation
 - Item three
 
 ### Ordered
+
+Ordered lists have different list styles per level.
 
 1. Fist item
 1. Second item
    1. Two point one
    1. Two point two
    1. Two point three
-      1. Two point three one
+      1. Two point three point one
+          1. Two point three point one point one
+          1. Two point three point one point two
+              1. Two point three point one point two point one
+                  1. Two point three point one point two point one point one
+      1. Two point three point two
+   1. Two point four
 1. Third item
+
+### Description Lists
+
+These currently only have basic styling but are good semantic elements for key value pairs.
+I might consider a two column layout.
+
+<dl>
+  <dt>Description Term</dt>
+  <dd>Description definition</dd>
+  <dt>Description Term 2</dt>
+  <dd>Description definition 2</dd>
+  <dd>Description definition 3 on same item</dd>
+</dl>
 
 ## Quotes
 
@@ -565,7 +627,7 @@ Posts can be summarized and shown in [feed pages](/posts/testPosts/) or as sugge
 {% removeindents %}
 
 <div class="post-suggestions container">
- {% assign previousPost = collections.photos | first %}
+ {% assign previousPost = collections.photos[1] %}
  {% assign nextPost = collections.articles | last %}
  <h2 class="h3">
   View more articles
@@ -599,21 +661,25 @@ Different post types appear differently
 
 {% removeindents %}
 
-<div class="post-suggestions container">
- {% assign previousPost = collections.notes | first %}
- {% assign nextPost = collections.recipes | last %}
-  {% if previousPost %}
-  <div class="post-suggestions__area post-suggestions__previous">
-   {% include "post-card.html" post: previousPost %}
-  </div>
-  {% endif %}
-  {% if nextPost %}
-  <div class="post-suggestions__area post-suggestions__next">
-   {% include "post-card.html" post: nextPost %}
-  </div>
-  {% endif %}
+<ol class="post-list post-list--even">
+ {% assign notePost = collections.notes | last %}
+ {% assign linkPost = collections.links | last %}
+ {% assign recipePost = collections.recipes | last %}
+ {% assign reviewPost = collections.reviews | last %}
+  <li>
+   {% include "post-card.html" post: notePost %}
+  </li>
+  <li>
+   {% include "post-card.html" post: linkPost %}
+  </li>
+  <li>
+   {% include "post-card.html" post: recipePost %}
+  </li>
+  <li>
+   {% include "post-card.html" post: reviewPost %}
+  </li>
  </ul>
-</div>
+</ol>
 {% endremoveindents %}
 
 ## Pagination
@@ -632,4 +698,6 @@ For paginated pages, you can show pagination links at the bottom.
 
 ## Footer
 
-TODO: Describe the footer below.
+The footer is a 3 column layout that has semantic headings.
+It appears on every page and has some important links.
+It should spread evenly given the page width and have short link descriptions to accommodate narrow screen sizes.

@@ -62,7 +62,28 @@ export function formatDateTimeString(date) {
 document.addEventListener('DOMContentLoaded', () => {
 	initializeLightbox();
 	initializeCardTransitions();
+	initializeHeadingAnchors();
 });
+
+/** Add permalink anchors to headings with an id inside an article */
+function initializeHeadingAnchors() {
+	document
+		.querySelectorAll('article :is(h2, h3, h4, h5, h6)[id]')
+		.forEach((heading) => {
+			if (heading.querySelector('.heading-anchor')) return;
+
+			const anchor = document.createElement('a');
+			anchor.className = 'heading-anchor';
+			anchor.href = `#${heading.id}`;
+			anchor.setAttribute(
+				'aria-label',
+				`Permalink to ${heading.textContent.trim()}`,
+			);
+			anchor.innerHTML = '<span aria-hidden="true">#</span>';
+
+			heading.append(' ', anchor);
+		});
+}
 
 /**
  * Cross-document view transitions for post-suggestion cards.

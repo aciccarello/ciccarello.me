@@ -211,11 +211,31 @@ ol {
 		/* Don't want margin on nested lists */
 		margin: 0;
 	}
+	ol {
+		list-style-type: upper-alpha;
+	}
+	ol ol {
+		list-style-type: upper-roman;
+	}
+	ol ol ol {
+		list-style-type: lower-alpha;
+	}
+	ol ol ol ol {
+		list-style-type: lower-roman;
+	}
 }
 
 li {
 	/* Give lists some extra space between rows to make them easier to read */
 	/* line-height: 1.75; */
+}
+
+dt {
+	font-weight: bold;
+}
+
+dt,dd {
+	line-height: var(--text-tall-line-height);
 }
 
 time {
@@ -798,6 +818,19 @@ a.disable-link-styles {
 	margin: 1rem;
 }
 
+.heading-anchor {
+	opacity: 0;
+	text-decoration: none;
+	font-weight: normal;
+	padding-inline: 0.25rem;
+	transition: opacity 0.2s ease-in;
+}
+
+:is(h2, h3, h4, h5, h6):hover > .heading-anchor,
+.heading-anchor:focus-visible {
+	opacity: 1;
+}
+
 .post-heading > h3 {
 	margin: 0;
 }
@@ -878,7 +911,8 @@ video.post-img--float-right {
 	max-width: 100%;
 }
 
-figure {
+/* Markdown plugins wrap images in figures, but videos are in paragraphs */
+figure, p:has(video) {
 	margin: 1rem 0;
 	text-align: center;
 
@@ -894,8 +928,11 @@ figure {
 		line-height: 1.25rem;
 	}
 
+	/* Images apply class to image, videos apply the class to the paragraph */
 	&:has(> .post-img--float),
-	&:has(> .post-img--float-right) {
+	&:has(> .post-img--float-right),
+	&.post-img--float,
+	&.post-img--float-right {
 		width: 50%;
 		max-width: 350px;
 		margin: 0 1rem 0.5rem 0;
@@ -907,17 +944,20 @@ figure {
 		}
 	}
 
+	&.post-img--float-right,
 	&:has(> .post-img--float-right) {
 		float: right;
 		margin: 0 0 0.5rem 1rem;
 	}
 
 	/* Wide images are after to override the default width styles above */
-	&:has(> .post-img--width) {
+	&:has(> .post-img--width),
+	&.post-img--width {
 		max-width: 100%;
 	}
 	img.post-img--wide,
-	video.post-img--wide {
+	video.post-img--wide,
+	&.post-img--wide video.html5-video-player {
 		width: 100%;
 	}
 
