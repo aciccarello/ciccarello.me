@@ -55,6 +55,12 @@
           "icon": "icons/bluesky.svg"
         },
         {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/ajciccarello/",
+          "description": "@ajciccarello",
+          "icon": "icons/instagram.svg"
+        },
+        {
           "title": "LinkedIn",
           "url": "https://www.linkedin.com/in/anthonyciccarello/",
           "description": "Professional",
@@ -86,23 +92,6 @@
       ]
     },
     {
-      "name": "Nature",
-      "links": [
-        {
-          "title": "eBird",
-          "url": "https://ebird.org/profile/OTUwMDI4",
-          "description": "Bird sightings",
-          "icon": "icons/ebird.svg"
-        },
-        {
-          "title": "iNaturalist",
-          "url": "https://www.inaturalist.org/people/aciccarello",
-          "description": "Nature sightings",
-          "icon": "icons/inaturalist.svg"
-        }
-      ]
-    },
-    {
       "name": "Games",
       "links": [
         {
@@ -116,6 +105,29 @@
           "url": "https://www.chess.com/member/a3chic9",
           "description": "Online Chess",
           "icon": "icons/chess.svg"
+        },
+        {
+          "title": "Lichess",
+          "url": "https://lichess.org/@/a3chic9",
+          "description": "Online Chess",
+          "icon": "icons/chess.svg"
+        }
+      ]
+    },
+    {
+      "name": "Nature",
+      "links": [
+        {
+          "title": "eBird",
+          "url": "https://ebird.org/profile/OTUwMDI4",
+          "description": "Bird sightings",
+          "icon": "icons/ebird.svg"
+        },
+        {
+          "title": "iNaturalist",
+          "url": "https://www.inaturalist.org/people/aciccarello",
+          "description": "Nature sightings",
+          "icon": "icons/inaturalist.svg"
         }
       ]
     }

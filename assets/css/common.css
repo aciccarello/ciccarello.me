@@ -40,6 +40,7 @@
 
 	--text-on-primary: oklch(98% 0 0);
 	--container-width: 64rem;
+	--wide-container-width: 76rem;
 	--color-disabled: oklch(70% 0 0 / 60%);
 	--color-border: oklch(70% 0 0 / 40%);
 	--border-radius: 0.5rem;
