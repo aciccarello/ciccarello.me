@@ -11,6 +11,10 @@ references:
     url: https://en.wikipedia.org/wiki/Bight_(geography)
     name: Bight (geography) - Wikipedia
     type: entry
+excludeFromMainFeed: false
+updates:
+  - date: 2026-09-28T04:37:54.357Z
+    description: Added to main feed
 ---
 
 TIL "bight" is another term for an open bay.  Such as the [Southern California Bight](https://en.wikipedia.org/wiki/Southern_California_Bight).
@@ -18,4 +22,3 @@ TIL "bight" is another term for an open bay.  Such as the [Southern California B
 Thanks to [Joe](https://artlung.com/) and [James](https://jamesg.blog/) for sending me down this rabbit hole. Bonus geography vocab "[tombolo](https://en.wikipedia.org/wiki/Tombolo)" refers to a type of isthmus where a spit connects to a tied island.
 
 ![Coastline graphic demonstrating terms like cuspate foreland, tombolo connecting to a tied island, spits, bay, lagoon, and barrier island](https://upload.wikimedia.org/wikipedia/commons/4/48/Accreting_coast_Image6.svg)
-

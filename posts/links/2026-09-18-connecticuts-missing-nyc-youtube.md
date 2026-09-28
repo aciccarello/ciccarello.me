@@ -12,7 +12,10 @@ references:
     content: "Connecticut is, perhaps rightfully, slept on. But its geography is
       super important to the American northeast, Massachusetts, and NYC
       #connecticut #hartford #..."
+excludeFromMainFeed: false
+updates:
+  - date: 2026-09-28T04:37:54.357Z
+    description: Added to main feed
 ---
 
 Today I Learned why the CT river doesn't have a major port city at its mouth. I usually thought of the lack of shipping as a result of the shift to land based transport. But the river depth apparently is the key factor. It is funny how small Old Saybrook is given it's location. I didn't know Yale started there.
-
