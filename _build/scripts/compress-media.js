@@ -64,7 +64,7 @@ async function main() {
 	console.log('Use the following for your post front matter:');
 	for (const file of headerFiles) {
 		console.log(`
-image: /assets/media/${file}
+image: /assets/img/${file}
 image_alt: "Alt text"
 image_caption: "Optional displayed caption"
 `);
