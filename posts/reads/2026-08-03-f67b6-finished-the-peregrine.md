@@ -4,7 +4,7 @@ title: Finished Reading The peregrine by Baker, J. A. - ★★★
 slug: f67b6
 read-of:
   type: cite
-  name: The peregrine
+  name: The Peregrine
   photo: https://covers.openlibrary.org/b/id/691995-M.jpg
   author: Baker, J. A.
   uid: olid:OL2395963W
@@ -26,4 +26,3 @@ The forward waxes poetic about how the book waxes poetic which makes me feel lik
 The other piece of context which makes this book significant is that it was written in England in the 1960s and was galvanizing for conservation groups that pushed to protect peregrines who had been decimated by WW II culling to protect carrier pigeons and by the impacts of DDT pesticide use on eggs. So I think this book deserves recognition. The author was apparently an oddly interesting guy who only wrote one other well distributed book. Personally, I am also fascinated by how human development has changed the natural world. The area outside London he describes in the book has been swallowed by a growing, sprawling city.
 
 So in summary, great writing on a powerful animal in an interesting time; but maybe not a fun read for the average person.
-
