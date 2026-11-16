@@ -7,7 +7,7 @@ tags:
   - landscape
   - nature
   - travel
-  - Central CA
+  - California
 ---
 
 I'm still working on going through pictures but I had a great time driving out to Pinnacles National Park.
@@ -25,4 +25,4 @@ Hopefully will post more photos soon but in the meantime here are some cool rock
 
 ![On a shaded canyon trail with plants looking up at a pillaring cliff face](/assets/img/2026-pinnacles-rocks-trail.jpg){.u-photo}
 
-![Rocky formations visible through the valley of two tree covered hills](/assets/img/2026-pinnacles-rocks-landscape.jpg){.u-photo .post-image--wide}
+![Rocky formations visible through the valley of two tree covered hills](/assets/img/2026-pinnacles-rocks-landscape.jpg){.u-photo .post-img--wide}

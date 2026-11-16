@@ -72,7 +72,7 @@ image_caption: "Optional displayed caption"
 	for (const file of nonHeaderFiles) {
 		let className = '{.u-photo}';
 		if (isWideImage(file)) {
-			className = '{.u-photo .post-image--wide}';
+			className = '{.u-photo .post-img--wide}';
 		}
 		console.log(`![Alt text](/assets/img/${file})${className}`);
 	}

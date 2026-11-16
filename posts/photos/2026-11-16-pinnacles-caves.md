@@ -7,7 +7,18 @@ tags:
   - texture
   - nature
   - travel
-  - Central CA
+  - California
+locations:
+  - lat: 36.4981992
+    long: -121.2031815
+    title: 'Balconies Cave'
+    date: 2026-11-11T15:00:00
+    type: attraction
+  - lat: 36.4742533
+    long: -121.1864099
+    title: 'Bear Gulch Caves'
+    date: 2026-11-12T13:00:00
+    type: attraction
 ---
 
 Pinnacles National Park has some cool peaks, but I was not prepared for how many caves there were.
