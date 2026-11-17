@@ -26,11 +26,6 @@ locations:
     date: 2026-11-12T18:00:00
     type: lodging
     icon: bed
-  - lat: 36.6180151
-    long: -121.9012162
-    title: 'Monterey Bay Aquarium'
-    date: 2026-11-13T10:00:00
-    type: attraction
   - lat: 36.21
     long: -121.13
     title: 'King City'
