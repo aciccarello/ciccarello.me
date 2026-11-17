@@ -41,4 +41,8 @@ It's always cool to see puffins fly underwater or sandpipers pulling insects fro
 
 ![Three drab shorebirds standing among grasses](/assets/img/2026-monterey-aquarium-pipers.jpg){.u-photo}
 
-![Various fish being swished around by a turbulent current in a reef exhibit](/assets/img/2026-monterey-aquarium-reef.mp4){.u-photo}
+<figure>
+<video src="/assets/img/2026-monterey-aquarium-reef.mp4" controls autoplay muted loop class="u-video" aria-label="Various fish being swished around by a turbulent current in a reef exhibit">
+If you can't see the video, you can <a href="/assets/img/2026-monterey-aquarium-reef.mp4" download="">download the file</a>.
+</video>
+</figure>
