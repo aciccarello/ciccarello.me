@@ -6,6 +6,8 @@ image_alt: 'A gorilla sits napping in an artistic shot surrounded by plants'
 tags:
   - animals
   - nature
+syndication:
+  - https://www.instagram.com/ajciccarello/p/Dd8ZiViGxxu/
 ---
 
 Here are the non-bird pics from the zoo.

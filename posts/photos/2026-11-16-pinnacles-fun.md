@@ -20,6 +20,8 @@ locations:
     title: 'Bear Gulch Reservoir'
     date: 2026-11-12T12:00:00
     type: attraction
+syndication:
+  - https://www.instagram.com/ajciccarello/p/Dfy4KrmmzW3/
 ---
 
 Alright, last photo dump from Pinnacles National Park.

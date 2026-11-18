@@ -7,6 +7,8 @@ tags:
   - sunset
   - landscape
   - beach
+syndication:
+  - https://www.instagram.com/ajciccarello/p/DdQKbgZm7Cm/
 ---
 
 The last church picnic of the summer closed out with an incredible sunset.

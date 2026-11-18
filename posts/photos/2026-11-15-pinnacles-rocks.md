@@ -8,6 +8,8 @@ tags:
   - nature
   - travel
   - California
+syndication:
+  - https://www.instagram.com/ajciccarello/p/DfwV3XRm-Qk/
 ---
 
 I'm still working on going through pictures but I had a great time driving out to Pinnacles National Park.

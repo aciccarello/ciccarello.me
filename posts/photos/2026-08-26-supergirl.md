@@ -6,6 +6,8 @@ image_alt: 'A female surfer paddles out in a greenish-blue ocean as seen from ab
 tags:
   - beach
   - sports teams
+syndication:
+  - https://www.instagram.com/ajciccarello/p/DdiSciIglVf/
 ---
 
 I braved the heat and went and watched the [Supergirl Surf Pro Competition](https://supergirlsurfpro.com/surf-contest/) again over the weekend.

@@ -14,6 +14,8 @@ locations:
     title: 'Monterey Bay Aquarium'
     date: 2026-11-13T10:00:00
     type: attraction
+syndication:
+  - https://www.instagram.com/ajciccarello/p/Df06cfWD8jS/
 ---
 
 Monterey is only about an hour from Pinnacles National Park so I drove up and went to the aquarium.

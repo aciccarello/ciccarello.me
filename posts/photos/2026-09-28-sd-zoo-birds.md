@@ -7,6 +7,8 @@ tags:
   - animals
   - birds
   - nature
+syndication:
+  - https://www.instagram.com/ajciccarello/p/Dd0luSkmy5P/
 ---
 
 Over the Labor Day holiday I made use of my zoo membership and went to the downtown San Diego Zoo.

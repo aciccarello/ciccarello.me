@@ -19,6 +19,8 @@ locations:
     title: 'Bear Gulch Caves'
     date: 2026-11-12T13:00:00
     type: attraction
+syndication:
+  - https://www.instagram.com/ajciccarello/p/DfyaDEulF6h/
 ---
 
 Pinnacles National Park has some cool peaks, but I was not prepared for how many caves there were.
