@@ -32,11 +32,6 @@ locations:
     date: 2026-11-13T18:00:00
     type: lodging
     icon: bed
-  - lat: 35.3693342
-    long: -120.8665359
-    title: 'Morro Bay'
-    date: 2026-11-14T10:00:00
-    type: attraction
   - lat: 32.732
     long: -117.189
     title: 'San Diego'

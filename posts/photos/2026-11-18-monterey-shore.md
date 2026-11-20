@@ -6,6 +6,7 @@ image_alt: Sun shining through clouds onto a rocky shoreline with plants
 tags:
   - nature
   - birds
+  - ocean
   - travel
   - California
 locations:
@@ -14,6 +15,8 @@ locations:
     title: 'Point Pinos Seawatch'
     date: 2026-11-13T15:00:00
     type: attraction
+syndication:
+  - https://www.instagram.com/p/Df4YnNeFv9I/
 ---
 
 A few more shots from Monterey's shores, mostly some of the birds I saw.
